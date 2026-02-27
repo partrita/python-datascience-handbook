@@ -1,0 +1,32 @@
+name: Deploy Quarto Book to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+      - master
+      - quarto-book
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Pixi Environment
+        uses: prefix-dev/setup-pixi@v0.8.1
+        with:
+          manifest-path: mybook/pixi.toml
+
+      - name: Render and Publish
+        run: |
+          cd mybook
+          pixi run quarto publish gh-pages --no-prompt --no-browser
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
