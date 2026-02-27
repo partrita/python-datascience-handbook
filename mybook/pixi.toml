@@ -1,0 +1,24 @@
+[workspace]
+authors = ["fkt <deepthought@postech.ac.kr>"]
+channels = ["conda-forge"]
+name = "mybook"
+platforms = ["osx-arm64"]
+version = "0.1.0"
+
+[dependencies]
+python = "3.12.*"
+quarto = ">=1.6.0"
+numpy = "*"
+pandas = "*"
+scipy = "*"
+scikit-learn = "*"
+scikit-image = "*"
+pillow = "*"
+matplotlib = "*"
+seaborn = "*"
+jupyter = "*"
+ipykernel = "*"
+
+[tasks]
+render = "quarto render"
+preview = "quarto preview"
