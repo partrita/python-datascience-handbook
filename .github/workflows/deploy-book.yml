@@ -26,6 +26,8 @@ jobs:
 
       - name: Render and Publish
         run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
           cd mybook
           pixi run quarto publish gh-pages --no-prompt --no-browser
         env:
