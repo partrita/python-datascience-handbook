@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>In Depth: Kernel Density Estimation – 파이썬 데이터 사이언스 핸드북</title>
+<title>심층 분석: 커널 밀도 추정 – 파이썬 데이터 사이언스 핸드북</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -77,7 +77,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-3778d3e438078121318a23701f9f68bb.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-803ae4f7a8810f475153517dc3c4ebae.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -147,7 +147,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../notebooks/05.00-Machine-Learning.html">머신러닝</a></li><li class="breadcrumb-item"><a href="../notebooks/05.13-Kernel-Density-Estimation.html"><span class="chapter-title">In Depth: Kernel Density Estimation</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../notebooks/05.00-Machine-Learning.html">머신러닝</a></li><li class="breadcrumb-item"><a href="../notebooks/05.13-Kernel-Density-Estimation.html"><span class="chapter-title">심층 분석: 커널 밀도 추정</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -194,7 +194,7 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/01.00-IPython-Beyond-Normal-Python.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Jupyter: 일반 Python을 넘어서</span></a>
+  <a href="../notebooks/01.00-IPython-Beyond-Normal-Python.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Jupyter: 일반 파이썬(Python)을 넘어서</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -224,17 +224,17 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/01.06-Errors-and-Debugging.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Errors and Debugging</span></a>
+  <a href="../notebooks/01.06-Errors-and-Debugging.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">오류 및 디버깅</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/01.07-Timing-and-Profiling.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Profiling and Timing Code</span></a>
+  <a href="../notebooks/01.07-Timing-and-Profiling.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">프로파일링 및 타이밍 코드</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/01.08-More-IPython-Resources.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">More IPython Resources</span></a>
+  <a href="../notebooks/01.08-More-IPython-Resources.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">추가 IPython 리소스</span></a>
   </div>
 </li>
       </ul>
@@ -250,52 +250,52 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.00-Introduction-to-NumPy.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Introduction to NumPy</span></a>
+  <a href="../notebooks/02.00-Introduction-to-NumPy.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">NumPy 소개</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.01-Understanding-Data-Types.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Understanding Data Types in Python</span></a>
+  <a href="../notebooks/02.01-Understanding-Data-Types.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">파이썬(Python)의 데이터 유형 이해</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.02-The-Basics-Of-NumPy-Arrays.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">The Basics of NumPy Arrays</span></a>
+  <a href="../notebooks/02.02-The-Basics-Of-NumPy-Arrays.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">NumPy 배열의 기본</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.03-Computation-on-arrays-ufuncs.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Computation on NumPy Arrays: Universal Functions</span></a>
+  <a href="../notebooks/02.03-Computation-on-arrays-ufuncs.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">NumPy 배열 계산: 범용 함수</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.04-Computation-on-arrays-aggregates.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Aggregations: min, max, and Everything in Between</span></a>
+  <a href="../notebooks/02.04-Computation-on-arrays-aggregates.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">집계: 최소, 최대 및 그 사이의 모든 것</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.05-Computation-on-arrays-broadcasting.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Computation on Arrays: Broadcasting</span></a>
+  <a href="../notebooks/02.05-Computation-on-arrays-broadcasting.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">배열 계산: 브로드캐스팅</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.06-Boolean-Arrays-and-Masks.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Comparisons, Masks, and Boolean Logic</span></a>
+  <a href="../notebooks/02.06-Boolean-Arrays-and-Masks.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">비교, 마스크 및 부울 논리</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.07-Fancy-Indexing.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Fancy Indexing</span></a>
+  <a href="../notebooks/02.07-Fancy-Indexing.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">멋진 인덱싱</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.08-Sorting.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Sorting Arrays</span></a>
+  <a href="../notebooks/02.08-Sorting.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">배열 정렬</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.09-Structured-Data-NumPy.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Structured Data: NumPy’s Structured Arrays</span></a>
+  <a href="../notebooks/02.09-Structured-Data-NumPy.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">구조화된 데이터: NumPy의 구조화된 배열</span></a>
   </div>
 </li>
       </ul>
@@ -311,72 +311,72 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.00-Introduction-to-Pandas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Data Manipulation with Pandas</span></a>
+  <a href="../notebooks/03.00-Introduction-to-Pandas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">팬더를 이용한 데이터 조작</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.01-Introducing-Pandas-Objects.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Introducing Pandas Objects</span></a>
+  <a href="../notebooks/03.01-Introducing-Pandas-Objects.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">판다스 객체 소개</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.02-Data-Indexing-and-Selection.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Data Indexing and Selection</span></a>
+  <a href="../notebooks/03.02-Data-Indexing-and-Selection.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">데이터 인덱싱 및 선택</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.03-Operations-in-Pandas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Operating on Data in Pandas</span></a>
+  <a href="../notebooks/03.03-Operations-in-Pandas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Pandas에서 데이터 작업</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.04-Missing-Values.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Handling Missing Data</span></a>
+  <a href="../notebooks/03.04-Missing-Values.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">누락된 데이터 처리</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.05-Hierarchical-Indexing.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Hierarchical Indexing</span></a>
+  <a href="../notebooks/03.05-Hierarchical-Indexing.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">계층적 인덱싱</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.06-Concat-And-Append.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Combining Datasets: concat and append</span></a>
+  <a href="../notebooks/03.06-Concat-And-Append.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">데이터세트 결합: 연결 및 추가</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.07-Merge-and-Join.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Combining Datasets: merge and join</span></a>
+  <a href="../notebooks/03.07-Merge-and-Join.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">데이터세트 결합: 병합 및 조인</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.08-Aggregation-and-Grouping.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Aggregation and Grouping</span></a>
+  <a href="../notebooks/03.08-Aggregation-and-Grouping.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">집계 및 그룹화</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.09-Pivot-Tables.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Pivot Tables</span></a>
+  <a href="../notebooks/03.09-Pivot-Tables.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">피벗 테이블</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.10-Working-With-Strings.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Vectorized String Operations</span></a>
+  <a href="../notebooks/03.10-Working-With-Strings.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">벡터화된 문자열 작업</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.11-Working-with-Time-Series.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Working with Time Series</span></a>
+  <a href="../notebooks/03.11-Working-with-Time-Series.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">시계열 작업</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.12-Performance-Eval-and-Query.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">High-Performance Pandas: eval and query</span></a>
+  <a href="../notebooks/03.12-Performance-Eval-and-Query.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">고성능 Pandas: 평가 및 쿼리</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.13-Further-Resources.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Further Resources</span></a>
+  <a href="../notebooks/03.13-Further-Resources.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">추가 리소스</span></a>
   </div>
 </li>
       </ul>
@@ -392,77 +392,77 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.00-Introduction-To-Matplotlib.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Visualization with Matplotlib</span></a>
+  <a href="../notebooks/04.00-Introduction-To-Matplotlib.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Matplotlib를 사용한 시각화</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.01-Simple-Line-Plots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Simple Line Plots</span></a>
+  <a href="../notebooks/04.01-Simple-Line-Plots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">간단한 선 도표</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.02-Simple-Scatter-Plots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Simple Scatter Plots</span></a>
+  <a href="../notebooks/04.02-Simple-Scatter-Plots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">단순 산점도</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.03-Errorbars.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Visualizing Uncertainties</span></a>
+  <a href="../notebooks/04.03-Errorbars.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">불확실성 시각화</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.04-Density-and-Contour-Plots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Density and Contour Plots</span></a>
+  <a href="../notebooks/04.04-Density-and-Contour-Plots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">밀도 및 등고선 플롯</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.05-Histograms-and-Binnings.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Histograms, Binnings, and Density</span></a>
+  <a href="../notebooks/04.05-Histograms-and-Binnings.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">히스토그램, 비닝 및 밀도</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.06-Customizing-Legends.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Customizing Plot Legends</span></a>
+  <a href="../notebooks/04.06-Customizing-Legends.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">플롯 범례 사용자 정의</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.07-Customizing-Colorbars.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Customizing Colorbars</span></a>
+  <a href="../notebooks/04.07-Customizing-Colorbars.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">컬러바 사용자 정의</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.08-Multiple-Subplots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Multiple Subplots</span></a>
+  <a href="../notebooks/04.08-Multiple-Subplots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">다중 서브플롯</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.09-Text-and-Annotation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Text and Annotation</span></a>
+  <a href="../notebooks/04.09-Text-and-Annotation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">텍스트 및 주석</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.10-Customizing-Ticks.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Customizing Ticks</span></a>
+  <a href="../notebooks/04.10-Customizing-Ticks.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">눈금 사용자 정의</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.11-Settings-and-Stylesheets.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Customizing Matplotlib: Configurations and Stylesheets</span></a>
+  <a href="../notebooks/04.11-Settings-and-Stylesheets.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Matplotlib 사용자 정의: 구성 및 스타일시트</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.12-Three-Dimensional-Plotting.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Three-Dimensional Plotting in Matplotlib</span></a>
+  <a href="../notebooks/04.12-Three-Dimensional-Plotting.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Matplotlib의 3차원 플로팅</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.14-Visualization-With-Seaborn.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Visualization with Seaborn</span></a>
+  <a href="../notebooks/04.14-Visualization-With-Seaborn.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Seaborn을 이용한 시각화</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.15-Further-Resources.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Further Resources</span></a>
+  <a href="../notebooks/04.15-Further-Resources.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">추가 리소스</span></a>
   </div>
 </li>
       </ul>
@@ -478,82 +478,82 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.00-Machine-Learning.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Machine Learning</span></a>
+  <a href="../notebooks/05.00-Machine-Learning.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">머신러닝</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.01-What-Is-Machine-Learning.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">What Is Machine Learning?</span></a>
+  <a href="../notebooks/05.01-What-Is-Machine-Learning.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">머신러닝이란?</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.02-Introducing-Scikit-Learn.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Introducing Scikit-Learn</span></a>
+  <a href="../notebooks/05.02-Introducing-Scikit-Learn.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Scikit-Learn 소개</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.03-Hyperparameters-and-Model-Validation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Hyperparameters and Model Validation</span></a>
+  <a href="../notebooks/05.03-Hyperparameters-and-Model-Validation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">하이퍼파라미터 및 모델 검증</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.04-Feature-Engineering.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Feature Engineering</span></a>
+  <a href="../notebooks/05.04-Feature-Engineering.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">기능 엔지니어링</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.05-Naive-Bayes.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Naive Bayes Classification</span></a>
+  <a href="../notebooks/05.05-Naive-Bayes.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 나이브 베이즈 분류</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.06-Linear-Regression.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Linear Regression</span></a>
+  <a href="../notebooks/05.06-Linear-Regression.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 선형 회귀</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.07-Support-Vector-Machines.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Support Vector Machines</span></a>
+  <a href="../notebooks/05.07-Support-Vector-Machines.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 서포트 벡터 머신</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.08-Random-Forests.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Decision Trees and Random Forests</span></a>
+  <a href="../notebooks/05.08-Random-Forests.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 의사결정 트리 및 랜덤 포레스트</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.09-Principal-Component-Analysis.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Principal Component Analysis</span></a>
+  <a href="../notebooks/05.09-Principal-Component-Analysis.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 주성분 분석</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.10-Manifold-Learning.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Manifold Learning</span></a>
+  <a href="../notebooks/05.10-Manifold-Learning.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 다양한 학습</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.11-K-Means.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: k-Means Clustering</span></a>
+  <a href="../notebooks/05.11-K-Means.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: k-평균 클러스터링</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.12-Gaussian-Mixtures.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Gaussian Mixture Models</span></a>
+  <a href="../notebooks/05.12-Gaussian-Mixtures.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 가우스 혼합 모델</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.13-Kernel-Density-Estimation.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">In Depth: Kernel Density Estimation</span></a>
+  <a href="../notebooks/05.13-Kernel-Density-Estimation.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">심층 분석: 커널 밀도 추정</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.14-Image-Features.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Application: A Face Detection Pipeline</span></a>
+  <a href="../notebooks/05.14-Image-Features.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">응용 분야: 얼굴 감지 파이프라인</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.15-Learning-More.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Further Machine Learning Resources</span></a>
+  <a href="../notebooks/05.15-Learning-More.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">추가 머신러닝(Machine Learning) 리소스</span></a>
   </div>
 </li>
       </ul>
@@ -569,7 +569,7 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/06.00-Figure-Code.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Appendix: Figure Code</span></a>
+  <a href="../notebooks/06.00-Figure-Code.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">부록: 그림 코드</span></a>
   </div>
 </li>
       </ul>
@@ -584,13 +584,13 @@ window.Quarto = {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#motivating-kernel-density-estimation-histograms" id="toc-motivating-kernel-density-estimation-histograms" class="nav-link active" data-scroll-target="#motivating-kernel-density-estimation-histograms">Motivating Kernel Density Estimation: Histograms</a></li>
-  <li><a href="#kernel-density-estimation-in-practice" id="toc-kernel-density-estimation-in-practice" class="nav-link" data-scroll-target="#kernel-density-estimation-in-practice">Kernel Density Estimation in Practice</a></li>
-  <li><a href="#selecting-the-bandwidth-via-cross-validation" id="toc-selecting-the-bandwidth-via-cross-validation" class="nav-link" data-scroll-target="#selecting-the-bandwidth-via-cross-validation">Selecting the Bandwidth via Cross-Validation</a></li>
-  <li><a href="#example-not-so-naive-bayes" id="toc-example-not-so-naive-bayes" class="nav-link" data-scroll-target="#example-not-so-naive-bayes">Example: Not-so-Naive Bayes</a>
+  <li><a href="#커널-밀도-추정-동기-부여-히스토그램" id="toc-커널-밀도-추정-동기-부여-히스토그램" class="nav-link active" data-scroll-target="#커널-밀도-추정-동기-부여-히스토그램">커널 밀도 추정 동기 부여: 히스토그램</a></li>
+  <li><a href="#실제-커널-밀도-추정" id="toc-실제-커널-밀도-추정" class="nav-link" data-scroll-target="#실제-커널-밀도-추정">실제 커널 밀도 추정</a></li>
+  <li><a href="#교차-검증을-통해-대역폭-선택" id="toc-교차-검증을-통해-대역폭-선택" class="nav-link" data-scroll-target="#교차-검증을-통해-대역폭-선택">교차 검증을 통해 대역폭 선택</a></li>
+  <li><a href="#예-그다지-순진하지-않은-베이즈" id="toc-예-그다지-순진하지-않은-베이즈" class="nav-link" data-scroll-target="#예-그다지-순진하지-않은-베이즈">예: 그다지 순진하지 않은 베이즈</a>
   <ul class="collapse">
-  <li><a href="#anatomy-of-a-custom-estimator" id="toc-anatomy-of-a-custom-estimator" class="nav-link" data-scroll-target="#anatomy-of-a-custom-estimator">Anatomy of a Custom Estimator</a></li>
-  <li><a href="#using-our-custom-estimator" id="toc-using-our-custom-estimator" class="nav-link" data-scroll-target="#using-our-custom-estimator">Using Our Custom Estimator</a></li>
+  <li><a href="#맞춤-추정기-분석" id="toc-맞춤-추정기-분석" class="nav-link" data-scroll-target="#맞춤-추정기-분석">맞춤 추정기 분석</a></li>
+  <li><a href="#맞춤-견적-도구-사용" id="toc-맞춤-견적-도구-사용" class="nav-link" data-scroll-target="#맞춤-견적-도구-사용">맞춤 견적 도구 사용</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -598,9 +598,9 @@ window.Quarto = {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../notebooks/05.00-Machine-Learning.html">머신러닝</a></li><li class="breadcrumb-item"><a href="../notebooks/05.13-Kernel-Density-Estimation.html"><span class="chapter-title">In Depth: Kernel Density Estimation</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../notebooks/05.00-Machine-Learning.html">머신러닝</a></li><li class="breadcrumb-item"><a href="../notebooks/05.13-Kernel-Density-Estimation.html"><span class="chapter-title">심층 분석: 커널 밀도 추정</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-title">In Depth: Kernel Density Estimation</span></h1>
+<h1 class="title"><span class="chapter-title">심층 분석: 커널 밀도 추정</span></h1>
 </div>
 
 
@@ -617,18 +617,18 @@ window.Quarto = {
 </header>
 
 
-<p>In the previous chapter we covered Gaussian mixture models, which are a kind of hybrid between a clustering estimator and a density estimator. Recall that a density estimator is an algorithm that takes a <span class="math inline">\(D\)</span>-dimensional dataset and produces an estimate of the <span class="math inline">\(D\)</span>-dimensional probability distribution that data is drawn from. The GMM algorithm accomplishes this by representing the density as a weighted sum of Gaussian distributions. <em>Kernel density estimation</em> (KDE) is in some senses an algorithm that takes the mixture-of-Gaussians idea to its logical extreme: it uses a mixture consisting of one Gaussian component <em>per point</em>, resulting in an essentially nonparametric estimator of density. In this chapter, we will explore the motivation and uses of KDE.</p>
-<p>We begin with the standard imports:</p>
+<p>이전 장에서 우리는 클러스터링 추정기와 밀도 추정기의 일종의 하이브리드인 가우스 혼합 모델을 다루었습니다. 밀도 추정기는 <span class="math inline">\(D\)</span> 차원 데이터세트를 가져와서 데이터가 추출되는 <span class="math inline">\(D\)</span> 차원 확률 분포의 추정치를 생성하는 알고리즘이라는 점을 기억하세요. GMM 알고리즘은 밀도를 가우스 분포의 가중 합으로 표현하여 이를 수행합니다. <em>커널 밀도 추정</em>(KDE)은 어떤 의미에서는 가우스 혼합 아이디어를 논리적 극단으로 끌어올리는 알고리즘입니다. 즉, <em>포인트당</em> 하나의 가우스 구성 요소로 구성된 혼합을 사용하여 본질적으로 비모수적 밀도 추정기를 생성합니다. 이번 장에서는 KDE의 동기와 용도를 살펴보겠습니다.</p>
+<p>표준 가져오기부터 시작합니다.</p>
 <div id="cell-2" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="1">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="op">%</span>matplotlib inline</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>plt.style.use(<span class="st">'seaborn-whitegrid'</span>)</span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<section id="motivating-kernel-density-estimation-histograms" class="level2">
-<h2 class="anchored" data-anchor-id="motivating-kernel-density-estimation-histograms">Motivating Kernel Density Estimation: Histograms</h2>
-<p>As mentioned previously, a density estimator is an algorithm that seeks to model the probability distribution that generated a dataset. For one-dimensional data, you are probably already familiar with one simple density estimator: the histogram. A histogram divides the data into discrete bins, counts the number of points that fall in each bin, and then visualizes the results in an intuitive manner.</p>
-<p>For example, let’s create some data that is drawn from two normal distributions:</p>
+<section id="커널-밀도-추정-동기-부여-히스토그램" class="level2">
+<h2 class="anchored" data-anchor-id="커널-밀도-추정-동기-부여-히스토그램">커널 밀도 추정 동기 부여: 히스토그램</h2>
+<p>앞서 언급했듯이 밀도 추정기는 데이터 세트를 생성한 확률 분포를 모델링하려는 알고리즘입니다. 1차원 데이터의 경우 아마도 이미 하나의 간단한 밀도 추정기인 히스토그램에 익숙할 것입니다. 히스토그램은 데이터를 개별 빈으로 나누고 각 빈에 속하는 포인트 수를 계산한 다음 직관적인 방식으로 결과를 시각화합니다.</p>
+<p>예를 들어 두 정규 분포에서 추출된 일부 데이터를 만들어 보겠습니다.</p>
 <div id="cell-4" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="2">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> make_data(N, f<span class="op">=</span><span class="fl">0.3</span>, rseed<span class="op">=</span><span class="dv">1</span>):</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>    rand <span class="op">=</span> np.random.RandomState(rseed)</span>
@@ -638,7 +638,7 @@ window.Quarto = {
 <span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> make_data(<span class="dv">1000</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<p>We have previously seen that the standard count-based histogram can be created with the <code>plt.hist</code> function. By specifying the <code>density</code> parameter of the histogram, we end up with a normalized histogram where the height of the bins does not reflect counts, but instead reflects probability density (see the following figure):</p>
+<p>우리는 이전에 <code>plt.hist</code> 함수를 사용하여 표준 개수 기반 히스토그램을 만들 수 있다는 것을 살펴보았습니다. 히스토그램의 ‘밀도’ 매개변수를 지정하면 빈의 높이가 개수를 반영하지 않고 대신 확률 밀도를 반영하는 정규화된 히스토그램이 생성됩니다(다음 그림 참조).</p>
 <div id="cell-6" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="3">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>hist <span class="op">=</span> plt.hist(x, bins<span class="op">=</span><span class="dv">30</span>, density<span class="op">=</span><span class="va">True</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
@@ -649,7 +649,7 @@ window.Quarto = {
 </div>
 </div>
 </div>
-<p>Notice that for equal binning, this normalization simply changes the scale on the y-axis, leaving the relative heights essentially the same as in a histogram built from counts. This normalization is chosen so that the total area under the histogram is equal to 1, as we can confirm by looking at the output of the histogram function:</p>
+<p>동일한 비닝의 경우 이 정규화는 단순히 y축의 배율만 변경하고 상대 높이는 기본적으로 개수로 구성된 히스토그램과 동일하게 유지됩니다. 이 정규화는 히스토그램 함수의 출력을 보면 확인할 수 있듯이 히스토그램 아래의 전체 영역이 1이 되도록 선택됩니다.</p>
 <div id="cell-8" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="4">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>density, bins, patches <span class="op">=</span> hist</span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>widths <span class="op">=</span> bins[<span class="dv">1</span>:] <span class="op">-</span> bins[:<span class="op">-</span><span class="dv">1</span>]</span>
@@ -658,7 +658,7 @@ window.Quarto = {
 <pre><code>1.0</code></pre>
 </div>
 </div>
-<p>One of the issues with using a histogram as a density estimator is that the choice of bin size and location can lead to representations that have qualitatively different features. For example, if we look at a version of this data with only 20 points, the choice of how to draw the bins can lead to an entirely different interpretation of the data! Consider this example, visualized in the following figure:</p>
+<p>히스토그램을 밀도 추정기로 사용할 때 발생하는 문제 중 하나는 빈 크기와 위치를 선택하면 질적으로 다른 특징을 갖는 표현이 나올 수 있다는 것입니다. 예를 들어 포인트가 20개뿐인 이 데이터 버전을 보면 구간을 그리는 방법을 선택하면 데이터가 완전히 다르게 해석될 수 있습니다. 다음 그림에 시각화된 이 예를 고려해 보세요.</p>
 <div id="cell-10" class="cell" data-editable="true" data-tags="[]" data-execution_count="5">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> make_data(<span class="dv">20</span>)</span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>bins <span class="op">=</span> np.linspace(<span class="op">-</span><span class="dv">5</span>, <span class="dv">10</span>, <span class="dv">10</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -681,8 +681,8 @@ window.Quarto = {
 </div>
 </div>
 </div>
-<p>On the left, the histogram makes clear that this is a bimodal distribution. On the right, we see a unimodal distribution with a long tail. Without seeing the preceding code, you would probably not guess that these two histograms were built from the same data. With that in mind, how can you trust the intuition that histograms confer? And how might we improve on this?</p>
-<p>Stepping back, we can think of a histogram as a stack of blocks, where we stack one block within each bin on top of each point in the dataset. Let’s view this directly (see the following figure):</p>
+<p>왼쪽의 히스토그램을 보면 이것이 이봉 분포임을 분명히 확인할 수 있습니다. 오른쪽에는 긴 꼬리를 갖는 단봉 분포가 표시됩니다. 앞의 코드를 보지 않고서는 이 두 히스토그램이 동일한 데이터에서 작성되었다는 것을 짐작하지 못할 것입니다. 이를 염두에 두고 히스토그램이 제공하는 직관을 어떻게 신뢰할 수 있습니까? 그리고 이를 어떻게 개선할 수 있을까요?</p>
+<p>한발 물러서서 히스토그램을 블록 스택으로 생각할 수 있습니다. 여기서 데이터 세트의 각 지점 위에 있는 각 빈 내에 하나의 블록을 쌓습니다. 이를 직접 살펴보겠습니다(다음 그림 참조).</p>
 <div id="cell-13" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="7">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots()</span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>bins <span class="op">=</span> np.arange(<span class="op">-</span><span class="dv">3</span>, <span class="dv">8</span>)</span>
@@ -702,7 +702,7 @@ window.Quarto = {
 </div>
 </div>
 </div>
-<p>The problem with our two binnings stems from the fact that the height of the block stack often reflects not the actual density of points nearby, but coincidences of how the bins align with the data points. This misalignment between points and their blocks is a potential cause of the poor histogram results seen here. But what if, instead of stacking the blocks aligned with the <em>bins</em>, we were to stack the blocks aligned with the <em>points they represent</em>? If we do this, the blocks won’t be aligned, but we can add their contributions at each location along the x-axis to find the result. Let’s try this (see the following figure):</p>
+<p>두 개의 비닝의 문제는 블록 스택의 높이가 근처 포인트의 실제 밀도가 아니라 빈이 데이터 포인트와 정렬되는 방식의 일치를 반영하는 경우가 많다는 사실에서 비롯됩니다. 포인트와 해당 블록 간의 이러한 정렬 불량은 여기에 표시된 히스토그램 결과가 좋지 않은 잠재적인 원인입니다. 하지만 <em>빈</em>에 정렬된 블록을 쌓는 대신 <em>빈이 나타내는 지점</em>에 정렬된 블록을 쌓으면 어떻게 될까요? 이렇게 하면 블록이 정렬되지 않지만 x축을 따라 각 위치에 기여도를 추가하여 결과를 찾을 수 있습니다. 이것을 시도해 보겠습니다(다음 그림 참조).</p>
 <div id="cell-15" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="8">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>x_d <span class="op">=</span> np.linspace(<span class="op">-</span><span class="dv">4</span>, <span class="dv">8</span>, <span class="dv">2000</span>)</span>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>density <span class="op">=</span> <span class="bu">sum</span>((<span class="bu">abs</span>(xi <span class="op">-</span> x_d) <span class="op">&lt;</span> <span class="fl">0.5</span>) <span class="cf">for</span> xi <span class="kw">in</span> x)</span>
@@ -719,7 +719,7 @@ window.Quarto = {
 </div>
 </div>
 </div>
-<p>The result looks a bit messy, but it’s a much more robust reflection of the actual data characteristics than is the standard histogram. Still, the rough edges are not aesthetically pleasing, nor are they reflective of any true properties of the data. In order to smooth them out, we might decide to replace the blocks at each location with a smooth function, like a Gaussian. Let’s use a standard normal curve at each point instead of a block (see the following figure):</p>
+<p>결과는 약간 지저분해 보이지만 표준 히스토그램보다 실제 데이터 특성을 훨씬 더 강력하게 반영합니다. 그러나 거친 가장자리는 미적으로 보기 좋지 않으며 데이터의 실제 속성을 반영하지도 않습니다. 이를 부드럽게 하기 위해 각 위치의 블록을 가우스와 같은 부드러운 함수로 대체하기로 결정할 수 있습니다. 블록 대신 각 점에서 표준 정규 곡선을 사용해 보겠습니다(다음 그림 참조).</p>
 <div id="cell-17" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="9">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> scipy.stats <span class="im">import</span> norm</span>
 <span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>x_d <span class="op">=</span> np.linspace(<span class="op">-</span><span class="dv">4</span>, <span class="dv">8</span>, <span class="dv">1000</span>)</span>
@@ -737,14 +737,14 @@ window.Quarto = {
 </div>
 </div>
 </div>
-<p>This smoothed-out plot, with a Gaussian distribution contributed at the location of each input point, gives a much more accurate idea of the shape of the data distribution, and one that has much less variance (i.e., changes much less in response to differences in sampling).</p>
-<p>What we’ve landed on in the last two plots is what’s called kernel density estimation in one dimension: we have placed a “kernel”—a square or “tophat”-shaped kernel in the former, a Gaussian kernel in the latter—at the location of each point, and used their sum as an estimate of density. With this intuition in mind, we’ll now explore kernel density estimation in more detail.</p>
+<p>각 입력 지점의 위치에 가우스 분포가 기여된 이 평활화된 플롯은 데이터 분포의 모양에 대한 훨씬 더 정확한 아이디어를 제공하며 분산이 훨씬 적습니다(즉, 샘플링 차이에 대한 응답으로 훨씬 덜 변경됨).</p>
+<p>마지막 두 플롯에서 우리가 착안한 것은 일차원의 커널 밀도 추정입니다. 전자의 경우 정사각형 또는 “tophat” 모양의 커널, 후자의 경우 가우시안 커널인 “커널”을 각 지점의 위치에 배치하고 그 합을 밀도 추정치로 사용했습니다. 이러한 직관을 염두에 두고 이제 커널 밀도 추정을 더 자세히 살펴보겠습니다.</p>
 </section>
-<section id="kernel-density-estimation-in-practice" class="level2">
-<h2 class="anchored" data-anchor-id="kernel-density-estimation-in-practice">Kernel Density Estimation in Practice</h2>
-<p>The free parameters of kernel density estimation are the <em>kernel</em>, which specifies the shape of the distribution placed at each point, and the <em>kernel bandwidth</em>, which controls the size of the kernel at each point. In practice, there are many kernels you might use for kernel density estimation: in particular, the Scikit-Learn KDE implementation supports six kernels, which you can read about in the <a href="http://scikit-learn.org/stable/modules/density.html">“Density Estimation” section</a> of the documentation.</p>
-<p>While there are several versions of KDE implemented in Python (notably in the SciPy and <code>statsmodels</code> packages), I prefer to use Scikit-Learn’s version because of its efficiency and flexibility. It is implemented in the <code>sklearn.neighbors.KernelDensity</code> estimator, which handles KDE in multiple dimensions with one of six kernels and one of a couple dozen distance metrics. Because KDE can be fairly computationally intensive, the Scikit-Learn estimator uses a tree-based algorithm under the hood and can trade off computation time for accuracy using the <code>atol</code> (absolute tolerance) and <code>rtol</code> (relative tolerance) parameters. The kernel bandwidth can be determined using Scikit-Learn’s standard cross-validation tools, as we will soon see.</p>
-<p>Let’s first show a simple example of replicating the previous plot using the Scikit-Learn <code>KernelDensity</code> estimator (see the following figure):</p>
+<section id="실제-커널-밀도-추정" class="level2">
+<h2 class="anchored" data-anchor-id="실제-커널-밀도-추정">실제 커널 밀도 추정</h2>
+<p>커널 밀도 추정의 자유 매개변수는 각 점에 배치된 분포의 모양을 지정하는 <em>커널</em>과 각 점에서 커널의 크기를 제어하는 ​​<em>커널 대역폭</em>입니다. 실제로 커널 밀도 추정에 사용할 수 있는 커널은 많습니다. 특히 Scikit-Learn KDE 구현은 문서의 <a href="http://scikit-learn.org/stable/modules/density.html">“밀도 추정” 섹션</a>에서 읽을 수 있는 6개의 커널을 지원합니다.</p>
+<p>파이썬(Python)으로 구현된 여러 버전의 KDE가 있지만(특히 SciPy 및 <code>statsmodels</code> 패키지) 저는 효율성과 유연성 때문에 Scikit-Learn 버전을 사용하는 것을 선호합니다. 이는 6개 커널 중 하나와 수십 개의 거리 측정 항목 중 하나를 사용하여 다차원에서 KDE를 처리하는 <code>sklearn.neighbors.KernelDensity</code> 추정기에서 구현됩니다. KDE는 상당히 계산 집약적일 수 있기 때문에 Scikit-Learn 추정기는 내부적으로 트리 기반 알고리즘을 사용하고 <code>atol</code>(절대 허용오차) 및 <code>rtol</code>(상대 허용오차) 매개변수를 사용하여 정확도를 위해 계산 시간을 절충할 수 있습니다. 곧 살펴보겠지만 Scikit-Learn의 표준 교차 검증 도구를 사용하여 커널 대역폭을 결정할 수 있습니다.</p>
+<p>먼저 Scikit-Learn <code>KernelDensity</code> 추정기를 사용하여 이전 플롯을 복제하는 간단한 예를 보여드리겠습니다(다음 그림 참조).</p>
 <div id="cell-20" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="10">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.neighbors <span class="im">import</span> KernelDensity</span>
 <span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a></span>
@@ -766,13 +766,13 @@ window.Quarto = {
 </div>
 </div>
 </div>
-<p>The result here is normalized such that the area under the curve is equal to 1.</p>
+<p>여기의 결과는 곡선 아래 면적이 1이 되도록 정규화됩니다.</p>
 </section>
-<section id="selecting-the-bandwidth-via-cross-validation" class="level2">
-<h2 class="anchored" data-anchor-id="selecting-the-bandwidth-via-cross-validation">Selecting the Bandwidth via Cross-Validation</h2>
-<p>The final estimate produced by a KDE procedure can be quite sensitive to the choice of bandwidth, which is the knob that controls the bias–variance trade-off in the estimate of density. Too narrow a bandwidth leads to a high-variance estimate (i.e., overfitting), where the presence or absence of a single point makes a large difference. Too wide a bandwidth leads to a high-bias estimate (i.e., underfitting), where the structure in the data is washed out by the wide kernel.</p>
-<p>There is a long history in statistics of methods to quickly estimate the best bandwidth based on rather stringent assumptions about the data: if you look up the KDE implementations in the SciPy and <code>statsmodels</code> packages, for example, you will see implementations based on some of these rules.</p>
-<p>In machine learning contexts, we’ve seen that such hyperparameter tuning often is done empirically via a cross-validation approach. With this in mind, Scikit-Learn’s <code>KernelDensity</code> estimator is designed such that it can be used directly within the package’s standard grid search tools. Here we will use <code>GridSearchCV</code> to optimize the bandwidth for the preceding dataset. Because we are looking at such a small dataset, we will use leave-one-out cross-validation, which minimizes the reduction in training set size for each cross-validation trial:</p>
+<section id="교차-검증을-통해-대역폭-선택" class="level2">
+<h2 class="anchored" data-anchor-id="교차-검증을-통해-대역폭-선택">교차 검증을 통해 대역폭 선택</h2>
+<p>KDE 절차에 의해 생성된 최종 추정치는 밀도 추정에서 편향-분산 균형을 제어하는 ​​손잡이인 대역폭 선택에 매우 민감할 수 있습니다. 대역폭이 너무 좁으면 단일 지점의 존재 여부에 따라 큰 차이가 발생하는 높은 분산 추정(즉, 과적합)이 발생합니다. 대역폭이 너무 넓으면 높은 편향 추정(즉, 과소적합)이 발생하여 데이터의 구조가 넓은 커널에 의해 씻겨 나가게 됩니다.</p>
+<p>데이터에 대한 다소 엄격한 가정을 기반으로 최상의 대역폭을 신속하게 추정하는 방법에 대한 통계의 오랜 역사가 있습니다. 예를 들어 SciPy 및 <code>statsmodels</code> 패키지에서 KDE 구현을 찾아보면 이러한 규칙 중 일부를 기반으로 한 구현을 살펴볼 수 있습니다.</p>
+<p>머신러닝(Machine Learning) 맥락에서 우리는 이러한 초매개변수 조정이 교차 검증 접근 방식을 통해 경험적으로 수행되는 경우가 많다는 것을 확인했습니다. 이를 염두에 두고 Scikit-Learn의 ‘KernelDensity’ 추정기는 패키지의 표준 그리드 검색 도구 내에서 직접 사용할 수 있도록 설계되었습니다. 여기서는 <code>GridSearchCV</code>를 사용하여 이전 데이터 세트의 대역폭을 최적화합니다. 우리는 이렇게 작은 데이터 세트를 보고 있기 때문에 각 교차 검증 시도에 대한 훈련 세트 크기의 감소를 최소화하는 Leave-One-Out 교차 검증을 사용할 것입니다.</p>
 <div id="cell-23" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="11">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.model_selection <span class="im">import</span> GridSearchCV</span>
 <span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.model_selection <span class="im">import</span> LeaveOneOut</span>
@@ -783,28 +783,28 @@ window.Quarto = {
 <span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a>                    cv<span class="op">=</span>LeaveOneOut())</span>
 <span id="cb12-8"><a href="#cb12-8" aria-hidden="true" tabindex="-1"></a>grid.fit(x[:, <span class="va">None</span>])<span class="op">;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<p>Now we can find the choice of bandwidth that maximizes the score (which in this case defaults to the log-likelihood):</p>
+<p>이제 점수를 최대화하는 대역폭 선택을 찾을 수 있습니다(이 경우 기본값은 로그 우도입니다).</p>
 <div id="cell-25" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="12">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>grid.best_params_</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="12">
 <pre><code>{'bandwidth': 1.1233240329780276}</code></pre>
 </div>
 </div>
-<p>The optimal bandwidth happens to be very close to what we used in the example plot earlier, where the bandwidth was 1.0 (i.e., the default width of <code>scipy.stats.norm</code>).</p>
+<p>최적의 대역폭은 대역폭이 1.0(즉, <code>scipy.stats.norm</code>의 기본 너비)인 이전 예제 플롯에서 사용한 것과 매우 가깝습니다.</p>
 </section>
-<section id="example-not-so-naive-bayes" class="level2">
-<h2 class="anchored" data-anchor-id="example-not-so-naive-bayes">Example: Not-so-Naive Bayes</h2>
-<p>This example looks at Bayesian generative classification with KDE, and demonstrates how to use the Scikit-Learn architecture to create a custom estimator.</p>
-<p>In <a href="../notebooks/05.05-Naive-Bayes.html">In Depth: Naive Bayes Classification</a> we explored naive Bayesian classification, in which we create a simple generative model for each class, and use these models to build a fast classifier. For Gaussian naive Bayes, the generative model is a simple axis-aligned Gaussian. With a density estimation algorithm like KDE, we can remove the “naive” element and perform the same classification with a more sophisticated generative model for each class. It’s still Bayesian classification, but it’s no longer naive.</p>
-<p>The general approach for generative classification is this:</p>
+<section id="예-그다지-순진하지-않은-베이즈" class="level2">
+<h2 class="anchored" data-anchor-id="예-그다지-순진하지-않은-베이즈">예: 그다지 순진하지 않은 베이즈</h2>
+<p>이 예에서는 KDE를 사용한 베이지안 생성 분류를 살펴보고 Scikit-Learn 아키텍처를 사용하여 사용자 정의 추정기를 만드는 방법을 보여줍니다.</p>
+<p><a href="../notebooks/05.05-Naive-Bayes.html">심층: Naive Bayes Classification</a>에서는 각 클래스에 대한 간단한 생성 모델을 생성하고 이러한 모델을 사용하여 빠른 분류기를 구축하는 순진한 베이지안 분류를 살펴보았습니다. Gaussian Naive Bayes의 경우 생성 모델은 단순 축 정렬 가우스입니다. KDE와 같은 밀도 추정 알고리즘을 사용하면 “순진한” 요소를 제거하고 각 클래스에 대해 보다 정교한 생성 모델을 사용하여 동일한 분류를 수행할 수 있습니다. 여전히 베이지안 분류이지만 더 이상 순진하지 않습니다.</p>
+<p>생성 분류에 대한 일반적인 접근 방식은 다음과 같습니다.</p>
 <ol type="1">
-<li><p>Split the training data by label.</p></li>
-<li><p>For each set, fit a KDE to obtain a generative model of the data. This allows you, for any observation <span class="math inline">\(x\)</span> and label <span class="math inline">\(y\)</span>, to compute a likelihood <span class="math inline">\(P(x~|~y)\)</span>.</p></li>
-<li><p>From the number of examples of each class in the training set, compute the <em>class prior</em>, <span class="math inline">\(P(y)\)</span>.</p></li>
-<li><p>For an unknown point <span class="math inline">\(x\)</span>, the posterior probability for each class is <span class="math inline">\(P(y~|~x) \propto P(x~|~y)P(y)\)</span>. The class that maximizes this posterior is the label assigned to the point.</p></li>
+<li><p>훈련 데이터를 라벨별로 분할합니다.</p></li>
+<li><p>각 세트에 대해 KDE를 피팅하여 데이터 생성 모델을 얻습니다. 이를 통해 모든 관찰 <span class="math inline">\(x\)</span> 및 레이블 <span class="math inline">\(y\)</span>에 대해 <span class="math inline">\(P(x~|~y)\)</span> 가능성을 계산할 수 있습니다.</p></li>
+<li><p>훈련 세트에 있는 각 클래스의 예 수에서 <em>사전 클래스</em> <span class="math inline">\(P(y)\)</span>를 계산합니다.</p></li>
+<li><p>알려지지 않은 점 <span class="math inline">\(x\)</span>에 대해 각 클래스의 사후 확률은 <span class="math inline">\(P(y~|~x) \propto P(x~|~y)P(y)\)</span>입니다. 이 사후를 최대화하는 클래스는 점에 할당된 레이블입니다.</p></li>
 </ol>
-<p>The algorithm is straightforward and intuitive to understand; the more difficult piece is couching it within the Scikit-Learn framework in order to make use of the grid search and cross-validation architecture.</p>
-<p>This is the code that implements the algorithm within the Scikit-Learn framework; we will step through it following the code block:</p>
+<p>알고리즘은 이해하기 간단하고 직관적입니다. 더 어려운 부분은 그리드 검색 및 교차 검증 아키텍처를 활용하기 위해 Scikit-Learn 프레임워크 내에 이를 배치하는 것입니다.</p>
+<p>이것은 Scikit-Learn 프레임워크 내에서 알고리즘을 구현하는 코드입니다. 코드 블록을 따라 단계별로 살펴보겠습니다.</p>
 <div id="cell-28" class="cell" data-editable="true" data-tags="[]" data-execution_count="13">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.base <span class="im">import</span> BaseEstimator, ClassifierMixin</span>
 <span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a></span>
@@ -842,74 +842,58 @@ window.Quarto = {
 <span id="cb15-34"><a href="#cb15-34" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> predict(<span class="va">self</span>, X):</span>
 <span id="cb15-35"><a href="#cb15-35" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="va">self</span>.classes_[np.argmax(<span class="va">self</span>.predict_proba(X), <span class="dv">1</span>)]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<section id="anatomy-of-a-custom-estimator" class="level3">
-<h3 class="anchored" data-anchor-id="anatomy-of-a-custom-estimator">Anatomy of a Custom Estimator</h3>
-<p>Let’s step through this code and discuss the essential features:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.base <span class="im">import</span> BaseEstimator, ClassifierMixin</span>
-<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> KDEClassifier(BaseEstimator, ClassifierMixin):</span>
-<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""Bayesian generative classification based on KDE</span></span>
-<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a><span class="co">    </span></span>
-<span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a><span class="co">    Parameters</span></span>
-<span id="cb16-7"><a href="#cb16-7" aria-hidden="true" tabindex="-1"></a><span class="co">    ----------</span></span>
-<span id="cb16-8"><a href="#cb16-8" aria-hidden="true" tabindex="-1"></a><span class="co">    bandwidth : float</span></span>
-<span id="cb16-9"><a href="#cb16-9" aria-hidden="true" tabindex="-1"></a><span class="co">        the kernel bandwidth within each class</span></span>
-<span id="cb16-10"><a href="#cb16-10" aria-hidden="true" tabindex="-1"></a><span class="co">    kernel : str</span></span>
-<span id="cb16-11"><a href="#cb16-11" aria-hidden="true" tabindex="-1"></a><span class="co">        the kernel name, passed to KernelDensity</span></span>
-<span id="cb16-12"><a href="#cb16-12" aria-hidden="true" tabindex="-1"></a><span class="co">    """</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>Each estimator in Scikit-Learn is a class, and it is most convenient for this class to inherit from the <code>BaseEstimator</code> class as well as the appropriate mixin, which provides standard functionality. For example, here the <code>BaseEstimator</code> contains (among other things) the logic necessary to clone/copy an estimator for use in a cross-validation procedure, and <code>ClassifierMixin</code> defines a default <code>score</code> method used by such routines. We also provide a docstring, which will be captured by IPython’s help functionality (see <a href="../notebooks/01.01-Help-And-Documentation.html">Help and Documentation in IPython</a>).</p>
-<p>Next comes the class initialization method:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, bandwidth<span class="op">=</span><span class="fl">1.0</span>, kernel<span class="op">=</span><span class="st">'gaussian'</span>):</span>
-<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.bandwidth <span class="op">=</span> bandwidth</span>
-<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.kernel <span class="op">=</span> kernel</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>This is the actual code that is executed when the object is instantiated with <code>KDEClassifier</code>. In Scikit-Learn, it is important that <em>initialization contains no operations</em> other than assigning the passed values by name to <code>self</code>. This is due to the logic contained in <code>BaseEstimator</code> required for cloning and modifying estimators for cross-validation, grid search, and other functions. Similarly, all arguments to <code>__init__</code> should be explicit: i.e., <code>*args</code> or <code>**kwargs</code> should be avoided, as they will not be correctly handled within cross-validation routines.</p>
-<p>Next comes the <code>fit</code> method, where we handle training data:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> fit(<span class="va">self</span>, X, y):</span>
-<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.classes_ <span class="op">=</span> np.sort(np.unique(y))</span>
-<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>        training_sets <span class="op">=</span> [X[y <span class="op">==</span> yi] <span class="cf">for</span> yi <span class="kw">in</span> <span class="va">self</span>.classes_]</span>
-<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.models_ <span class="op">=</span> [KernelDensity(bandwidth<span class="op">=</span><span class="va">self</span>.bandwidth,</span>
-<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a>                                      kernel<span class="op">=</span><span class="va">self</span>.kernel).fit(Xi)</span>
-<span id="cb18-6"><a href="#cb18-6" aria-hidden="true" tabindex="-1"></a>                        <span class="cf">for</span> Xi <span class="kw">in</span> training_sets]</span>
-<span id="cb18-7"><a href="#cb18-7" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.logpriors_ <span class="op">=</span> [np.log(Xi.shape[<span class="dv">0</span>] <span class="op">/</span> X.shape[<span class="dv">0</span>])</span>
-<span id="cb18-8"><a href="#cb18-8" aria-hidden="true" tabindex="-1"></a>                           <span class="cf">for</span> Xi <span class="kw">in</span> training_sets]</span>
-<span id="cb18-9"><a href="#cb18-9" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="va">self</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>Here we find the unique classes in the training data, train a <code>KernelDensity</code> model for each class, and compute the class priors based on the number of input samples. Finally, <code>fit</code> should always return <code>self</code> so that we can chain commands. For example:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>label <span class="op">=</span> model.fit(X, y).predict(X)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>Notice that each persistent result of the fit is stored with a trailing underscore (e.g., <code>self.logpriors_</code>). This is a convention used in Scikit-Learn so that you can quickly scan the members of an estimator (using IPython’s tab completion) and see exactly which members are fit to training data.</p>
-<p>Finally, we have the logic for predicting labels on new data:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb20"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> predict_proba(<span class="va">self</span>, X):</span>
-<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>        logprobs <span class="op">=</span> np.vstack([model.score_samples(X)</span>
-<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a>                              <span class="cf">for</span> model <span class="kw">in</span> <span class="va">self</span>.models_]).T</span>
-<span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a>        result <span class="op">=</span> np.exp(logprobs <span class="op">+</span> <span class="va">self</span>.logpriors_)</span>
-<span id="cb20-5"><a href="#cb20-5" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> result <span class="op">/</span> result.<span class="bu">sum</span>(axis<span class="op">=</span><span class="dv">1</span>, keepdims<span class="op">=</span><span class="va">True</span>)</span>
-<span id="cb20-6"><a href="#cb20-6" aria-hidden="true" tabindex="-1"></a>        </span>
-<span id="cb20-7"><a href="#cb20-7" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> predict(<span class="va">self</span>, X):</span>
-<span id="cb20-8"><a href="#cb20-8" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="va">self</span>.classes_[np.argmax(<span class="va">self</span>.predict_proba(X), <span class="dv">1</span>)]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>Because this is a probabilistic classifier, we first implement <code>predict_proba</code>, which returns an array of class probabilities of shape <code>[n_samples, n_classes]</code>. Entry <code>[i, j]</code> of this array is the posterior probability that sample <code>i</code> is a member of class <code>j</code>, computed by multiplying the likelihood by the class prior and normalizing.</p>
-<p>The <code>predict</code> method uses these probabilities and simply returns the class with the largest probability.</p>
+<section id="맞춤-추정기-분석" class="level3">
+<h3 class="anchored" data-anchor-id="맞춤-추정기-분석">맞춤 추정기 분석</h3>
+<p>이 코드를 단계별로 살펴보고 필수 기능에 대해 논의해 보겠습니다.</p>
+<p>``파이썬 sklearn.base에서 BaseEstimator, ClassifierMixin 가져오기</p>
+<p>클래스 KDEClassifier(BaseEstimator, ClassifierMixin): “““KDE 기반 베이지안 생성 분류</p>
+<p>매개변수 ———- 대역폭 : 부동 각 클래스 내의 커널 대역폭 커널 : str KernelDensity에 전달된 커널 이름 ““”</p>
+<pre><code>
+Scikit-Learn의 각 추정기는 클래스이며, 이 클래스는 'BaseEstimator' 클래스와 표준 기능을 제공하는 적절한 믹스인에서 상속하는 것이 가장 편리합니다.
+예를 들어 여기서 `BaseEstimator`에는 교차 검증 절차에 사용하기 위해 추정기를 복제/복사하는 데 필요한 논리가 포함되어 있으며 `ClassifierMixin`은 이러한 루틴에서 사용되는 기본 `score` 방법을 정의합니다.
+또한 IPython의 도움말 기능으로 캡처되는 독스트링도 제공합니다([IPython의 도움말과 문서](01.01-Help-And-Documentation.ipynb) 참조).
+
+다음은 클래스 초기화 방법입니다.
+
+``파이썬
+def __init__(self, 대역폭=1.0, 커널='가우스'):
+self.bandwidth = 대역폭
+self.kernel = 커널</code></pre>
+<p>이는 객체가 <code>KDEClassifier</code>로 인스턴스화될 때 실행되는 실제 코드입니다. Scikit-Learn에서는 <em>초기화에는 전달된 값을 <code>self</code>에 이름으로 할당하는 것 외에 다른 작업이 포함되지 않는다는 것이 중요합니다</em>. 이는 교차 검증, 그리드 검색 및 기타 기능을 위한 추정기를 복제하고 수정하는 데 필요한 ’BaseEstimator’에 포함된 논리 때문입니다. 마찬가지로 <code>__init__</code>에 대한 모든 인수는 명시적이어야 합니다. 즉, <code>*args</code> 또는 <code>**kwargs</code>는 교차 검증 루틴 내에서 올바르게 처리되지 않으므로 피해야 합니다.</p>
+<p>다음은 학습 데이터를 처리하는 ‘fit’ 메서드입니다.</p>
+<p>``파이썬 def fit(self, X, y): self.classes_ = np.sort(np.unique(y)) training_sets = [self.classes_의 yi에 대한 X[y == yi]] self.models_ = [KernelDensity(대역폭=self.bandwidth, 커널=self.kernel).fit(Xi) training_sets의 Xi용] self.logpriors_ = [np.log(Xi.shape[0] / X.shape[0]) training_sets의 Xi용] 자기 자신을 돌려보내다</p>
+<pre><code>
+여기에서는 훈련 데이터에서 고유한 클래스를 찾고, 각 클래스에 대해 `KernelDensity` 모델을 훈련하고, 입력 샘플 수를 기반으로 클래스 사전율을 계산합니다.
+마지막으로 'fit'은 명령을 연결할 수 있도록 항상 'self'를 반환해야 합니다. 예를 들어:
+``파이썬
+라벨 = model.fit(X, y).predict(X)</code></pre>
+<p>각 피팅의 지속적인 결과는 후행 밑줄(예: <code>self.logpriors_</code>)과 함께 저장됩니다. 이는 추정기의 멤버를 빠르게 스캔하고(IPython의 탭 완성 기능을 사용하여) 훈련 데이터에 적합한 멤버를 정확히 확인할 수 있도록 Scikit-Learn에서 사용되는 규칙입니다.</p>
+<p>마지막으로 새 데이터에 대한 레이블을 예측하는 논리가 있습니다. ``파이썬 def 예측_프로바(self, X): logprobs = np.vstack([model.score_samples(X)) self.models_]).T의 모델용 결과 = np.exp(logprobs + self.logpriors_) 결과 / 결과를 반환합니다.sum(axis=1, keepdims=True)</p>
+<p>def 예측(self, X): self.classes_[np.argmax(self.predict_proba(X), 1)] 반환 ```<code>이는 확률적 분류기이므로 먼저 '[n_samples, n_classes]' 형태의 클래스 확률 배열을 반환하는 'predict_proba'를 구현합니다. 이 배열의 항목</code>[i, j]<code>는 샘플</code>i<code>가</code>j` 클래스의 구성원일 사후 확률로, 우도에 사전 클래스를 곱하고 정규화하여 계산됩니다.</p>
+<p>‘predict’ 메서드는 이러한 확률을 사용하고 가장 큰 확률을 가진 클래스를 반환합니다.</p>
 </section>
-<section id="using-our-custom-estimator" class="level3">
-<h3 class="anchored" data-anchor-id="using-our-custom-estimator">Using Our Custom Estimator</h3>
-<p>Let’s try this custom estimator on a problem we have seen before: the classification of handwritten digits. Here we will load the digits and compute the cross-validation score for a range of candidate bandwidths using the <code>GridSearchCV</code> meta-estimator (refer back to <a href="../notebooks/05.03-Hyperparameters-and-Model-Validation.html">Hyperparameters and Model Validation</a>):</p>
+<section id="맞춤-견적-도구-사용" class="level3">
+<h3 class="anchored" data-anchor-id="맞춤-견적-도구-사용">맞춤 견적 도구 사용</h3>
+<p>이전에 본 문제인 손으로 쓴 숫자 분류에 대해 이 사용자 정의 추정기를 사용해 보겠습니다. 여기에서는 <code>GridSearchCV</code> 메타 추정기를 사용하여 숫자를 로드하고 다양한 후보 대역폭에 대한 교차 검증 점수를 계산합니다(<a href="../notebooks/05.03-Hyperparameters-and-Model-Validation.html">하이퍼파라미터 및 모델 검증</a> 참조).</p>
 <div id="cell-35" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="14">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.datasets <span class="im">import</span> load_digits</span>
-<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.model_selection <span class="im">import</span> GridSearchCV</span>
-<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a>digits <span class="op">=</span> load_digits()</span>
-<span id="cb21-5"><a href="#cb21-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb21-6"><a href="#cb21-6" aria-hidden="true" tabindex="-1"></a>grid <span class="op">=</span> GridSearchCV(KDEClassifier(),</span>
-<span id="cb21-7"><a href="#cb21-7" aria-hidden="true" tabindex="-1"></a>                    {<span class="st">'bandwidth'</span>: np.logspace(<span class="dv">0</span>, <span class="dv">2</span>, <span class="dv">100</span>)})</span>
-<span id="cb21-8"><a href="#cb21-8" aria-hidden="true" tabindex="-1"></a>grid.fit(digits.data, digits.target)<span class="op">;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.datasets <span class="im">import</span> load_digits</span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.model_selection <span class="im">import</span> GridSearchCV</span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a>digits <span class="op">=</span> load_digits()</span>
+<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-6"><a href="#cb18-6" aria-hidden="true" tabindex="-1"></a>grid <span class="op">=</span> GridSearchCV(KDEClassifier(),</span>
+<span id="cb18-7"><a href="#cb18-7" aria-hidden="true" tabindex="-1"></a>                    {<span class="st">'bandwidth'</span>: np.logspace(<span class="dv">0</span>, <span class="dv">2</span>, <span class="dv">100</span>)})</span>
+<span id="cb18-8"><a href="#cb18-8" aria-hidden="true" tabindex="-1"></a>grid.fit(digits.data, digits.target)<span class="op">;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<p>Next we can plot the cross-validation score as a function of bandwidth (see the following figure):</p>
+<p>다음으로 교차 검증 점수를 대역폭의 함수로 표시할 수 있습니다(다음 그림 참조).</p>
 <div id="cell-37" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="15">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb22"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots()</span>
-<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>ax.semilogx(np.array(grid.cv_results_[<span class="st">'param_bandwidth'</span>]),</span>
-<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a>            grid.cv_results_[<span class="st">'mean_test_score'</span>])</span>
-<span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a>ax.<span class="bu">set</span>(title<span class="op">=</span><span class="st">'KDE Model Performance'</span>, ylim<span class="op">=</span>(<span class="dv">0</span>, <span class="dv">1</span>),</span>
-<span id="cb22-5"><a href="#cb22-5" aria-hidden="true" tabindex="-1"></a>       xlabel<span class="op">=</span><span class="st">'bandwidth'</span>, ylabel<span class="op">=</span><span class="st">'accuracy'</span>)</span>
-<span id="cb22-6"><a href="#cb22-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f'best param: </span><span class="sc">{</span>grid<span class="sc">.</span>best_params_<span class="sc">}</span><span class="ss">'</span>)</span>
-<span id="cb22-7"><a href="#cb22-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f'accuracy = </span><span class="sc">{</span>grid<span class="sc">.</span>best_score_<span class="sc">}</span><span class="ss">'</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots()</span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>ax.semilogx(np.array(grid.cv_results_[<span class="st">'param_bandwidth'</span>]),</span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a>            grid.cv_results_[<span class="st">'mean_test_score'</span>])</span>
+<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a>ax.<span class="bu">set</span>(title<span class="op">=</span><span class="st">'KDE Model Performance'</span>, ylim<span class="op">=</span>(<span class="dv">0</span>, <span class="dv">1</span>),</span>
+<span id="cb19-5"><a href="#cb19-5" aria-hidden="true" tabindex="-1"></a>       xlabel<span class="op">=</span><span class="st">'bandwidth'</span>, ylabel<span class="op">=</span><span class="st">'accuracy'</span>)</span>
+<span id="cb19-6"><a href="#cb19-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f'best param: </span><span class="sc">{</span>grid<span class="sc">.</span>best_params_<span class="sc">}</span><span class="ss">'</span>)</span>
+<span id="cb19-7"><a href="#cb19-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f'accuracy = </span><span class="sc">{</span>grid<span class="sc">.</span>best_score_<span class="sc">}</span><span class="ss">'</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>best param: {'bandwidth': 6.135907273413174}
 accuracy = 0.9677298050139276</code></pre>
@@ -922,22 +906,22 @@ accuracy = 0.9677298050139276</code></pre>
 </div>
 </div>
 </div>
-<p>This indicates that our KDE classifier reaches a cross-validation accuracy of over 96%, compared to around 80% for the naive Bayes classifier:</p>
+<p>이는 Naive Bayes 분류기의 교차 검증 정확도가 약 80%인 것과 비교하여 KDE 분류기가 96% 이상의 교차 검증 정확도에 도달했음을 나타냅니다.</p>
 <div id="cell-39" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="16">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb24"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.naive_bayes <span class="im">import</span> GaussianNB</span>
-<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.model_selection <span class="im">import</span> cross_val_score</span>
-<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a>cross_val_score(GaussianNB(), digits.data, digits.target).mean()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.naive_bayes <span class="im">import</span> GaussianNB</span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.model_selection <span class="im">import</span> cross_val_score</span>
+<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a>cross_val_score(GaussianNB(), digits.data, digits.target).mean()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="16">
 <pre><code>0.8069281956050759</code></pre>
 </div>
 </div>
-<p>One benefit of such a generative classifier is interpretability of results: for each unknown sample, we not only get a probabilistic classification, but a <em>full model</em> of the distribution of points we are comparing it to! If desired, this offers an intuitive window into the reasons for a particular classification that algorithms like SVMs and random forests tend to obscure.</p>
-<p>If you would like to take this further, here are some ideas for improvements that could be made to our KDE classifier model:</p>
+<p>이러한 생성 분류기의 한 가지 이점은 결과의 해석 가능성입니다. 각각의 알려지지 않은 샘플에 대해 확률적 분류뿐만 아니라 비교하는 포인트 분포의 <em>전체 모델</em>을 얻을 수 있습니다! 원하는 경우 이는 SVM 및 랜덤 포레스트와 같은 알고리즘이 모호해지는 경향이 있는 특정 분류의 이유에 대한 직관적인 창을 제공합니다.</p>
+<p>더 나아가 KDE 분류기 모델을 개선할 수 있는 몇 가지 아이디어를 소개합니다:</p>
 <ul>
-<li>You could allow the bandwidth in each class to vary independently.</li>
-<li>You could optimize these bandwidths not based on their prediction score, but on the likelihood of the training data under the generative model within each class (i.e.&nbsp;use the scores from <code>KernelDensity</code> itself rather than the global prediction accuracy).</li>
+<li>각 클래스의 대역폭을 독립적으로 변경할 수 있습니다.</li>
+<li>예측 점수를 기준으로 하지 않고 각 클래스 내의 생성 모델에 따른 훈련 데이터의 가능성을 기준으로 이러한 대역폭을 최적화할 수 있습니다(즉, 전체 예측 정확도 대신 ‘KernelDensity’ 자체의 점수를 사용함).</li>
 </ul>
-<p>Finally, if you want some practice building your own estimator, you might tackle building a similar Bayesian classifier using Gaussian mixture models instead of KDE.</p>
+<p>마지막으로, 자신만의 추정기를 만드는 연습을 하고 싶다면 KDE 대신 가우스 혼합 모델을 사용하여 유사한 베이지안 분류기를 만드는 것을 시도해 살펴볼 수 있습니다.</p>
 
 
 </section>
@@ -1346,13 +1330,13 @@ accuracy = 0.9677298050139276</code></pre>
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../notebooks/05.12-Gaussian-Mixtures.html" class="pagination-link" aria-label="In Depth: Gaussian Mixture Models">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">In Depth: Gaussian Mixture Models</span></span>
+      <a href="../notebooks/05.12-Gaussian-Mixtures.html" class="pagination-link" aria-label="심층 분석: 가우스 혼합 모델">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">심층 분석: 가우스 혼합 모델</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../notebooks/05.14-Image-Features.html" class="pagination-link" aria-label="Application: A Face Detection Pipeline">
-        <span class="nav-page-text"><span class="chapter-title">Application: A Face Detection Pipeline</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../notebooks/05.14-Image-Features.html" class="pagination-link" aria-label="응용 분야: 얼굴 감지 파이프라인">
+        <span class="nav-page-text"><span class="chapter-title">응용 분야: 얼굴 감지 파이프라인</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

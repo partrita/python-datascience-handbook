@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Customizing Ticks – 파이썬 데이터 사이언스 핸드북</title>
+<title>눈금 사용자 정의 – 파이썬 데이터 사이언스 핸드북</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -77,7 +77,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-3778d3e438078121318a23701f9f68bb.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-803ae4f7a8810f475153517dc3c4ebae.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -147,7 +147,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../notebooks/04.00-Introduction-To-Matplotlib.html">Matplotlib을 이용한 시각화</a></li><li class="breadcrumb-item"><a href="../notebooks/04.10-Customizing-Ticks.html"><span class="chapter-title">Customizing Ticks</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../notebooks/04.00-Introduction-To-Matplotlib.html">Matplotlib을 이용한 시각화</a></li><li class="breadcrumb-item"><a href="../notebooks/04.10-Customizing-Ticks.html"><span class="chapter-title">눈금 사용자 정의</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -194,7 +194,7 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/01.00-IPython-Beyond-Normal-Python.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Jupyter: 일반 Python을 넘어서</span></a>
+  <a href="../notebooks/01.00-IPython-Beyond-Normal-Python.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Jupyter: 일반 파이썬(Python)을 넘어서</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -224,17 +224,17 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/01.06-Errors-and-Debugging.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Errors and Debugging</span></a>
+  <a href="../notebooks/01.06-Errors-and-Debugging.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">오류 및 디버깅</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/01.07-Timing-and-Profiling.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Profiling and Timing Code</span></a>
+  <a href="../notebooks/01.07-Timing-and-Profiling.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">프로파일링 및 타이밍 코드</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/01.08-More-IPython-Resources.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">More IPython Resources</span></a>
+  <a href="../notebooks/01.08-More-IPython-Resources.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">추가 IPython 리소스</span></a>
   </div>
 </li>
       </ul>
@@ -250,52 +250,52 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.00-Introduction-to-NumPy.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Introduction to NumPy</span></a>
+  <a href="../notebooks/02.00-Introduction-to-NumPy.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">NumPy 소개</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.01-Understanding-Data-Types.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Understanding Data Types in Python</span></a>
+  <a href="../notebooks/02.01-Understanding-Data-Types.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">파이썬(Python)의 데이터 유형 이해</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.02-The-Basics-Of-NumPy-Arrays.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">The Basics of NumPy Arrays</span></a>
+  <a href="../notebooks/02.02-The-Basics-Of-NumPy-Arrays.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">NumPy 배열의 기본</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.03-Computation-on-arrays-ufuncs.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Computation on NumPy Arrays: Universal Functions</span></a>
+  <a href="../notebooks/02.03-Computation-on-arrays-ufuncs.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">NumPy 배열 계산: 범용 함수</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.04-Computation-on-arrays-aggregates.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Aggregations: min, max, and Everything in Between</span></a>
+  <a href="../notebooks/02.04-Computation-on-arrays-aggregates.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">집계: 최소, 최대 및 그 사이의 모든 것</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.05-Computation-on-arrays-broadcasting.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Computation on Arrays: Broadcasting</span></a>
+  <a href="../notebooks/02.05-Computation-on-arrays-broadcasting.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">배열 계산: 브로드캐스팅</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.06-Boolean-Arrays-and-Masks.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Comparisons, Masks, and Boolean Logic</span></a>
+  <a href="../notebooks/02.06-Boolean-Arrays-and-Masks.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">비교, 마스크 및 부울 논리</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.07-Fancy-Indexing.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Fancy Indexing</span></a>
+  <a href="../notebooks/02.07-Fancy-Indexing.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">멋진 인덱싱</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.08-Sorting.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Sorting Arrays</span></a>
+  <a href="../notebooks/02.08-Sorting.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">배열 정렬</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.09-Structured-Data-NumPy.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Structured Data: NumPy’s Structured Arrays</span></a>
+  <a href="../notebooks/02.09-Structured-Data-NumPy.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">구조화된 데이터: NumPy의 구조화된 배열</span></a>
   </div>
 </li>
       </ul>
@@ -311,72 +311,72 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.00-Introduction-to-Pandas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Data Manipulation with Pandas</span></a>
+  <a href="../notebooks/03.00-Introduction-to-Pandas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">팬더를 이용한 데이터 조작</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.01-Introducing-Pandas-Objects.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Introducing Pandas Objects</span></a>
+  <a href="../notebooks/03.01-Introducing-Pandas-Objects.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">판다스 객체 소개</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.02-Data-Indexing-and-Selection.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Data Indexing and Selection</span></a>
+  <a href="../notebooks/03.02-Data-Indexing-and-Selection.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">데이터 인덱싱 및 선택</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.03-Operations-in-Pandas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Operating on Data in Pandas</span></a>
+  <a href="../notebooks/03.03-Operations-in-Pandas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Pandas에서 데이터 작업</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.04-Missing-Values.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Handling Missing Data</span></a>
+  <a href="../notebooks/03.04-Missing-Values.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">누락된 데이터 처리</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.05-Hierarchical-Indexing.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Hierarchical Indexing</span></a>
+  <a href="../notebooks/03.05-Hierarchical-Indexing.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">계층적 인덱싱</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.06-Concat-And-Append.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Combining Datasets: concat and append</span></a>
+  <a href="../notebooks/03.06-Concat-And-Append.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">데이터세트 결합: 연결 및 추가</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.07-Merge-and-Join.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Combining Datasets: merge and join</span></a>
+  <a href="../notebooks/03.07-Merge-and-Join.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">데이터세트 결합: 병합 및 조인</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.08-Aggregation-and-Grouping.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Aggregation and Grouping</span></a>
+  <a href="../notebooks/03.08-Aggregation-and-Grouping.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">집계 및 그룹화</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.09-Pivot-Tables.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Pivot Tables</span></a>
+  <a href="../notebooks/03.09-Pivot-Tables.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">피벗 테이블</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.10-Working-With-Strings.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Vectorized String Operations</span></a>
+  <a href="../notebooks/03.10-Working-With-Strings.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">벡터화된 문자열 작업</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.11-Working-with-Time-Series.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Working with Time Series</span></a>
+  <a href="../notebooks/03.11-Working-with-Time-Series.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">시계열 작업</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.12-Performance-Eval-and-Query.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">High-Performance Pandas: eval and query</span></a>
+  <a href="../notebooks/03.12-Performance-Eval-and-Query.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">고성능 Pandas: 평가 및 쿼리</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.13-Further-Resources.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Further Resources</span></a>
+  <a href="../notebooks/03.13-Further-Resources.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">추가 리소스</span></a>
   </div>
 </li>
       </ul>
@@ -392,77 +392,77 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.00-Introduction-To-Matplotlib.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Visualization with Matplotlib</span></a>
+  <a href="../notebooks/04.00-Introduction-To-Matplotlib.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Matplotlib를 사용한 시각화</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.01-Simple-Line-Plots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Simple Line Plots</span></a>
+  <a href="../notebooks/04.01-Simple-Line-Plots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">간단한 선 도표</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.02-Simple-Scatter-Plots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Simple Scatter Plots</span></a>
+  <a href="../notebooks/04.02-Simple-Scatter-Plots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">단순 산점도</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.03-Errorbars.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Visualizing Uncertainties</span></a>
+  <a href="../notebooks/04.03-Errorbars.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">불확실성 시각화</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.04-Density-and-Contour-Plots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Density and Contour Plots</span></a>
+  <a href="../notebooks/04.04-Density-and-Contour-Plots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">밀도 및 등고선 플롯</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.05-Histograms-and-Binnings.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Histograms, Binnings, and Density</span></a>
+  <a href="../notebooks/04.05-Histograms-and-Binnings.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">히스토그램, 비닝 및 밀도</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.06-Customizing-Legends.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Customizing Plot Legends</span></a>
+  <a href="../notebooks/04.06-Customizing-Legends.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">플롯 범례 사용자 정의</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.07-Customizing-Colorbars.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Customizing Colorbars</span></a>
+  <a href="../notebooks/04.07-Customizing-Colorbars.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">컬러바 사용자 정의</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.08-Multiple-Subplots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Multiple Subplots</span></a>
+  <a href="../notebooks/04.08-Multiple-Subplots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">다중 서브플롯</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.09-Text-and-Annotation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Text and Annotation</span></a>
+  <a href="../notebooks/04.09-Text-and-Annotation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">텍스트 및 주석</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.10-Customizing-Ticks.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Customizing Ticks</span></a>
+  <a href="../notebooks/04.10-Customizing-Ticks.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">눈금 사용자 정의</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.11-Settings-and-Stylesheets.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Customizing Matplotlib: Configurations and Stylesheets</span></a>
+  <a href="../notebooks/04.11-Settings-and-Stylesheets.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Matplotlib 사용자 정의: 구성 및 스타일시트</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.12-Three-Dimensional-Plotting.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Three-Dimensional Plotting in Matplotlib</span></a>
+  <a href="../notebooks/04.12-Three-Dimensional-Plotting.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Matplotlib의 3차원 플로팅</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.14-Visualization-With-Seaborn.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Visualization with Seaborn</span></a>
+  <a href="../notebooks/04.14-Visualization-With-Seaborn.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Seaborn을 이용한 시각화</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.15-Further-Resources.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Further Resources</span></a>
+  <a href="../notebooks/04.15-Further-Resources.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">추가 리소스</span></a>
   </div>
 </li>
       </ul>
@@ -478,82 +478,82 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.00-Machine-Learning.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Machine Learning</span></a>
+  <a href="../notebooks/05.00-Machine-Learning.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">머신러닝</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.01-What-Is-Machine-Learning.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">What Is Machine Learning?</span></a>
+  <a href="../notebooks/05.01-What-Is-Machine-Learning.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">머신러닝이란?</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.02-Introducing-Scikit-Learn.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Introducing Scikit-Learn</span></a>
+  <a href="../notebooks/05.02-Introducing-Scikit-Learn.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Scikit-Learn 소개</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.03-Hyperparameters-and-Model-Validation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Hyperparameters and Model Validation</span></a>
+  <a href="../notebooks/05.03-Hyperparameters-and-Model-Validation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">하이퍼파라미터 및 모델 검증</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.04-Feature-Engineering.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Feature Engineering</span></a>
+  <a href="../notebooks/05.04-Feature-Engineering.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">기능 엔지니어링</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.05-Naive-Bayes.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Naive Bayes Classification</span></a>
+  <a href="../notebooks/05.05-Naive-Bayes.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 나이브 베이즈 분류</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.06-Linear-Regression.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Linear Regression</span></a>
+  <a href="../notebooks/05.06-Linear-Regression.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 선형 회귀</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.07-Support-Vector-Machines.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Support Vector Machines</span></a>
+  <a href="../notebooks/05.07-Support-Vector-Machines.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 서포트 벡터 머신</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.08-Random-Forests.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Decision Trees and Random Forests</span></a>
+  <a href="../notebooks/05.08-Random-Forests.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 의사결정 트리 및 랜덤 포레스트</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.09-Principal-Component-Analysis.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Principal Component Analysis</span></a>
+  <a href="../notebooks/05.09-Principal-Component-Analysis.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 주성분 분석</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.10-Manifold-Learning.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Manifold Learning</span></a>
+  <a href="../notebooks/05.10-Manifold-Learning.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 다양한 학습</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.11-K-Means.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: k-Means Clustering</span></a>
+  <a href="../notebooks/05.11-K-Means.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: k-평균 클러스터링</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.12-Gaussian-Mixtures.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Gaussian Mixture Models</span></a>
+  <a href="../notebooks/05.12-Gaussian-Mixtures.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 가우스 혼합 모델</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.13-Kernel-Density-Estimation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Kernel Density Estimation</span></a>
+  <a href="../notebooks/05.13-Kernel-Density-Estimation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 커널 밀도 추정</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.14-Image-Features.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Application: A Face Detection Pipeline</span></a>
+  <a href="../notebooks/05.14-Image-Features.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">응용 분야: 얼굴 감지 파이프라인</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.15-Learning-More.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Further Machine Learning Resources</span></a>
+  <a href="../notebooks/05.15-Learning-More.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">추가 머신러닝(Machine Learning) 리소스</span></a>
   </div>
 </li>
       </ul>
@@ -569,7 +569,7 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/06.00-Figure-Code.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Appendix: Figure Code</span></a>
+  <a href="../notebooks/06.00-Figure-Code.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">부록: 그림 코드</span></a>
   </div>
 </li>
       </ul>
@@ -584,20 +584,20 @@ window.Quarto = {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#major-and-minor-ticks" id="toc-major-and-minor-ticks" class="nav-link active" data-scroll-target="#major-and-minor-ticks">Major and Minor Ticks</a></li>
-  <li><a href="#hiding-ticks-or-labels" id="toc-hiding-ticks-or-labels" class="nav-link" data-scroll-target="#hiding-ticks-or-labels">Hiding Ticks or Labels</a></li>
-  <li><a href="#reducing-or-increasing-the-number-of-ticks" id="toc-reducing-or-increasing-the-number-of-ticks" class="nav-link" data-scroll-target="#reducing-or-increasing-the-number-of-ticks">Reducing or Increasing the Number of Ticks</a></li>
-  <li><a href="#fancy-tick-formats" id="toc-fancy-tick-formats" class="nav-link" data-scroll-target="#fancy-tick-formats">Fancy Tick Formats</a></li>
-  <li><a href="#summary-of-formatters-and-locators" id="toc-summary-of-formatters-and-locators" class="nav-link" data-scroll-target="#summary-of-formatters-and-locators">Summary of Formatters and Locators</a></li>
+  <li><a href="#메이저-및-마이너-틱" id="toc-메이저-및-마이너-틱" class="nav-link active" data-scroll-target="#메이저-및-마이너-틱">메이저 및 마이너 틱</a></li>
+  <li><a href="#눈금이나-라벨-숨기기" id="toc-눈금이나-라벨-숨기기" class="nav-link" data-scroll-target="#눈금이나-라벨-숨기기">눈금이나 라벨 숨기기</a></li>
+  <li><a href="#틱-수-줄이기-또는-늘리기" id="toc-틱-수-줄이기-또는-늘리기" class="nav-link" data-scroll-target="#틱-수-줄이기-또는-늘리기">틱 수 줄이기 또는 늘리기</a></li>
+  <li><a href="#멋진-틱-형식" id="toc-멋진-틱-형식" class="nav-link" data-scroll-target="#멋진-틱-형식">멋진 틱 형식</a></li>
+  <li><a href="#포맷터-및-로케이터-요약" id="toc-포맷터-및-로케이터-요약" class="nav-link" data-scroll-target="#포맷터-및-로케이터-요약">포맷터 및 로케이터 요약</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../notebooks/04.00-Introduction-To-Matplotlib.html">Matplotlib을 이용한 시각화</a></li><li class="breadcrumb-item"><a href="../notebooks/04.10-Customizing-Ticks.html"><span class="chapter-title">Customizing Ticks</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../notebooks/04.00-Introduction-To-Matplotlib.html">Matplotlib을 이용한 시각화</a></li><li class="breadcrumb-item"><a href="../notebooks/04.10-Customizing-Ticks.html"><span class="chapter-title">눈금 사용자 정의</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-title">Customizing Ticks</span></h1>
+<h1 class="title"><span class="chapter-title">눈금 사용자 정의</span></h1>
 </div>
 
 
@@ -614,12 +614,12 @@ window.Quarto = {
 </header>
 
 
-<p>Matplotlib’s default tick locators and formatters are designed to be generally sufficient in many common situations, but are in no way optimal for every plot. This chapter will give several examples of adjusting the tick locations and formatting for the particular plot type you’re interested in.</p>
-<p>Before we go into examples, however, let’s talk a bit more about the object hierarchy of Matplotlib plots. Matplotlib aims to have a Python object representing everything that appears on the plot: for example, recall that the <code>Figure</code> is the bounding box within which plot elements appear. Each Matplotlib object can also act as a container of subobjects: for example, each <code>Figure</code> can contain one or more <code>Axes</code> objects, each of which in turn contains other objects representing plot contents.</p>
-<p>The tickmarks are no exception. Each axes has attributes <code>xaxis</code> and <code>yaxis</code>, which in turn have attributes that contain all the properties of the lines, ticks, and labels that make up the axes.</p>
-<section id="major-and-minor-ticks" class="level2">
-<h2 class="anchored" data-anchor-id="major-and-minor-ticks">Major and Minor Ticks</h2>
-<p>Within each axes, there is the concept of a <em>major</em> tickmark, and a <em>minor</em> tickmark. As the names imply, major ticks are usually bigger or more pronounced, while minor ticks are usually smaller. By default, Matplotlib rarely makes use of minor ticks, but one place you can see them is within logarithmic plots (see the following figure):</p>
+<p>Matplotlib의 기본 틱 로케이터 및 포맷터는 일반적으로 많은 일반적인 상황에서 충분하도록 설계되었지만 모든 플롯에 최적이지는 않습니다. 이번 장에서는 관심 있는 특정 플롯 유형에 대한 눈금 위치 및 형식을 조정하는 몇 가지 예를 제공합니다.</p>
+<p>그러나 예제를 살펴보기 전에 Matplotlib 플롯의 개체 계층 구조에 대해 좀 더 이야기해 보겠습니다. Matplotlib은 플롯에 나타나는 모든 것을 나타내는 파이썬(Python) 객체를 갖는 것을 목표로 합니다. 예를 들어 ‘그림’은 플롯 요소가 나타나는 경계 상자라는 점을 기억하세요. 각 Matplotlib 개체는 하위 개체의 컨테이너 역할도 할 수 있습니다. 예를 들어 각 ’Figure’에는 하나 이상의 ’Axes’ 개체가 포함될 수 있으며, 각 개체에는 플롯 내용을 나타내는 다른 개체가 포함됩니다.</p>
+<p>체크표시도 예외는 아닙니다. 각 축에는 ‘xaxis’ 및 ‘yaxis’ 속성이 있으며, 여기에는 축을 구성하는 선, 눈금 및 레이블의 모든 속성이 포함된 속성이 있습니다.</p>
+<section id="메이저-및-마이너-틱" class="level2">
+<h2 class="anchored" data-anchor-id="메이저-및-마이너-틱">메이저 및 마이너 틱</h2>
+<p>각 축 내에는 <em>주</em> 눈금 표시와 <em>보조</em> 눈금 표시라는 개념이 있습니다. 이름에서 알 수 있듯이 주요 진드기는 일반적으로 더 크거나 더 뚜렷하고 작은 진드기는 일반적으로 더 작습니다. 기본적으로 Matplotlib는 작은 눈금을 거의 사용하지 않지만 이를 볼 수 있는 한 곳은 로그 플롯 내입니다(다음 그림 참조).</p>
 <div id="cell-3" class="cell" data-tags="[]" data-execution_count="1">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>plt.style.use(<span class="st">'classic'</span>)</span>
@@ -639,8 +639,8 @@ window.Quarto = {
 </div>
 </div>
 </div>
-<p>In this chart each major tick shows a large tickmark, label, and gridline, while each minor tick shows a smaller tickmark with no label or gridline.</p>
-<p>These tick properties—locations and labels, that is—can be customized by setting the <code>formatter</code> and <code>locator</code> objects of each axis. Let’s examine these for the x-axis of the just-shown plot:</p>
+<p>이 차트에서 각 주요 눈금은 큰 눈금 표시, 레이블 및 눈금선을 표시하는 반면, 각 작은 눈금은 레이블이나 눈금선 없이 작은 눈금 표시를 표시합니다.</p>
+<p>이러한 눈금 속성(위치 및 레이블)은 각 축의 <code>formatter</code> 및 <code>locator</code> 개체를 설정하여 사용자 정의할 수 있습니다. 방금 표시된 플롯의 x축에 대해 이를 살펴보겠습니다.</p>
 <div id="cell-6" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="3">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(ax.xaxis.get_major_locator())</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(ax.xaxis.get_minor_locator())</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -657,12 +657,12 @@ window.Quarto = {
 &lt;matplotlib.ticker.LogFormatterSciNotation object at 0x1129aac10&gt;</code></pre>
 </div>
 </div>
-<p>We see that both major and minor tick labels have their locations specified by a <code>LogLocator</code> (which makes sense for a logarithmic plot). Minor ticks, though, have their labels formatted by a <code>NullFormatter</code>: this says that no labels will be shown.</p>
-<p>We’ll now look at a few examples of setting these locators and formatters for various plots.</p>
+<p>주요 눈금 레이블과 작은 눈금 레이블 모두 ‘LogLocator’(대수 플롯에 적합함)에 의해 지정된 위치가 있음을 확인할 수 있습니다. 하지만 작은 틱에는 ‘NullFormatter’ 형식의 레이블이 있습니다. 이는 레이블이 표시되지 않음을 의미합니다.</p>
+<p>이제 다양한 플롯에 대해 이러한 로케이터와 포맷터를 설정하는 몇 가지 예를 살펴보겠습니다.</p>
 </section>
-<section id="hiding-ticks-or-labels" class="level2">
-<h2 class="anchored" data-anchor-id="hiding-ticks-or-labels">Hiding Ticks or Labels</h2>
-<p>Perhaps the most common tick/label formatting operation is the act of hiding ticks or labels. This can be done using <code>plt.NullLocator</code> and <code>plt.NullFormatter</code>, as shown here (see the following figure):</p>
+<section id="눈금이나-라벨-숨기기" class="level2">
+<h2 class="anchored" data-anchor-id="눈금이나-라벨-숨기기">눈금이나 라벨 숨기기</h2>
+<p>아마도 가장 일반적인 눈금/레이블 서식 지정 작업은 눈금이나 레이블을 숨기는 작업일 것입니다. 이 작업은 여기에 표시된 대로 <code>plt.NullLocator</code> 및 <code>plt.NullFormatter</code>를 사용하여 수행할 수 있습니다(다음 그림 참조).</p>
 <div id="cell-10" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="5">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>ax <span class="op">=</span> plt.axes()</span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>rng <span class="op">=</span> np.random.default_rng(<span class="dv">1701</span>)</span>
@@ -679,7 +679,7 @@ window.Quarto = {
 </div>
 </div>
 </div>
-<p>We’ve removed the labels (but kept the ticks/gridlines) from the x-axis, and removed the ticks (and thus the labels and gridlines as well) from the y-axis. Having no ticks at all can be useful in many situations—for example, when you want to show a grid of images. For instance, consider the following figure, which includes images of different faces, an example often used in supervised machine learning problems (see, for example, <a href="../notebooks/05.07-Support-Vector-Machines.html">In-Depth: Support Vector Machines</a>):</p>
+<p>x축에서 레이블을 제거하고(눈금/눈금선은 유지) y축에서 눈금(따라서 레이블과 눈금선도 포함)을 제거했습니다. 체크 표시가 전혀 없으면 여러 상황(예: 이미지 격자를 표시하려는 경우)에서 유용할 수 있습니다. 예를 들어 지도 머신러닝(Machine Learning) 문제에 자주 사용되는 예인 다양한 얼굴의 이미지가 포함된 다음 그림을 고려해 보세요(예: <a href="../notebooks/05.07-Support-Vector-Machines.html">심층: 지원 벡터 머신</a> 참조).</p>
 <div id="cell-12" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="6">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots(<span class="dv">5</span>, <span class="dv">5</span>, figsize<span class="op">=</span>(<span class="dv">5</span>, <span class="dv">5</span>))</span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>fig.subplots_adjust(hspace<span class="op">=</span><span class="dv">0</span>, wspace<span class="op">=</span><span class="dv">0</span>)</span>
@@ -701,11 +701,11 @@ window.Quarto = {
 </div>
 </div>
 </div>
-<p>Each image is shown in its own axes, and we’ve set the tick locators to null because the tick values (pixel numbers in this case) do not convey relevant information for this particular visualization.</p>
+<p>각 이미지는 자체 축에 표시되며 눈금 값(이 경우 픽셀 번호)은 이 특정 시각화에 대한 관련 정보를 전달하지 않기 때문에 눈금 위치 지정자를 null로 설정했습니다.</p>
 </section>
-<section id="reducing-or-increasing-the-number-of-ticks" class="level2">
-<h2 class="anchored" data-anchor-id="reducing-or-increasing-the-number-of-ticks">Reducing or Increasing the Number of Ticks</h2>
-<p>One common problem with the default settings is that smaller subplots can end up with crowded labels. We can see this in the plot grid shown here (see the following figure):</p>
+<section id="틱-수-줄이기-또는-늘리기" class="level2">
+<h2 class="anchored" data-anchor-id="틱-수-줄이기-또는-늘리기">틱 수 줄이기 또는 늘리기</h2>
+<p>기본 설정의 일반적인 문제 중 하나는 작은 하위 그림에 레이블이 붐비게 될 수 있다는 것입니다. 여기에 표시된 플롯 그리드에서 이를 확인할 수 있습니다(다음 그림 참조).</p>
 <div id="cell-15" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="7">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots(<span class="dv">4</span>, <span class="dv">4</span>, sharex<span class="op">=</span><span class="va">True</span>, sharey<span class="op">=</span><span class="va">True</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
@@ -716,7 +716,7 @@ window.Quarto = {
 </div>
 </div>
 </div>
-<p>Particularly for the x-axis ticks, the numbers nearly overlap, making them quite difficult to decipher. One way to adjust this is with <code>plt.MaxNLocator</code>, which allows us to specify the maximum number of ticks that will be displayed. Given this maximum number, Matplotlib will use internal logic to choose the particular tick locations (see the following figure):</p>
+<p>특히 x축 틱의 경우 숫자가 거의 겹쳐서 해독하기가 상당히 어렵습니다. One way to adjust this is with <code>plt.MaxNLocator</code>, which allows us to specify the maximum number of ticks that will be displayed. 이 최대 수가 주어지면 Matplotlib는 내부 논리를 사용하여 특정 눈금 위치를 선택합니다(다음 그림 참조).</p>
 <div id="cell-17" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="8">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co"># For every axis, set the x and y major locator</span></span>
 <span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> axi <span class="kw">in</span> ax.flat:</span>
@@ -731,11 +731,11 @@ window.Quarto = {
 </div>
 </div>
 </div>
-<p>This makes things much cleaner. If you want even more control over the locations of regularly spaced ticks, you might also use <code>plt.MultipleLocator</code>, which we’ll discuss in the following section.</p>
+<p>이렇게 하면 상황이 훨씬 더 깔끔해집니다. 규칙적인 간격의 틱 위치를 더 효과적으로 제어하려면 <code>plt.MultipleLocator</code>를 사용할 수도 있습니다. 이에 대해서는 다음 섹션에서 설명하겠습니다.</p>
 </section>
-<section id="fancy-tick-formats" class="level2">
-<h2 class="anchored" data-anchor-id="fancy-tick-formats">Fancy Tick Formats</h2>
-<p>Matplotlib’s default tick formatting can leave a lot to be desired: it works well as a broad default, but sometimes you’d like to do something different. Consider this plot of a sine and a cosine curve (see the following figure):</p>
+<section id="멋진-틱-형식" class="level2">
+<h2 class="anchored" data-anchor-id="멋진-틱-형식">멋진 틱 형식</h2>
+<p>Matplotlib의 기본 눈금 형식은 아쉬운 점이 많을 수 있습니다. 광범위한 기본값으로 잘 작동하지만 때로는 다른 작업을 수행하고 싶을 수도 있습니다. 사인과 코사인 곡선의 플롯을 고려하십시오(다음 그림 참조).</p>
 <div id="cell-20" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="9">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Plot a sine and cosine curve</span></span>
 <span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots()</span>
@@ -756,7 +756,7 @@ window.Quarto = {
 </div>
 </div>
 </div>
-<p>There are a couple of changes we might like to make here. First, it’s more natural for this data to space the ticks and gridlines in multiples of <span class="math inline">\(\pi\)</span>. We can do this by setting a <code>MultipleLocator</code>, which locates ticks at a multiple of the number we provide. For good measure, we’ll add both major and minor ticks in multiples of <span class="math inline">\(\pi/2\)</span> and <span class="math inline">\(\pi/4\)</span> (see the following figure):</p>
+<p>여기에는 몇 가지 변경 사항이 있습니다. 첫째, 이 데이터가 <span class="math inline">\(\pi\)</span>의 배수로 눈금과 눈금선의 간격을 두는 것이 더 자연스럽습니다. 우리가 제공한 숫자의 배수에 틱을 찾는 <code>MultipleLocator</code>를 설정하여 이를 수행할 수 있습니다. 좋은 측정을 위해 <span class="math inline">\(\pi/2\)</span> 및 <span class="math inline">\(\pi/4\)</span>의 배수로 주요 및 보조 눈금을 모두 추가합니다(다음 그림 참조).</p>
 <div id="cell-22" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="10">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>ax.xaxis.set_major_locator(plt.MultipleLocator(np.pi <span class="op">/</span> <span class="dv">2</span>))</span>
 <span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>ax.xaxis.set_minor_locator(plt.MultipleLocator(np.pi <span class="op">/</span> <span class="dv">4</span>))</span>
@@ -769,7 +769,7 @@ window.Quarto = {
 </div>
 </div>
 </div>
-<p>But now these tick labels look a little bit silly: we can see that they are multiples of <span class="math inline">\(\pi\)</span>, but the decimal representation does not immediately convey this. To fix this, we can change the tick formatter. There’s no built-in formatter for what we want to do, so we’ll instead use <code>plt.FuncFormatter</code>, which accepts a user-defined function giving fine-grained control over the tick outputs (see the following figure):</p>
+<p>그러나 이제 이러한 눈금 레이블은 약간 어리석게 보입니다. <span class="math inline">\(\pi\)</span>의 배수라는 것을 알 수 있지만 십진수 표현은 이를 즉시 전달하지 않습니다. 이 문제를 해결하려면 눈금 포맷터를 변경하면 됩니다. 우리가 원하는 작업에 대한 기본 제공 포맷터가 없으므로 대신 틱 출력에 대한 세밀한 제어를 제공하는 사용자 정의 함수를 허용하는 <code>plt.FuncFormatter</code>를 사용하겠습니다(다음 그림 참조).</p>
 <div id="cell-24" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="11">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> format_func(value, tick_number):</span>
 <span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>    <span class="co"># find number of multiples of pi/2</span></span>
@@ -795,100 +795,100 @@ window.Quarto = {
 </div>
 </div>
 </div>
-<p>This is much better! Notice that we’ve made use of Matplotlib’s LaTeX support, specified by enclosing the string within dollar signs. This is very convenient for display of mathematical symbols and formulae: in this case, <code>"$\pi$"</code> is rendered as the Greek character <span class="math inline">\(\pi\)</span>.</p>
+<p>이게 훨씬 낫습니다! 문자열을 달러 기호로 묶어 지정하여 Matplotlib의 LaTeX 지원을 사용했다는 점에 유의하세요. 이는 수학 기호 및 공식을 표시하는 데 매우 편리합니다. 이 경우 <code>"$\pi$"</code>는 그리스 문자 <span class="math inline">\(\pi\)</span>로 렌더링됩니다.</p>
 </section>
-<section id="summary-of-formatters-and-locators" class="level2">
-<h2 class="anchored" data-anchor-id="summary-of-formatters-and-locators">Summary of Formatters and Locators</h2>
-<p>We’ve seen a couple of the available formatters and locators; I’ll conclude this chapter by briefly listing all of the built-in locator and formatter options. For more information on any of these, refer to the docstrings or to the Matplotlib online documentation. Each of the following is available in the <code>plt</code> namespace:</p>
+<section id="포맷터-및-로케이터-요약" class="level2">
+<h2 class="anchored" data-anchor-id="포맷터-및-로케이터-요약">포맷터 및 로케이터 요약</h2>
+<p>우리는 몇 가지 사용 가능한 포맷터와 로케이터를 살펴보았습니다. 내장된 로케이터와 포맷터 옵션을 모두 간략하게 나열하면서 이 장을 마무리하겠습니다. 이에 대한 자세한 내용은 독스트링이나 Matplotlib 온라인 설명서를 참조하세요. 다음 각각은 <code>plt</code> 네임스페이스에서 사용할 수 있습니다.</p>
 <table class="caption-top table">
 <colgroup>
-<col style="width: 59%">
-<col style="width: 40%">
+<col style="width: 31%">
+<col style="width: 68%">
 </colgroup>
 <thead>
 <tr class="header">
-<th>Locator class</th>
-<th>Description</th>
+<th>로케이터 클래스</th>
+<th>설명</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><code>NullLocator</code></td>
-<td>No ticks</td>
+<td>‘널 로케이터’</td>
+<td>진드기 없음</td>
 </tr>
 <tr class="even">
 <td><code>FixedLocator</code></td>
-<td>Tick locations are fixed</td>
+<td>진드기 위치는 고정되어 있습니다.</td>
 </tr>
 <tr class="odd">
 <td><code>IndexLocator</code></td>
-<td>Locator for index plots (e.g., where <code>x = range(len(y)))</code></td>
+<td>인덱스 플롯의 위치 지정자(예: 여기서 <code>x = range(len(y)))</code></td>
 </tr>
 <tr class="even">
-<td><code>LinearLocator</code></td>
-<td>Evenly spaced ticks from min to max</td>
+<td><code>선형 위치</code></td>
+<td>최소에서 최대까지 균일한 간격의 틱</td>
 </tr>
 <tr class="odd">
-<td><code>LogLocator</code></td>
-<td>Logarithmically spaced ticks from min to max</td>
+<td><code>로그 로케이터</code></td>
+<td>최소에서 최대까지 로그 간격의 틱</td>
 </tr>
 <tr class="even">
 <td><code>MultipleLocator</code></td>
-<td>Ticks and range are a multiple of base</td>
+<td>틱과 범위는 기본의 배수입니다.</td>
 </tr>
 <tr class="odd">
 <td><code>MaxNLocator</code></td>
-<td>Finds up to a max number of ticks at nice locations</td>
+<td>좋은 위치에서 최대 틱 수를 찾습니다.</td>
 </tr>
 <tr class="even">
-<td><code>AutoLocator</code></td>
-<td>(Default) <code>MaxNLocator</code> with simple defaults</td>
+<td><code>자동 위치</code></td>
+<td>(기본값) 단순 기본값을 사용하는 <code>MaxNLocator</code></td>
 </tr>
 <tr class="odd">
-<td><code>AutoMinorLocator</code></td>
-<td>Locator for minor ticks</td>
+<td>‘AutoMinorLocator’</td>
+<td>사소한 진드기에 대한 로케이터</td>
 </tr>
 </tbody>
 </table>
 <table class="caption-top table">
 <thead>
 <tr class="header">
-<th>Formatter class</th>
-<th>Description</th>
+<th>포맷터 클래스</th>
+<th>설명</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><code>NullFormatter</code></td>
-<td>No labels on the ticks</td>
+<td>‘NullFormatter’</td>
+<td>진드기에 라벨이 없습니다</td>
 </tr>
 <tr class="even">
 <td><code>IndexFormatter</code></td>
-<td>Set the strings from a list of labels</td>
+<td>라벨 목록에서 문자열 설정</td>
 </tr>
 <tr class="odd">
 <td><code>FixedFormatter</code></td>
-<td>Set the strings manually for the labels</td>
+<td>라벨에 대한 문자열을 수동으로 설정</td>
 </tr>
 <tr class="even">
 <td><code>FuncFormatter</code></td>
-<td>User-defined function sets the labels</td>
+<td>사용자 정의 함수는 라벨을 설정합니다.</td>
 </tr>
 <tr class="odd">
 <td><code>FormatStrFormatter</code></td>
-<td>Use a format string for each value</td>
+<td>각 값에 형식 문자열을 사용하세요.</td>
 </tr>
 <tr class="even">
 <td><code>ScalarFormatter</code></td>
-<td>Default formatter for scalar values</td>
+<td>스칼라 값의 기본 포맷터</td>
 </tr>
 <tr class="odd">
 <td><code>LogFormatter</code></td>
-<td>Default formatter for log axes</td>
+<td>로그 축의 기본 포맷터</td>
 </tr>
 </tbody>
 </table>
-<p>We’ll see further examples of these throughout the remainder of the book.</p>
+<p>우리는 이 책의 나머지 부분에서 이에 대한 추가 예를 보게 될 것입니다.</p>
 
 
 </section>
@@ -1296,13 +1296,13 @@ window.Quarto = {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../notebooks/04.09-Text-and-Annotation.html" class="pagination-link" aria-label="Text and Annotation">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Text and Annotation</span></span>
+      <a href="../notebooks/04.09-Text-and-Annotation.html" class="pagination-link" aria-label="텍스트 및 주석">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">텍스트 및 주석</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../notebooks/04.11-Settings-and-Stylesheets.html" class="pagination-link" aria-label="Customizing Matplotlib: Configurations and Stylesheets">
-        <span class="nav-page-text"><span class="chapter-title">Customizing Matplotlib: Configurations and Stylesheets</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../notebooks/04.11-Settings-and-Stylesheets.html" class="pagination-link" aria-label="Matplotlib 사용자 정의: 구성 및 스타일시트">
+        <span class="nav-page-text"><span class="chapter-title">Matplotlib 사용자 정의: 구성 및 스타일시트</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

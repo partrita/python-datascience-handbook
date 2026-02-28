@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Handling Missing Data – 파이썬 데이터 사이언스 핸드북</title>
+<title>누락된 데이터 처리 – 파이썬 데이터 사이언스 핸드북</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -77,7 +77,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-3778d3e438078121318a23701f9f68bb.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-803ae4f7a8810f475153517dc3c4ebae.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -121,7 +121,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../notebooks/03.00-Introduction-to-Pandas.html">Pandas를 이용한 데이터 조작</a></li><li class="breadcrumb-item"><a href="../notebooks/03.04-Missing-Values.html"><span class="chapter-title">Handling Missing Data</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../notebooks/03.00-Introduction-to-Pandas.html">Pandas를 이용한 데이터 조작</a></li><li class="breadcrumb-item"><a href="../notebooks/03.04-Missing-Values.html"><span class="chapter-title">누락된 데이터 처리</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -168,7 +168,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/01.00-IPython-Beyond-Normal-Python.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Jupyter: 일반 Python을 넘어서</span></a>
+  <a href="../notebooks/01.00-IPython-Beyond-Normal-Python.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Jupyter: 일반 파이썬(Python)을 넘어서</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -198,17 +198,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/01.06-Errors-and-Debugging.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Errors and Debugging</span></a>
+  <a href="../notebooks/01.06-Errors-and-Debugging.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">오류 및 디버깅</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/01.07-Timing-and-Profiling.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Profiling and Timing Code</span></a>
+  <a href="../notebooks/01.07-Timing-and-Profiling.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">프로파일링 및 타이밍 코드</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/01.08-More-IPython-Resources.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">More IPython Resources</span></a>
+  <a href="../notebooks/01.08-More-IPython-Resources.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">추가 IPython 리소스</span></a>
   </div>
 </li>
       </ul>
@@ -224,52 +224,52 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.00-Introduction-to-NumPy.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Introduction to NumPy</span></a>
+  <a href="../notebooks/02.00-Introduction-to-NumPy.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">NumPy 소개</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.01-Understanding-Data-Types.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Understanding Data Types in Python</span></a>
+  <a href="../notebooks/02.01-Understanding-Data-Types.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">파이썬(Python)의 데이터 유형 이해</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.02-The-Basics-Of-NumPy-Arrays.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">The Basics of NumPy Arrays</span></a>
+  <a href="../notebooks/02.02-The-Basics-Of-NumPy-Arrays.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">NumPy 배열의 기본</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.03-Computation-on-arrays-ufuncs.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Computation on NumPy Arrays: Universal Functions</span></a>
+  <a href="../notebooks/02.03-Computation-on-arrays-ufuncs.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">NumPy 배열 계산: 범용 함수</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.04-Computation-on-arrays-aggregates.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Aggregations: min, max, and Everything in Between</span></a>
+  <a href="../notebooks/02.04-Computation-on-arrays-aggregates.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">집계: 최소, 최대 및 그 사이의 모든 것</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.05-Computation-on-arrays-broadcasting.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Computation on Arrays: Broadcasting</span></a>
+  <a href="../notebooks/02.05-Computation-on-arrays-broadcasting.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">배열 계산: 브로드캐스팅</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.06-Boolean-Arrays-and-Masks.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Comparisons, Masks, and Boolean Logic</span></a>
+  <a href="../notebooks/02.06-Boolean-Arrays-and-Masks.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">비교, 마스크 및 부울 논리</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.07-Fancy-Indexing.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Fancy Indexing</span></a>
+  <a href="../notebooks/02.07-Fancy-Indexing.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">멋진 인덱싱</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.08-Sorting.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Sorting Arrays</span></a>
+  <a href="../notebooks/02.08-Sorting.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">배열 정렬</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.09-Structured-Data-NumPy.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Structured Data: NumPy’s Structured Arrays</span></a>
+  <a href="../notebooks/02.09-Structured-Data-NumPy.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">구조화된 데이터: NumPy의 구조화된 배열</span></a>
   </div>
 </li>
       </ul>
@@ -285,72 +285,72 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.00-Introduction-to-Pandas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Data Manipulation with Pandas</span></a>
+  <a href="../notebooks/03.00-Introduction-to-Pandas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">팬더를 이용한 데이터 조작</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.01-Introducing-Pandas-Objects.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Introducing Pandas Objects</span></a>
+  <a href="../notebooks/03.01-Introducing-Pandas-Objects.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">판다스 객체 소개</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.02-Data-Indexing-and-Selection.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Data Indexing and Selection</span></a>
+  <a href="../notebooks/03.02-Data-Indexing-and-Selection.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">데이터 인덱싱 및 선택</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.03-Operations-in-Pandas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Operating on Data in Pandas</span></a>
+  <a href="../notebooks/03.03-Operations-in-Pandas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Pandas에서 데이터 작업</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.04-Missing-Values.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Handling Missing Data</span></a>
+  <a href="../notebooks/03.04-Missing-Values.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">누락된 데이터 처리</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.05-Hierarchical-Indexing.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Hierarchical Indexing</span></a>
+  <a href="../notebooks/03.05-Hierarchical-Indexing.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">계층적 인덱싱</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.06-Concat-And-Append.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Combining Datasets: concat and append</span></a>
+  <a href="../notebooks/03.06-Concat-And-Append.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">데이터세트 결합: 연결 및 추가</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.07-Merge-and-Join.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Combining Datasets: merge and join</span></a>
+  <a href="../notebooks/03.07-Merge-and-Join.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">데이터세트 결합: 병합 및 조인</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.08-Aggregation-and-Grouping.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Aggregation and Grouping</span></a>
+  <a href="../notebooks/03.08-Aggregation-and-Grouping.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">집계 및 그룹화</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.09-Pivot-Tables.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Pivot Tables</span></a>
+  <a href="../notebooks/03.09-Pivot-Tables.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">피벗 테이블</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.10-Working-With-Strings.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Vectorized String Operations</span></a>
+  <a href="../notebooks/03.10-Working-With-Strings.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">벡터화된 문자열 작업</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.11-Working-with-Time-Series.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Working with Time Series</span></a>
+  <a href="../notebooks/03.11-Working-with-Time-Series.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">시계열 작업</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.12-Performance-Eval-and-Query.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">High-Performance Pandas: eval and query</span></a>
+  <a href="../notebooks/03.12-Performance-Eval-and-Query.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">고성능 Pandas: 평가 및 쿼리</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.13-Further-Resources.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Further Resources</span></a>
+  <a href="../notebooks/03.13-Further-Resources.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">추가 리소스</span></a>
   </div>
 </li>
       </ul>
@@ -366,77 +366,77 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.00-Introduction-To-Matplotlib.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Visualization with Matplotlib</span></a>
+  <a href="../notebooks/04.00-Introduction-To-Matplotlib.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Matplotlib를 사용한 시각화</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.01-Simple-Line-Plots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Simple Line Plots</span></a>
+  <a href="../notebooks/04.01-Simple-Line-Plots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">간단한 선 도표</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.02-Simple-Scatter-Plots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Simple Scatter Plots</span></a>
+  <a href="../notebooks/04.02-Simple-Scatter-Plots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">단순 산점도</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.03-Errorbars.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Visualizing Uncertainties</span></a>
+  <a href="../notebooks/04.03-Errorbars.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">불확실성 시각화</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.04-Density-and-Contour-Plots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Density and Contour Plots</span></a>
+  <a href="../notebooks/04.04-Density-and-Contour-Plots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">밀도 및 등고선 플롯</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.05-Histograms-and-Binnings.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Histograms, Binnings, and Density</span></a>
+  <a href="../notebooks/04.05-Histograms-and-Binnings.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">히스토그램, 비닝 및 밀도</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.06-Customizing-Legends.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Customizing Plot Legends</span></a>
+  <a href="../notebooks/04.06-Customizing-Legends.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">플롯 범례 사용자 정의</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.07-Customizing-Colorbars.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Customizing Colorbars</span></a>
+  <a href="../notebooks/04.07-Customizing-Colorbars.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">컬러바 사용자 정의</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.08-Multiple-Subplots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Multiple Subplots</span></a>
+  <a href="../notebooks/04.08-Multiple-Subplots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">다중 서브플롯</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.09-Text-and-Annotation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Text and Annotation</span></a>
+  <a href="../notebooks/04.09-Text-and-Annotation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">텍스트 및 주석</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.10-Customizing-Ticks.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Customizing Ticks</span></a>
+  <a href="../notebooks/04.10-Customizing-Ticks.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">눈금 사용자 정의</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.11-Settings-and-Stylesheets.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Customizing Matplotlib: Configurations and Stylesheets</span></a>
+  <a href="../notebooks/04.11-Settings-and-Stylesheets.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Matplotlib 사용자 정의: 구성 및 스타일시트</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.12-Three-Dimensional-Plotting.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Three-Dimensional Plotting in Matplotlib</span></a>
+  <a href="../notebooks/04.12-Three-Dimensional-Plotting.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Matplotlib의 3차원 플로팅</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.14-Visualization-With-Seaborn.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Visualization with Seaborn</span></a>
+  <a href="../notebooks/04.14-Visualization-With-Seaborn.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Seaborn을 이용한 시각화</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.15-Further-Resources.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Further Resources</span></a>
+  <a href="../notebooks/04.15-Further-Resources.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">추가 리소스</span></a>
   </div>
 </li>
       </ul>
@@ -452,82 +452,82 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.00-Machine-Learning.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Machine Learning</span></a>
+  <a href="../notebooks/05.00-Machine-Learning.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">머신러닝</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.01-What-Is-Machine-Learning.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">What Is Machine Learning?</span></a>
+  <a href="../notebooks/05.01-What-Is-Machine-Learning.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">머신러닝이란?</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.02-Introducing-Scikit-Learn.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Introducing Scikit-Learn</span></a>
+  <a href="../notebooks/05.02-Introducing-Scikit-Learn.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Scikit-Learn 소개</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.03-Hyperparameters-and-Model-Validation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Hyperparameters and Model Validation</span></a>
+  <a href="../notebooks/05.03-Hyperparameters-and-Model-Validation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">하이퍼파라미터 및 모델 검증</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.04-Feature-Engineering.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Feature Engineering</span></a>
+  <a href="../notebooks/05.04-Feature-Engineering.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">기능 엔지니어링</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.05-Naive-Bayes.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Naive Bayes Classification</span></a>
+  <a href="../notebooks/05.05-Naive-Bayes.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 나이브 베이즈 분류</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.06-Linear-Regression.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Linear Regression</span></a>
+  <a href="../notebooks/05.06-Linear-Regression.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 선형 회귀</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.07-Support-Vector-Machines.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Support Vector Machines</span></a>
+  <a href="../notebooks/05.07-Support-Vector-Machines.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 서포트 벡터 머신</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.08-Random-Forests.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Decision Trees and Random Forests</span></a>
+  <a href="../notebooks/05.08-Random-Forests.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 의사결정 트리 및 랜덤 포레스트</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.09-Principal-Component-Analysis.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Principal Component Analysis</span></a>
+  <a href="../notebooks/05.09-Principal-Component-Analysis.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 주성분 분석</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.10-Manifold-Learning.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Manifold Learning</span></a>
+  <a href="../notebooks/05.10-Manifold-Learning.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 다양한 학습</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.11-K-Means.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: k-Means Clustering</span></a>
+  <a href="../notebooks/05.11-K-Means.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: k-평균 클러스터링</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.12-Gaussian-Mixtures.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Gaussian Mixture Models</span></a>
+  <a href="../notebooks/05.12-Gaussian-Mixtures.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 가우스 혼합 모델</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.13-Kernel-Density-Estimation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Kernel Density Estimation</span></a>
+  <a href="../notebooks/05.13-Kernel-Density-Estimation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 커널 밀도 추정</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.14-Image-Features.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Application: A Face Detection Pipeline</span></a>
+  <a href="../notebooks/05.14-Image-Features.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">응용 분야: 얼굴 감지 파이프라인</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.15-Learning-More.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Further Machine Learning Resources</span></a>
+  <a href="../notebooks/05.15-Learning-More.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">추가 머신러닝(Machine Learning) 리소스</span></a>
   </div>
 </li>
       </ul>
@@ -543,7 +543,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/06.00-Figure-Code.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Appendix: Figure Code</span></a>
+  <a href="../notebooks/06.00-Figure-Code.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">부록: 그림 코드</span></a>
   </div>
 </li>
       </ul>
@@ -558,19 +558,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#trade-offs-in-missing-data-conventions" id="toc-trade-offs-in-missing-data-conventions" class="nav-link active" data-scroll-target="#trade-offs-in-missing-data-conventions">Trade-offs in Missing Data Conventions</a></li>
-  <li><a href="#missing-data-in-pandas" id="toc-missing-data-in-pandas" class="nav-link" data-scroll-target="#missing-data-in-pandas">Missing Data in Pandas</a>
+  <li><a href="#누락된-데이터-규칙의-절충안" id="toc-누락된-데이터-규칙의-절충안" class="nav-link active" data-scroll-target="#누락된-데이터-규칙의-절충안">누락된 데이터 규칙의 절충안</a></li>
+  <li><a href="#pandas에서-데이터가-누락되었습니다." id="toc-pandas에서-데이터가-누락되었습니다." class="nav-link" data-scroll-target="#pandas에서-데이터가-누락되었습니다.">Pandas에서 데이터가 누락되었습니다.</a>
   <ul class="collapse">
-  <li><a href="#none-as-a-sentinel-value" id="toc-none-as-a-sentinel-value" class="nav-link" data-scroll-target="#none-as-a-sentinel-value">None as a Sentinel Value</a></li>
-  <li><a href="#nan-missing-numerical-data" id="toc-nan-missing-numerical-data" class="nav-link" data-scroll-target="#nan-missing-numerical-data">NaN: Missing Numerical Data</a></li>
-  <li><a href="#nan-and-none-in-pandas" id="toc-nan-and-none-in-pandas" class="nav-link" data-scroll-target="#nan-and-none-in-pandas">NaN and None in Pandas</a></li>
+  <li><a href="#sentinel-값-없음" id="toc-sentinel-값-없음" class="nav-link" data-scroll-target="#sentinel-값-없음">Sentinel 값 없음</a></li>
+  <li><a href="#nan-숫자-데이터-누락" id="toc-nan-숫자-데이터-누락" class="nav-link" data-scroll-target="#nan-숫자-데이터-누락">NaN: 숫자 데이터 누락</a></li>
+  <li><a href="#nan-및-pandas에는-없음" id="toc-nan-및-pandas에는-없음" class="nav-link" data-scroll-target="#nan-및-pandas에는-없음">NaN 및 Pandas에는 없음</a></li>
   </ul></li>
   <li><a href="#pandas-nullable-dtypes" id="toc-pandas-nullable-dtypes" class="nav-link" data-scroll-target="#pandas-nullable-dtypes">Pandas Nullable Dtypes</a></li>
-  <li><a href="#operating-on-null-values" id="toc-operating-on-null-values" class="nav-link" data-scroll-target="#operating-on-null-values">Operating on Null Values</a>
+  <li><a href="#null-값에-대한-작업" id="toc-null-값에-대한-작업" class="nav-link" data-scroll-target="#null-값에-대한-작업">Null 값에 대한 작업</a>
   <ul class="collapse">
-  <li><a href="#detecting-null-values" id="toc-detecting-null-values" class="nav-link" data-scroll-target="#detecting-null-values">Detecting Null Values</a></li>
-  <li><a href="#dropping-null-values" id="toc-dropping-null-values" class="nav-link" data-scroll-target="#dropping-null-values">Dropping Null Values</a></li>
-  <li><a href="#filling-null-values" id="toc-filling-null-values" class="nav-link" data-scroll-target="#filling-null-values">Filling Null Values</a></li>
+  <li><a href="#null-값-감지" id="toc-null-값-감지" class="nav-link" data-scroll-target="#null-값-감지">Null 값 감지</a></li>
+  <li><a href="#null-값-삭제" id="toc-null-값-삭제" class="nav-link" data-scroll-target="#null-값-삭제">Null 값 삭제</a></li>
+  <li><a href="#null-값-채우기" id="toc-null-값-채우기" class="nav-link" data-scroll-target="#null-값-채우기">Null 값 채우기</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -578,9 +578,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../notebooks/03.00-Introduction-to-Pandas.html">Pandas를 이용한 데이터 조작</a></li><li class="breadcrumb-item"><a href="../notebooks/03.04-Missing-Values.html"><span class="chapter-title">Handling Missing Data</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../notebooks/03.00-Introduction-to-Pandas.html">Pandas를 이용한 데이터 조작</a></li><li class="breadcrumb-item"><a href="../notebooks/03.04-Missing-Values.html"><span class="chapter-title">누락된 데이터 처리</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-title">Handling Missing Data</span></h1>
+<h1 class="title"><span class="chapter-title">누락된 데이터 처리</span></h1>
 </div>
 
 
@@ -597,34 +597,34 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>The difference between data found in many tutorials and data in the real world is that real-world data is rarely clean and homogeneous. In particular, many interesting datasets will have some amount of data missing. To make matters even more complicated, different data sources may indicate missing data in different ways.</p>
-<p>In this chapter, we will discuss some general considerations for missing data, look at how Pandas chooses to represent it, and explore some built-in Pandas tools for handling missing data in Python. Here and throughout the book, I will refer to missing data in general as <em>null</em>, <em>NaN</em>, or <em>NA</em> values.</p>
-<section id="trade-offs-in-missing-data-conventions" class="level2">
-<h2 class="anchored" data-anchor-id="trade-offs-in-missing-data-conventions">Trade-offs in Missing Data Conventions</h2>
-<p>A number of approaches have been developed to track the presence of missing data in a table or <code>DataFrame</code>. Generally, they revolve around one of two strategies: using a <em>mask</em> that globally indicates missing values, or choosing a <em>sentinel value</em> that indicates a missing entry.</p>
-<p>In the masking approach, the mask might be an entirely separate Boolean array, or it might involve appropriation of one bit in the data representation to locally indicate the null status of a value.</p>
-<p>In the sentinel approach, the sentinel value could be some data-specific convention, such as indicating a missing integer value with –9999 or some rare bit pattern, or it could be a more global convention, such as indicating a missing floating-point value with <code>NaN</code> (Not a Number), a special value that is part of the IEEE floating-point specification.</p>
-<p>Neither of these approaches is without trade-offs. Use of a separate mask array requires allocation of an additional Boolean array, which adds overhead in both storage and computation. A sentinel value reduces the range of valid values that can be represented, and may require extra (often nonoptimized) logic in CPU and GPU arithmetic, because common special values like <code>NaN</code> are not available for all data types.</p>
-<p>As in most cases where no universally optimal choice exists, different languages and systems use different conventions. For example, the R language uses reserved bit patterns within each data type as sentinel values indicating missing data, while the SciDB system uses an extra byte attached to every cell to indicate an NA state.</p>
+<p>많은 튜토리얼에서 발견되는 데이터와 실제 데이터의 차이점은 실제 데이터가 깨끗하거나 동질적인 경우가 거의 없다는 것입니다. 특히 많은 흥미로운 데이터 세트에는 어느 정도의 데이터가 누락되어 있습니다. 문제를 더욱 복잡하게 만드는 것은 서로 다른 데이터 소스가 서로 다른 방식으로 누락된 데이터를 나타낼 수 있다는 것입니다.</p>
+<p>이번 장에서는 누락된 데이터에 대한 몇 가지 일반적인 고려 사항을 논의하고, Pandas가 이를 표현하기 위해 어떻게 선택하는지 살펴보고, 파이썬(Python)에서 누락된 데이터를 처리하기 위해 내장된 Pandas 도구를 살펴보겠습니다. 여기와 책 전체에서 저는 누락된 데이터를 일반적으로 <em>null</em>, <em>NaN</em> 또는 <em>NA</em> 값으로 지칭할 것입니다.</p>
+<section id="누락된-데이터-규칙의-절충안" class="level2">
+<h2 class="anchored" data-anchor-id="누락된-데이터-규칙의-절충안">누락된 데이터 규칙의 절충안</h2>
+<p>테이블이나 <code>DataFrame</code>에서 누락된 데이터의 존재를 추적하기 위한 다양한 접근 방식이 개발되었습니다. 일반적으로 누락된 값을 전체적으로 나타내는 <em>마스크</em>를 사용하거나 누락된 항목을 나타내는 <em>감시 값</em>을 선택하는 두 가지 전략 중 하나를 중심으로 진행됩니다.</p>
+<p>마스킹 접근 방식에서 마스크는 완전히 별도의 부울 배열일 수도 있고, 값의 null 상태를 로컬로 나타내기 위해 데이터 표현에서 1비트를 할당하는 작업이 포함될 수도 있습니다.</p>
+<p>센티넬 접근 방식에서 센티넬 값은 –9999 또는 일부 희귀 비트 패턴으로 누락된 정수 값을 나타내는 것과 같은 일부 데이터별 규칙일 수도 있고, IEEE 부동 소수점 사양의 일부인 특수 값인 ‘NaN’(숫자가 아님)으로 누락된 부동 소수점 값을 나타내는 것과 같은 보다 전역적인 규칙일 수도 있습니다.</p>
+<p>이러한 접근 방식 중 어느 것도 장단점이 없습니다. 별도의 마스크 배열을 사용하려면 추가 부울 배열을 할당해야 하며, 이는 저장 및 계산 모두에 오버헤드를 추가합니다. Sentinel 값은 표시할 수 있는 유효한 값의 범위를 줄이고 ’NaN’과 같은 일반적인 특수 값을 모든 데이터 유형에 사용할 수 없기 때문에 CPU 및 GPU 연산에 추가(종종 최적화되지 않은) 논리가 필요할 수 있습니다.</p>
+<p>보편적으로 최적의 선택이 존재하지 않는 대부분의 경우와 마찬가지로 언어와 시스템마다 서로 다른 규칙을 사용합니다. 예를 들어 R 언어는 누락된 데이터를 나타내는 감시 값으로 각 데이터 유형 내의 예약된 비트 패턴을 사용하는 반면, SciDB 시스템은 NA 상태를 나타내기 위해 모든 셀에 첨부된 추가 바이트를 사용합니다.</p>
 </section>
-<section id="missing-data-in-pandas" class="level2">
-<h2 class="anchored" data-anchor-id="missing-data-in-pandas">Missing Data in Pandas</h2>
-<p>The way in which Pandas handles missing values is constrained by its reliance on the NumPy package, which does not have a built-in notion of NA values for non-floating-point data types.</p>
-<p>Perhaps Pandas could have followed R’s lead in specifying bit patterns for each individual data type to indicate nullness, but this approach turns out to be rather unwieldy. While R has just 4 main data types, NumPy supports <em>far</em> more than this: for example, while R has a single integer type, NumPy supports 14 basic integer types once you account for available bit widths, signedness, and endianness of the encoding. Reserving a specific bit pattern in all available NumPy types would lead to an unwieldy amount of overhead in special-casing various operations for various types, likely even requiring a new fork of the NumPy package. Further, for the smaller data types (such as 8-bit integers), sacrificing a bit to use as a mask would significantly reduce the range of values it can represent.</p>
-<p>Because of these constraints and trade-offs, Pandas has two “modes” of storing and manipulating null values:</p>
+<section id="pandas에서-데이터가-누락되었습니다." class="level2">
+<h2 class="anchored" data-anchor-id="pandas에서-데이터가-누락되었습니다.">Pandas에서 데이터가 누락되었습니다.</h2>
+<p>Pandas가 누락된 값을 처리하는 방식은 부동 소수점이 아닌 데이터 유형에 대한 NA 값의 내장 개념이 없는 NumPy 패키지에 대한 의존으로 인해 제한됩니다.</p>
+<p>아마도 Pandas는 null을 나타내기 위해 각 개별 데이터 유형에 대한 비트 패턴을 지정하는 R의 리드를 따를 수도 있었지만 이 접근 방식은 다소 다루기 힘든 것으로 나타났습니다. R에는 4개의 주요 데이터 유형만 있지만 NumPy는 이보다 <em>훨씬</em> 더 많은 것을 지원합니다. 예를 들어 R에는 단일 정수 유형이 있는 반면 NumPy는 사용 가능한 비트 폭, 부호 있는 인코딩 및 인코딩의 엔디안을 고려하면 14개의 기본 정수 유형을 지원합니다. 사용 가능한 모든 NumPy 유형에서 특정 비트 패턴을 예약하면 다양한 유형에 대한 특수한 작업에서 다루기 힘든 오버헤드가 발생하고 NumPy 패키지의 새로운 포크가 필요할 수도 있습니다. 또한 더 작은 데이터 유형(예: 8비트 정수)의 경우 마스크로 사용하기 위해 비트를 희생하면 표현할 수 있는 값의 범위가 크게 줄어듭니다.</p>
+<p>이러한 제약 조건과 장단점으로 인해 Pandas에는 null 값을 저장하고 조작하는 두 가지 “모드”가 있습니다.</p>
 <ul>
-<li>The default mode is to use a sentinel-based missing data scheme, with sentinel values <code>NaN</code> or <code>None</code> depending on the type of the data.</li>
-<li>Alternatively, you can opt in to using the nullable data types (dtypes) Pandas provides (discussed later in this chapter), which results in the creation an accompanying mask array to track missing entries. These missing entries are then presented to the user as the special <code>pd.NA</code> value.</li>
+<li>기본 모드는 데이터 유형에 따라 센티널 값 ‘NaN’ 또는 ’None’을 사용하는 센티널 기반 누락 데이터 체계를 사용하는 것입니다.</li>
+<li>또는 Pandas가 제공하는 nullable 데이터 유형(dtypes)을 사용하도록 선택할 수 있습니다(이 장의 뒷부분에서 설명). 그러면 누락된 항목을 추적하기 위해 동반 마스크 배열이 생성됩니다. 이러한 누락된 항목은 특수 <code>pd.NA</code> 값으로 사용자에게 표시됩니다.</li>
 </ul>
-<p>In either case, the data operations and manipulations provided by the Pandas API will handle and propagate those missing entries in a predictable manner. But to develop some intuition into <em>why</em> these choices are made, let’s dive quickly into the trade-offs inherent in <code>None</code>, <code>NaN</code>, and <code>NA</code>. As usual, we’ll start by importing NumPy and Pandas:</p>
+<p>두 경우 모두 Pandas API에서 제공하는 데이터 작업 및 조작은 누락된 항목을 예측 가능한 방식으로 처리하고 전파합니다. 그러나 이러한 선택이 <em>왜</em> 이루어졌는지에 대한 직관을 개발하기 위해 ‘None’, ‘NaN’ 및 ’NA’에 내재된 장단점을 빠르게 살펴보겠습니다. 평소와 같이 NumPy와 Pandas를 가져오는 것부터 시작하겠습니다.</p>
 <div id="cell-4" class="cell" data-execution_count="1">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<section id="none-as-a-sentinel-value" class="level3">
-<h3 class="anchored" data-anchor-id="none-as-a-sentinel-value">None as a Sentinel Value</h3>
-<p>For some data types, Pandas uses <code>None</code> as a sentinel value. <code>None</code> is a Python object, which means that any array containing <code>None</code> must have <code>dtype=object</code>—that is, it must be a sequence of Python objects.</p>
-<p>For example, observe what happens if you pass <code>None</code> to a NumPy array:</p>
+<section id="sentinel-값-없음" class="level3">
+<h3 class="anchored" data-anchor-id="sentinel-값-없음">Sentinel 값 없음</h3>
+<p>일부 데이터 유형의 경우 Pandas는 ’None’을 센티널 값으로 사용합니다. <code>None</code>은 파이썬(Python) 객체입니다. 즉, <code>None</code>을 포함하는 모든 배열은 <code>dtype=object</code>를 가져야 합니다. 즉, 파이썬(Python) 객체의 시퀀스여야 합니다.</p>
+<p>예를 들어 NumPy 배열에 ’None’을 전달하면 어떤 일이 발생하는지 관찰해 보세요.</p>
 <div id="cell-6" class="cell" data-execution_count="2">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>vals1 <span class="op">=</span> np.array([<span class="dv">1</span>, <span class="va">None</span>, <span class="dv">2</span>, <span class="dv">3</span>])</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>vals1</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -632,7 +632,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <pre><code>array([1, None, 2, 3], dtype=object)</code></pre>
 </div>
 </div>
-<p>This <code>dtype=object</code> means that the best common type representation NumPy could infer for the contents of the array is that they are Python objects. The downside of using <code>None</code> in this way is that operations on the data will be done at the Python level, with much more overhead than the typically fast operations seen for arrays with native types:</p>
+<p>이 <code>dtype=object</code>는 NumPy가 배열의 내용에 대해 추론할 수 있는 가장 일반적인 유형 표현이 파이썬(Python) 객체라는 것을 의미합니다. 이런 방식으로 <code>None</code>을 사용하는 경우의 단점은 데이터에 대한 작업이 파이썬(Python) 수준에서 수행되며 기본 유형의 배열에서 일반적으로 나타나는 빠른 작업보다 훨씬 더 많은 오버헤드가 발생한다는 것입니다.</p>
 <div id="cell-8" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="3">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="op">%</span>timeit np.arange(<span class="fl">1E6</span>, dtype<span class="op">=</span><span class="bu">int</span>).<span class="bu">sum</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
@@ -645,7 +645,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <pre><code>92.1 ms ± 3.42 ms per loop (mean ± std. dev. of 7 runs, 10 loops each)</code></pre>
 </div>
 </div>
-<p>Further, because Python does not support arithmetic operations with <code>None</code>, aggregations like <code>sum</code> or <code>min</code> will generally lead to an error:</p>
+<p>또한 파이썬(Python)은 <code>None</code>을 사용한 산술 연산을 지원하지 않기 때문에 <code>sum</code> 또는 <code>min</code>과 같은 집계는 일반적으로 오류로 이어집니다.</p>
 <div id="cell-11" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="5">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>vals1.<span class="bu">sum</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-error">
@@ -666,11 +666,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
-<p>For this reason, Pandas does not use <code>None</code> as a sentinel in its numerical arrays.</p>
+<p>이러한 이유로 Pandas는 숫자 배열에서 ’None’을 감시자로 사용하지 않습니다.</p>
 </section>
-<section id="nan-missing-numerical-data" class="level3">
-<h3 class="anchored" data-anchor-id="nan-missing-numerical-data">NaN: Missing Numerical Data</h3>
-<p>The other missing data sentinel, <code>NaN</code> is different; it is a special floating-point value recognized by all systems that use the standard IEEE floating-point representation:</p>
+<section id="nan-숫자-데이터-누락" class="level3">
+<h3 class="anchored" data-anchor-id="nan-숫자-데이터-누락">NaN: 숫자 데이터 누락</h3>
+<p>다른 누락된 데이터 센티널인 ’NaN’은 다릅니다. 이는 표준 IEEE 부동 소수점 표현을 사용하는 모든 시스템에서 인식되는 특수 부동 소수점 값입니다.</p>
 <div id="cell-14" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="6">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>vals2 <span class="op">=</span> np.array([<span class="dv">1</span>, np.nan, <span class="dv">3</span>, <span class="dv">4</span>]) </span>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>vals2</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -678,7 +678,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <pre><code>array([ 1., nan,  3.,  4.])</code></pre>
 </div>
 </div>
-<p>Notice that NumPy chose a native floating-point type for this array: this means that unlike the object array from before, this array supports fast operations pushed into compiled code. Keep in mind that <code>NaN</code> is a bit like a data virus—it infects any other object it touches. Regardless of the operation, the result of arithmetic with <code>NaN</code> will be another <code>NaN</code>:</p>
+<p>NumPy는 이 배열에 대해 기본 부동 소수점 유형을 선택했습니다. 이는 이전의 객체 배열과 달리 이 배열이 컴파일된 코드에 푸시된 빠른 작업을 지원한다는 것을 의미합니다. ’NaN’은 데이터 바이러스와 약간 비슷하다는 점을 기억하세요. NaN은 접촉하는 다른 모든 개체를 감염시킵니다. 연산에 관계없이 <code>NaN</code>을 사용한 산술 결과는 또 다른 <code>NaN</code>이 됩니다.</p>
 <div id="cell-16" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="7">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span> <span class="op">+</span> np.nan</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="7">
@@ -691,25 +691,25 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <pre><code>nan</code></pre>
 </div>
 </div>
-<p>This means that aggregates over the values are well defined (i.e., they don’t result in an error) but not always useful:</p>
+<p>이는 값에 대한 집계가 잘 정의되어 있지만(즉, 오류가 발생하지 않음) 항상 유용한 것은 아니라는 의미입니다.</p>
 <div id="cell-19" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="9">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>vals2.<span class="bu">sum</span>(), vals2.<span class="bu">min</span>(), vals2.<span class="bu">max</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="9">
 <pre><code>(nan, nan, nan)</code></pre>
 </div>
 </div>
-<p>That said, NumPy does provide <code>NaN</code>-aware versions of aggregations that will ignore these missing values:</p>
+<p>즉, NumPy는 이러한 누락된 값을 무시하는 <code>NaN</code> 인식 버전의 집계를 제공합니다.</p>
 <div id="cell-21" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="10">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>np.nansum(vals2), np.nanmin(vals2), np.nanmax(vals2)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="10">
 <pre><code>(8.0, 1.0, 4.0)</code></pre>
 </div>
 </div>
-<p>The main downside of <code>NaN</code> is that it is specifically a floating-point value; there is no equivalent <code>NaN</code> value for integers, strings, or other types.</p>
+<p><code>NaN</code>의 주요 단점은 이것이 특히 부동 소수점 값이라는 것입니다. 정수, 문자열 또는 기타 유형에 상응하는 <code>NaN</code> 값은 없습니다.</p>
 </section>
-<section id="nan-and-none-in-pandas" class="level3">
-<h3 class="anchored" data-anchor-id="nan-and-none-in-pandas">NaN and None in Pandas</h3>
-<p><code>NaN</code> and <code>None</code> both have their place, and Pandas is built to handle the two of them nearly interchangeably, converting between them where appropriate:</p>
+<section id="nan-및-pandas에는-없음" class="level3">
+<h3 class="anchored" data-anchor-id="nan-및-pandas에는-없음">NaN 및 Pandas에는 없음</h3>
+<p>’NaN’과 ’None’은 둘 다 고유한 위치를 갖고 있으며 Pandas는 두 가지를 거의 상호 교환적으로 처리하고 적절한 경우 둘 사이를 변환하도록 만들어졌습니다.</p>
 <div id="cell-24" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="11">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>pd.Series([<span class="dv">1</span>, np.nan, <span class="dv">2</span>, <span class="va">None</span>])</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="11">
@@ -720,7 +720,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 dtype: float64</code></pre>
 </div>
 </div>
-<p>For types that don’t have an available sentinel value, Pandas automatically typecasts when NA values are present. For example, if we set a value in an integer array to <code>np.nan</code>, it will automatically be upcast to a floating-point type to accommodate the NA:</p>
+<p>사용 가능한 센티널 값이 없는 유형의 경우 NA 값이 있으면 Pandas가 자동으로 유형 변환합니다. 예를 들어 정수 배열의 값을 <code>np.nan</code>으로 설정하면 NA를 수용하기 위해 자동으로 부동 소수점 유형으로 업캐스트됩니다.</p>
 <div id="cell-26" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="12">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> pd.Series(<span class="bu">range</span>(<span class="dv">2</span>), dtype<span class="op">=</span><span class="bu">int</span>)</span>
 <span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>x</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -739,48 +739,48 @@ dtype: int64</code></pre>
 dtype: float64</code></pre>
 </div>
 </div>
-<p>Notice that in addition to casting the integer array to floating point, Pandas automatically converts the <code>None</code> to a <code>NaN</code> value.</p>
-<p>While this type of magic may feel a bit hackish compared to the more unified approach to NA values in domain-specific languages like R, the Pandas sentinel/casting approach works quite well in practice and in my experience only rarely causes issues.</p>
-<p>The following table lists the upcasting conventions in Pandas when NA values are introduced:</p>
+<p>정수 배열을 부동 소수점으로 캐스팅하는 것 외에도 Pandas는 자동으로 <code>None</code>을 <code>NaN</code> 값으로 변환합니다.</p>
+<p>이러한 유형의 마법은 R과 같은 도메인별 언어의 NA 값에 대한 보다 통합된 접근 방식에 비해 약간 해킹적으로 느껴질 수 있지만 Pandas 센티널/캐스팅 접근 방식은 실제로 매우 잘 작동하며 제 경험상 문제가 거의 발생하지 않습니다.</p>
+<p>다음 표에는 NA 값이 도입될 때 Pandas의 업캐스팅 규칙이 나열되어 있습니다.</p>
 <table class="caption-top table">
 <thead>
 <tr class="header">
-<th>Typeclass</th>
-<th>Conversion when storing NAs</th>
-<th>NA sentinel value</th>
+<th>유형클래스</th>
+<th>NA 저장 시 변환</th>
+<th>NA 센티널 값</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><code>floating</code></td>
-<td>No change</td>
+<td><code>떠있는</code></td>
+<td>변화 없음</td>
 <td><code>np.nan</code></td>
 </tr>
 <tr class="even">
-<td><code>object</code></td>
-<td>No change</td>
-<td><code>None</code> or <code>np.nan</code></td>
+<td><code>객체</code></td>
+<td>변화 없음</td>
+<td><code>None</code> 또는 <code>np.nan</code></td>
 </tr>
 <tr class="odd">
-<td><code>integer</code></td>
-<td>Cast to <code>float64</code></td>
+<td><code>정수</code></td>
+<td><code>float64</code>로 캐스트</td>
 <td><code>np.nan</code></td>
 </tr>
 <tr class="even">
-<td><code>boolean</code></td>
-<td>Cast to <code>object</code></td>
-<td><code>None</code> or <code>np.nan</code></td>
+<td><code>부울</code></td>
+<td><code>객체</code>로 캐스트</td>
+<td><code>None</code> 또는 <code>np.nan</code></td>
 </tr>
 </tbody>
 </table>
-<p>Keep in mind that in Pandas, string data is always stored with an <code>object</code> dtype.</p>
+<p>Pandas에서 문자열 데이터는 항상 <code>object</code> dtype으로 저장된다는 점을 명심하세요.</p>
 </section>
 </section>
 <section id="pandas-nullable-dtypes" class="level2">
 <h2 class="anchored" data-anchor-id="pandas-nullable-dtypes">Pandas Nullable Dtypes</h2>
-<p>In early versions of Pandas, <code>NaN</code> and <code>None</code> as sentinel values were the only missing data representations available. The primary difficulty this introduced was with regard to the implicit type casting: for example, there was no way to represent a true integer array with missing data.</p>
-<p>To address this difficulty, Pandas later added <em>nullable dtypes</em>, which are distinguished from regular dtypes by capitalization of their names (e.g., <code>pd.Int32</code> versus <code>np.int32</code>). For backward compatibility, these nullable dtypes are only used if specifically requested.</p>
-<p>For example, here is a <code>Series</code> of integers with missing data, created from a list containing all three available markers of missing data:</p>
+<p>Pandas의 초기 버전에서는 Sentinel 값인 ‘NaN’ 및 ’None’이 사용 가능한 유일한 누락 데이터 표현이었습니다. 이로 인해 발생한 주요 어려움은 암시적 유형 캐스팅과 관련이 있었습니다. 예를 들어 데이터가 누락된 실제 정수 배열을 표현할 방법이 없었습니다.</p>
+<p>이 문제를 해결하기 위해 Pandas는 나중에 이름을 대문자로 표시하여 일반 dtype과 구별되는 <em>nullable dtypes</em>를 추가했습니다(예: <code>pd.Int32</code> 대 <code>np.int32</code>). 이전 버전과의 호환성을 위해 이러한 nullable dtype은 특별히 요청된 경우에만 사용됩니다.</p>
+<p>예를 들어 다음은 누락된 데이터에 대한 사용 가능한 마커 3개를 모두 포함하는 목록에서 생성된 누락된 데이터가 있는 정수 ’시리즈’입니다.</p>
 <div id="cell-31" class="cell" data-execution_count="14">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb25"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>pd.Series([<span class="dv">1</span>, np.nan, <span class="dv">2</span>, <span class="va">None</span>, pd.NA], dtype<span class="op">=</span><span class="st">'Int32'</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="14">
@@ -792,21 +792,21 @@ dtype: float64</code></pre>
 dtype: Int32</code></pre>
 </div>
 </div>
-<p>This representation can be used interchangeably with the others in all the operations explored through the rest of this chapter.</p>
+<p>이 표현은 이 장의 나머지 부분에서 살펴보는 모든 작업에서 다른 표현과 상호 교환적으로 사용될 수 있습니다.</p>
 </section>
-<section id="operating-on-null-values" class="level2">
-<h2 class="anchored" data-anchor-id="operating-on-null-values">Operating on Null Values</h2>
-<p>As we have seen, Pandas treats <code>None</code>, <code>NaN</code>, and <code>NA</code> as essentially interchangeable for indicating missing or null values. To facilitate this convention, Pandas provides several methods for detecting, removing, and replacing null values in Pandas data structures. They are:</p>
+<section id="null-값에-대한-작업" class="level2">
+<h2 class="anchored" data-anchor-id="null-값에-대한-작업">Null 값에 대한 작업</h2>
+<p>앞서 살펴보았듯이 Pandas는 ‘None’, ‘NaN’ 및 ’NA’를 누락 또는 null 값을 표시하기 위해 기본적으로 상호 교환 가능한 것으로 처리합니다. 이러한 규칙을 용이하게 하기 위해 Pandas는 Pandas 데이터 구조에서 null 값을 감지, 제거 및 대체하는 여러 가지 방법을 제공합니다. 그들은:</p>
 <ul>
-<li><code>isnull</code>: Generates a Boolean mask indicating missing values</li>
-<li><code>notnull</code>: Opposite of <code>isnull</code></li>
-<li><code>dropna</code>: Returns a filtered version of the data</li>
-<li><code>fillna</code>: Returns a copy of the data with missing values filled or imputed</li>
+<li><code>isnull</code>: 누락된 값을 나타내는 부울 마스크를 생성합니다.</li>
+<li><code>notnull</code>: <code>isnull</code>의 반대말</li>
+<li><code>dropna</code>: 필터링된 데이터 버전을 반환합니다.</li>
+<li><code>fillna</code>: 누락된 값이 채워지거나 대치된 데이터의 복사본을 반환합니다.</li>
 </ul>
-<p>We will conclude this chapter with a brief exploration and demonstration of these routines.</p>
-<section id="detecting-null-values" class="level3">
-<h3 class="anchored" data-anchor-id="detecting-null-values">Detecting Null Values</h3>
-<p>Pandas data structures have two useful methods for detecting null data: <code>isnull</code> and <code>notnull</code>. Either one will return a Boolean mask over the data. For example:</p>
+<p>우리는 이러한 루틴에 대한 간략한 탐구와 시연으로 이 장을 마무리할 것입니다.</p>
+<section id="null-값-감지" class="level3">
+<h3 class="anchored" data-anchor-id="null-값-감지">Null 값 감지</h3>
+<p>Pandas 데이터 구조에는 null 데이터를 감지하는 데 ’isnull’과 ’notnull’이라는 두 가지 유용한 방법이 있습니다. 둘 중 하나는 데이터에 대한 부울 마스크를 반환합니다. 예를 들어:</p>
 <div id="cell-35" class="cell" data-tags="[]" data-execution_count="15">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb27"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> pd.Series([<span class="dv">1</span>, np.nan, <span class="st">'hello'</span>, <span class="va">None</span>])</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
@@ -820,7 +820,7 @@ dtype: Int32</code></pre>
 dtype: bool</code></pre>
 </div>
 </div>
-<p>As mentioned in <a href="../notebooks/03.02-Data-Indexing-and-Selection.html">Data Indexing and Selection</a>, Boolean masks can be used directly as a <code>Series</code> or <code>DataFrame</code> index:</p>
+<p><a href="../notebooks/03.02-Data-Indexing-and-Selection.html">데이터 인덱싱 및 선택</a>에서 언급한 대로 부울 마스크는 ‘시리즈’ 또는 ‘DataFrame’ 인덱스로 직접 사용할 수 있습니다.</p>
 <div id="cell-38" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="17">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb30"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a>data[data.notnull()]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="17">
@@ -829,11 +829,11 @@ dtype: bool</code></pre>
 dtype: object</code></pre>
 </div>
 </div>
-<p>The <code>isnull()</code> and <code>notnull()</code> methods produce similar Boolean results for <code>DataFrame</code> objects.</p>
+<p><code>isnull()</code> 및 <code>notnull()</code> 메서드는 <code>DataFrame</code> 개체에 대해 유사한 부울 결과를 생성합니다.</p>
 </section>
-<section id="dropping-null-values" class="level3">
-<h3 class="anchored" data-anchor-id="dropping-null-values">Dropping Null Values</h3>
-<p>In addition to these masking methods, there are the convenience methods <code>dropna</code> (which removes NA values) and <code>fillna</code> (which fills in NA values). For a <code>Series</code>, the result is straightforward:</p>
+<section id="null-값-삭제" class="level3">
+<h3 class="anchored" data-anchor-id="null-값-삭제">Null 값 삭제</h3>
+<p>이러한 마스킹 방법 외에도 ’dropna’라는 편의 방법이 있습니다. (NA 값 제거) 및 <code>fillna</code>(NA 값 채우기). ’시리즈’의 경우, 결과는 간단합니다.</p>
 <div id="cell-41" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="18">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb32"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a>data.dropna()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="18">
@@ -842,7 +842,7 @@ dtype: object</code></pre>
 dtype: object</code></pre>
 </div>
 </div>
-<p>For a <code>DataFrame</code>, there are more options. Consider the following <code>DataFrame</code>:</p>
+<p><code>DataFrame</code>의 경우 더 많은 옵션이 있습니다. 다음 <code>DataFrame</code>을 고려해보세요:</p>
 <div id="cell-43" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="19">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb34"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.DataFrame([[<span class="dv">1</span>,      np.nan, <span class="dv">2</span>],</span>
 <span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a>                   [<span class="dv">2</span>,      <span class="dv">3</span>,      <span class="dv">5</span>],</span>
@@ -886,8 +886,8 @@ dtype: object</code></pre>
 </div>
 </div>
 </div>
-<p>We cannot drop single values from a <code>DataFrame</code>; we can only drop entire rows or columns. Depending on the application, you might want one or the other, so <code>dropna</code> includes a number of options for a <code>DataFrame</code>.</p>
-<p>By default, <code>dropna</code> will drop all rows in which <em>any</em> null value is present:</p>
+<p><code>DataFrame</code>에서 단일 값을 삭제할 수 없습니다. 전체 행이나 열만 삭제할 수 있습니다. 애플리케이션에 따라 둘 중 하나를 원할 수 있으므로 <code>dropna</code>에는 <code>DataFrame</code>에 대한 다양한 옵션이 포함되어 있습니다.</p>
+<p>기본적으로 <code>dropna</code>는 <em>모든</em> null 값이 존재하는 모든 행을 삭제합니다.</p>
 <div id="cell-45" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="20">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb35"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a>df.dropna()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="20">
@@ -916,7 +916,7 @@ dtype: object</code></pre>
 </div>
 </div>
 </div>
-<p>Alternatively, you can drop NA values along a different axis. Using <code>axis=1</code> or <code>axis='columns'</code> drops all columns containing a null value:</p>
+<p>또는 다른 축을 따라 NA 값을 삭제할 수 있습니다. <code>axis=1</code> 또는 <code>axis='columns'</code>를 사용하면 null 값을 포함하는 모든 열이 삭제됩니다.</p>
 <div id="cell-47" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="21">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb36"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a>df.dropna(axis<span class="op">=</span><span class="st">'columns'</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="21">
@@ -949,8 +949,8 @@ dtype: object</code></pre>
 </div>
 </div>
 </div>
-<p>But this drops some good data as well; you might rather be interested in dropping rows or columns with <em>all</em> NA values, or a majority of NA values. This can be specified through the <code>how</code> or <code>thresh</code> parameters, which allow fine control of the number of nulls to allow through.</p>
-<p>The default is <code>how='any'</code>, such that any row or column containing a null value will be dropped. You can also specify <code>how='all'</code>, which will only drop rows/columns that contain <em>all</em> null values:</p>
+<p>그러나 이로 인해 좋은 데이터도 삭제됩니다. <em>모든</em> NA 값 또는 대부분의 NA 값이 포함된 행이나 열을 삭제하는 데 관심이 있을 수 있습니다. 이는 통과할 수 있는 null 수를 미세하게 제어할 수 있는 <code>how</code> 또는 <code>thresh</code> 매개변수를 통해 지정할 수 있습니다.</p>
+<p>기본값은 <code>how='any'</code>입니다. 따라서 null 값이 포함된 행이나 열은 모두 삭제됩니다. <em>all</em> null 값을 포함하는 행/열만 삭제하는 <code>how='all'</code>을 지정할 수도 있습니다.</p>
 <div id="cell-49" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="22">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb37"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a>df[<span class="dv">3</span>] <span class="op">=</span> np.nan</span>
 <span id="cb37-2"><a href="#cb37-2" aria-hidden="true" tabindex="-1"></a>df</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -1036,7 +1036,7 @@ dtype: object</code></pre>
 </div>
 </div>
 </div>
-<p>For finer-grained control, the <code>thresh</code> parameter lets you specify a minimum number of non-null values for the row/column to be kept:</p>
+<p>보다 세부적인 제어를 위해 <code>thresh</code> 매개변수를 사용하면 유지할 행/열에 대해 null이 아닌 값의 최소 개수를 지정할 수 있습니다.</p>
 <div id="cell-52" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="24">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb39"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a>df.dropna(axis<span class="op">=</span><span class="st">'rows'</span>, thresh<span class="op">=</span><span class="dv">3</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="24">
@@ -1067,12 +1067,12 @@ dtype: object</code></pre>
 </div>
 </div>
 </div>
-<p>Here, the first and last rows have been dropped because they each contain only two non-null values.</p>
+<p>여기서 첫 번째 행과 마지막 행에는 각각 Null이 아닌 값이 두 개만 포함되어 있으므로 삭제되었습니다.</p>
 </section>
-<section id="filling-null-values" class="level3">
-<h3 class="anchored" data-anchor-id="filling-null-values">Filling Null Values</h3>
-<p>Sometimes rather than dropping NA values, you’d like to replace them with a valid value. This value might be a single number like zero, or it might be some sort of imputation or interpolation from the good values. You could do this in-place using the <code>isnull</code> method as a mask, but because it is such a common operation Pandas provides the <code>fillna</code> method, which returns a copy of the array with the null values replaced.</p>
-<p>Consider the following <code>Series</code>:</p>
+<section id="null-값-채우기" class="level3">
+<h3 class="anchored" data-anchor-id="null-값-채우기">Null 값 채우기</h3>
+<p>때로는 NA 값을 삭제하는 대신 유효한 값으로 바꾸고 싶을 때가 있습니다. 이 값은 0과 같은 단일 숫자일 수도 있고 좋은 값에서 일종의 대치 또는 보간일 수도 있습니다. <code>isnull</code> 메서드를 마스크로 사용하여 내부에서 이 작업을 수행할 수 있지만 이는 일반적인 작업이기 때문에 Pandas는 null 값이 대체된 배열의 복사본을 반환하는 <code>fillna</code> 메서드를 제공합니다.</p>
+<p>다음 ’시리즈’를 고려하세요.</p>
 <div id="cell-55" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="25">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb40"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> pd.Series([<span class="dv">1</span>, np.nan, <span class="dv">2</span>, <span class="va">None</span>, <span class="dv">3</span>], index<span class="op">=</span><span class="bu">list</span>(<span class="st">'abcde'</span>), dtype<span class="op">=</span><span class="st">'Int32'</span>)</span>
 <span id="cb40-2"><a href="#cb40-2" aria-hidden="true" tabindex="-1"></a>data</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -1085,7 +1085,7 @@ e       3
 dtype: Int32</code></pre>
 </div>
 </div>
-<p>We can fill NA entries with a single value, such as zero:</p>
+<p>NA 항목을 0과 같은 단일 값으로 채울 수 있습니다.</p>
 <div id="cell-57" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="26">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb42"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a>data.fillna(<span class="dv">0</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="26">
@@ -1097,7 +1097,7 @@ e    3
 dtype: Int32</code></pre>
 </div>
 </div>
-<p>We can specify a forward fill to propagate the previous value forward:</p>
+<p>이전 값을 앞으로 전파하기 위해 정방향 채우기를 지정할 수 있습니다.</p>
 <div id="cell-59" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="27">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb44"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb44-1"><a href="#cb44-1" aria-hidden="true" tabindex="-1"></a><span class="co"># forward fill</span></span>
 <span id="cb44-2"><a href="#cb44-2" aria-hidden="true" tabindex="-1"></a>data.fillna(method<span class="op">=</span><span class="st">'ffill'</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -1110,7 +1110,7 @@ e    3
 dtype: Int32</code></pre>
 </div>
 </div>
-<p>Or we can specify a backward fill to propagate the next values backward:</p>
+<p>또는 다음 값을 뒤로 전파하기 위해 뒤로 채우기를 지정할 수 있습니다.</p>
 <div id="cell-61" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="28">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb46"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb46-1"><a href="#cb46-1" aria-hidden="true" tabindex="-1"></a><span class="co"># back fill</span></span>
 <span id="cb46-2"><a href="#cb46-2" aria-hidden="true" tabindex="-1"></a>data.fillna(method<span class="op">=</span><span class="st">'bfill'</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -1123,7 +1123,7 @@ e    3
 dtype: Int32</code></pre>
 </div>
 </div>
-<p>In the case of a <code>DataFrame</code>, the options are similar, but we can also specify an <code>axis</code> along which the fills should take place:</p>
+<p><code>DataFrame</code>의 경우 옵션은 비슷하지만 채우기가 수행되어야 하는 <code>축</code>을 지정할 수도 있습니다.</p>
 <div id="cell-63" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="29">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb48"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb48-1"><a href="#cb48-1" aria-hidden="true" tabindex="-1"></a>df</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="29">
@@ -1212,7 +1212,7 @@ dtype: Int32</code></pre>
 </div>
 </div>
 </div>
-<p>Notice that if a previous value is not available during a forward fill, the NA value remains.</p>
+<p>정방향 채우기 중에 이전 값을 사용할 수 없는 경우 NA 값이 유지됩니다.</p>
 
 
 </section>
@@ -1621,13 +1621,13 @@ dtype: Int32</code></pre>
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../notebooks/03.03-Operations-in-Pandas.html" class="pagination-link" aria-label="Operating on Data in Pandas">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Operating on Data in Pandas</span></span>
+      <a href="../notebooks/03.03-Operations-in-Pandas.html" class="pagination-link" aria-label="Pandas에서 데이터 작업">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Pandas에서 데이터 작업</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../notebooks/03.05-Hierarchical-Indexing.html" class="pagination-link" aria-label="Hierarchical Indexing">
-        <span class="nav-page-text"><span class="chapter-title">Hierarchical Indexing</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../notebooks/03.05-Hierarchical-Indexing.html" class="pagination-link" aria-label="계층적 인덱싱">
+        <span class="nav-page-text"><span class="chapter-title">계층적 인덱싱</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

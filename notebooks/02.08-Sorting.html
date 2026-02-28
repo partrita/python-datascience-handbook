@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Sorting Arrays – 파이썬 데이터 사이언스 핸드북</title>
+<title>배열 정렬 – 파이썬 데이터 사이언스 핸드북</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -77,7 +77,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-3778d3e438078121318a23701f9f68bb.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-803ae4f7a8810f475153517dc3c4ebae.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -147,7 +147,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../notebooks/02.00-Introduction-to-NumPy.html">NumPy 소개</a></li><li class="breadcrumb-item"><a href="../notebooks/02.08-Sorting.html"><span class="chapter-title">Sorting Arrays</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../notebooks/02.00-Introduction-to-NumPy.html">NumPy 소개</a></li><li class="breadcrumb-item"><a href="../notebooks/02.08-Sorting.html"><span class="chapter-title">배열 정렬</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -194,7 +194,7 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/01.00-IPython-Beyond-Normal-Python.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Jupyter: 일반 Python을 넘어서</span></a>
+  <a href="../notebooks/01.00-IPython-Beyond-Normal-Python.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Jupyter: 일반 파이썬(Python)을 넘어서</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -224,17 +224,17 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/01.06-Errors-and-Debugging.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Errors and Debugging</span></a>
+  <a href="../notebooks/01.06-Errors-and-Debugging.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">오류 및 디버깅</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/01.07-Timing-and-Profiling.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Profiling and Timing Code</span></a>
+  <a href="../notebooks/01.07-Timing-and-Profiling.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">프로파일링 및 타이밍 코드</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/01.08-More-IPython-Resources.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">More IPython Resources</span></a>
+  <a href="../notebooks/01.08-More-IPython-Resources.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">추가 IPython 리소스</span></a>
   </div>
 </li>
       </ul>
@@ -250,52 +250,52 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.00-Introduction-to-NumPy.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Introduction to NumPy</span></a>
+  <a href="../notebooks/02.00-Introduction-to-NumPy.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">NumPy 소개</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.01-Understanding-Data-Types.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Understanding Data Types in Python</span></a>
+  <a href="../notebooks/02.01-Understanding-Data-Types.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">파이썬(Python)의 데이터 유형 이해</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.02-The-Basics-Of-NumPy-Arrays.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">The Basics of NumPy Arrays</span></a>
+  <a href="../notebooks/02.02-The-Basics-Of-NumPy-Arrays.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">NumPy 배열의 기본</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.03-Computation-on-arrays-ufuncs.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Computation on NumPy Arrays: Universal Functions</span></a>
+  <a href="../notebooks/02.03-Computation-on-arrays-ufuncs.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">NumPy 배열 계산: 범용 함수</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.04-Computation-on-arrays-aggregates.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Aggregations: min, max, and Everything in Between</span></a>
+  <a href="../notebooks/02.04-Computation-on-arrays-aggregates.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">집계: 최소, 최대 및 그 사이의 모든 것</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.05-Computation-on-arrays-broadcasting.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Computation on Arrays: Broadcasting</span></a>
+  <a href="../notebooks/02.05-Computation-on-arrays-broadcasting.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">배열 계산: 브로드캐스팅</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.06-Boolean-Arrays-and-Masks.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Comparisons, Masks, and Boolean Logic</span></a>
+  <a href="../notebooks/02.06-Boolean-Arrays-and-Masks.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">비교, 마스크 및 부울 논리</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.07-Fancy-Indexing.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Fancy Indexing</span></a>
+  <a href="../notebooks/02.07-Fancy-Indexing.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">멋진 인덱싱</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.08-Sorting.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Sorting Arrays</span></a>
+  <a href="../notebooks/02.08-Sorting.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">배열 정렬</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.09-Structured-Data-NumPy.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Structured Data: NumPy’s Structured Arrays</span></a>
+  <a href="../notebooks/02.09-Structured-Data-NumPy.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">구조화된 데이터: NumPy의 구조화된 배열</span></a>
   </div>
 </li>
       </ul>
@@ -311,72 +311,72 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.00-Introduction-to-Pandas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Data Manipulation with Pandas</span></a>
+  <a href="../notebooks/03.00-Introduction-to-Pandas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">팬더를 이용한 데이터 조작</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.01-Introducing-Pandas-Objects.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Introducing Pandas Objects</span></a>
+  <a href="../notebooks/03.01-Introducing-Pandas-Objects.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">판다스 객체 소개</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.02-Data-Indexing-and-Selection.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Data Indexing and Selection</span></a>
+  <a href="../notebooks/03.02-Data-Indexing-and-Selection.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">데이터 인덱싱 및 선택</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.03-Operations-in-Pandas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Operating on Data in Pandas</span></a>
+  <a href="../notebooks/03.03-Operations-in-Pandas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Pandas에서 데이터 작업</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.04-Missing-Values.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Handling Missing Data</span></a>
+  <a href="../notebooks/03.04-Missing-Values.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">누락된 데이터 처리</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.05-Hierarchical-Indexing.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Hierarchical Indexing</span></a>
+  <a href="../notebooks/03.05-Hierarchical-Indexing.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">계층적 인덱싱</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.06-Concat-And-Append.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Combining Datasets: concat and append</span></a>
+  <a href="../notebooks/03.06-Concat-And-Append.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">데이터세트 결합: 연결 및 추가</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.07-Merge-and-Join.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Combining Datasets: merge and join</span></a>
+  <a href="../notebooks/03.07-Merge-and-Join.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">데이터세트 결합: 병합 및 조인</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.08-Aggregation-and-Grouping.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Aggregation and Grouping</span></a>
+  <a href="../notebooks/03.08-Aggregation-and-Grouping.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">집계 및 그룹화</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.09-Pivot-Tables.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Pivot Tables</span></a>
+  <a href="../notebooks/03.09-Pivot-Tables.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">피벗 테이블</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.10-Working-With-Strings.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Vectorized String Operations</span></a>
+  <a href="../notebooks/03.10-Working-With-Strings.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">벡터화된 문자열 작업</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.11-Working-with-Time-Series.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Working with Time Series</span></a>
+  <a href="../notebooks/03.11-Working-with-Time-Series.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">시계열 작업</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.12-Performance-Eval-and-Query.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">High-Performance Pandas: eval and query</span></a>
+  <a href="../notebooks/03.12-Performance-Eval-and-Query.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">고성능 Pandas: 평가 및 쿼리</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.13-Further-Resources.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Further Resources</span></a>
+  <a href="../notebooks/03.13-Further-Resources.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">추가 리소스</span></a>
   </div>
 </li>
       </ul>
@@ -392,77 +392,77 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.00-Introduction-To-Matplotlib.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Visualization with Matplotlib</span></a>
+  <a href="../notebooks/04.00-Introduction-To-Matplotlib.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Matplotlib를 사용한 시각화</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.01-Simple-Line-Plots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Simple Line Plots</span></a>
+  <a href="../notebooks/04.01-Simple-Line-Plots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">간단한 선 도표</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.02-Simple-Scatter-Plots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Simple Scatter Plots</span></a>
+  <a href="../notebooks/04.02-Simple-Scatter-Plots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">단순 산점도</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.03-Errorbars.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Visualizing Uncertainties</span></a>
+  <a href="../notebooks/04.03-Errorbars.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">불확실성 시각화</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.04-Density-and-Contour-Plots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Density and Contour Plots</span></a>
+  <a href="../notebooks/04.04-Density-and-Contour-Plots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">밀도 및 등고선 플롯</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.05-Histograms-and-Binnings.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Histograms, Binnings, and Density</span></a>
+  <a href="../notebooks/04.05-Histograms-and-Binnings.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">히스토그램, 비닝 및 밀도</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.06-Customizing-Legends.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Customizing Plot Legends</span></a>
+  <a href="../notebooks/04.06-Customizing-Legends.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">플롯 범례 사용자 정의</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.07-Customizing-Colorbars.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Customizing Colorbars</span></a>
+  <a href="../notebooks/04.07-Customizing-Colorbars.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">컬러바 사용자 정의</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.08-Multiple-Subplots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Multiple Subplots</span></a>
+  <a href="../notebooks/04.08-Multiple-Subplots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">다중 서브플롯</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.09-Text-and-Annotation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Text and Annotation</span></a>
+  <a href="../notebooks/04.09-Text-and-Annotation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">텍스트 및 주석</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.10-Customizing-Ticks.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Customizing Ticks</span></a>
+  <a href="../notebooks/04.10-Customizing-Ticks.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">눈금 사용자 정의</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.11-Settings-and-Stylesheets.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Customizing Matplotlib: Configurations and Stylesheets</span></a>
+  <a href="../notebooks/04.11-Settings-and-Stylesheets.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Matplotlib 사용자 정의: 구성 및 스타일시트</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.12-Three-Dimensional-Plotting.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Three-Dimensional Plotting in Matplotlib</span></a>
+  <a href="../notebooks/04.12-Three-Dimensional-Plotting.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Matplotlib의 3차원 플로팅</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.14-Visualization-With-Seaborn.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Visualization with Seaborn</span></a>
+  <a href="../notebooks/04.14-Visualization-With-Seaborn.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Seaborn을 이용한 시각화</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.15-Further-Resources.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Further Resources</span></a>
+  <a href="../notebooks/04.15-Further-Resources.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">추가 리소스</span></a>
   </div>
 </li>
       </ul>
@@ -478,82 +478,82 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.00-Machine-Learning.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Machine Learning</span></a>
+  <a href="../notebooks/05.00-Machine-Learning.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">머신러닝</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.01-What-Is-Machine-Learning.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">What Is Machine Learning?</span></a>
+  <a href="../notebooks/05.01-What-Is-Machine-Learning.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">머신러닝이란?</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.02-Introducing-Scikit-Learn.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Introducing Scikit-Learn</span></a>
+  <a href="../notebooks/05.02-Introducing-Scikit-Learn.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Scikit-Learn 소개</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.03-Hyperparameters-and-Model-Validation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Hyperparameters and Model Validation</span></a>
+  <a href="../notebooks/05.03-Hyperparameters-and-Model-Validation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">하이퍼파라미터 및 모델 검증</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.04-Feature-Engineering.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Feature Engineering</span></a>
+  <a href="../notebooks/05.04-Feature-Engineering.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">기능 엔지니어링</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.05-Naive-Bayes.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Naive Bayes Classification</span></a>
+  <a href="../notebooks/05.05-Naive-Bayes.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 나이브 베이즈 분류</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.06-Linear-Regression.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Linear Regression</span></a>
+  <a href="../notebooks/05.06-Linear-Regression.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 선형 회귀</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.07-Support-Vector-Machines.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Support Vector Machines</span></a>
+  <a href="../notebooks/05.07-Support-Vector-Machines.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 서포트 벡터 머신</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.08-Random-Forests.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Decision Trees and Random Forests</span></a>
+  <a href="../notebooks/05.08-Random-Forests.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 의사결정 트리 및 랜덤 포레스트</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.09-Principal-Component-Analysis.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Principal Component Analysis</span></a>
+  <a href="../notebooks/05.09-Principal-Component-Analysis.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 주성분 분석</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.10-Manifold-Learning.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Manifold Learning</span></a>
+  <a href="../notebooks/05.10-Manifold-Learning.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 다양한 학습</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.11-K-Means.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: k-Means Clustering</span></a>
+  <a href="../notebooks/05.11-K-Means.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: k-평균 클러스터링</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.12-Gaussian-Mixtures.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Gaussian Mixture Models</span></a>
+  <a href="../notebooks/05.12-Gaussian-Mixtures.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 가우스 혼합 모델</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.13-Kernel-Density-Estimation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Kernel Density Estimation</span></a>
+  <a href="../notebooks/05.13-Kernel-Density-Estimation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 커널 밀도 추정</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.14-Image-Features.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Application: A Face Detection Pipeline</span></a>
+  <a href="../notebooks/05.14-Image-Features.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">응용 분야: 얼굴 감지 파이프라인</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.15-Learning-More.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Further Machine Learning Resources</span></a>
+  <a href="../notebooks/05.15-Learning-More.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">추가 머신러닝(Machine Learning) 리소스</span></a>
   </div>
 </li>
       </ul>
@@ -569,7 +569,7 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/06.00-Figure-Code.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Appendix: Figure Code</span></a>
+  <a href="../notebooks/06.00-Figure-Code.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">부록: 그림 코드</span></a>
   </div>
 </li>
       </ul>
@@ -584,21 +584,21 @@ window.Quarto = {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#fast-sorting-in-numpy-np.sort-and-np.argsort" id="toc-fast-sorting-in-numpy-np.sort-and-np.argsort" class="nav-link active" data-scroll-target="#fast-sorting-in-numpy-np.sort-and-np.argsort">Fast Sorting in NumPy: np.sort and np.argsort</a>
+  <li><a href="#numpy의-빠른-정렬-np.sort-및-np.argsort" id="toc-numpy의-빠른-정렬-np.sort-및-np.argsort" class="nav-link active" data-scroll-target="#numpy의-빠른-정렬-np.sort-및-np.argsort">NumPy의 빠른 정렬: np.sort 및 np.argsort</a>
   <ul class="collapse">
-  <li><a href="#sorting-along-rows-or-columns" id="toc-sorting-along-rows-or-columns" class="nav-link" data-scroll-target="#sorting-along-rows-or-columns">Sorting Along Rows or Columns</a></li>
+  <li><a href="#행-또는-열을-기준으로-정렬" id="toc-행-또는-열을-기준으로-정렬" class="nav-link" data-scroll-target="#행-또는-열을-기준으로-정렬">행 또는 열을 기준으로 정렬</a></li>
   </ul></li>
-  <li><a href="#partial-sorts-partitioning" id="toc-partial-sorts-partitioning" class="nav-link" data-scroll-target="#partial-sorts-partitioning">Partial Sorts: Partitioning</a></li>
-  <li><a href="#example-k-nearest-neighbors" id="toc-example-k-nearest-neighbors" class="nav-link" data-scroll-target="#example-k-nearest-neighbors">Example: k-Nearest Neighbors</a></li>
+  <li><a href="#부분-정렬-파티셔닝" id="toc-부분-정렬-파티셔닝" class="nav-link" data-scroll-target="#부분-정렬-파티셔닝">부분 정렬: 파티셔닝</a></li>
+  <li><a href="#예-k-최근접이웃" id="toc-예-k-최근접이웃" class="nav-link" data-scroll-target="#예-k-최근접이웃">예: k-최근접이웃</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../notebooks/02.00-Introduction-to-NumPy.html">NumPy 소개</a></li><li class="breadcrumb-item"><a href="../notebooks/02.08-Sorting.html"><span class="chapter-title">Sorting Arrays</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../notebooks/02.00-Introduction-to-NumPy.html">NumPy 소개</a></li><li class="breadcrumb-item"><a href="../notebooks/02.08-Sorting.html"><span class="chapter-title">배열 정렬</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-title">Sorting Arrays</span></h1>
+<h1 class="title"><span class="chapter-title">배열 정렬</span></h1>
 </div>
 
 
@@ -615,8 +615,8 @@ window.Quarto = {
 </header>
 
 
-<p>Up to this point we have been concerned mainly with tools to access and operate on array data with NumPy. This chapter covers algorithms related to sorting values in NumPy arrays. These algorithms are a favorite topic in introductory computer science courses: if you’ve ever taken one, you probably have had dreams (or, depending on your temperament, nightmares) about <em>insertion sorts</em>, <em>selection sorts</em>, <em>merge sorts</em>, <em>quick sorts</em>, <em>bubble sorts</em>, and many, many more. All are means of accomplishing a similar task: sorting the values in a list or array.</p>
-<p>Python has a couple of built-in functions and methods for sorting lists and other iterable objects. The <code>sorted</code> function accepts a list and returns a sorted version of it:</p>
+<p>지금까지 우리는 주로 NumPy를 사용하여 배열 데이터에 액세스하고 작업하는 도구에 관심을 가져왔습니다. 이번 장에서는 NumPy 배열의 값 정렬과 관련된 알고리즘을 다룹니다. 이러한 알고리즘은 컴퓨터 공학 입문 과정에서 가장 좋아하는 주제입니다. 이 알고리즘을 수강한 적이 있다면 아마도 <em>삽입 정렬</em>, <em>선택 정렬</em>, <em>병합 정렬</em>, <em>빠른 정렬</em>, <em>버블 정렬</em> 등에 대한 꿈(또는 기질에 따라 악몽)을 꾸었을 것입니다. 모두 유사한 작업(목록이나 배열의 값 정렬)을 수행하는 수단입니다.</p>
+<p>파이썬(Python)에는 목록 및 기타 반복 가능한 객체를 정렬하기 위한 몇 가지 내장 함수와 메서드가 있습니다. <code>sorted</code> 함수는 목록을 받아들이고 목록의 정렬된 버전을 반환합니다:</p>
 <div id="cell-2" class="cell" data-execution_count="1">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>L <span class="op">=</span> [<span class="dv">3</span>, <span class="dv">1</span>, <span class="dv">4</span>, <span class="dv">1</span>, <span class="dv">5</span>, <span class="dv">9</span>, <span class="dv">2</span>, <span class="dv">6</span>]</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="bu">sorted</span>(L)  <span class="co"># returns a sorted copy</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -624,7 +624,7 @@ window.Quarto = {
 <pre><code>[1, 1, 2, 3, 4, 5, 6, 9]</code></pre>
 </div>
 </div>
-<p>By contrast, the <code>sort</code> method of lists will sort the list in-place:</p>
+<p>대조적으로, 목록의 <code>sort</code> 메소드는 목록을 그 자리에서 정렬합니다:</p>
 <div id="cell-4" class="cell" data-execution_count="2">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>L.sort()  <span class="co"># acts in-place and returns None</span></span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(L)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -632,17 +632,17 @@ window.Quarto = {
 <pre><code>[1, 1, 2, 3, 4, 5, 6, 9]</code></pre>
 </div>
 </div>
-<p>Python’s sorting methods are quite flexible, and can handle any iterable object. For example, here we sort a string:</p>
+<p>파이썬(Python)의 정렬 방법은 매우 유연하며 모든 반복 가능한 객체를 처리할 수 있습니다. 예를 들어 여기서는 문자열을 정렬합니다.</p>
 <div id="cell-6" class="cell" data-execution_count="3">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="bu">sorted</span>(<span class="st">'python'</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="3">
 <pre><code>['h', 'n', 'o', 'p', 't', 'y']</code></pre>
 </div>
 </div>
-<p>These built-in sorting methods are convenient, but as previously discussed, the dynamism of Python values means they are less performant than routines designed specifically for uniform arrays of numbers. This is where NumPy’s sorting routines come in.</p>
-<section id="fast-sorting-in-numpy-np.sort-and-np.argsort" class="level2">
-<h2 class="anchored" data-anchor-id="fast-sorting-in-numpy-np.sort-and-np.argsort">Fast Sorting in NumPy: np.sort and np.argsort</h2>
-<p>The <code>np.sort</code> function is analogous to Python’s built-in <code>sorted</code> function, and will efficiently return a sorted copy of an array:</p>
+<p>이러한 기본 제공 정렬 방법은 편리하지만 이전에 논의한 것처럼 파이썬(Python) 값의 역동성은 균일한 숫자 배열을 위해 특별히 설계된 루틴보다 성능이 떨어진다는 것을 의미합니다. 여기서 NumPy의 정렬 루틴이 사용됩니다.</p>
+<section id="numpy의-빠른-정렬-np.sort-및-np.argsort" class="level2">
+<h2 class="anchored" data-anchor-id="numpy의-빠른-정렬-np.sort-및-np.argsort">NumPy의 빠른 정렬: np.sort 및 np.argsort</h2>
+<p><code>np.sort</code> 함수는 파이썬(Python)의 내장 <code>sorted</code> 함수와 유사하며 배열의 정렬된 복사본을 효율적으로 반환합니다.</p>
 <div id="cell-9" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="4">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a></span>
@@ -652,7 +652,7 @@ window.Quarto = {
 <pre><code>array([1, 2, 3, 4, 5])</code></pre>
 </div>
 </div>
-<p>Similarly to the <code>sort</code> method of Python lists, you can also sort an array in-place using the array <code>sort</code> method:</p>
+<p>파이썬(Python) 목록의 <code>sort</code> 메서드와 마찬가지로 배열 <code>sort</code> 메서드를 사용하여 배열을 제자리에서 정렬할 수도 있습니다.</p>
 <div id="cell-11" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="5">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>x.sort()</span>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(x)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -660,7 +660,7 @@ window.Quarto = {
 <pre><code>[1 2 3 4 5]</code></pre>
 </div>
 </div>
-<p>A related function is <code>argsort</code>, which instead returns the <em>indices</em> of the sorted elements:</p>
+<p>관련 함수는 ’argsort’이며, 대신 정렬된 요소의 <em>인덱스</em>를 반환합니다.</p>
 <div id="cell-13" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="6">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> np.array([<span class="dv">2</span>, <span class="dv">1</span>, <span class="dv">4</span>, <span class="dv">3</span>, <span class="dv">5</span>])</span>
 <span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>i <span class="op">=</span> np.argsort(x)</span>
@@ -669,17 +669,17 @@ window.Quarto = {
 <pre><code>[1 0 3 2 4]</code></pre>
 </div>
 </div>
-<p>The first element of this result gives the index of the smallest element, the second value gives the index of the second smallest, and so on. These indices can then be used (via fancy indexing) to construct the sorted array if desired:</p>
+<p>이 결과의 첫 번째 요소는 가장 작은 요소의 인덱스를 제공하고, 두 번째 값은 두 번째로 작은 요소의 인덱스를 제공하는 식입니다. 원하는 경우 이러한 인덱스를 사용하여(멋진 인덱싱을 통해) 정렬된 배열을 구성할 수 있습니다.</p>
 <div id="cell-15" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="7">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>x[i]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="7">
 <pre><code>array([1, 2, 3, 4, 5])</code></pre>
 </div>
 </div>
-<p>You’ll see an application of <code>argsort</code> later in this chapter.</p>
-<section id="sorting-along-rows-or-columns" class="level3">
-<h3 class="anchored" data-anchor-id="sorting-along-rows-or-columns">Sorting Along Rows or Columns</h3>
-<p>A useful feature of NumPy’s sorting algorithms is the ability to sort along specific rows or columns of a multidimensional array using the <code>axis</code> argument. For example:</p>
+<p>이 장의 뒷부분에서 <code>argsort</code>의 적용을 보게 될 것입니다.</p>
+<section id="행-또는-열을-기준으로-정렬" class="level3">
+<h3 class="anchored" data-anchor-id="행-또는-열을-기준으로-정렬">행 또는 열을 기준으로 정렬</h3>
+<p>NumPy 정렬 알고리즘의 유용한 기능은 <code>axis</code> 인수를 사용하여 다차원 배열의 특정 행이나 열을 따라 정렬하는 기능입니다. 예를 들어:</p>
 <div id="cell-18" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="8">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>rng <span class="op">=</span> np.random.default_rng(seed<span class="op">=</span><span class="dv">42</span>)</span>
 <span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>X <span class="op">=</span> rng.integers(<span class="dv">0</span>, <span class="dv">10</span>, (<span class="dv">4</span>, <span class="dv">6</span>))</span>
@@ -711,12 +711,12 @@ window.Quarto = {
        [1, 3, 4, 5, 8, 9]])</code></pre>
 </div>
 </div>
-<p>Keep in mind that this treats each row or column as an independent array, and any relationships between the row or column values will be lost!</p>
+<p>이렇게 하면 각 행이나 열이 독립적인 배열로 처리되며 행이나 열 값 사이의 모든 관계가 손실된다는 점을 명심하세요!</p>
 </section>
 </section>
-<section id="partial-sorts-partitioning" class="level2">
-<h2 class="anchored" data-anchor-id="partial-sorts-partitioning">Partial Sorts: Partitioning</h2>
-<p>Sometimes we’re not interested in sorting the entire array, but simply want to find the <em>k</em> smallest values in the array. NumPy enables this with the <code>np.partition</code> function. <code>np.partition</code> takes an array and a number <em>K</em>; the result is a new array with the smallest <em>K</em> values to the left of the partition and the remaining values to the right:</p>
+<section id="부분-정렬-파티셔닝" class="level2">
+<h2 class="anchored" data-anchor-id="부분-정렬-파티셔닝">부분 정렬: 파티셔닝</h2>
+<p>때로는 전체 배열을 정렬하는 데 관심이 없고 단순히 배열에서 <em>k</em>개의 가장 작은 값을 찾고 싶을 때도 있습니다. NumPy는 <code>np.partition</code> 기능을 사용하여 이를 가능하게 합니다. <code>np.partition</code>은 배열과 숫자 <em>K</em>를 취합니다. 결과는 파티션 왼쪽에 가장 작은 <em>K</em> 값이 있고 오른쪽에 나머지 값이 있는 새 배열입니다.</p>
 <div id="cell-23" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="11">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> np.array([<span class="dv">7</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">1</span>, <span class="dv">6</span>, <span class="dv">5</span>, <span class="dv">4</span>])</span>
 <span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>np.partition(x, <span class="dv">3</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -724,8 +724,8 @@ window.Quarto = {
 <pre><code>array([2, 1, 3, 4, 6, 5, 7])</code></pre>
 </div>
 </div>
-<p>Notice that the first three values in the resulting array are the three smallest in the array, and the remaining array positions contain the remaining values. Within the two partitions, the elements have arbitrary order.</p>
-<p>Similarly to sorting, we can partition along an arbitrary axis of a multidimensional array:</p>
+<p>결과 배열의 처음 세 값은 배열에서 가장 작은 세 값이고 나머지 배열 위치에는 나머지 값이 포함됩니다. 두 파티션 내에서 요소의 순서는 임의적입니다.</p>
+<p>정렬과 마찬가지로 다차원 배열의 임의의 축을 따라 분할할 수 있습니다.</p>
 <div id="cell-25" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="12">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb23"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>np.partition(X, <span class="dv">2</span>, axis<span class="op">=</span><span class="dv">1</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="12">
@@ -735,16 +735,16 @@ window.Quarto = {
        [1, 3, 4, 5, 8, 9]])</code></pre>
 </div>
 </div>
-<p>The result is an array where the first two slots in each row contain the smallest values from that row, with the remaining values filling the remaining slots.</p>
-<p>Finally, just as there is an <code>np.argsort</code> function that computes indices of the sort, there is an <code>np.argpartition</code> function that computes indices of the partition. We’ll see both of these in action in the following section.</p>
+<p>결과는 각 행의 처음 두 슬롯에 해당 행의 가장 작은 값이 포함되고 나머지 값이 나머지 슬롯을 채우는 배열입니다.</p>
+<p>마지막으로, 정렬 인덱스를 계산하는 <code>np.argsort</code> 함수가 있는 것처럼 파티션의 인덱스를 계산하는 <code>np.argpartition</code> 함수가 있습니다. 다음 섹션에서는 이 두 가지가 모두 실제로 작동하는 모습을 살펴보겠습니다.</p>
 </section>
-<section id="example-k-nearest-neighbors" class="level2">
-<h2 class="anchored" data-anchor-id="example-k-nearest-neighbors">Example: k-Nearest Neighbors</h2>
-<p>Let’s quickly see how we might use the <code>argsort</code> function along multiple axes to find the nearest neighbors of each point in a set. We’ll start by creating a random set of 10 points on a two-dimensional plane. Using the standard convention, we’ll arrange these in a <span class="math inline">\(10\times 2\)</span> array:</p>
+<section id="예-k-최근접이웃" class="level2">
+<h2 class="anchored" data-anchor-id="예-k-최근접이웃">예: k-최근접이웃</h2>
+<p>집합에 있는 각 점의 가장 가까운 이웃을 찾기 위해 여러 축을 따라 <code>argsort</code> 함수를 사용할 수 있는 방법을 빠르게 살펴보겠습니다. 2차원 평면에 임의의 10개 점 집합을 만드는 것부터 시작하겠습니다. 표준 규칙을 사용하여 이를 <span class="math inline">\(10\times 2\)</span> 배열로 배열합니다.</p>
 <div id="cell-28" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="13">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb25"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>X <span class="op">=</span> rng.random((<span class="dv">10</span>, <span class="dv">2</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<p>To get an idea of how these points look, let’s generate a quick scatter plot (see the following figure):</p>
+<p>이러한 점이 어떻게 보이는지 알아보기 위해 빠른 산점도를 생성해 보겠습니다(다음 그림 참조).</p>
 <div id="cell-30" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="14">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb26"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="op">%</span>matplotlib inline</span>
 <span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
@@ -758,11 +758,11 @@ window.Quarto = {
 </div>
 </div>
 </div>
-<p>Now we’ll compute the distance between each pair of points. Recall that the squared distance between two points is the sum of the squared differences in each dimension; using the efficient broadcasting (<a href="../notebooks/02.05-Computation-on-arrays-broadcasting.html">Computation on Arrays: Broadcasting</a>) and aggregation (<a href="../notebooks/02.04-Computation-on-arrays-aggregates.html">Aggregations: Min, Max, and Everything In Between</a>) routines provided by NumPy we can compute the matrix of square distances in a single line of code:</p>
+<p>이제 각 점 쌍 사이의 거리를 계산해 보겠습니다. 두 점 사이의 거리 제곱은 각 차원의 차이 제곱의 합이라는 점을 기억하세요. NumPy에서 제공하는 효율적인 브로드캐스팅(<a href="../notebooks/02.05-Computation-on-arrays-broadcasting.html">배열에 대한 계산: 브로드캐스팅</a>) 및 집계(<a href="../notebooks/02.04-Computation-on-arrays-aggregates.html">Aggregations: Min, Max, and Everything In Between</a>) 루틴을 사용하여 한 줄의 코드로 제곱 거리의 행렬을 계산할 수 있습니다.</p>
 <div id="cell-32" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="15">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb27"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a>dist_sq <span class="op">=</span> np.<span class="bu">sum</span>((X[:, np.newaxis] <span class="op">-</span> X[np.newaxis, :]) <span class="op">**</span> <span class="dv">2</span>, axis<span class="op">=-</span><span class="dv">1</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<p>This operation has a lot packed into it, and it might be a bit confusing if you’re unfamiliar with NumPy’s broadcasting rules. When you come across code like this, it can be useful to break it down into its component steps:</p>
+<p>이 작업에는 많은 내용이 포함되어 있으므로 NumPy의 브로드캐스팅 규칙에 익숙하지 않은 경우 약간 혼란스러울 수 있습니다. 이와 같은 코드를 발견하면 구성 요소 단계로 나누는 것이 유용할 수 있습니다.</p>
 <div id="cell-34" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="16">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb28"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="co"># for each pair of points, compute differences in their coordinates</span></span>
 <span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a>differences <span class="op">=</span> X[:, np.newaxis] <span class="op">-</span> X[np.newaxis, :]</span>
@@ -787,14 +787,14 @@ window.Quarto = {
 <pre><code>(10, 10)</code></pre>
 </div>
 </div>
-<p>As a quick check of our logic, we should see that the diagonal of this matrix (i.e., the set of distances between each point and itself) is all zeros:</p>
+<p>논리를 빠르게 확인하려면 이 행렬의 대각선(즉, 각 점과 그 자체 사이의 거리 집합)이 모두 0이라는 것을 확인해야 합니다.</p>
 <div id="cell-38" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="19">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb34"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a>dist_sq.diagonal()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="19">
 <pre><code>array([0., 0., 0., 0., 0., 0., 0., 0., 0., 0.])</code></pre>
 </div>
 </div>
-<p>With the pairwise square distances converted, we can now use <code>np.argsort</code> to sort along each row. The leftmost columns will then give the indices of the nearest neighbors:</p>
+<p>쌍별 제곱 거리가 변환되면 이제 ’np.argsort’를 사용하여 각 행을 정렬할 수 있습니다. 가장 왼쪽 열은 가장 가까운 이웃의 인덱스를 제공합니다.</p>
 <div id="cell-40" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="20">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb36"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a>nearest <span class="op">=</span> np.argsort(dist_sq, axis<span class="op">=</span><span class="dv">1</span>)</span>
 <span id="cb36-2"><a href="#cb36-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(nearest)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -811,13 +811,13 @@ window.Quarto = {
  [9 0 5 3 4 8 6 1 2 7]]</code></pre>
 </div>
 </div>
-<p>Notice that the first column gives the numbers 0 through 9 in order: this is due to the fact that each point’s closest neighbor is itself, as we would expect.</p>
-<p>By using a full sort here, we’ve actually done more work than we need to in this case. If we’re simply interested in the nearest <span class="math inline">\(k\)</span> neighbors, all we need to do is partition each row so that the smallest <span class="math inline">\(k + 1\)</span> squared distances come first, with larger distances filling the remaining positions of the array. We can do this with the <code>np.argpartition</code> function:</p>
+<p>첫 번째 열에는 0부터 9까지의 숫자가 순서대로 표시됩니다. 이는 우리가 예상한 대로 각 점의 가장 가까운 이웃이 그 자체라는 사실 때문입니다.</p>
+<p>여기에서 전체 정렬을 사용함으로써 실제로 이 경우에 필요한 것보다 더 많은 작업을 수행했습니다. 가장 가까운 <span class="math inline">\(k\)</span> 이웃에만 관심이 있는 경우 가장 작은 <span class="math inline">\(k + 1\)</span> 제곱 거리가 먼저 오도록 각 행을 분할하고 더 큰 거리가 배열의 나머지 위치를 채우도록 하기만 하면 됩니다. <code>np.argpartition</code> 함수를 사용하면 이 작업을 수행할 수 있습니다.</p>
 <div id="cell-42" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="21">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb38"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a>K <span class="op">=</span> <span class="dv">2</span></span>
 <span id="cb38-2"><a href="#cb38-2" aria-hidden="true" tabindex="-1"></a>nearest_partition <span class="op">=</span> np.argpartition(dist_sq, K <span class="op">+</span> <span class="dv">1</span>, axis<span class="op">=</span><span class="dv">1</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<p>In order to visualize this network of neighbors, let’s quickly plot the points along with lines representing the connections from each point to its two nearest neighbors (see the following figure):</p>
+<p>이 이웃 네트워크를 시각화하기 위해 각 점에서 가장 가까운 두 이웃까지의 연결을 나타내는 선과 함께 점을 빠르게 플로팅해 보겠습니다(다음 그림 참조).</p>
 <div id="cell-44" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="22">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb39"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a>plt.scatter(X[:, <span class="dv">0</span>], X[:, <span class="dv">1</span>], s<span class="op">=</span><span class="dv">100</span>)</span>
 <span id="cb39-2"><a href="#cb39-2" aria-hidden="true" tabindex="-1"></a></span>
@@ -837,9 +837,9 @@ window.Quarto = {
 </div>
 </div>
 </div>
-<p>Each point in the plot has lines drawn to its two nearest neighbors. At first glance, it might seem strange that some of the points have more than two lines coming out of them: this is due to the fact that if point A is one of the two nearest neighbors of point B, this does not necessarily imply that point B is one of the two nearest neighbors of point A.</p>
-<p>Although the broadcasting and row-wise sorting of this approach might seem less straightforward than writing a loop, it turns out to be a very efficient way of operating on this data in Python. You might be tempted to do the same type of operation by manually looping through the data and sorting each set of neighbors individually, but this would almost certainly lead to a slower algorithm than the vectorized version we used. The beauty of this approach is that it’s written in a way that’s agnostic to the size of the input data: we could just as easily compute the neighbors among 100 or 1,000,000 points in any number of dimensions, and the code would look the same.</p>
-<p>Finally, I’ll note that when doing very large nearest neighbor searches, there are tree-based and/or approximate algorithms that can scale as <span class="math inline">\(\mathcal{O}[N\log N]\)</span> or better rather than the <span class="math inline">\(\mathcal{O}[N^2]\)</span> of the brute-force algorithm. One example of this is the KD-Tree, <a href="http://scikit-learn.org/stable/modules/generated/sklearn.neighbors.KDTree.html">implemented in Scikit-Learn</a>.</p>
+<p>플롯의 각 점에는 가장 가까운 두 이웃에 선이 그려져 있습니다. 언뜻 보면 일부 점에서 두 개 이상의 선이 나오는 것이 이상하게 보일 수 있습니다. 이는 점 A가 점 B의 가장 가까운 이웃 두 개 중 하나인 경우 이것이 반드시 점 B가 점 A의 두 가장 가까운 이웃 중 하나임을 의미하지는 않는다는 사실 때문입니다.</p>
+<p>이 접근 방식의 브로드캐스팅 및 행별 정렬은 루프를 작성하는 것보다 덜 간단해 보일 수 있지만 파이썬(Python)에서 이 데이터를 작업하는 데 매우 효율적인 방법임이 밝혀졌습니다. 데이터를 수동으로 반복하고 각 이웃 집합을 개별적으로 정렬하여 동일한 유형의 작업을 수행하고 싶을 수도 있지만 이렇게 하면 우리가 사용한 벡터화된 버전보다 알고리즘이 느려지는 것이 거의 확실합니다. 이 접근 방식의 장점은 입력 데이터의 크기에 구애받지 않는 방식으로 작성되었다는 것입니다. 즉, 모든 차원에서 100개 또는 1,000,000개 포인트 사이의 이웃을 쉽게 계산할 수 있으며 코드는 동일하게 보입니다.</p>
+<p>마지막으로, 매우 큰 규모의 최근접 이웃 검색을 수행할 때 무차별 알고리즘의 <span class="math inline">\(\mathcal{O}[N^2]\)</span>보다는 <span class="math inline">\(\mathcal{O}[N\log N]\)</span> 또는 그 이상으로 확장할 수 있는 트리 기반 및/또는 근사 알고리즘이 있다는 점에 유의하겠습니다. 이에 대한 한 가지 예는 <a href="http://scikit-learn.org/stable/modules/generated/sklearn.neighbors.KDTree.html">Scikit-Learn에서 구현된</a> KD-Tree입니다.</p>
 
 
 </section>
@@ -1247,13 +1247,13 @@ window.Quarto = {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../notebooks/02.07-Fancy-Indexing.html" class="pagination-link" aria-label="Fancy Indexing">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Fancy Indexing</span></span>
+      <a href="../notebooks/02.07-Fancy-Indexing.html" class="pagination-link" aria-label="멋진 인덱싱">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">멋진 인덱싱</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../notebooks/02.09-Structured-Data-NumPy.html" class="pagination-link" aria-label="Structured Data: NumPy's Structured Arrays">
-        <span class="nav-page-text"><span class="chapter-title">Structured Data: NumPy’s Structured Arrays</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../notebooks/02.09-Structured-Data-NumPy.html" class="pagination-link" aria-label="구조화된 데이터: NumPy의 구조화된 배열">
+        <span class="nav-page-text"><span class="chapter-title">구조화된 데이터: NumPy의 구조화된 배열</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

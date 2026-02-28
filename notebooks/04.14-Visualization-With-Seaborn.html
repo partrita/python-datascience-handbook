@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Visualization with Seaborn – 파이썬 데이터 사이언스 핸드북</title>
+<title>Seaborn을 이용한 시각화 – 파이썬 데이터 사이언스 핸드북</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -77,7 +77,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-3778d3e438078121318a23701f9f68bb.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-803ae4f7a8810f475153517dc3c4ebae.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -121,7 +121,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../notebooks/04.00-Introduction-To-Matplotlib.html">Matplotlib을 이용한 시각화</a></li><li class="breadcrumb-item"><a href="../notebooks/04.14-Visualization-With-Seaborn.html"><span class="chapter-title">Visualization with Seaborn</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../notebooks/04.00-Introduction-To-Matplotlib.html">Matplotlib을 이용한 시각화</a></li><li class="breadcrumb-item"><a href="../notebooks/04.14-Visualization-With-Seaborn.html"><span class="chapter-title">Seaborn을 이용한 시각화</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -168,7 +168,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/01.00-IPython-Beyond-Normal-Python.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Jupyter: 일반 Python을 넘어서</span></a>
+  <a href="../notebooks/01.00-IPython-Beyond-Normal-Python.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Jupyter: 일반 파이썬(Python)을 넘어서</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -198,17 +198,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/01.06-Errors-and-Debugging.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Errors and Debugging</span></a>
+  <a href="../notebooks/01.06-Errors-and-Debugging.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">오류 및 디버깅</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/01.07-Timing-and-Profiling.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Profiling and Timing Code</span></a>
+  <a href="../notebooks/01.07-Timing-and-Profiling.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">프로파일링 및 타이밍 코드</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/01.08-More-IPython-Resources.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">More IPython Resources</span></a>
+  <a href="../notebooks/01.08-More-IPython-Resources.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">추가 IPython 리소스</span></a>
   </div>
 </li>
       </ul>
@@ -224,52 +224,52 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.00-Introduction-to-NumPy.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Introduction to NumPy</span></a>
+  <a href="../notebooks/02.00-Introduction-to-NumPy.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">NumPy 소개</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.01-Understanding-Data-Types.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Understanding Data Types in Python</span></a>
+  <a href="../notebooks/02.01-Understanding-Data-Types.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">파이썬(Python)의 데이터 유형 이해</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.02-The-Basics-Of-NumPy-Arrays.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">The Basics of NumPy Arrays</span></a>
+  <a href="../notebooks/02.02-The-Basics-Of-NumPy-Arrays.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">NumPy 배열의 기본</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.03-Computation-on-arrays-ufuncs.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Computation on NumPy Arrays: Universal Functions</span></a>
+  <a href="../notebooks/02.03-Computation-on-arrays-ufuncs.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">NumPy 배열 계산: 범용 함수</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.04-Computation-on-arrays-aggregates.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Aggregations: min, max, and Everything in Between</span></a>
+  <a href="../notebooks/02.04-Computation-on-arrays-aggregates.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">집계: 최소, 최대 및 그 사이의 모든 것</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.05-Computation-on-arrays-broadcasting.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Computation on Arrays: Broadcasting</span></a>
+  <a href="../notebooks/02.05-Computation-on-arrays-broadcasting.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">배열 계산: 브로드캐스팅</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.06-Boolean-Arrays-and-Masks.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Comparisons, Masks, and Boolean Logic</span></a>
+  <a href="../notebooks/02.06-Boolean-Arrays-and-Masks.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">비교, 마스크 및 부울 논리</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.07-Fancy-Indexing.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Fancy Indexing</span></a>
+  <a href="../notebooks/02.07-Fancy-Indexing.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">멋진 인덱싱</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.08-Sorting.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Sorting Arrays</span></a>
+  <a href="../notebooks/02.08-Sorting.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">배열 정렬</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.09-Structured-Data-NumPy.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Structured Data: NumPy’s Structured Arrays</span></a>
+  <a href="../notebooks/02.09-Structured-Data-NumPy.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">구조화된 데이터: NumPy의 구조화된 배열</span></a>
   </div>
 </li>
       </ul>
@@ -285,72 +285,72 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.00-Introduction-to-Pandas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Data Manipulation with Pandas</span></a>
+  <a href="../notebooks/03.00-Introduction-to-Pandas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">팬더를 이용한 데이터 조작</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.01-Introducing-Pandas-Objects.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Introducing Pandas Objects</span></a>
+  <a href="../notebooks/03.01-Introducing-Pandas-Objects.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">판다스 객체 소개</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.02-Data-Indexing-and-Selection.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Data Indexing and Selection</span></a>
+  <a href="../notebooks/03.02-Data-Indexing-and-Selection.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">데이터 인덱싱 및 선택</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.03-Operations-in-Pandas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Operating on Data in Pandas</span></a>
+  <a href="../notebooks/03.03-Operations-in-Pandas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Pandas에서 데이터 작업</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.04-Missing-Values.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Handling Missing Data</span></a>
+  <a href="../notebooks/03.04-Missing-Values.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">누락된 데이터 처리</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.05-Hierarchical-Indexing.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Hierarchical Indexing</span></a>
+  <a href="../notebooks/03.05-Hierarchical-Indexing.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">계층적 인덱싱</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.06-Concat-And-Append.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Combining Datasets: concat and append</span></a>
+  <a href="../notebooks/03.06-Concat-And-Append.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">데이터세트 결합: 연결 및 추가</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.07-Merge-and-Join.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Combining Datasets: merge and join</span></a>
+  <a href="../notebooks/03.07-Merge-and-Join.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">데이터세트 결합: 병합 및 조인</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.08-Aggregation-and-Grouping.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Aggregation and Grouping</span></a>
+  <a href="../notebooks/03.08-Aggregation-and-Grouping.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">집계 및 그룹화</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.09-Pivot-Tables.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Pivot Tables</span></a>
+  <a href="../notebooks/03.09-Pivot-Tables.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">피벗 테이블</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.10-Working-With-Strings.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Vectorized String Operations</span></a>
+  <a href="../notebooks/03.10-Working-With-Strings.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">벡터화된 문자열 작업</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.11-Working-with-Time-Series.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Working with Time Series</span></a>
+  <a href="../notebooks/03.11-Working-with-Time-Series.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">시계열 작업</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.12-Performance-Eval-and-Query.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">High-Performance Pandas: eval and query</span></a>
+  <a href="../notebooks/03.12-Performance-Eval-and-Query.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">고성능 Pandas: 평가 및 쿼리</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.13-Further-Resources.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Further Resources</span></a>
+  <a href="../notebooks/03.13-Further-Resources.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">추가 리소스</span></a>
   </div>
 </li>
       </ul>
@@ -366,77 +366,77 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.00-Introduction-To-Matplotlib.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Visualization with Matplotlib</span></a>
+  <a href="../notebooks/04.00-Introduction-To-Matplotlib.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Matplotlib를 사용한 시각화</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.01-Simple-Line-Plots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Simple Line Plots</span></a>
+  <a href="../notebooks/04.01-Simple-Line-Plots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">간단한 선 도표</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.02-Simple-Scatter-Plots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Simple Scatter Plots</span></a>
+  <a href="../notebooks/04.02-Simple-Scatter-Plots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">단순 산점도</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.03-Errorbars.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Visualizing Uncertainties</span></a>
+  <a href="../notebooks/04.03-Errorbars.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">불확실성 시각화</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.04-Density-and-Contour-Plots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Density and Contour Plots</span></a>
+  <a href="../notebooks/04.04-Density-and-Contour-Plots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">밀도 및 등고선 플롯</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.05-Histograms-and-Binnings.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Histograms, Binnings, and Density</span></a>
+  <a href="../notebooks/04.05-Histograms-and-Binnings.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">히스토그램, 비닝 및 밀도</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.06-Customizing-Legends.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Customizing Plot Legends</span></a>
+  <a href="../notebooks/04.06-Customizing-Legends.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">플롯 범례 사용자 정의</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.07-Customizing-Colorbars.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Customizing Colorbars</span></a>
+  <a href="../notebooks/04.07-Customizing-Colorbars.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">컬러바 사용자 정의</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.08-Multiple-Subplots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Multiple Subplots</span></a>
+  <a href="../notebooks/04.08-Multiple-Subplots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">다중 서브플롯</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.09-Text-and-Annotation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Text and Annotation</span></a>
+  <a href="../notebooks/04.09-Text-and-Annotation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">텍스트 및 주석</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.10-Customizing-Ticks.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Customizing Ticks</span></a>
+  <a href="../notebooks/04.10-Customizing-Ticks.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">눈금 사용자 정의</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.11-Settings-and-Stylesheets.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Customizing Matplotlib: Configurations and Stylesheets</span></a>
+  <a href="../notebooks/04.11-Settings-and-Stylesheets.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Matplotlib 사용자 정의: 구성 및 스타일시트</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.12-Three-Dimensional-Plotting.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Three-Dimensional Plotting in Matplotlib</span></a>
+  <a href="../notebooks/04.12-Three-Dimensional-Plotting.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Matplotlib의 3차원 플로팅</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.14-Visualization-With-Seaborn.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Visualization with Seaborn</span></a>
+  <a href="../notebooks/04.14-Visualization-With-Seaborn.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Seaborn을 이용한 시각화</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.15-Further-Resources.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Further Resources</span></a>
+  <a href="../notebooks/04.15-Further-Resources.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">추가 리소스</span></a>
   </div>
 </li>
       </ul>
@@ -452,82 +452,82 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.00-Machine-Learning.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Machine Learning</span></a>
+  <a href="../notebooks/05.00-Machine-Learning.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">머신러닝</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.01-What-Is-Machine-Learning.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">What Is Machine Learning?</span></a>
+  <a href="../notebooks/05.01-What-Is-Machine-Learning.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">머신러닝이란?</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.02-Introducing-Scikit-Learn.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Introducing Scikit-Learn</span></a>
+  <a href="../notebooks/05.02-Introducing-Scikit-Learn.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Scikit-Learn 소개</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.03-Hyperparameters-and-Model-Validation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Hyperparameters and Model Validation</span></a>
+  <a href="../notebooks/05.03-Hyperparameters-and-Model-Validation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">하이퍼파라미터 및 모델 검증</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.04-Feature-Engineering.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Feature Engineering</span></a>
+  <a href="../notebooks/05.04-Feature-Engineering.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">기능 엔지니어링</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.05-Naive-Bayes.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Naive Bayes Classification</span></a>
+  <a href="../notebooks/05.05-Naive-Bayes.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 나이브 베이즈 분류</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.06-Linear-Regression.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Linear Regression</span></a>
+  <a href="../notebooks/05.06-Linear-Regression.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 선형 회귀</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.07-Support-Vector-Machines.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Support Vector Machines</span></a>
+  <a href="../notebooks/05.07-Support-Vector-Machines.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 서포트 벡터 머신</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.08-Random-Forests.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Decision Trees and Random Forests</span></a>
+  <a href="../notebooks/05.08-Random-Forests.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 의사결정 트리 및 랜덤 포레스트</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.09-Principal-Component-Analysis.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Principal Component Analysis</span></a>
+  <a href="../notebooks/05.09-Principal-Component-Analysis.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 주성분 분석</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.10-Manifold-Learning.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Manifold Learning</span></a>
+  <a href="../notebooks/05.10-Manifold-Learning.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 다양한 학습</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.11-K-Means.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: k-Means Clustering</span></a>
+  <a href="../notebooks/05.11-K-Means.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: k-평균 클러스터링</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.12-Gaussian-Mixtures.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Gaussian Mixture Models</span></a>
+  <a href="../notebooks/05.12-Gaussian-Mixtures.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 가우스 혼합 모델</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.13-Kernel-Density-Estimation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Kernel Density Estimation</span></a>
+  <a href="../notebooks/05.13-Kernel-Density-Estimation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 커널 밀도 추정</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.14-Image-Features.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Application: A Face Detection Pipeline</span></a>
+  <a href="../notebooks/05.14-Image-Features.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">응용 분야: 얼굴 감지 파이프라인</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.15-Learning-More.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Further Machine Learning Resources</span></a>
+  <a href="../notebooks/05.15-Learning-More.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">추가 머신러닝(Machine Learning) 리소스</span></a>
   </div>
 </li>
       </ul>
@@ -543,7 +543,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/06.00-Figure-Code.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Appendix: Figure Code</span></a>
+  <a href="../notebooks/06.00-Figure-Code.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">부록: 그림 코드</span></a>
   </div>
 </li>
       </ul>
@@ -558,25 +558,25 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#exploring-seaborn-plots" id="toc-exploring-seaborn-plots" class="nav-link active" data-scroll-target="#exploring-seaborn-plots">Exploring Seaborn Plots</a>
+  <li><a href="#seaborn-플롯-탐색" id="toc-seaborn-플롯-탐색" class="nav-link active" data-scroll-target="#seaborn-플롯-탐색">Seaborn 플롯 탐색</a>
   <ul class="collapse">
-  <li><a href="#histograms-kde-and-densities" id="toc-histograms-kde-and-densities" class="nav-link" data-scroll-target="#histograms-kde-and-densities">Histograms, KDE, and Densities</a></li>
-  <li><a href="#pair-plots" id="toc-pair-plots" class="nav-link" data-scroll-target="#pair-plots">Pair Plots</a></li>
-  <li><a href="#faceted-histograms" id="toc-faceted-histograms" class="nav-link" data-scroll-target="#faceted-histograms">Faceted Histograms</a></li>
-  <li><a href="#categorical-plots" id="toc-categorical-plots" class="nav-link" data-scroll-target="#categorical-plots">Categorical Plots</a></li>
-  <li><a href="#joint-distributions" id="toc-joint-distributions" class="nav-link" data-scroll-target="#joint-distributions">Joint Distributions</a></li>
-  <li><a href="#bar-plots" id="toc-bar-plots" class="nav-link" data-scroll-target="#bar-plots">Bar Plots</a></li>
+  <li><a href="#히스토그램-kde-및-밀도" id="toc-히스토그램-kde-및-밀도" class="nav-link" data-scroll-target="#히스토그램-kde-및-밀도">히스토그램, KDE 및 밀도</a></li>
+  <li><a href="#쌍-도표" id="toc-쌍-도표" class="nav-link" data-scroll-target="#쌍-도표">쌍 도표</a></li>
+  <li><a href="#패싯-히스토그램" id="toc-패싯-히스토그램" class="nav-link" data-scroll-target="#패싯-히스토그램">패싯 히스토그램</a></li>
+  <li><a href="#범주형-도표" id="toc-범주형-도표" class="nav-link" data-scroll-target="#범주형-도표">범주형 도표</a></li>
+  <li><a href="#공동-배포" id="toc-공동-배포" class="nav-link" data-scroll-target="#공동-배포">공동 배포</a></li>
+  <li><a href="#막대-그래프" id="toc-막대-그래프" class="nav-link" data-scroll-target="#막대-그래프">막대 그래프</a></li>
   </ul></li>
-  <li><a href="#example-exploring-marathon-finishing-times" id="toc-example-exploring-marathon-finishing-times" class="nav-link" data-scroll-target="#example-exploring-marathon-finishing-times">Example: Exploring Marathon Finishing Times</a></li>
+  <li><a href="#예-마라톤-종료-시간-탐색" id="toc-예-마라톤-종료-시간-탐색" class="nav-link" data-scroll-target="#예-마라톤-종료-시간-탐색">예: 마라톤 종료 시간 탐색</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../notebooks/04.00-Introduction-To-Matplotlib.html">Matplotlib을 이용한 시각화</a></li><li class="breadcrumb-item"><a href="../notebooks/04.14-Visualization-With-Seaborn.html"><span class="chapter-title">Visualization with Seaborn</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../notebooks/04.00-Introduction-To-Matplotlib.html">Matplotlib을 이용한 시각화</a></li><li class="breadcrumb-item"><a href="../notebooks/04.14-Visualization-With-Seaborn.html"><span class="chapter-title">Seaborn을 이용한 시각화</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-title">Visualization with Seaborn</span></h1>
+<h1 class="title"><span class="chapter-title">Seaborn을 이용한 시각화</span></h1>
 </div>
 
 
@@ -593,15 +593,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>Matplotlib has been at the core of scientific visualization in Python for decades, but even avid users will admit it often leaves much to be desired. There are several complaints about Matplotlib that often come up:</p>
+<p>Matplotlib는 수십 년 동안 파이썬(Python)의 과학적 시각화의 핵심 역할을 해왔지만 열성적인 사용자조차도 부족한 점이 많다는 점을 인정할 것입니다. Matplotlib에 대해 자주 제기되는 몇 가지 불만 사항이 있습니다.</p>
 <ul>
-<li>A common early complaint, which is now outdated: prior to version 2.0, Matplotlib’s color and style defaults were at times poor and looked dated.</li>
-<li>Matplotlib’s API is relatively low-level. Doing sophisticated statistical visualization is possible, but often requires a <em>lot</em> of boilerplate code.</li>
-<li>Matplotlib predated Pandas by more than a decade, and thus is not designed for use with Pandas <code>DataFrame</code> objects. In order to visualize data from a <code>DataFrame</code>, you must extract each <code>Series</code> and often concatenate them together into the right format. It would be nicer to have a plotting library that can intelligently use the <code>DataFrame</code> labels in a plot.</li>
+<li>현재는 구식이 된 일반적인 초기 불만 사항: 버전 2.0 이전에는 Matplotlib의 색상 및 스타일 기본값이 때때로 좋지 않고 구식으로 보였습니다.</li>
+<li>Matplotlib의 API는 상대적으로 낮은 수준입니다. 정교한 통계 시각화가 가능하지만 <em>많은</em> 상용구 코드가 필요한 경우가 많습니다.</li>
+<li>Matplotlib는 Pandas보다 10년 이상 앞서기 때문에 Pandas <code>DataFrame</code> 객체와 함께 사용하도록 설계되지 않았습니다. ‘DataFrame’의 데이터를 시각화하려면 각 ’시리즈’를 추출하고 종종 올바른 형식으로 연결해야 합니다. 플롯에서 ’DataFrame’ 레이블을 지능적으로 사용할 수 있는 플로팅 라이브러리가 있으면 더 좋을 것입니다.</li>
 </ul>
-<p>An answer to these problems is <a href="http://seaborn.pydata.org/">Seaborn</a>. Seaborn provides an API on top of Matplotlib that offers sane choices for plot style and color defaults, defines simple high-level functions for common statistical plot types, and integrates with the functionality provided by Pandas.</p>
-<p>To be fair, the Matplotlib team has adapted to the changing landscape: it added the <code>plt.style</code> tools discussed in <a href="../notebooks/04.11-Settings-and-Stylesheets.html">Customizing Matplotlib: Configurations and Style Sheets</a>, and Matplotlib is starting to handle Pandas data more seamlessly. But for all the reasons just discussed, Seaborn remains a useful add-on.</p>
-<p>By convention, Seaborn is often imported as <code>sns</code>:</p>
+<p>이러한 문제에 대한 해답이 <a href="http://seaborn.pydata.org/">Seaborn</a>에 있습니다. Seaborn은 플롯 스타일 및 색상 기본값에 대한 올바른 선택을 제공하고 일반적인 통계 플롯 유형에 대한 간단한 고급 기능을 정의하며 Pandas에서 제공하는 기능과 통합하는 Matplotlib 위에 API를 제공합니다.</p>
+<p>공평하게 말하면, Matplotlib 팀은 변화하는 환경에 적응했습니다. <a href="../notebooks/04.11-Settings-and-Stylesheets.html">Matplotlib 사용자 정의: 구성 및 스타일 시트</a>에서 논의된 ‘plt.style’ 도구를 추가했으며 Matplotlib는 Pandas 데이터를 더 원활하게 처리하기 시작했습니다. 그러나 방금 논의한 모든 이유 때문에 Seaborn은 여전히 ​​유용한 추가 기능으로 남아 있습니다.</p>
+<p>관례적으로 Seaborn은 <code>sns</code>로 가져오는 경우가 많습니다.</p>
 <div id="cell-2" class="cell" data-execution_count="1">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="op">%</span>matplotlib inline</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
@@ -611,13 +611,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>sns.<span class="bu">set</span>()  <span class="co"># seaborn's method to set its chart style</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<section id="exploring-seaborn-plots" class="level2">
-<h2 class="anchored" data-anchor-id="exploring-seaborn-plots">Exploring Seaborn Plots</h2>
-<p>The main idea of Seaborn is that it provides high-level commands to create a variety of plot types useful for statistical data exploration, and even some statistical model fitting.</p>
-<p>Let’s take a look at a few of the datasets and plot types available in Seaborn. Note that all of the following <em>could</em> be done using raw Matplotlib commands (this is, in fact, what Seaborn does under the hood), but the Seaborn API is much more convenient.</p>
-<section id="histograms-kde-and-densities" class="level3">
-<h3 class="anchored" data-anchor-id="histograms-kde-and-densities">Histograms, KDE, and Densities</h3>
-<p>Often in statistical data visualization, all you want is to plot histograms and joint distributions of variables. We have seen that this is relatively straightforward in Matplotlib (see the following figure):</p>
+<section id="seaborn-플롯-탐색" class="level2">
+<h2 class="anchored" data-anchor-id="seaborn-플롯-탐색">Seaborn 플롯 탐색</h2>
+<p>Seaborn의 주요 아이디어는 통계 데이터 탐색 및 일부 통계 모델 피팅에 유용한 다양한 플롯 유형을 생성하는 고급 명령을 제공한다는 것입니다.</p>
+<p>Seaborn에서 사용할 수 있는 몇 가지 데이터세트와 플롯 유형을 살펴보겠습니다. 다음 모든 작업은 원시 Matplotlib 명령을 사용하여 수행할 수 있지만(실제로 Seaborn이 내부적으로 수행하는 작업임) Seaborn API가 훨씬 더 편리합니다.</p>
+<section id="히스토그램-kde-및-밀도" class="level3">
+<h3 class="anchored" data-anchor-id="히스토그램-kde-및-밀도">히스토그램, KDE 및 밀도</h3>
+<p>통계 데이터 시각화에서 원하는 것은 히스토그램과 변수의 결합 분포를 그리는 것뿐입니다. 우리는 이것이 Matplotlib에서 비교적 간단하다는 것을 확인했습니다(다음 그림 참조).</p>
 <div id="cell-5" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="2">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> np.random.multivariate_normal([<span class="dv">0</span>, <span class="dv">0</span>], [[<span class="dv">5</span>, <span class="dv">2</span>], [<span class="dv">2</span>, <span class="dv">2</span>]], size<span class="op">=</span><span class="dv">2000</span>)</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> pd.DataFrame(data, columns<span class="op">=</span>[<span class="st">'x'</span>, <span class="st">'y'</span>])</span>
@@ -632,7 +632,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
-<p>Rather than just providing a histogram as a visual output, we can get a smooth estimate of the distribution using kernel density estimation (introduced in <a href="../notebooks/04.04-Density-and-Contour-Plots.html">Density and Contour Plots</a>), which Seaborn does with <code>sns.kdeplot</code> (see the following figure):</p>
+<p>히스토그램을 시각적 출력으로 제공하는 대신 Seaborn이 <code>sns.kdeplot</code>(다음 그림 참조)으로 수행하는 커널 밀도 추정(<a href="../notebooks/04.04-Density-and-Contour-Plots.html">Density and Contour Plots</a>에 도입됨)을 사용하여 분포를 원활하게 추정할 수 있습니다.</p>
 <div id="cell-7" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="3">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>sns.kdeplot(data<span class="op">=</span>data, shade<span class="op">=</span><span class="va">True</span>)<span class="op">;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
@@ -643,7 +643,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
-<p>If we pass <code>x</code> and <code>y</code> columns to <code>kdeplot</code>, we instead get a two-dimensional visualization of the joint density (see the following figure):</p>
+<p><code>x</code> 및 <code>y</code> 열을 <code>kdplot</code>에 전달하면 대신 결합 밀도의 2차원 시각화를 얻습니다(다음 그림 참조).</p>
 <div id="cell-9" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="4">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>sns.kdeplot(data<span class="op">=</span>data, x<span class="op">=</span><span class="st">'x'</span>, y<span class="op">=</span><span class="st">'y'</span>)<span class="op">;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
@@ -654,12 +654,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
-<p>We can see the joint distribution and the marginal distributions together using <code>sns.jointplot</code>, which we’ll explore further later in this chapter.</p>
+<p><code>sns.jointplot</code>을 사용하여 결합 분포와 한계 분포를 함께 볼 수 있으며, 이에 대해서는 이 장의 뒷부분에서 더 자세히 살펴보겠습니다.</p>
 </section>
-<section id="pair-plots" class="level3">
-<h3 class="anchored" data-anchor-id="pair-plots">Pair Plots</h3>
-<p>When you generalize joint plots to datasets of larger dimensions, you end up with <em>pair plots</em>. These are very useful for exploring correlations between multidimensional data, when you’d like to plot all pairs of values against each other.</p>
-<p>We’ll demo this with the well-known Iris dataset, which lists measurements of petals and sepals of three Iris species:</p>
+<section id="쌍-도표" class="level3">
+<h3 class="anchored" data-anchor-id="쌍-도표">쌍 도표</h3>
+<p>결합 도표를 더 큰 차원의 데이터 세트로 일반화하면 결국 <em>쌍 도표</em>가 됩니다. 이는 모든 값 쌍을 서로에 대해 플롯하려는 경우 다차원 데이터 간의 상관 관계를 탐색하는 데 매우 유용합니다.</p>
+<p>세 가지 붓꽃 종의 꽃잎과 꽃받침 측정값을 나열하는 잘 알려진 붓꽃 데이터세트를 사용하여 이를 시연해 보겠습니다.</p>
 <div id="cell-12" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="5">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>iris <span class="op">=</span> sns.load_dataset(<span class="st">"iris"</span>)</span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>iris.head()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -725,7 +725,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
-<p>Visualizing the multidimensional relationships among the samples is as easy as calling <code>sns.pairplot</code> (see the following figure):</p>
+<p>샘플 간의 다차원 관계를 시각화하는 것은 <code>sns.pairplot</code>을 호출하는 것만큼 쉽습니다(다음 그림 참조).</p>
 <div id="cell-14" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="6">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>sns.pairplot(iris, hue<span class="op">=</span><span class="st">'species'</span>, height<span class="op">=</span><span class="fl">2.5</span>)<span class="op">;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
@@ -737,9 +737,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </section>
-<section id="faceted-histograms" class="level3">
-<h3 class="anchored" data-anchor-id="faceted-histograms">Faceted Histograms</h3>
-<p>Sometimes the best way to view data is via histograms of subsets, as shown in the following figure. Seaborn’s <code>FacetGrid</code> makes this simple. We’ll take a look at some data that shows the amount that restaurant staff receive in tips based on various indicator data:<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
+<section id="패싯-히스토그램" class="level3">
+<h3 class="anchored" data-anchor-id="패싯-히스토그램">패싯 히스토그램</h3>
+<p>때때로 데이터를 보는 가장 좋은 방법은 다음 그림과 같이 하위 집합의 히스토그램을 이용하는 것입니다. Seaborn의 ’FacetGrid’를 사용하면 이 작업이 간단해집니다. 다양한 지표 데이터를 기반으로 레스토랑 직원이 팁으로 받는 금액을 보여주는 몇 가지 데이터를 살펴보겠습니다.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
 <div id="cell-17" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="7">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>tips <span class="op">=</span> sns.load_dataset(<span class="st">'tips'</span>)</span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>tips.head()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -830,11 +830,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
-<p>The faceted chart gives us some quick insights into the dataset: for example, we see that it contains far more data on male servers during the dinner hour than other categories, and typical tip amounts appear to range from approximately 10% to 20%, with some outliers on either end.</p>
+<p>패싯 차트는 데이터 세트에 대한 몇 가지 빠른 통찰력을 제공합니다. 예를 들어 다른 범주보다 저녁 식사 시간 동안 남성 서버에 대한 데이터가 훨씬 더 많이 포함되어 있으며 일반적인 팁 금액은 대략 10%에서 20% 사이인 것으로 나타납니다. 양쪽 끝에 약간의 이상치가 있습니다.</p>
 </section>
-<section id="categorical-plots" class="level3">
-<h3 class="anchored" data-anchor-id="categorical-plots">Categorical Plots</h3>
-<p>Categorical plots can be useful for this kind of visualization as well. These allow you to view the distribution of a parameter within bins defined by any other parameter, as shown in the following figure:</p>
+<section id="범주형-도표" class="level3">
+<h3 class="anchored" data-anchor-id="범주형-도표">범주형 도표</h3>
+<p>범주형 도표는 이러한 종류의 시각화에도 유용할 수 있습니다. 이를 통해 다음 그림과 같이 다른 매개변수에 의해 정의된 저장소 내의 매개변수 분포를 살펴볼 수 있습니다.</p>
 <div id="cell-20" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="9">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> sns.axes_style(style<span class="op">=</span><span class="st">'ticks'</span>):</span>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>    g <span class="op">=</span> sns.catplot(x<span class="op">=</span><span class="st">"day"</span>, y<span class="op">=</span><span class="st">"total_bill"</span>, hue<span class="op">=</span><span class="st">"sex"</span>, data<span class="op">=</span>tips, kind<span class="op">=</span><span class="st">"box"</span>)</span>
@@ -848,9 +848,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </section>
-<section id="joint-distributions" class="level3">
-<h3 class="anchored" data-anchor-id="joint-distributions">Joint Distributions</h3>
-<p>Similar to the pair plot we saw earlier, we can use <code>sns.jointplot</code> to show the joint distribution between different datasets, along with the associated marginal distributions (see the following figure):</p>
+<section id="공동-배포" class="level3">
+<h3 class="anchored" data-anchor-id="공동-배포">공동 배포</h3>
+<p>앞서 본 쌍 도표와 유사하게 <code>sns.jointplot</code>을 사용하여 관련 한계 분포와 함께 다양한 데이터 세트 간의 결합 분포를 표시할 수 있습니다(다음 그림 참조).</p>
 <div id="cell-22" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="10">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> sns.axes_style(<span class="st">'white'</span>):</span>
 <span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>    sns.jointplot(x<span class="op">=</span><span class="st">"total_bill"</span>, y<span class="op">=</span><span class="st">"tip"</span>, data<span class="op">=</span>tips, kind<span class="op">=</span><span class="st">'hex'</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -862,7 +862,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
-<p>The joint plot can even do some automatic kernel density estimation and regression, as shown in the following figure:</p>
+<p>다음 그림과 같이 결합 플롯은 일부 자동 커널 밀도 추정 및 회귀도 수행할 수 있습니다.</p>
 <div id="cell-24" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="11">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>sns.jointplot(x<span class="op">=</span><span class="st">"total_bill"</span>, y<span class="op">=</span><span class="st">"tip"</span>, data<span class="op">=</span>tips, kind<span class="op">=</span><span class="st">'reg'</span>)<span class="op">;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
@@ -874,9 +874,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </section>
-<section id="bar-plots" class="level3">
-<h3 class="anchored" data-anchor-id="bar-plots">Bar Plots</h3>
-<p>Time series can be plotted using <code>sns.factorplot</code>. In the following example, we’ll use the Planets dataset that we first saw in <a href="../notebooks/03.08-Aggregation-and-Grouping.html">Aggregation and Grouping</a>; see the following figure for the result:</p>
+<section id="막대-그래프" class="level3">
+<h3 class="anchored" data-anchor-id="막대-그래프">막대 그래프</h3>
+<p>시계열은 <code>sns.factorplot</code>을 사용하여 그릴 수 있습니다. 다음 예에서는 <a href="../notebooks/03.08-Aggregation-and-Grouping.html">집계 및 그룹화</a>에서 처음 본 Planets 데이터세트를 사용합니다. 결과는 다음 그림을 참조하세요.</p>
 <div id="cell-26" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="12">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>planets <span class="op">=</span> sns.load_dataset(<span class="st">'planets'</span>)</span>
 <span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>planets.head()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -961,7 +961,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
-<p>We can learn more by looking at the <em>method</em> of discovery of each of these planets (see the following figure):</p>
+<p>각 행성을 발견하는 <em>방법</em>을 살펴보면 더 많은 정보를 얻을 수 있습니다(다음 그림 참조).</p>
 <div id="cell-29" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="14">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> sns.axes_style(<span class="st">'white'</span>):</span>
 <span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>    g <span class="op">=</span> sns.catplot(x<span class="op">=</span><span class="st">"year"</span>, data<span class="op">=</span>planets, aspect<span class="op">=</span><span class="fl">4.0</span>, kind<span class="op">=</span><span class="st">'count'</span>,</span>
@@ -975,12 +975,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
-<p>For more information on plotting with Seaborn, see the <a href="http://seaborn.pydata.org/">Seaborn documentation</a>, and particularly the <a href="https://seaborn.pydata.org/examples/index.html">example gallery</a>.</p>
+<p>Seaborn을 사용한 플로팅에 대한 자세한 내용은 <a href="http://seaborn.pydata.org/">Seaborn 문서</a>, 특히 <a href="https://seaborn.pydata.org/examples/index.html">예제 갤러리</a>를 참조하세요.</p>
 </section>
 </section>
-<section id="example-exploring-marathon-finishing-times" class="level2">
-<h2 class="anchored" data-anchor-id="example-exploring-marathon-finishing-times">Example: Exploring Marathon Finishing Times</h2>
-<p>Here we’ll look at using Seaborn to help visualize and understand finishing results from a marathon. I’ve scraped the data from sources on the web, aggregated it and removed any identifying information, and put it on GitHub, where it can be downloaded (if you are interested in using Python for web scraping, I would recommend <a href="http://shop.oreilly.com/product/0636920034391.do"><em>Web Scraping with Python</em></a> by Ryan Mitchell, also from O’Reilly). We will start by downloading the data and loading it into Pandas:<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></p>
+<section id="예-마라톤-종료-시간-탐색" class="level2">
+<h2 class="anchored" data-anchor-id="예-마라톤-종료-시간-탐색">예: 마라톤 종료 시간 탐색</h2>
+<p>여기서는 Seaborn을 사용하여 마라톤 완주 결과를 시각화하고 이해하는 방법을 살펴보겠습니다. 웹 소스에서 데이터를 긁어 모아 집계하고 식별 정보를 모두 제거한 다음 다운로드할 수 있는 GitHub에 올렸습니다. (웹 스크래핑에 파이썬(Python)을 사용하는 데 관심이 있다면 역시 O’Reilly의 Ryan Mitchell이 ​​쓴 <a href="http://shop.oreilly.com/product/0636920034391.do"><em>Web Scraping with 파이썬(Python)</em></a>을 추천합니다.) 데이터를 다운로드하고 Pandas에 로드하는 것부터 시작하겠습니다.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></p>
 <div id="cell-32" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="15">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co"># url = ('https://raw.githubusercontent.com/jakevdp/'</span></span>
 <span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="co">#        'marathon-data/master/marathon-data.csv')</span></span>
@@ -1045,7 +1045,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
-<p>Notice that Pandas loaded the time columns as Python strings (type <code>object</code>); we can see this by looking at the <code>dtypes</code> attribute of the <code>DataFrame</code>:</p>
+<p>Pandas는 시간 열을 파이썬(Python) 문자열(<code>object</code> 유형)로 로드했습니다. <code>DataFrame</code>의 <code>dtypes</code> 속성을 보면 이를 확인할 수 있습니다.</p>
 <div id="cell-35" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="17">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>data.dtypes</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="17">
@@ -1056,7 +1056,7 @@ final     object
 dtype: object</code></pre>
 </div>
 </div>
-<p>Let’s fix this by providing a converter for the times:</p>
+<p>시대에 맞는 변환기를 제공하여 이 문제를 해결해 보겠습니다.</p>
 <div id="cell-37" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="18">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> datetime</span>
 <span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a></span>
@@ -1133,7 +1133,7 @@ final     timedelta64[ns]
 dtype: object</code></pre>
 </div>
 </div>
-<p>That will make it easier to manipulate the temporal data. For the purpose of our Seaborn plotting utilities, let’s next add columns that give the times in seconds:</p>
+<p>그러면 시간 데이터를 더 쉽게 조작할 수 있습니다. Seaborn 플로팅 유틸리티의 목적을 위해 다음으로 시간을 초 단위로 제공하는 열을 추가해 보겠습니다.</p>
 <div id="cell-40" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="20">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb22"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>data[<span class="st">'split_sec'</span>] <span class="op">=</span> data[<span class="st">'split'</span>].view(<span class="bu">int</span>) <span class="op">/</span> <span class="fl">1E9</span></span>
 <span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>data[<span class="st">'final_sec'</span>] <span class="op">=</span> data[<span class="st">'final'</span>].view(<span class="bu">int</span>) <span class="op">/</span> <span class="fl">1E9</span></span>
@@ -1206,7 +1206,7 @@ dtype: object</code></pre>
 </div>
 </div>
 </div>
-<p>To get an idea of what the data looks like, we can plot a <code>jointplot</code> over the data; the following figure shows the result:</p>
+<p>데이터가 어떻게 보이는지에 대한 아이디어를 얻으려면 데이터 위에 <code>결합 플롯</code>을 그릴 수 있습니다. 다음 그림은 결과를 보여줍니다.</p>
 <div id="cell-42" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="21">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb23"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> sns.axes_style(<span class="st">'white'</span>):</span>
 <span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a>    g <span class="op">=</span> sns.jointplot(x<span class="op">=</span><span class="st">'split_sec'</span>, y<span class="op">=</span><span class="st">'final_sec'</span>, data<span class="op">=</span>data, kind<span class="op">=</span><span class="st">'hex'</span>)</span>
@@ -1220,8 +1220,8 @@ dtype: object</code></pre>
 </div>
 </div>
 </div>
-<p>The dotted line shows where someone’s time would lie if they ran the marathon at a perfectly steady pace. The fact that the distribution lies above this indicates (as you might expect) that most people slow down over the course of the marathon. If you have run competitively, you’ll know that those who do the opposite—run faster during the second half of the race—are said to have “negative-split” the race.</p>
-<p>Let’s create another column in the data, the split fraction, which measures the degree to which each runner negative-splits or positive-splits the race:</p>
+<p>점선은 완벽하게 안정된 속도로 마라톤을 달릴 경우 그 사람의 시간이 어디에 있을 것인지를 보여줍니다. 분포가 이보다 높다는 사실은 (예상할 수 있듯이) 대부분의 사람들이 마라톤을 진행하는 동안 속도가 느려진다는 것을 나타냅니다. 경쟁적으로 달리는 경우, 반대 방향으로 달리는 사람들(경주 후반부에 더 빠르게 달리는 사람들)을 경주에서 “부정 분할”했다고 합니다.</p>
+<p>데이터에 각 주자가 경주를 음수 분할 또는 양수 분할하는 정도를 측정하는 분할 비율이라는 또 다른 열을 만들어 보겠습니다.</p>
 <div id="cell-44" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="22">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb24"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>data[<span class="st">'split_frac'</span>] <span class="op">=</span> <span class="dv">1</span> <span class="op">-</span> <span class="dv">2</span> <span class="op">*</span> data[<span class="st">'split_sec'</span>] <span class="op">/</span> data[<span class="st">'final_sec'</span>]</span>
 <span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>data.head()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -1299,7 +1299,7 @@ dtype: object</code></pre>
 </div>
 </div>
 </div>
-<p>Where this split difference is less than zero, the person negative-split the race by that fraction. Let’s do a distribution plot of this split fraction (see the following figure):</p>
+<p>이 분할 차이가 0보다 작은 경우, 그 사람은 해당 비율로 인종을 음수로 분할합니다. 이 분할 부분의 분포도를 그려보겠습니다(다음 그림 참조).</p>
 <div id="cell-46" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="23">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb25"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>sns.displot(data[<span class="st">'split_frac'</span>], kde<span class="op">=</span><span class="va">False</span>)</span>
 <span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a>plt.axvline(<span class="dv">0</span>, color<span class="op">=</span><span class="st">"k"</span>, linestyle<span class="op">=</span><span class="st">"--"</span>)<span class="op">;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -1317,8 +1317,8 @@ dtype: object</code></pre>
 <pre><code>251</code></pre>
 </div>
 </div>
-<p>Out of nearly 40,000 participants, there were only 250 people who negative-split their marathon.</p>
-<p>Let’s see whether there is any correlation between this split fraction and other variables. We’ll do this using a <code>PairGrid</code>, which draws plots of all these correlations (see the following figure):</p>
+<p>약 40,000명의 참가자 중 마라톤에서 마이너스 분할을 한 사람은 250명에 불과했습니다.</p>
+<p>이 분할분율과 다른 변수 사이에 상관관계가 있는지 살펴보겠습니다. 우리는 이러한 모든 상관 관계의 플롯을 그리는 <code>PairGrid</code>를 사용하여 이 작업을 수행할 것입니다(다음 그림 참조).</p>
 <div id="cell-49" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="25">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb28"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a>g <span class="op">=</span> sns.PairGrid(data, <span class="bu">vars</span><span class="op">=</span>[<span class="st">'age'</span>, <span class="st">'split_sec'</span>, <span class="st">'final_sec'</span>, <span class="st">'split_frac'</span>],</span>
 <span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a>                 hue<span class="op">=</span><span class="st">'gender'</span>, palette<span class="op">=</span><span class="st">'RdBu_r'</span>)</span>
@@ -1332,7 +1332,7 @@ dtype: object</code></pre>
 </div>
 </div>
 </div>
-<p>It looks like the split fraction does not correlate particularly with age, but does correlate with the final time: faster runners tend to have closer to even splits on their marathon time. Let’s zoom in on the histogram of split fractions separated by gender, shown in the following figure:</p>
+<p>스플릿 비율은 특별히 나이와 관련이 없지만 최종 기록과 관련이 있는 것으로 보입니다. 더 빠른 주자는 마라톤 시간에 균등한 스플릿에 더 가까운 경향이 있습니다. 다음 그림과 같이 성별로 구분된 분할 분수의 히스토그램을 확대해 보겠습니다.</p>
 <div id="cell-51" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="26">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb29"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a>sns.kdeplot(data.split_frac[data.gender<span class="op">==</span><span class="st">'M'</span>], label<span class="op">=</span><span class="st">'men'</span>, shade<span class="op">=</span><span class="va">True</span>)</span>
 <span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a>sns.kdeplot(data.split_frac[data.gender<span class="op">==</span><span class="st">'W'</span>], label<span class="op">=</span><span class="st">'women'</span>, shade<span class="op">=</span><span class="va">True</span>)</span>
@@ -1345,8 +1345,8 @@ dtype: object</code></pre>
 </div>
 </div>
 </div>
-<p>The interesting thing here is that there are many more men than women who are running close to an even split! It almost looks like a bimodal distribution among the men and women. Let’s see if we can suss out what’s going on by looking at the distributions as a function of age.</p>
-<p>A nice way to compare distributions is to use a <em>violin plot</em>, shown in the following figure:</p>
+<p>여기서 흥미로운 점은 균등한 분할에 가까워지고 있는 여성보다 남성이 더 많다는 것입니다! 남성과 여성 사이에는 거의 이봉 분포처럼 보입니다. 연령에 따른 분포를 살펴봄으로써 무슨 일이 일어나고 있는지 알아낼 수 있는지 살펴보겠습니다.</p>
+<p>분포를 비교하는 좋은 방법은 다음 그림에 표시된 <em>바이올린 플롯</em>을 사용하는 것입니다.</p>
 <div id="cell-53" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="27">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb30"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a>sns.violinplot(x<span class="op">=</span><span class="st">"gender"</span>, y<span class="op">=</span><span class="st">"split_frac"</span>, data<span class="op">=</span>data,</span>
 <span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a>               palette<span class="op">=</span>[<span class="st">"lightblue"</span>, <span class="st">"lightpink"</span>])<span class="op">;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -1358,7 +1358,7 @@ dtype: object</code></pre>
 </div>
 </div>
 </div>
-<p>Let’s look a little deeper, and compare these violin plots as a function of age (see the following figure). We’ll start by creating a new column in the array that specifies the age range that each person is in, by decade:</p>
+<p>조금 더 자세히 살펴보고 이러한 바이올린 플롯을 연령에 따른 함수로 비교해 보겠습니다(다음 그림 참조). 각 사람의 연령 범위를 10년 단위로 지정하는 배열에 새 열을 만드는 것부터 시작하겠습니다.</p>
 <div id="cell-55" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="28">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb31"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a>data[<span class="st">'age_dec'</span>] <span class="op">=</span> data.age.<span class="bu">map</span>(<span class="kw">lambda</span> age: <span class="dv">10</span> <span class="op">*</span> (age <span class="op">//</span> <span class="dv">10</span>))</span>
 <span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a>data.head()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -1458,15 +1458,15 @@ dtype: object</code></pre>
 </div>
 </div>
 </div>
-<p>We can see where the distributions among men and women differ: the split distributions of men in their 20s to 50s show a pronounced overdensity toward lower splits when compared to women of the same age (or of any age, for that matter).</p>
-<p>Also surprisingly, it appears that the 80-year-old women seem to outperform <em>everyone</em> in terms of their split time, although this is likely a small number effect, as there are only a handful of runners in that range:</p>
+<p>남성과 여성의 분포가 어디에서 다른지 확인할 수 있습니다. 20대~50대 남성의 분할 분포는 같은 연령(또는 모든 연령)의 여성과 비교할 때 낮은 분할에 대한 뚜렷한 과밀도를 보여줍니다.</p>
+<p>또한 놀랍게도 80세 여성은 스플릿 타임 측면에서 <em>모든 사람</em>보다 뛰어난 성과를 보이는 것으로 보입니다. 하지만 해당 범위에 소수의 주자가 있기 때문에 이는 소수 효과일 가능성이 높습니다.</p>
 <div id="cell-58" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="30">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb33"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a>(data.age <span class="op">&gt;</span> <span class="dv">80</span>).<span class="bu">sum</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="30">
 <pre><code>7</code></pre>
 </div>
 </div>
-<p>Back to the men with negative splits: who are these runners? Does this split fraction correlate with finishing quickly? We can plot this very easily. We’ll use <code>regplot</code>, which will automatically fit a linear regression model to the data (see the following figure):</p>
+<p>부정적인 분할을 가진 남자들로 돌아가서, 이 주자들은 누구입니까? 이 분할 비율이 빨리 마무리하는 것과 관련이 있습니까? 우리는 이것을 아주 쉽게 플롯할 수 있습니다. 선형 회귀 모델을 데이터에 자동으로 맞추는 ’regplot’을 사용하겠습니다(다음 그림 참조).</p>
 <div id="cell-60" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="31">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb35"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a>g <span class="op">=</span> sns.lmplot(x<span class="op">=</span><span class="st">'final_sec'</span>, y<span class="op">=</span><span class="st">'split_frac'</span>, col<span class="op">=</span><span class="st">'gender'</span>, data<span class="op">=</span>data,</span>
 <span id="cb35-2"><a href="#cb35-2" aria-hidden="true" tabindex="-1"></a>               markers<span class="op">=</span><span class="st">"."</span>, scatter_kws<span class="op">=</span><span class="bu">dict</span>(color<span class="op">=</span><span class="st">'c'</span>))</span>
@@ -1479,15 +1479,15 @@ dtype: object</code></pre>
 </div>
 </div>
 </div>
-<p>Apparently, among both men and women, the people with fast splits tend to be faster runners who are finishing within ~15,000 seconds, or about 4 hours. People slower than that are much less likely to have a fast second split.</p>
+<p>분명히 남성과 여성 모두에서 빠른 스플릿을 가진 사람들은 약 15,000초, 즉 약 4시간 이내에 완주하는 더 빠른 주자들인 경향이 있습니다. 그보다 느린 사람들은 빠른 두 번째 분할을 가질 가능성이 훨씬 적습니다.</p>
 
 
 </section>
 <section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
 <hr>
 <ol>
-<li id="fn1"><p>The restaurant staff data used in this section divides employees into two sexes: female and male. Biological sex isn’t binary, but the following discussion and visualizations are limited by this data.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn2"><p>The marathon data used in this section divides runners into two genders: men and women. While gender is a spectrum, the following discussion and visualizations use this binary because they depend on the data.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn1"><p>이 섹션에 사용된 레스토랑 직원 데이터는 직원을 여성과 남성의 두 성별로 나눕니다. 생물학적 성별 바이너리는 아니지만 다음 토론과 시각화는 이 데이터로 인해 제한됩니다.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>이 섹션에 사용된 마라톤 데이터는 주자를 남성과 여성이라는 두 가지 성별로 나눕니다. 성별은 스펙트럼, 다음 토론 및 시각화에서는 데이터에 의존하기 때문에 이 바이너리를 사용합니다.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section>
 
@@ -1894,13 +1894,13 @@ dtype: object</code></pre>
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../notebooks/04.12-Three-Dimensional-Plotting.html" class="pagination-link" aria-label="Three-Dimensional Plotting in Matplotlib">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Three-Dimensional Plotting in Matplotlib</span></span>
+      <a href="../notebooks/04.12-Three-Dimensional-Plotting.html" class="pagination-link" aria-label="Matplotlib의 3차원 플로팅">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Matplotlib의 3차원 플로팅</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../notebooks/04.15-Further-Resources.html" class="pagination-link" aria-label="Further Resources">
-        <span class="nav-page-text"><span class="chapter-title">Further Resources</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../notebooks/04.15-Further-Resources.html" class="pagination-link" aria-label="추가 리소스">
+        <span class="nav-page-text"><span class="chapter-title">추가 리소스</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Aggregation and Grouping – 파이썬 데이터 사이언스 핸드북</title>
+<title>집계 및 그룹화 – 파이썬 데이터 사이언스 핸드북</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -77,7 +77,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-3778d3e438078121318a23701f9f68bb.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-803ae4f7a8810f475153517dc3c4ebae.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -121,7 +121,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../notebooks/03.00-Introduction-to-Pandas.html">Pandas를 이용한 데이터 조작</a></li><li class="breadcrumb-item"><a href="../notebooks/03.08-Aggregation-and-Grouping.html"><span class="chapter-title">Aggregation and Grouping</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../notebooks/03.00-Introduction-to-Pandas.html">Pandas를 이용한 데이터 조작</a></li><li class="breadcrumb-item"><a href="../notebooks/03.08-Aggregation-and-Grouping.html"><span class="chapter-title">집계 및 그룹화</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -168,7 +168,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/01.00-IPython-Beyond-Normal-Python.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Jupyter: 일반 Python을 넘어서</span></a>
+  <a href="../notebooks/01.00-IPython-Beyond-Normal-Python.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Jupyter: 일반 파이썬(Python)을 넘어서</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -198,17 +198,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/01.06-Errors-and-Debugging.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Errors and Debugging</span></a>
+  <a href="../notebooks/01.06-Errors-and-Debugging.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">오류 및 디버깅</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/01.07-Timing-and-Profiling.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Profiling and Timing Code</span></a>
+  <a href="../notebooks/01.07-Timing-and-Profiling.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">프로파일링 및 타이밍 코드</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/01.08-More-IPython-Resources.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">More IPython Resources</span></a>
+  <a href="../notebooks/01.08-More-IPython-Resources.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">추가 IPython 리소스</span></a>
   </div>
 </li>
       </ul>
@@ -224,52 +224,52 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.00-Introduction-to-NumPy.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Introduction to NumPy</span></a>
+  <a href="../notebooks/02.00-Introduction-to-NumPy.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">NumPy 소개</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.01-Understanding-Data-Types.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Understanding Data Types in Python</span></a>
+  <a href="../notebooks/02.01-Understanding-Data-Types.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">파이썬(Python)의 데이터 유형 이해</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.02-The-Basics-Of-NumPy-Arrays.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">The Basics of NumPy Arrays</span></a>
+  <a href="../notebooks/02.02-The-Basics-Of-NumPy-Arrays.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">NumPy 배열의 기본</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.03-Computation-on-arrays-ufuncs.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Computation on NumPy Arrays: Universal Functions</span></a>
+  <a href="../notebooks/02.03-Computation-on-arrays-ufuncs.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">NumPy 배열 계산: 범용 함수</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.04-Computation-on-arrays-aggregates.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Aggregations: min, max, and Everything in Between</span></a>
+  <a href="../notebooks/02.04-Computation-on-arrays-aggregates.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">집계: 최소, 최대 및 그 사이의 모든 것</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.05-Computation-on-arrays-broadcasting.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Computation on Arrays: Broadcasting</span></a>
+  <a href="../notebooks/02.05-Computation-on-arrays-broadcasting.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">배열 계산: 브로드캐스팅</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.06-Boolean-Arrays-and-Masks.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Comparisons, Masks, and Boolean Logic</span></a>
+  <a href="../notebooks/02.06-Boolean-Arrays-and-Masks.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">비교, 마스크 및 부울 논리</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.07-Fancy-Indexing.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Fancy Indexing</span></a>
+  <a href="../notebooks/02.07-Fancy-Indexing.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">멋진 인덱싱</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.08-Sorting.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Sorting Arrays</span></a>
+  <a href="../notebooks/02.08-Sorting.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">배열 정렬</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.09-Structured-Data-NumPy.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Structured Data: NumPy’s Structured Arrays</span></a>
+  <a href="../notebooks/02.09-Structured-Data-NumPy.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">구조화된 데이터: NumPy의 구조화된 배열</span></a>
   </div>
 </li>
       </ul>
@@ -285,72 +285,72 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.00-Introduction-to-Pandas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Data Manipulation with Pandas</span></a>
+  <a href="../notebooks/03.00-Introduction-to-Pandas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">팬더를 이용한 데이터 조작</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.01-Introducing-Pandas-Objects.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Introducing Pandas Objects</span></a>
+  <a href="../notebooks/03.01-Introducing-Pandas-Objects.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">판다스 객체 소개</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.02-Data-Indexing-and-Selection.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Data Indexing and Selection</span></a>
+  <a href="../notebooks/03.02-Data-Indexing-and-Selection.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">데이터 인덱싱 및 선택</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.03-Operations-in-Pandas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Operating on Data in Pandas</span></a>
+  <a href="../notebooks/03.03-Operations-in-Pandas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Pandas에서 데이터 작업</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.04-Missing-Values.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Handling Missing Data</span></a>
+  <a href="../notebooks/03.04-Missing-Values.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">누락된 데이터 처리</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.05-Hierarchical-Indexing.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Hierarchical Indexing</span></a>
+  <a href="../notebooks/03.05-Hierarchical-Indexing.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">계층적 인덱싱</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.06-Concat-And-Append.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Combining Datasets: concat and append</span></a>
+  <a href="../notebooks/03.06-Concat-And-Append.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">데이터세트 결합: 연결 및 추가</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.07-Merge-and-Join.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Combining Datasets: merge and join</span></a>
+  <a href="../notebooks/03.07-Merge-and-Join.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">데이터세트 결합: 병합 및 조인</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.08-Aggregation-and-Grouping.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Aggregation and Grouping</span></a>
+  <a href="../notebooks/03.08-Aggregation-and-Grouping.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">집계 및 그룹화</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.09-Pivot-Tables.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Pivot Tables</span></a>
+  <a href="../notebooks/03.09-Pivot-Tables.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">피벗 테이블</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.10-Working-With-Strings.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Vectorized String Operations</span></a>
+  <a href="../notebooks/03.10-Working-With-Strings.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">벡터화된 문자열 작업</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.11-Working-with-Time-Series.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Working with Time Series</span></a>
+  <a href="../notebooks/03.11-Working-with-Time-Series.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">시계열 작업</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.12-Performance-Eval-and-Query.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">High-Performance Pandas: eval and query</span></a>
+  <a href="../notebooks/03.12-Performance-Eval-and-Query.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">고성능 Pandas: 평가 및 쿼리</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.13-Further-Resources.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Further Resources</span></a>
+  <a href="../notebooks/03.13-Further-Resources.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">추가 리소스</span></a>
   </div>
 </li>
       </ul>
@@ -366,77 +366,77 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.00-Introduction-To-Matplotlib.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Visualization with Matplotlib</span></a>
+  <a href="../notebooks/04.00-Introduction-To-Matplotlib.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Matplotlib를 사용한 시각화</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.01-Simple-Line-Plots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Simple Line Plots</span></a>
+  <a href="../notebooks/04.01-Simple-Line-Plots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">간단한 선 도표</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.02-Simple-Scatter-Plots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Simple Scatter Plots</span></a>
+  <a href="../notebooks/04.02-Simple-Scatter-Plots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">단순 산점도</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.03-Errorbars.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Visualizing Uncertainties</span></a>
+  <a href="../notebooks/04.03-Errorbars.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">불확실성 시각화</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.04-Density-and-Contour-Plots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Density and Contour Plots</span></a>
+  <a href="../notebooks/04.04-Density-and-Contour-Plots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">밀도 및 등고선 플롯</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.05-Histograms-and-Binnings.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Histograms, Binnings, and Density</span></a>
+  <a href="../notebooks/04.05-Histograms-and-Binnings.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">히스토그램, 비닝 및 밀도</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.06-Customizing-Legends.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Customizing Plot Legends</span></a>
+  <a href="../notebooks/04.06-Customizing-Legends.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">플롯 범례 사용자 정의</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.07-Customizing-Colorbars.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Customizing Colorbars</span></a>
+  <a href="../notebooks/04.07-Customizing-Colorbars.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">컬러바 사용자 정의</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.08-Multiple-Subplots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Multiple Subplots</span></a>
+  <a href="../notebooks/04.08-Multiple-Subplots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">다중 서브플롯</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.09-Text-and-Annotation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Text and Annotation</span></a>
+  <a href="../notebooks/04.09-Text-and-Annotation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">텍스트 및 주석</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.10-Customizing-Ticks.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Customizing Ticks</span></a>
+  <a href="../notebooks/04.10-Customizing-Ticks.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">눈금 사용자 정의</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.11-Settings-and-Stylesheets.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Customizing Matplotlib: Configurations and Stylesheets</span></a>
+  <a href="../notebooks/04.11-Settings-and-Stylesheets.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Matplotlib 사용자 정의: 구성 및 스타일시트</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.12-Three-Dimensional-Plotting.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Three-Dimensional Plotting in Matplotlib</span></a>
+  <a href="../notebooks/04.12-Three-Dimensional-Plotting.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Matplotlib의 3차원 플로팅</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.14-Visualization-With-Seaborn.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Visualization with Seaborn</span></a>
+  <a href="../notebooks/04.14-Visualization-With-Seaborn.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Seaborn을 이용한 시각화</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.15-Further-Resources.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Further Resources</span></a>
+  <a href="../notebooks/04.15-Further-Resources.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">추가 리소스</span></a>
   </div>
 </li>
       </ul>
@@ -452,82 +452,82 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.00-Machine-Learning.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Machine Learning</span></a>
+  <a href="../notebooks/05.00-Machine-Learning.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">머신러닝</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.01-What-Is-Machine-Learning.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">What Is Machine Learning?</span></a>
+  <a href="../notebooks/05.01-What-Is-Machine-Learning.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">머신러닝이란?</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.02-Introducing-Scikit-Learn.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Introducing Scikit-Learn</span></a>
+  <a href="../notebooks/05.02-Introducing-Scikit-Learn.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Scikit-Learn 소개</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.03-Hyperparameters-and-Model-Validation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Hyperparameters and Model Validation</span></a>
+  <a href="../notebooks/05.03-Hyperparameters-and-Model-Validation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">하이퍼파라미터 및 모델 검증</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.04-Feature-Engineering.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Feature Engineering</span></a>
+  <a href="../notebooks/05.04-Feature-Engineering.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">기능 엔지니어링</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.05-Naive-Bayes.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Naive Bayes Classification</span></a>
+  <a href="../notebooks/05.05-Naive-Bayes.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 나이브 베이즈 분류</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.06-Linear-Regression.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Linear Regression</span></a>
+  <a href="../notebooks/05.06-Linear-Regression.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 선형 회귀</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.07-Support-Vector-Machines.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Support Vector Machines</span></a>
+  <a href="../notebooks/05.07-Support-Vector-Machines.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 서포트 벡터 머신</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.08-Random-Forests.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Decision Trees and Random Forests</span></a>
+  <a href="../notebooks/05.08-Random-Forests.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 의사결정 트리 및 랜덤 포레스트</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.09-Principal-Component-Analysis.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Principal Component Analysis</span></a>
+  <a href="../notebooks/05.09-Principal-Component-Analysis.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 주성분 분석</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.10-Manifold-Learning.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Manifold Learning</span></a>
+  <a href="../notebooks/05.10-Manifold-Learning.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 다양한 학습</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.11-K-Means.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: k-Means Clustering</span></a>
+  <a href="../notebooks/05.11-K-Means.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: k-평균 클러스터링</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.12-Gaussian-Mixtures.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Gaussian Mixture Models</span></a>
+  <a href="../notebooks/05.12-Gaussian-Mixtures.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 가우스 혼합 모델</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.13-Kernel-Density-Estimation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Kernel Density Estimation</span></a>
+  <a href="../notebooks/05.13-Kernel-Density-Estimation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 커널 밀도 추정</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.14-Image-Features.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Application: A Face Detection Pipeline</span></a>
+  <a href="../notebooks/05.14-Image-Features.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">응용 분야: 얼굴 감지 파이프라인</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.15-Learning-More.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Further Machine Learning Resources</span></a>
+  <a href="../notebooks/05.15-Learning-More.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">추가 머신러닝(Machine Learning) 리소스</span></a>
   </div>
 </li>
       </ul>
@@ -543,7 +543,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/06.00-Figure-Code.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Appendix: Figure Code</span></a>
+  <a href="../notebooks/06.00-Figure-Code.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">부록: 그림 코드</span></a>
   </div>
 </li>
       </ul>
@@ -558,15 +558,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#planets-data" id="toc-planets-data" class="nav-link active" data-scroll-target="#planets-data">Planets Data</a></li>
-  <li><a href="#simple-aggregation-in-pandas" id="toc-simple-aggregation-in-pandas" class="nav-link" data-scroll-target="#simple-aggregation-in-pandas">Simple Aggregation in Pandas</a></li>
-  <li><a href="#groupby-split-apply-combine" id="toc-groupby-split-apply-combine" class="nav-link" data-scroll-target="#groupby-split-apply-combine">groupby: Split, Apply, Combine</a>
+  <li><a href="#행성-데이터" id="toc-행성-데이터" class="nav-link active" data-scroll-target="#행성-데이터">행성 데이터</a></li>
+  <li><a href="#pandas의-단순-집계" id="toc-pandas의-단순-집계" class="nav-link" data-scroll-target="#pandas의-단순-집계">Pandas의 단순 집계</a></li>
+  <li><a href="#그룹별-분할-적용-결합" id="toc-그룹별-분할-적용-결합" class="nav-link" data-scroll-target="#그룹별-분할-적용-결합">그룹별: 분할, 적용, 결합</a>
   <ul class="collapse">
-  <li><a href="#split-apply-combine" id="toc-split-apply-combine" class="nav-link" data-scroll-target="#split-apply-combine">Split, Apply, Combine</a></li>
-  <li><a href="#the-groupby-object" id="toc-the-groupby-object" class="nav-link" data-scroll-target="#the-groupby-object">The GroupBy Object</a></li>
-  <li><a href="#aggregate-filter-transform-apply" id="toc-aggregate-filter-transform-apply" class="nav-link" data-scroll-target="#aggregate-filter-transform-apply">Aggregate, Filter, Transform, Apply</a></li>
-  <li><a href="#specifying-the-split-key" id="toc-specifying-the-split-key" class="nav-link" data-scroll-target="#specifying-the-split-key">Specifying the Split Key</a></li>
-  <li><a href="#grouping-example" id="toc-grouping-example" class="nav-link" data-scroll-target="#grouping-example">Grouping Example</a></li>
+  <li><a href="#분할-적용-결합" id="toc-분할-적용-결합" class="nav-link" data-scroll-target="#분할-적용-결합">분할, 적용, 결합</a></li>
+  <li><a href="#groupby-개체" id="toc-groupby-개체" class="nav-link" data-scroll-target="#groupby-개체">GroupBy 개체</a></li>
+  <li><a href="#집계-필터링-변환-적용" id="toc-집계-필터링-변환-적용" class="nav-link" data-scroll-target="#집계-필터링-변환-적용">집계, 필터링, 변환, 적용</a></li>
+  <li><a href="#분할-키-지정" id="toc-분할-키-지정" class="nav-link" data-scroll-target="#분할-키-지정">분할 키 지정</a></li>
+  <li><a href="#그룹화-예" id="toc-그룹화-예" class="nav-link" data-scroll-target="#그룹화-예">그룹화 예</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -574,9 +574,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../notebooks/03.00-Introduction-to-Pandas.html">Pandas를 이용한 데이터 조작</a></li><li class="breadcrumb-item"><a href="../notebooks/03.08-Aggregation-and-Grouping.html"><span class="chapter-title">Aggregation and Grouping</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../notebooks/03.00-Introduction-to-Pandas.html">Pandas를 이용한 데이터 조작</a></li><li class="breadcrumb-item"><a href="../notebooks/03.08-Aggregation-and-Grouping.html"><span class="chapter-title">집계 및 그룹화</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-title">Aggregation and Grouping</span></h1>
+<h1 class="title"><span class="chapter-title">집계 및 그룹화</span></h1>
 </div>
 
 
@@ -593,8 +593,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>A fundamental piece of many data analysis tasks is efficient summarization: computing aggregations like <code>sum</code>, <code>mean</code>, <code>median</code>, <code>min</code>, and <code>max</code>, in which a single number summarizes aspects of a potentially large dataset. In this chapter, we’ll explore aggregations in Pandas, from simple operations akin to what we’ve seen on NumPy arrays to more sophisticated operations based on the concept of a <code>groupby</code>.</p>
-<p>For convenience, we’ll use the same <code>display</code> magic function that we used in the previous chapters:</p>
+<p>많은 데이터 분석 작업의 기본 부분은 효율적인 요약입니다. 즉, ‘합계’, ‘평균’, ‘중앙값’, ‘최소값’, ’최대값’과 같은 집계를 계산합니다. 여기서 단일 숫자는 잠재적으로 큰 데이터 세트의 측면을 요약합니다. 이번 장에서는 NumPy 배열에서 본 것과 유사한 간단한 작업부터 <code>groupby</code> 개념을 기반으로 한 보다 정교한 작업까지 Pandas의 집계를 살펴보겠습니다.</p>
+<p>편의상 이전 장에서 사용한 것과 동일한 <code>display</code> 마법 함수를 사용하겠습니다.</p>
 <div id="cell-3" class="cell" data-tags="[]" data-execution_count="1">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
@@ -615,9 +615,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="st">'</span><span class="ch">\n\n</span><span class="st">'</span>.join(a <span class="op">+</span> <span class="st">'</span><span class="ch">\n</span><span class="st">'</span> <span class="op">+</span> <span class="bu">repr</span>(<span class="bu">eval</span>(a))</span>
 <span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>                           <span class="cf">for</span> a <span class="kw">in</span> <span class="va">self</span>.args)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<section id="planets-data" class="level2">
-<h2 class="anchored" data-anchor-id="planets-data">Planets Data</h2>
-<p>Here we will use the Planets dataset, available via the <a href="http://seaborn.pydata.org/">Seaborn package</a> (see <a href="../notebooks/04.14-Visualization-With-Seaborn.html">Visualization With Seaborn</a>). It gives information on planets that astronomers have discovered around other stars (known as <em>extrasolar planets</em>, or <em>exoplanets</em> for short). It can be downloaded with a simple Seaborn command:</p>
+<section id="행성-데이터" class="level2">
+<h2 class="anchored" data-anchor-id="행성-데이터">행성 데이터</h2>
+<p>여기서는 <a href="http://seaborn.pydata.org/">Seaborn 패키지</a>(<a href="../notebooks/04.14-Visualization-With-Seaborn.html">Visualization With Seaborn</a> 참조)를 통해 제공되는 Planets 데이터세트를 사용합니다. 이는 천문학자들이 다른 별 주위에서 발견한 행성(<em>외계 행성</em> 또는 줄여서 <em>외행성</em>으로 알려짐)에 대한 정보를 제공합니다. 간단한 Seaborn 명령으로 다운로드할 수 있습니다.</p>
 <div id="cell-5" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="2">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>planets <span class="op">=</span> sns.load_dataset(<span class="st">'planets'</span>)</span>
@@ -696,11 +696,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
-<p>This has some details on the 1,000+ extrasolar planets discovered up to 2014.</p>
+<p>여기에는 2014년까지 발견된 1,000개 이상의 외계 행성에 대한 세부 정보가 포함되어 있습니다.</p>
 </section>
-<section id="simple-aggregation-in-pandas" class="level2">
-<h2 class="anchored" data-anchor-id="simple-aggregation-in-pandas">Simple Aggregation in Pandas</h2>
-<p>In <a href="../notebooks/02.04-Computation-on-arrays-aggregates.html">“Aggregations: Min, Max, and Everything In Between”</a>, we explored some of the data aggregations available for NumPy arrays. As with a one-dimensional NumPy array, for a Pandas <code>Series</code> the aggregates return a single value:</p>
+<section id="pandas의-단순-집계" class="level2">
+<h2 class="anchored" data-anchor-id="pandas의-단순-집계">Pandas의 단순 집계</h2>
+<p><a href="../notebooks/02.04-Computation-on-arrays-aggregates.html">“집계: 최소, 최대 및 그 사이의 모든 것”</a>에서 NumPy 배열에 사용할 수 있는 데이터 집계 중 일부를 살펴보았습니다. 1차원 NumPy 배열과 마찬가지로 Pandas <code>Series</code>의 경우 집계는 단일 값을 반환합니다.</p>
 <div id="cell-10" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="4">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>rng <span class="op">=</span> np.random.RandomState(<span class="dv">42</span>)</span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>ser <span class="op">=</span> pd.Series(rng.rand(<span class="dv">5</span>))</span>
@@ -726,7 +726,7 @@ dtype: float64</code></pre>
 <pre><code>0.5623850983416314</code></pre>
 </div>
 </div>
-<p>For a <code>DataFrame</code>, by default the aggregates return results within each column:</p>
+<p><code>DataFrame</code>의 경우 기본적으로 집계는 각 열 내에서 결과를 반환합니다.</p>
 <div id="cell-14" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="7">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.DataFrame({<span class="st">'A'</span>: rng.rand(<span class="dv">5</span>),</span>
 <span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>                   <span class="st">'B'</span>: rng.rand(<span class="dv">5</span>)})</span>
@@ -783,7 +783,7 @@ B    0.443420
 dtype: float64</code></pre>
 </div>
 </div>
-<p>By specifying the <code>axis</code> argument, you can instead aggregate within each row:</p>
+<p><code>axis</code> 인수를 지정하면 대신 각 행 내에서 집계할 수 있습니다.</p>
 <div id="cell-17" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="9">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>df.mean(axis<span class="op">=</span><span class="st">'columns'</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="9">
@@ -795,7 +795,7 @@ dtype: float64</code></pre>
 dtype: float64</code></pre>
 </div>
 </div>
-<p>Pandas <code>Series</code> and <code>DataFrame</code> objects include all of the common aggregates mentioned in <a href="../notebooks/02.04-Computation-on-arrays-aggregates.html">Aggregations: Min, Max, and Everything In Between</a>; in addition, there is a convenience method, <code>describe</code>, that computes several common aggregates for each column and returns the result. Let’s use this on the Planets data, for now dropping rows with missing values:</p>
+<p>Pandas ‘Series’ 및 ‘DataFrame’ 개체에는 <a href="../notebooks/02.04-Computation-on-arrays-aggregates.html">집계: 최소, 최대 및 그 사이의 모든 것</a>에 언급된 모든 공통 집계가 포함되어 있습니다. 또한 각 열에 대한 여러 공통 집계를 계산하고 결과를 반환하는 편의 메서드 <code>describe</code>가 있습니다. 이제 누락된 값이 있는 행을 삭제하기 위해 Planets 데이터에서 이를 사용해 보겠습니다.</p>
 <div id="cell-19" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="10">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>planets.dropna().describe()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="10">
@@ -884,69 +884,69 @@ dtype: float64</code></pre>
 </div>
 </div>
 </div>
-<p>This method helps us understand the overall properties of a dataset. For example, we see in the <code>year</code> column that although exoplanets were discovered as far back as 1989, half of all planets in the dataset were not discovered until 2010 or after. This is largely thanks to the <em>Kepler</em> mission, which aimed to find eclipsing planets around other stars using a specially designed space telescope.</p>
-<p>The following table summarizes some other built-in Pandas aggregations:</p>
+<p>이 방법은 데이터 세트의 전반적인 속성을 이해하는 데 도움이 됩니다. 예를 들어 ‘연도’ 열에서는 외계 행성이 1989년에 발견되었지만 데이터 세트에 있는 모든 행성의 절반은 2010년 이후까지 발견되지 않았음을 확인할 수 있습니다. 이는 특별히 설계된 우주 망원경을 사용하여 다른 별 주위에서 식행성을 찾는 것을 목표로 한 <em>케플러</em> 임무 덕분이었습니다.</p>
+<p>다음 표에는 기타 기본 제공 Pandas 집계가 요약되어 있습니다.</p>
 <table class="caption-top table">
 <thead>
 <tr class="header">
-<th>Aggregation</th>
-<th>Returns</th>
+<th>집계</th>
+<th>반품</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><code>count</code></td>
-<td>Total number of items</td>
+<td><code>카운트</code></td>
+<td>총 품목수</td>
 </tr>
 <tr class="even">
-<td><code>first</code>, <code>last</code></td>
-<td>First and last item</td>
+<td><code>첫번째</code>, <code>마지막</code></td>
+<td>첫 번째 및 마지막 항목</td>
 </tr>
 <tr class="odd">
-<td><code>mean</code>, <code>median</code></td>
-<td>Mean and median</td>
+<td><code>평균</code>, <code>중앙값</code></td>
+<td>평균과 중앙값</td>
 </tr>
 <tr class="even">
-<td><code>min</code>, <code>max</code></td>
-<td>Minimum and maximum</td>
+<td><code>최소</code>, <code>최대</code></td>
+<td>최소 및 최대</td>
 </tr>
 <tr class="odd">
 <td><code>std</code>, <code>var</code></td>
-<td>Standard deviation and variance</td>
+<td>표준편차 및 분산</td>
 </tr>
 <tr class="even">
-<td><code>mad</code></td>
-<td>Mean absolute deviation</td>
+<td><code>미친</code></td>
+<td>평균 절대 편차</td>
 </tr>
 <tr class="odd">
-<td><code>prod</code></td>
-<td>Product of all items</td>
+<td><code>프로드</code></td>
+<td>모든 품목의 제품</td>
 </tr>
 <tr class="even">
-<td><code>sum</code></td>
-<td>Sum of all items</td>
+<td><code>합</code></td>
+<td>모든 항목의 합계</td>
 </tr>
 </tbody>
 </table>
-<p>These are all methods of <code>DataFrame</code> and <code>Series</code> objects.</p>
-<p>To go deeper into the data, however, simple aggregates are often not enough. The next level of data summarization is the <code>groupby</code> operation, which allows you to quickly and efficiently compute aggregates on subsets of data.</p>
+<p>이들은 모두 <code>DataFrame</code> 및 <code>Series</code> 개체의 메서드입니다.</p>
+<p>그러나 데이터에 더 깊이 들어가려면 단순한 집계만으로는 충분하지 않은 경우가 많습니다. 데이터 요약의 다음 단계는 ‘groupby’ 작업으로, 이를 통해 데이터 하위 집합에 대한 집계를 빠르고 효율적으로 계산할 수 있습니다.</p>
 </section>
-<section id="groupby-split-apply-combine" class="level2">
-<h2 class="anchored" data-anchor-id="groupby-split-apply-combine">groupby: Split, Apply, Combine</h2>
-<p>Simple aggregations can give you a flavor of your dataset, but often we would prefer to aggregate conditionally on some label or index: this is implemented in the so-called <code>groupby</code> operation. The name “group by” comes from a command in the SQL database language, but it is perhaps more illuminative to think of it in the terms first coined by Hadley Wickham of Rstats fame: <em>split, apply, combine</em>.</p>
-<section id="split-apply-combine" class="level3">
-<h3 class="anchored" data-anchor-id="split-apply-combine">Split, Apply, Combine</h3>
-<p>A canonical example of this split-apply-combine operation, where the “apply” is a summation aggregation, is illustrated in this figure:</p>
+<section id="그룹별-분할-적용-결합" class="level2">
+<h2 class="anchored" data-anchor-id="그룹별-분할-적용-결합">그룹별: 분할, 적용, 결합</h2>
+<p>간단한 집계는 데이터 세트의 특징을 제공할 수 있지만 종종 일부 레이블이나 인덱스에 대해 조건부 집계를 선호합니다. 이는 소위 ‘groupby’ 작업에서 구현됩니다. “그룹화 기준”이라는 이름은 SQL 데이터베이스 언어의 명령에서 유래했지만 Rstats로 유명한 Hadley Wickham이 처음 만든 용어인 <em>분할, 적용, 결합</em>을 생각하면 더 이해하기 쉬울 것입니다.</p>
+<section id="분할-적용-결합" class="level3">
+<h3 class="anchored" data-anchor-id="분할-적용-결합">분할, 적용, 결합</h3>
+<p>“적용”이 합계 집계인 이 분할-적용-결합 작업의 정식 예가 다음 그림에 나와 있습니다.</p>
 <p><img src="images/03.08-split-apply-combine.png" class="img-fluid"></p>
-<p>(<a href="https://github.com/jakevdp/PythonDataScienceHandbook/blob/master/notebooks/06.00-Figure-Code.ipynb#Split-Apply-Combine">figure source in Appendix</a>)</p>
-<p>This illustrates what the <code>groupby</code> operation accomplishes:</p>
+<p>(<a href="https://github.com/jakevdp/파이썬(Python)DataScienceHandbook/blob/master/notebooks/06.00-Figure-Code.ipynb#Split-Apply-Combine">부록의 그림 출처</a>)</p>
+<p>이는 <code>groupby</code> 작업이 수행하는 작업을 보여줍니다.</p>
 <ul>
-<li>The <em>split</em> step involves breaking up and grouping a <code>DataFrame</code> depending on the value of the specified key.</li>
-<li>The <em>apply</em> step involves computing some function, usually an aggregate, transformation, or filtering, within the individual groups.</li>
-<li>The <em>combine</em> step merges the results of these operations into an output array.</li>
+<li><em>분할</em> 단계에는 지정된 키 값에 따라 <code>DataFrame</code>을 분할하고 그룹화하는 작업이 포함됩니다.</li>
+<li><em>적용</em> 단계에는 개별 그룹 내에서 일반적으로 집계, 변환 또는 필터링과 같은 일부 기능을 계산하는 작업이 포함됩니다.</li>
+<li><em>결합</em> 단계는 이러한 작업의 결과를 출력 배열로 병합합니다.</li>
 </ul>
-<p>While this could certainly be done manually using some combination of the masking, aggregation, and merging commands covered earlier, an important realization is that <em>the intermediate splits do not need to be explicitly instantiated</em>. Rather, the <code>groupby</code> can (often) do this in a single pass over the data, updating the sum, mean, count, min, or other aggregate for each group along the way. The power of the <code>groupby</code> is that it abstracts away these steps: the user need not think about <em>how</em> the computation is done under the hood, but rather can think about the <em>operation as a whole</em>.</p>
-<p>As a concrete example, let’s take a look at using Pandas for the computation shown in the following figure. We’ll start by creating the input <code>DataFrame</code>:</p>
+<p>앞서 설명한 마스킹, 집계 및 병합 명령을 조합하여 수동으로 수행할 수도 있지만 중요한 사실은 <em>중간 분할을 명시적으로 인스턴스화할 필요가 없다는 점입니다</em>. 오히려 ’groupby’는 (종종) 데이터에 대한 단일 전달로 이 작업을 수행하여 각 그룹에 대한 합계, 평균, 개수, 최소 또는 기타 집계를 업데이트할 수 있습니다. ’groupby’의 장점은 이러한 단계를 추상화한다는 것입니다. 사용자는 내부적으로 계산이 <em>어떻게</em> 수행되는지 생각할 필요가 없고 오히려 <em>작업 전체</em>에 대해 생각할 수 있습니다.</p>
+<p>구체적인 예로, 다음 그림에 표시된 계산에 Pandas를 사용하는 방법을 살펴보겠습니다. 입력 <code>DataFrame</code>을 생성하는 것부터 시작하겠습니다.</p>
 <div id="cell-27" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="11">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.DataFrame({<span class="st">'key'</span>: [<span class="st">'A'</span>, <span class="st">'B'</span>, <span class="st">'C'</span>, <span class="st">'A'</span>, <span class="st">'B'</span>, <span class="st">'C'</span>],</span>
 <span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>                   <span class="st">'data'</span>: <span class="bu">range</span>(<span class="dv">6</span>)}, columns<span class="op">=</span>[<span class="st">'key'</span>, <span class="st">'data'</span>])</span>
@@ -1000,15 +1000,15 @@ dtype: float64</code></pre>
 </div>
 </div>
 </div>
-<p>The most basic split-apply-combine operation can be computed with the <code>groupby</code> method of the <code>DataFrame</code>, passing the name of the desired key column:</p>
+<p>가장 기본적인 분할-적용-결합 작업은 원하는 키 열의 이름을 전달하여 <code>DataFrame</code>의 <code>groupby</code> 메서드로 계산할 수 있습니다.</p>
 <div id="cell-29" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="12">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>df.groupby(<span class="st">'key'</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="12">
 <pre><code>&lt;pandas.core.groupby.generic.DataFrameGroupBy object at 0x11d241e20&gt;</code></pre>
 </div>
 </div>
-<p>Notice that what is returned is a <code>DataFrameGroupBy</code> object, not a set of <code>DataFrame</code> objects. This object is where the magic is: you can think of it as a special view of the <code>DataFrame</code>, which is poised to dig into the groups but does no actual computation until the aggregation is applied. This “lazy evaluation” approach means that common aggregates can be implemented efficiently in a way that is almost transparent to the user.</p>
-<p>To produce a result, we can apply an aggregate to this <code>DataFrameGroupBy</code> object, which will perform the appropriate apply/combine steps to produce the desired result:</p>
+<p>반환되는 것은 <code>DataFrame</code> 개체 집합이 아니라 <code>DataFrameGroupBy</code> 개체입니다. 이 개체는 마법이 있는 곳입니다. 그룹을 파헤칠 준비가 되어 있지만 집계가 적용될 때까지 실제 계산을 수행하지 않는 <code>DataFrame</code>의 특수 보기로 생각할 수 있습니다. 이 “지연 평가” 접근 방식은 사용자에게 거의 투명한 방식으로 공통 집계를 효율적으로 구현할 수 있음을 의미합니다.</p>
+<p>결과를 생성하기 위해 이 <code>DataFrameGroupBy</code> 개체에 집계를 적용하면 적절한 적용/결합 단계를 수행하여 원하는 결과를 생성할 수 있습니다.</p>
 <div id="cell-31" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="13">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb20"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>df.groupby(<span class="st">'key'</span>).<span class="bu">sum</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="13">
@@ -1045,15 +1045,15 @@ dtype: float64</code></pre>
 </div>
 </div>
 </div>
-<p>The <code>sum</code> method is just one possibility here; you can apply most Pandas or NumPy aggregation functions, as well as most <code>DataFrame</code> operations, as you will see in the following discussion.</p>
+<p>여기서 <code>sum</code> 방법은 단지 하나의 가능성일 뿐입니다. 다음 설명에서 볼 수 있듯이 대부분의 Pandas 또는 NumPy 집계 함수는 물론 대부분의 <code>DataFrame</code> 작업을 적용할 수 있습니다.</p>
 </section>
-<section id="the-groupby-object" class="level3">
-<h3 class="anchored" data-anchor-id="the-groupby-object">The GroupBy Object</h3>
-<p>The <code>GroupBy</code> object is a flexible abstraction: in many ways, it can be treated as simply a collection of <code>DataFrame</code>s, though it is doing more sophisticated things under the hood. Let’s see some examples using the Planets data.</p>
-<p>Perhaps the most important operations made available by a <code>GroupBy</code> are <em>aggregate</em>, <em>filter</em>, <em>transform</em>, and <em>apply</em>. We’ll discuss each of these more fully in the next section, but before that let’s take a look at some of the other functionality that can be used with the basic <code>GroupBy</code> operation.</p>
-<section id="column-indexing" class="level4">
-<h4 class="anchored" data-anchor-id="column-indexing">Column indexing</h4>
-<p>The <code>GroupBy</code> object supports column indexing in the same way as the <code>DataFrame</code>, and returns a modified <code>GroupBy</code> object. For example:</p>
+<section id="groupby-개체" class="level3">
+<h3 class="anchored" data-anchor-id="groupby-개체">GroupBy 개체</h3>
+<p><code>GroupBy</code> 개체는 유연한 추상화입니다. 여러 면에서 이는 단순히 <code>DataFrame</code>의 컬렉션으로 처리될 수 있지만 내부적으로는 더 정교한 작업을 수행합니다. Planets 데이터를 사용한 몇 가지 예를 살펴보겠습니다.</p>
+<p>아마도 <code>GroupBy</code>를 통해 제공되는 가장 중요한 작업은 <em>집계</em>, <em>필터</em>, <em>변환</em> 및 <em>적용</em>일 것입니다. 다음 섹션에서 이들 각각에 대해 더 자세히 논의할 것입니다. 하지만 그 전에 기본 <code>GroupBy</code> 작업과 함께 사용할 수 있는 다른 기능 중 일부를 살펴보겠습니다.</p>
+<section id="열-인덱싱" class="level4">
+<h4 class="anchored" data-anchor-id="열-인덱싱">열 인덱싱</h4>
+<p><code>GroupBy</code> 개체는 <code>DataFrame</code>과 동일한 방식으로 열 인덱싱을 지원하고 수정된 <code>GroupBy</code> 개체를 반환합니다. 예를 들어:</p>
 <div id="cell-35" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="14">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>planets.groupby(<span class="st">'method'</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="14">
@@ -1066,7 +1066,7 @@ dtype: float64</code></pre>
 <pre><code>&lt;pandas.core.groupby.generic.SeriesGroupBy object at 0x11d1bcd60&gt;</code></pre>
 </div>
 </div>
-<p>Here we’ve selected a particular <code>Series</code> group from the original <code>DataFrame</code> group by reference to its column name. As with the <code>GroupBy</code> object, no computation is done until we call some aggregate on the object:</p>
+<p>여기서는 열 이름을 참조하여 원래 <code>DataFrame</code> 그룹에서 특정 <code>Series</code> 그룹을 선택했습니다. <code>GroupBy</code> 개체와 마찬가지로 개체에 대한 집계를 호출할 때까지 계산이 수행되지 않습니다.</p>
 <div id="cell-38" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="16">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb25"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>planets.groupby(<span class="st">'method'</span>)[<span class="st">'orbital_period'</span>].median()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="16">
@@ -1084,11 +1084,11 @@ Transit Timing Variations           57.011000
 Name: orbital_period, dtype: float64</code></pre>
 </div>
 </div>
-<p>This gives an idea of the general scale of orbital periods (in days) that each method is sensitive to.</p>
+<p>이는 각 방법이 민감한 궤도 기간(일)의 일반적인 규모에 대한 아이디어를 제공합니다.</p>
 </section>
-<section id="iteration-over-groups" class="level4">
-<h4 class="anchored" data-anchor-id="iteration-over-groups">Iteration over groups</h4>
-<p>The <code>GroupBy</code> object supports direct iteration over the groups, returning each group as a <code>Series</code> or <code>DataFrame</code>:</p>
+<section id="그룹에-대한-반복" class="level4">
+<h4 class="anchored" data-anchor-id="그룹에-대한-반복">그룹에 대한 반복</h4>
+<p><code>GroupBy</code> 객체는 그룹에 대한 직접 반복을 지원하여 각 그룹을 <code>Series</code> 또는 <code>DataFrame</code>으로 반환합니다.</p>
 <div id="cell-41" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="17">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb27"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (method, group) <span class="kw">in</span> planets.groupby(<span class="st">'method'</span>):</span>
 <span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"</span><span class="sc">{0:30s}</span><span class="st"> shape=</span><span class="sc">{1}</span><span class="st">"</span>.<span class="bu">format</span>(method, group.shape))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -1105,11 +1105,11 @@ Transit                        shape=(397, 6)
 Transit Timing Variations      shape=(4, 6)</code></pre>
 </div>
 </div>
-<p>This can be useful for manual inspection of groups for the sake of debugging, but it is often much faster to use the built-in <code>apply</code> functionality, which we will discuss momentarily.</p>
+<p>이는 디버깅을 위해 그룹을 수동으로 검사하는 데 유용할 수 있지만 내장된 ‘적용’ 기능을 사용하는 것이 훨씬 더 빠른 경우가 많습니다. 이에 대해서는 잠시 논의하겠습니다.</p>
 </section>
-<section id="dispatch-methods" class="level4">
-<h4 class="anchored" data-anchor-id="dispatch-methods">Dispatch methods</h4>
-<p>Through some Python class magic, any method not explicitly implemented by the <code>GroupBy</code> object will be passed through and called on the groups, whether they are <code>DataFrame</code> or <code>Series</code> objects. For example, using the <code>describe</code> method is equivalent to calling <code>describe</code> on the <code>DataFrame</code> representing each group:</p>
+<section id="파견-방법" class="level4">
+<h4 class="anchored" data-anchor-id="파견-방법">파견 방법</h4>
+<p>일부 파이썬(Python) 클래스 매직을 통해 <code>GroupBy</code> 객체에 의해 명시적으로 구현되지 않은 모든 메서드는 <code>DataFrame</code> 또는 <code>Series</code> 객체인지 여부에 관계없이 그룹을 통해 전달되고 호출됩니다. 예를 들어 <code>describe</code> 메서드를 사용하는 것은 각 그룹을 나타내는 <code>DataFrame</code>에서 <code>describe</code>를 호출하는 것과 같습니다.</p>
 <div id="cell-44" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="18">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb29"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a>planets.groupby(<span class="st">'method'</span>)[<span class="st">'year'</span>].describe().unstack()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="18">
@@ -1128,14 +1128,14 @@ max    Pulsar Timing                    2011.0
 Length: 80, dtype: float64</code></pre>
 </div>
 </div>
-<p>Looking at this table helps us to better understand the data: for example, the vast majority of planets until 2014 were discovered by the Radial Velocity and Transit methods, though the latter method became common more recently. The newest methods seem to be Transit Timing Variation and Orbital Brightness Modulation, which were not used to discover a new planet until 2011.</p>
-<p>Notice that these dispatch methods are applied <em>to each individual group</em>, and the results are then combined within <code>GroupBy</code> and returned. Again, any valid <code>DataFrame</code>/<code>Series</code> method can be called in a similar manner on the corresponding <code>GroupBy</code> object.</p>
+<p>이 표를 보면 데이터를 더 잘 이해하는 데 도움이 됩니다. 예를 들어 2014년까지 행성의 대다수는 Radial Velocity 및 Transit 방법으로 발견되었지만 후자의 방법은 최근에 더 일반적이 되었습니다. 최신 방법은 통과 타이밍 변화(Transit Timing Variation)와 궤도 밝기 변조(Orbital Brightness Modulation)인 것으로 보이며, 이는 2011년까지 새로운 행성을 발견하는 데 사용되지 않았습니다.</p>
+<p>이러한 디스패치 메서드는 <em>각 개별 그룹</em>에 적용되고 결과는 <code>GroupBy</code> 내에서 결합되어 반환됩니다. 다시 말하지만, 유효한 <code>DataFrame</code>/<code>Series</code> 메소드는 해당 <code>GroupBy</code> 객체에서 비슷한 방식으로 호출될 수 있습니다.</p>
 </section>
 </section>
-<section id="aggregate-filter-transform-apply" class="level3">
-<h3 class="anchored" data-anchor-id="aggregate-filter-transform-apply">Aggregate, Filter, Transform, Apply</h3>
-<p>The preceding discussion focused on aggregation for the combine operation, but there are more options available. In particular, <code>GroupBy</code> objects have <code>aggregate</code>, <code>filter</code>, <code>transform</code>, and <code>apply</code> methods that efficiently implement a variety of useful operations before combining the grouped data.</p>
-<p>For the purpose of the following subsections, we’ll use this <code>DataFrame</code>:</p>
+<section id="집계-필터링-변환-적용" class="level3">
+<h3 class="anchored" data-anchor-id="집계-필터링-변환-적용">집계, 필터링, 변환, 적용</h3>
+<p>이전 논의에서는 결합 작업의 집계에 중점을 두었지만 더 많은 옵션을 사용할 수 있습니다. 특히 <code>GroupBy</code> 객체에는 그룹화된 데이터를 결합하기 전에 다양하고 유용한 작업을 효율적으로 구현하는 <code>aggregate</code>, <code>filter</code>, <code>transform</code> 및 <code>apply</code> 메서드가 있습니다.</p>
+<p>다음 하위 섹션에서는 이 <code>DataFrame</code>을 사용합니다.</p>
 <div id="cell-47" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="19">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb31"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a>rng <span class="op">=</span> np.random.RandomState(<span class="dv">0</span>)</span>
 <span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.DataFrame({<span class="st">'key'</span>: [<span class="st">'A'</span>, <span class="st">'B'</span>, <span class="st">'C'</span>, <span class="st">'A'</span>, <span class="st">'B'</span>, <span class="st">'C'</span>],</span>
@@ -1199,9 +1199,9 @@ Length: 80, dtype: float64</code></pre>
 </div>
 </div>
 </div>
-<section id="aggregation" class="level4">
-<h4 class="anchored" data-anchor-id="aggregation">Aggregation</h4>
-<p>You’re now familiar with <code>GroupBy</code> aggregations with <code>sum</code>, <code>median</code>, and the like, but the <code>aggregate</code> method allows for even more flexibility. It can take a string, a function, or a list thereof, and compute all the aggregates at once. Here is a quick example combining all of these:</p>
+<section id="집계" class="level4">
+<h4 class="anchored" data-anchor-id="집계">집계</h4>
+<p>이제 <code>sum</code>, <code>median</code> 등과 같은 <code>GroupBy</code> 집계에 익숙하지만 <code>aggregate</code> 방법을 사용하면 훨씬 더 많은 유연성을 얻을 수 있습니다. 문자열, 함수 또는 이들의 목록을 가져와서 모든 집계를 한 번에 계산할 수 있습니다. 다음은 이 모든 것을 결합한 간단한 예입니다.</p>
 <div id="cell-49" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="20">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb32"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a>df.groupby(<span class="st">'key'</span>).aggregate([<span class="st">'min'</span>, np.median, <span class="bu">max</span>])</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="20">
@@ -1268,7 +1268,7 @@ Length: 80, dtype: float64</code></pre>
 </div>
 </div>
 </div>
-<p>Another common pattern is to pass a dictionary mapping column names to operations to be applied on that column:</p>
+<p>또 다른 일반적인 패턴은 해당 열에 적용할 작업에 사전 매핑 열 이름을 전달하는 것입니다.</p>
 <div id="cell-51" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="21">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb33"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a>df.groupby(<span class="st">'key'</span>).aggregate({<span class="st">'data1'</span>: <span class="st">'min'</span>,</span>
 <span id="cb33-2"><a href="#cb33-2" aria-hidden="true" tabindex="-1"></a>                             <span class="st">'data2'</span>: <span class="st">'max'</span>})</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -1312,9 +1312,9 @@ Length: 80, dtype: float64</code></pre>
 </div>
 </div>
 </section>
-<section id="filtering" class="level4">
-<h4 class="anchored" data-anchor-id="filtering">Filtering</h4>
-<p>A filtering operation allows you to drop data based on the group properties. For example, we might want to keep all groups in which the standard deviation is larger than some critical value:</p>
+<section id="필터링" class="level4">
+<h4 class="anchored" data-anchor-id="필터링">필터링</h4>
+<p>필터링 작업을 사용하면 그룹 속성을 기반으로 데이터를 삭제할 수 있습니다. 예를 들어 표준 편차가 일부 임계값보다 큰 모든 그룹을 유지하려고 할 수 있습니다.</p>
 <div id="cell-53" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="22">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb34"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> filter_func(x):</span>
 <span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> x[<span class="st">'data2'</span>].std() <span class="op">&gt;</span> <span class="dv">4</span></span>
@@ -1460,11 +1460,11 @@ Length: 80, dtype: float64</code></pre>
     </div>
 </div>
 </div>
-<p>The filter function should return a Boolean value specifying whether the group passes the filtering. Here, because group A does not have a standard deviation greater than 4, it is dropped from the result.</p>
+<p>필터 함수는 그룹이 필터링을 통과하는지 여부를 지정하는 부울 값을 반환해야 합니다. 여기서 A그룹은 표준편차가 4보다 크지 않으므로 결과에서 제외됩니다.</p>
 </section>
-<section id="transformation" class="level4">
-<h4 class="anchored" data-anchor-id="transformation">Transformation</h4>
-<p>While aggregation must return a reduced version of the data, transformation can return some transformed version of the full data to recombine. For such a transformation, the output is the same shape as the input. A common example is to center the data by subtracting the group-wise mean:</p>
+<section id="변환" class="level4">
+<h4 class="anchored" data-anchor-id="변환">변환</h4>
+<p>집계는 데이터의 축소된 버전을 반환해야 하지만 변환은 재결합을 위해 전체 데이터의 일부 변환된 버전을 반환할 수 있습니다. 이러한 변환의 경우 출력은 입력과 모양이 동일합니다. 일반적인 예는 그룹별 평균을 빼서 데이터를 중앙에 배치하는 것입니다.</p>
 <div id="cell-56" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="23">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb35"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> center(x):</span>
 <span id="cb35-2"><a href="#cb35-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> x <span class="op">-</span> x.mean()</span>
@@ -1519,10 +1519,10 @@ Length: 80, dtype: float64</code></pre>
 </div>
 </div>
 </section>
-<section id="the-apply-method" class="level4">
-<h4 class="anchored" data-anchor-id="the-apply-method">The apply method</h4>
-<p>The <code>apply</code> method lets you apply an arbitrary function to the group results. The function should take a <code>DataFrame</code> and returns either a Pandas object (e.g., <code>DataFrame</code>, <code>Series</code>) or a scalar; the behavior of the combine step will be tailored to the type of output returned.</p>
-<p>For example, here is an <code>apply</code> operation that normalizes the first column by the sum of the second:</p>
+<section id="적용-방법" class="level4">
+<h4 class="anchored" data-anchor-id="적용-방법">적용 방법</h4>
+<p><code>apply</code> 메소드를 사용하면 그룹 결과에 임의의 함수를 적용할 수 있습니다. 함수는 <code>DataFrame</code>을 가져와 Pandas 객체(예: <code>DataFrame</code>, <code>Series</code>) 또는 스칼라를 반환해야 합니다. 결합 단계의 동작은 반환된 출력 유형에 맞게 조정됩니다.</p>
+<p>예를 들어 다음은 두 번째 열의 합계로 첫 번째 열을 정규화하는 <code>적용</code> 작업입니다.</p>
 <div id="cell-58" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="24">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb36"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> norm_by_data2(x):</span>
 <span id="cb36-2"><a href="#cb36-2" aria-hidden="true" tabindex="-1"></a>    <span class="co"># x is a DataFrame of group values</span></span>
@@ -1586,15 +1586,15 @@ Length: 80, dtype: float64</code></pre>
 </div>
 </div>
 </div>
-<p><code>apply</code> within a <code>GroupBy</code> is flexible: the only criterion is that the function takes a <code>DataFrame</code> and returns a Pandas object or scalar. What you do in between is up to you!</p>
+<p><code>GroupBy</code> 내의 <code>apply</code>는 유연합니다. 유일한 기준은 함수가 <code>DataFrame</code>을 사용하고 Pandas 객체 또는 스칼라를 반환한다는 것입니다. 그 사이에 무엇을 하느냐는 당신에게 달려 있습니다!</p>
 </section>
 </section>
-<section id="specifying-the-split-key" class="level3">
-<h3 class="anchored" data-anchor-id="specifying-the-split-key">Specifying the Split Key</h3>
-<p>In the simple examples presented before, we split the <code>DataFrame</code> on a single column name. This is just one of many options by which the groups can be defined, and we’ll go through some other options for group specification here.</p>
-<section id="a-list-array-series-or-index-providing-the-grouping-keys" class="level4">
-<h4 class="anchored" data-anchor-id="a-list-array-series-or-index-providing-the-grouping-keys">A list, array, series, or index providing the grouping keys</h4>
-<p>The key can be any series or list with a length matching that of the <code>DataFrame</code>. For example:</p>
+<section id="분할-키-지정" class="level3">
+<h3 class="anchored" data-anchor-id="분할-키-지정">분할 키 지정</h3>
+<p>이전에 제시된 간단한 예에서는 ’DataFrame’을 단일 열 이름으로 분할했습니다. 이는 그룹을 정의할 수 있는 많은 옵션 중 하나일 뿐이며 여기서는 그룹 지정에 대한 몇 가지 다른 옵션을 살펴보겠습니다.</p>
+<section id="그룹화-키를-제공하는-목록-배열-시리즈-또는-인덱스" class="level4">
+<h4 class="anchored" data-anchor-id="그룹화-키를-제공하는-목록-배열-시리즈-또는-인덱스">그룹화 키를 제공하는 목록, 배열, 시리즈 또는 인덱스</h4>
+<p>키는 <code>DataFrame</code>의 길이와 일치하는 모든 시리즈 또는 목록이 될 수 있습니다. 예를 들어:</p>
 <div id="cell-62" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="25">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb37"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a>L <span class="op">=</span> [<span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">0</span>]</span>
 <span id="cb37-2"><a href="#cb37-2" aria-hidden="true" tabindex="-1"></a>df.groupby(L).<span class="bu">sum</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -1632,7 +1632,7 @@ Length: 80, dtype: float64</code></pre>
 </div>
 </div>
 </div>
-<p>Of course, this means there’s another, more verbose way of accomplishing the <code>df.groupby('key')</code> from before:</p>
+<p>물론 이는 이전에 <code>df.groupby('key')</code>를 수행하는 또 다른 더 자세한 방법이 있음을 의미합니다.</p>
 <div id="cell-64" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="26">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb38"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a>df.groupby(df[<span class="st">'key'</span>]).<span class="bu">sum</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="26">
@@ -1675,9 +1675,9 @@ Length: 80, dtype: float64</code></pre>
 </div>
 </div>
 </section>
-<section id="a-dictionary-or-series-mapping-index-to-group" class="level4">
-<h4 class="anchored" data-anchor-id="a-dictionary-or-series-mapping-index-to-group">A dictionary or series mapping index to group</h4>
-<p>Another method is to provide a dictionary that maps index values to the group keys:</p>
+<section id="그룹에-대한-사전-또는-시리즈-매핑-색인" class="level4">
+<h4 class="anchored" data-anchor-id="그룹에-대한-사전-또는-시리즈-매핑-색인">그룹에 대한 사전 또는 시리즈 매핑 색인</h4>
+<p>또 다른 방법은 인덱스 값을 그룹 키에 매핑하는 사전을 제공하는 것입니다.</p>
 <div id="cell-66" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="27">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb39"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a>df2 <span class="op">=</span> df.set_index(<span class="st">'key'</span>)</span>
 <span id="cb39-2"><a href="#cb39-2" aria-hidden="true" tabindex="-1"></a>mapping <span class="op">=</span> {<span class="st">'A'</span>: <span class="st">'vowel'</span>, <span class="st">'B'</span>: <span class="st">'consonant'</span>, <span class="st">'C'</span>: <span class="st">'consonant'</span>}</span>
@@ -1772,9 +1772,9 @@ Length: 80, dtype: float64</code></pre>
 </div>
 </div>
 </section>
-<section id="any-python-function" class="level4">
-<h4 class="anchored" data-anchor-id="any-python-function">Any Python function</h4>
-<p>Similar to mapping, you can pass any Python function that will input the index value and output the group:</p>
+<section id="모든-파이썬python-함수" class="level4">
+<h4 class="anchored" data-anchor-id="모든-파이썬python-함수">모든 파이썬(Python) 함수</h4>
+<p>매핑과 유사하게 인덱스 값을 입력하고 그룹을 출력하는 파이썬(Python) 함수를 전달할 수 있습니다.</p>
 <div id="cell-68" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="28">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb40"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a>df2.groupby(<span class="bu">str</span>.lower).mean()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="28">
@@ -1817,9 +1817,9 @@ Length: 80, dtype: float64</code></pre>
 </div>
 </div>
 </section>
-<section id="a-list-of-valid-keys" class="level4">
-<h4 class="anchored" data-anchor-id="a-list-of-valid-keys">A list of valid keys</h4>
-<p>Further, any of the preceding key choices can be combined to group on a multi-index:</p>
+<section id="유효한-키-목록" class="level4">
+<h4 class="anchored" data-anchor-id="유효한-키-목록">유효한 키 목록</h4>
+<p>또한 이전 주요 선택 사항 중 하나를 결합하여 다중 인덱스로 그룹화할 수 있습니다.</p>
 <div id="cell-70" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="29">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb41"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a>df2.groupby([<span class="bu">str</span>.lower, mapping]).mean()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="29">
@@ -1868,9 +1868,9 @@ Length: 80, dtype: float64</code></pre>
 </div>
 </section>
 </section>
-<section id="grouping-example" class="level3">
-<h3 class="anchored" data-anchor-id="grouping-example">Grouping Example</h3>
-<p>As an example of this, in a few lines of Python code we can put all these together and count discovered planets by method and by decade:</p>
+<section id="그룹화-예" class="level3">
+<h3 class="anchored" data-anchor-id="그룹화-예">그룹화 예</h3>
+<p>이에 대한 예로서, 몇 줄의 파이썬(Python) 코드로 이 모든 것을 하나로 묶어 발견된 행성의 수를 방법 및 10년 단위로 계산할 수 있습니다.</p>
 <div id="cell-72" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="30">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb42"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a>decade <span class="op">=</span> <span class="dv">10</span> <span class="op">*</span> (planets[<span class="st">'year'</span>] <span class="op">//</span> <span class="dv">10</span>)</span>
 <span id="cb42-2"><a href="#cb42-2" aria-hidden="true" tabindex="-1"></a>decade <span class="op">=</span> decade.astype(<span class="bu">str</span>) <span class="op">+</span> <span class="st">'s'</span></span>
@@ -1974,8 +1974,8 @@ Length: 80, dtype: float64</code></pre>
 </div>
 </div>
 </div>
-<p>This shows the power of combining many of the operations we’ve discussed up to this point when looking at realistic datasets: we quickly gain a coarse understanding of when and how extrasolar planets were detected in the years after the first discovery.</p>
-<p>I would suggest digging into these few lines of code and evaluating the individual steps to make sure you understand exactly what they are doing to the result. It’s certainly a somewhat complicated example, but understanding these pieces will give you the means to similarly explore your own data.</p>
+<p>이는 현실적인 데이터 세트를 볼 때 지금까지 논의한 많은 작업을 결합하는 것의 힘을 보여줍니다. 우리는 첫 번째 발견 후 몇 년 동안 외계 행성이 언제 어떻게 발견되었는지에 대한 대략적인 이해를 빠르게 얻습니다.</p>
+<p>이 몇 줄의 코드를 자세히 살펴보고 개별 단계를 평가하여 결과에 대해 정확히 무엇을 하는지 이해하는 것이 좋습니다. 확실히 다소 복잡한 예이지만 이러한 부분을 이해하면 자신의 데이터를 유사하게 탐색할 수 있는 수단을 얻을 수 있습니다.</p>
 
 
 </section>
@@ -2384,13 +2384,13 @@ Length: 80, dtype: float64</code></pre>
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../notebooks/03.07-Merge-and-Join.html" class="pagination-link" aria-label="Combining Datasets: merge and join">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Combining Datasets: merge and join</span></span>
+      <a href="../notebooks/03.07-Merge-and-Join.html" class="pagination-link" aria-label="데이터세트 결합: 병합 및 조인">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">데이터세트 결합: 병합 및 조인</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../notebooks/03.09-Pivot-Tables.html" class="pagination-link" aria-label="Pivot Tables">
-        <span class="nav-page-text"><span class="chapter-title">Pivot Tables</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../notebooks/03.09-Pivot-Tables.html" class="pagination-link" aria-label="피벗 테이블">
+        <span class="nav-page-text"><span class="chapter-title">피벗 테이블</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

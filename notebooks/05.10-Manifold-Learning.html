@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>In Depth: Manifold Learning – 파이썬 데이터 사이언스 핸드북</title>
+<title>심층 분석: 다양한 학습 – 파이썬 데이터 사이언스 핸드북</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -77,7 +77,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-3778d3e438078121318a23701f9f68bb.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-803ae4f7a8810f475153517dc3c4ebae.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -147,7 +147,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../notebooks/05.00-Machine-Learning.html">머신러닝</a></li><li class="breadcrumb-item"><a href="../notebooks/05.10-Manifold-Learning.html"><span class="chapter-title">In Depth: Manifold Learning</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../notebooks/05.00-Machine-Learning.html">머신러닝</a></li><li class="breadcrumb-item"><a href="../notebooks/05.10-Manifold-Learning.html"><span class="chapter-title">심층 분석: 다양한 학습</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -194,7 +194,7 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/01.00-IPython-Beyond-Normal-Python.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Jupyter: 일반 Python을 넘어서</span></a>
+  <a href="../notebooks/01.00-IPython-Beyond-Normal-Python.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Jupyter: 일반 파이썬(Python)을 넘어서</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -224,17 +224,17 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/01.06-Errors-and-Debugging.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Errors and Debugging</span></a>
+  <a href="../notebooks/01.06-Errors-and-Debugging.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">오류 및 디버깅</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/01.07-Timing-and-Profiling.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Profiling and Timing Code</span></a>
+  <a href="../notebooks/01.07-Timing-and-Profiling.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">프로파일링 및 타이밍 코드</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/01.08-More-IPython-Resources.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">More IPython Resources</span></a>
+  <a href="../notebooks/01.08-More-IPython-Resources.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">추가 IPython 리소스</span></a>
   </div>
 </li>
       </ul>
@@ -250,52 +250,52 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.00-Introduction-to-NumPy.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Introduction to NumPy</span></a>
+  <a href="../notebooks/02.00-Introduction-to-NumPy.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">NumPy 소개</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.01-Understanding-Data-Types.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Understanding Data Types in Python</span></a>
+  <a href="../notebooks/02.01-Understanding-Data-Types.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">파이썬(Python)의 데이터 유형 이해</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.02-The-Basics-Of-NumPy-Arrays.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">The Basics of NumPy Arrays</span></a>
+  <a href="../notebooks/02.02-The-Basics-Of-NumPy-Arrays.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">NumPy 배열의 기본</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.03-Computation-on-arrays-ufuncs.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Computation on NumPy Arrays: Universal Functions</span></a>
+  <a href="../notebooks/02.03-Computation-on-arrays-ufuncs.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">NumPy 배열 계산: 범용 함수</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.04-Computation-on-arrays-aggregates.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Aggregations: min, max, and Everything in Between</span></a>
+  <a href="../notebooks/02.04-Computation-on-arrays-aggregates.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">집계: 최소, 최대 및 그 사이의 모든 것</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.05-Computation-on-arrays-broadcasting.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Computation on Arrays: Broadcasting</span></a>
+  <a href="../notebooks/02.05-Computation-on-arrays-broadcasting.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">배열 계산: 브로드캐스팅</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.06-Boolean-Arrays-and-Masks.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Comparisons, Masks, and Boolean Logic</span></a>
+  <a href="../notebooks/02.06-Boolean-Arrays-and-Masks.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">비교, 마스크 및 부울 논리</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.07-Fancy-Indexing.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Fancy Indexing</span></a>
+  <a href="../notebooks/02.07-Fancy-Indexing.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">멋진 인덱싱</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.08-Sorting.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Sorting Arrays</span></a>
+  <a href="../notebooks/02.08-Sorting.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">배열 정렬</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.09-Structured-Data-NumPy.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Structured Data: NumPy’s Structured Arrays</span></a>
+  <a href="../notebooks/02.09-Structured-Data-NumPy.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">구조화된 데이터: NumPy의 구조화된 배열</span></a>
   </div>
 </li>
       </ul>
@@ -311,72 +311,72 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.00-Introduction-to-Pandas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Data Manipulation with Pandas</span></a>
+  <a href="../notebooks/03.00-Introduction-to-Pandas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">팬더를 이용한 데이터 조작</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.01-Introducing-Pandas-Objects.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Introducing Pandas Objects</span></a>
+  <a href="../notebooks/03.01-Introducing-Pandas-Objects.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">판다스 객체 소개</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.02-Data-Indexing-and-Selection.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Data Indexing and Selection</span></a>
+  <a href="../notebooks/03.02-Data-Indexing-and-Selection.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">데이터 인덱싱 및 선택</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.03-Operations-in-Pandas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Operating on Data in Pandas</span></a>
+  <a href="../notebooks/03.03-Operations-in-Pandas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Pandas에서 데이터 작업</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.04-Missing-Values.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Handling Missing Data</span></a>
+  <a href="../notebooks/03.04-Missing-Values.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">누락된 데이터 처리</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.05-Hierarchical-Indexing.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Hierarchical Indexing</span></a>
+  <a href="../notebooks/03.05-Hierarchical-Indexing.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">계층적 인덱싱</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.06-Concat-And-Append.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Combining Datasets: concat and append</span></a>
+  <a href="../notebooks/03.06-Concat-And-Append.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">데이터세트 결합: 연결 및 추가</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.07-Merge-and-Join.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Combining Datasets: merge and join</span></a>
+  <a href="../notebooks/03.07-Merge-and-Join.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">데이터세트 결합: 병합 및 조인</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.08-Aggregation-and-Grouping.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Aggregation and Grouping</span></a>
+  <a href="../notebooks/03.08-Aggregation-and-Grouping.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">집계 및 그룹화</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.09-Pivot-Tables.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Pivot Tables</span></a>
+  <a href="../notebooks/03.09-Pivot-Tables.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">피벗 테이블</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.10-Working-With-Strings.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Vectorized String Operations</span></a>
+  <a href="../notebooks/03.10-Working-With-Strings.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">벡터화된 문자열 작업</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.11-Working-with-Time-Series.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Working with Time Series</span></a>
+  <a href="../notebooks/03.11-Working-with-Time-Series.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">시계열 작업</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.12-Performance-Eval-and-Query.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">High-Performance Pandas: eval and query</span></a>
+  <a href="../notebooks/03.12-Performance-Eval-and-Query.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">고성능 Pandas: 평가 및 쿼리</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.13-Further-Resources.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Further Resources</span></a>
+  <a href="../notebooks/03.13-Further-Resources.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">추가 리소스</span></a>
   </div>
 </li>
       </ul>
@@ -392,77 +392,77 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.00-Introduction-To-Matplotlib.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Visualization with Matplotlib</span></a>
+  <a href="../notebooks/04.00-Introduction-To-Matplotlib.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Matplotlib를 사용한 시각화</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.01-Simple-Line-Plots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Simple Line Plots</span></a>
+  <a href="../notebooks/04.01-Simple-Line-Plots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">간단한 선 도표</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.02-Simple-Scatter-Plots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Simple Scatter Plots</span></a>
+  <a href="../notebooks/04.02-Simple-Scatter-Plots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">단순 산점도</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.03-Errorbars.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Visualizing Uncertainties</span></a>
+  <a href="../notebooks/04.03-Errorbars.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">불확실성 시각화</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.04-Density-and-Contour-Plots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Density and Contour Plots</span></a>
+  <a href="../notebooks/04.04-Density-and-Contour-Plots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">밀도 및 등고선 플롯</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.05-Histograms-and-Binnings.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Histograms, Binnings, and Density</span></a>
+  <a href="../notebooks/04.05-Histograms-and-Binnings.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">히스토그램, 비닝 및 밀도</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.06-Customizing-Legends.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Customizing Plot Legends</span></a>
+  <a href="../notebooks/04.06-Customizing-Legends.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">플롯 범례 사용자 정의</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.07-Customizing-Colorbars.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Customizing Colorbars</span></a>
+  <a href="../notebooks/04.07-Customizing-Colorbars.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">컬러바 사용자 정의</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.08-Multiple-Subplots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Multiple Subplots</span></a>
+  <a href="../notebooks/04.08-Multiple-Subplots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">다중 서브플롯</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.09-Text-and-Annotation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Text and Annotation</span></a>
+  <a href="../notebooks/04.09-Text-and-Annotation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">텍스트 및 주석</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.10-Customizing-Ticks.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Customizing Ticks</span></a>
+  <a href="../notebooks/04.10-Customizing-Ticks.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">눈금 사용자 정의</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.11-Settings-and-Stylesheets.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Customizing Matplotlib: Configurations and Stylesheets</span></a>
+  <a href="../notebooks/04.11-Settings-and-Stylesheets.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Matplotlib 사용자 정의: 구성 및 스타일시트</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.12-Three-Dimensional-Plotting.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Three-Dimensional Plotting in Matplotlib</span></a>
+  <a href="../notebooks/04.12-Three-Dimensional-Plotting.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Matplotlib의 3차원 플로팅</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.14-Visualization-With-Seaborn.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Visualization with Seaborn</span></a>
+  <a href="../notebooks/04.14-Visualization-With-Seaborn.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Seaborn을 이용한 시각화</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.15-Further-Resources.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Further Resources</span></a>
+  <a href="../notebooks/04.15-Further-Resources.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">추가 리소스</span></a>
   </div>
 </li>
       </ul>
@@ -478,82 +478,82 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.00-Machine-Learning.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Machine Learning</span></a>
+  <a href="../notebooks/05.00-Machine-Learning.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">머신러닝</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.01-What-Is-Machine-Learning.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">What Is Machine Learning?</span></a>
+  <a href="../notebooks/05.01-What-Is-Machine-Learning.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">머신러닝이란?</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.02-Introducing-Scikit-Learn.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Introducing Scikit-Learn</span></a>
+  <a href="../notebooks/05.02-Introducing-Scikit-Learn.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Scikit-Learn 소개</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.03-Hyperparameters-and-Model-Validation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Hyperparameters and Model Validation</span></a>
+  <a href="../notebooks/05.03-Hyperparameters-and-Model-Validation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">하이퍼파라미터 및 모델 검증</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.04-Feature-Engineering.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Feature Engineering</span></a>
+  <a href="../notebooks/05.04-Feature-Engineering.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">기능 엔지니어링</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.05-Naive-Bayes.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Naive Bayes Classification</span></a>
+  <a href="../notebooks/05.05-Naive-Bayes.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 나이브 베이즈 분류</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.06-Linear-Regression.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Linear Regression</span></a>
+  <a href="../notebooks/05.06-Linear-Regression.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 선형 회귀</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.07-Support-Vector-Machines.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Support Vector Machines</span></a>
+  <a href="../notebooks/05.07-Support-Vector-Machines.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 서포트 벡터 머신</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.08-Random-Forests.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Decision Trees and Random Forests</span></a>
+  <a href="../notebooks/05.08-Random-Forests.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 의사결정 트리 및 랜덤 포레스트</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.09-Principal-Component-Analysis.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Principal Component Analysis</span></a>
+  <a href="../notebooks/05.09-Principal-Component-Analysis.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 주성분 분석</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.10-Manifold-Learning.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">In Depth: Manifold Learning</span></a>
+  <a href="../notebooks/05.10-Manifold-Learning.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">심층 분석: 다양한 학습</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.11-K-Means.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: k-Means Clustering</span></a>
+  <a href="../notebooks/05.11-K-Means.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: k-평균 클러스터링</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.12-Gaussian-Mixtures.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Gaussian Mixture Models</span></a>
+  <a href="../notebooks/05.12-Gaussian-Mixtures.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 가우스 혼합 모델</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.13-Kernel-Density-Estimation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Kernel Density Estimation</span></a>
+  <a href="../notebooks/05.13-Kernel-Density-Estimation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 커널 밀도 추정</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.14-Image-Features.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Application: A Face Detection Pipeline</span></a>
+  <a href="../notebooks/05.14-Image-Features.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">응용 분야: 얼굴 감지 파이프라인</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.15-Learning-More.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Further Machine Learning Resources</span></a>
+  <a href="../notebooks/05.15-Learning-More.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">추가 머신러닝(Machine Learning) 리소스</span></a>
   </div>
 </li>
       </ul>
@@ -569,7 +569,7 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/06.00-Figure-Code.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Appendix: Figure Code</span></a>
+  <a href="../notebooks/06.00-Figure-Code.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">부록: 그림 코드</span></a>
   </div>
 </li>
       </ul>
@@ -584,25 +584,24 @@ window.Quarto = {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#manifold-learning-hello" id="toc-manifold-learning-hello" class="nav-link active" data-scroll-target="#manifold-learning-hello">Manifold Learning: “HELLO”</a></li>
-  <li><a href="#multidimensional-scaling" id="toc-multidimensional-scaling" class="nav-link" data-scroll-target="#multidimensional-scaling">Multidimensional Scaling</a>
+  <li><a href="#다양한-학습-안녕하세요" id="toc-다양한-학습-안녕하세요" class="nav-link active" data-scroll-target="#다양한-학습-안녕하세요">다양한 학습: “안녕하세요”</a></li>
+  <li><a href="#다차원-스케일링" id="toc-다차원-스케일링" class="nav-link" data-scroll-target="#다차원-스케일링">다차원 스케일링</a>
   <ul class="collapse">
-  <li><a href="#mds-as-manifold-learning" id="toc-mds-as-manifold-learning" class="nav-link" data-scroll-target="#mds-as-manifold-learning">MDS as Manifold Learning</a></li>
-  <li><a href="#nonlinear-embeddings-where-mds-fails" id="toc-nonlinear-embeddings-where-mds-fails" class="nav-link" data-scroll-target="#nonlinear-embeddings-where-mds-fails">Nonlinear Embeddings: Where MDS Fails</a></li>
+  <li><a href="#다양한-학습으로서의-mds" id="toc-다양한-학습으로서의-mds" class="nav-link" data-scroll-target="#다양한-학습으로서의-mds">다양한 학습으로서의 MDS</a></li>
+  <li><a href="#비선형-임베딩-mds가-실패하는-경우" id="toc-비선형-임베딩-mds가-실패하는-경우" class="nav-link" data-scroll-target="#비선형-임베딩-mds가-실패하는-경우">비선형 임베딩: MDS가 실패하는 경우</a></li>
   </ul></li>
-  <li><a href="#nonlinear-manifolds-locally-linear-embedding" id="toc-nonlinear-manifolds-locally-linear-embedding" class="nav-link" data-scroll-target="#nonlinear-manifolds-locally-linear-embedding">Nonlinear Manifolds: Locally Linear Embedding</a></li>
-  <li><a href="#some-thoughts-on-manifold-methods" id="toc-some-thoughts-on-manifold-methods" class="nav-link" data-scroll-target="#some-thoughts-on-manifold-methods">Some Thoughts on Manifold Methods</a></li>
-  <li><a href="#example-isomap-on-faces" id="toc-example-isomap-on-faces" class="nav-link" data-scroll-target="#example-isomap-on-faces">Example: Isomap on Faces</a></li>
-  <li><a href="#example-visualizing-structure-in-digits" id="toc-example-visualizing-structure-in-digits" class="nav-link" data-scroll-target="#example-visualizing-structure-in-digits">Example: Visualizing Structure in Digits</a></li>
+  <li><a href="#비선형-다양체-국소-선형-임베딩" id="toc-비선형-다양체-국소-선형-임베딩" class="nav-link" data-scroll-target="#비선형-다양체-국소-선형-임베딩">비선형 다양체: 국소 선형 임베딩</a></li>
+  <li><a href="#예-면의-등위도표" id="toc-예-면의-등위도표" class="nav-link" data-scroll-target="#예-면의-등위도표">예: 면의 등위도표</a></li>
+  <li><a href="#예-숫자로-구조-시각화" id="toc-예-숫자로-구조-시각화" class="nav-link" data-scroll-target="#예-숫자로-구조-시각화">예: 숫자로 구조 시각화</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../notebooks/05.00-Machine-Learning.html">머신러닝</a></li><li class="breadcrumb-item"><a href="../notebooks/05.10-Manifold-Learning.html"><span class="chapter-title">In Depth: Manifold Learning</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../notebooks/05.00-Machine-Learning.html">머신러닝</a></li><li class="breadcrumb-item"><a href="../notebooks/05.10-Manifold-Learning.html"><span class="chapter-title">심층 분석: 다양한 학습</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-title">In Depth: Manifold Learning</span></h1>
+<h1 class="title"><span class="chapter-title">심층 분석: 다양한 학습</span></h1>
 </div>
 
 
@@ -619,20 +618,20 @@ window.Quarto = {
 </header>
 
 
-<p>In the previous chapter we saw how PCA can be used for dimensionality reduction, reducing the number of features of a dataset while maintaining the essential relationships between the points. While PCA is flexible, fast, and easily interpretable, it does not perform so well when there are <em>nonlinear</em> relationships within the data, some examples of which we will see shortly.</p>
-<p>To address this deficiency, we can turn to <em>manifold learning algorithms</em>—a class of unsupervised estimators that seek to describe datasets as low-dimensional manifolds embedded in high-dimensional spaces. When you think of a manifold, I’d suggest imagining a sheet of paper: this is a two-dimensional object that lives in our familiar three-dimensional world.</p>
-<p>In the parlance of manifold learning, you can think of this sheet as a two-dimensional manifold embedded in three-dimensional space. Rotating, reorienting, or stretching the piece of paper in three-dimensional space doesn’t change its flat geometry: such operations are akin to linear embeddings. If you bend, curl, or crumple the paper, it is still a two-dimensional manifold, but the embedding into the three-dimensional space is no longer linear. Manifold learning algorithms seek to learn about the fundamental two-dimensional nature of the paper, even as it is contorted to fill the three-dimensional space.</p>
-<p>Here we will examine a number of manifold methods, going most deeply into a subset of these techniques: multidimensional scaling (MDS), locally linear embedding (LLE), and isometric mapping (Isomap).</p>
-<p>We begin with the standard imports:</p>
+<p>이전 장에서 우리는 차원 축소에 PCA를 사용하여 포인트 간의 필수 관계를 유지하면서 데이터 세트의 기능 수를 줄이는 방법을 살펴보았습니다. PCA는 유연하고 빠르며 쉽게 해석할 수 있지만 데이터 내에 <em>비선형</em> 관계가 있는 경우에는 제대로 작동하지 않습니다. 이에 대한 몇 가지 예는 곧 살펴보겠습니다.</p>
+<p>이러한 결함을 해결하기 위해 우리는 데이터 세트를 고차원 공간에 내장된 저차원 다양체로 설명하려는 비지도 추정기 클래스인 <em>다양체 학습 알고리즘</em>을 사용할 수 있습니다. 다양체를 생각할 때 종이 한 장을 상상해 보시기 바랍니다. 이것은 우리에게 친숙한 3차원 세계에 살고 있는 2차원 물체입니다.</p>
+<p>다양체 학습의 용어로 이 시트를 3차원 공간에 내장된 2차원 다양체라고 생각할 수 있습니다. 3차원 공간에서 종이 조각을 회전하거나 방향을 바꾸거나 늘려도 평면 형상은 변경되지 않습니다. 이러한 작업은 선형 임베딩과 유사합니다. 종이를 구부리거나 말리거나 구겨도 종이는 여전히 2차원 다양체이지만 3차원 공간에 매립되는 방식은 더 이상 선형이 아닙니다. 다양한 학습 알고리즘은 종이가 3차원 공간을 채우기 위해 왜곡되더라도 종이의 근본적인 2차원 특성에 대해 학습하려고 합니다.</p>
+<p>여기서는 다차원 스케일링(MDS), 국소 선형 임베딩(LLE) 및 등각 매핑(Isomap)과 같은 기술의 하위 집합을 가장 깊이 살펴보는 다양한 방법을 살펴보겠습니다.</p>
+<p>표준 가져오기부터 시작합니다.</p>
 <div id="cell-2" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="1">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="op">%</span>matplotlib inline</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>plt.style.use(<span class="st">'seaborn-whitegrid'</span>)</span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<section id="manifold-learning-hello" class="level2">
-<h2 class="anchored" data-anchor-id="manifold-learning-hello">Manifold Learning: “HELLO”</h2>
-<p>To make these concepts more clear, let’s start by generating some two-dimensional data that we can use to define a manifold. Here is a function that will create data in the shape of the word “HELLO”:</p>
+<section id="다양한-학습-안녕하세요" class="level2">
+<h2 class="anchored" data-anchor-id="다양한-학습-안녕하세요">다양한 학습: “안녕하세요”</h2>
+<p>이러한 개념을 더 명확하게 하기 위해 다양체를 정의하는 데 사용할 수 있는 2차원 데이터를 생성하는 것부터 시작하겠습니다. 다음은 “HELLO”라는 단어 형태로 데이터를 생성하는 함수입니다.</p>
 <div id="cell-4" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="2">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> make_hello(N<span class="op">=</span><span class="dv">1000</span>, rseed<span class="op">=</span><span class="dv">42</span>):</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Make a plot with "HELLO" text; save as PNG</span></span>
@@ -655,7 +654,7 @@ window.Quarto = {
 <span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a>    X <span class="op">=</span> X[:N]</span>
 <span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> X[np.argsort(X[:, <span class="dv">0</span>])]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<p>Let’s call the function and visualize the resulting data (see the following figure):</p>
+<p>함수를 호출하고 결과 데이터를 시각화해 보겠습니다(다음 그림 참조).</p>
 <div id="cell-6" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="3">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>X <span class="op">=</span> make_hello(<span class="dv">1000</span>)</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>colorize <span class="op">=</span> <span class="bu">dict</span>(c<span class="op">=</span>X[:, <span class="dv">0</span>], cmap<span class="op">=</span>plt.cm.get_cmap(<span class="st">'rainbow'</span>, <span class="dv">5</span>))</span>
@@ -669,11 +668,11 @@ window.Quarto = {
 </div>
 </div>
 </div>
-<p>The output is two dimensional, and consists of points drawn in the shape of the word “HELLO”. This data form will help us to see visually what these algorithms are doing.</p>
+<p>출력은 2차원이며 “HELLO”라는 단어 모양으로 그려진 점으로 구성됩니다. 이 데이터 형식은 이러한 알고리즘이 수행하는 작업을 시각적으로 확인하는 데 도움이 됩니다.</p>
 </section>
-<section id="multidimensional-scaling" class="level2">
-<h2 class="anchored" data-anchor-id="multidimensional-scaling">Multidimensional Scaling</h2>
-<p>Looking at data like this, we can see that the particular choices of <em>x</em> and <em>y</em> values of the dataset are not the most fundamental description of the data: we can scale, shrink, or rotate the data, and the “HELLO” will still be apparent. For example, if we use a rotation matrix to rotate the data, the <em>x</em> and <em>y</em> values change, but the data is still fundamentally the same (see the following figure):</p>
+<section id="다차원-스케일링" class="level2">
+<h2 class="anchored" data-anchor-id="다차원-스케일링">다차원 스케일링</h2>
+<p>이와 같은 데이터를 살펴보면 데이터 세트의 <em>x</em> 및 <em>y</em> 값의 특정 선택이 데이터에 대한 가장 기본적인 설명이 아니라는 것을 확인할 수 있습니다. 데이터를 확장, 축소 또는 회전할 수 있으며 “HELLO”는 여전히 분명합니다. 예를 들어 회전 행렬을 사용하여 데이터를 회전하면 <em>x</em> 및 <em>y</em> 값이 변경되지만 데이터는 기본적으로 여전히 동일합니다(다음 그림 참조).</p>
 <div id="cell-9" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="4">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> rotate(X, angle):</span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>    theta <span class="op">=</span> np.deg2rad(angle)</span>
@@ -692,7 +691,7 @@ window.Quarto = {
 </div>
 </div>
 </div>
-<p>This confirms that the <em>x</em> and <em>y</em> values are not necessarily fundamental to the relationships in the data. What <em>is</em> fundamental, in this case, is the <em>distance</em> between each point within the dataset. A common way to represent this is to use a distance matrix: for <span class="math inline">\(N\)</span> points, we construct an <span class="math inline">\(N \times N\)</span> array such that entry <span class="math inline">\((i, j)\)</span> contains the distance between point <span class="math inline">\(i\)</span> and point <span class="math inline">\(j\)</span>. Let’s use Scikit-Learn’s efficient <code>pairwise_distances</code> function to do this for our original data:</p>
+<p>이는 <em>x</em> 및 <em>y</em> 값이 데이터 관계의 기본이 아닐 수도 있음을 확인합니다. 이 경우 <em>가장</em> 중요한 것은 데이터세트 내의 각 지점 사이의 <em>거리</em>입니다. 이를 표현하는 일반적인 방법은 거리 행렬을 사용하는 것입니다. <span class="math inline">\(N\)</span> 점에 대해 <span class="math inline">\((i, j)\)</span> 항목에 <span class="math inline">\(i\)</span> 점과 <span class="math inline">\(j\)</span> 사이의 거리가 포함되도록 <span class="math inline">\(N \times N\)</span> 배열을 구성합니다. Scikit-Learn의 효율적인 <code>pairwise_distances</code> 함수를 사용하여 원본 데이터에 대해 이 작업을 수행해 보겠습니다.</p>
 <div id="cell-11" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="5">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.metrics <span class="im">import</span> pairwise_distances</span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>D <span class="op">=</span> pairwise_distances(X)</span>
@@ -701,7 +700,7 @@ window.Quarto = {
 <pre><code>(1000, 1000)</code></pre>
 </div>
 </div>
-<p>As promised, for our <em>N</em>=1,000 points, we obtain a 1000 × 1000 matrix, which can be visualized as shown here (see the following figure):</p>
+<p>약속한 대로 <em>N</em>=1,000 포인트에 대해 1000 × 1000 행렬을 얻습니다. 이는 다음과 같이 시각화할 수 있습니다(다음 그림 참조).</p>
 <div id="cell-13" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="6">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>plt.imshow(D, zorder<span class="op">=</span><span class="dv">2</span>, cmap<span class="op">=</span><span class="st">'viridis'</span>, interpolation<span class="op">=</span><span class="st">'nearest'</span>)</span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>plt.colorbar()<span class="op">;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -713,7 +712,7 @@ window.Quarto = {
 </div>
 </div>
 </div>
-<p>If we similarly construct a distance matrix for our rotated and translated data, we see that it is the same:</p>
+<p>회전 및 변환된 데이터에 대해 유사하게 거리 행렬을 구성하면 동일한 것을 확인할 수 있습니다.</p>
 <div id="cell-15" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="7">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>D2 <span class="op">=</span> pairwise_distances(X2)</span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>np.allclose(D, D2)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -721,8 +720,8 @@ window.Quarto = {
 <pre><code>True</code></pre>
 </div>
 </div>
-<p>This distance matrix gives us a representation of our data that is invariant to rotations and translations, but the visualization of the matrix in the following figure is not entirely intuitive. In the representation shown there, we have lost any visible sign of the interesting structure in the data: the “HELLO” that we saw before.</p>
-<p>Further, while computing this distance matrix from the (<em>x</em>, <em>y</em>) coordinates is straightforward, transforming the distances back into <em>x</em> and <em>y</em> coordinates is rather difficult. This is exactly what the multidimensional scaling algorithm aims to do: given a distance matrix between points, it recovers a <span class="math inline">\(D\)</span>-dimensional coordinate representation of the data. Let’s see how it works for our distance matrix, using the <code>precomputed</code> dissimilarity to specify that we are passing a distance matrix (the following figure):</p>
+<p>이 거리 행렬은 회전과 평행 이동에 변하지 않는 데이터 표현을 제공하지만 다음 그림의 행렬 시각화는 완전히 직관적이지 않습니다. 여기에 표시된 표현에서는 이전에 본 “HELLO”라는 데이터의 흥미로운 구조에 대한 가시적 신호가 손실되었습니다.</p>
+<p>또한 (<em>x</em>, <em>y</em>) 좌표에서 이 거리 행렬을 계산하는 것은 간단하지만 거리를 다시 <em>x</em> 및 <em>y</em> 좌표로 변환하는 것은 다소 어렵습니다. 이것이 바로 다차원 스케일링 알고리즘의 목표입니다. 즉, 점 사이의 거리 행렬이 주어지면 데이터의 <span class="math inline">\(D\)</span> 차원 좌표 표현을 복구합니다. 거리 행렬을 전달한다는 것을 지정하기 위해 <code>미리 계산된</code> 비유사성을 사용하여 거리 행렬에 대해 이것이 어떻게 작동하는지 살펴보겠습니다(다음 그림).</p>
 <div id="cell-17" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="8">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.manifold <span class="im">import</span> MDS</span>
 <span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>model <span class="op">=</span> MDS(n_components<span class="op">=</span><span class="dv">2</span>, dissimilarity<span class="op">=</span><span class="st">'precomputed'</span>, random_state<span class="op">=</span><span class="dv">1701</span>)</span>
@@ -737,10 +736,10 @@ window.Quarto = {
 </div>
 </div>
 </div>
-<p>The MDS algorithm recovers one of the possible two-dimensional coordinate representations of our data, using <em>only</em> the <span class="math inline">\(N\times N\)</span> distance matrix describing the relationship between the data points.</p>
-<section id="mds-as-manifold-learning" class="level3">
-<h3 class="anchored" data-anchor-id="mds-as-manifold-learning">MDS as Manifold Learning</h3>
-<p>The usefulness of this becomes more apparent when we consider the fact that distance matrices can be computed from data in <em>any</em> dimension. So, for example, instead of simply rotating the data in the two-dimensional plane, we can project it into three dimensions using the following function (essentially a three-dimensional generalization of the rotation matrix used earlier):</p>
+<p>MDS 알고리즘은 데이터 포인트 간의 관계를 설명하는 <span class="math inline">\(N\times N\)</span> 거리 행렬 <em>만</em> 사용하여 데이터의 가능한 2차원 좌표 표현 중 하나를 복구합니다.</p>
+<section id="다양한-학습으로서의-mds" class="level3">
+<h3 class="anchored" data-anchor-id="다양한-학습으로서의-mds">다양한 학습으로서의 MDS</h3>
+<p><em>모든</em> 차원의 데이터로부터 거리 행렬을 계산할 수 있다는 사실을 고려할 때 이 방법의 유용성은 더욱 분명해집니다. 따라서 예를 들어 단순히 2차원 평면에서 데이터를 회전하는 대신 다음 함수를 사용하여 데이터를 3차원으로 투영할 수 있습니다(본질적으로 앞서 사용된 회전 행렬의 3차원 일반화).</p>
 <div id="cell-20" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="9">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> random_projection(X, dimension<span class="op">=</span><span class="dv">3</span>, rseed<span class="op">=</span><span class="dv">42</span>):</span>
 <span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">assert</span> dimension <span class="op">&gt;=</span> X.shape[<span class="dv">1</span>]</span>
@@ -755,7 +754,7 @@ window.Quarto = {
 <pre><code>(1000, 3)</code></pre>
 </div>
 </div>
-<p>Let’s visualize these points to see what we’re working with (the following figure):</p>
+<p>이러한 점을 시각화하여 우리가 작업 중인 내용을 살펴보겠습니다(다음 그림).</p>
 <div id="cell-22" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="10">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> mpl_toolkits <span class="im">import</span> mplot3d</span>
 <span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>ax <span class="op">=</span> plt.axes(projection<span class="op">=</span><span class="st">'3d'</span>)</span>
@@ -769,7 +768,7 @@ window.Quarto = {
 </div>
 </div>
 </div>
-<p>We can now ask the <code>MDS</code> estimator to input this three-dimensional data, compute the distance matrix, and then determine the optimal two-dimensional embedding for this distance matrix. The result recovers a representation of the original data, as shown in the following figure:</p>
+<p>이제 ‘MDS’ 추정기에 이 3차원 데이터를 입력하고 거리 행렬을 계산한 다음 이 거리 행렬에 대한 최적의 2차원 임베딩을 결정하도록 요청할 수 있습니다. 결과는 다음 그림과 같이 원본 데이터의 표현을 복구합니다.</p>
 <div id="cell-24" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="11">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>model <span class="op">=</span> MDS(n_components<span class="op">=</span><span class="dv">2</span>, random_state<span class="op">=</span><span class="dv">1701</span>)</span>
 <span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>out3 <span class="op">=</span> model.fit_transform(X3)</span>
@@ -783,11 +782,11 @@ window.Quarto = {
 </div>
 </div>
 </div>
-<p>This is essentially the goal of a manifold learning estimator: given high-dimensional embedded data, it seeks a low-dimensional representation of the data that preserves certain relationships within the data. In the case of MDS, the quantity preserved is the distance between every pair of points.</p>
+<p>이는 본질적으로 매니폴드 학습 추정기의 목표입니다. 고차원 임베디드 데이터가 주어지면 데이터 내의 특정 관계를 유지하는 데이터의 저차원 표현을 찾습니다. MDS의 경우 보존되는 양은 모든 점 쌍 사이의 거리입니다.</p>
 </section>
-<section id="nonlinear-embeddings-where-mds-fails" class="level3">
-<h3 class="anchored" data-anchor-id="nonlinear-embeddings-where-mds-fails">Nonlinear Embeddings: Where MDS Fails</h3>
-<p>Our discussion thus far has considered <em>linear</em> embeddings, which essentially consist of rotations, translations, and scalings of data into higher-dimensional spaces. Where MDS breaks down is when the embedding is nonlinear—that is, when it goes beyond this simple set of operations. Consider the following embedding, which takes the input and contorts it into an “S” shape in three dimensions:</p>
+<section id="비선형-임베딩-mds가-실패하는-경우" class="level3">
+<h3 class="anchored" data-anchor-id="비선형-임베딩-mds가-실패하는-경우">비선형 임베딩: MDS가 실패하는 경우</h3>
+<p>지금까지 논의한 내용은 기본적으로 데이터를 고차원 공간으로 회전, 변환 및 크기 조정하는 것으로 구성된 <em>선형</em> 임베딩을 고려했습니다. MDS가 분해되는 곳은 임베딩이 비선형일 때입니다. 즉, 이 단순한 작업 세트를 넘어서는 경우입니다. 입력을 가져와 3차원에서 “S” 모양으로 변환하는 다음 임베딩을 고려해보세요.</p>
 <div id="cell-27" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="12">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> make_hello_s_curve(X):</span>
 <span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>    t <span class="op">=</span> (X[:, <span class="dv">0</span>] <span class="op">-</span> <span class="dv">2</span>) <span class="op">*</span> <span class="fl">0.75</span> <span class="op">*</span> np.pi</span>
@@ -798,7 +797,7 @@ window.Quarto = {
 <span id="cb15-7"><a href="#cb15-7" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb15-8"><a href="#cb15-8" aria-hidden="true" tabindex="-1"></a>XS <span class="op">=</span> make_hello_s_curve(X)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<p>This is again three-dimensional data, but as we can see in the following figure the embedding is much more complicated:</p>
+<p>이는 다시 3차원 데이터이지만 다음 그림에서 볼 수 있듯이 임베딩은 훨씬 더 복잡합니다.</p>
 <div id="cell-29" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="13">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> mpl_toolkits <span class="im">import</span> mplot3d</span>
 <span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>ax <span class="op">=</span> plt.axes(projection<span class="op">=</span><span class="st">'3d'</span>)</span>
@@ -812,8 +811,8 @@ window.Quarto = {
 </div>
 </div>
 </div>
-<p>The fundamental relationships between the data points are still there, but this time the data has been transformed in a nonlinear way: it has been wrapped up into the shape of an “S.”</p>
-<p>If we try a simple MDS algorithm on this data, it is not able to “unwrap” this nonlinear embedding, and we lose track of the fundamental relationships in the embedded manifold (see the following figure):</p>
+<p>데이터 포인트 사이의 기본적인 관계는 여전히 존재하지만 이번에는 데이터가 비선형 방식으로 변환되었습니다. 즉, “S” 모양으로 포장되었습니다.</p>
+<p>이 데이터에 대해 간단한 MDS 알고리즘을 시도하면 이 비선형 임베딩을 “해제”할 수 없으며 포함된 다양체의 기본 관계를 추적할 수 없습니다(다음 그림 참조).</p>
 <div id="cell-31" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="14">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.manifold <span class="im">import</span> MDS</span>
 <span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>model <span class="op">=</span> MDS(n_components<span class="op">=</span><span class="dv">2</span>, random_state<span class="op">=</span><span class="dv">2</span>)</span>
@@ -828,17 +827,17 @@ window.Quarto = {
 </div>
 </div>
 </div>
-<p>The best two-dimensional <em>linear</em> embedding does not unwrap the S-curve, but instead discards the original y-axis.</p>
+<p>최고의 2차원 <em>선형</em> 임베딩은 S 곡선을 펼치지 않고 대신 원래 y축을 삭제합니다.</p>
 </section>
 </section>
-<section id="nonlinear-manifolds-locally-linear-embedding" class="level2">
-<h2 class="anchored" data-anchor-id="nonlinear-manifolds-locally-linear-embedding">Nonlinear Manifolds: Locally Linear Embedding</h2>
-<p>How can we move forward here? Stepping back, we can see that the source of the problem is that MDS tries to preserve distances between faraway points when constructing the embedding. But what if we instead modified the algorithm such that it only preserves distances between nearby points? The resulting embedding would be closer to what we want.</p>
-<p>Visually, we can think of it as illustrated in this figure:</p>
-<p><img src="images/05.10-LLE-vs-MDS.png" class="img-fluid" alt="(LLE vs MDS linkages)"> <a href="https://github.com/jakevdp/PythonDataScienceHandbook/blob/master/notebooks/06.00-Figure-Code.ipynb#LLE-vs-MDS-Linkages">figure source in Appendix</a></p>
-<p>Here each faint line represents a distance that should be preserved in the embedding. On the left is a representation of the model used by MDS: it tries to preserve the distances between each pair of points in the dataset. On the right is a representation of the model used by a manifold learning algorithm called <em>locally linear embedding</em>: rather than preserving <em>all</em> distances, it instead tries to preserve only the distances between <em>neighboring points</em> (in this case, the nearest 100 neighbors of each point).</p>
-<p>Thinking about the left panel, we can see why MDS fails: there is no way to unroll this data while adequately preserving the length of every line drawn between the two points. For the right panel, on the other hand, things look a bit more optimistic. We could imagine unrolling the data in a way that keeps the lengths of the lines approximately the same. This is precisely what LLE does, through a global optimization of a cost function reflecting this logic.</p>
-<p>LLE comes in a number of flavors; here we will use the <em>modified LLE</em> algorithm to recover the embedded two-dimensional manifold. In general, modified LLE does better than other flavors of the algorithm at recovering well-defined manifolds with very little distortion (see the following figure):</p>
+<section id="비선형-다양체-국소-선형-임베딩" class="level2">
+<h2 class="anchored" data-anchor-id="비선형-다양체-국소-선형-임베딩">비선형 다양체: 국소 선형 임베딩</h2>
+<p>여기서 어떻게 앞으로 나아갈 수 있습니까? 한발 물러나서, 문제의 원인은 MDS가 임베딩을 구성할 때 멀리 있는 지점 사이의 거리를 유지하려고 시도한다는 것임을 확인할 수 있습니다. 하지만 대신 가까운 지점 사이의 거리만 보존하도록 알고리즘을 수정하면 어떻게 될까요? 결과 임베딩은 우리가 원하는 것에 더 가깝습니다.</p>
+<p>시각적으로 보면 다음 그림과 같이 생각할 수 있습니다.</p>
+<p><img src="images/05.10-LLE-vs-MDS.png" class="img-fluid" alt="(LLE vs MDS linkages)"> <a href="https://github.com/jakevdp/파이썬(Python)DataScienceHandbook/blob/master/notebooks/06.00-Figure-Code.ipynb#LLE-vs-MDS-Linkages">부록의 그림 출처</a></p>
+<p>여기서 각각의 희미한 선은 임베딩에서 유지되어야 하는 거리를 나타냅니다. 왼쪽에는 MDS에서 사용하는 모델이 표시됩니다. MDS는 데이터세트의 각 점 쌍 사이의 거리를 보존하려고 시도합니다. 오른쪽에는 <em>로컬 선형 임베딩</em>이라는 다양한 학습 알고리즘이 사용하는 모델이 표시됩니다. <em>모든</em> 거리를 보존하는 대신 <em>이웃 지점</em> 사이의 거리만 보존하려고 합니다(이 경우 각 지점에서 가장 가까운 100개 이웃).</p>
+<p>왼쪽 패널을 생각하면 MDS가 실패하는 이유를 확인할 수 있습니다. 두 점 사이에 그려진 모든 선의 길이를 적절하게 유지하면서 이 데이터를 전개할 방법이 없습니다. 반면에 오른쪽 패널의 경우 상황이 좀 더 낙관적으로 보입니다. 선의 길이를 거의 동일하게 유지하는 방식으로 데이터를 펼치는 것을 상상할 수 있습니다. 이것이 바로 이 논리를 반영하는 비용 함수의 전역 최적화를 통해 LLE가 수행하는 작업입니다.</p>
+<p>LLE는 다양한 형태로 제공됩니다. 여기서는 <em>수정된 LLE</em> 알고리즘을 사용하여 내장된 2차원 다양체를 복구할 것입니다. 일반적으로 수정된 LLE는 왜곡이 거의 없이 잘 정의된 다양체를 복구하는 데 있어 다른 알고리즘보다 더 나은 성능을 발휘합니다(다음 그림 참조).</p>
 <div id="cell-36" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="15">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.manifold <span class="im">import</span> LocallyLinearEmbedding</span>
 <span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>model <span class="op">=</span> LocallyLinearEmbedding(</span>
@@ -857,33 +856,31 @@ window.Quarto = {
 </div>
 </div>
 </div>
-<p>The result remains somewhat distorted compared to our original manifold, but captures the essential relationships in the data!</p>
-</section>
-<section id="some-thoughts-on-manifold-methods" class="level2">
-<h2 class="anchored" data-anchor-id="some-thoughts-on-manifold-methods">Some Thoughts on Manifold Methods</h2>
-<p>Compelling as these examples may be, in practice manifold learning techniques tend to be finicky enough that they are rarely used for anything more than simple qualitative visualization of high-dimensional data.</p>
-<p>The following are some of the particular challenges of manifold learning, which all contrast poorly with PCA:</p>
+<p>결과는 원래 다양체에 비해 다소 왜곡된 상태로 남아 있지만 데이터의 필수 관계를 포착합니다!</p>
+<p>Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.</p>
+<p>이러한 예가 매력적일 수 있지만 실제로 다양한 학습 기술은 고차원 데이터의 단순한 질적 시각화 이상의 용도로는 거의 사용되지 않을 정도로 까다롭습니다.</p>
+<p>다음은 PCA와 잘 대조되지 않는 다양한 학습의 특정 과제 중 일부입니다.</p>
 <ul>
-<li>In manifold learning, there is no good framework for handling missing data. In contrast, there are straightforward iterative approaches for dealing with missing data in PCA.</li>
-<li>In manifold learning, the presence of noise in the data can “short-circuit” the manifold and drastically change the embedding. In contrast, PCA naturally filters noise from the most important components.</li>
-<li>The manifold embedding result is generally highly dependent on the number of neighbors chosen, and there is generally no solid quantitative way to choose an optimal number of neighbors. In contrast, PCA does not involve such a choice.</li>
-<li>In manifold learning, the globally optimal number of output dimensions is difficult to determine. In contrast, PCA lets you find the number of output dimensions based on the explained variance.</li>
-<li>In manifold learning, the meaning of the embedded dimensions is not always clear. In PCA, the principal components have a very clear meaning.</li>
-<li>In manifold learning, the computational expense of manifold methods scales as <span class="math inline">\(O[N^2]\)</span> or <span class="math inline">\(O[N^3]\)</span>. For PCA, there exist randomized approaches that are generally much faster (though see the <a href="https://github.com/mmp2/megaman"><em>megaman</em> package</a> for some more scalable implementations of manifold learning).</li>
+<li>매니폴드 학습에서는 누락된 데이터를 처리하기 위한 좋은 프레임워크가 없습니다. 대조적으로, PCA에는 누락된 데이터를 처리하기 위한 간단한 반복 접근 방식이 있습니다.</li>
+<li>다양체 학습에서 데이터에 노이즈가 있으면 다양체가 “단락”되어 임베딩이 크게 변경될 수 있습니다. 이와 대조적으로 PCA는 가장 중요한 구성 요소에서 자연스럽게 노이즈를 필터링합니다.</li>
+<li>매니폴드 임베딩 결과는 일반적으로 선택된 이웃 수에 크게 의존하며 일반적으로 최적의 이웃 수를 선택하는 확실한 정량적 방법은 없습니다. 대조적으로, PCA는 그러한 선택을 포함하지 않습니다.</li>
+<li>매니폴드 학습에서는 전역적으로 최적의 출력 차원 수를 결정하기가 어렵습니다. 대조적으로, PCA를 사용하면 설명된 분산을 기반으로 출력 차원의 수를 찾을 수 있습니다.</li>
+<li>매니폴드 학습에서는 내장된 차원의 의미가 항상 명확하지는 않습니다. PCA에서 주요 구성 요소는 매우 명확한 의미를 갖습니다.</li>
+<li>다양체 학습에서 다양체 방법의 계산 비용은 <span class="math inline">\(O[N^2]\)</span> 또는 <span class="math inline">\(O[N^3]\)</span>로 확장됩니다. PCA의 경우 일반적으로 훨씬 더 빠른 무작위 접근 방식이 있습니다(다양한 학습의 확장 가능한 구현에 대해서는 <a href="https://github.com/mmp2/megaman"><em>megaman</em> 패키지</a> 참조).</li>
 </ul>
-<p>With all that on the table, the only clear advantage of manifold learning methods over PCA is their ability to preserve nonlinear relationships in the data; for that reason I tend to explore data with manifold methods only after first exploring it with PCA.</p>
-<p>Scikit-Learn implements several common variants of manifold learning beyond LLE and Isomap (which we’ve used in a few of the previous chapters and will look at in the next section): the Scikit-Learn documentation has a <a href="http://scikit-learn.org/stable/modules/manifold.html">nice discussion and comparison of them</a>. Based on my own experience, I would give the following recommendations:</p>
+<p>이 모든 것을 고려하면 PCA에 비해 다양한 학습 방법의 유일한 확실한 장점은 데이터의 비선형 관계를 보존하는 능력입니다. 그런 이유로 저는 먼저 PCA로 데이터를 탐색한 후에 다양한 방법으로 데이터를 탐색하는 경향이 있습니다.</p>
+<p>Scikit-Learn은 LLE 및 Isomap을 넘어 다양한 학습의 여러 가지 일반적인 변형을 구현합니다(이전 장에서 몇 개 사용했으며 다음 섹션에서 살펴보겠습니다). Scikit-Learn 문서에는 <a href="http://scikit-learn.org/stable/modules/manifold.html">그들에 대한 좋은 토론 및 비교</a>가 있습니다. 제 경험을 바탕으로 다음과 같은 권장 사항을 제시합니다.</p>
 <ul>
-<li>For toy problems such as the S-curve we saw before, LLE and its variants (especially modified LLE) perform very well. This is implemented in <code>sklearn.manifold.LocallyLinearEmbedding</code>.</li>
-<li>For high-dimensional data from real-world sources, LLE often produces poor results, and Isomap seems to generally lead to more meaningful embeddings. This is implemented in <code>sklearn.manifold.Isomap</code>.</li>
-<li>For data that is highly clustered, <em>t-distributed stochastic neighbor embedding</em> (t-SNE) seems to work very well, though it can be very slow compared to other methods. This is implemented in <code>sklearn.manifold.TSNE</code>.</li>
+<li>이전에 본 S-곡선과 같은 장난감 문제의 경우 LLE와 그 변형(특히 수정된 LLE)이 매우 잘 수행됩니다. 이는 <code>sklearn.manifold.LocallyLinearEmbedding</code>에서 구현됩니다.</li>
+<li>실제 소스의 고차원 데이터의 경우 LLE는 종종 좋지 않은 결과를 생성하며 Isomap은 일반적으로 더 의미 있는 임베딩으로 이어지는 것으로 보입니다. 이는 <code>sklearn.manifold.Isomap</code>에서 구현됩니다.</li>
+<li>고도로 클러스터된 데이터의 경우 <em>t-분산 확률적 이웃 임베딩</em>(t-SNE)이 매우 잘 작동하는 것으로 보이지만 다른 방법에 비해 속도가 매우 느릴 수 있습니다. 이는 <code>sklearn.manifold.TSNE</code>에 구현되어 있습니다.</li>
 </ul>
-<p>If you’re interested in getting a feel for how these work, I’d suggest running each of the methods on the data in this section.</p>
+<p>이러한 작동 방식에 대해 알아보고 싶다면 이 섹션의 데이터에 대해 각 메서드를 실행해 보는 것이 좋습니다.</p>
 </section>
-<section id="example-isomap-on-faces" class="level2">
-<h2 class="anchored" data-anchor-id="example-isomap-on-faces">Example: Isomap on Faces</h2>
-<p>One place manifold learning is often used is in understanding the relationship between high-dimensional data points. A common case of high-dimensional data is images: for example, a set of images with 1,000 pixels each can be thought of as a collection of points in 1,000 dimensions, with the brightness of each pixel in each image defining the coordinate in that dimension.</p>
-<p>To illustrate, let’s apply Isomap on some data from the Labeled Faces in the Wild dataset, which we previously saw in <a href="../notebooks/05.07-Support-Vector-Machines.html">In-Depth: Support Vector Machines</a> and <a href="../notebooks/05.09-Principal-Component-Analysis.html">In Depth: Principal Component Analysis</a>. Running this command will download the dataset and cache it in your home directory for later use:</p>
+<section id="예-면의-등위도표" class="level2">
+<h2 class="anchored" data-anchor-id="예-면의-등위도표">예: 면의 등위도표</h2>
+<p>매니폴드 학습이 자주 사용되는 곳 중 하나는 고차원 데이터 포인트 간의 관계를 이해하는 것입니다. 고차원 데이터의 일반적인 경우는 이미지입니다. 예를 들어 각각 1,000픽셀로 구성된 이미지 세트는 1,000차원의 점 모음으로 간주할 수 있으며, 각 이미지의 각 픽셀 밝기는 해당 차원의 좌표를 정의합니다.</p>
+<p>설명을 위해 이전에 <a href="../notebooks/05.07-Support-Vector-Machines.html">심층: 지원 벡터 머신</a> 및 <a href="05.09-Principal-Component-Analytic.ipynb">심층: 주성분 분석</a>에서 본 Wild 데이터세트의 Labeled Faces의 일부 데이터에 Isomap을 적용해 보겠습니다. 이 명령을 실행하면 데이터세트가 다운로드되어 나중에 사용할 수 있도록 홈 디렉터리에 캐시됩니다.</p>
 <div id="cell-41" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="16">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.datasets <span class="im">import</span> fetch_lfw_people</span>
 <span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>faces <span class="op">=</span> fetch_lfw_people(min_faces_per_person<span class="op">=</span><span class="dv">30</span>)</span>
@@ -892,8 +889,8 @@ window.Quarto = {
 <pre><code>(2370, 2914)</code></pre>
 </div>
 </div>
-<p>We have 2,370 images, each with 2,914 pixels. In other words, the images can be thought of as data points in a 2,914-dimensional space!</p>
-<p>Let’s display several of these images to remind us what we’re working with (see the following figure):</p>
+<p>우리는 각각 2,914픽셀을 가진 2,370개의 이미지를 가지고 있습니다. 즉, 이미지는 2,914차원 공간의 데이터 포인트라고 생각할 수 있습니다!</p>
+<p>우리가 작업 중인 내용을 상기시키기 위해 이러한 이미지 중 몇 개를 표시해 보겠습니다(다음 그림 참조).</p>
 <div id="cell-43" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="17">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots(<span class="dv">4</span>, <span class="dv">8</span>, subplot_kw<span class="op">=</span><span class="bu">dict</span>(xticks<span class="op">=</span>[], yticks<span class="op">=</span>[]))</span>
 <span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i, axi <span class="kw">in</span> <span class="bu">enumerate</span>(ax.flat):</span>
@@ -906,8 +903,8 @@ window.Quarto = {
 </div>
 </div>
 </div>
-<p>When we encountered this data in <a href="../notebooks/05.09-Principal-Component-Analysis.html">In Depth: Principal Component Analysis</a>, our goal was essentially compression: to use the components to reconstruct the inputs from the lower-dimensional representation.</p>
-<p>PCA is versatile enough that we can also use it in this context, where we would like to plot a low-dimensional embedding of the 2,914-dimensional data to learn the fundamental relationships between the images. Let’s again look at the explained variance ratio, which will give us an idea of how many linear features are required to describe the data (see the following figure):</p>
+<p><a href="05.09-Principal-Component-Analytic.ipynb">심층: 주요 구성 요소 분석</a>에서 이 데이터를 발견했을 때 우리의 목표는 본질적으로 압축이었습니다. 구성 요소를 사용하여 저차원 표현에서 입력을 재구성하는 것입니다.</p>
+<p>PCA는 다재다능하여 이미지 간의 기본 관계를 학습하기 위해 2,914차원 데이터의 저차원 임베딩을 플롯하려는 이러한 맥락에서도 사용할 수 있습니다. 설명된 분산 비율을 다시 살펴보겠습니다. 이를 통해 데이터를 설명하는 데 필요한 선형 특성 수에 대한 아이디어를 얻을 수 있습니다(다음 그림 참조).</p>
 <div id="cell-45" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="18">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb22"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.decomposition <span class="im">import</span> PCA</span>
 <span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>model <span class="op">=</span> PCA(<span class="dv">100</span>, svd_solver<span class="op">=</span><span class="st">'randomized'</span>).fit(faces.data)</span>
@@ -922,8 +919,8 @@ window.Quarto = {
 </div>
 </div>
 </div>
-<p>We see that for this data, nearly 100 components are required to preserve 90% of the variance. This tells us that the data is intrinsically very high-dimensional—it can’t be described linearly with just a few components.</p>
-<p>When this is the case, nonlinear manifold embeddings like LLE and Isomap may be helpful. We can compute an Isomap embedding on these faces using the same pattern shown before:</p>
+<p>이 데이터의 경우 분산의 90%를 유지하려면 거의 100개의 구성 요소가 필요하다는 것을 확인할 수 있습니다. 이는 데이터가 본질적으로 매우 고차원적이라는 것을 말해줍니다. 즉, 몇 가지 구성 요소만으로 선형적으로 설명할 수는 없습니다.</p>
+<p>이 경우 LLE 및 Isomap과 같은 비선형 다양체 임베딩이 도움이 될 수 있습니다. 이전에 표시된 것과 동일한 패턴을 사용하여 이러한 면에 Isomap 임베딩을 계산할 수 있습니다.</p>
 <div id="cell-47" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="19">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb23"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.manifold <span class="im">import</span> Isomap</span>
 <span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a>model <span class="op">=</span> Isomap(n_components<span class="op">=</span><span class="dv">2</span>)</span>
@@ -933,7 +930,7 @@ window.Quarto = {
 <pre><code>(2370, 2)</code></pre>
 </div>
 </div>
-<p>The output is a two-dimensional projection of all the input images. To get a better idea of what the projection tells us, let’s define a function that will output image thumbnails at the locations of the projections:</p>
+<p>출력은 모든 입력 이미지의 2차원 투영입니다. 투영이 우리에게 알려주는 내용을 더 잘 이해하기 위해 투영 위치에 이미지 축소판을 출력하는 함수를 정의해 보겠습니다.</p>
 <div id="cell-49" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="20">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb25"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> matplotlib <span class="im">import</span> offsetbox</span>
 <span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a></span>
@@ -958,7 +955,7 @@ window.Quarto = {
 <span id="cb25-21"><a href="#cb25-21" aria-hidden="true" tabindex="-1"></a>                                      proj[i])</span>
 <span id="cb25-22"><a href="#cb25-22" aria-hidden="true" tabindex="-1"></a>            ax.add_artist(imagebox)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<p>Calling this function now, we see the result in the following figure:</p>
+<p>이제 이 함수를 호출하면 다음 그림과 같은 결과를 살펴볼 수 있습니다.</p>
 <div id="cell-51" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="21">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb26"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots(figsize<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">10</span>))</span>
 <span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a>plot_components(faces.data,</span>
@@ -972,12 +969,12 @@ window.Quarto = {
 </div>
 </div>
 </div>
-<p>The result is interesting. The first two Isomap dimensions seem to describe global image features: the overall brightness of the image from left to right, and the general orientation of the face from bottom to top. This gives us a nice visual indication of some of the fundamental features in our data.</p>
-<p>From here, we could then go on to classify this data (perhaps using manifold features as inputs to the classification algorithm) as we did in <a href="../notebooks/05.07-Support-Vector-Machines.html">In-Depth: Support Vector Machines</a>.</p>
+<p>결과는 흥미롭습니다. 처음 두 개의 Isomap 차원은 전반적인 이미지 특징, 즉 왼쪽에서 오른쪽으로 이미지의 전체 밝기와 아래에서 위로 얼굴의 일반적인 방향을 설명하는 것으로 보입니다. 이는 데이터의 기본 기능 중 일부를 시각적으로 잘 보여줍니다.</p>
+<p>그런 다음 <a href="../notebooks/05.07-Support-Vector-Machines.html">심층: 지원 벡터 머신</a>에서 했던 것처럼 여기에서 계속해서 이 데이터를 분류할 수 있습니다(아마도 분류 알고리즘에 대한 입력으로 다양한 기능을 사용하여).</p>
 </section>
-<section id="example-visualizing-structure-in-digits" class="level2">
-<h2 class="anchored" data-anchor-id="example-visualizing-structure-in-digits">Example: Visualizing Structure in Digits</h2>
-<p>As another example of using manifold learning for visualization, let’s take a look at the MNIST handwritten digits dataset. This is similar to the digits dataset we saw in <a href="../notebooks/05.08-Random-Forests.html">In-Depth: Decision Trees and Random Forests</a>, but with many more pixels per image. It can be downloaded from http://openml.org/ with the Scikit-Learn utility:</p>
+<section id="예-숫자로-구조-시각화" class="level2">
+<h2 class="anchored" data-anchor-id="예-숫자로-구조-시각화">예: 숫자로 구조 시각화</h2>
+<p>시각화를 위해 매니폴드 학습을 사용하는 또 다른 예로 MNIST 필기 숫자 데이터세트를 살펴보겠습니다. 이는 <a href="../notebooks/05.08-Random-Forests.html">심층: 의사결정 트리 및 랜덤 포레스트</a>에서 본 숫자 데이터세트와 유사하지만 이미지당 픽셀이 더 많습니다. Scikit-Learn 유틸리티를 사용하여 http://openml.org/에서 다운로드할 수 있습니다.</p>
 <div id="cell-54" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="22">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb27"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.datasets <span class="im">import</span> fetch_openml</span>
 <span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a>mnist <span class="op">=</span> fetch_openml(<span class="st">'mnist_784'</span>)</span>
@@ -986,7 +983,7 @@ window.Quarto = {
 <pre><code>(70000, 784)</code></pre>
 </div>
 </div>
-<p>The dataset consists of 70,000 images, each with 784 pixels (i.e., the images are 28 × 28). As before, we can take a look at the first few images (see the following figure):</p>
+<p>데이터 세트는 각각 784픽셀(즉, 이미지 크기는 28 × 28)인 70,000개의 이미지로 구성됩니다. 이전과 마찬가지로 처음 몇 개의 이미지를 살펴볼 수 있습니다(다음 그림 참조).</p>
 <div id="cell-56" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="23">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb29"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a>mnist_data <span class="op">=</span> np.asarray(mnist.data)</span>
 <span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a>mnist_target <span class="op">=</span> np.asarray(mnist.target, dtype<span class="op">=</span><span class="bu">int</span>)</span>
@@ -1002,8 +999,8 @@ window.Quarto = {
 </div>
 </div>
 </div>
-<p>This gives us an idea of the variety of handwriting styles in the dataset.</p>
-<p>Let’s compute a manifold learning projection across the data. For speed here, we’ll only use 1/30 of the data, which is about ~2,000 points (because of the relatively poor scaling of manifold learning, I find that a few thousand samples is a good number to start with for relatively quick exploration before moving to a full calculation). the following figure shows the result:</p>
+<p>이를 통해 데이터 세트의 다양한 필기 스타일에 대한 아이디어를 얻을 수 있습니다.</p>
+<p>데이터 전체에 걸쳐 다양한 학습 예측을 계산해 보겠습니다. 여기서는 속도를 위해 데이터의 1/30(약 2,000포인트)만 사용하겠습니다. (매니폴드 학습의 상대적으로 낮은 확장성 때문에 전체 계산으로 이동하기 전에 상대적으로 빠른 탐색을 위해 수천 개의 샘플로 시작하는 것이 좋은 숫자라는 것을 알았습니다.) 다음 그림은 결과를 보여줍니다.</p>
 <div id="cell-58" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="24">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb30"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Use only 1/30 of the data: full dataset takes a long time!</span></span>
 <span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> mnist_data[::<span class="dv">30</span>]</span>
@@ -1023,7 +1020,7 @@ window.Quarto = {
 </div>
 </div>
 </div>
-<p>The resulting scatter plot shows some of the relationships between the data points, but is a bit crowded. We can gain more insight by looking at just a single number at a time (see the following figure):</p>
+<p>결과 산점도에는 데이터 포인트 간의 관계 중 일부가 표시되지만 약간 복잡합니다. 한 번에 하나의 숫자만 보면 더 많은 통찰력을 얻을 수 있습니다(다음 그림 참조).</p>
 <div id="cell-60" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="25">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb31"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Choose 1/4 of the "1" digits to project</span></span>
 <span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> mnist_data[mnist_target <span class="op">==</span> <span class="dv">1</span>][::<span class="dv">4</span>]</span>
@@ -1040,8 +1037,8 @@ window.Quarto = {
 </div>
 </div>
 </div>
-<p>The result gives you an idea of the variety of forms that the number 1 can take within the dataset. The data lies along a broad curve in the projected space, which appears to trace the orientation of the digit. As you move up the plot, you find 1s that have hats and/or bases, though these are very sparse within the dataset. The projection lets us identify outliers that have data issues: for example, pieces of the neighboring digits that snuck into the extracted images.</p>
-<p>Now, this in itself may not be useful for the task of classifying digits, but it does help us get an understanding of the data, and may give us ideas about how to move forward—such as how we might want to preprocess the data before building a classification pipeline.</p>
+<p>결과를 통해 데이터세트 내에서 숫자 1이 취할 수 있는 다양한 형태에 대한 아이디어를 얻을 수 있습니다. 데이터는 투영된 공간의 넓은 곡선을 따라 놓여 있으며, 이는 숫자의 방향을 추적하는 것처럼 보입니다. 플롯을 위로 이동하면 모자 및/또는 베이스가 있는 1을 찾을 수 있지만 이는 데이터세트 내에서 매우 드물습니다. 투영을 통해 데이터 문제가 있는 이상값을 식별할 수 있습니다. 예를 들어 추출된 이미지에 몰래 들어간 이웃 숫자 조각이 있습니다.</p>
+<p>이제 이 자체는 숫자 분류 작업에 유용하지 않을 수 있지만 데이터를 이해하는 데 도움이 되며 분류 파이프라인을 구축하기 전에 데이터를 전처리하는 방법과 같은 앞으로 나아갈 방법에 대한 아이디어를 제공할 수 있습니다.</p>
 
 
 </section>
@@ -1449,13 +1446,13 @@ window.Quarto = {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../notebooks/05.09-Principal-Component-Analysis.html" class="pagination-link" aria-label="In Depth: Principal Component Analysis">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">In Depth: Principal Component Analysis</span></span>
+      <a href="../notebooks/05.09-Principal-Component-Analysis.html" class="pagination-link" aria-label="심층 분석: 주성분 분석">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">심층 분석: 주성분 분석</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../notebooks/05.11-K-Means.html" class="pagination-link" aria-label="In Depth: k-Means Clustering">
-        <span class="nav-page-text"><span class="chapter-title">In Depth: k-Means Clustering</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../notebooks/05.11-K-Means.html" class="pagination-link" aria-label="심층 분석: k-평균 클러스터링">
+        <span class="nav-page-text"><span class="chapter-title">심층 분석: k-평균 클러스터링</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

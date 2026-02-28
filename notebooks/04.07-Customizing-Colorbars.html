@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Customizing Colorbars – 파이썬 데이터 사이언스 핸드북</title>
+<title>컬러바 사용자 정의 – 파이썬 데이터 사이언스 핸드북</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -77,7 +77,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-3778d3e438078121318a23701f9f68bb.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-803ae4f7a8810f475153517dc3c4ebae.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -147,7 +147,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../notebooks/04.00-Introduction-To-Matplotlib.html">Matplotlib을 이용한 시각화</a></li><li class="breadcrumb-item"><a href="../notebooks/04.07-Customizing-Colorbars.html"><span class="chapter-title">Customizing Colorbars</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../notebooks/04.00-Introduction-To-Matplotlib.html">Matplotlib을 이용한 시각화</a></li><li class="breadcrumb-item"><a href="../notebooks/04.07-Customizing-Colorbars.html"><span class="chapter-title">컬러바 사용자 정의</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -194,7 +194,7 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/01.00-IPython-Beyond-Normal-Python.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Jupyter: 일반 Python을 넘어서</span></a>
+  <a href="../notebooks/01.00-IPython-Beyond-Normal-Python.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Jupyter: 일반 파이썬(Python)을 넘어서</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -224,17 +224,17 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/01.06-Errors-and-Debugging.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Errors and Debugging</span></a>
+  <a href="../notebooks/01.06-Errors-and-Debugging.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">오류 및 디버깅</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/01.07-Timing-and-Profiling.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Profiling and Timing Code</span></a>
+  <a href="../notebooks/01.07-Timing-and-Profiling.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">프로파일링 및 타이밍 코드</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/01.08-More-IPython-Resources.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">More IPython Resources</span></a>
+  <a href="../notebooks/01.08-More-IPython-Resources.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">추가 IPython 리소스</span></a>
   </div>
 </li>
       </ul>
@@ -250,52 +250,52 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.00-Introduction-to-NumPy.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Introduction to NumPy</span></a>
+  <a href="../notebooks/02.00-Introduction-to-NumPy.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">NumPy 소개</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.01-Understanding-Data-Types.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Understanding Data Types in Python</span></a>
+  <a href="../notebooks/02.01-Understanding-Data-Types.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">파이썬(Python)의 데이터 유형 이해</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.02-The-Basics-Of-NumPy-Arrays.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">The Basics of NumPy Arrays</span></a>
+  <a href="../notebooks/02.02-The-Basics-Of-NumPy-Arrays.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">NumPy 배열의 기본</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.03-Computation-on-arrays-ufuncs.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Computation on NumPy Arrays: Universal Functions</span></a>
+  <a href="../notebooks/02.03-Computation-on-arrays-ufuncs.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">NumPy 배열 계산: 범용 함수</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.04-Computation-on-arrays-aggregates.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Aggregations: min, max, and Everything in Between</span></a>
+  <a href="../notebooks/02.04-Computation-on-arrays-aggregates.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">집계: 최소, 최대 및 그 사이의 모든 것</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.05-Computation-on-arrays-broadcasting.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Computation on Arrays: Broadcasting</span></a>
+  <a href="../notebooks/02.05-Computation-on-arrays-broadcasting.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">배열 계산: 브로드캐스팅</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.06-Boolean-Arrays-and-Masks.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Comparisons, Masks, and Boolean Logic</span></a>
+  <a href="../notebooks/02.06-Boolean-Arrays-and-Masks.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">비교, 마스크 및 부울 논리</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.07-Fancy-Indexing.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Fancy Indexing</span></a>
+  <a href="../notebooks/02.07-Fancy-Indexing.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">멋진 인덱싱</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.08-Sorting.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Sorting Arrays</span></a>
+  <a href="../notebooks/02.08-Sorting.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">배열 정렬</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.09-Structured-Data-NumPy.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Structured Data: NumPy’s Structured Arrays</span></a>
+  <a href="../notebooks/02.09-Structured-Data-NumPy.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">구조화된 데이터: NumPy의 구조화된 배열</span></a>
   </div>
 </li>
       </ul>
@@ -311,72 +311,72 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.00-Introduction-to-Pandas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Data Manipulation with Pandas</span></a>
+  <a href="../notebooks/03.00-Introduction-to-Pandas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">팬더를 이용한 데이터 조작</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.01-Introducing-Pandas-Objects.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Introducing Pandas Objects</span></a>
+  <a href="../notebooks/03.01-Introducing-Pandas-Objects.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">판다스 객체 소개</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.02-Data-Indexing-and-Selection.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Data Indexing and Selection</span></a>
+  <a href="../notebooks/03.02-Data-Indexing-and-Selection.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">데이터 인덱싱 및 선택</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.03-Operations-in-Pandas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Operating on Data in Pandas</span></a>
+  <a href="../notebooks/03.03-Operations-in-Pandas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Pandas에서 데이터 작업</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.04-Missing-Values.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Handling Missing Data</span></a>
+  <a href="../notebooks/03.04-Missing-Values.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">누락된 데이터 처리</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.05-Hierarchical-Indexing.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Hierarchical Indexing</span></a>
+  <a href="../notebooks/03.05-Hierarchical-Indexing.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">계층적 인덱싱</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.06-Concat-And-Append.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Combining Datasets: concat and append</span></a>
+  <a href="../notebooks/03.06-Concat-And-Append.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">데이터세트 결합: 연결 및 추가</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.07-Merge-and-Join.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Combining Datasets: merge and join</span></a>
+  <a href="../notebooks/03.07-Merge-and-Join.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">데이터세트 결합: 병합 및 조인</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.08-Aggregation-and-Grouping.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Aggregation and Grouping</span></a>
+  <a href="../notebooks/03.08-Aggregation-and-Grouping.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">집계 및 그룹화</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.09-Pivot-Tables.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Pivot Tables</span></a>
+  <a href="../notebooks/03.09-Pivot-Tables.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">피벗 테이블</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.10-Working-With-Strings.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Vectorized String Operations</span></a>
+  <a href="../notebooks/03.10-Working-With-Strings.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">벡터화된 문자열 작업</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.11-Working-with-Time-Series.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Working with Time Series</span></a>
+  <a href="../notebooks/03.11-Working-with-Time-Series.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">시계열 작업</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.12-Performance-Eval-and-Query.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">High-Performance Pandas: eval and query</span></a>
+  <a href="../notebooks/03.12-Performance-Eval-and-Query.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">고성능 Pandas: 평가 및 쿼리</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.13-Further-Resources.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Further Resources</span></a>
+  <a href="../notebooks/03.13-Further-Resources.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">추가 리소스</span></a>
   </div>
 </li>
       </ul>
@@ -392,77 +392,77 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.00-Introduction-To-Matplotlib.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Visualization with Matplotlib</span></a>
+  <a href="../notebooks/04.00-Introduction-To-Matplotlib.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Matplotlib를 사용한 시각화</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.01-Simple-Line-Plots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Simple Line Plots</span></a>
+  <a href="../notebooks/04.01-Simple-Line-Plots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">간단한 선 도표</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.02-Simple-Scatter-Plots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Simple Scatter Plots</span></a>
+  <a href="../notebooks/04.02-Simple-Scatter-Plots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">단순 산점도</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.03-Errorbars.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Visualizing Uncertainties</span></a>
+  <a href="../notebooks/04.03-Errorbars.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">불확실성 시각화</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.04-Density-and-Contour-Plots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Density and Contour Plots</span></a>
+  <a href="../notebooks/04.04-Density-and-Contour-Plots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">밀도 및 등고선 플롯</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.05-Histograms-and-Binnings.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Histograms, Binnings, and Density</span></a>
+  <a href="../notebooks/04.05-Histograms-and-Binnings.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">히스토그램, 비닝 및 밀도</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.06-Customizing-Legends.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Customizing Plot Legends</span></a>
+  <a href="../notebooks/04.06-Customizing-Legends.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">플롯 범례 사용자 정의</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.07-Customizing-Colorbars.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Customizing Colorbars</span></a>
+  <a href="../notebooks/04.07-Customizing-Colorbars.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">컬러바 사용자 정의</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.08-Multiple-Subplots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Multiple Subplots</span></a>
+  <a href="../notebooks/04.08-Multiple-Subplots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">다중 서브플롯</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.09-Text-and-Annotation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Text and Annotation</span></a>
+  <a href="../notebooks/04.09-Text-and-Annotation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">텍스트 및 주석</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.10-Customizing-Ticks.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Customizing Ticks</span></a>
+  <a href="../notebooks/04.10-Customizing-Ticks.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">눈금 사용자 정의</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.11-Settings-and-Stylesheets.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Customizing Matplotlib: Configurations and Stylesheets</span></a>
+  <a href="../notebooks/04.11-Settings-and-Stylesheets.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Matplotlib 사용자 정의: 구성 및 스타일시트</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.12-Three-Dimensional-Plotting.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Three-Dimensional Plotting in Matplotlib</span></a>
+  <a href="../notebooks/04.12-Three-Dimensional-Plotting.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Matplotlib의 3차원 플로팅</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.14-Visualization-With-Seaborn.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Visualization with Seaborn</span></a>
+  <a href="../notebooks/04.14-Visualization-With-Seaborn.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Seaborn을 이용한 시각화</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.15-Further-Resources.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Further Resources</span></a>
+  <a href="../notebooks/04.15-Further-Resources.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">추가 리소스</span></a>
   </div>
 </li>
       </ul>
@@ -478,82 +478,82 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.00-Machine-Learning.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Machine Learning</span></a>
+  <a href="../notebooks/05.00-Machine-Learning.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">머신러닝</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.01-What-Is-Machine-Learning.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">What Is Machine Learning?</span></a>
+  <a href="../notebooks/05.01-What-Is-Machine-Learning.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">머신러닝이란?</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.02-Introducing-Scikit-Learn.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Introducing Scikit-Learn</span></a>
+  <a href="../notebooks/05.02-Introducing-Scikit-Learn.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Scikit-Learn 소개</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.03-Hyperparameters-and-Model-Validation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Hyperparameters and Model Validation</span></a>
+  <a href="../notebooks/05.03-Hyperparameters-and-Model-Validation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">하이퍼파라미터 및 모델 검증</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.04-Feature-Engineering.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Feature Engineering</span></a>
+  <a href="../notebooks/05.04-Feature-Engineering.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">기능 엔지니어링</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.05-Naive-Bayes.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Naive Bayes Classification</span></a>
+  <a href="../notebooks/05.05-Naive-Bayes.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 나이브 베이즈 분류</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.06-Linear-Regression.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Linear Regression</span></a>
+  <a href="../notebooks/05.06-Linear-Regression.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 선형 회귀</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.07-Support-Vector-Machines.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Support Vector Machines</span></a>
+  <a href="../notebooks/05.07-Support-Vector-Machines.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 서포트 벡터 머신</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.08-Random-Forests.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Decision Trees and Random Forests</span></a>
+  <a href="../notebooks/05.08-Random-Forests.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 의사결정 트리 및 랜덤 포레스트</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.09-Principal-Component-Analysis.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Principal Component Analysis</span></a>
+  <a href="../notebooks/05.09-Principal-Component-Analysis.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 주성분 분석</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.10-Manifold-Learning.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Manifold Learning</span></a>
+  <a href="../notebooks/05.10-Manifold-Learning.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 다양한 학습</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.11-K-Means.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: k-Means Clustering</span></a>
+  <a href="../notebooks/05.11-K-Means.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: k-평균 클러스터링</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.12-Gaussian-Mixtures.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Gaussian Mixture Models</span></a>
+  <a href="../notebooks/05.12-Gaussian-Mixtures.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 가우스 혼합 모델</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.13-Kernel-Density-Estimation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Kernel Density Estimation</span></a>
+  <a href="../notebooks/05.13-Kernel-Density-Estimation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 커널 밀도 추정</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.14-Image-Features.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Application: A Face Detection Pipeline</span></a>
+  <a href="../notebooks/05.14-Image-Features.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">응용 분야: 얼굴 감지 파이프라인</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.15-Learning-More.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Further Machine Learning Resources</span></a>
+  <a href="../notebooks/05.15-Learning-More.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">추가 머신러닝(Machine Learning) 리소스</span></a>
   </div>
 </li>
       </ul>
@@ -569,7 +569,7 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/06.00-Figure-Code.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Appendix: Figure Code</span></a>
+  <a href="../notebooks/06.00-Figure-Code.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">부록: 그림 코드</span></a>
   </div>
 </li>
       </ul>
@@ -584,22 +584,22 @@ window.Quarto = {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#customizing-colorbars" id="toc-customizing-colorbars" class="nav-link active" data-scroll-target="#customizing-colorbars">Customizing Colorbars</a>
+  <li><a href="#컬러바-사용자-정의" id="toc-컬러바-사용자-정의" class="nav-link active" data-scroll-target="#컬러바-사용자-정의">컬러바 사용자 정의</a>
   <ul class="collapse">
-  <li><a href="#choosing-the-colormap" id="toc-choosing-the-colormap" class="nav-link" data-scroll-target="#choosing-the-colormap">Choosing the Colormap</a></li>
-  <li><a href="#color-limits-and-extensions" id="toc-color-limits-and-extensions" class="nav-link" data-scroll-target="#color-limits-and-extensions">Color Limits and Extensions</a></li>
-  <li><a href="#discrete-colorbars" id="toc-discrete-colorbars" class="nav-link" data-scroll-target="#discrete-colorbars">Discrete Colorbars</a></li>
+  <li><a href="#컬러맵-선택" id="toc-컬러맵-선택" class="nav-link" data-scroll-target="#컬러맵-선택">컬러맵 선택</a></li>
+  <li><a href="#색상-제한-및-확장" id="toc-색상-제한-및-확장" class="nav-link" data-scroll-target="#색상-제한-및-확장">색상 제한 및 확장</a></li>
+  <li><a href="#이산-컬러바" id="toc-이산-컬러바" class="nav-link" data-scroll-target="#이산-컬러바">이산 컬러바</a></li>
   </ul></li>
-  <li><a href="#example-handwritten-digits" id="toc-example-handwritten-digits" class="nav-link" data-scroll-target="#example-handwritten-digits">Example: Handwritten Digits</a></li>
+  <li><a href="#예-손으로-쓴-숫자" id="toc-예-손으로-쓴-숫자" class="nav-link" data-scroll-target="#예-손으로-쓴-숫자">예: 손으로 쓴 숫자</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../notebooks/04.00-Introduction-To-Matplotlib.html">Matplotlib을 이용한 시각화</a></li><li class="breadcrumb-item"><a href="../notebooks/04.07-Customizing-Colorbars.html"><span class="chapter-title">Customizing Colorbars</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../notebooks/04.00-Introduction-To-Matplotlib.html">Matplotlib을 이용한 시각화</a></li><li class="breadcrumb-item"><a href="../notebooks/04.07-Customizing-Colorbars.html"><span class="chapter-title">컬러바 사용자 정의</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-title">Customizing Colorbars</span></h1>
+<h1 class="title"><span class="chapter-title">컬러바 사용자 정의</span></h1>
 </div>
 
 
@@ -616,7 +616,7 @@ window.Quarto = {
 </header>
 
 
-<p>Plot legends identify discrete labels of discrete points. For continuous labels based on the color of points, lines, or regions, a labeled colorbar can be a great tool. In Matplotlib, a colorbar is drawn as a separate axes that can provide a key for the meaning of colors in a plot. Because the book is printed in black and white, this chapter has an accompanying <a href="https://github.com/jakevdp/PythonDataScienceHandbook">online supplement</a> where you can view the figures in full color. We’ll start by setting up the notebook for plotting and importing the functions we will use:</p>
+<p>플롯 범례는 개별 지점의 개별 레이블을 식별합니다. 점, 선 또는 영역의 색상을 기반으로 하는 연속 레이블의 경우 레이블이 지정된 컬러바가 훌륭한 도구가 될 수 있습니다. Matplotlib에서 컬러바는 플롯의 색상 의미에 대한 키를 제공할 수 있는 별도의 축으로 그려집니다. 책이 흑백으로 인쇄되어 있기 때문에 이 장에는 그림을 풀 컬러로 볼 수 있는 <a href="https://github.com/jakevdp/파이썬(Python)DataScienceHandbook">온라인 보충 자료</a>가 함께 제공됩니다. 우리가 사용할 함수를 플로팅하고 가져오기 위해 노트북을 설정하는 것부터 시작하겠습니다.</p>
 <div id="cell-2" class="cell" data-tags="[]" data-execution_count="1">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>plt.style.use(<span class="st">'seaborn-white'</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -625,7 +625,7 @@ window.Quarto = {
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="op">%</span>matplotlib inline</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<p>As we have seen several times already, the simplest colorbar can be created with the <code>plt.colorbar</code> function (see the following figure):</p>
+<p>이미 여러 번 살펴보았듯이 <code>plt.colorbar</code> 함수를 사용하면 가장 간단한 컬러바를 만들 수 있습니다(다음 그림 참조).</p>
 <div id="cell-5" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="3">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> np.linspace(<span class="dv">0</span>, <span class="dv">10</span>, <span class="dv">1000</span>)</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>I <span class="op">=</span> np.sin(x) <span class="op">*</span> np.cos(x[:, np.newaxis])</span>
@@ -640,10 +640,10 @@ window.Quarto = {
 </div>
 </div>
 </div>
-<p>We’ll now discuss a few ideas for customizing these colorbars and using them effectively in various situations.</p>
-<section id="customizing-colorbars" class="level2">
-<h2 class="anchored" data-anchor-id="customizing-colorbars">Customizing Colorbars</h2>
-<p>The colormap can be specified using the <code>cmap</code> argument to the plotting function that is creating the visualization (see the following figure):</p>
+<p>이제 이러한 컬러바를 사용자 정의하고 다양한 상황에서 효과적으로 사용하기 위한 몇 가지 아이디어에 대해 논의하겠습니다.</p>
+<section id="컬러바-사용자-정의" class="level2">
+<h2 class="anchored" data-anchor-id="컬러바-사용자-정의">컬러바 사용자 정의</h2>
+<p>시각화를 생성하는 플로팅 함수에 대한 ‘cmap’ 인수를 사용하여 컬러맵을 지정할 수 있습니다(다음 그림 참조).</p>
 <div id="cell-8" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="4">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>plt.imshow(I, cmap<span class="op">=</span><span class="st">'Blues'</span>)<span class="op">;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
@@ -654,20 +654,20 @@ window.Quarto = {
 </div>
 </div>
 </div>
-<p>The names of available colormaps are in the <code>plt.cm</code> namespace; using IPython’s tab completion feature will give you a full list of built-in possibilities:</p>
+<p>사용 가능한 컬러맵의 이름은 <code>plt.cm</code> 네임스페이스에 있습니다. IPython의 탭 완성 기능을 사용하면 내장된 가능성의 전체 목록이 제공됩니다.</p>
 <pre><code>plt.cm.&lt;TAB&gt;</code></pre>
-<p>But being <em>able</em> to choose a colormap is just the first step: more important is how to <em>decide</em> among the possibilities! The choice turns out to be much more subtle than you might initially expect.</p>
-<section id="choosing-the-colormap" class="level3">
-<h3 class="anchored" data-anchor-id="choosing-the-colormap">Choosing the Colormap</h3>
-<p>A full treatment of color choice within visualizations is beyond the scope of this book, but for entertaining reading on this subject and others, see the article <a href="http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1003833">“Ten Simple Rules for Better Figures”</a> by Nicholas Rougier, Michael Droettboom, and Philip Bourne. Matplotlib’s online documentation also has an <a href="https://matplotlib.org/stable/tutorials/colors/colormaps.html">interesting discussion</a> of colormap choice.</p>
-<p>Broadly, you should be aware of three different categories of colormaps:</p>
+<p>그러나 컬러맵을 <em>선택할 수</em> 있다는 것은 첫 번째 단계일 뿐입니다. 더 중요한 것은 가능성 중에서 <em>결정</em>하는 방법입니다! 선택은 처음에 예상했던 것보다 훨씬 더 미묘하다는 것이 밝혀졌습니다.</p>
+<section id="컬러맵-선택" class="level3">
+<h3 class="anchored" data-anchor-id="컬러맵-선택">컬러맵 선택</h3>
+<p>시각화 내에서 색상 선택에 대한 전체적인 처리는 이 책의 범위를 벗어납니다. 그러나 이 주제와 다른 주제에 대한 재미있는 독서를 위해 Nicholas Rougier, Michael Droettboom 및 Philip Bourne이 쓴 <a href="http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1003833">“더 나은 그림을 위한 10가지 간단한 규칙”</a> 기사를 참조하세요. Matplotlib의 온라인 문서에는 컬러맵 선택에 대한 <a href="https://matplotlib.org/stable/tutorials/colors/colormaps.html">흥미로운 토론</a>도 나와 있습니다.</p>
+<p>대체로 세 가지 범주의 컬러맵을 알고 있어야 합니다.</p>
 <ul>
-<li><em>Sequential colormaps</em>: These are made up of one continuous sequence of colors (e.g., <code>binary</code> or <code>viridis</code>).</li>
-<li><em>Divergent colormaps</em>: These usually contain two distinct colors, which show positive and negative deviations from a mean (e.g., <code>RdBu</code> or <code>PuOr</code>).</li>
-<li><em>Qualitative colormaps</em>: These mix colors with no particular sequence (e.g., <code>rainbow</code> or <code>jet</code>).</li>
+<li><em>순차적 색상맵</em>: 이는 하나의 연속적인 색상 시퀀스로 구성됩니다(예: <code>binary</code> 또는 <code>viridis</code>).</li>
+<li><em>발산 색상맵</em>: 여기에는 일반적으로 평균과의 양수 및 음수 편차를 나타내는 두 가지 고유한 색상이 포함됩니다(예: ‘RdBu’ 또는 ‘PuOr’).</li>
+<li><em>정성적 색상맵</em>: 특별한 순서 없이 색상을 혼합합니다(예: ‘무지개’ 또는 ‘제트’).</li>
 </ul>
-<p>The <code>jet</code> colormap, which was the default in Matplotlib prior to version 2.0, is an example of a qualitative colormap. Its status as the default was quite unfortunate, because qualitative maps are often a poor choice for representing quantitative data. Among the problems is the fact that qualitative maps usually do not display any uniform progression in brightness as the scale increases.</p>
-<p>We can see this by converting the <code>jet</code> colorbar into black and white (see the following figure):</p>
+<p>The <code>jet</code> colormap, which was the default in Matplotlib prior to version 2.0, is an example of a qualitative colormap. 기본값으로서의 상태는 매우 불행했습니다. 정성적 지도는 종종 정량적 데이터를 표현하는 데 적합하지 않은 선택이기 때문입니다. 문제 중에는 질적 지도가 일반적으로 척도가 증가함에 따라 밝기의 균일한 진행을 표시하지 않는다는 사실이 있습니다.</p>
+<p>‘jet’ 컬러바를 흑백으로 변환하면 이를 확인할 수 있습니다(다음 그림 참조).</p>
 <div id="cell-11" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="5">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> matplotlib.colors <span class="im">import</span> LinearSegmentedColormap</span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a></span>
@@ -709,7 +709,7 @@ window.Quarto = {
 </div>
 </div>
 </div>
-<p>Notice the bright stripes in the grayscale image. Even in full color, this uneven brightness means that the eye will be drawn to certain portions of the color range, which will potentially emphasize unimportant parts of the dataset. It’s better to use a colormap such as <code>viridis</code> (the default as of Matplotlib 2.0), which is specifically constructed to have an even brightness variation across the range; thus, it not only plays well with our color perception, but also will translate well to grayscale printing (see the following figure):</p>
+<p>회색조 이미지에서 밝은 줄무늬를 확인하세요. 풀 컬러에서도 이 고르지 못한 밝기는 눈이 색상 범위의 특정 부분에 끌리게 되어 잠재적으로 데이터 세트에서 중요하지 않은 부분을 강조하게 된다는 것을 의미합니다. 범위 전체에 걸쳐 균일한 밝기 변화를 갖도록 특별히 구성된 <code>viridis</code>(Matplotlib 2.0의 기본값)와 같은 컬러맵을 사용하는 것이 더 좋습니다. 따라서 색상 인식과 잘 어울릴 뿐만 아니라 회색조 인쇄에도 잘 변환됩니다(다음 그림 참조).</p>
 <div id="cell-14" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="7">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>view_colormap(<span class="st">'viridis'</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
@@ -720,7 +720,7 @@ window.Quarto = {
 </div>
 </div>
 </div>
-<p>For other situations, such as showing positive and negative deviations from some mean, dual-color colorbars such as <code>RdBu</code> (<em>Red–Blue</em>) are helpful. However, as you can see in the following figure, it’s important to note that the positive/negative information will be lost upon translation to grayscale!</p>
+<p>일부 평균과의 양수 및 음수 편차를 표시하는 등의 다른 상황에서는 <code>RdBu</code>(<em>빨간색–파란색</em>)와 같은 이중 색상 컬러바가 도움이 됩니다. 그러나 다음 그림에서 볼 수 있듯이 회색조로 변환하면 긍정적/부정적 정보가 손실된다는 점에 유의하는 것이 중요합니다!</p>
 <div id="cell-16" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="8">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>view_colormap(<span class="st">'RdBu'</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
@@ -731,12 +731,12 @@ window.Quarto = {
 </div>
 </div>
 </div>
-<p>We’ll see examples of using some of these colormaps as we continue.</p>
-<p>There are a large number of colormaps available in Matplotlib; to see a list of them, you can use IPython to explore the <code>plt.cm</code> submodule. For a more principled approach to colors in Python, you can refer to the tools and documentation within the Seaborn library (see <a href="../notebooks/04.14-Visualization-With-Seaborn.html">Visualization With Seaborn</a>).</p>
+<p>계속 진행하면서 이러한 컬러맵 중 일부를 사용하는 예를 살펴보겠습니다.</p>
+<p>Matplotlib에는 수많은 색상맵이 있습니다. 그 목록을 보려면 IPython을 사용하여 <code>plt.cm</code> 하위 모듈을 탐색할 수 있습니다. 파이썬(Python)의 색상에 대한 보다 원칙적인 접근 방식은 Seaborn 라이브러리 내의 도구 및 문서를 참조할 수 있습니다(<a href="../notebooks/04.14-Visualization-With-Seaborn.html">Visualization With Seaborn</a> 참조).</p>
 </section>
-<section id="color-limits-and-extensions" class="level3">
-<h3 class="anchored" data-anchor-id="color-limits-and-extensions">Color Limits and Extensions</h3>
-<p>Matplotlib allows for a large range of colorbar customization. The colorbar itself is simply an instance of <code>plt.Axes</code>, so all of the axes and tick formatting tricks we’ve seen so far are applicable. The colorbar has some interesting flexibility: for example, we can narrow the color limits and indicate the out-of-bounds values with a triangular arrow at the top and bottom by setting the <code>extend</code> property. This might come in handy, for example, if displaying an image that is subject to noise (see the following figure):</p>
+<section id="색상-제한-및-확장" class="level3">
+<h3 class="anchored" data-anchor-id="색상-제한-및-확장">색상 제한 및 확장</h3>
+<p>Matplotlib을 사용하면 광범위한 색상 막대 사용자 정의가 가능합니다. 컬러바 자체는 단순히 ‘plt.Axes’의 인스턴스이므로 지금까지 본 모든 축 및 눈금 형식 지정 트릭을 적용할 수 있습니다. 컬러바에는 몇 가지 흥미로운 유연성이 있습니다. 예를 들어 ’extend’ 속성을 설정하여 색상 제한을 좁히고 위쪽과 아래쪽에 삼각형 화살표를 사용하여 범위를 벗어난 값을 표시할 수 있습니다. 예를 들어 노이즈가 있는 이미지를 표시하는 경우 유용할 수 있습니다(다음 그림 참조).</p>
 <div id="cell-19" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="9">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co"># make noise in 1% of the image pixels</span></span>
 <span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>speckles <span class="op">=</span> (np.random.random(I.shape) <span class="op">&lt;</span> <span class="fl">0.01</span>)</span>
@@ -760,11 +760,11 @@ window.Quarto = {
 </div>
 </div>
 </div>
-<p>Notice that in the left panel, the default color limits respond to the noisy pixels, and the range of the noise completely washes out the pattern we are interested in. In the right panel, we manually set the color limits and add extensions to indicate values that are above or below those limits. The result is a much more useful visualization of our data.</p>
+<p>왼쪽 패널에서 기본 색상 제한은 노이즈가 있는 픽셀에 반응하고 노이즈의 범위로 인해 관심 있는 패턴이 완전히 사라집니다. 오른쪽 패널에서는 색상 제한을 수동으로 설정하고 해당 제한보다 높거나 낮은 값을 나타내는 확장자를 추가합니다. 그 결과 데이터가 훨씬 더 유용하게 시각화되었습니다.</p>
 </section>
-<section id="discrete-colorbars" class="level3">
-<h3 class="anchored" data-anchor-id="discrete-colorbars">Discrete Colorbars</h3>
-<p>Colormaps are by default continuous, but sometimes you’d like to represent discrete values. The easiest way to do this is to use the <code>plt.cm.get_cmap</code> function and pass the name of a suitable colormap along with the number of desired bins (see the following figure):</p>
+<section id="이산-컬러바" class="level3">
+<h3 class="anchored" data-anchor-id="이산-컬러바">이산 컬러바</h3>
+<p>컬러맵은 기본적으로 연속형이지만 때로는 이산형 값을 표현하고 싶을 때도 있습니다. 이를 수행하는 가장 쉬운 방법은 <code>plt.cm.get_cmap</code> 함수를 사용하고 원하는 빈 수와 함께 적합한 색상맵의 이름을 전달하는 것입니다(다음 그림 참조).</p>
 <div id="cell-22" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="10">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>plt.imshow(I, cmap<span class="op">=</span>plt.cm.get_cmap(<span class="st">'Blues'</span>, <span class="dv">6</span>))</span>
 <span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>plt.colorbar(extend<span class="op">=</span><span class="st">'both'</span>)</span>
@@ -777,13 +777,13 @@ window.Quarto = {
 </div>
 </div>
 </div>
-<p>The discrete version of a colormap can be used just like any other colormap.</p>
+<p>컬러맵의 이산 버전은 다른 컬러맵과 마찬가지로 사용할 수 있습니다.</p>
 </section>
 </section>
-<section id="example-handwritten-digits" class="level2">
-<h2 class="anchored" data-anchor-id="example-handwritten-digits">Example: Handwritten Digits</h2>
-<p>As an example of where this can be applied, let’s look at an interesting visualization of some handwritten digits from the digits dataset, included in Scikit-Learn; it consists of nearly 2,000 <span class="math inline">\(8 \times 8\)</span> thumbnails showing various handwritten digits.</p>
-<p>For now, let’s start by downloading the digits dataset and visualizing several of the example images with <code>plt.imshow</code> (see the following figure):</p>
+<section id="예-손으로-쓴-숫자" class="level2">
+<h2 class="anchored" data-anchor-id="예-손으로-쓴-숫자">예: 손으로 쓴 숫자</h2>
+<p>이것이 적용될 수 있는 곳에 대한 예로 Scikit-Learn에 포함된 숫자 데이터 세트의 일부 손으로 쓴 숫자에 대한 흥미로운 시각화를 살펴보겠습니다. 이는 다양한 손글씨 숫자를 보여주는 약 2,000개의 <span class="math inline">\(8 \times 8\)</span> 썸네일로 구성됩니다.</p>
+<p>지금은 숫자 데이터세트를 다운로드하고 <code>plt.imshow</code>를 사용하여 여러 예시 이미지를 시각화하는 것부터 시작해 보겠습니다(다음 그림 참조).</p>
 <div id="cell-25" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="11">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co"># load images of the digits 0 through 5 and visualize several of them</span></span>
 <span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.datasets <span class="im">import</span> load_digits</span>
@@ -801,15 +801,15 @@ window.Quarto = {
 </div>
 </div>
 </div>
-<p>Because each digit is defined by the hue of its 64 pixels, we can consider each digit to be a point lying in 64-dimensional space: each dimension represents the brightness of one pixel. Visualizing such high-dimensional data can be difficult, but one way to approach this task is to use a <em>dimensionality reduction</em> technique such as manifold learning to reduce the dimensionality of the data while maintaining the relationships of interest. Dimensionality reduction is an example of unsupervised machine learning, and we will discuss it in more detail in <a href="../notebooks/05.01-What-Is-Machine-Learning.html">What Is Machine Learning?</a>.</p>
-<p>Deferring the discussion of these details, let’s take a look at a two-dimensional manifold learning projection of the digits data (see <a href="../notebooks/05.10-Manifold-Learning.html">In-Depth: Manifold Learning</a> for details):</p>
+<p>각 숫자는 64픽셀의 색상으로 정의되므로 각 숫자를 64차원 공간에 있는 점으로 간주할 수 있습니다. 각 차원은 한 픽셀의 밝기를 나타냅니다. 이러한 고차원 데이터를 시각화하는 것은 어려울 수 있지만 이 작업에 접근하는 한 가지 방법은 매니폴드 학습과 같은 <em>차원 축소</em> 기술을 사용하여 관심 관계를 유지하면서 데이터의 차원을 줄이는 것입니다. 차원 축소는 비지도 머신러닝의 한 예이며, <a href="../notebooks/05.01-What-Is-Machine-Learning.html">머신러닝이란?</a>에서 자세히 논의하겠습니다.</p>
+<p>이러한 세부 사항에 대한 논의는 잠시 미루고 숫자 데이터의 2차원 다양체 학습 투영을 살펴보겠습니다(자세한 내용은 <a href="../notebooks/05.10-Manifold-Learning.html">심층: 다양체 학습</a> 참조).</p>
 <div id="cell-27" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="12">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># project the digits into 2 dimensions using Isomap</span></span>
 <span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.manifold <span class="im">import</span> Isomap</span>
 <span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>iso <span class="op">=</span> Isomap(n_components<span class="op">=</span><span class="dv">2</span>, n_neighbors<span class="op">=</span><span class="dv">15</span>)</span>
 <span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>projection <span class="op">=</span> iso.fit_transform(digits.data)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<p>We’ll use our discrete colormap to view the results, setting the <code>ticks</code> and <code>clim</code> to improve the aesthetics of the resulting colorbar (see the following figure):</p>
+<p>이산 컬러맵을 사용하여 결과를 확인하고 ‘ticks’ 및 ’clim’을 설정하여 결과 컬러바의 미적 특성을 개선하겠습니다(다음 그림 참조).</p>
 <div id="cell-29" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="13">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co"># plot the results</span></span>
 <span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>plt.scatter(projection[:, <span class="dv">0</span>], projection[:, <span class="dv">1</span>], lw<span class="op">=</span><span class="fl">0.1</span>,</span>
@@ -824,8 +824,8 @@ window.Quarto = {
 </div>
 </div>
 </div>
-<p>The projection also gives us some insights on the relationships within the dataset: for example, the ranges of 2 and 3 nearly overlap in this projection, indicating that some handwritten 2s and 3s are difficult to distinguish, and may be more likely to be confused by an automated classification algorithm. Other values, like 0 and 1, are more distantly separated, and may be less likely to be confused.</p>
-<p>We’ll return to manifold learning and digit classification in <a href="../notebooks/05.00-Machine-Learning.html">Part 5</a>.</p>
+<p>예측은 또한 데이터 세트 내의 관계에 대한 몇 가지 통찰력을 제공합니다. 예를 들어 이 예측에서 2와 3의 범위가 거의 겹쳐서 일부 손으로 쓴 2와 3은 구별하기 어렵고 자동화된 분류 알고리즘에 의해 혼동될 가능성이 더 높음을 나타냅니다. 0과 1과 같은 다른 값은 더 멀리 떨어져 있으므로 혼동될 가능성이 더 낮습니다.</p>
+<p><a href="../notebooks/05.00-Machine-Learning.html">5부</a>에서 다양체 학습 및 숫자 분류로 돌아가겠습니다.</p>
 
 
 </section>
@@ -1233,13 +1233,13 @@ window.Quarto = {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../notebooks/04.06-Customizing-Legends.html" class="pagination-link" aria-label="Customizing Plot Legends">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Customizing Plot Legends</span></span>
+      <a href="../notebooks/04.06-Customizing-Legends.html" class="pagination-link" aria-label="플롯 범례 사용자 정의">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">플롯 범례 사용자 정의</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../notebooks/04.08-Multiple-Subplots.html" class="pagination-link" aria-label="Multiple Subplots">
-        <span class="nav-page-text"><span class="chapter-title">Multiple Subplots</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../notebooks/04.08-Multiple-Subplots.html" class="pagination-link" aria-label="다중 서브플롯">
+        <span class="nav-page-text"><span class="chapter-title">다중 서브플롯</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

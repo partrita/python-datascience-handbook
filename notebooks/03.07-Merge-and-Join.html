@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Combining Datasets: merge and join – 파이썬 데이터 사이언스 핸드북</title>
+<title>데이터세트 결합: 병합 및 조인 – 파이썬 데이터 사이언스 핸드북</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -77,7 +77,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-3778d3e438078121318a23701f9f68bb.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-803ae4f7a8810f475153517dc3c4ebae.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -121,7 +121,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../notebooks/03.00-Introduction-to-Pandas.html">Pandas를 이용한 데이터 조작</a></li><li class="breadcrumb-item"><a href="../notebooks/03.07-Merge-and-Join.html"><span class="chapter-title">Combining Datasets: merge and join</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../notebooks/03.00-Introduction-to-Pandas.html">Pandas를 이용한 데이터 조작</a></li><li class="breadcrumb-item"><a href="../notebooks/03.07-Merge-and-Join.html"><span class="chapter-title">데이터세트 결합: 병합 및 조인</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -168,7 +168,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/01.00-IPython-Beyond-Normal-Python.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Jupyter: 일반 Python을 넘어서</span></a>
+  <a href="../notebooks/01.00-IPython-Beyond-Normal-Python.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Jupyter: 일반 파이썬(Python)을 넘어서</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -198,17 +198,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/01.06-Errors-and-Debugging.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Errors and Debugging</span></a>
+  <a href="../notebooks/01.06-Errors-and-Debugging.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">오류 및 디버깅</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/01.07-Timing-and-Profiling.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Profiling and Timing Code</span></a>
+  <a href="../notebooks/01.07-Timing-and-Profiling.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">프로파일링 및 타이밍 코드</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/01.08-More-IPython-Resources.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">More IPython Resources</span></a>
+  <a href="../notebooks/01.08-More-IPython-Resources.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">추가 IPython 리소스</span></a>
   </div>
 </li>
       </ul>
@@ -224,52 +224,52 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.00-Introduction-to-NumPy.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Introduction to NumPy</span></a>
+  <a href="../notebooks/02.00-Introduction-to-NumPy.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">NumPy 소개</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.01-Understanding-Data-Types.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Understanding Data Types in Python</span></a>
+  <a href="../notebooks/02.01-Understanding-Data-Types.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">파이썬(Python)의 데이터 유형 이해</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.02-The-Basics-Of-NumPy-Arrays.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">The Basics of NumPy Arrays</span></a>
+  <a href="../notebooks/02.02-The-Basics-Of-NumPy-Arrays.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">NumPy 배열의 기본</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.03-Computation-on-arrays-ufuncs.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Computation on NumPy Arrays: Universal Functions</span></a>
+  <a href="../notebooks/02.03-Computation-on-arrays-ufuncs.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">NumPy 배열 계산: 범용 함수</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.04-Computation-on-arrays-aggregates.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Aggregations: min, max, and Everything in Between</span></a>
+  <a href="../notebooks/02.04-Computation-on-arrays-aggregates.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">집계: 최소, 최대 및 그 사이의 모든 것</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.05-Computation-on-arrays-broadcasting.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Computation on Arrays: Broadcasting</span></a>
+  <a href="../notebooks/02.05-Computation-on-arrays-broadcasting.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">배열 계산: 브로드캐스팅</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.06-Boolean-Arrays-and-Masks.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Comparisons, Masks, and Boolean Logic</span></a>
+  <a href="../notebooks/02.06-Boolean-Arrays-and-Masks.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">비교, 마스크 및 부울 논리</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.07-Fancy-Indexing.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Fancy Indexing</span></a>
+  <a href="../notebooks/02.07-Fancy-Indexing.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">멋진 인덱싱</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.08-Sorting.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Sorting Arrays</span></a>
+  <a href="../notebooks/02.08-Sorting.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">배열 정렬</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.09-Structured-Data-NumPy.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Structured Data: NumPy’s Structured Arrays</span></a>
+  <a href="../notebooks/02.09-Structured-Data-NumPy.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">구조화된 데이터: NumPy의 구조화된 배열</span></a>
   </div>
 </li>
       </ul>
@@ -285,72 +285,72 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.00-Introduction-to-Pandas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Data Manipulation with Pandas</span></a>
+  <a href="../notebooks/03.00-Introduction-to-Pandas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">팬더를 이용한 데이터 조작</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.01-Introducing-Pandas-Objects.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Introducing Pandas Objects</span></a>
+  <a href="../notebooks/03.01-Introducing-Pandas-Objects.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">판다스 객체 소개</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.02-Data-Indexing-and-Selection.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Data Indexing and Selection</span></a>
+  <a href="../notebooks/03.02-Data-Indexing-and-Selection.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">데이터 인덱싱 및 선택</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.03-Operations-in-Pandas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Operating on Data in Pandas</span></a>
+  <a href="../notebooks/03.03-Operations-in-Pandas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Pandas에서 데이터 작업</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.04-Missing-Values.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Handling Missing Data</span></a>
+  <a href="../notebooks/03.04-Missing-Values.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">누락된 데이터 처리</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.05-Hierarchical-Indexing.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Hierarchical Indexing</span></a>
+  <a href="../notebooks/03.05-Hierarchical-Indexing.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">계층적 인덱싱</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.06-Concat-And-Append.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Combining Datasets: concat and append</span></a>
+  <a href="../notebooks/03.06-Concat-And-Append.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">데이터세트 결합: 연결 및 추가</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.07-Merge-and-Join.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Combining Datasets: merge and join</span></a>
+  <a href="../notebooks/03.07-Merge-and-Join.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">데이터세트 결합: 병합 및 조인</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.08-Aggregation-and-Grouping.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Aggregation and Grouping</span></a>
+  <a href="../notebooks/03.08-Aggregation-and-Grouping.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">집계 및 그룹화</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.09-Pivot-Tables.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Pivot Tables</span></a>
+  <a href="../notebooks/03.09-Pivot-Tables.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">피벗 테이블</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.10-Working-With-Strings.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Vectorized String Operations</span></a>
+  <a href="../notebooks/03.10-Working-With-Strings.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">벡터화된 문자열 작업</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.11-Working-with-Time-Series.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Working with Time Series</span></a>
+  <a href="../notebooks/03.11-Working-with-Time-Series.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">시계열 작업</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.12-Performance-Eval-and-Query.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">High-Performance Pandas: eval and query</span></a>
+  <a href="../notebooks/03.12-Performance-Eval-and-Query.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">고성능 Pandas: 평가 및 쿼리</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.13-Further-Resources.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Further Resources</span></a>
+  <a href="../notebooks/03.13-Further-Resources.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">추가 리소스</span></a>
   </div>
 </li>
       </ul>
@@ -366,77 +366,77 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.00-Introduction-To-Matplotlib.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Visualization with Matplotlib</span></a>
+  <a href="../notebooks/04.00-Introduction-To-Matplotlib.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Matplotlib를 사용한 시각화</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.01-Simple-Line-Plots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Simple Line Plots</span></a>
+  <a href="../notebooks/04.01-Simple-Line-Plots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">간단한 선 도표</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.02-Simple-Scatter-Plots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Simple Scatter Plots</span></a>
+  <a href="../notebooks/04.02-Simple-Scatter-Plots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">단순 산점도</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.03-Errorbars.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Visualizing Uncertainties</span></a>
+  <a href="../notebooks/04.03-Errorbars.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">불확실성 시각화</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.04-Density-and-Contour-Plots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Density and Contour Plots</span></a>
+  <a href="../notebooks/04.04-Density-and-Contour-Plots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">밀도 및 등고선 플롯</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.05-Histograms-and-Binnings.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Histograms, Binnings, and Density</span></a>
+  <a href="../notebooks/04.05-Histograms-and-Binnings.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">히스토그램, 비닝 및 밀도</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.06-Customizing-Legends.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Customizing Plot Legends</span></a>
+  <a href="../notebooks/04.06-Customizing-Legends.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">플롯 범례 사용자 정의</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.07-Customizing-Colorbars.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Customizing Colorbars</span></a>
+  <a href="../notebooks/04.07-Customizing-Colorbars.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">컬러바 사용자 정의</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.08-Multiple-Subplots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Multiple Subplots</span></a>
+  <a href="../notebooks/04.08-Multiple-Subplots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">다중 서브플롯</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.09-Text-and-Annotation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Text and Annotation</span></a>
+  <a href="../notebooks/04.09-Text-and-Annotation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">텍스트 및 주석</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.10-Customizing-Ticks.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Customizing Ticks</span></a>
+  <a href="../notebooks/04.10-Customizing-Ticks.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">눈금 사용자 정의</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.11-Settings-and-Stylesheets.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Customizing Matplotlib: Configurations and Stylesheets</span></a>
+  <a href="../notebooks/04.11-Settings-and-Stylesheets.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Matplotlib 사용자 정의: 구성 및 스타일시트</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.12-Three-Dimensional-Plotting.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Three-Dimensional Plotting in Matplotlib</span></a>
+  <a href="../notebooks/04.12-Three-Dimensional-Plotting.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Matplotlib의 3차원 플로팅</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.14-Visualization-With-Seaborn.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Visualization with Seaborn</span></a>
+  <a href="../notebooks/04.14-Visualization-With-Seaborn.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Seaborn을 이용한 시각화</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.15-Further-Resources.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Further Resources</span></a>
+  <a href="../notebooks/04.15-Further-Resources.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">추가 리소스</span></a>
   </div>
 </li>
       </ul>
@@ -452,82 +452,82 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.00-Machine-Learning.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Machine Learning</span></a>
+  <a href="../notebooks/05.00-Machine-Learning.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">머신러닝</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.01-What-Is-Machine-Learning.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">What Is Machine Learning?</span></a>
+  <a href="../notebooks/05.01-What-Is-Machine-Learning.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">머신러닝이란?</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.02-Introducing-Scikit-Learn.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Introducing Scikit-Learn</span></a>
+  <a href="../notebooks/05.02-Introducing-Scikit-Learn.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Scikit-Learn 소개</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.03-Hyperparameters-and-Model-Validation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Hyperparameters and Model Validation</span></a>
+  <a href="../notebooks/05.03-Hyperparameters-and-Model-Validation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">하이퍼파라미터 및 모델 검증</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.04-Feature-Engineering.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Feature Engineering</span></a>
+  <a href="../notebooks/05.04-Feature-Engineering.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">기능 엔지니어링</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.05-Naive-Bayes.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Naive Bayes Classification</span></a>
+  <a href="../notebooks/05.05-Naive-Bayes.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 나이브 베이즈 분류</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.06-Linear-Regression.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Linear Regression</span></a>
+  <a href="../notebooks/05.06-Linear-Regression.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 선형 회귀</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.07-Support-Vector-Machines.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Support Vector Machines</span></a>
+  <a href="../notebooks/05.07-Support-Vector-Machines.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 서포트 벡터 머신</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.08-Random-Forests.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Decision Trees and Random Forests</span></a>
+  <a href="../notebooks/05.08-Random-Forests.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 의사결정 트리 및 랜덤 포레스트</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.09-Principal-Component-Analysis.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Principal Component Analysis</span></a>
+  <a href="../notebooks/05.09-Principal-Component-Analysis.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 주성분 분석</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.10-Manifold-Learning.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Manifold Learning</span></a>
+  <a href="../notebooks/05.10-Manifold-Learning.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 다양한 학습</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.11-K-Means.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: k-Means Clustering</span></a>
+  <a href="../notebooks/05.11-K-Means.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: k-평균 클러스터링</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.12-Gaussian-Mixtures.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Gaussian Mixture Models</span></a>
+  <a href="../notebooks/05.12-Gaussian-Mixtures.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 가우스 혼합 모델</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.13-Kernel-Density-Estimation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Kernel Density Estimation</span></a>
+  <a href="../notebooks/05.13-Kernel-Density-Estimation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 커널 밀도 추정</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.14-Image-Features.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Application: A Face Detection Pipeline</span></a>
+  <a href="../notebooks/05.14-Image-Features.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">응용 분야: 얼굴 감지 파이프라인</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.15-Learning-More.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Further Machine Learning Resources</span></a>
+  <a href="../notebooks/05.15-Learning-More.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">추가 머신러닝(Machine Learning) 리소스</span></a>
   </div>
 </li>
       </ul>
@@ -543,7 +543,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/06.00-Figure-Code.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Appendix: Figure Code</span></a>
+  <a href="../notebooks/06.00-Figure-Code.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">부록: 그림 코드</span></a>
   </div>
 </li>
       </ul>
@@ -558,31 +558,31 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#relational-algebra" id="toc-relational-algebra" class="nav-link active" data-scroll-target="#relational-algebra">Relational Algebra</a></li>
-  <li><a href="#categories-of-joins" id="toc-categories-of-joins" class="nav-link" data-scroll-target="#categories-of-joins">Categories of Joins</a>
+  <li><a href="#관계-대수학" id="toc-관계-대수학" class="nav-link active" data-scroll-target="#관계-대수학">관계 대수학</a></li>
+  <li><a href="#조인-카테고리" id="toc-조인-카테고리" class="nav-link" data-scroll-target="#조인-카테고리">조인 카테고리</a>
   <ul class="collapse">
-  <li><a href="#one-to-one-joins" id="toc-one-to-one-joins" class="nav-link" data-scroll-target="#one-to-one-joins">One-to-One Joins</a></li>
-  <li><a href="#many-to-one-joins" id="toc-many-to-one-joins" class="nav-link" data-scroll-target="#many-to-one-joins">Many-to-One Joins</a></li>
-  <li><a href="#many-to-many-joins" id="toc-many-to-many-joins" class="nav-link" data-scroll-target="#many-to-many-joins">Many-to-Many Joins</a></li>
+  <li><a href="#일대일-조인" id="toc-일대일-조인" class="nav-link" data-scroll-target="#일대일-조인">일대일 조인</a></li>
+  <li><a href="#다대일-조인" id="toc-다대일-조인" class="nav-link" data-scroll-target="#다대일-조인">다대일 조인</a></li>
+  <li><a href="#다대다-조인" id="toc-다대다-조인" class="nav-link" data-scroll-target="#다대다-조인">다대다 조인</a></li>
   </ul></li>
-  <li><a href="#specification-of-the-merge-key" id="toc-specification-of-the-merge-key" class="nav-link" data-scroll-target="#specification-of-the-merge-key">Specification of the Merge Key</a>
+  <li><a href="#병합-키-사양" id="toc-병합-키-사양" class="nav-link" data-scroll-target="#병합-키-사양">병합 키 사양</a>
   <ul class="collapse">
-  <li><a href="#the-on-keyword" id="toc-the-on-keyword" class="nav-link" data-scroll-target="#the-on-keyword">The on Keyword</a></li>
-  <li><a href="#the-left_on-and-right_on-keywords" id="toc-the-left_on-and-right_on-keywords" class="nav-link" data-scroll-target="#the-left_on-and-right_on-keywords">The left_on and right_on Keywords</a></li>
-  <li><a href="#the-left_index-and-right_index-keywords" id="toc-the-left_index-and-right_index-keywords" class="nav-link" data-scroll-target="#the-left_index-and-right_index-keywords">The left_index and right_index Keywords</a></li>
+  <li><a href="#on-키워드" id="toc-on-키워드" class="nav-link" data-scroll-target="#on-키워드">on 키워드</a></li>
+  <li><a href="#left_on-및-right_on-키워드" id="toc-left_on-및-right_on-키워드" class="nav-link" data-scroll-target="#left_on-및-right_on-키워드">left_on 및 right_on 키워드</a></li>
+  <li><a href="#left_index-및-right_index-키워드" id="toc-left_index-및-right_index-키워드" class="nav-link" data-scroll-target="#left_index-및-right_index-키워드">left_index 및 right_index 키워드</a></li>
   </ul></li>
-  <li><a href="#specifying-set-arithmetic-for-joins" id="toc-specifying-set-arithmetic-for-joins" class="nav-link" data-scroll-target="#specifying-set-arithmetic-for-joins">Specifying Set Arithmetic for Joins</a></li>
-  <li><a href="#overlapping-column-names-the-suffixes-keyword" id="toc-overlapping-column-names-the-suffixes-keyword" class="nav-link" data-scroll-target="#overlapping-column-names-the-suffixes-keyword">Overlapping Column Names: The suffixes Keyword</a></li>
-  <li><a href="#example-us-states-data" id="toc-example-us-states-data" class="nav-link" data-scroll-target="#example-us-states-data">Example: US States Data</a></li>
+  <li><a href="#조인을-위한-집합-산술-지정하기" id="toc-조인을-위한-집합-산술-지정하기" class="nav-link" data-scroll-target="#조인을-위한-집합-산술-지정하기">조인을 위한 집합 산술 지정하기</a></li>
+  <li><a href="#겹치는-열-이름-접미사-키워드" id="toc-겹치는-열-이름-접미사-키워드" class="nav-link" data-scroll-target="#겹치는-열-이름-접미사-키워드">겹치는 열 이름: 접미사 키워드</a></li>
+  <li><a href="#예-미국-주-데이터" id="toc-예-미국-주-데이터" class="nav-link" data-scroll-target="#예-미국-주-데이터">예: 미국 주 데이터</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../notebooks/03.00-Introduction-to-Pandas.html">Pandas를 이용한 데이터 조작</a></li><li class="breadcrumb-item"><a href="../notebooks/03.07-Merge-and-Join.html"><span class="chapter-title">Combining Datasets: merge and join</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../notebooks/03.00-Introduction-to-Pandas.html">Pandas를 이용한 데이터 조작</a></li><li class="breadcrumb-item"><a href="../notebooks/03.07-Merge-and-Join.html"><span class="chapter-title">데이터세트 결합: 병합 및 조인</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-title">Combining Datasets: merge and join</span></h1>
+<h1 class="title"><span class="chapter-title">데이터세트 결합: 병합 및 조인</span></h1>
 </div>
 
 
@@ -599,8 +599,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>One important feature offered by Pandas is its high-performance, in-memory join and merge operations, which you may be familiar with if you have ever worked with databases. The main interface for this is the <code>pd.merge</code> function, and we’ll see a few examples of how this can work in practice.</p>
-<p>For convenience, we will again define the <code>display</code> function from the previous chapter after the usual imports:</p>
+<p>Pandas가 제공하는 중요한 기능 중 하나는 고성능, 메모리 제 조인 및 병합 작업으로, 데이터베이스 작업을 해 본 적이 있다면 익숙할 것입니다. 이에 대한 주요 인터페이스는 <code>pd.merge</code> 함수이며 이것이 실제로 어떻게 작동하는지에 대한 몇 가지 예를 살펴보겠습니다.</p>
+<p>편의상 일반적인 import 이후 이전 장의 <code>display</code> 함수를 다시 정의하겠습니다.</p>
 <div id="cell-2" class="cell" data-tags="[]" data-execution_count="1">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
@@ -621,17 +621,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="st">'</span><span class="ch">\n\n</span><span class="st">'</span>.join(a <span class="op">+</span> <span class="st">'</span><span class="ch">\n</span><span class="st">'</span> <span class="op">+</span> <span class="bu">repr</span>(<span class="bu">eval</span>(a))</span>
 <span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>                           <span class="cf">for</span> a <span class="kw">in</span> <span class="va">self</span>.args)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<section id="relational-algebra" class="level2">
-<h2 class="anchored" data-anchor-id="relational-algebra">Relational Algebra</h2>
-<p>The behavior implemented in <code>pd.merge</code> is a subset of what is known as <em>relational algebra</em>, which is a formal set of rules for manipulating relational data that forms the conceptual foundation of operations available in most databases. The strength of the relational algebra approach is that it proposes several fundamental operations, which become the building blocks of more complicated operations on any dataset. With this lexicon of fundamental operations implemented efficiently in a database or other program, a wide range of fairly complicated composite operations can be performed.</p>
-<p>Pandas implements several of these fundamental building blocks in the <code>pd.merge</code> function and the related <code>join</code> method of <code>Series</code> and <code>DataFrame</code> objects. As you will see, these let you efficiently link data from different sources.</p>
+<section id="관계-대수학" class="level2">
+<h2 class="anchored" data-anchor-id="관계-대수학">관계 대수학</h2>
+<p>’pd.merge’에 구현된 동작은 <em>관계 대수</em>라고 알려진 것의 하위 집합입니다. 이는 대부분의 데이터베이스에서 사용할 수 있는 작업의 개념적 기초를 형성하는 관계형 데이터를 조작하기 위한 공식 규칙 세트입니다. 관계형 대수 접근 방식의 강점은 모든 데이터 세트에서 더 복잡한 작업의 구성 요소가 되는 몇 가지 기본 작업을 제안한다는 것입니다. 데이터베이스나 기타 프로그램에서 효율적으로 구현된 기본 작업 어휘를 사용하면 상당히 복잡한 복합 작업을 광범위하게 수행할 수 있습니다.</p>
+<p>Pandas는 <code>pd.merge</code> 함수와 <code>Series</code> 및 <code>DataFrame</code> 개체의 관련 <code>join</code> 메서드에서 이러한 기본 구성 요소 중 몇 가지를 구현합니다. 보시다시피 이를 통해 다양한 소스의 데이터를 효율적으로 연결할 수 있습니다.</p>
 </section>
-<section id="categories-of-joins" class="level2">
-<h2 class="anchored" data-anchor-id="categories-of-joins">Categories of Joins</h2>
-<p>The <code>pd.merge</code> function implements a number of types of joins: <em>one-to-one</em>, <em>many-to-one</em>, and <em>many-to-many</em>. All three types of joins are accessed via an identical call to the <code>pd.merge</code> interface; the type of join performed depends on the form of the input data. We’ll start with some simple examples of the three types of merges, and discuss detailed options a bit later.</p>
-<section id="one-to-one-joins" class="level3">
-<h3 class="anchored" data-anchor-id="one-to-one-joins">One-to-One Joins</h3>
-<p>Perhaps the simplest type of merge is the one-to-one join, which is in many ways similar to the column-wise concatenation you saw in <a href="../notebooks/03.06-Concat-And-Append.html">Combining Datasets: Concat &amp; Append</a>. As a concrete example, consider the following two <code>DataFrame</code> objects, which contain information on several employees in a company:</p>
+<section id="조인-카테고리" class="level2">
+<h2 class="anchored" data-anchor-id="조인-카테고리">조인 카테고리</h2>
+<p><code>pd.merge</code> 함수는 <em>일대일</em>, <em>다대일</em>, <em>다대다</em> 등 다양한 유형의 조인을 구현합니다. 세 가지 유형의 조인 모두 <code>pd.merge</code> 인터페이스에 대한 동일한 호출을 통해 액세스됩니다. 수행되는 조인 유형은 입력 데이터의 형식에 따라 다릅니다. 세 가지 유형의 병합에 대한 몇 가지 간단한 예부터 시작하고 나중에 자세한 옵션에 대해 논의하겠습니다.</p>
+<section id="일대일-조인" class="level3">
+<h3 class="anchored" data-anchor-id="일대일-조인">일대일 조인</h3>
+<p>아마도 가장 간단한 병합 유형은 일대일 조인일 것입니다. 이는 <a href="../notebooks/03.06-Concat-And-Append.html">데이터 세트 결합: 연결 및 추가</a>에서 본 열별 연결과 여러 면에서 유사합니다. 구체적인 예로 회사의 여러 직원에 대한 정보가 포함된 다음 두 개의 ‘DataFrame’ 객체를 고려해보세요.</p>
 <div id="cell-6" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="2">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>df1 <span class="op">=</span> pd.DataFrame({<span class="st">'employee'</span>: [<span class="st">'Bob'</span>, <span class="st">'Jake'</span>, <span class="st">'Lisa'</span>, <span class="st">'Sue'</span>],</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>                    <span class="st">'group'</span>: [<span class="st">'Accounting'</span>, <span class="st">'Engineering'</span>,</span>
@@ -718,7 +718,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     </div>
 </div>
 </div>
-<p>To combine this information into a single <code>DataFrame</code>, we can use the <code>pd.merge</code> function:</p>
+<p>이 정보를 단일 <code>DataFrame</code>으로 결합하려면 <code>pd.merge</code> 함수를 사용할 수 있습니다.</p>
 <div id="cell-8" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="3">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>df3 <span class="op">=</span> pd.merge(df1, df2)</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>df3</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -766,11 +766,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
-<p>The <code>pd.merge</code> function recognizes that each <code>DataFrame</code> has an <code>employee</code> column, and automatically joins using this column as a key. The result of the merge is a new <code>DataFrame</code> that combines the information from the two inputs. Notice that the order of entries in each column is not necessarily maintained: in this case, the order of the <code>employee</code> column differs between <code>df1</code> and <code>df2</code>, and the <code>pd.merge</code> function correctly accounts for this. Additionally, keep in mind that the merge in general discards the index, except in the special case of merges by index (see the <code>left_index</code> and <code>right_index</code> keywords, discussed momentarily).</p>
+<p><code>pd.merge</code> 함수는 각 <code>DataFrame</code>에 <code>employee</code> 열이 있음을 인식하고 이 열을 키로 사용하여 자동으로 조인합니다. 병합의 결과는 두 입력의 정보를 결합하는 새로운 ‘DataFrame’입니다. 각 열의 항목 순서가 반드시 유지되는 것은 아닙니다. 이 경우 <code>employee</code> 열의 순서는 <code>df1</code>과 <code>df2</code>에서 다르며 <code>pd.merge</code> 함수는 이를 올바르게 설명합니다. 또한 일반적으로 병합은 인덱스별 병합의 특별한 경우를 제외하고는 인덱스를 삭제한다는 점에 유의하세요(잠시 설명된 ’left_index’ 및 ‘right_index’ 키워드 참조).</p>
 </section>
-<section id="many-to-one-joins" class="level3">
-<h3 class="anchored" data-anchor-id="many-to-one-joins">Many-to-One Joins</h3>
-<p>Many-to-one joins are joins in which one of the two key columns contains duplicate entries. For the many-to-one case, the resulting <code>DataFrame</code> will preserve those duplicate entries as appropriate. Consider the following example of a many-to-one join:</p>
+<section id="다대일-조인" class="level3">
+<h3 class="anchored" data-anchor-id="다대일-조인">다대일 조인</h3>
+<p>다대일 조인은 두 개의 키 열 중 하나에 중복 항목이 포함된 조인입니다. 다대일 사례의 경우 결과 <code>DataFrame</code>은 중복 항목을 적절하게 유지합니다. 다대일 조인의 다음 예를 살펴보세요.</p>
 <div id="cell-12" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="4">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>df4 <span class="op">=</span> pd.DataFrame({<span class="st">'group'</span>: [<span class="st">'Accounting'</span>, <span class="st">'Engineering'</span>, <span class="st">'HR'</span>],</span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>                    <span class="st">'supervisor'</span>: [<span class="st">'Carly'</span>, <span class="st">'Guido'</span>, <span class="st">'Steve'</span>]})</span>
@@ -902,11 +902,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     </div>
 </div>
 </div>
-<p>The resulting <code>DataFrame</code> has an additional column with the “supervisor” information, where the information is repeated in one or more locations as required by the inputs.</p>
+<p>결과 <code>DataFrame</code>에는 ‘감독자’ 정보가 포함된 추가 열이 있으며, 여기서 정보는 입력에서 요구하는 대로 하나 이상의 위치에서 반복됩니다.</p>
 </section>
-<section id="many-to-many-joins" class="level3">
-<h3 class="anchored" data-anchor-id="many-to-many-joins">Many-to-Many Joins</h3>
-<p>Many-to-many joins may be a bit confusing conceptually, but are nevertheless well defined. If the key column in both the left and right arrays contains duplicates, then the result is a many-to-many merge. This will be perhaps most clear with a concrete example. Consider the following, where we have a <code>DataFrame</code> showing one or more skills associated with a particular group. By performing a many-to-many join, we can recover the skills associated with any individual person:</p>
+<section id="다대다-조인" class="level3">
+<h3 class="anchored" data-anchor-id="다대다-조인">다대다 조인</h3>
+<p>다대다 조인은 개념적으로 다소 혼란스러울 수 있지만 그럼에도 불구하고 잘 정의되어 있습니다. 왼쪽 및 오른쪽 배열의 키 열에 중복 항목이 포함된 경우 결과는 다대다 병합입니다. 이는 아마도 구체적인 예를 통해 가장 명확해질 것입니다. 특정 그룹과 관련된 하나 이상의 기술을 보여주는 <code>DataFrame</code>이 있는 다음을 고려해보세요. 다대다 조인을 수행하면 개인과 관련된 기술을 복구할 수 있습니다.</p>
 <div id="cell-16" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="5">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>df5 <span class="op">=</span> pd.DataFrame({<span class="st">'group'</span>: [<span class="st">'Accounting'</span>, <span class="st">'Accounting'</span>,</span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>                              <span class="st">'Engineering'</span>, <span class="st">'Engineering'</span>, <span class="st">'HR'</span>, <span class="st">'HR'</span>],</span>
@@ -1069,15 +1069,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     </div>
 </div>
 </div>
-<p>These three types of joins can be used with other Pandas tools to implement a wide array of functionality. But in practice, datasets are rarely as clean as the one we’re working with here. In the following section we’ll consider some of the options provided by <code>pd.merge</code> that enable you to tune how the join operations work.</p>
+<p>이 세 가지 유형의 조인을 다른 Pandas 도구와 함께 사용하여 다양한 기능을 구현할 수 있습니다. 그러나 실제로 데이터 세트는 여기서 작업하는 것만큼 깨끗하지 않습니다. 다음 섹션에서는 조인 작업의 작동 방식을 조정할 수 있도록 <code>pd.merge</code>에서 제공하는 일부 옵션을 고려할 것입니다.</p>
 </section>
 </section>
-<section id="specification-of-the-merge-key" class="level2">
-<h2 class="anchored" data-anchor-id="specification-of-the-merge-key">Specification of the Merge Key</h2>
-<p>We’ve already seen the default behavior of <code>pd.merge</code>: it looks for one or more matching column names between the two inputs, and uses this as the key. However, often the column names will not match so nicely, and <code>pd.merge</code> provides a variety of options for handling this.</p>
-<section id="the-on-keyword" class="level3">
-<h3 class="anchored" data-anchor-id="the-on-keyword">The on Keyword</h3>
-<p>Most simply, you can explicitly specify the name of the key column using the <code>on</code> keyword, which takes a column name or a list of column names:</p>
+<section id="병합-키-사양" class="level2">
+<h2 class="anchored" data-anchor-id="병합-키-사양">병합 키 사양</h2>
+<p>우리는 이미 <code>pd.merge</code>의 기본 동작을 살펴보았습니다. 두 입력 사이에서 일치하는 하나 이상의 열 이름을 찾고 이를 키로 사용합니다. 그러나 열 이름이 제대로 일치하지 않는 경우가 많으며 <code>pd.merge</code>는 이를 처리하기 위한 다양한 옵션을 제공합니다.</p>
+<section id="on-키워드" class="level3">
+<h3 class="anchored" data-anchor-id="on-키워드">on 키워드</h3>
+<p>가장 간단하게는 열 이름이나 열 이름 목록을 사용하는 ‘on’ 키워드를 사용하여 키 열의 이름을 명시적으로 지정할 수 있습니다.</p>
 <div id="cell-22" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="6">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>display(<span class="st">'df1'</span>, <span class="st">'df2'</span>, <span class="st">"pd.merge(df1, df2, on='employee')"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="6">
@@ -1202,11 +1202,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     </div>
 </div>
 </div>
-<p>This option works only if both the left and right <code>DataFrame</code>s have the specified column name.</p>
+<p>이 옵션은 왼쪽과 오른쪽 <code>DataFrame</code> 모두에 지정된 열 이름이 있는 경우에만 작동합니다.</p>
 </section>
-<section id="the-left_on-and-right_on-keywords" class="level3">
-<h3 class="anchored" data-anchor-id="the-left_on-and-right_on-keywords">The left_on and right_on Keywords</h3>
-<p>At times you may wish to merge two datasets with different column names; for example, we may have a dataset in which the employee name is labeled as “name” rather than “employee”. In this case, we can use the <code>left_on</code> and <code>right_on</code> keywords to specify the two column names:</p>
+<section id="left_on-및-right_on-키워드" class="level3">
+<h3 class="anchored" data-anchor-id="left_on-및-right_on-키워드">left_on 및 right_on 키워드</h3>
+<p>때로는 열 이름이 다른 두 개의 데이터세트를 병합하고 싶을 수도 있습니다. 예를 들어 직원 이름이 “직원”이 아닌 “이름”으로 레이블이 지정된 데이터세트가 있을 수 있습니다. 이 경우 <code>left_on</code> 및 <code>right_on</code> 키워드를 사용하여 두 열 이름을 지정할 수 있습니다.</p>
 <div id="cell-25" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="7">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>df3 <span class="op">=</span> pd.DataFrame({<span class="st">'name'</span>: [<span class="st">'Bob'</span>, <span class="st">'Jake'</span>, <span class="st">'Lisa'</span>, <span class="st">'Sue'</span>],</span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>                    <span class="st">'salary'</span>: [<span class="dv">70000</span>, <span class="dv">80000</span>, <span class="dv">120000</span>, <span class="dv">90000</span>]})</span>
@@ -1338,7 +1338,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     </div>
 </div>
 </div>
-<p>The result has a redundant column that we can drop if desired—for example, by using the <code>DataFrame.drop()</code> method:</p>
+<p>결과에는 원하는 경우 삭제할 수 있는 중복 열이 있습니다(예: <code>DataFrame.drop()</code> 메서드 사용).</p>
 <div id="cell-27" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="8">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>pd.merge(df1, df3, left_on<span class="op">=</span><span class="st">"employee"</span>, right_on<span class="op">=</span><span class="st">"name"</span>).drop(<span class="st">'name'</span>, axis<span class="op">=</span><span class="dv">1</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="8">
@@ -1386,9 +1386,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </section>
-<section id="the-left_index-and-right_index-keywords" class="level3">
-<h3 class="anchored" data-anchor-id="the-left_index-and-right_index-keywords">The left_index and right_index Keywords</h3>
-<p>Sometimes, rather than merging on a column, you would instead like to merge on an index. For example, your data might look like this:</p>
+<section id="left_index-및-right_index-키워드" class="level3">
+<h3 class="anchored" data-anchor-id="left_index-및-right_index-키워드">left_index 및 right_index 키워드</h3>
+<p>때로는 열을 병합하는 대신 인덱스를 병합하고 싶을 수도 있습니다. 예를 들어 데이터는 다음과 같을 수 있습니다.</p>
 <div id="cell-29" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="9">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>df1a <span class="op">=</span> df1.set_index(<span class="st">'employee'</span>)</span>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>df2a <span class="op">=</span> df2.set_index(<span class="st">'employee'</span>)</span>
@@ -1470,7 +1470,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     </div>
 </div>
 </div>
-<p>You can use the index as the key for merging by specifying the <code>left_index</code> and/or <code>right_index</code> flags in <code>pd.merge()</code>:</p>
+<p><code>pd.merge()</code>에 <code>left_index</code> 및/또는 <code>right_index</code> 플래그를 지정하여 인덱스를 병합용 키로 사용할 수 있습니다.</p>
 <div id="cell-31" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="10">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>display(<span class="st">'df1a'</span>, <span class="st">'df2a'</span>,</span>
 <span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>        <span class="st">"pd.merge(df1a, df2a, left_index=True, right_index=True)"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -1594,7 +1594,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     </div>
 </div>
 </div>
-<p>For convenience, Pandas includes the <code>DataFrame.join()</code> method, which performs an index-based merge without extra keywords:</p>
+<p>편의를 위해 Pandas에는 추가 키워드 없이 인덱스 기반 병합을 수행하는 <code>DataFrame.join()</code> 메서드가 포함되어 있습니다.</p>
 <div id="cell-33" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="11">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>df1a.join(df2a)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="11">
@@ -1641,7 +1641,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
-<p>If you’d like to mix indices and columns, you can combine <code>left_index</code> with <code>right_on</code> or <code>left_on</code> with <code>right_index</code> to get the desired behavior:</p>
+<p>인덱스와 열을 혼합하려면 <code>left_index</code>를 <code>right_on</code>과 결합하거나 <code>left_on</code>과 <code>right_index</code>를 결합하여 원하는 동작을 얻을 수 있습니다.</p>
 <div id="cell-35" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="12">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>display(<span class="st">'df1a'</span>, <span class="st">'df3'</span>, <span class="st">"pd.merge(df1a, df3, left_index=True, right_on='name')"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="12">
@@ -1765,12 +1765,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     </div>
 </div>
 </div>
-<p>All of these options also work with multiple indices and/or multiple columns; the interface for this behavior is very intuitive. For more information on this, see the <a href="http://pandas.pydata.org/pandas-docs/stable/merging.html">“Merge, Join, and Concatenate” section</a> of the Pandas documentation.</p>
+<p>이러한 옵션은 모두 여러 인덱스 및/또는 여러 열에서도 작동합니다. 이 동작에 대한 인터페이스는 매우 직관적입니다. 이에 대한 자세한 내용은 Pandas 설명서의 <a href="http://pandas.pydata.org/pandas-docs/stable/merging.html">“병합, 조인 및 연결” 섹션</a>을 참조하세요.</p>
 </section>
 </section>
-<section id="specifying-set-arithmetic-for-joins" class="level2">
-<h2 class="anchored" data-anchor-id="specifying-set-arithmetic-for-joins">Specifying Set Arithmetic for Joins</h2>
-<p>In all the preceding examples we have glossed over one important consideration in performing a join: the type of set arithmetic used in the join. This comes up when a value appears in one key column but not the other. Consider this example:</p>
+<section id="조인을-위한-집합-산술-지정하기" class="level2">
+<h2 class="anchored" data-anchor-id="조인을-위한-집합-산술-지정하기">조인을 위한 집합 산술 지정하기</h2>
+<p>이전의 모든 예에서 우리는 조인을 수행할 때 고려해야 할 한 가지 중요한 고려 사항, 즉 조인에 사용되는 집합 산술 유형을 간략하게 설명했습니다. 한 키 열에는 값이 나타나지만 다른 키 열에는 나타나지 않는 경우에 발생합니다. 다음 예를 고려하십시오.</p>
 <div id="cell-39" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="13">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>df6 <span class="op">=</span> pd.DataFrame({<span class="st">'name'</span>: [<span class="st">'Peter'</span>, <span class="st">'Paul'</span>, <span class="st">'Mary'</span>],</span>
 <span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>                    <span class="st">'food'</span>: [<span class="st">'fish'</span>, <span class="st">'beans'</span>, <span class="st">'bread'</span>]},</span>
@@ -1868,7 +1868,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     </div>
 </div>
 </div>
-<p>Here we have merged two datasets that have only a single “name” entry in common: Mary. By default, the result contains the <em>intersection</em> of the two sets of inputs; this is what is known as an <em>inner join</em>. We can specify this explicitly using the <code>how</code> keyword, which defaults to <code>"inner"</code>:</p>
+<p>여기서는 공통적으로 “이름” 항목이 하나만 있는 두 개의 데이터세트(Mary)를 병합했습니다. 기본적으로 결과에는 두 입력 세트의 <em>교차점</em>이 포함됩니다. 이것이 <em>내부 조인</em>이라고 알려져 있습니다. 기본값은 <code>"inner"</code>인 <code>how</code> 키워드를 사용하여 이를 명시적으로 지정할 수 있습니다.</p>
 <div id="cell-41" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="14">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>pd.merge(df6, df7, how<span class="op">=</span><span class="st">'inner'</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="14">
@@ -1897,7 +1897,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
-<p>Other options for the <code>how</code> keyword are <code>'outer'</code>, <code>'left'</code>, and <code>'right'</code>. An <em>outer join</em> returns a join over the union of the input columns, and fills in all missing values with NAs:</p>
+<p><code>how</code> 키워드에 대한 다른 옵션은 <code>'outer'</code>, <code>'left'</code> 및 <code>'right'</code>입니다. <em>외부 조인</em>은 입력 열의 합집합에 대한 조인을 반환하고 누락된 모든 값을 NA로 채웁니다.</p>
 <div id="cell-43" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="15">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>display(<span class="st">'df6'</span>, <span class="st">'df7'</span>, <span class="st">"pd.merge(df6, df7, how='outer')"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="15">
@@ -2007,7 +2007,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     </div>
 </div>
 </div>
-<p>The <em>left join</em> and <em>right join</em> return joins over the left entries and right entries, respectively. For example:</p>
+<p><em>왼쪽 조인</em>과 <em>오른쪽 조인</em>은 각각 왼쪽 항목과 오른쪽 항목에 대한 조인을 반환합니다. 예를 들어:</p>
 <div id="cell-45" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="16">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>display(<span class="st">'df6'</span>, <span class="st">'df7'</span>, <span class="st">"pd.merge(df6, df7, how='left')"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="16">
@@ -2111,12 +2111,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     </div>
 </div>
 </div>
-<p>The output rows now correspond to the entries in the left input. Using <code>how='right'</code> works in a similar manner.</p>
-<p>All of these options can be applied straightforwardly to any of the preceding join types.</p>
+<p>이제 출력 행은 왼쪽 입력의 항목에 해당합니다. 사용 <code>how='right'</code>도 비슷한 방식으로 작동합니다.</p>
+<p>이러한 옵션은 모두 이전 조인 유형에 직접 적용할 수 있습니다.</p>
 </section>
-<section id="overlapping-column-names-the-suffixes-keyword" class="level2">
-<h2 class="anchored" data-anchor-id="overlapping-column-names-the-suffixes-keyword">Overlapping Column Names: The suffixes Keyword</h2>
-<p>Last, you may end up in a case where your two input <code>DataFrame</code>s have conflicting column names. Consider this example:</p>
+<section id="겹치는-열-이름-접미사-키워드" class="level2">
+<h2 class="anchored" data-anchor-id="겹치는-열-이름-접미사-키워드">겹치는 열 이름: 접미사 키워드</h2>
+<p>마지막으로 두 입력 <code>DataFrame</code>의 열 이름이 충돌하는 경우가 발생할 수 있습니다. 다음 예를 고려하십시오.</p>
 <div id="cell-49" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="17">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>df8 <span class="op">=</span> pd.DataFrame({<span class="st">'name'</span>: [<span class="st">'Bob'</span>, <span class="st">'Jake'</span>, <span class="st">'Lisa'</span>, <span class="st">'Sue'</span>],</span>
 <span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>                    <span class="st">'rank'</span>: [<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>]})</span>
@@ -2245,7 +2245,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     </div>
 </div>
 </div>
-<p>Because the output would have two conflicting column names, the <code>merge</code> function automatically appends the suffixes <code>_x</code> and <code>_y</code> to make the output columns unique. If these defaults are inappropriate, it is possible to specify a custom suffix using the <code>suffixes</code> keyword:</p>
+<p>출력에는 두 개의 충돌하는 열 이름이 있기 때문에 <code>merge</code> 함수는 출력 열을 고유하게 만들기 위해 자동으로 접미사 ’_x’ 및 ’_y’를 추가합니다. 이러한 기본값이 적절하지 않은 경우 <code>suffixes</code> 키워드를 사용하여 사용자 정의 접미사를 지정할 수 있습니다:</p>
 <div id="cell-51" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="18">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>pd.merge(df8, df9, on<span class="op">=</span><span class="st">"name"</span>, suffixes<span class="op">=</span>[<span class="st">"_L"</span>, <span class="st">"_R"</span>])</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="18">
@@ -2292,12 +2292,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
-<p>These suffixes work in any of the possible join patterns, and also work if there are multiple overlapping columns.</p>
-<p>For more information on these patterns, see <a href="../notebooks/03.08-Aggregation-and-Grouping.html">Aggregation and Grouping</a>, where we dive a bit deeper into relational algebra. Also see the <a href="http://pandas.pydata.org/pandas-docs/stable/merging.html">“Merge, Join, Concatenate and Compare” section</a> of the Pandas documentation for further discussion of these topics.</p>
+<p>이러한 접미사는 가능한 모든 조인 패턴에서 작동하며 여러 개의 겹치는 열이 있는 경우에도 작동합니다.</p>
+<p>이러한 패턴에 대한 자세한 내용은 <a href="../notebooks/03.08-Aggregation-and-Grouping.html">집계 및 그룹화</a>를 참조하세요. 여기에서 관계형 대수학에 대해 좀 더 자세히 알아살펴볼 수 있습니다. 또한 이러한 주제에 대한 추가 논의는 Pandas 문서의 <a href="http://pandas.pydata.org/pandas-docs/stable/merging.html">“병합, 결합, 연결 및 비교” 섹션</a>을 참조하세요.</p>
 </section>
-<section id="example-us-states-data" class="level2">
-<h2 class="anchored" data-anchor-id="example-us-states-data">Example: US States Data</h2>
-<p>Merge and join operations come up most often when combining data from different sources. Here we will consider an example of some data about US states and their populations. The data files can be found at <a href="http://github.com/jakevdp/data-USstates">http://github.com/jakevdp/data-USstates</a>:</p>
+<section id="예-미국-주-데이터" class="level2">
+<h2 class="anchored" data-anchor-id="예-미국-주-데이터">예: 미국 주 데이터</h2>
+<p>병합 및 조인 작업은 서로 다른 소스의 데이터를 결합할 때 가장 자주 발생합니다. 여기서는 미국 주와 그 인구에 대한 일부 데이터의 예를 살펴보겠습니다. 데이터 파일은 <a href="http://github.com/jakevdp/data-USstates">http://github.com/jakevdp/data-USstates</a>에서 찾을 수 있습니다.</p>
 <div id="cell-55" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="19">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Following are commands to download the data</span></span>
 <span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a><span class="co"># repo = "https://raw.githubusercontent.com/jakevdp/data-USstates/master"</span></span>
@@ -2305,7 +2305,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a><span class="co"># !cd data &amp;&amp; curl -O {repo}/state-areas.csv</span></span>
 <span id="cb19-5"><a href="#cb19-5" aria-hidden="true" tabindex="-1"></a><span class="co"># !cd data &amp;&amp; curl -O {repo}/state-abbrevs.csv</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<p>Let’s take a look at the three datasets, using the Pandas <code>read_csv</code> function:</p>
+<p>Pandas <code>read_csv</code> 함수를 사용하여 세 가지 데이터세트를 살펴보겠습니다.</p>
 <div id="cell-57" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="20">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb20"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>pop <span class="op">=</span> pd.read_csv(<span class="st">'data/state-population.csv'</span>)</span>
 <span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>areas <span class="op">=</span> pd.read_csv(<span class="st">'data/state-areas.csv'</span>)</span>
@@ -2456,8 +2456,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     </div>
 </div>
 </div>
-<p>Given this information, say we want to compute a relatively straightforward result: rank US states and territories by their 2010 population density. We clearly have the data here to find this result, but we’ll have to combine the datasets to do so.</p>
-<p>We’ll start with a many-to-one merge that will give us the full state names within the population <code>DataFrame</code>. We want to merge based on the <code>state/region</code> column of <code>pop</code> and the <code>abbreviation</code> column of <code>abbrevs</code>. We’ll use <code>how='outer'</code> to make sure no data is thrown away due to mismatched labels:</p>
+<p>이 정보가 주어지면 상대적으로 간단한 결과를 계산한다고 가정해 보겠습니다. 즉, 2010년 인구 밀도를 기준으로 미국 주와 지역의 순위를 매깁니다. 이 결과를 찾기 위한 데이터가 분명히 여기에 있지만 그렇게 하려면 데이터 세트를 결합해야 합니다.</p>
+<p>인구 <code>DataFrame</code> 내의 전체 상태 이름을 제공하는 다대일 병합부터 시작하겠습니다. <code>pop</code>의 <code>state/region</code> 열과 <code>abbrevs</code>의 <code>abbreviation</code> 열을 기준으로 병합하려고 합니다. 일치하지 않는 레이블로 인해 데이터가 삭제되지 않도록 <code>how='outer'</code>를 사용합니다.</p>
 <div id="cell-59" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="21">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>merged <span class="op">=</span> pd.merge(pop, abbrevs, how<span class="op">=</span><span class="st">'outer'</span>,</span>
 <span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>                  left_on<span class="op">=</span><span class="st">'state/region'</span>, right_on<span class="op">=</span><span class="st">'abbreviation'</span>)</span>
@@ -2525,7 +2525,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
-<p>Let’s double-check whether there were any mismatches here, which we can do by looking for rows with nulls:</p>
+<p>여기에 불일치가 있는지 다시 확인해 보겠습니다. null이 있는 행을 찾아서 수행할 수 있습니다.</p>
 <div id="cell-61" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="22">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb22"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>merged.isnull().<span class="bu">any</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="22">
@@ -2537,7 +2537,7 @@ state            True
 dtype: bool</code></pre>
 </div>
 </div>
-<p>Some of the <code>population</code> values are null; let’s figure out which these are!</p>
+<p><code>population</code> 값 중 일부는 null입니다. 이것이 무엇인지 알아봅시다!</p>
 <div id="cell-63" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="23">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb24"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>merged[merged[<span class="st">'population'</span>].isnull()].head()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="23">
@@ -2602,15 +2602,15 @@ dtype: bool</code></pre>
 </div>
 </div>
 </div>
-<p>It appears that all the null population values are from Puerto Rico prior to the year 2000; this is likely due to this data not being available in the original source.</p>
-<p>More importantly, we see that some of the new <code>state</code> entries are also null, which means that there was no corresponding entry in the <code>abbrevs</code> key! Let’s figure out which regions lack this match:</p>
+<p>모든 null 모집단 값은 2000년 이전의 푸에르토리코에서 나온 것으로 보입니다. 이는 원본 소스에서 이 데이터를 사용할 수 없기 때문일 수 있습니다.</p>
+<p>더 중요한 것은 새로운 <code>state</code> 항목 중 일부도 null이라는 점입니다. 이는 <code>abbrevs</code> 키에 해당 항목이 없다는 의미입니다! 이 일치 항목이 없는 지역을 찾아보겠습니다.</p>
 <div id="cell-65" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="24">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb25"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>merged.loc[merged[<span class="st">'state'</span>].isnull(), <span class="st">'state/region'</span>].unique()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="24">
 <pre><code>array(['PR', 'USA'], dtype=object)</code></pre>
 </div>
 </div>
-<p>We can quickly infer the issue: our population data includes entries for Puerto Rico (PR) and the United States as a whole (USA), while these entries do not appear in the state abbreviation key. We can fix these quickly by filling in appropriate entries:</p>
+<p>문제를 빠르게 추론할 수 있습니다. 인구 데이터에는 푸에르토리코(PR) 및 미국 전체(USA)에 대한 항목이 포함되어 있지만 이러한 항목은 주 약어 키에 표시되지 않습니다. 적절한 항목을 입력하면 이러한 문제를 신속하게 해결할 수 있습니다.</p>
 <div id="cell-67" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="25">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb27"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a>merged.loc[merged[<span class="st">'state/region'</span>] <span class="op">==</span> <span class="st">'PR'</span>, <span class="st">'state'</span>] <span class="op">=</span> <span class="st">'Puerto Rico'</span></span>
 <span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a>merged.loc[merged[<span class="st">'state/region'</span>] <span class="op">==</span> <span class="st">'USA'</span>, <span class="st">'state'</span>] <span class="op">=</span> <span class="st">'United States'</span></span>
@@ -2624,8 +2624,8 @@ state           False
 dtype: bool</code></pre>
 </div>
 </div>
-<p>No more nulls in the <code>state</code> column: we’re all set!</p>
-<p>Now we can merge the result with the area data using a similar procedure. Examining our results, we will want to join on the <code>state</code> column in both:</p>
+<p><code>state</code> 열에 더 이상 null이 없습니다. 모든 설정이 완료되었습니다!</p>
+<p>이제 유사한 절차를 사용하여 결과를 영역 데이터와 병합할 수 있습니다. 결과를 검토해 보면 다음 두 항목 모두 <code>state</code> 열에 조인하려고 합니다.</p>
 <div id="cell-69" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="26">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb29"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a>final <span class="op">=</span> pd.merge(merged, areas, on<span class="op">=</span><span class="st">'state'</span>, how<span class="op">=</span><span class="st">'left'</span>)</span>
 <span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a>final.head()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -2697,7 +2697,7 @@ dtype: bool</code></pre>
 </div>
 </div>
 </div>
-<p>Again, let’s check for nulls to see if there were any mismatches:</p>
+<p>다시 한번, 불일치가 있는지 확인하기 위해 null을 확인해 보겠습니다.</p>
 <div id="cell-71" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="27">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb30"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a>final.isnull().<span class="bu">any</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="27">
@@ -2710,14 +2710,14 @@ area (sq. mi)     True
 dtype: bool</code></pre>
 </div>
 </div>
-<p>There are nulls in the <code>area</code> column; we can take a look to see which regions were ignored here:</p>
+<p>‘area’ 열에 null이 있습니다. 여기에서 어떤 지역이 무시되었는지 확인할 수 있습니다.</p>
 <div id="cell-73" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="28">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb32"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a>final[<span class="st">'state'</span>][final[<span class="st">'area (sq. mi)'</span>].isnull()].unique()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="28">
 <pre><code>array(['United States'], dtype=object)</code></pre>
 </div>
 </div>
-<p>We see that our <code>areas</code> <code>DataFrame</code> does not contain the area of the United States as a whole. We could insert the appropriate value (using the sum of all state areas, for instance), but in this case we’ll just drop the null values because the population density of the entire United States is not relevant to our current discussion:</p>
+<p>우리의 <code>areas````DataFrame</code>에는 미국 전체 지역이 포함되어 있지 않습니다. 예를 들어 모든 주 지역의 합계를 사용하여 적절한 값을 삽입할 수 있지만 이 경우 미국 전체의 인구 밀도가 현재 논의와 관련이 없기 때문에 null 값을 삭제하겠습니다.</p>
 <div id="cell-75" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="29">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb34"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a>final.dropna(inplace<span class="op">=</span><span class="va">True</span>)</span>
 <span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a>final.head()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -2789,7 +2789,7 @@ dtype: bool</code></pre>
 </div>
 </div>
 </div>
-<p>Now we have all the data we need. To answer the question of interest, let’s first select the portion of the data corresponding with the year 2010, and the total population. We’ll use the <code>query</code> function to do this quickly (this requires the NumExpr package to be installed; see <a href="../notebooks/03.12-Performance-Eval-and-Query.html">High-Performance Pandas: <code>eval()</code> and <code>query()</code></a>):</p>
+<p>이제 필요한 모든 데이터가 확보되었습니다. 관심 있는 질문에 답하기 위해 먼저 데이터 중 2010년에 해당하는 부분과 전체 인구를 선택해 보겠습니다. 이 작업을 빠르게 수행하기 위해 <code>query</code> 함수를 사용하겠습니다(이를 위해서는 NumExpr 패키지가 설치되어 있어야 합니다. <a href="../notebooks/03.12-Performance-Eval-and-Query.html">고성능 Pandas: <code>eval()</code> 및 <code>query()</code></a> 참조):</p>
 <div id="cell-77" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="30">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb35"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a>data2010 <span class="op">=</span> final.query(<span class="st">"year == 2010 &amp; ages == 'total'"</span>)</span>
 <span id="cb35-2"><a href="#cb35-2" aria-hidden="true" tabindex="-1"></a>data2010.head()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -2861,7 +2861,7 @@ dtype: bool</code></pre>
 </div>
 </div>
 </div>
-<p>Now let’s compute the population density and display it in order. We’ll start by re-indexing our data on the state, and then compute the result:</p>
+<p>이제 인구 밀도를 계산하여 순서대로 표시해 보겠습니다. 먼저 상태에 대한 데이터를 다시 색인화한 다음 결과를 계산하겠습니다.</p>
 <div id="cell-79" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="31">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb36"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a>data2010.set_index(<span class="st">'state'</span>, inplace<span class="op">=</span><span class="va">True</span>)</span>
 <span id="cb36-2"><a href="#cb36-2" aria-hidden="true" tabindex="-1"></a>density <span class="op">=</span> data2010[<span class="st">'population'</span>] <span class="op">/</span> data2010[<span class="st">'area (sq. mi)'</span>]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -2879,8 +2879,8 @@ Connecticut              645.600649
 dtype: float64</code></pre>
 </div>
 </div>
-<p>The result is a ranking of US states, plus Washington, DC, and Puerto Rico, in order of their 2010 population density, in residents per square mile. We can see that by far the densest region in this dataset is Washington, DC (i.e., the District of Columbia); among states, the densest is New Jersey.</p>
-<p>We can also check the end of the list:</p>
+<p>그 결과 미국 주와 워싱턴 DC, 푸에르토리코의 2010년 인구 밀도(평방 마일당 주민 수) 순으로 순위가 매겨졌습니다. 이 데이터세트에서 가장 밀도가 높은 지역은 워싱턴 DC(즉, 컬럼비아 특별구)라는 것을 확인할 수 있습니다. 주 중에서 밀도가 가장 높은 곳은 뉴저지주입니다.</p>
+<p>목록의 끝을 확인할 수도 있습니다.</p>
 <div id="cell-82" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="33">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb39"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a>density.tail()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="33">
@@ -2893,8 +2893,8 @@ Alaska           1.087509
 dtype: float64</code></pre>
 </div>
 </div>
-<p>We see that the least dense state, by far, is Alaska, averaging slightly over one resident per square mile.</p>
-<p>This type of data merging is a common task when trying to answer questions using real-world data sources. I hope that this example has given you an idea of some of the ways you can combine the tools we’ve covered in order to gain insight from your data!</p>
+<p>지금까지 밀도가 가장 낮은 주는 알래스카로, 평균적으로 평방 마일당 거주자 수가 1명을 약간 넘는다는 것을 확인할 수 있습니다.</p>
+<p>이러한 유형의 데이터 병합은 실제 데이터 원본을 사용하여 질문에 답하려고 할 때 일반적인 작업입니다. 이 예를 통해 데이터에서 통찰력을 얻기 위해 지금까지 다룬 도구를 결합할 수 있는 몇 가지 방법에 대한 아이디어를 얻었기를 바랍니다.</p>
 
 
 </section>
@@ -3302,13 +3302,13 @@ dtype: float64</code></pre>
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../notebooks/03.06-Concat-And-Append.html" class="pagination-link" aria-label="Combining Datasets: concat and append">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Combining Datasets: concat and append</span></span>
+      <a href="../notebooks/03.06-Concat-And-Append.html" class="pagination-link" aria-label="데이터세트 결합: 연결 및 추가">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">데이터세트 결합: 연결 및 추가</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../notebooks/03.08-Aggregation-and-Grouping.html" class="pagination-link" aria-label="Aggregation and Grouping">
-        <span class="nav-page-text"><span class="chapter-title">Aggregation and Grouping</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../notebooks/03.08-Aggregation-and-Grouping.html" class="pagination-link" aria-label="집계 및 그룹화">
+        <span class="nav-page-text"><span class="chapter-title">집계 및 그룹화</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

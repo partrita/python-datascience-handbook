@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Computation on NumPy Arrays: Universal Functions – 파이썬 데이터 사이언스 핸드북</title>
+<title>NumPy 배열 계산: 범용 함수 – 파이썬 데이터 사이언스 핸드북</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -77,7 +77,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-3778d3e438078121318a23701f9f68bb.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-803ae4f7a8810f475153517dc3c4ebae.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -118,7 +118,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../notebooks/02.00-Introduction-to-NumPy.html">NumPy 소개</a></li><li class="breadcrumb-item"><a href="../notebooks/02.03-Computation-on-arrays-ufuncs.html"><span class="chapter-title">Computation on NumPy Arrays: Universal Functions</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../notebooks/02.00-Introduction-to-NumPy.html">NumPy 소개</a></li><li class="breadcrumb-item"><a href="../notebooks/02.03-Computation-on-arrays-ufuncs.html"><span class="chapter-title">NumPy 배열 계산: 범용 함수</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -165,7 +165,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/01.00-IPython-Beyond-Normal-Python.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Jupyter: 일반 Python을 넘어서</span></a>
+  <a href="../notebooks/01.00-IPython-Beyond-Normal-Python.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Jupyter: 일반 파이썬(Python)을 넘어서</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -195,17 +195,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/01.06-Errors-and-Debugging.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Errors and Debugging</span></a>
+  <a href="../notebooks/01.06-Errors-and-Debugging.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">오류 및 디버깅</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/01.07-Timing-and-Profiling.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Profiling and Timing Code</span></a>
+  <a href="../notebooks/01.07-Timing-and-Profiling.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">프로파일링 및 타이밍 코드</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/01.08-More-IPython-Resources.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">More IPython Resources</span></a>
+  <a href="../notebooks/01.08-More-IPython-Resources.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">추가 IPython 리소스</span></a>
   </div>
 </li>
       </ul>
@@ -221,52 +221,52 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.00-Introduction-to-NumPy.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Introduction to NumPy</span></a>
+  <a href="../notebooks/02.00-Introduction-to-NumPy.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">NumPy 소개</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.01-Understanding-Data-Types.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Understanding Data Types in Python</span></a>
+  <a href="../notebooks/02.01-Understanding-Data-Types.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">파이썬(Python)의 데이터 유형 이해</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.02-The-Basics-Of-NumPy-Arrays.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">The Basics of NumPy Arrays</span></a>
+  <a href="../notebooks/02.02-The-Basics-Of-NumPy-Arrays.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">NumPy 배열의 기본</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.03-Computation-on-arrays-ufuncs.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Computation on NumPy Arrays: Universal Functions</span></a>
+  <a href="../notebooks/02.03-Computation-on-arrays-ufuncs.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">NumPy 배열 계산: 범용 함수</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.04-Computation-on-arrays-aggregates.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Aggregations: min, max, and Everything in Between</span></a>
+  <a href="../notebooks/02.04-Computation-on-arrays-aggregates.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">집계: 최소, 최대 및 그 사이의 모든 것</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.05-Computation-on-arrays-broadcasting.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Computation on Arrays: Broadcasting</span></a>
+  <a href="../notebooks/02.05-Computation-on-arrays-broadcasting.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">배열 계산: 브로드캐스팅</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.06-Boolean-Arrays-and-Masks.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Comparisons, Masks, and Boolean Logic</span></a>
+  <a href="../notebooks/02.06-Boolean-Arrays-and-Masks.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">비교, 마스크 및 부울 논리</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.07-Fancy-Indexing.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Fancy Indexing</span></a>
+  <a href="../notebooks/02.07-Fancy-Indexing.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">멋진 인덱싱</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.08-Sorting.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Sorting Arrays</span></a>
+  <a href="../notebooks/02.08-Sorting.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">배열 정렬</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.09-Structured-Data-NumPy.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Structured Data: NumPy’s Structured Arrays</span></a>
+  <a href="../notebooks/02.09-Structured-Data-NumPy.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">구조화된 데이터: NumPy의 구조화된 배열</span></a>
   </div>
 </li>
       </ul>
@@ -282,72 +282,72 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.00-Introduction-to-Pandas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Data Manipulation with Pandas</span></a>
+  <a href="../notebooks/03.00-Introduction-to-Pandas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">팬더를 이용한 데이터 조작</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.01-Introducing-Pandas-Objects.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Introducing Pandas Objects</span></a>
+  <a href="../notebooks/03.01-Introducing-Pandas-Objects.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">판다스 객체 소개</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.02-Data-Indexing-and-Selection.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Data Indexing and Selection</span></a>
+  <a href="../notebooks/03.02-Data-Indexing-and-Selection.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">데이터 인덱싱 및 선택</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.03-Operations-in-Pandas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Operating on Data in Pandas</span></a>
+  <a href="../notebooks/03.03-Operations-in-Pandas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Pandas에서 데이터 작업</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.04-Missing-Values.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Handling Missing Data</span></a>
+  <a href="../notebooks/03.04-Missing-Values.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">누락된 데이터 처리</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.05-Hierarchical-Indexing.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Hierarchical Indexing</span></a>
+  <a href="../notebooks/03.05-Hierarchical-Indexing.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">계층적 인덱싱</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.06-Concat-And-Append.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Combining Datasets: concat and append</span></a>
+  <a href="../notebooks/03.06-Concat-And-Append.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">데이터세트 결합: 연결 및 추가</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.07-Merge-and-Join.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Combining Datasets: merge and join</span></a>
+  <a href="../notebooks/03.07-Merge-and-Join.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">데이터세트 결합: 병합 및 조인</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.08-Aggregation-and-Grouping.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Aggregation and Grouping</span></a>
+  <a href="../notebooks/03.08-Aggregation-and-Grouping.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">집계 및 그룹화</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.09-Pivot-Tables.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Pivot Tables</span></a>
+  <a href="../notebooks/03.09-Pivot-Tables.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">피벗 테이블</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.10-Working-With-Strings.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Vectorized String Operations</span></a>
+  <a href="../notebooks/03.10-Working-With-Strings.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">벡터화된 문자열 작업</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.11-Working-with-Time-Series.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Working with Time Series</span></a>
+  <a href="../notebooks/03.11-Working-with-Time-Series.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">시계열 작업</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.12-Performance-Eval-and-Query.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">High-Performance Pandas: eval and query</span></a>
+  <a href="../notebooks/03.12-Performance-Eval-and-Query.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">고성능 Pandas: 평가 및 쿼리</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.13-Further-Resources.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Further Resources</span></a>
+  <a href="../notebooks/03.13-Further-Resources.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">추가 리소스</span></a>
   </div>
 </li>
       </ul>
@@ -363,77 +363,77 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.00-Introduction-To-Matplotlib.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Visualization with Matplotlib</span></a>
+  <a href="../notebooks/04.00-Introduction-To-Matplotlib.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Matplotlib를 사용한 시각화</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.01-Simple-Line-Plots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Simple Line Plots</span></a>
+  <a href="../notebooks/04.01-Simple-Line-Plots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">간단한 선 도표</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.02-Simple-Scatter-Plots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Simple Scatter Plots</span></a>
+  <a href="../notebooks/04.02-Simple-Scatter-Plots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">단순 산점도</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.03-Errorbars.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Visualizing Uncertainties</span></a>
+  <a href="../notebooks/04.03-Errorbars.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">불확실성 시각화</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.04-Density-and-Contour-Plots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Density and Contour Plots</span></a>
+  <a href="../notebooks/04.04-Density-and-Contour-Plots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">밀도 및 등고선 플롯</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.05-Histograms-and-Binnings.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Histograms, Binnings, and Density</span></a>
+  <a href="../notebooks/04.05-Histograms-and-Binnings.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">히스토그램, 비닝 및 밀도</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.06-Customizing-Legends.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Customizing Plot Legends</span></a>
+  <a href="../notebooks/04.06-Customizing-Legends.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">플롯 범례 사용자 정의</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.07-Customizing-Colorbars.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Customizing Colorbars</span></a>
+  <a href="../notebooks/04.07-Customizing-Colorbars.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">컬러바 사용자 정의</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.08-Multiple-Subplots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Multiple Subplots</span></a>
+  <a href="../notebooks/04.08-Multiple-Subplots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">다중 서브플롯</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.09-Text-and-Annotation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Text and Annotation</span></a>
+  <a href="../notebooks/04.09-Text-and-Annotation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">텍스트 및 주석</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.10-Customizing-Ticks.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Customizing Ticks</span></a>
+  <a href="../notebooks/04.10-Customizing-Ticks.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">눈금 사용자 정의</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.11-Settings-and-Stylesheets.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Customizing Matplotlib: Configurations and Stylesheets</span></a>
+  <a href="../notebooks/04.11-Settings-and-Stylesheets.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Matplotlib 사용자 정의: 구성 및 스타일시트</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.12-Three-Dimensional-Plotting.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Three-Dimensional Plotting in Matplotlib</span></a>
+  <a href="../notebooks/04.12-Three-Dimensional-Plotting.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Matplotlib의 3차원 플로팅</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.14-Visualization-With-Seaborn.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Visualization with Seaborn</span></a>
+  <a href="../notebooks/04.14-Visualization-With-Seaborn.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Seaborn을 이용한 시각화</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.15-Further-Resources.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Further Resources</span></a>
+  <a href="../notebooks/04.15-Further-Resources.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">추가 리소스</span></a>
   </div>
 </li>
       </ul>
@@ -449,82 +449,82 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.00-Machine-Learning.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Machine Learning</span></a>
+  <a href="../notebooks/05.00-Machine-Learning.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">머신러닝</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.01-What-Is-Machine-Learning.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">What Is Machine Learning?</span></a>
+  <a href="../notebooks/05.01-What-Is-Machine-Learning.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">머신러닝이란?</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.02-Introducing-Scikit-Learn.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Introducing Scikit-Learn</span></a>
+  <a href="../notebooks/05.02-Introducing-Scikit-Learn.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Scikit-Learn 소개</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.03-Hyperparameters-and-Model-Validation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Hyperparameters and Model Validation</span></a>
+  <a href="../notebooks/05.03-Hyperparameters-and-Model-Validation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">하이퍼파라미터 및 모델 검증</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.04-Feature-Engineering.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Feature Engineering</span></a>
+  <a href="../notebooks/05.04-Feature-Engineering.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">기능 엔지니어링</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.05-Naive-Bayes.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Naive Bayes Classification</span></a>
+  <a href="../notebooks/05.05-Naive-Bayes.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 나이브 베이즈 분류</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.06-Linear-Regression.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Linear Regression</span></a>
+  <a href="../notebooks/05.06-Linear-Regression.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 선형 회귀</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.07-Support-Vector-Machines.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Support Vector Machines</span></a>
+  <a href="../notebooks/05.07-Support-Vector-Machines.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 서포트 벡터 머신</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.08-Random-Forests.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Decision Trees and Random Forests</span></a>
+  <a href="../notebooks/05.08-Random-Forests.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 의사결정 트리 및 랜덤 포레스트</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.09-Principal-Component-Analysis.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Principal Component Analysis</span></a>
+  <a href="../notebooks/05.09-Principal-Component-Analysis.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 주성분 분석</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.10-Manifold-Learning.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Manifold Learning</span></a>
+  <a href="../notebooks/05.10-Manifold-Learning.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 다양한 학습</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.11-K-Means.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: k-Means Clustering</span></a>
+  <a href="../notebooks/05.11-K-Means.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: k-평균 클러스터링</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.12-Gaussian-Mixtures.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Gaussian Mixture Models</span></a>
+  <a href="../notebooks/05.12-Gaussian-Mixtures.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 가우스 혼합 모델</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.13-Kernel-Density-Estimation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Kernel Density Estimation</span></a>
+  <a href="../notebooks/05.13-Kernel-Density-Estimation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 커널 밀도 추정</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.14-Image-Features.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Application: A Face Detection Pipeline</span></a>
+  <a href="../notebooks/05.14-Image-Features.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">응용 분야: 얼굴 감지 파이프라인</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.15-Learning-More.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Further Machine Learning Resources</span></a>
+  <a href="../notebooks/05.15-Learning-More.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">추가 머신러닝(Machine Learning) 리소스</span></a>
   </div>
 </li>
       </ul>
@@ -540,7 +540,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/06.00-Figure-Code.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Appendix: Figure Code</span></a>
+  <a href="../notebooks/06.00-Figure-Code.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">부록: 그림 코드</span></a>
   </div>
 </li>
       </ul>
@@ -555,32 +555,32 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#the-slowness-of-loops" id="toc-the-slowness-of-loops" class="nav-link active" data-scroll-target="#the-slowness-of-loops">The Slowness of Loops</a></li>
-  <li><a href="#introducing-ufuncs" id="toc-introducing-ufuncs" class="nav-link" data-scroll-target="#introducing-ufuncs">Introducing Ufuncs</a></li>
-  <li><a href="#exploring-numpys-ufuncs" id="toc-exploring-numpys-ufuncs" class="nav-link" data-scroll-target="#exploring-numpys-ufuncs">Exploring NumPy’s Ufuncs</a>
+  <li><a href="#루프의-느림" id="toc-루프의-느림" class="nav-link active" data-scroll-target="#루프의-느림">루프의 느림</a></li>
+  <li><a href="#ufuncs-소개" id="toc-ufuncs-소개" class="nav-link" data-scroll-target="#ufuncs-소개">Ufuncs 소개</a></li>
+  <li><a href="#numpy의-ufuncs-탐색" id="toc-numpy의-ufuncs-탐색" class="nav-link" data-scroll-target="#numpy의-ufuncs-탐색">NumPy의 Ufuncs 탐색</a>
   <ul class="collapse">
-  <li><a href="#array-arithmetic" id="toc-array-arithmetic" class="nav-link" data-scroll-target="#array-arithmetic">Array Arithmetic</a></li>
-  <li><a href="#absolute-value" id="toc-absolute-value" class="nav-link" data-scroll-target="#absolute-value">Absolute Value</a></li>
-  <li><a href="#trigonometric-functions" id="toc-trigonometric-functions" class="nav-link" data-scroll-target="#trigonometric-functions">Trigonometric Functions</a></li>
-  <li><a href="#exponents-and-logarithms" id="toc-exponents-and-logarithms" class="nav-link" data-scroll-target="#exponents-and-logarithms">Exponents and Logarithms</a></li>
-  <li><a href="#specialized-ufuncs" id="toc-specialized-ufuncs" class="nav-link" data-scroll-target="#specialized-ufuncs">Specialized Ufuncs</a></li>
+  <li><a href="#배열-연산" id="toc-배열-연산" class="nav-link" data-scroll-target="#배열-연산">배열 연산</a></li>
+  <li><a href="#절대값" id="toc-절대값" class="nav-link" data-scroll-target="#절대값">절대값</a></li>
+  <li><a href="#삼각-함수" id="toc-삼각-함수" class="nav-link" data-scroll-target="#삼각-함수">삼각 함수</a></li>
+  <li><a href="#지수와-로그" id="toc-지수와-로그" class="nav-link" data-scroll-target="#지수와-로그">지수와 로그</a></li>
+  <li><a href="#전문-ufuncs" id="toc-전문-ufuncs" class="nav-link" data-scroll-target="#전문-ufuncs">전문 Ufuncs</a></li>
   </ul></li>
-  <li><a href="#advanced-ufunc-features" id="toc-advanced-ufunc-features" class="nav-link" data-scroll-target="#advanced-ufunc-features">Advanced Ufunc Features</a>
+  <li><a href="#고급-ufunc-기능" id="toc-고급-ufunc-기능" class="nav-link" data-scroll-target="#고급-ufunc-기능">고급 Ufunc 기능</a>
   <ul class="collapse">
-  <li><a href="#specifying-output" id="toc-specifying-output" class="nav-link" data-scroll-target="#specifying-output">Specifying Output</a></li>
-  <li><a href="#aggregations" id="toc-aggregations" class="nav-link" data-scroll-target="#aggregations">Aggregations</a></li>
-  <li><a href="#outer-products" id="toc-outer-products" class="nav-link" data-scroll-target="#outer-products">Outer Products</a></li>
+  <li><a href="#출력-지정" id="toc-출력-지정" class="nav-link" data-scroll-target="#출력-지정">출력 지정</a></li>
+  <li><a href="#집계" id="toc-집계" class="nav-link" data-scroll-target="#집계">집계</a></li>
+  <li><a href="#외부-제품" id="toc-외부-제품" class="nav-link" data-scroll-target="#외부-제품">외부 제품</a></li>
   </ul></li>
-  <li><a href="#ufuncs-learning-more" id="toc-ufuncs-learning-more" class="nav-link" data-scroll-target="#ufuncs-learning-more">Ufuncs: Learning More</a></li>
+  <li><a href="#ufuncs-더-알아보기" id="toc-ufuncs-더-알아보기" class="nav-link" data-scroll-target="#ufuncs-더-알아보기">Ufuncs: 더 알아보기</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../notebooks/02.00-Introduction-to-NumPy.html">NumPy 소개</a></li><li class="breadcrumb-item"><a href="../notebooks/02.03-Computation-on-arrays-ufuncs.html"><span class="chapter-title">Computation on NumPy Arrays: Universal Functions</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../notebooks/02.00-Introduction-to-NumPy.html">NumPy 소개</a></li><li class="breadcrumb-item"><a href="../notebooks/02.03-Computation-on-arrays-ufuncs.html"><span class="chapter-title">NumPy 배열 계산: 범용 함수</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-title">Computation on NumPy Arrays: Universal Functions</span></h1>
+<h1 class="title"><span class="chapter-title">NumPy 배열 계산: 범용 함수</span></h1>
 </div>
 
 
@@ -597,12 +597,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>Up until now, we have been discussing some of the basic nuts and bolts of NumPy. In the next few chapters, we will dive into the reasons that NumPy is so important in the Python data science world: namely, because it provides an easy and flexible interface to optimize computation with arrays of data.</p>
-<p>Computation on NumPy arrays can be very fast, or it can be very slow. The key to making it fast is to use vectorized operations, generally implemented through NumPy’s <em>universal functions</em> (ufuncs). This chapter motivates the need for NumPy’s ufuncs, which can be used to make repeated calculations on array elements much more efficient. It then introduces many of the most common and useful arithmetic ufuncs available in the NumPy package.</p>
-<section id="the-slowness-of-loops" class="level2">
-<h2 class="anchored" data-anchor-id="the-slowness-of-loops">The Slowness of Loops</h2>
-<p>Python’s default implementation (known as CPython) does some operations very slowly. This is partly due to the dynamic, interpreted nature of the language; types are flexible, so sequences of operations cannot be compiled down to efficient machine code as in languages like C and Fortran. Recently there have been various attempts to address this weakness: well-known examples are the <a href="http://pypy.org/">PyPy project</a>, a just-in-time compiled implementation of Python; the <a href="http://cython.org">Cython project</a>, which converts Python code to compilable C code; and the <a href="http://numba.pydata.org/">Numba project</a>, which converts snippets of Python code to fast LLVM bytecode. Each of these has its strengths and weaknesses, but it is safe to say that none of the three approaches has yet surpassed the reach and popularity of the standard CPython engine.</p>
-<p>The relative sluggishness of Python generally manifests itself in situations where many small operations are being repeated; for instance, looping over arrays to operate on each element. For example, imagine we have an array of values and we’d like to compute the reciprocal of each. A straightforward approach might look like this:</p>
+<p>지금까지 우리는 NumPy의 기본 너트와 볼트에 대해 논의했습니다. 다음 몇 장에서는 NumPy가 파이썬(Python) 데이터 과학(Data Science) 세계에서 그토록 중요한 이유, 즉 NumPy가 데이터 배열로 계산을 최적화하기 위한 쉽고 유연한 인터페이스를 제공하기 때문입니다.</p>
+<p>NumPy 배열의 계산은 매우 빠를 수도 있고 매우 느릴 수도 있습니다. 이를 빠르게 만드는 핵심은 일반적으로 NumPy의 <em>범용 함수</em>(ufuncs)를 통해 구현되는 벡터화된 작업을 사용하는 것입니다. 이번 장에서는 배열 요소에 대한 반복 계산을 훨씬 더 효율적으로 만드는 데 사용할 수 있는 NumPy의 ufunc에 대한 필요성을 설명합니다. 그런 다음 NumPy 패키지에서 사용할 수 있는 가장 일반적이고 유용한 산술 ufunc를 소개합니다.</p>
+<section id="루프의-느림" class="level2">
+<h2 class="anchored" data-anchor-id="루프의-느림">루프의 느림</h2>
+<p>파이썬(Python)의 기본 구현(C파이썬(Python)이라고도 함)은 일부 작업을 매우 느리게 수행합니다. 이는 부분적으로 언어의 역동적이고 해석된 특성 때문입니다. 유형은 유연하므로 C 및 Fortran과 같은 언어에서와 같이 작업 순서를 효율적인 기계어 코드로 컴파일할 수 없습니다. 최근 이 약점을 해결하려는 다양한 시도가 있었습니다. 잘 알려진 예로는 파이썬(Python)의 JIT(Just-In-Time) 컴파일 구현인 <a href="http://pypy.org/">PyPy 프로젝트</a>가 있습니다. 파이썬(Python) 코드를 컴파일 가능한 C 코드로 변환하는 <a href="http://cython.org">Cython 프로젝트</a>; 파이썬(Python) 코드 조각을 빠른 LLVM 바이트코드로 변환하는 <a href="http://numba.pydata.org/">Numba 프로젝트</a>. 이들 각각에는 장단점이 있지만 세 가지 접근 방식 중 어느 것도 아직 표준 C파이썬(Python) 엔진의 도달 범위와 인기를 능가하지 못했다고 해도 과언이 아닙니다.</p>
+<p>파이썬(Python)의 상대적인 느린 속도는 일반적으로 많은 작은 작업이 반복되는 상황에서 나타납니다. 예를 들어 배열을 반복하여 각 요소에 대해 작동합니다. 예를 들어 값의 배열이 있고 각각의 역수를 계산하고 싶다고 가정해 보겠습니다. 간단한 접근 방식은 다음과 같습니다.</p>
 <div id="cell-3" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="1">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>rng <span class="op">=</span> np.random.default_rng(seed<span class="op">=</span><span class="dv">1701</span>)</span>
@@ -619,7 +619,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <pre><code>array([0.11111111, 0.25      , 1.        , 0.33333333, 0.125     ])</code></pre>
 </div>
 </div>
-<p>This implementation probably feels fairly natural to someone from, say, a C or Java background. But if we measure the execution time of this code for a large input, we see that this operation is very slow—perhaps surprisingly so! We’ll benchmark this with IPython’s <code>%timeit</code> magic (discussed in <a href="../notebooks/01.07-Timing-and-Profiling.html">Profiling and Timing Code</a>):</p>
+<p>이 구현은 아마도 C 또는 Java 배경을 가진 사람에게는 매우 자연스럽게 느껴질 것입니다. 그러나 대규모 입력에 대한 이 코드의 실행 시간을 측정하면 이 작업이 매우 느리다는 것을 확인할 수 있습니다. 아마도 놀랍게도 그렇습니다! 우리는 이것을 IPython의 <code>%timeit</code> 매직으로 벤치마킹할 것입니다(<a href="../notebooks/01.07-Timing-and-Profiling.html">프로파일링 및 타이밍 코드</a>에서 논의됨):</p>
 <div id="cell-5" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="2">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>big_array <span class="op">=</span> rng.integers(<span class="dv">1</span>, <span class="dv">100</span>, size<span class="op">=</span><span class="dv">1000000</span>)</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="op">%</span>timeit compute_reciprocals(big_array)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -627,12 +627,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <pre><code>2.61 s ± 192 ms per loop (mean ± std. dev. of 7 runs, 1 loop each)</code></pre>
 </div>
 </div>
-<p>It takes several seconds to compute these million operations and to store the result! When even cell phones have processing speeds measured in gigaflops (i.e., billions of numerical operations per second), this seems almost absurdly slow. It turns out that the bottleneck here is not the operations themselves, but the type checking and function dispatches that CPython must do at each cycle of the loop. Each time the reciprocal is computed, Python first examines the object’s type and does a dynamic lookup of the correct function to use for that type. If we were working in compiled code instead, this type specification would be known before the code executed and the result could be computed much more efficiently.</p>
+<p>수백만 개의 연산을 계산하고 결과를 저장하는 데 몇 초가 걸립니다! 휴대폰의 처리 속도가 기가플롭스(즉, 초당 수십억 번의 수치 연산)로 측정되는 경우에도 이는 거의 터무니없이 느린 것처럼 보입니다. 여기서 병목 현상은 작업 자체가 아니라 C파이썬(Python)이 루프의 각 주기에서 수행해야 하는 유형 검사 및 함수 디스패치라는 것이 밝혀졌습니다. 역수가 계산될 때마다 파이썬(Python)은 먼저 객체의 유형을 검사하고 해당 유형에 사용할 올바른 함수의 동적 조회를 수행합니다. 대신 컴파일된 코드로 작업한다면 이 유형 사양은 코드가 실행되기 전에 알려지고 결과는 훨씬 더 효율적으로 계산될 수 있습니다.</p>
 </section>
-<section id="introducing-ufuncs" class="level2">
-<h2 class="anchored" data-anchor-id="introducing-ufuncs">Introducing Ufuncs</h2>
-<p>For many types of operations, NumPy provides a convenient interface into just this kind of statically typed, compiled routine. This is known as a <em>vectorized</em> operation. For simple operations like the element-wise division here, vectorization is as simple as using Python arithmetic operators directly on the array object. This vectorized approach is designed to push the loop into the compiled layer that underlies NumPy, leading to much faster execution.</p>
-<p>Compare the results of the following two operations:</p>
+<section id="ufuncs-소개" class="level2">
+<h2 class="anchored" data-anchor-id="ufuncs-소개">Ufuncs 소개</h2>
+<p>많은 유형의 작업에 대해 NumPy는 이러한 종류의 정적으로 유형이 지정되고 컴파일된 루틴에 대한 편리한 인터페이스를 제공합니다. 이를 <em>벡터화된</em> 작업이라고 합니다. 여기서 요소별 나누기와 같은 간단한 연산의 경우 벡터화는 배열 객체에 직접 파이썬(Python) 산술 연산자를 사용하는 것만큼 간단합니다. 이 벡터화된 접근 방식은 NumPy의 기반이 되는 컴파일된 레이어에 루프를 푸시하여 훨씬 더 빠른 실행을 제공하도록 설계되었습니다.</p>
+<p>다음 두 작업의 결과를 비교하십시오.</p>
 <div id="cell-8" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="3">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(compute_reciprocals(values))</span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="fl">1.0</span> <span class="op">/</span> values)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -641,21 +641,21 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 [0.11111111 0.25       1.         0.33333333 0.125     ]</code></pre>
 </div>
 </div>
-<p>Looking at the execution time for our big array, we see that it completes orders of magnitude faster than the Python loop:</p>
+<p>큰 배열의 실행 시간을 살펴보면 파이썬(Python) 루프보다 훨씬 빠르게 완료된다는 것을 확인할 수 있습니다.</p>
 <div id="cell-10" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="4">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="op">%</span>timeit (<span class="fl">1.0</span> <span class="op">/</span> big_array)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>2.54 ms ± 383 µs per loop (mean ± std. dev. of 7 runs, 100 loops each)</code></pre>
 </div>
 </div>
-<p>Vectorized operations in NumPy are implemented via ufuncs, whose main purpose is to quickly execute repeated operations on values in NumPy arrays. Ufuncs are extremely flexible—before we saw an operation between a scalar and an array, but we can also operate between two arrays:</p>
+<p>NumPy의 벡터화된 작업은 ufuncs를 통해 구현됩니다. ufuncs의 주요 목적은 NumPy 배열의 값에 대해 반복 작업을 빠르게 실행하는 것입니다. Ufuncs는 스칼라와 배열 사이의 연산을 보기 전에는 매우 유연하지만 두 배열 사이에서도 작동할 수 있습니다.</p>
 <div id="cell-12" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="5">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>np.arange(<span class="dv">5</span>) <span class="op">/</span> np.arange(<span class="dv">1</span>, <span class="dv">6</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="5">
 <pre><code>array([0.        , 0.5       , 0.66666667, 0.75      , 0.8       ])</code></pre>
 </div>
 </div>
-<p>And ufunc operations are not limited to one-dimensional arrays. They can act on multidimensional arrays as well:</p>
+<p>그리고 ufunc 연산은 1차원 배열에만 국한되지 않습니다. 다차원 배열에서도 작동할 수 있습니다.</p>
 <div id="cell-14" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="6">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> np.arange(<span class="dv">9</span>).reshape((<span class="dv">3</span>, <span class="dv">3</span>))</span>
 <span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="dv">2</span> <span class="op">**</span> x</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -665,14 +665,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
        [ 64, 128, 256]])</code></pre>
 </div>
 </div>
-<p>Computations using vectorization through ufuncs are nearly always more efficient than their counterparts implemented using Python loops, especially as the arrays grow in size. Any time you see such a loop in a NumPy script, you should consider whether it can be replaced with a vectorized expression.</p>
+<p>ufunc를 통한 벡터화를 사용한 계산은 파이썬(Python) 루프를 사용하여 구현된 계산보다 거의 항상 더 효율적입니다. 특히 배열의 크기가 커질수록 더욱 그렇습니다. NumPy 스크립트에서 이러한 루프를 볼 때마다 이를 벡터화된 표현식으로 대체할 수 있는지 고려해야 합니다.</p>
 </section>
-<section id="exploring-numpys-ufuncs" class="level2">
-<h2 class="anchored" data-anchor-id="exploring-numpys-ufuncs">Exploring NumPy’s Ufuncs</h2>
-<p>Ufuncs exist in two flavors: <em>unary ufuncs</em>, which operate on a single input, and <em>binary ufuncs</em>, which operate on two inputs. We’ll see examples of both these types of functions here.</p>
-<section id="array-arithmetic" class="level3">
-<h3 class="anchored" data-anchor-id="array-arithmetic">Array Arithmetic</h3>
-<p>NumPy’s ufuncs feel very natural to use because they make use of Python’s native arithmetic operators. The standard addition, subtraction, multiplication, and division can all be used:</p>
+<section id="numpy의-ufuncs-탐색" class="level2">
+<h2 class="anchored" data-anchor-id="numpy의-ufuncs-탐색">NumPy의 Ufuncs 탐색</h2>
+<p>Ufuncs는 단일 입력에 대해 작동하는 <em>단항 ufuncs</em>와 두 개의 입력에 대해 작동하는 <em>이진 ufuncs</em>의 두 가지 형태로 존재합니다. 여기서는 이러한 두 가지 유형의 함수에 대한 예를 모두 살펴보겠습니다.</p>
+<section id="배열-연산" class="level3">
+<h3 class="anchored" data-anchor-id="배열-연산">배열 연산</h3>
+<p>NumPy의 ufunc는 파이썬(Python)의 기본 산술 연산자를 사용하기 때문에 사용이 매우 자연스럽습니다. 표준 덧셈, 뺄셈, 곱셈, 나눗셈을 모두 사용할 수 있습니다.</p>
 <div id="cell-18" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="7">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> np.arange(<span class="dv">4</span>)</span>
 <span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"x      ="</span>, x)</span>
@@ -690,7 +690,7 @@ x / 2  = [0.  0.5 1.  1.5]
 x // 2 = [0 0 1 1]</code></pre>
 </div>
 </div>
-<p>There is also a unary ufunc for negation, a <code>**</code> operator for exponentiation, and a <code>%</code> operator for modulus:</p>
+<p>부정을 위한 단항 ufunc, 지수를 위한 <code>**</code> 연산자, 모듈러스를 위한 <code>%</code> 연산자도 있습니다:</p>
 <div id="cell-20" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="8">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"-x     = "</span>, <span class="op">-</span>x)</span>
 <span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"x ** 2 = "</span>, x <span class="op">**</span> <span class="dv">2</span>)</span>
@@ -701,82 +701,77 @@ x ** 2 =  [0 1 4 9]
 x % 2  =  [0 1 0 1]</code></pre>
 </div>
 </div>
-<p>In addition, these can be strung together however you wish, and the standard order of operations is respected:</p>
+<p>또한 원하는 대로 연결할 수 있으며 표준 작업 순서가 준수됩니다.</p>
 <div id="cell-22" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="9">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="op">-</span>(<span class="fl">0.5</span><span class="op">*</span>x <span class="op">+</span> <span class="dv">1</span>) <span class="op">**</span> <span class="dv">2</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="9">
 <pre><code>array([-1.  , -2.25, -4.  , -6.25])</code></pre>
 </div>
 </div>
-<p>All of these arithmetic operations are simply convenient wrappers around specific ufuncs built into NumPy. For example, the <code>+</code> operator is a wrapper for the <code>add</code> ufunc:</p>
+<p>이러한 모든 산술 연산은 NumPy에 내장된 특정 ufunc를 둘러싼 편리한 래퍼일 뿐입니다. 예를 들어 <code>+</code> 연산자는 <code>add</code> ufunc에 대한 래퍼입니다.</p>
 <div id="cell-24" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="10">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>np.add(x, <span class="dv">2</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="10">
 <pre><code>array([2, 3, 4, 5])</code></pre>
 </div>
 </div>
-<p>The following table lists the arithmetic operators implemented in NumPy:</p>
+<p>다음 표에는 NumPy에서 구현된 산술 연산자가 나열되어 있습니다.</p>
 <table class="caption-top table">
-<colgroup>
-<col style="width: 18%">
-<col style="width: 27%">
-<col style="width: 53%">
-</colgroup>
 <thead>
 <tr class="header">
-<th>Operator</th>
-<th>Equivalent ufunc</th>
-<th>Description</th>
+<th>운영자</th>
+<th>동등한 ufunc</th>
+<th>설명</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td><code>+</code></td>
 <td><code>np.add</code></td>
-<td>Addition (e.g., <code>1 + 1 = 2</code>)</td>
+<td>추가(예: <code>1 + 1 = 2</code>)</td>
 </tr>
 <tr class="even">
 <td><code>-</code></td>
 <td><code>np.subtract</code></td>
-<td>Subtraction (e.g., <code>3 - 2 = 1</code>)</td>
+<td>뺄셈(예: <code>3 - 2 = 1</code>)</td>
 </tr>
 <tr class="odd">
 <td><code>-</code></td>
 <td><code>np.negative</code></td>
-<td>Unary negation (e.g., <code>-2</code>)</td>
+<td>단항 부정(예: <code>-2</code>)</td>
 </tr>
 <tr class="even">
 <td><code>*</code></td>
 <td><code>np.multiply</code></td>
-<td>Multiplication (e.g., <code>2 * 3 = 6</code>)</td>
+<td>곱셈(예: <code>2 * 3 = 6</code>)</td>
 </tr>
 <tr class="odd">
 <td><code>/</code></td>
 <td><code>np.divide</code></td>
-<td>Division (e.g., <code>3 / 2 = 1.5</code>)</td>
+<td>나눗셈(예: <code>3 / 2 = 1.5</code>)</td>
 </tr>
 <tr class="even">
 <td><code>//</code></td>
 <td><code>np.floor_divide</code></td>
-<td>Floor division (e.g., <code>3 // 2 = 1</code>)</td>
+<td>바닥 분할(예: <code>3 // 2 = 1</code>)</td>
 </tr>
 <tr class="odd">
 <td><code>**</code></td>
 <td><code>np.power</code></td>
-<td>Exponentiation (e.g., <code>2 ** 3 = 8</code>)</td>
+<td>지수화(예: <code>2 ** 3 = 8</code>)</td>
 </tr>
 <tr class="even">
 <td><code>%</code></td>
 <td><code>np.mod</code></td>
-<td>Modulus/remainder (e.g., <code>9 % 4 = 1</code>)</td>
+<td>계수/나머지 (예: <code>9 % 4 = 1</code>)</td>
 </tr>
 </tbody>
 </table>
-<p>Additionally, there are Boolean/bitwise operators; we will explore these in <a href="../notebooks/02.06-Boolean-Arrays-and-Masks.html">Comparisons, Masks, and Boolean Logic</a>.</p>
+<p>또한 부울/비트 연산자도 있습니다. <a href="../notebooks/02.06-Boolean-Arrays-and-Masks.html">비교, 마스크 및 부울 논리</a>에서 이에 대해 살펴보겠습니다.</p>
 </section>
-<section id="absolute-value" class="level3">
-<h3 class="anchored" data-anchor-id="absolute-value">Absolute Value</h3>
-<p>Just as NumPy understands Python’s built-in arithmetic operators, it also understands Python’s built-in absolute value function:</p>
+<section id="절대값" class="level3">
+<h3 class="anchored" data-anchor-id="절대값">절대값</h3>
+<p>NumPy가 파이썬(Python)의 내장 산술 연산자를 이해하는 것처럼 파이썬(Python)의 내장 절대값 함수도 이해합니다.</p>
 <div id="cell-27" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="11">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> np.array([<span class="op">-</span><span class="dv">2</span>, <span class="op">-</span><span class="dv">1</span>, <span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">2</span>])</span>
 <span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a><span class="bu">abs</span>(x)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -784,7 +779,7 @@ x % 2  =  [0 1 0 1]</code></pre>
 <pre><code>array([2, 1, 0, 1, 2])</code></pre>
 </div>
 </div>
-<p>The corresponding NumPy ufunc is <code>np.absolute</code>, which is also available under the alias <code>np.abs</code>:</p>
+<p>해당 NumPy ufunc는 <code>np.absolute</code>이며 <code>np.abs</code>라는 별칭으로도 사용할 수 있습니다.</p>
 <div id="cell-29" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="12">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb23"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>np.absolute(x)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="12">
@@ -797,7 +792,7 @@ x % 2  =  [0 1 0 1]</code></pre>
 <pre><code>array([2, 1, 0, 1, 2])</code></pre>
 </div>
 </div>
-<p>This ufunc can also handle complex data, in which case it returns the magnitude:</p>
+<p>이 ufunc는 복잡한 데이터도 처리할 수 있으며, 이 경우 크기를 반환합니다.</p>
 <div id="cell-32" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="14">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb27"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> np.array([<span class="dv">3</span> <span class="op">-</span> <span class="ot">4j</span>, <span class="dv">4</span> <span class="op">-</span> <span class="ot">3j</span>, <span class="dv">2</span> <span class="op">+</span> <span class="ot">0j</span>, <span class="dv">0</span> <span class="op">+</span> <span class="ot">1j</span>])</span>
 <span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a>np.<span class="bu">abs</span>(x)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -806,13 +801,13 @@ x % 2  =  [0 1 0 1]</code></pre>
 </div>
 </div>
 </section>
-<section id="trigonometric-functions" class="level3">
-<h3 class="anchored" data-anchor-id="trigonometric-functions">Trigonometric Functions</h3>
-<p>NumPy provides a large number of useful ufuncs, and some of the most useful for the data scientist are the trigonometric functions. We’ll start by defining an array of angles:</p>
+<section id="삼각-함수" class="level3">
+<h3 class="anchored" data-anchor-id="삼각-함수">삼각 함수</h3>
+<p>NumPy는 수많은 유용한 ufunc를 제공하며, 데이터 과학(Data Science)자에게 가장 유용한 것 중 일부는 삼각 함수입니다. 각도 배열을 정의하는 것부터 시작하겠습니다.</p>
 <div id="cell-34" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="15">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb29"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a>theta <span class="op">=</span> np.linspace(<span class="dv">0</span>, np.pi, <span class="dv">3</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<p>Now we can compute some trigonometric functions on these values:</p>
+<p>이제 이러한 값에 대해 몇 가지 삼각 함수를 계산할 수 있습니다.</p>
 <div id="cell-36" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="16">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb30"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"theta      = "</span>, theta)</span>
 <span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"sin(theta) = "</span>, np.sin(theta))</span>
@@ -825,7 +820,7 @@ cos(theta) =  [ 1.000000e+00  6.123234e-17 -1.000000e+00]
 tan(theta) =  [ 0.00000000e+00  1.63312394e+16 -1.22464680e-16]</code></pre>
 </div>
 </div>
-<p>The values are computed to within machine precision, which is why values that should be zero do not always hit exactly zero. Inverse trigonometric functions are also available:</p>
+<p>값은 기계 정밀도 내에서 계산되므로 0이어야 하는 값이 항상 정확히 0이 되는 것은 아닙니다. 역삼각 함수도 사용할 수 있습니다.</p>
 <div id="cell-38" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="17">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb32"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> [<span class="op">-</span><span class="dv">1</span>, <span class="dv">0</span>, <span class="dv">1</span>]</span>
 <span id="cb32-2"><a href="#cb32-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"x         = "</span>, x)</span>
@@ -840,9 +835,9 @@ arctan(x) =  [-0.78539816  0.          0.78539816]</code></pre>
 </div>
 </div>
 </section>
-<section id="exponents-and-logarithms" class="level3">
-<h3 class="anchored" data-anchor-id="exponents-and-logarithms">Exponents and Logarithms</h3>
-<p>Other common operations available in NumPy ufuncs are the exponentials:</p>
+<section id="지수와-로그" class="level3">
+<h3 class="anchored" data-anchor-id="지수와-로그">지수와 로그</h3>
+<p>NumPy ufuncs에서 사용할 수 있는 다른 일반적인 연산은 지수입니다.</p>
 <div id="cell-40" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="18">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb34"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> [<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>]</span>
 <span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"x   ="</span>, x)</span>
@@ -856,7 +851,7 @@ e^x = [ 2.71828183  7.3890561  20.08553692]
 3^x = [ 3.  9. 27.]</code></pre>
 </div>
 </div>
-<p>The inverse of the exponentials, the logarithms, are also available. The basic <code>np.log</code> gives the natural logarithm; if you prefer to compute the base-2 logarithm or the base-10 logarithm, these are available as well:</p>
+<p>지수의 역함수인 로그도 사용할 수 있습니다. 기본 <code>np.log</code>는 자연 로그를 제공합니다. 밑이 2인 로그 또는 밑이 10인 로그를 계산하려는 경우 다음도 사용할 수 있습니다.</p>
 <div id="cell-42" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="19">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb36"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> [<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">4</span>, <span class="dv">10</span>]</span>
 <span id="cb36-2"><a href="#cb36-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"x        ="</span>, x)</span>
@@ -870,7 +865,7 @@ log2(x)  = [0.         1.         2.         3.32192809]
 log10(x) = [0.         0.30103    0.60205999 1.        ]</code></pre>
 </div>
 </div>
-<p>There are also some specialized versions that are useful for maintaining precision with very small input:</p>
+<p>매우 작은 입력으로 정밀도를 유지하는 데 유용한 몇 가지 특수 버전도 있습니다.</p>
 <div id="cell-44" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="20">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb38"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> [<span class="dv">0</span>, <span class="fl">0.001</span>, <span class="fl">0.01</span>, <span class="fl">0.1</span>]</span>
 <span id="cb38-2"><a href="#cb38-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"exp(x) - 1 ="</span>, np.expm1(x))</span>
@@ -880,12 +875,12 @@ log10(x) = [0.         0.30103    0.60205999 1.        ]</code></pre>
 log(1 + x) = [0.         0.0009995  0.00995033 0.09531018]</code></pre>
 </div>
 </div>
-<p>When <code>x</code> is very small, these functions give more precise values than if the raw <code>np.log</code> or <code>np.exp</code> were to be used.</p>
+<p><code>x</code>가 매우 작을 때 이 함수는 원시 <code>np.log</code> 또는 <code>np.exp</code>를 사용하는 경우보다 더 정확한 값을 제공합니다.</p>
 </section>
-<section id="specialized-ufuncs" class="level3">
-<h3 class="anchored" data-anchor-id="specialized-ufuncs">Specialized Ufuncs</h3>
-<p>NumPy has many more ufuncs available, including for hyperbolic trigonometry, bitwise arithmetic, comparison operations, conversions from radians to degrees, rounding and remainders, and much more. A look through the NumPy documentation reveals a lot of interesting functionality.</p>
-<p>Another excellent source for more specialized ufuncs is the submodule <code>scipy.special</code>. If you want to compute some obscure mathematical function on your data, chances are it is implemented in <code>scipy.special</code>. There are far too many functions to list them all, but the following snippet shows a couple that might come up in a statistics context:</p>
+<section id="전문-ufuncs" class="level3">
+<h3 class="anchored" data-anchor-id="전문-ufuncs">전문 Ufuncs</h3>
+<p>NumPy에는 쌍곡선 삼각법, 비트 산술, 비교 연산, 라디안에서 각도로의 변환, 반올림 및 나머지 등을 포함하여 더 많은 ufunc를 사용할 수 있습니다. NumPy 문서를 살펴보면 흥미로운 기능이 많이 드러납니다.</p>
+<p>보다 전문화된 ufunc에 대한 또 다른 훌륭한 소스는 하위 모듈 <code>scipy.special</code>입니다. 데이터에 대해 모호한 수학 함수를 계산하려는 경우 <code>scipy.special</code>에 구현될 가능성이 있습니다. 모두 나열하기에는 너무 많은 함수가 있지만 다음 스니펫은 통계 컨텍스트에서 나타날 수 있는 몇 가지를 보여줍니다.</p>
 <div id="cell-47" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="21">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb40"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> scipy <span class="im">import</span> special</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
@@ -914,15 +909,15 @@ erfc(x) = [1.         0.67137324 0.32219881 0.15729921]
 erfinv(x) = [0.         0.27246271 0.73286908        inf]</code></pre>
 </div>
 </div>
-<p>There are many, many more ufuncs available in both NumPy and <code>scipy.special</code>. Because the documentation of these packages is available online, a web search along the lines of “gamma function python” will generally find the relevant information.</p>
+<p>NumPy와 <code>scipy.special</code> 모두에서 사용할 수 있는 ufunc가 훨씬 더 많습니다. 이러한 패키지의 문서는 온라인에서 볼 수 있으므로 일반적으로 “gamma function python”을 웹 검색하면 관련 정보를 찾을 수 있습니다.</p>
 </section>
 </section>
-<section id="advanced-ufunc-features" class="level2">
-<h2 class="anchored" data-anchor-id="advanced-ufunc-features">Advanced Ufunc Features</h2>
-<p>Many NumPy users make use of ufuncs without ever learning their full set of features. I’ll outline a few specialized features of ufuncs here.</p>
-<section id="specifying-output" class="level3">
-<h3 class="anchored" data-anchor-id="specifying-output">Specifying Output</h3>
-<p>For large calculations, it is sometimes useful to be able to specify the array where the result of the calculation will be stored. For all ufuncs, this can be done using the <code>out</code> argument of the function:</p>
+<section id="고급-ufunc-기능" class="level2">
+<h2 class="anchored" data-anchor-id="고급-ufunc-기능">고급 Ufunc 기능</h2>
+<p>많은 NumPy 사용자는 전체 기능 세트를 배우지 않고도 ufunc를 사용합니다. 여기서는 ufuncs의 몇 가지 특수 기능을 간략하게 설명하겠습니다.</p>
+<section id="출력-지정" class="level3">
+<h3 class="anchored" data-anchor-id="출력-지정">출력 지정</h3>
+<p>대규모 계산의 경우 계산 결과가 저장될 배열을 지정하는 것이 유용한 경우가 있습니다. 모든 ufunc에 대해 이는 함수의 ‘out’ 인수를 사용하여 수행할 수 있습니다.</p>
 <div id="cell-53" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="24">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb45"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb45-1"><a href="#cb45-1" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> np.arange(<span class="dv">5</span>)</span>
 <span id="cb45-2"><a href="#cb45-2" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> np.empty(<span class="dv">5</span>)</span>
@@ -932,7 +927,7 @@ erfinv(x) = [0.         0.27246271 0.73286908        inf]</code></pre>
 <pre><code>[ 0. 10. 20. 30. 40.]</code></pre>
 </div>
 </div>
-<p>This can even be used with array views. For example, we can write the results of a computation to every other element of a specified array:</p>
+<p>이는 배열 뷰에서도 사용할 수 있습니다. 예를 들어 지정된 배열의 다른 모든 요소에 계산 결과를 쓸 수 있습니다.</p>
 <div id="cell-55" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="25">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb47"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb47-1"><a href="#cb47-1" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> np.zeros(<span class="dv">10</span>)</span>
 <span id="cb47-2"><a href="#cb47-2" aria-hidden="true" tabindex="-1"></a>np.power(<span class="dv">2</span>, x, out<span class="op">=</span>y[::<span class="dv">2</span>])</span>
@@ -941,12 +936,12 @@ erfinv(x) = [0.         0.27246271 0.73286908        inf]</code></pre>
 <pre><code>[ 1.  0.  2.  0.  4.  0.  8.  0. 16.  0.]</code></pre>
 </div>
 </div>
-<p>If we had instead written <code>y[::2] = 2 ** x</code>, this would have resulted in the creation of a temporary array to hold the results of <code>2 ** x</code>, followed by a second operation copying those values into the <code>y</code> array. This doesn’t make much of a difference for such a small computation, but for very large arrays the memory savings from careful use of the <code>out</code> argument can be significant.</p>
+<p>대신 <code>y[::2] = 2 ** x</code>를 작성했다면 <code>2 ** x</code>의 결과를 보관하기 위한 임시 배열이 생성된 후 해당 값을 <code>y</code> 배열에 복사하는 두 번째 작업이 수행되었을 것입니다. 이렇게 작은 계산에서는 큰 차이가 없지만 매우 큰 배열의 경우 ‘out’ 인수를 주의 깊게 사용하면 메모리 절약 효과가 상당할 수 있습니다.</p>
 </section>
-<section id="aggregations" class="level3">
-<h3 class="anchored" data-anchor-id="aggregations">Aggregations</h3>
-<p>For binary ufuncs, aggregations can be computed directly from the object. For example, if we’d like to <em>reduce</em> an array with a particular operation, we can use the <code>reduce</code> method of any ufunc. A reduce repeatedly applies a given operation to the elements of an array until only a single result remains.</p>
-<p>For example, calling <code>reduce</code> on the <code>add</code> ufunc returns the sum of all elements in the array:</p>
+<section id="집계" class="level3">
+<h3 class="anchored" data-anchor-id="집계">집계</h3>
+<p>바이너리 ufunc의 경우 개체에서 직접 집계를 계산할 수 있습니다. 예를 들어 특정 작업으로 배열을 <em>줄이기</em>하려면 ufunc의 <code>reduce</code> 메서드를 사용할 수 있습니다. 축소는 단일 결과만 남을 때까지 배열 요소에 지정된 작업을 반복적으로 적용합니다.</p>
+<p>예를 들어 <code>add</code> ufunc에서 <code>reduce</code>를 호출하면 배열에 있는 모든 요소의 합계가 반환됩니다.</p>
 <div id="cell-58" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="26">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb49"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb49-1"><a href="#cb49-1" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> np.arange(<span class="dv">1</span>, <span class="dv">6</span>)</span>
 <span id="cb49-2"><a href="#cb49-2" aria-hidden="true" tabindex="-1"></a>np.add.<span class="bu">reduce</span>(x)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -954,14 +949,14 @@ erfinv(x) = [0.         0.27246271 0.73286908        inf]</code></pre>
 <pre><code>15</code></pre>
 </div>
 </div>
-<p>Similarly, calling <code>reduce</code> on the <code>multiply</code> ufunc results in the product of all array elements:</p>
+<p>마찬가지로 <code>multiply</code> ufunc에서 <code>reduce</code>를 호출하면 모든 배열 요소의 곱이 생성됩니다.</p>
 <div id="cell-60" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="27">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb51"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb51-1"><a href="#cb51-1" aria-hidden="true" tabindex="-1"></a>np.multiply.<span class="bu">reduce</span>(x)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="27">
 <pre><code>120</code></pre>
 </div>
 </div>
-<p>If we’d like to store all the intermediate results of the computation, we can instead use <code>accumulate</code>:</p>
+<p>계산의 중간 결과를 모두 저장하려면 <code>accumulate</code>를 대신 사용할 수 있습니다.</p>
 <div id="cell-62" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="28">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb53"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb53-1"><a href="#cb53-1" aria-hidden="true" tabindex="-1"></a>np.add.accumulate(x)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="28">
@@ -974,11 +969,11 @@ erfinv(x) = [0.         0.27246271 0.73286908        inf]</code></pre>
 <pre><code>array([  1,   2,   6,  24, 120])</code></pre>
 </div>
 </div>
-<p>Note that for these particular cases, there are dedicated NumPy functions to compute the results (<code>np.sum</code>, <code>np.prod</code>, <code>np.cumsum</code>, <code>np.cumprod</code>), which we’ll explore in <a href="../notebooks/02.04-Computation-on-arrays-aggregates.html">Aggregations: Min, Max, and Everything In Between</a>.</p>
+<p>이러한 특별한 경우에는 결과를 계산하기 위한 전용 NumPy 함수(<code>np.sum</code>, <code>np.prod</code>, <code>np.cumsum</code>, <code>np.cumprod</code>)가 있으며, 이에 대해서는 <a href="../notebooks/02.04-Computation-on-arrays-aggregates.html">집계: 최소, 최대 및 그 사이의 모든 것</a>에서 살펴보겠습니다.</p>
 </section>
-<section id="outer-products" class="level3">
-<h3 class="anchored" data-anchor-id="outer-products">Outer Products</h3>
-<p>Finally, any ufunc can compute the output of all pairs of two different inputs using the <code>outer</code> method. This allows you, in one line, to do things like create a multiplication table:</p>
+<section id="외부-제품" class="level3">
+<h3 class="anchored" data-anchor-id="외부-제품">외부 제품</h3>
+<p>마지막으로, 모든 ufunc는 <code>외부</code> 방법을 사용하여 두 개의 서로 다른 입력의 모든 쌍의 출력을 계산할 수 있습니다. 이를 통해 한 줄로 구구단 생성과 같은 작업을 수행할 수 있습니다.</p>
 <div id="cell-66" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-scrolled="true" data-execution_count="30">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb57"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb57-1"><a href="#cb57-1" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> np.arange(<span class="dv">1</span>, <span class="dv">6</span>)</span>
 <span id="cb57-2"><a href="#cb57-2" aria-hidden="true" tabindex="-1"></a>np.multiply.outer(x, x)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -990,14 +985,14 @@ erfinv(x) = [0.         0.27246271 0.73286908        inf]</code></pre>
        [ 5, 10, 15, 20, 25]])</code></pre>
 </div>
 </div>
-<p>The <code>ufunc.at</code> and <code>ufunc.reduceat</code> methods are useful as well, and we will explore them in <a href="../notebooks/02.07-Fancy-Indexing.html">Fancy Indexing</a>.</p>
-<p>We will also encounter the ability of ufuncs to operate between arrays of different shapes and sizes, a set of operations known as <em>broadcasting</em>. This subject is important enough that we will devote a whole chapter to it (see <a href="../notebooks/02.05-Computation-on-arrays-broadcasting.html">Computation on Arrays: Broadcasting</a>).</p>
+<p><code>ufunc.at</code> 및 <code>ufunc.reduceat</code> 방법도 유용하며 <a href="../notebooks/02.07-Fancy-Indexing.html">Fancy Indexing</a>에서 살펴보겠습니다.</p>
+<p>또한 다양한 모양과 크기의 배열 사이에서 작동하는 ufunc의 기능, 즉 <em>브로드캐스팅</em>으로 알려진 일련의 작업을 접하게 됩니다. 이 주제는 전체 장을 다룰 만큼 중요합니다(<a href="../notebooks/02.05-Computation-on-arrays-broadcasting.html">배열에 대한 계산: 브로드캐스팅</a> 참조).</p>
 </section>
 </section>
-<section id="ufuncs-learning-more" class="level2">
-<h2 class="anchored" data-anchor-id="ufuncs-learning-more">Ufuncs: Learning More</h2>
-<p>More information on universal functions (including the full list of available functions) can be found on the <a href="http://www.numpy.org">NumPy</a> and <a href="http://www.scipy.org">SciPy</a> documentation websites.</p>
-<p>Recall that you can also access information directly from within IPython by importing the packages and using IPython’s tab completion and help (<code>?</code>) functionality, as described in <a href="../notebooks/01.01-Help-And-Documentation.html">Help and Documentation in IPython</a>.</p>
+<section id="ufuncs-더-알아보기" class="level2">
+<h2 class="anchored" data-anchor-id="ufuncs-더-알아보기">Ufuncs: 더 알아보기</h2>
+<p>범용 기능에 대한 자세한 내용(사용 가능한 기능의 전체 목록 포함)은 <a href="http://www.numpy.org">NumPy</a> 및 <a href="http://www.scipy.org">SciPy</a> 설명서 웹사이트에서 확인할 수 있습니다.</p>
+<p><a href="../notebooks/01.01-Help-And-Documentation.html">IPython의 도움말과 문서</a>에 설명된 대로 패키지를 가져오고 IPython의 탭 완성 및 도움말(<code>?</code>) 기능을 사용하여 IPython 내에서 직접 정보에 액세스할 수도 있습니다.</p>
 
 
 </section>
@@ -1405,13 +1400,13 @@ erfinv(x) = [0.         0.27246271 0.73286908        inf]</code></pre>
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../notebooks/02.02-The-Basics-Of-NumPy-Arrays.html" class="pagination-link" aria-label="The Basics of NumPy Arrays">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">The Basics of NumPy Arrays</span></span>
+      <a href="../notebooks/02.02-The-Basics-Of-NumPy-Arrays.html" class="pagination-link" aria-label="NumPy 배열의 기본">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">NumPy 배열의 기본</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../notebooks/02.04-Computation-on-arrays-aggregates.html" class="pagination-link" aria-label="Aggregations: min, max, and Everything in Between">
-        <span class="nav-page-text"><span class="chapter-title">Aggregations: min, max, and Everything in Between</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../notebooks/02.04-Computation-on-arrays-aggregates.html" class="pagination-link" aria-label="집계: 최소, 최대 및 그 사이의 모든 것">
+        <span class="nav-page-text"><span class="chapter-title">집계: 최소, 최대 및 그 사이의 모든 것</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

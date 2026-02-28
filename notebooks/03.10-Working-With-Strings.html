@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Vectorized String Operations – 파이썬 데이터 사이언스 핸드북</title>
+<title>벡터화된 문자열 작업 – 파이썬 데이터 사이언스 핸드북</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -77,7 +77,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-3778d3e438078121318a23701f9f68bb.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-803ae4f7a8810f475153517dc3c4ebae.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -121,7 +121,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../notebooks/03.00-Introduction-to-Pandas.html">Pandas를 이용한 데이터 조작</a></li><li class="breadcrumb-item"><a href="../notebooks/03.10-Working-With-Strings.html"><span class="chapter-title">Vectorized String Operations</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../notebooks/03.00-Introduction-to-Pandas.html">Pandas를 이용한 데이터 조작</a></li><li class="breadcrumb-item"><a href="../notebooks/03.10-Working-With-Strings.html"><span class="chapter-title">벡터화된 문자열 작업</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -168,7 +168,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/01.00-IPython-Beyond-Normal-Python.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Jupyter: 일반 Python을 넘어서</span></a>
+  <a href="../notebooks/01.00-IPython-Beyond-Normal-Python.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Jupyter: 일반 파이썬(Python)을 넘어서</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -198,17 +198,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/01.06-Errors-and-Debugging.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Errors and Debugging</span></a>
+  <a href="../notebooks/01.06-Errors-and-Debugging.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">오류 및 디버깅</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/01.07-Timing-and-Profiling.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Profiling and Timing Code</span></a>
+  <a href="../notebooks/01.07-Timing-and-Profiling.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">프로파일링 및 타이밍 코드</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/01.08-More-IPython-Resources.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">More IPython Resources</span></a>
+  <a href="../notebooks/01.08-More-IPython-Resources.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">추가 IPython 리소스</span></a>
   </div>
 </li>
       </ul>
@@ -224,52 +224,52 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.00-Introduction-to-NumPy.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Introduction to NumPy</span></a>
+  <a href="../notebooks/02.00-Introduction-to-NumPy.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">NumPy 소개</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.01-Understanding-Data-Types.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Understanding Data Types in Python</span></a>
+  <a href="../notebooks/02.01-Understanding-Data-Types.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">파이썬(Python)의 데이터 유형 이해</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.02-The-Basics-Of-NumPy-Arrays.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">The Basics of NumPy Arrays</span></a>
+  <a href="../notebooks/02.02-The-Basics-Of-NumPy-Arrays.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">NumPy 배열의 기본</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.03-Computation-on-arrays-ufuncs.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Computation on NumPy Arrays: Universal Functions</span></a>
+  <a href="../notebooks/02.03-Computation-on-arrays-ufuncs.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">NumPy 배열 계산: 범용 함수</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.04-Computation-on-arrays-aggregates.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Aggregations: min, max, and Everything in Between</span></a>
+  <a href="../notebooks/02.04-Computation-on-arrays-aggregates.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">집계: 최소, 최대 및 그 사이의 모든 것</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.05-Computation-on-arrays-broadcasting.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Computation on Arrays: Broadcasting</span></a>
+  <a href="../notebooks/02.05-Computation-on-arrays-broadcasting.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">배열 계산: 브로드캐스팅</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.06-Boolean-Arrays-and-Masks.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Comparisons, Masks, and Boolean Logic</span></a>
+  <a href="../notebooks/02.06-Boolean-Arrays-and-Masks.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">비교, 마스크 및 부울 논리</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.07-Fancy-Indexing.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Fancy Indexing</span></a>
+  <a href="../notebooks/02.07-Fancy-Indexing.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">멋진 인덱싱</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.08-Sorting.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Sorting Arrays</span></a>
+  <a href="../notebooks/02.08-Sorting.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">배열 정렬</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.09-Structured-Data-NumPy.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Structured Data: NumPy’s Structured Arrays</span></a>
+  <a href="../notebooks/02.09-Structured-Data-NumPy.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">구조화된 데이터: NumPy의 구조화된 배열</span></a>
   </div>
 </li>
       </ul>
@@ -285,72 +285,72 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.00-Introduction-to-Pandas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Data Manipulation with Pandas</span></a>
+  <a href="../notebooks/03.00-Introduction-to-Pandas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">팬더를 이용한 데이터 조작</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.01-Introducing-Pandas-Objects.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Introducing Pandas Objects</span></a>
+  <a href="../notebooks/03.01-Introducing-Pandas-Objects.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">판다스 객체 소개</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.02-Data-Indexing-and-Selection.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Data Indexing and Selection</span></a>
+  <a href="../notebooks/03.02-Data-Indexing-and-Selection.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">데이터 인덱싱 및 선택</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.03-Operations-in-Pandas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Operating on Data in Pandas</span></a>
+  <a href="../notebooks/03.03-Operations-in-Pandas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Pandas에서 데이터 작업</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.04-Missing-Values.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Handling Missing Data</span></a>
+  <a href="../notebooks/03.04-Missing-Values.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">누락된 데이터 처리</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.05-Hierarchical-Indexing.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Hierarchical Indexing</span></a>
+  <a href="../notebooks/03.05-Hierarchical-Indexing.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">계층적 인덱싱</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.06-Concat-And-Append.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Combining Datasets: concat and append</span></a>
+  <a href="../notebooks/03.06-Concat-And-Append.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">데이터세트 결합: 연결 및 추가</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.07-Merge-and-Join.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Combining Datasets: merge and join</span></a>
+  <a href="../notebooks/03.07-Merge-and-Join.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">데이터세트 결합: 병합 및 조인</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.08-Aggregation-and-Grouping.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Aggregation and Grouping</span></a>
+  <a href="../notebooks/03.08-Aggregation-and-Grouping.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">집계 및 그룹화</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.09-Pivot-Tables.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Pivot Tables</span></a>
+  <a href="../notebooks/03.09-Pivot-Tables.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">피벗 테이블</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.10-Working-With-Strings.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Vectorized String Operations</span></a>
+  <a href="../notebooks/03.10-Working-With-Strings.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">벡터화된 문자열 작업</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.11-Working-with-Time-Series.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Working with Time Series</span></a>
+  <a href="../notebooks/03.11-Working-with-Time-Series.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">시계열 작업</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.12-Performance-Eval-and-Query.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">High-Performance Pandas: eval and query</span></a>
+  <a href="../notebooks/03.12-Performance-Eval-and-Query.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">고성능 Pandas: 평가 및 쿼리</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.13-Further-Resources.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Further Resources</span></a>
+  <a href="../notebooks/03.13-Further-Resources.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">추가 리소스</span></a>
   </div>
 </li>
       </ul>
@@ -366,77 +366,77 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.00-Introduction-To-Matplotlib.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Visualization with Matplotlib</span></a>
+  <a href="../notebooks/04.00-Introduction-To-Matplotlib.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Matplotlib를 사용한 시각화</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.01-Simple-Line-Plots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Simple Line Plots</span></a>
+  <a href="../notebooks/04.01-Simple-Line-Plots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">간단한 선 도표</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.02-Simple-Scatter-Plots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Simple Scatter Plots</span></a>
+  <a href="../notebooks/04.02-Simple-Scatter-Plots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">단순 산점도</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.03-Errorbars.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Visualizing Uncertainties</span></a>
+  <a href="../notebooks/04.03-Errorbars.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">불확실성 시각화</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.04-Density-and-Contour-Plots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Density and Contour Plots</span></a>
+  <a href="../notebooks/04.04-Density-and-Contour-Plots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">밀도 및 등고선 플롯</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.05-Histograms-and-Binnings.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Histograms, Binnings, and Density</span></a>
+  <a href="../notebooks/04.05-Histograms-and-Binnings.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">히스토그램, 비닝 및 밀도</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.06-Customizing-Legends.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Customizing Plot Legends</span></a>
+  <a href="../notebooks/04.06-Customizing-Legends.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">플롯 범례 사용자 정의</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.07-Customizing-Colorbars.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Customizing Colorbars</span></a>
+  <a href="../notebooks/04.07-Customizing-Colorbars.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">컬러바 사용자 정의</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.08-Multiple-Subplots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Multiple Subplots</span></a>
+  <a href="../notebooks/04.08-Multiple-Subplots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">다중 서브플롯</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.09-Text-and-Annotation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Text and Annotation</span></a>
+  <a href="../notebooks/04.09-Text-and-Annotation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">텍스트 및 주석</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.10-Customizing-Ticks.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Customizing Ticks</span></a>
+  <a href="../notebooks/04.10-Customizing-Ticks.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">눈금 사용자 정의</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.11-Settings-and-Stylesheets.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Customizing Matplotlib: Configurations and Stylesheets</span></a>
+  <a href="../notebooks/04.11-Settings-and-Stylesheets.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Matplotlib 사용자 정의: 구성 및 스타일시트</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.12-Three-Dimensional-Plotting.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Three-Dimensional Plotting in Matplotlib</span></a>
+  <a href="../notebooks/04.12-Three-Dimensional-Plotting.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Matplotlib의 3차원 플로팅</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.14-Visualization-With-Seaborn.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Visualization with Seaborn</span></a>
+  <a href="../notebooks/04.14-Visualization-With-Seaborn.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Seaborn을 이용한 시각화</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.15-Further-Resources.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Further Resources</span></a>
+  <a href="../notebooks/04.15-Further-Resources.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">추가 리소스</span></a>
   </div>
 </li>
       </ul>
@@ -452,82 +452,82 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.00-Machine-Learning.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Machine Learning</span></a>
+  <a href="../notebooks/05.00-Machine-Learning.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">머신러닝</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.01-What-Is-Machine-Learning.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">What Is Machine Learning?</span></a>
+  <a href="../notebooks/05.01-What-Is-Machine-Learning.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">머신러닝이란?</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.02-Introducing-Scikit-Learn.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Introducing Scikit-Learn</span></a>
+  <a href="../notebooks/05.02-Introducing-Scikit-Learn.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Scikit-Learn 소개</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.03-Hyperparameters-and-Model-Validation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Hyperparameters and Model Validation</span></a>
+  <a href="../notebooks/05.03-Hyperparameters-and-Model-Validation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">하이퍼파라미터 및 모델 검증</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.04-Feature-Engineering.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Feature Engineering</span></a>
+  <a href="../notebooks/05.04-Feature-Engineering.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">기능 엔지니어링</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.05-Naive-Bayes.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Naive Bayes Classification</span></a>
+  <a href="../notebooks/05.05-Naive-Bayes.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 나이브 베이즈 분류</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.06-Linear-Regression.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Linear Regression</span></a>
+  <a href="../notebooks/05.06-Linear-Regression.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 선형 회귀</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.07-Support-Vector-Machines.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Support Vector Machines</span></a>
+  <a href="../notebooks/05.07-Support-Vector-Machines.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 서포트 벡터 머신</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.08-Random-Forests.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Decision Trees and Random Forests</span></a>
+  <a href="../notebooks/05.08-Random-Forests.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 의사결정 트리 및 랜덤 포레스트</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.09-Principal-Component-Analysis.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Principal Component Analysis</span></a>
+  <a href="../notebooks/05.09-Principal-Component-Analysis.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 주성분 분석</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.10-Manifold-Learning.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Manifold Learning</span></a>
+  <a href="../notebooks/05.10-Manifold-Learning.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 다양한 학습</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.11-K-Means.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: k-Means Clustering</span></a>
+  <a href="../notebooks/05.11-K-Means.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: k-평균 클러스터링</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.12-Gaussian-Mixtures.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Gaussian Mixture Models</span></a>
+  <a href="../notebooks/05.12-Gaussian-Mixtures.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 가우스 혼합 모델</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.13-Kernel-Density-Estimation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Kernel Density Estimation</span></a>
+  <a href="../notebooks/05.13-Kernel-Density-Estimation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 커널 밀도 추정</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.14-Image-Features.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Application: A Face Detection Pipeline</span></a>
+  <a href="../notebooks/05.14-Image-Features.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">응용 분야: 얼굴 감지 파이프라인</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.15-Learning-More.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Further Machine Learning Resources</span></a>
+  <a href="../notebooks/05.15-Learning-More.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">추가 머신러닝(Machine Learning) 리소스</span></a>
   </div>
 </li>
       </ul>
@@ -543,7 +543,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/06.00-Figure-Code.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Appendix: Figure Code</span></a>
+  <a href="../notebooks/06.00-Figure-Code.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">부록: 그림 코드</span></a>
   </div>
 </li>
       </ul>
@@ -558,17 +558,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#introducing-pandas-string-operations" id="toc-introducing-pandas-string-operations" class="nav-link active" data-scroll-target="#introducing-pandas-string-operations">Introducing Pandas String Operations</a></li>
-  <li><a href="#tables-of-pandas-string-methods" id="toc-tables-of-pandas-string-methods" class="nav-link" data-scroll-target="#tables-of-pandas-string-methods">Tables of Pandas String Methods</a>
+  <li><a href="#pandas-문자열-작업-소개" id="toc-pandas-문자열-작업-소개" class="nav-link active" data-scroll-target="#pandas-문자열-작업-소개">Pandas 문자열 작업 소개</a></li>
+  <li><a href="#pandas-문자열-메소드-테이블" id="toc-pandas-문자열-메소드-테이블" class="nav-link" data-scroll-target="#pandas-문자열-메소드-테이블">Pandas 문자열 메소드 테이블</a>
   <ul class="collapse">
-  <li><a href="#methods-similar-to-python-string-methods" id="toc-methods-similar-to-python-string-methods" class="nav-link" data-scroll-target="#methods-similar-to-python-string-methods">Methods Similar to Python String Methods</a></li>
-  <li><a href="#methods-using-regular-expressions" id="toc-methods-using-regular-expressions" class="nav-link" data-scroll-target="#methods-using-regular-expressions">Methods Using Regular Expressions</a></li>
-  <li><a href="#miscellaneous-methods" id="toc-miscellaneous-methods" class="nav-link" data-scroll-target="#miscellaneous-methods">Miscellaneous Methods</a></li>
+  <li><a href="#파이썬python-문자열-메서드와-유사한-메서드" id="toc-파이썬python-문자열-메서드와-유사한-메서드" class="nav-link" data-scroll-target="#파이썬python-문자열-메서드와-유사한-메서드">파이썬(Python) 문자열 메서드와 유사한 메서드</a></li>
+  <li><a href="#정규식을-사용하는-방법" id="toc-정규식을-사용하는-방법" class="nav-link" data-scroll-target="#정규식을-사용하는-방법">정규식을 사용하는 방법</a></li>
+  <li><a href="#기타-방법" id="toc-기타-방법" class="nav-link" data-scroll-target="#기타-방법">기타 방법</a></li>
   </ul></li>
-  <li><a href="#example-recipe-database" id="toc-example-recipe-database" class="nav-link" data-scroll-target="#example-recipe-database">Example: Recipe Database</a>
+  <li><a href="#예-레시피-데이터베이스" id="toc-예-레시피-데이터베이스" class="nav-link" data-scroll-target="#예-레시피-데이터베이스">예: 레시피 데이터베이스</a>
   <ul class="collapse">
-  <li><a href="#a-simple-recipe-recommender" id="toc-a-simple-recipe-recommender" class="nav-link" data-scroll-target="#a-simple-recipe-recommender">A Simple Recipe Recommender</a></li>
-  <li><a href="#going-further-with-recipes" id="toc-going-further-with-recipes" class="nav-link" data-scroll-target="#going-further-with-recipes">Going Further with Recipes</a></li>
+  <li><a href="#간단한-레시피-추천기" id="toc-간단한-레시피-추천기" class="nav-link" data-scroll-target="#간단한-레시피-추천기">간단한 레시피 추천기</a></li>
+  <li><a href="#레시피를-더욱-발전시키다" id="toc-레시피를-더욱-발전시키다" class="nav-link" data-scroll-target="#레시피를-더욱-발전시키다">레시피를 더욱 발전시키다</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -576,9 +576,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../notebooks/03.00-Introduction-to-Pandas.html">Pandas를 이용한 데이터 조작</a></li><li class="breadcrumb-item"><a href="../notebooks/03.10-Working-With-Strings.html"><span class="chapter-title">Vectorized String Operations</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../notebooks/03.00-Introduction-to-Pandas.html">Pandas를 이용한 데이터 조작</a></li><li class="breadcrumb-item"><a href="../notebooks/03.10-Working-With-Strings.html"><span class="chapter-title">벡터화된 문자열 작업</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-title">Vectorized String Operations</span></h1>
+<h1 class="title"><span class="chapter-title">벡터화된 문자열 작업</span></h1>
 </div>
 
 
@@ -595,10 +595,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>One strength of Python is its relative ease in handling and manipulating string data. Pandas builds on this and provides a comprehensive set of <em>vectorized string operations</em> that are an important part of the type of munging required when working with (read: cleaning up) real-world data. In this chapter, we’ll walk through some of the Pandas string operations, and then take a look at using them to partially clean up a very messy dataset of recipes collected from the internet.</p>
-<section id="introducing-pandas-string-operations" class="level2">
-<h2 class="anchored" data-anchor-id="introducing-pandas-string-operations">Introducing Pandas String Operations</h2>
-<p>We saw in previous chapters how tools like NumPy and Pandas generalize arithmetic operations so that we can easily and quickly perform the same operation on many array elements. For example:</p>
+<p>파이썬(Python)의 장점 중 하나는 문자열 데이터를 상대적으로 쉽게 처리하고 조작할 수 있다는 것입니다. Pandas는 이를 기반으로 실제 데이터로 작업(읽기: 정리)할 때 필요한 통합 유형의 중요한 부분인 포괄적인 <em>벡터화된 문자열 작업</em> 세트를 제공합니다. 이번 장에서는 Pandas 문자열 작업 중 일부를 살펴본 다음 이를 사용하여 인터넷에서 수집한 매우 지저분한 레시피 데이터 세트를 부분적으로 정리하는 방법을 살펴보겠습니다.</p>
+<section id="pandas-문자열-작업-소개" class="level2">
+<h2 class="anchored" data-anchor-id="pandas-문자열-작업-소개">Pandas 문자열 작업 소개</h2>
+<p>이전 장에서 NumPy 및 Pandas와 같은 도구가 산술 연산을 일반화하여 많은 배열 요소에 대해 동일한 연산을 쉽고 빠르게 수행할 수 있는 방법을 살펴보았습니다. 예를 들어:</p>
 <div id="cell-3" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="1">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> np.array([<span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">5</span>, <span class="dv">7</span>, <span class="dv">11</span>, <span class="dv">13</span>])</span>
@@ -607,7 +607,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <pre><code>array([ 4,  6, 10, 14, 22, 26])</code></pre>
 </div>
 </div>
-<p>This <em>vectorization</em> of operations simplifies the syntax of operating on arrays of data: we no longer have to worry about the size or shape of the array, but just about what operation we want done. For arrays of strings, NumPy does not provide such simple access, and thus you’re stuck using a more verbose loop syntax:</p>
+<p>이러한 연산의 <em>벡터화</em>는 데이터 배열에 대한 연산 구문을 단순화합니다. 더 이상 배열의 크기나 모양에 대해 걱정할 필요가 없고 어떤 연산을 수행할지에 대해서만 걱정하면 됩니다. 문자열 배열의 경우 NumPy는 이러한 간단한 액세스를 제공하지 않으므로 더 자세한 루프 구문을 사용하게 됩니다.</p>
 <div id="cell-5" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="2">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> [<span class="st">'peter'</span>, <span class="st">'Paul'</span>, <span class="st">'MARY'</span>, <span class="st">'gUIDO'</span>]</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>[s.capitalize() <span class="cf">for</span> s <span class="kw">in</span> data]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -615,7 +615,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <pre><code>['Peter', 'Paul', 'Mary', 'Guido']</code></pre>
 </div>
 </div>
-<p>This is perhaps sufficient to work with some data, but it will break if there are any missing values, so this approach requires putting in extra checks:</p>
+<p>이는 일부 데이터를 작업하는 데는 충분할 수 있지만 누락된 값이 있으면 중단될 수 있으므로 이 접근 방식에서는 추가 확인이 필요합니다.</p>
 <div id="cell-7" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="3">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> [<span class="st">'peter'</span>, <span class="st">'Paul'</span>, <span class="va">None</span>, <span class="st">'MARY'</span>, <span class="st">'gUIDO'</span>]</span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>[s <span class="cf">if</span> s <span class="kw">is</span> <span class="va">None</span> <span class="cf">else</span> s.capitalize() <span class="cf">for</span> s <span class="kw">in</span> data]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -623,8 +623,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <pre><code>['Peter', 'Paul', None, 'Mary', 'Guido']</code></pre>
 </div>
 </div>
-<p>This kind of manual approach is not only verbose and inconvenient, it can be error-prone.</p>
-<p>Pandas includes features to address both this need for vectorized string operations and the need for correctly handling missing data via the <code>str</code> attribute of Pandas <code>Series</code> and <code>Index</code> objects containing strings. So, for example, if we create a Pandas <code>Series</code> with this data we can directly call the <code>str.capitalize</code> method, which has missing value handling built in:</p>
+<p>이러한 수동 접근 방식은 장황하고 불편할 뿐만 아니라 오류가 발생하기 쉽습니다.</p>
+<p>Pandas에는 벡터화된 문자열 작업에 대한 요구 사항과 Pandas <code>Series</code>의 <code>str</code> 속성 및 문자열을 포함하는 <code>Index</code> 개체를 통해 누락된 데이터를 올바르게 처리하기 위한 요구 사항을 모두 해결하는 기능이 포함되어 있습니다. 예를 들어 이 데이터로 Pandas <code>Series</code>를 생성하면 누락된 값 처리 기능이 내장된 <code>str.capitalize</code> 메서드를 직접 호출할 수 있습니다.</p>
 <div id="cell-9" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="4">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>names <span class="op">=</span> pd.Series(data)</span>
@@ -639,69 +639,69 @@ dtype: object</code></pre>
 </div>
 </div>
 </section>
-<section id="tables-of-pandas-string-methods" class="level2">
-<h2 class="anchored" data-anchor-id="tables-of-pandas-string-methods">Tables of Pandas String Methods</h2>
-<p>If you have a good understanding of string manipulation in Python, most of the Pandas string syntax is intuitive enough that it’s probably sufficient to just list the available methods. We’ll start with that here, before diving deeper into a few of the subtleties. The examples in this section use the following <code>Series</code> object:</p>
+<section id="pandas-문자열-메소드-테이블" class="level2">
+<h2 class="anchored" data-anchor-id="pandas-문자열-메소드-테이블">Pandas 문자열 메소드 테이블</h2>
+<p>파이썬(Python)의 문자열 조작에 대해 잘 이해하고 있다면 대부분의 Pandas 문자열 구문은 사용 가능한 메서드를 나열하는 것만으로도 충분할 정도로 직관적입니다. 몇 가지 세부 사항에 대해 자세히 알아보기 전에 여기서부터 시작하겠습니다. 이 섹션의 예시에서는 다음 <code>Series</code> 객체를 사용합니다.</p>
 <div id="cell-11" class="cell" data-tags="[]" data-execution_count="5">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>monte <span class="op">=</span> pd.Series([<span class="st">'Graham Chapman'</span>, <span class="st">'John Cleese'</span>, <span class="st">'Terry Gilliam'</span>,</span>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>                   <span class="st">'Eric Idle'</span>, <span class="st">'Terry Jones'</span>, <span class="st">'Michael Palin'</span>])</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<section id="methods-similar-to-python-string-methods" class="level3">
-<h3 class="anchored" data-anchor-id="methods-similar-to-python-string-methods">Methods Similar to Python String Methods</h3>
-<p>Nearly all of Python’s built-in string methods are mirrored by a Pandas vectorized string method. Here is a list of Pandas <code>str</code> methods that mirror Python string methods:</p>
+<section id="파이썬python-문자열-메서드와-유사한-메서드" class="level3">
+<h3 class="anchored" data-anchor-id="파이썬python-문자열-메서드와-유사한-메서드">파이썬(Python) 문자열 메서드와 유사한 메서드</h3>
+<p>거의 모든 파이썬(Python)의 내장 문자열 메소드는 Pandas의 벡터화된 문자열 메소드에 의해 미러링됩니다. 다음은 파이썬(Python) 문자열 메서드를 미러링하는 Pandas <code>str</code> 메서드 목록입니다.</p>
 <table class="caption-top table">
 <tbody>
 <tr class="odd">
 <td><code>len()</code></td>
-<td><code>lower()</code></td>
-<td><code>translate()</code></td>
+<td><code>낮은()</code></td>
+<td><code>번역()</code></td>
 <td><code>islower()</code></td>
 </tr>
 <tr class="even">
-<td><code>ljust()</code></td>
-<td><code>upper()</code></td>
+<td><code>밝다()</code></td>
+<td><code>상부()</code></td>
 <td><code>startswith()</code></td>
 <td><code>isupper()</code></td>
 </tr>
 <tr class="odd">
 <td><code>rjust()</code></td>
-<td><code>find()</code></td>
+<td><code>찾기()</code></td>
 <td><code>endswith()</code></td>
 <td><code>isnumeric()</code></td>
 </tr>
 <tr class="even">
-<td><code>center()</code></td>
+<td><code>센터()</code></td>
 <td><code>rfind()</code></td>
 <td><code>isalnum()</code></td>
 <td><code>isdecimal()</code></td>
 </tr>
 <tr class="odd">
 <td><code>zfill()</code></td>
-<td><code>index()</code></td>
-<td><code>isalpha()</code></td>
-<td><code>split()</code></td>
+<td><code>인덱스()</code></td>
+<td><code>이살파()</code></td>
+<td><code>분할()</code></td>
 </tr>
 <tr class="even">
-<td><code>strip()</code></td>
+<td><code>스트립()</code></td>
 <td><code>rindex()</code></td>
 <td><code>isdigit()</code></td>
 <td><code>rsplit()</code></td>
 </tr>
 <tr class="odd">
 <td><code>rstrip()</code></td>
-<td><code>capitalize()</code></td>
+<td><code>자본화()</code></td>
 <td><code>isspace()</code></td>
-<td><code>partition()</code></td>
+<td><code>파티션()</code></td>
 </tr>
 <tr class="even">
 <td><code>lstrip()</code></td>
-<td><code>swapcase()</code></td>
+<td><code>스왑케이스()</code></td>
 <td><code>istitle()</code></td>
 <td><code>rpartition()</code></td>
 </tr>
 </tbody>
 </table>
-<p>Notice that these have various return values. Some, like <code>lower</code>, return a series of strings:</p>
+<p>여기에는 다양한 반환 값이 있습니다. <code>lower</code>와 같은 일부는 일련의 문자열을 반환합니다.</p>
 <div id="cell-13" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="6">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>monte.<span class="bu">str</span>.lower()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="6">
@@ -714,7 +714,7 @@ dtype: object</code></pre>
 dtype: object</code></pre>
 </div>
 </div>
-<p>But some others return numbers:</p>
+<p>그러나 일부는 숫자를 반환합니다.</p>
 <div id="cell-15" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="7">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>monte.<span class="bu">str</span>.<span class="bu">len</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="7">
@@ -727,7 +727,7 @@ dtype: object</code></pre>
 dtype: int64</code></pre>
 </div>
 </div>
-<p>Or Boolean values:</p>
+<p>또는 부울 값:</p>
 <div id="cell-17" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="8">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>monte.<span class="bu">str</span>.startswith(<span class="st">'T'</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="8">
@@ -740,7 +740,7 @@ dtype: int64</code></pre>
 dtype: bool</code></pre>
 </div>
 </div>
-<p>Still others return lists or other compound values for each element:</p>
+<p>또 다른 것들은 각 요소에 대해 목록이나 기타 복합 값을 반환합니다.</p>
 <div id="cell-19" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="9">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>monte.<span class="bu">str</span>.split()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="9">
@@ -753,58 +753,58 @@ dtype: bool</code></pre>
 dtype: object</code></pre>
 </div>
 </div>
-<p>We’ll see further manipulations of this kind of series-of-lists object as we continue our discussion.</p>
+<p>토론을 계속하면서 이러한 종류의 목록 시리즈 객체에 대한 추가 조작을 보게 될 것입니다.</p>
 </section>
-<section id="methods-using-regular-expressions" class="level3">
-<h3 class="anchored" data-anchor-id="methods-using-regular-expressions">Methods Using Regular Expressions</h3>
-<p>In addition, there are several methods that accept regular expressions (regexps) to examine the content of each string element, and follow some of the API conventions of Python’s built-in <code>re</code> module:</p>
+<section id="정규식을-사용하는-방법" class="level3">
+<h3 class="anchored" data-anchor-id="정규식을-사용하는-방법">정규식을 사용하는 방법</h3>
+<p>게다가, 정규식(regexps)을 받아 각 문자열 요소의 내용을 검사하고 파이썬(Python) 내장 <code>re</code> 모듈의 API 규칙 중 일부를 따르는 여러 가지 방법이 있습니다:</p>
 <table class="caption-top table">
 <colgroup>
-<col style="width: 45%">
-<col style="width: 54%">
+<col style="width: 48%">
+<col style="width: 52%">
 </colgroup>
 <thead>
 <tr class="header">
-<th>Method</th>
-<th>Description</th>
+<th>방법</th>
+<th>설명</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><code>match</code></td>
-<td>Calls <code>re.match</code> on each element, returning a Boolean.</td>
+<td>‘일치’</td>
+<td>각 요소에 대해 ’re.match’를 호출하여 부울을 반환합니다.</td>
 </tr>
 <tr class="even">
-<td><code>extract</code></td>
-<td>Calls <code>re.match</code> on each element, returning matched groups as strings.</td>
+<td><code>추출</code></td>
+<td>각 요소에 대해 <code>re.match</code>를 호출하여 일치하는 그룹을 문자열로 반환합니다.</td>
 </tr>
 <tr class="odd">
-<td><code>findall</code></td>
-<td>Calls <code>re.findall</code> on each element</td>
+<td>‘찾기’</td>
+<td>각 요소에 대해 <code>re.findall</code>을 호출합니다</td>
 </tr>
 <tr class="even">
-<td><code>replace</code></td>
-<td>Replaces occurrences of pattern with some other string</td>
+<td><code>교체</code></td>
+<td>패턴 발생을 다른 문자열로 바꿉니다</td>
 </tr>
 <tr class="odd">
-<td><code>contains</code></td>
-<td>Calls <code>re.search</code> on each element, returning a boolean</td>
+<td><code>포함</code></td>
+<td>각 요소에 대해 <code>re.search</code>를 호출하여 부울</td>
 </tr>
 <tr class="even">
-<td><code>count</code></td>
-<td>Counts occurrences of pattern</td>
+<td>‘카운트’</td>
+<td>패턴 발생 횟수</td>
 </tr>
 <tr class="odd">
-<td><code>split</code></td>
-<td>Equivalent to <code>str.split</code>, but accepts regexps</td>
+<td><code>분할</code></td>
+<td><code>str.split</code>과 동일하지만 정규 표현식을 허용합니다</td>
 </tr>
 <tr class="even">
 <td><code>rsplit</code></td>
-<td>Equivalent to <code>str.rsplit</code>, but accepts regexps</td>
+<td><code>str.rsplit</code>과 동일하지만 정규 표현식을 허용합니다</td>
 </tr>
 </tbody>
 </table>
-<p>With these, we can do a wide range of operations. For example, we can extract the first name from each element by asking for a contiguous group of characters at the beginning of each element:</p>
+<p>이를 통해 우리는 광범위한 작업을 수행할 수 있습니다. 예를 들어 각 요소의 시작 부분에 연속된 문자 그룹을 요청하여 각 요소에서 이름을 추출할 수 있습니다.</p>
 <div id="cell-23" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="10">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>monte.<span class="bu">str</span>.extract(<span class="st">'([A-Za-z]+)'</span>, expand<span class="op">=</span><span class="va">False</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="10">
@@ -817,7 +817,7 @@ dtype: object</code></pre>
 dtype: object</code></pre>
 </div>
 </div>
-<p>Or we can do something more complicated, like finding all names that start and end with a consonant, making use of the start-of-string (<code>^</code>) and end-of-string (<code>$</code>) regular expression characters:</p>
+<p>또는 문자열 시작(<code>^</code>) 및 문자열 끝(<code>$</code>) 정규식 문자를 사용하여 자음으로 시작하고 끝나는 모든 이름을 찾는 등 더 복잡한 작업을 수행할 수도 있습니다.</p>
 <div id="cell-25" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="11">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb20"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>monte.<span class="bu">str</span>.findall(<span class="vs">r'</span><span class="dv">^</span><span class="pp">[^AEIOU]</span><span class="dv">.</span><span class="op">*</span><span class="pp">[^aeiou]</span><span class="dv">$</span><span class="vs">'</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="11">
@@ -830,68 +830,68 @@ dtype: object</code></pre>
 dtype: object</code></pre>
 </div>
 </div>
-<p>The ability to concisely apply regular expressions across <code>Series</code> or <code>DataFrame</code> entries opens up many possibilities for analysis and cleaning of data.</p>
+<p>‘시리즈’ 또는 ‘DataFrame’ 항목 전체에 정규식을 간결하게 적용하는 기능은 데이터 분석 및 정리에 대한 많은 가능성을 열어줍니다.</p>
 </section>
-<section id="miscellaneous-methods" class="level3">
-<h3 class="anchored" data-anchor-id="miscellaneous-methods">Miscellaneous Methods</h3>
-<p>Finally, there are some miscellaneous methods that enable other convenient operations:</p>
+<section id="기타-방법" class="level3">
+<h3 class="anchored" data-anchor-id="기타-방법">기타 방법</h3>
+<p>마지막으로 다른 편리한 작업을 가능하게 하는 몇 가지 기타 방법이 있습니다.</p>
 <table class="caption-top table">
 <colgroup>
-<col style="width: 38%">
-<col style="width: 61%">
+<col style="width: 40%">
+<col style="width: 59%">
 </colgroup>
 <thead>
 <tr class="header">
-<th>Method</th>
-<th>Description</th>
+<th>방법</th>
+<th>설명</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><code>get</code></td>
-<td>Indexes each element</td>
+<td>‘얻다’</td>
+<td>각 요소를 색인화합니다</td>
 </tr>
 <tr class="even">
-<td><code>slice</code></td>
-<td>Slices each element</td>
+<td>‘슬라이스’</td>
+<td>각 요소를 슬라이스</td>
 </tr>
 <tr class="odd">
-<td><code>slice_replace</code></td>
-<td>Replaces slice in each element with the passed value</td>
+<td><code>슬라이스_교체</code></td>
+<td>각 요소의 슬라이스를 전달된 값으로 대체합니다</td>
 </tr>
 <tr class="even">
-<td><code>cat</code></td>
-<td>Concatenates strings</td>
+<td>‘고양이’</td>
+<td>문자열 연결</td>
 </tr>
 <tr class="odd">
-<td><code>repeat</code></td>
-<td>Repeats values</td>
+<td>‘반복’</td>
+<td>값 반복</td>
 </tr>
 <tr class="even">
-<td><code>normalize</code></td>
-<td>Returns Unicode form of strings</td>
+<td>‘정규화’</td>
+<td>유니코드 형식의 문자열을 반환합니다.</td>
 </tr>
 <tr class="odd">
-<td><code>pad</code></td>
-<td>Adds whitespace to left, right, or both sides of strings</td>
+<td>‘패드’</td>
+<td>문자열의 왼쪽, 오른쪽 또는 양쪽에 공백을 추가합니다</td>
 </tr>
 <tr class="even">
-<td><code>wrap</code></td>
-<td>Splits long strings into lines with length less than a given width</td>
+<td><code>랩</code></td>
+<td>긴 문자열을 주어진 너비보다 짧은 길이의 줄로 분할합니다</td>
 </tr>
 <tr class="odd">
-<td><code>join</code></td>
-<td>Joins strings in each element of the <code>Series</code> with the passed separator</td>
+<td>‘가입’</td>
+<td>전달된 구분 기호를 사용하여 ’계열’의 각 요소에 있는 문자열을 결합합니다</td>
 </tr>
 <tr class="even">
 <td><code>get_dummies</code></td>
-<td>Extracts dummy variables as a <code>DataFrame</code></td>
+<td>더미 변수를 <code>DataFrame</code>으로 추출</td>
 </tr>
 </tbody>
 </table>
-<section id="vectorized-item-access-and-slicing" class="level4">
-<h4 class="anchored" data-anchor-id="vectorized-item-access-and-slicing">Vectorized item access and slicing</h4>
-<p>The <code>get</code> and <code>slice</code> operations, in particular, enable vectorized element access from each array. For example, we can get a slice of the first three characters of each array using <code>str.slice(0, 3)</code>. Note that this behavior is also available through Python’s normal indexing syntax; for example, <code>df.str.slice(0, 3)</code> is equivalent to <code>df.str[0:3]</code>:</p>
+<section id="벡터화된-항목-액세스-및-슬라이싱" class="level4">
+<h4 class="anchored" data-anchor-id="벡터화된-항목-액세스-및-슬라이싱">벡터화된 항목 액세스 및 슬라이싱</h4>
+<p>특히 <code>get</code> 및 <code>slice</code> 작업을 사용하면 각 배열에서 벡터화된 요소에 액세스할 수 있습니다. 예를 들어 <code>str.slice(0, 3)</code>을 사용하여 각 배열의 처음 세 문자의 조각을 얻을 수 있습니다. 이 동작은 파이썬(Python)의 일반 인덱싱 구문을 통해서도 가능합니다. 예를 들어 <code>df.str.slice(0, 3)</code>은 <code>df.str[0:3]</code>과 동일합니다.</p>
 <div id="cell-29" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="12">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb22"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>monte.<span class="bu">str</span>[<span class="dv">0</span>:<span class="dv">3</span>]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="12">
@@ -904,8 +904,8 @@ dtype: object</code></pre>
 dtype: object</code></pre>
 </div>
 </div>
-<p>Indexing via <code>df.str.get(i)</code> and <code>df.str[i]</code> are likewise similar.</p>
-<p>These indexing methods also let you access elements of arrays returned by <code>split</code>. For example, to extract the last name of each entry, we can combine <code>split</code> with <code>str</code> indexing:</p>
+<p><code>df.str.get(i)</code> 및 <code>df.str[i]</code>를 통한 인덱싱도 유사합니다.</p>
+<p>이러한 인덱싱 방법을 사용하면 <code>split</code>에서 반환된 배열 요소에 액세스할 수도 있습니다. 예를 들어 각 항목의 성을 추출하려면 <code>split</code>과 <code>str</code> 인덱싱을 결합할 수 있습니다.</p>
 <div id="cell-31" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="13">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb24"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>monte.<span class="bu">str</span>.split().<span class="bu">str</span>[<span class="op">-</span><span class="dv">1</span>]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="13">
@@ -919,9 +919,9 @@ dtype: object</code></pre>
 </div>
 </div>
 </section>
-<section id="indicator-variables" class="level4">
-<h4 class="anchored" data-anchor-id="indicator-variables">Indicator variables</h4>
-<p>Another method that requires a bit of extra explanation is the <code>get_dummies</code> method. This is useful when your data has a column containing some sort of coded indicator. For example, we might have a dataset that contains information in the form of codes, such as A = “born in America,” B = “born in the United Kingdom,” C = “likes cheese,” D = “likes spam”:</p>
+<section id="표시변수" class="level4">
+<h4 class="anchored" data-anchor-id="표시변수">표시변수</h4>
+<p>약간의 추가 설명이 필요한 또 다른 방법은 <code>get_dummies</code> 방법입니다. 이는 데이터에 일종의 코딩된 표시기가 포함된 열이 있는 경우 유용합니다. 예를 들어 A = “미국 출생”, B = “영국 출생”, C = “치즈를 좋아함”, D = “스팸을 좋아함”과 같은 코드 형식의 정보를 포함하는 데이터세트가 있을 수 있습니다.</p>
 <div id="cell-33" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="14">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb26"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>full_monte <span class="op">=</span> pd.DataFrame({<span class="st">'name'</span>: monte,</span>
 <span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a>                           <span class="st">'info'</span>: [<span class="st">'B|C|D'</span>, <span class="st">'B|D'</span>, <span class="st">'A|C'</span>,</span>
@@ -976,7 +976,7 @@ dtype: object</code></pre>
 </div>
 </div>
 </div>
-<p>The <code>get_dummies</code> routine lets us split out these indicator variables into a <code>DataFrame</code>:</p>
+<p><code>get_dummies</code> 루틴을 사용하면 이러한 표시 변수를 <code>DataFrame</code>으로 분할할 수 있습니다.</p>
 <div id="cell-35" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="15">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb27"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a>full_monte[<span class="st">'info'</span>].<span class="bu">str</span>.get_dummies(<span class="st">'|'</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="15">
@@ -1042,21 +1042,21 @@ dtype: object</code></pre>
 </div>
 </div>
 </div>
-<p>With these operations as building blocks, you can construct an endless range of string processing procedures when cleaning your data.</p>
-<p>We won’t dive further into these methods here, but I encourage you to read through <a href="https://pandas.pydata.org/pandas-docs/stable/user_guide/text.html">“Working with Text Data”</a> in the Pandas online documentation, or to refer to the resources listed in <a href="../notebooks/03.13-Further-Resources.html">Further Resources</a>.</p>
+<p>이러한 작업을 빌딩 블록으로 사용하면 데이터를 정리할 때 끝없는 범위의 문자열 처리 절차를 구성할 수 있습니다.</p>
+<p>여기서는 이러한 방법에 대해 더 자세히 다루지 않지만 Pandas 온라인 설명서의 <a href="https://pandas.pydata.org/pandas-docs/stable/user_guide/text.html">“텍스트 데이터 작업”</a>을 읽거나 <a href="../notebooks/03.13-Further-Resources.html">추가 리소스</a>에 나열된 리소스를 참조하는 것이 좋습니다.</p>
 </section>
 </section>
 </section>
-<section id="example-recipe-database" class="level2">
-<h2 class="anchored" data-anchor-id="example-recipe-database">Example: Recipe Database</h2>
-<p>These vectorized string operations become most useful in the process of cleaning up messy, real-world data. Here I’ll walk through an example of that, using an open recipe database compiled from various sources on the web. Our goal will be to parse the recipe data into ingredient lists, so we can quickly find a recipe based on some ingredients we have on hand. The scripts used to compile this can be found at https://github.com/fictivekin/openrecipes, and the link to the most recent version of the database is found there as well.</p>
-<p>This database is about 30 MB, and can be downloaded and unzipped with these commands:</p>
+<section id="예-레시피-데이터베이스" class="level2">
+<h2 class="anchored" data-anchor-id="예-레시피-데이터베이스">예: 레시피 데이터베이스</h2>
+<p>이러한 벡터화된 문자열 작업은 지저분한 실제 데이터를 정리하는 과정에서 가장 유용합니다. 여기에서는 웹의 다양한 소스에서 컴파일된 공개 레시피 데이터베이스를 사용하여 그 예를 살펴보겠습니다. 우리의 목표는 레시피 데이터를 재료 목록으로 구문 분석하여 우리가 가지고 있는 일부 재료를 기반으로 레시피를 빠르게 찾을 수 있도록 하는 것입니다. 이를 컴파일하는 데 사용된 스크립트는 https://github.com/fictivekin/openrecipes에서 찾을 수 있으며, 최신 버전의 데이터베이스에 대한 링크도 여기에 있습니다.</p>
+<p>이 데이터베이스는 약 30MB이며 다음 명령을 사용하여 다운로드하고 압축을 풀 수 있습니다.</p>
 <div id="cell-38" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="16">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb28"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="co"># repo = "https://raw.githubusercontent.com/jakevdp/open-recipe-data/master"</span></span>
 <span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a><span class="co"># !cd data &amp;&amp; curl -O {repo}/recipeitems.json.gz</span></span>
 <span id="cb28-3"><a href="#cb28-3" aria-hidden="true" tabindex="-1"></a><span class="co"># !gunzip data/recipeitems.json.gz</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<p>The database is in JSON format, so we will use <code>pd.read_json</code> to read it (<code>lines=True</code> is required for this dataset because each line of the file is a JSON entry):</p>
+<p>데이터베이스는 JSON 형식이므로 <code>pd.read_json</code>을 사용하여 읽습니다(파일의 각 줄이 JSON 항목이므로 이 데이터세트에는 <code>lines=True</code>가 필요합니다).</p>
 <div id="cell-40" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="17">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb29"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a>recipes <span class="op">=</span> pd.read_json(<span class="st">'data/recipeitems.json'</span>, lines<span class="op">=</span><span class="va">True</span>)</span>
 <span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a>recipes.shape</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -1064,7 +1064,7 @@ dtype: object</code></pre>
 <pre><code>(173278, 17)</code></pre>
 </div>
 </div>
-<p>We see there are nearly 175,000 recipes, and 17 columns. Let’s take a look at one row to see what we have:</p>
+<p>거의 175,000개의 레시피와 17개의 열이 있는 것을 살펴볼 수 있습니다. 한 행을 살펴보고 무엇이 있는지 살펴보겠습니다.</p>
 <div id="cell-42" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="18">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb31"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a>recipes.iloc[<span class="dv">0</span>]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="18">
@@ -1088,7 +1088,7 @@ recipeInstructions                                                  NaN
 Name: 0, dtype: object</code></pre>
 </div>
 </div>
-<p>There is a lot of information there, but much of it is in a very messy form, as is typical of data scraped from the web. In particular, the ingredient list is in string format; we’re going to have to carefully extract the information we’re interested in. Let’s start by taking a closer look at the ingredients:</p>
+<p>거기에는 많은 정보가 있지만 그 중 대부분은 웹에서 스크랩한 일반적인 데이터처럼 매우 지저분한 형태입니다. 특히 성분 목록은 문자열 형식입니다. 우리는 관심 있는 정보를 주의 깊게 추출해야 합니다. 먼저 성분을 자세히 살펴보겠습니다.</p>
 <div id="cell-44" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="19">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb33"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a>recipes.ingredients.<span class="bu">str</span>.<span class="bu">len</span>().describe()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="19">
@@ -1103,44 +1103,44 @@ max        9067.000000
 Name: ingredients, dtype: float64</code></pre>
 </div>
 </div>
-<p>The ingredient lists average 250 characters long, with a minimum of 0 and a maximum of nearly 10,000 characters!</p>
-<p>Just out of curiosity, let’s see which recipe has the longest ingredient list:</p>
+<p>성분의 길이는 평균 250자이며 최소 0자에서 최대 10,000자까지 표시됩니다!</p>
+<p>궁금해서 어떤 레시피에 재료 목록이 가장 긴지 살펴보겠습니다.</p>
 <div id="cell-46" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="20">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb35"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a>recipes.name[np.argmax(recipes.ingredients.<span class="bu">str</span>.<span class="bu">len</span>())]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="20">
 <pre><code>'Carrot Pineapple Spice &amp;amp; Brownie Layer Cake with Whipped Cream &amp;amp; Cream Cheese Frosting and Marzipan Carrots'</code></pre>
 </div>
 </div>
-<p>We can do other aggregate explorations; for example, we can see how many of the recipes are for breakfast foods (using regular expression syntax to match both lowercase and capital letters):</p>
+<p>우리는 다른 집계 탐색을 수행할 수 있습니다. 예를 들어 아침 식사에 대한 조리법 중 몇 개가 있는지 확인할 수 있습니다(소문자와 대문자를 모두 일치시키는 정규식 구문 사용).</p>
 <div id="cell-48" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="21">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb37"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a>recipes.description.<span class="bu">str</span>.contains(<span class="st">'[Bb]reakfast'</span>).<span class="bu">sum</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="21">
 <pre><code>3524</code></pre>
 </div>
 </div>
-<p>Or how many of the recipes list cinnamon as an ingredient:</p>
+<p>아니면 계피를 재료로 사용하는 레시피가 몇 개나 될까요?</p>
 <div id="cell-50" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="22">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb39"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a>recipes.ingredients.<span class="bu">str</span>.contains(<span class="st">'[Cc]innamon'</span>).<span class="bu">sum</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="22">
 <pre><code>10526</code></pre>
 </div>
 </div>
-<p>We could even look to see whether any recipes misspell the ingredient as “cinamon”:</p>
+<p>우리는 레시피에 “cinamon”으로 성분의 철자가 틀린 것이 있는지 확인할 수도 있습니다.</p>
 <div id="cell-52" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="23">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb41"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a>recipes.ingredients.<span class="bu">str</span>.contains(<span class="st">'[Cc]inamon'</span>).<span class="bu">sum</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="23">
 <pre><code>11</code></pre>
 </div>
 </div>
-<p>This is the type of data exploration that is possible with Pandas string tools. It is data munging like this that Python really excels at.</p>
-<section id="a-simple-recipe-recommender" class="level3">
-<h3 class="anchored" data-anchor-id="a-simple-recipe-recommender">A Simple Recipe Recommender</h3>
-<p>Let’s go a bit further, and start working on a simple recipe recommendation system: given a list of ingredients, we want to find any recipes that use all those ingredients. While conceptually straightforward, the task is complicated by the heterogeneity of the data: there is no easy operation, for example, to extract a clean list of ingredients from each row. So, we will cheat a bit: we’ll start with a list of common ingredients, and simply search to see whether they are in each recipe’s ingredient list. For simplicity, let’s just stick with herbs and spices for the time being:</p>
+<p>이는 Pandas 문자열 도구로 가능한 데이터 탐색 유형입니다. 파이썬(Python)이 정말 뛰어난 점은 이와 같은 데이터 정리입니다.</p>
+<section id="간단한-레시피-추천기" class="level3">
+<h3 class="anchored" data-anchor-id="간단한-레시피-추천기">간단한 레시피 추천기</h3>
+<p>좀 더 나아가서 간단한 레시피 추천 시스템 작업을 시작해 보겠습니다. 재료 목록이 주어지면 우리는 해당 재료를 모두 사용하는 레시피를 찾고 싶습니다. 개념적으로는 간단하지만 데이터의 이질성으로 인해 작업이 복잡해집니다. 예를 들어 각 행에서 깨끗한 성분 목록을 추출하는 등의 쉬운 작업은 없습니다. 따라서 약간의 속임수를 쓰겠습니다. 일반적인 재료 목록부터 시작하여 해당 재료가 각 레시피의 재료 목록에 있는지 검색해 보겠습니다. 단순화를 위해 당분간은 허브와 향신료만 사용하겠습니다.</p>
 <div id="cell-55" class="cell" data-tags="[]" data-execution_count="24">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb43"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb43-1"><a href="#cb43-1" aria-hidden="true" tabindex="-1"></a>spice_list <span class="op">=</span> [<span class="st">'salt'</span>, <span class="st">'pepper'</span>, <span class="st">'oregano'</span>, <span class="st">'sage'</span>, <span class="st">'parsley'</span>,</span>
 <span id="cb43-2"><a href="#cb43-2" aria-hidden="true" tabindex="-1"></a>              <span class="st">'rosemary'</span>, <span class="st">'tarragon'</span>, <span class="st">'thyme'</span>, <span class="st">'paprika'</span>, <span class="st">'cumin'</span>]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<p>We can then build a Boolean <code>DataFrame</code> consisting of <code>True</code> and <code>False</code> values, indicating whether each ingredient appears in the list:</p>
+<p>그런 다음 각 성분이 목록에 나타나는지 여부를 나타내는 ‘True’ 및 ‘False’ 값으로 구성된 부울 ’DataFrame’을 구축할 수 있습니다.</p>
 <div id="cell-57" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="25">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb44"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb44-1"><a href="#cb44-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> re</span>
 <span id="cb44-2"><a href="#cb44-2" aria-hidden="true" tabindex="-1"></a>spice_df <span class="op">=</span> pd.DataFrame({</span>
@@ -1239,7 +1239,7 @@ Name: ingredients, dtype: float64</code></pre>
 </div>
 </div>
 </div>
-<p>Now, as an example, let’s say we’d like to find a recipe that uses parsley, paprika, and tarragon. We can compute this very quickly using the <code>query</code> method of <code>DataFrame</code>s, discussed further in <a href="../notebooks/03.12-Performance-Eval-and-Query.html">High-Performance Pandas: <code>eval()</code> and <code>query()</code></a>:</p>
+<p>이제 예를 들어 파슬리, 파프리카, 타라곤을 사용하는 레시피를 찾고 싶다고 가정해 보겠습니다. <a href="../notebooks/03.12-Performance-Eval-and-Query.html">고성능 Pandas: <code>eval()</code> 및 <code>query()</code></a>에서 자세히 설명하는 <code>DataFrame</code>의 ‘query’ 메서드를 사용하여 이를 매우 빠르게 계산할 수 있습니다.</p>
 <div id="cell-59" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="26">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb45"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb45-1"><a href="#cb45-1" aria-hidden="true" tabindex="-1"></a>selection <span class="op">=</span> spice_df.query(<span class="st">'parsley &amp; paprika &amp; tarragon'</span>)</span>
 <span id="cb45-2"><a href="#cb45-2" aria-hidden="true" tabindex="-1"></a><span class="bu">len</span>(selection)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -1247,7 +1247,7 @@ Name: ingredients, dtype: float64</code></pre>
 <pre><code>10</code></pre>
 </div>
 </div>
-<p>We find only 10 recipes with this combination. Let’s use the index returned by this selection to discover the names of those recipes:</p>
+<p>이 조합을 사용하면 10개의 레시피만 찾을 수 있습니다. 이 선택 항목에서 반환된 인덱스를 사용하여 해당 레시피의 이름을 찾아보겠습니다.</p>
 <div id="cell-61" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="27">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb47"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb47-1"><a href="#cb47-1" aria-hidden="true" tabindex="-1"></a>recipes.name[selection.index]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="27">
@@ -1264,11 +1264,11 @@ Name: ingredients, dtype: float64</code></pre>
 Name: name, dtype: object</code></pre>
 </div>
 </div>
-<p>Now that we have narrowed down our recipe selection from 175,000 to 10, we are in a position to make a more informed decision about what we’d like to cook for dinner.</p>
+<p>이제 우리는 레시피 선택 범위를 175,000에서 10으로 좁혔으므로 저녁 식사로 무엇을 요리할지에 대해 더 많은 정보를 바탕으로 결정을 내릴 수 있게 되었습니다.</p>
 </section>
-<section id="going-further-with-recipes" class="level3">
-<h3 class="anchored" data-anchor-id="going-further-with-recipes">Going Further with Recipes</h3>
-<p>Hopefully this example has given you a bit of a flavor (heh) of the types of data cleaning operations that are efficiently enabled by Pandas string methods. Of course, building a robust recipe recommendation system would require a <em>lot</em> more work! Extracting full ingredient lists from each recipe would be an important piece of the task; unfortunately, the wide variety of formats used makes this a relatively time-consuming process. This points to the truism that in data science, cleaning and munging of real-world data often comprises the majority of the work—and Pandas provides the tools that can help you do this efficiently.</p>
+<section id="레시피를-더욱-발전시키다" class="level3">
+<h3 class="anchored" data-anchor-id="레시피를-더욱-발전시키다">레시피를 더욱 발전시키다</h3>
+<p>이 예제를 통해 Pandas 문자열 메서드를 통해 효율적으로 활성화되는 데이터 정리 작업 유형에 대해 조금이나마 알 수 있었기를 바랍니다. 물론 강력한 레시피 추천 시스템을 구축하려면 <em>많이</em> 더 많은 작업이 필요합니다! 각 레시피에서 전체 성분 목록을 추출하는 것은 작업의 중요한 부분입니다. 불행하게도 사용되는 형식이 매우 다양하기 때문에 이 프로세스는 상대적으로 시간이 많이 걸립니다. 이는 데이터 과학(Data Science)에서 실제 데이터를 정리하고 정리하는 것이 작업의 대부분을 구성하는 경우가 많다는 사실을 의미하며, Pandas는 이 작업을 효율적으로 수행하는 데 도움이 되는 도구를 제공합니다.</p>
 
 
 </section>
@@ -1677,13 +1677,13 @@ Name: name, dtype: object</code></pre>
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../notebooks/03.09-Pivot-Tables.html" class="pagination-link" aria-label="Pivot Tables">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Pivot Tables</span></span>
+      <a href="../notebooks/03.09-Pivot-Tables.html" class="pagination-link" aria-label="피벗 테이블">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">피벗 테이블</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../notebooks/03.11-Working-with-Time-Series.html" class="pagination-link" aria-label="Working with Time Series">
-        <span class="nav-page-text"><span class="chapter-title">Working with Time Series</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../notebooks/03.11-Working-with-Time-Series.html" class="pagination-link" aria-label="시계열 작업">
+        <span class="nav-page-text"><span class="chapter-title">시계열 작업</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

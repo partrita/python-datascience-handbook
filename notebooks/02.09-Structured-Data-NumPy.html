@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Structured Data: NumPy’s Structured Arrays – 파이썬 데이터 사이언스 핸드북</title>
+<title>구조화된 데이터: NumPy의 구조화된 배열 – 파이썬 데이터 사이언스 핸드북</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -77,7 +77,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-3778d3e438078121318a23701f9f68bb.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-803ae4f7a8810f475153517dc3c4ebae.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -147,7 +147,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../notebooks/02.00-Introduction-to-NumPy.html">NumPy 소개</a></li><li class="breadcrumb-item"><a href="../notebooks/02.09-Structured-Data-NumPy.html"><span class="chapter-title">Structured Data: NumPy’s Structured Arrays</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../notebooks/02.00-Introduction-to-NumPy.html">NumPy 소개</a></li><li class="breadcrumb-item"><a href="../notebooks/02.09-Structured-Data-NumPy.html"><span class="chapter-title">구조화된 데이터: NumPy의 구조화된 배열</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -194,7 +194,7 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/01.00-IPython-Beyond-Normal-Python.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Jupyter: 일반 Python을 넘어서</span></a>
+  <a href="../notebooks/01.00-IPython-Beyond-Normal-Python.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Jupyter: 일반 파이썬(Python)을 넘어서</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -224,17 +224,17 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/01.06-Errors-and-Debugging.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Errors and Debugging</span></a>
+  <a href="../notebooks/01.06-Errors-and-Debugging.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">오류 및 디버깅</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/01.07-Timing-and-Profiling.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Profiling and Timing Code</span></a>
+  <a href="../notebooks/01.07-Timing-and-Profiling.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">프로파일링 및 타이밍 코드</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/01.08-More-IPython-Resources.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">More IPython Resources</span></a>
+  <a href="../notebooks/01.08-More-IPython-Resources.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">추가 IPython 리소스</span></a>
   </div>
 </li>
       </ul>
@@ -250,52 +250,52 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.00-Introduction-to-NumPy.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Introduction to NumPy</span></a>
+  <a href="../notebooks/02.00-Introduction-to-NumPy.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">NumPy 소개</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.01-Understanding-Data-Types.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Understanding Data Types in Python</span></a>
+  <a href="../notebooks/02.01-Understanding-Data-Types.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">파이썬(Python)의 데이터 유형 이해</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.02-The-Basics-Of-NumPy-Arrays.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">The Basics of NumPy Arrays</span></a>
+  <a href="../notebooks/02.02-The-Basics-Of-NumPy-Arrays.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">NumPy 배열의 기본</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.03-Computation-on-arrays-ufuncs.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Computation on NumPy Arrays: Universal Functions</span></a>
+  <a href="../notebooks/02.03-Computation-on-arrays-ufuncs.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">NumPy 배열 계산: 범용 함수</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.04-Computation-on-arrays-aggregates.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Aggregations: min, max, and Everything in Between</span></a>
+  <a href="../notebooks/02.04-Computation-on-arrays-aggregates.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">집계: 최소, 최대 및 그 사이의 모든 것</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.05-Computation-on-arrays-broadcasting.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Computation on Arrays: Broadcasting</span></a>
+  <a href="../notebooks/02.05-Computation-on-arrays-broadcasting.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">배열 계산: 브로드캐스팅</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.06-Boolean-Arrays-and-Masks.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Comparisons, Masks, and Boolean Logic</span></a>
+  <a href="../notebooks/02.06-Boolean-Arrays-and-Masks.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">비교, 마스크 및 부울 논리</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.07-Fancy-Indexing.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Fancy Indexing</span></a>
+  <a href="../notebooks/02.07-Fancy-Indexing.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">멋진 인덱싱</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.08-Sorting.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Sorting Arrays</span></a>
+  <a href="../notebooks/02.08-Sorting.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">배열 정렬</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.09-Structured-Data-NumPy.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Structured Data: NumPy’s Structured Arrays</span></a>
+  <a href="../notebooks/02.09-Structured-Data-NumPy.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">구조화된 데이터: NumPy의 구조화된 배열</span></a>
   </div>
 </li>
       </ul>
@@ -311,72 +311,72 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.00-Introduction-to-Pandas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Data Manipulation with Pandas</span></a>
+  <a href="../notebooks/03.00-Introduction-to-Pandas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">팬더를 이용한 데이터 조작</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.01-Introducing-Pandas-Objects.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Introducing Pandas Objects</span></a>
+  <a href="../notebooks/03.01-Introducing-Pandas-Objects.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">판다스 객체 소개</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.02-Data-Indexing-and-Selection.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Data Indexing and Selection</span></a>
+  <a href="../notebooks/03.02-Data-Indexing-and-Selection.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">데이터 인덱싱 및 선택</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.03-Operations-in-Pandas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Operating on Data in Pandas</span></a>
+  <a href="../notebooks/03.03-Operations-in-Pandas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Pandas에서 데이터 작업</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.04-Missing-Values.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Handling Missing Data</span></a>
+  <a href="../notebooks/03.04-Missing-Values.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">누락된 데이터 처리</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.05-Hierarchical-Indexing.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Hierarchical Indexing</span></a>
+  <a href="../notebooks/03.05-Hierarchical-Indexing.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">계층적 인덱싱</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.06-Concat-And-Append.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Combining Datasets: concat and append</span></a>
+  <a href="../notebooks/03.06-Concat-And-Append.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">데이터세트 결합: 연결 및 추가</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.07-Merge-and-Join.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Combining Datasets: merge and join</span></a>
+  <a href="../notebooks/03.07-Merge-and-Join.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">데이터세트 결합: 병합 및 조인</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.08-Aggregation-and-Grouping.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Aggregation and Grouping</span></a>
+  <a href="../notebooks/03.08-Aggregation-and-Grouping.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">집계 및 그룹화</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.09-Pivot-Tables.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Pivot Tables</span></a>
+  <a href="../notebooks/03.09-Pivot-Tables.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">피벗 테이블</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.10-Working-With-Strings.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Vectorized String Operations</span></a>
+  <a href="../notebooks/03.10-Working-With-Strings.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">벡터화된 문자열 작업</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.11-Working-with-Time-Series.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Working with Time Series</span></a>
+  <a href="../notebooks/03.11-Working-with-Time-Series.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">시계열 작업</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.12-Performance-Eval-and-Query.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">High-Performance Pandas: eval and query</span></a>
+  <a href="../notebooks/03.12-Performance-Eval-and-Query.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">고성능 Pandas: 평가 및 쿼리</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.13-Further-Resources.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Further Resources</span></a>
+  <a href="../notebooks/03.13-Further-Resources.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">추가 리소스</span></a>
   </div>
 </li>
       </ul>
@@ -392,77 +392,77 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.00-Introduction-To-Matplotlib.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Visualization with Matplotlib</span></a>
+  <a href="../notebooks/04.00-Introduction-To-Matplotlib.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Matplotlib를 사용한 시각화</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.01-Simple-Line-Plots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Simple Line Plots</span></a>
+  <a href="../notebooks/04.01-Simple-Line-Plots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">간단한 선 도표</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.02-Simple-Scatter-Plots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Simple Scatter Plots</span></a>
+  <a href="../notebooks/04.02-Simple-Scatter-Plots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">단순 산점도</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.03-Errorbars.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Visualizing Uncertainties</span></a>
+  <a href="../notebooks/04.03-Errorbars.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">불확실성 시각화</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.04-Density-and-Contour-Plots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Density and Contour Plots</span></a>
+  <a href="../notebooks/04.04-Density-and-Contour-Plots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">밀도 및 등고선 플롯</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.05-Histograms-and-Binnings.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Histograms, Binnings, and Density</span></a>
+  <a href="../notebooks/04.05-Histograms-and-Binnings.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">히스토그램, 비닝 및 밀도</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.06-Customizing-Legends.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Customizing Plot Legends</span></a>
+  <a href="../notebooks/04.06-Customizing-Legends.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">플롯 범례 사용자 정의</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.07-Customizing-Colorbars.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Customizing Colorbars</span></a>
+  <a href="../notebooks/04.07-Customizing-Colorbars.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">컬러바 사용자 정의</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.08-Multiple-Subplots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Multiple Subplots</span></a>
+  <a href="../notebooks/04.08-Multiple-Subplots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">다중 서브플롯</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.09-Text-and-Annotation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Text and Annotation</span></a>
+  <a href="../notebooks/04.09-Text-and-Annotation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">텍스트 및 주석</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.10-Customizing-Ticks.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Customizing Ticks</span></a>
+  <a href="../notebooks/04.10-Customizing-Ticks.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">눈금 사용자 정의</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.11-Settings-and-Stylesheets.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Customizing Matplotlib: Configurations and Stylesheets</span></a>
+  <a href="../notebooks/04.11-Settings-and-Stylesheets.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Matplotlib 사용자 정의: 구성 및 스타일시트</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.12-Three-Dimensional-Plotting.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Three-Dimensional Plotting in Matplotlib</span></a>
+  <a href="../notebooks/04.12-Three-Dimensional-Plotting.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Matplotlib의 3차원 플로팅</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.14-Visualization-With-Seaborn.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Visualization with Seaborn</span></a>
+  <a href="../notebooks/04.14-Visualization-With-Seaborn.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Seaborn을 이용한 시각화</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.15-Further-Resources.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Further Resources</span></a>
+  <a href="../notebooks/04.15-Further-Resources.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">추가 리소스</span></a>
   </div>
 </li>
       </ul>
@@ -478,82 +478,82 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.00-Machine-Learning.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Machine Learning</span></a>
+  <a href="../notebooks/05.00-Machine-Learning.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">머신러닝</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.01-What-Is-Machine-Learning.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">What Is Machine Learning?</span></a>
+  <a href="../notebooks/05.01-What-Is-Machine-Learning.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">머신러닝이란?</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.02-Introducing-Scikit-Learn.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Introducing Scikit-Learn</span></a>
+  <a href="../notebooks/05.02-Introducing-Scikit-Learn.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Scikit-Learn 소개</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.03-Hyperparameters-and-Model-Validation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Hyperparameters and Model Validation</span></a>
+  <a href="../notebooks/05.03-Hyperparameters-and-Model-Validation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">하이퍼파라미터 및 모델 검증</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.04-Feature-Engineering.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Feature Engineering</span></a>
+  <a href="../notebooks/05.04-Feature-Engineering.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">기능 엔지니어링</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.05-Naive-Bayes.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Naive Bayes Classification</span></a>
+  <a href="../notebooks/05.05-Naive-Bayes.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 나이브 베이즈 분류</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.06-Linear-Regression.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Linear Regression</span></a>
+  <a href="../notebooks/05.06-Linear-Regression.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 선형 회귀</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.07-Support-Vector-Machines.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Support Vector Machines</span></a>
+  <a href="../notebooks/05.07-Support-Vector-Machines.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 서포트 벡터 머신</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.08-Random-Forests.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Decision Trees and Random Forests</span></a>
+  <a href="../notebooks/05.08-Random-Forests.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 의사결정 트리 및 랜덤 포레스트</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.09-Principal-Component-Analysis.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Principal Component Analysis</span></a>
+  <a href="../notebooks/05.09-Principal-Component-Analysis.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 주성분 분석</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.10-Manifold-Learning.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Manifold Learning</span></a>
+  <a href="../notebooks/05.10-Manifold-Learning.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 다양한 학습</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.11-K-Means.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: k-Means Clustering</span></a>
+  <a href="../notebooks/05.11-K-Means.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: k-평균 클러스터링</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.12-Gaussian-Mixtures.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Gaussian Mixture Models</span></a>
+  <a href="../notebooks/05.12-Gaussian-Mixtures.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 가우스 혼합 모델</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.13-Kernel-Density-Estimation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Kernel Density Estimation</span></a>
+  <a href="../notebooks/05.13-Kernel-Density-Estimation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 커널 밀도 추정</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.14-Image-Features.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Application: A Face Detection Pipeline</span></a>
+  <a href="../notebooks/05.14-Image-Features.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">응용 분야: 얼굴 감지 파이프라인</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.15-Learning-More.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Further Machine Learning Resources</span></a>
+  <a href="../notebooks/05.15-Learning-More.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">추가 머신러닝(Machine Learning) 리소스</span></a>
   </div>
 </li>
       </ul>
@@ -569,7 +569,7 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/06.00-Figure-Code.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Appendix: Figure Code</span></a>
+  <a href="../notebooks/06.00-Figure-Code.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">부록: 그림 코드</span></a>
   </div>
 </li>
       </ul>
@@ -584,19 +584,19 @@ window.Quarto = {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#exploring-structured-array-creation" id="toc-exploring-structured-array-creation" class="nav-link active" data-scroll-target="#exploring-structured-array-creation">Exploring Structured Array Creation</a></li>
-  <li><a href="#more-advanced-compound-types" id="toc-more-advanced-compound-types" class="nav-link" data-scroll-target="#more-advanced-compound-types">More Advanced Compound Types</a></li>
-  <li><a href="#record-arrays-structured-arrays-with-a-twist" id="toc-record-arrays-structured-arrays-with-a-twist" class="nav-link" data-scroll-target="#record-arrays-structured-arrays-with-a-twist">Record Arrays: Structured Arrays with a Twist</a></li>
-  <li><a href="#on-to-pandas" id="toc-on-to-pandas" class="nav-link" data-scroll-target="#on-to-pandas">On to Pandas</a></li>
+  <li><a href="#구조적-배열-생성-탐색" id="toc-구조적-배열-생성-탐색" class="nav-link active" data-scroll-target="#구조적-배열-생성-탐색">구조적 배열 생성 탐색</a></li>
+  <li><a href="#더욱-발전된-화합물-유형" id="toc-더욱-발전된-화합물-유형" class="nav-link" data-scroll-target="#더욱-발전된-화합물-유형">더욱 발전된 화합물 유형</a></li>
+  <li><a href="#레코드-배열-트위스트를-사용한-구조적-배열" id="toc-레코드-배열-트위스트를-사용한-구조적-배열" class="nav-link" data-scroll-target="#레코드-배열-트위스트를-사용한-구조적-배열">레코드 배열: 트위스트를 사용한 구조적 배열</a></li>
+  <li><a href="#판다에게" id="toc-판다에게" class="nav-link" data-scroll-target="#판다에게">판다에게</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../notebooks/02.00-Introduction-to-NumPy.html">NumPy 소개</a></li><li class="breadcrumb-item"><a href="../notebooks/02.09-Structured-Data-NumPy.html"><span class="chapter-title">Structured Data: NumPy’s Structured Arrays</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../notebooks/02.00-Introduction-to-NumPy.html">NumPy 소개</a></li><li class="breadcrumb-item"><a href="../notebooks/02.09-Structured-Data-NumPy.html"><span class="chapter-title">구조화된 데이터: NumPy의 구조화된 배열</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-title">Structured Data: NumPy’s Structured Arrays</span></h1>
+<h1 class="title"><span class="chapter-title">구조화된 데이터: NumPy의 구조화된 배열</span></h1>
 </div>
 
 
@@ -613,22 +613,22 @@ window.Quarto = {
 </header>
 
 
-<p>While often our data can be well represented by a homogeneous array of values, sometimes this is not the case. This chapter demonstrates the use of NumPy’s <em>structured arrays</em> and <em>record arrays</em>, which provide efficient storage for compound, heterogeneous data. While the patterns shown here are useful for simple operations, scenarios like this often lend themselves to the use of Pandas <code>DataFrame</code>s, which we’ll explore in <a href="../notebooks/03.00-Introduction-to-Pandas.html">Part 3</a>.</p>
+<p>데이터가 동질적인 값 배열로 잘 표현되는 경우가 많지만 그렇지 않은 경우도 있습니다. 이번 장에서는 복합적이고 이질적인 데이터에 대한 효율적인 저장을 제공하는 NumPy의 <em>구조적 배열</em> 및 <em>레코드 배열</em>의 사용을 보여줍니다. 여기에 표시된 패턴은 간단한 작업에 유용하지만 이와 같은 시나리오는 종종 <a href="../notebooks/03.00-Introduction-to-Pandas.html">Part 3</a>에서 살펴볼 Pandas <code>DataFrame</code>을 사용하는 데 적합합니다.</p>
 <div id="cell-2" class="cell" data-tags="[]" data-execution_count="1">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<p>Imagine that we have several categories of data on a number of people (say, name, age, and weight), and we’d like to store these values for use in a Python program. It would be possible to store these in three separate arrays:</p>
+<p>많은 사람에 대한 여러 범주의 데이터(예: 이름, 나이, 체중)가 있고 파이썬(Python) 프로그램에서 사용하기 위해 이러한 값을 저장하고 싶다고 가정해 보겠습니다. 이를 세 개의 개별 배열에 저장할 수 있습니다.</p>
 <div id="cell-4" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="2">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>name <span class="op">=</span> [<span class="st">'Alice'</span>, <span class="st">'Bob'</span>, <span class="st">'Cathy'</span>, <span class="st">'Doug'</span>]</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>age <span class="op">=</span> [<span class="dv">25</span>, <span class="dv">45</span>, <span class="dv">37</span>, <span class="dv">19</span>]</span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>weight <span class="op">=</span> [<span class="fl">55.0</span>, <span class="fl">85.5</span>, <span class="fl">68.0</span>, <span class="fl">61.5</span>]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<p>But this is a bit clumsy. There’s nothing here that tells us that the three arrays are related; NumPy’s structured arrays allow us to do this more naturally by using a single structure to store all of this data.</p>
-<p>Recall that previously we created a simple array using an expression like this:</p>
+<p>그런데 이게 좀 어설프네요. 여기에는 세 개의 배열이 서로 관련되어 있음을 알려주는 내용이 없습니다. NumPy의 구조화된 배열을 사용하면 단일 구조를 사용하여 이 모든 데이터를 저장함으로써 보다 자연스럽게 이 작업을 수행할 수 있습니다.</p>
+<p>이전에 다음과 같은 표현식을 사용하여 간단한 배열을 만들었습니다.</p>
 <div id="cell-6" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="3">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> np.zeros(<span class="dv">4</span>, dtype<span class="op">=</span><span class="bu">int</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<p>We can similarly create a structured array using a compound data type specification:</p>
+<p>마찬가지로 복합 데이터 유형 사양을 사용하여 구조화된 배열을 만들 수 있습니다.</p>
 <div id="cell-8" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="4">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Use a compound data type for structured arrays</span></span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> np.zeros(<span class="dv">4</span>, dtype<span class="op">=</span>{<span class="st">'names'</span>:(<span class="st">'name'</span>, <span class="st">'age'</span>, <span class="st">'weight'</span>),</span>
@@ -638,8 +638,8 @@ window.Quarto = {
 <pre><code>[('name', '&lt;U10'), ('age', '&lt;i4'), ('weight', '&lt;f8')]</code></pre>
 </div>
 </div>
-<p>Here <code>'U10'</code> translates to “Unicode string of maximum length 10,” <code>'i4'</code> translates to “4-byte (i.e., 32-bit) integer,” and <code>'f8'</code> translates to “8-byte (i.e., 64-bit) float.” We’ll discuss other options for these type codes in the following section.</p>
-<p>Now that we’ve created an empty container array, we can fill the array with our lists of values:</p>
+<p>여기서 <code>'U10'</code>은 “최대 길이 10의 유니코드 문자열”로 변환되고, <code>'i4'</code>는 “4바이트(즉, 32비트) 정수”로 변환되며, <code>'f8'</code>은 “8바이트(즉, 64비트) 부동 소수점”으로 변환됩니다. 다음 섹션에서는 이러한 유형 코드에 대한 다른 옵션에 대해 설명합니다.</p>
+<p>이제 빈 컨테이너 배열을 만들었으므로 값 목록으로 배열을 채울 수 있습니다.</p>
 <div id="cell-10" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="5">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>data[<span class="st">'name'</span>] <span class="op">=</span> name</span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>data[<span class="st">'age'</span>] <span class="op">=</span> age</span>
@@ -650,8 +650,8 @@ window.Quarto = {
  ('Doug', 19, 61.5)]</code></pre>
 </div>
 </div>
-<p>As we had hoped, the data is now conveniently arranged in one structured array.</p>
-<p>The handy thing with structured arrays is that we can now refer to values either by index or by name:</p>
+<p>우리가 바라던 대로 이제 데이터는 하나의 구조화된 배열로 편리하게 배열됩니다.</p>
+<p>구조화된 배열의 편리한 점은 이제 인덱스나 이름으로 값을 참조할 수 있다는 것입니다.</p>
 <div id="cell-12" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="6">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Get all names</span></span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>data[<span class="st">'name'</span>]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -673,7 +673,7 @@ window.Quarto = {
 <pre><code>'Doug'</code></pre>
 </div>
 </div>
-<p>Using Boolean masking, we can even do some more sophisticated operations, such as filtering on age:</p>
+<p>부울 마스킹을 사용하면 연령 필터링과 같은 좀 더 정교한 작업을 수행할 수도 있습니다.</p>
 <div id="cell-16" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="9">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Get names where age is under 30</span></span>
 <span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>data[data[<span class="st">'age'</span>] <span class="op">&lt;</span> <span class="dv">30</span>][<span class="st">'name'</span>]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -681,10 +681,10 @@ window.Quarto = {
 <pre><code>array(['Alice', 'Doug'], dtype='&lt;U10')</code></pre>
 </div>
 </div>
-<p>If you’d like to do any operations that are any more complicated than these, you should probably consider the Pandas package, covered in <a href="../notebooks/04.00-Introduction-To-Matplotlib.html">Part 4</a>. As you’ll see, Pandas provides a <code>DataFrame</code> object, which is a structure built on NumPy arrays that offers a variety of useful data manipulation functionality similar to what you’ve seen here, as well as much, much more.</p>
-<section id="exploring-structured-array-creation" class="level2">
-<h2 class="anchored" data-anchor-id="exploring-structured-array-creation">Exploring Structured Array Creation</h2>
-<p>Structured array data types can be specified in a number of ways. Earlier, we saw the dictionary method:</p>
+<p>이보다 더 복잡한 작업을 수행하려면 <a href="../notebooks/04.00-Introduction-To-Matplotlib.html">4부</a>에서 다루는 Pandas 패키지를 고려해야 합니다. 보시다시피 Pandas는 여기서 본 것과 유사한 다양하고 유용한 데이터 조작 기능을 제공하는 NumPy 배열을 기반으로 구축된 구조인 ‘DataFrame’ 객체를 제공합니다.</p>
+<section id="구조적-배열-생성-탐색" class="level2">
+<h2 class="anchored" data-anchor-id="구조적-배열-생성-탐색">구조적 배열 생성 탐색</h2>
+<p>구조적 배열 데이터 유형은 다양한 방법으로 지정할 수 있습니다. 앞서 우리는 사전 메소드를 보았습니다:</p>
 <div id="cell-19" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="10">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>np.dtype({<span class="st">'names'</span>:(<span class="st">'name'</span>, <span class="st">'age'</span>, <span class="st">'weight'</span>),</span>
 <span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>          <span class="st">'formats'</span>:(<span class="st">'U10'</span>, <span class="st">'i4'</span>, <span class="st">'f8'</span>)})</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -692,7 +692,7 @@ window.Quarto = {
 <pre><code>dtype([('name', '&lt;U10'), ('age', '&lt;i4'), ('weight', '&lt;f8')])</code></pre>
 </div>
 </div>
-<p>For clarity, numerical types can be specified using Python types or NumPy <code>dtype</code>s instead:</p>
+<p>명확하게 하기 위해 대신 파이썬(Python) 유형이나 NumPy<code>dtype</code>을 사용하여 숫자 유형을 지정할 수 있습니다.</p>
 <div id="cell-21" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="11">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>np.dtype({<span class="st">'names'</span>:(<span class="st">'name'</span>, <span class="st">'age'</span>, <span class="st">'weight'</span>),</span>
 <span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>          <span class="st">'formats'</span>:((np.str_, <span class="dv">10</span>), <span class="bu">int</span>, np.float32)})</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -700,21 +700,21 @@ window.Quarto = {
 <pre><code>dtype([('name', '&lt;U10'), ('age', '&lt;i8'), ('weight', '&lt;f4')])</code></pre>
 </div>
 </div>
-<p>A compound type can also be specified as a list of tuples:</p>
+<p>복합 유형은 튜플 목록으로 지정할 수도 있습니다.</p>
 <div id="cell-23" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="12">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb20"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>np.dtype([(<span class="st">'name'</span>, <span class="st">'S10'</span>), (<span class="st">'age'</span>, <span class="st">'i4'</span>), (<span class="st">'weight'</span>, <span class="st">'f8'</span>)])</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="12">
 <pre><code>dtype([('name', 'S10'), ('age', '&lt;i4'), ('weight', '&lt;f8')])</code></pre>
 </div>
 </div>
-<p>If the names of the types do not matter to you, you can specify the types alone in a comma-separated string:</p>
+<p>유형 이름이 중요하지 않은 경우 쉼표로 구분된 문자열로 유형만 지정할 수 있습니다.</p>
 <div id="cell-25" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="13">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb22"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>np.dtype(<span class="st">'S10,i4,f8'</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="13">
 <pre><code>dtype([('f0', 'S10'), ('f1', '&lt;i4'), ('f2', '&lt;f8')])</code></pre>
 </div>
 </div>
-<p>The shortened string format codes may not be immediately intuitive, but they are built on simple principles. The first (optional) character <code>&lt;</code> or <code>&gt;</code>, means “little endian” or “big endian,” respectively, and specifies the ordering convention for significant bits. The next character specifies the type of data: characters, bytes, ints, floating points, and so on (see the table below). The last character or characters represent the size of the object in bytes.</p>
+<p>단축된 문자열 형식 코드는 즉시 직관적이지 않을 수 있지만 간단한 원칙을 기반으로 구축되었습니다. 첫 번째(선택 사항) 문자 <code>&lt;</code> 또는 <code>&gt;</code>는 각각 “리틀 엔디안” 또는 “빅 엔디안”을 의미하며 중요한 비트의 순서 지정 규칙을 지정합니다. 다음 문자는 데이터 유형(문자, 바이트, 정수, 부동 소수점 등)을 지정합니다(아래 표 참조). 마지막 문자는 객체의 크기를 바이트 단위로 나타냅니다.</p>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 33%">
@@ -723,58 +723,28 @@ window.Quarto = {
 </colgroup>
 <thead>
 <tr class="header">
-<th>Character</th>
-<th>Description</th>
-<th>Example</th>
+<th>캐릭터</th>
+<th>설명</th>
+<th>예</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><code>'b'</code></td>
-<td>Byte</td>
-<td><code>np.dtype('b')</code></td>
-</tr>
-<tr class="even">
-<td><code>'i'</code></td>
-<td>Signed integer</td>
-<td><code>np.dtype('i4') == np.int32</code></td>
-</tr>
-<tr class="odd">
-<td><code>'u'</code></td>
-<td>Unsigned integer</td>
+<td><code>b'` | 바이트 | `np.dtype('b')` | |</code>나’<code>| 부호 있는 정수 |</code>np.dtype(‘i4’) == np.int32<code>| | ``u'</code></td>
+<td>부호 없는 정수</td>
 <td><code>np.dtype('u1') == np.uint8</code></td>
 </tr>
 <tr class="even">
-<td><code>'f'</code></td>
-<td>Floating point</td>
-<td><code>np.dtype('f8') == np.int64</code></td>
-</tr>
-<tr class="odd">
-<td><code>'c'</code></td>
-<td>Complex floating point</td>
-<td><code>np.dtype('c16') == np.complex128</code></td>
-</tr>
-<tr class="even">
-<td><code>'S'</code>, <code>'a'</code></td>
-<td>String</td>
-<td><code>np.dtype('S5')</code></td>
-</tr>
-<tr class="odd">
-<td><code>'U'</code></td>
-<td>Unicode string</td>
-<td><code>np.dtype('U') == np.str_</code></td>
-</tr>
-<tr class="even">
-<td><code>'V'</code></td>
-<td>Raw data (void)</td>
+<td><code>f'` | 부동 소수점 | `np.dtype('f8') == np.int64` | |</code>c’<code>| 복소수 부동 소수점|</code>np.dtype(‘c16’) == np.complex128<code>| | ``S'</code>, <code>a'` | 문자열 | `np.dtype('S5')` | |</code>U’<code>| 유니코드 문자열 |</code>np.dtype(‘U’) == np.str_<code>| | ``V'</code></td>
+<td>원시 데이터(무효)</td>
 <td><code>np.dtype('V') == np.void</code></td>
 </tr>
 </tbody>
 </table>
 </section>
-<section id="more-advanced-compound-types" class="level2">
-<h2 class="anchored" data-anchor-id="more-advanced-compound-types">More Advanced Compound Types</h2>
-<p>It is possible to define even more advanced compound types. For example, you can create a type where each element contains an array or matrix of values. Here, we’ll create a data type with a <code>mat</code> component consisting of a <span class="math inline">\(3\times 3\)</span> floating-point matrix:</p>
+<section id="더욱-발전된-화합물-유형" class="level2">
+<h2 class="anchored" data-anchor-id="더욱-발전된-화합물-유형">더욱 발전된 화합물 유형</h2>
+<p>더욱 고급 복합 유형을 정의하는 것이 가능합니다. 예를 들어 각 요소에 값의 배열이나 행렬이 포함된 유형을 생성할 수 있습니다. 여기서는 <span class="math inline">\(3\times 3\)</span> 부동 소수점 행렬로 구성된 <code>mat</code> 구성 요소를 사용하여 데이터 유형을 생성합니다.</p>
 <div id="cell-28" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="14">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb24"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>tp <span class="op">=</span> np.dtype([(<span class="st">'id'</span>, <span class="st">'i8'</span>), (<span class="st">'mat'</span>, <span class="st">'f8'</span>, (<span class="dv">3</span>, <span class="dv">3</span>))])</span>
 <span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>X <span class="op">=</span> np.zeros(<span class="dv">1</span>, dtype<span class="op">=</span>tp)</span>
@@ -787,18 +757,18 @@ window.Quarto = {
  [0. 0. 0.]]</code></pre>
 </div>
 </div>
-<p>Now each element in the <code>X</code> array consists of an <code>id</code> and a <span class="math inline">\(3\times 3\)</span> matrix. Why would you use this rather than a simple multidimensional array, or perhaps a Python dictionary? One reason is that this NumPy <code>dtype</code> directly maps onto a C structure definition, so the buffer containing the array content can be accessed directly within an appropriately written C program. If you find yourself writing a Python interface to a legacy C or Fortran library that manipulates structured data, structured arrays can provide a powerful interface.</p>
+<p>이제 <code>X</code> 배열의 각 요소는 <code>id</code>와 <span class="math inline">\(3\times 3\)</span> 행렬로 구성됩니다. 단순한 다차원 배열이나 파이썬(Python) 사전 대신 이것을 사용하는 이유는 무엇입니까? 한 가지 이유는 이 NumPy <code>dtype</code>이 C 구조 정의에 직접 매핑되므로 적절하게 작성된 C 프로그램 내에서 배열 내용이 포함된 버퍼에 직접 액세스할 수 있기 때문입니다. 구조화된 데이터를 조작하는 레거시 C 또는 Fortran 라이브러리에 파이썬(Python) 인터페이스를 작성하는 경우 구조화된 배열이 강력한 인터페이스를 제공할 수 있습니다.</p>
 </section>
-<section id="record-arrays-structured-arrays-with-a-twist" class="level2">
-<h2 class="anchored" data-anchor-id="record-arrays-structured-arrays-with-a-twist">Record Arrays: Structured Arrays with a Twist</h2>
-<p>NumPy also provides record arrays (instances of the <code>np.recarray</code> class), which are almost identical to the structured arrays just described, but with one additional feature: fields can be accessed as attributes rather than as dictionary keys. Recall that we previously accessed the ages in our sample dataset by writing:</p>
+<section id="레코드-배열-트위스트를-사용한-구조적-배열" class="level2">
+<h2 class="anchored" data-anchor-id="레코드-배열-트위스트를-사용한-구조적-배열">레코드 배열: 트위스트를 사용한 구조적 배열</h2>
+<p>NumPy는 또한 방금 설명한 구조적 배열과 거의 동일한 레코드 배열(<code>np.recarray</code> 클래스의 인스턴스)을 제공하지만 한 가지 추가 기능이 있습니다. 필드는 사전 키가 아닌 속성으로 액세스할 수 있습니다. 이전에 다음을 작성하여 샘플 데이터세트의 연령에 액세스했다는 점을 기억하세요.</p>
 <div id="cell-31" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="15">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb26"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>data[<span class="st">'age'</span>]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="15">
 <pre><code>array([25, 45, 37, 19], dtype=int32)</code></pre>
 </div>
 </div>
-<p>If we view our data as a record array instead, we can access this with slightly fewer keystrokes:</p>
+<p>대신 데이터를 레코드 배열로 보면 약간 더 적은 키 입력으로 이에 액세스할 수 있습니다.</p>
 <div id="cell-33" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="16">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb28"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a>data_rec <span class="op">=</span> data.view(np.recarray)</span>
 <span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a>data_rec.age</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -806,7 +776,7 @@ window.Quarto = {
 <pre><code>array([25, 45, 37, 19], dtype=int32)</code></pre>
 </div>
 </div>
-<p>The downside is that for record arrays, there is some extra overhead involved in accessing the fields, even when using the same syntax:</p>
+<p>단점은 레코드 배열의 경우 동일한 구문을 사용하는 경우에도 필드에 액세스하는 데 약간의 추가 오버헤드가 있다는 것입니다.</p>
 <div id="cell-35" class="cell" data-execution_count="17">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb30"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a><span class="op">%</span>timeit data[<span class="st">'age'</span>]</span>
 <span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a><span class="op">%</span>timeit data_rec[<span class="st">'age'</span>]</span>
@@ -817,11 +787,11 @@ window.Quarto = {
 3.98 µs ± 20.5 ns per loop (mean ± std. dev. of 7 runs, 100000 loops each)</code></pre>
 </div>
 </div>
-<p>Whether the more convenient notation is worth the (slight) overhead will depend on your own application.</p>
+<p>더 편리한 표기법이 (약간의) 오버헤드를 감수할 만한 가치가 있는지 여부는 애플리케이션에 따라 다릅니다.</p>
 </section>
-<section id="on-to-pandas" class="level2">
-<h2 class="anchored" data-anchor-id="on-to-pandas">On to Pandas</h2>
-<p>This chapter on structured and record arrays is purposely located at the end of this part of the book, because it leads so well into the next package we will cover: Pandas. Structured arrays can come in handy in certain situations, like when you’re using NumPy arrays to map onto binary data formats in C, Fortran, or another language. But for day-to-day use of structured data, the Pandas package is a much better choice; we’ll explore it in depth in the chapters that follow.</p>
+<section id="판다에게" class="level2">
+<h2 class="anchored" data-anchor-id="판다에게">판다에게</h2>
+<p>구조화된 배열과 레코드 배열에 관한 이 장은 의도적으로 책의 이 부분 끝에 배치됩니다. 왜냐하면 이 장은 우리가 다룰 다음 패키지인 Pandas에 매우 잘 연결되어 있기 때문입니다. 구조화된 배열은 NumPy 배열을 사용하여 C, Fortran 또는 다른 언어의 이진 데이터 형식에 매핑하는 경우와 같은 특정 상황에서 유용할 수 있습니다. 그러나 구조화된 데이터를 일상적으로 사용하려면 Pandas 패키지가 훨씬 더 나은 선택입니다. 다음 장에서 이에 대해 자세히 살펴보겠습니다.</p>
 
 
 </section>
@@ -1229,13 +1199,13 @@ window.Quarto = {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../notebooks/02.08-Sorting.html" class="pagination-link" aria-label="Sorting Arrays">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Sorting Arrays</span></span>
+      <a href="../notebooks/02.08-Sorting.html" class="pagination-link" aria-label="배열 정렬">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">배열 정렬</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../notebooks/03.00-Introduction-to-Pandas.html" class="pagination-link" aria-label="Data Manipulation with Pandas">
-        <span class="nav-page-text"><span class="chapter-title">Data Manipulation with Pandas</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../notebooks/03.00-Introduction-to-Pandas.html" class="pagination-link" aria-label="팬더를 이용한 데이터 조작">
+        <span class="nav-page-text"><span class="chapter-title">팬더를 이용한 데이터 조작</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

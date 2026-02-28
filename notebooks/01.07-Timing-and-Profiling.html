@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Profiling and Timing Code – 파이썬 데이터 사이언스 핸드북</title>
+<title>프로파일링 및 타이밍 코드 – 파이썬 데이터 사이언스 핸드북</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -77,7 +77,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-3778d3e438078121318a23701f9f68bb.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-803ae4f7a8810f475153517dc3c4ebae.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -118,7 +118,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../notebooks/01.00-IPython-Beyond-Normal-Python.html">IPython: 일반 파이썬 그 이상</a></li><li class="breadcrumb-item"><a href="../notebooks/01.07-Timing-and-Profiling.html"><span class="chapter-title">Profiling and Timing Code</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../notebooks/01.00-IPython-Beyond-Normal-Python.html">IPython: 일반 파이썬 그 이상</a></li><li class="breadcrumb-item"><a href="../notebooks/01.07-Timing-and-Profiling.html"><span class="chapter-title">프로파일링 및 타이밍 코드</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -165,7 +165,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/01.00-IPython-Beyond-Normal-Python.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Jupyter: 일반 Python을 넘어서</span></a>
+  <a href="../notebooks/01.00-IPython-Beyond-Normal-Python.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Jupyter: 일반 파이썬(Python)을 넘어서</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -195,17 +195,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/01.06-Errors-and-Debugging.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Errors and Debugging</span></a>
+  <a href="../notebooks/01.06-Errors-and-Debugging.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">오류 및 디버깅</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/01.07-Timing-and-Profiling.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Profiling and Timing Code</span></a>
+  <a href="../notebooks/01.07-Timing-and-Profiling.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">프로파일링 및 타이밍 코드</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/01.08-More-IPython-Resources.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">More IPython Resources</span></a>
+  <a href="../notebooks/01.08-More-IPython-Resources.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">추가 IPython 리소스</span></a>
   </div>
 </li>
       </ul>
@@ -221,52 +221,52 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.00-Introduction-to-NumPy.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Introduction to NumPy</span></a>
+  <a href="../notebooks/02.00-Introduction-to-NumPy.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">NumPy 소개</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.01-Understanding-Data-Types.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Understanding Data Types in Python</span></a>
+  <a href="../notebooks/02.01-Understanding-Data-Types.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">파이썬(Python)의 데이터 유형 이해</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.02-The-Basics-Of-NumPy-Arrays.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">The Basics of NumPy Arrays</span></a>
+  <a href="../notebooks/02.02-The-Basics-Of-NumPy-Arrays.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">NumPy 배열의 기본</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.03-Computation-on-arrays-ufuncs.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Computation on NumPy Arrays: Universal Functions</span></a>
+  <a href="../notebooks/02.03-Computation-on-arrays-ufuncs.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">NumPy 배열 계산: 범용 함수</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.04-Computation-on-arrays-aggregates.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Aggregations: min, max, and Everything in Between</span></a>
+  <a href="../notebooks/02.04-Computation-on-arrays-aggregates.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">집계: 최소, 최대 및 그 사이의 모든 것</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.05-Computation-on-arrays-broadcasting.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Computation on Arrays: Broadcasting</span></a>
+  <a href="../notebooks/02.05-Computation-on-arrays-broadcasting.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">배열 계산: 브로드캐스팅</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.06-Boolean-Arrays-and-Masks.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Comparisons, Masks, and Boolean Logic</span></a>
+  <a href="../notebooks/02.06-Boolean-Arrays-and-Masks.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">비교, 마스크 및 부울 논리</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.07-Fancy-Indexing.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Fancy Indexing</span></a>
+  <a href="../notebooks/02.07-Fancy-Indexing.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">멋진 인덱싱</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.08-Sorting.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Sorting Arrays</span></a>
+  <a href="../notebooks/02.08-Sorting.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">배열 정렬</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.09-Structured-Data-NumPy.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Structured Data: NumPy’s Structured Arrays</span></a>
+  <a href="../notebooks/02.09-Structured-Data-NumPy.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">구조화된 데이터: NumPy의 구조화된 배열</span></a>
   </div>
 </li>
       </ul>
@@ -282,72 +282,72 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.00-Introduction-to-Pandas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Data Manipulation with Pandas</span></a>
+  <a href="../notebooks/03.00-Introduction-to-Pandas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">팬더를 이용한 데이터 조작</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.01-Introducing-Pandas-Objects.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Introducing Pandas Objects</span></a>
+  <a href="../notebooks/03.01-Introducing-Pandas-Objects.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">판다스 객체 소개</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.02-Data-Indexing-and-Selection.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Data Indexing and Selection</span></a>
+  <a href="../notebooks/03.02-Data-Indexing-and-Selection.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">데이터 인덱싱 및 선택</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.03-Operations-in-Pandas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Operating on Data in Pandas</span></a>
+  <a href="../notebooks/03.03-Operations-in-Pandas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Pandas에서 데이터 작업</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.04-Missing-Values.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Handling Missing Data</span></a>
+  <a href="../notebooks/03.04-Missing-Values.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">누락된 데이터 처리</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.05-Hierarchical-Indexing.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Hierarchical Indexing</span></a>
+  <a href="../notebooks/03.05-Hierarchical-Indexing.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">계층적 인덱싱</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.06-Concat-And-Append.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Combining Datasets: concat and append</span></a>
+  <a href="../notebooks/03.06-Concat-And-Append.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">데이터세트 결합: 연결 및 추가</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.07-Merge-and-Join.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Combining Datasets: merge and join</span></a>
+  <a href="../notebooks/03.07-Merge-and-Join.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">데이터세트 결합: 병합 및 조인</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.08-Aggregation-and-Grouping.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Aggregation and Grouping</span></a>
+  <a href="../notebooks/03.08-Aggregation-and-Grouping.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">집계 및 그룹화</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.09-Pivot-Tables.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Pivot Tables</span></a>
+  <a href="../notebooks/03.09-Pivot-Tables.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">피벗 테이블</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.10-Working-With-Strings.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Vectorized String Operations</span></a>
+  <a href="../notebooks/03.10-Working-With-Strings.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">벡터화된 문자열 작업</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.11-Working-with-Time-Series.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Working with Time Series</span></a>
+  <a href="../notebooks/03.11-Working-with-Time-Series.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">시계열 작업</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.12-Performance-Eval-and-Query.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">High-Performance Pandas: eval and query</span></a>
+  <a href="../notebooks/03.12-Performance-Eval-and-Query.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">고성능 Pandas: 평가 및 쿼리</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.13-Further-Resources.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Further Resources</span></a>
+  <a href="../notebooks/03.13-Further-Resources.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">추가 리소스</span></a>
   </div>
 </li>
       </ul>
@@ -363,77 +363,77 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.00-Introduction-To-Matplotlib.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Visualization with Matplotlib</span></a>
+  <a href="../notebooks/04.00-Introduction-To-Matplotlib.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Matplotlib를 사용한 시각화</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.01-Simple-Line-Plots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Simple Line Plots</span></a>
+  <a href="../notebooks/04.01-Simple-Line-Plots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">간단한 선 도표</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.02-Simple-Scatter-Plots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Simple Scatter Plots</span></a>
+  <a href="../notebooks/04.02-Simple-Scatter-Plots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">단순 산점도</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.03-Errorbars.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Visualizing Uncertainties</span></a>
+  <a href="../notebooks/04.03-Errorbars.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">불확실성 시각화</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.04-Density-and-Contour-Plots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Density and Contour Plots</span></a>
+  <a href="../notebooks/04.04-Density-and-Contour-Plots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">밀도 및 등고선 플롯</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.05-Histograms-and-Binnings.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Histograms, Binnings, and Density</span></a>
+  <a href="../notebooks/04.05-Histograms-and-Binnings.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">히스토그램, 비닝 및 밀도</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.06-Customizing-Legends.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Customizing Plot Legends</span></a>
+  <a href="../notebooks/04.06-Customizing-Legends.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">플롯 범례 사용자 정의</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.07-Customizing-Colorbars.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Customizing Colorbars</span></a>
+  <a href="../notebooks/04.07-Customizing-Colorbars.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">컬러바 사용자 정의</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.08-Multiple-Subplots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Multiple Subplots</span></a>
+  <a href="../notebooks/04.08-Multiple-Subplots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">다중 서브플롯</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.09-Text-and-Annotation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Text and Annotation</span></a>
+  <a href="../notebooks/04.09-Text-and-Annotation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">텍스트 및 주석</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.10-Customizing-Ticks.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Customizing Ticks</span></a>
+  <a href="../notebooks/04.10-Customizing-Ticks.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">눈금 사용자 정의</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.11-Settings-and-Stylesheets.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Customizing Matplotlib: Configurations and Stylesheets</span></a>
+  <a href="../notebooks/04.11-Settings-and-Stylesheets.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Matplotlib 사용자 정의: 구성 및 스타일시트</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.12-Three-Dimensional-Plotting.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Three-Dimensional Plotting in Matplotlib</span></a>
+  <a href="../notebooks/04.12-Three-Dimensional-Plotting.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Matplotlib의 3차원 플로팅</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.14-Visualization-With-Seaborn.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Visualization with Seaborn</span></a>
+  <a href="../notebooks/04.14-Visualization-With-Seaborn.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Seaborn을 이용한 시각화</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.15-Further-Resources.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Further Resources</span></a>
+  <a href="../notebooks/04.15-Further-Resources.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">추가 리소스</span></a>
   </div>
 </li>
       </ul>
@@ -449,82 +449,82 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.00-Machine-Learning.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Machine Learning</span></a>
+  <a href="../notebooks/05.00-Machine-Learning.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">머신러닝</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.01-What-Is-Machine-Learning.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">What Is Machine Learning?</span></a>
+  <a href="../notebooks/05.01-What-Is-Machine-Learning.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">머신러닝이란?</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.02-Introducing-Scikit-Learn.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Introducing Scikit-Learn</span></a>
+  <a href="../notebooks/05.02-Introducing-Scikit-Learn.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Scikit-Learn 소개</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.03-Hyperparameters-and-Model-Validation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Hyperparameters and Model Validation</span></a>
+  <a href="../notebooks/05.03-Hyperparameters-and-Model-Validation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">하이퍼파라미터 및 모델 검증</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.04-Feature-Engineering.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Feature Engineering</span></a>
+  <a href="../notebooks/05.04-Feature-Engineering.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">기능 엔지니어링</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.05-Naive-Bayes.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Naive Bayes Classification</span></a>
+  <a href="../notebooks/05.05-Naive-Bayes.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 나이브 베이즈 분류</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.06-Linear-Regression.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Linear Regression</span></a>
+  <a href="../notebooks/05.06-Linear-Regression.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 선형 회귀</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.07-Support-Vector-Machines.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Support Vector Machines</span></a>
+  <a href="../notebooks/05.07-Support-Vector-Machines.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 서포트 벡터 머신</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.08-Random-Forests.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Decision Trees and Random Forests</span></a>
+  <a href="../notebooks/05.08-Random-Forests.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 의사결정 트리 및 랜덤 포레스트</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.09-Principal-Component-Analysis.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Principal Component Analysis</span></a>
+  <a href="../notebooks/05.09-Principal-Component-Analysis.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 주성분 분석</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.10-Manifold-Learning.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Manifold Learning</span></a>
+  <a href="../notebooks/05.10-Manifold-Learning.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 다양한 학습</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.11-K-Means.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: k-Means Clustering</span></a>
+  <a href="../notebooks/05.11-K-Means.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: k-평균 클러스터링</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.12-Gaussian-Mixtures.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Gaussian Mixture Models</span></a>
+  <a href="../notebooks/05.12-Gaussian-Mixtures.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 가우스 혼합 모델</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.13-Kernel-Density-Estimation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Kernel Density Estimation</span></a>
+  <a href="../notebooks/05.13-Kernel-Density-Estimation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 커널 밀도 추정</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.14-Image-Features.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Application: A Face Detection Pipeline</span></a>
+  <a href="../notebooks/05.14-Image-Features.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">응용 분야: 얼굴 감지 파이프라인</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.15-Learning-More.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Further Machine Learning Resources</span></a>
+  <a href="../notebooks/05.15-Learning-More.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">추가 머신러닝(Machine Learning) 리소스</span></a>
   </div>
 </li>
       </ul>
@@ -540,7 +540,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/06.00-Figure-Code.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Appendix: Figure Code</span></a>
+  <a href="../notebooks/06.00-Figure-Code.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">부록: 그림 코드</span></a>
   </div>
 </li>
       </ul>
@@ -555,19 +555,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#timing-code-snippets-timeit-and-time" id="toc-timing-code-snippets-timeit-and-time" class="nav-link active" data-scroll-target="#timing-code-snippets-timeit-and-time">Timing Code Snippets: %timeit and %time</a></li>
-  <li><a href="#profiling-full-scripts-prun" id="toc-profiling-full-scripts-prun" class="nav-link" data-scroll-target="#profiling-full-scripts-prun">Profiling Full Scripts: %prun</a></li>
-  <li><a href="#line-by-line-profiling-with-lprun" id="toc-line-by-line-profiling-with-lprun" class="nav-link" data-scroll-target="#line-by-line-profiling-with-lprun">Line-by-Line Profiling with %lprun</a></li>
-  <li><a href="#profiling-memory-use-memit-and-mprun" id="toc-profiling-memory-use-memit-and-mprun" class="nav-link" data-scroll-target="#profiling-memory-use-memit-and-mprun">Profiling Memory Use: %memit and %mprun</a></li>
+  <li><a href="#타이밍-코드-조각-timeit-및-time" id="toc-타이밍-코드-조각-timeit-및-time" class="nav-link active" data-scroll-target="#타이밍-코드-조각-timeit-및-time">타이밍 코드 조각: %timeit 및 %time</a></li>
+  <li><a href="#전체-스크립트-프로파일링-prun" id="toc-전체-스크립트-프로파일링-prun" class="nav-link" data-scroll-target="#전체-스크립트-프로파일링-prun">전체 스크립트 프로파일링: %prun</a></li>
+  <li><a href="#lprun을-사용한-라인별-프로파일링" id="toc-lprun을-사용한-라인별-프로파일링" class="nav-link" data-scroll-target="#lprun을-사용한-라인별-프로파일링">%lprun을 사용한 라인별 프로파일링</a></li>
+  <li><a href="#메모리-사용-프로파일링-memit-및-mprun" id="toc-메모리-사용-프로파일링-memit-및-mprun" class="nav-link" data-scroll-target="#메모리-사용-프로파일링-memit-및-mprun">메모리 사용 프로파일링: %memit 및 %mprun</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../notebooks/01.00-IPython-Beyond-Normal-Python.html">IPython: 일반 파이썬 그 이상</a></li><li class="breadcrumb-item"><a href="../notebooks/01.07-Timing-and-Profiling.html"><span class="chapter-title">Profiling and Timing Code</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../notebooks/01.00-IPython-Beyond-Normal-Python.html">IPython: 일반 파이썬 그 이상</a></li><li class="breadcrumb-item"><a href="../notebooks/01.07-Timing-and-Profiling.html"><span class="chapter-title">프로파일링 및 타이밍 코드</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-title">Profiling and Timing Code</span></h1>
+<h1 class="title"><span class="chapter-title">프로파일링 및 타이밍 코드</span></h1>
 </div>
 
 
@@ -584,27 +584,27 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>In the process of developing code and creating data processing pipelines, there are often trade-offs you can make between various implementations. Early in developing your algorithm, it can be counterproductive to worry about such things. As Donald Knuth famously quipped, “We should forget about small efficiencies, say about 97% of the time: premature optimization is the root of all evil.”</p>
-<p>But once you have your code working, it can be useful to dig into its efficiency a bit. Sometimes it’s useful to check the execution time of a given command or set of commands; other times it’s useful to examine a multiline process and determine where the bottleneck lies in some complicated series of operations. IPython provides access to a wide array of functionality for this kind of timing and profiling of code. Here we’ll discuss the following IPython magic commands:</p>
+<p>코드를 개발하고 데이터 처리 파이프라인을 생성하는 과정에서 다양한 구현 간에 절충이 가능한 경우가 많습니다. 알고리즘 개발 초기에 그러한 것에 대해 걱정하는 것은 비생산적일 수 있습니다. Donald Knuth는 다음과 같이 유명하게 말했습니다. “약 97%의 경우 작은 효율성은 잊어야 합니다. 성급한 최적화는 모든 악의 근원입니다.”</p>
+<p>그러나 코드가 작동하게 되면 효율성을 조금 더 자세히 살펴보는 것이 유용할 수 있습니다. 때로는 특정 명령이나 명령 집합의 실행 시간을 확인하는 것이 유용할 수 있습니다. 다른 경우에는 여러 줄의 프로세스를 검사하고 복잡한 일련의 작업에서 병목 현상이 발생하는 위치를 확인하는 것이 유용합니다. IPython은 이러한 종류의 타이밍 및 코드 프로파일링을 위한 다양한 기능에 대한 액세스를 제공합니다. 여기서는 다음 IPython 마법 명령에 대해 설명합니다.</p>
 <ul>
-<li><code>%time</code>: Time the execution of a single statement</li>
-<li><code>%timeit</code>: Time repeated execution of a single statement for more accuracy</li>
-<li><code>%prun</code>: Run code with the profiler</li>
-<li><code>%lprun</code>: Run code with the line-by-line profiler</li>
-<li><code>%memit</code>: Measure the memory use of a single statement</li>
-<li><code>%mprun</code>: Run code with the line-by-line memory profiler</li>
+<li><code>%time</code>: 단일 명령문의 실행 시간입니다.</li>
+<li><code>%timeit</code>: 정확성을 높이기 위해 단일 명령문을 반복 실행하는 시간</li>
+<li><code>%prun</code>: 프로파일러를 사용하여 코드 실행</li>
+<li><code>%lprun</code>: 라인별 프로파일러로 코드 실행</li>
+<li><code>%memit</code>: 단일 문의 메모리 사용량을 측정합니다.</li>
+<li><code>%mprun</code>: 라인별 메모리 프로파일러로 코드 실행</li>
 </ul>
-<p>The last four commands are not bundled with IPython; to use them you’ll need to get the <code>line_profiler</code> and <code>memory_profiler</code> extensions, which we will discuss in the following sections.</p>
-<section id="timing-code-snippets-timeit-and-time" class="level2">
-<h2 class="anchored" data-anchor-id="timing-code-snippets-timeit-and-time">Timing Code Snippets: %timeit and %time</h2>
-<p>We saw the <code>%timeit</code> line magic and <code>%%timeit</code> cell magic in the introduction to magic functions in <a href="../notebooks/01.03-Magic-Commands.html">IPython Magic Commands</a>; these can be used to time the repeated execution of snippets of code:</p>
+<p>마지막 4개 명령은 IPython과 함께 번들로 제공되지 않습니다. 이를 사용하려면 ‘line_profiler’ 및 ‘memory_profiler’ 확장을 가져와야 합니다. 이에 대해서는 다음 섹션에서 설명하겠습니다.</p>
+<section id="타이밍-코드-조각-timeit-및-time" class="level2">
+<h2 class="anchored" data-anchor-id="타이밍-코드-조각-timeit-및-time">타이밍 코드 조각: %timeit 및 %time</h2>
+<p><a href="../notebooks/01.03-Magic-Commands.html">IPython Magic Commands</a>의 매직 기능 소개에서 <code>%timeit</code> 라인 매직과 <code>%%timeit</code> 셀 매직을 보았습니다. 이는 코드 조각의 반복 실행 시간을 측정하는 데 사용될 수 있습니다.</p>
 <div id="cell-3" class="cell" data-execution_count="1">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="op">%</span>timeit <span class="bu">sum</span>(<span class="bu">range</span>(<span class="dv">100</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>1.53 µs ± 47.8 ns per loop (mean ± std. dev. of 7 runs, 1000000 loops each)</code></pre>
 </div>
 </div>
-<p>Note that because this operation is so fast, <code>%timeit</code> automatically does a large number of repetitions. For slower commands, <code>%timeit</code> will automatically adjust and perform fewer repetitions:</p>
+<p>이 작업은 매우 빠르기 때문에 <code>%timeit</code>은 자동으로 많은 반복을 수행합니다. 느린 명령의 경우 <code>%timeit</code>은 자동으로 더 적은 반복을 조정하고 수행합니다.</p>
 <div id="cell-5" class="cell" data-execution_count="2">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="op">%%</span>timeit</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>total <span class="op">=</span> <span class="dv">0</span></span>
@@ -615,7 +615,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <pre><code>536 ms ± 15.9 ms per loop (mean ± std. dev. of 7 runs, 1 loop each)</code></pre>
 </div>
 </div>
-<p>Sometimes repeating an operation is not the best option. For example, if we have a list that we’d like to sort, we might be misled by a repeated operation; sorting a pre-sorted list is much faster than sorting an unsorted list, so the repetition will skew the result:</p>
+<p>때로는 작업을 반복하는 것이 최선의 선택이 아닐 수도 있습니다. 예를 들어 정렬하려는 목록이 있는 경우 반복되는 작업으로 인해 오해를 받을 수 있습니다. 미리 정렬된 목록을 정렬하는 것은 정렬되지 않은 목록을 정렬하는 것보다 훨씬 빠르므로 반복하면 결과가 왜곡됩니다.</p>
 <div id="cell-7" class="cell" data-execution_count="3">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> random</span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>L <span class="op">=</span> [random.random() <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">100000</span>)]</span>
@@ -624,7 +624,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <pre><code>1.71 ms ± 334 µs per loop (mean ± std. dev. of 7 runs, 1000 loops each)</code></pre>
 </div>
 </div>
-<p>For this, the <code>%time</code> magic function may be a better choice. It also is a good choice for longer-running commands, when short, system-related delays are unlikely to affect the result. Let’s time the sorting of an unsorted and a presorted list:</p>
+<p>이를 위해서는 <code>%time</code> 매직 함수가 더 나은 선택일 수 있습니다. 또한 짧은 시스템 관련 지연이 결과에 영향을 미칠 가능성이 거의 없는 장기 실행 명령에 대한 좋은 선택입니다. 정렬되지 않은 목록과 미리 정렬된 목록의 정렬 시간을 측정해 보겠습니다.</p>
 <div id="cell-9" class="cell" data-execution_count="4">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> random</span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>L <span class="op">=</span> [random.random() <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">100000</span>)]</span>
@@ -645,8 +645,8 @@ CPU times: user 5.19 ms, sys: 268 µs, total: 5.46 ms
 Wall time: 14.1 ms</code></pre>
 </div>
 </div>
-<p>Notice how much faster the presorted list is to sort, but notice also how much longer the timing takes with <code>%time</code> versus <code>%timeit</code>, even for the presorted list! This is a result of the fact that <code>%timeit</code> does some clever things under the hood to prevent system calls from interfering with the timing. For example, it prevents cleanup of unused Python objects (known as <em>garbage collection</em>) that might otherwise affect the timing. For this reason, <code>%timeit</code> results are usually noticeably faster than <code>%time</code> results.</p>
-<p>For <code>%time</code>, as with <code>%timeit</code>, using the <code>%%</code> cell magic syntax allows timing of multiline scripts:</p>
+<p>사전 정렬된 목록의 정렬 속도가 얼마나 빠른지 확인하세요. 또한 사전 정렬된 목록의 경우에도 <code>%time</code>과 <code>%timeit</code>의 타이밍이 얼마나 오래 걸리는지 확인하세요! 이는 ’%timeit’이 시스템 호출이 타이밍을 방해하는 것을 방지하기 위해 내부적으로 몇 가지 영리한 작업을 수행한다는 사실의 결과입니다. 예를 들어 타이밍에 영향을 줄 수 있는 사용되지 않는 파이썬(Python) 객체(<em>가비지 수집</em>이라고도 함)를 정리하는 것을 방지합니다. 이러한 이유로 <code>%timeit</code> 결과는 일반적으로 <code>%time</code> 결과보다 눈에 띄게 빠릅니다.</p>
+<p><code>%time</code>의 경우 <code>%timeit</code>과 마찬가지로 <code>%%</code> 셀 매직 구문을 사용하면 여러 줄 스크립트의 타이밍을 지정할 수 있습니다.</p>
 <div id="cell-12" class="cell" data-execution_count="6">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="op">%%</span>time</span>
 <span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>total <span class="op">=</span> <span class="dv">0</span></span>
@@ -658,12 +658,12 @@ Wall time: 14.1 ms</code></pre>
 Wall time: 710 ms</code></pre>
 </div>
 </div>
-<p>For more information on <code>%time</code> and <code>%timeit</code>, as well as their available options, use the IPython help functionality (e.g., type <code>%time?</code> at the IPython prompt).</p>
+<p>‘%time’ 및 ‘%timeit’과 사용 가능한 옵션에 대한 자세한 내용을 보려면 IPython 도움말 기능을 사용하세요(예: IPython 프롬프트에서’%time?’ 입력).</p>
 </section>
-<section id="profiling-full-scripts-prun" class="level2">
-<h2 class="anchored" data-anchor-id="profiling-full-scripts-prun">Profiling Full Scripts: %prun</h2>
-<p>A program is made up of many single statements, and sometimes timing these statements in context is more important than timing them on their own. Python contains a built-in code profiler (which you can read about in the Python documentation), but IPython offers a much more convenient way to use this profiler, in the form of the magic function <code>%prun</code>.</p>
-<p>By way of example, we’ll define a simple function that does some calculations:</p>
+<section id="전체-스크립트-프로파일링-prun" class="level2">
+<h2 class="anchored" data-anchor-id="전체-스크립트-프로파일링-prun">전체 스크립트 프로파일링: %prun</h2>
+<p>프로그램은 여러 개의 단일 명령문으로 구성되며 때로는 문맥에 따라 이러한 명령문의 타이밍을 맞추는 것이 자체적으로 타이밍을 맞추는 것보다 더 중요합니다. 파이썬(Python)에는 내장 코드 프로파일러(파이썬(Python) 문서에서 읽을 수 있음)가 포함되어 있지만 IPython은 마법 함수 <code>%prun</code> 형식으로 이 프로파일러를 사용하는 훨씬 더 편리한 방법을 제공합니다.</p>
+<p>예를 들어 몇 가지 계산을 수행하는 간단한 함수를 정의하겠습니다.</p>
 <div id="cell-16" class="cell" data-execution_count="7">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> sum_of_lists(N):</span>
 <span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>    total <span class="op">=</span> <span class="dv">0</span></span>
@@ -672,7 +672,7 @@ Wall time: 710 ms</code></pre>
 <span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>        total <span class="op">+=</span> <span class="bu">sum</span>(L)</span>
 <span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> total</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<p>Now we can call <code>%prun</code> with a function call to see the profiled results:</p>
+<p>이제 프로파일링된 결과를 보기 위해 함수 호출로 <code>%prun</code>을 호출할 수 있습니다.</p>
 <div id="cell-18" class="cell" data-execution_count="8">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="op">%</span>prun sum_of_lists(<span class="dv">1000000</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
@@ -692,18 +692,18 @@ Wall time: 710 ms</code></pre>
         1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}</code></pre>
 </div>
 </div>
-<p>The result is a table that indicates, in order of total time on each function call, where the execution is spending the most time. In this case, the bulk of the execution time is in the list comprehension inside <code>sum_of_lists</code>. From here, we could start thinking about what changes we might make to improve the performance of the algorithm.</p>
-<p>For more information on <code>%prun</code>, as well as its available options, use the IPython help functionality (i.e., type <code>%prun?</code> at the IPython prompt).</p>
+<p>결과는 각 함수 호출의 총 시간 순으로 실행에 가장 많은 시간이 소요되는 부분을 나타내는 테이블입니다. 이 경우 실행 시간의 대부분은 <code>sum_of_lists</code> 내부의 목록 이해에 있습니다. 여기에서 우리는 알고리즘의 성능을 향상시키기 위해 어떤 변경을 할 수 있는지 생각해 살펴볼 수 있습니다.</p>
+<p>‘%prun’ 및 사용 가능한 옵션에 대한 자세한 내용을 보려면 IPython 도움말 기능을 사용하세요(예: IPython 프롬프트에서 ‘%prun?’ 입력).</p>
 </section>
-<section id="line-by-line-profiling-with-lprun" class="level2">
-<h2 class="anchored" data-anchor-id="line-by-line-profiling-with-lprun">Line-by-Line Profiling with %lprun</h2>
-<p>The function-by-function profiling of <code>%prun</code> is useful, but sometimes it’s more convenient to have a line-by-line profile report. This is not built into Python or IPython, but there is a <code>line_profiler</code> package available for installation that can do this. Start by using Python’s packaging tool, <code>pip</code>, to install the <code>line_profiler</code> package:</p>
-<pre><code>$ pip install line_profiler</code></pre>
-<p>Next, you can use IPython to load the <code>line_profiler</code> IPython extension, offered as part of this package:</p>
+<section id="lprun을-사용한-라인별-프로파일링" class="level2">
+<h2 class="anchored" data-anchor-id="lprun을-사용한-라인별-프로파일링">%lprun을 사용한 라인별 프로파일링</h2>
+<p><code>%prun</code>의 기능별 프로파일링은 유용하지만 때로는 행별 프로파일 보고서를 갖는 것이 더 편리합니다. 이는 파이썬(Python)이나 IPython에 내장되어 있지 않지만 이를 수행할 수 있는 설치용 <code>line_profiler</code> 패키지가 있습니다. 먼저 파이썬(Python)의 패키징 도구인 <code>pip</code>를 사용하여 <code>line_profiler</code> 패키지를 설치하세요.</p>
+<pre><code>$ pip 설치 line_profiler</code></pre>
+<p>다음으로, IPython을 사용하여 이 패키지의 일부로 제공되는 <code>line_profiler</code> IPython 확장을 로드할 수 있습니다.</p>
 <div id="cell-21" class="cell" data-execution_count="9">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="op">%</span>load_ext line_profiler</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<p>Now the <code>%lprun</code> command will do a line-by-line profiling of any function. In this case, we need to tell it explicitly which functions we’re interested in profiling:</p>
+<p>이제 <code>%lprun</code> 명령은 모든 함수에 대해 한 줄씩 프로파일링을 수행합니다. 이 경우 프로파일링에 관심이 있는 함수를 명시적으로 알려야 합니다.</p>
 <div id="cell-23" class="cell" data-execution_count="10">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="op">%</span>lprun <span class="op">-</span>f sum_of_lists sum_of_lists(<span class="dv">5000</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
@@ -723,26 +723,26 @@ Line #      Hits         Time  Per Hit   % Time  Line Contents
      6         1          1.0      1.0      0.0      return total</code></pre>
 </div>
 </div>
-<p>The information at the top gives us the key to reading the results: the time is reported in microseconds, and we can see where the program is spending the most time. At this point, we may be able to use this information to modify aspects of the script and make it perform better for our desired use case.</p>
-<p>For more information on <code>%lprun</code>, as well as its available options, use the IPython help functionality (i.e., type <code>%lprun?</code> at the IPython prompt).</p>
+<p>상단의 정보는 결과를 읽는 데 중요한 정보를 제공합니다. 시간은 마이크로초 단위로 보고되며 프로그램이 가장 많은 시간을 소비하는 위치를 확인할 수 있습니다. 이 시점에서 우리는 이 정보를 사용하여 스크립트의 측면을 수정하고 원하는 사용 사례에 맞게 더 나은 성능을 발휘하도록 만들 수 있습니다.</p>
+<p>‘%lprun’ 및 사용 가능한 옵션에 대한 자세한 내용을 보려면 IPython 도움말 기능을 사용하세요(예: IPython 프롬프트에서 ‘%lprun?’ 입력).</p>
 </section>
-<section id="profiling-memory-use-memit-and-mprun" class="level2">
-<h2 class="anchored" data-anchor-id="profiling-memory-use-memit-and-mprun">Profiling Memory Use: %memit and %mprun</h2>
-<p>Another aspect of profiling is the amount of memory an operation uses. This can be evaluated with another IPython extension, the <code>memory_profiler</code>. As with the <code>line_profiler</code>, we start by <code>pip</code>-installing the extension:</p>
-<pre><code>$ pip install memory_profiler</code></pre>
-<p>Then we can use IPython to load it:</p>
+<section id="메모리-사용-프로파일링-memit-및-mprun" class="level2">
+<h2 class="anchored" data-anchor-id="메모리-사용-프로파일링-memit-및-mprun">메모리 사용 프로파일링: %memit 및 %mprun</h2>
+<p>프로파일링의 또 다른 측면은 작업에 사용되는 메모리 양입니다. 이는 또 다른 IPython 확장인 <code>memory_profiler</code>를 사용하여 평가할 수 있습니다. <code>line_profiler</code>와 마찬가지로 <code>pip</code> 확장 프로그램 설치부터 시작합니다.</p>
+<pre><code>$ pip 설치 memory_profiler</code></pre>
+<p>그런 다음 IPython을 사용하여 로드할 수 있습니다.</p>
 <div id="cell-26" class="cell" data-execution_count="11">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb22"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="op">%</span>load_ext memory_profiler</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<p>The memory profiler extension contains two useful magic functions: <code>%memit</code> (which offers a memory-measuring equivalent of <code>%timeit</code>) and <code>%mprun</code> (which offers a memory-measuring equivalent of <code>%lprun</code>). The <code>%memit</code> magic function can be used rather simply:</p>
+<p>메모리 프로파일러 확장에는 두 가지 유용한 마법 함수가 포함되어 있습니다. <code>%memit</code>(<code>%timeit</code>에 해당하는 메모리 측정 제공) 및 <code>%mprun</code>(<code>%lprun</code>에 해당하는 메모리 측정 제공). <code>%memit</code> 마법 함수는 오히려 간단하게 사용할 수 있습니다:</p>
 <div id="cell-28" class="cell" data-execution_count="12">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb23"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="op">%</span>memit sum_of_lists(<span class="dv">1000000</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>peak memory: 141.70 MiB, increment: 75.65 MiB</code></pre>
 </div>
 </div>
-<p>We see that this function uses about 140 MB of memory.</p>
-<p>For a line-by-line description of memory use, we can use the <code>%mprun</code> magic function. Unfortunately, this works only for functions defined in separate modules rather than the notebook itself, so we’ll start by using the <code>%%file</code> cell magic to create a simple module called <code>mprun_demo.py</code>, which contains our <code>sum_of_lists</code> function, with one addition that will make our memory profiling results more clear:</p>
+<p>이 함수는 약 140MB의 메모리를 사용하는 것을 살펴볼 수 있습니다.</p>
+<p>메모리 사용을 한 줄씩 설명하려면 <code>%mprun</code> 마법 함수를 사용할 수 있습니다. 불행하게도 이것은 노트북 자체가 아닌 별도의 모듈에 정의된 함수에 대해서만 작동하므로 먼저 <code>%%file</code> 셀 매직을 사용하여 <code>sum_of_lists</code> 함수가 포함된 <code>mprun_demo.py</code>라는 간단한 모듈을 생성하고 메모리 프로파일링 결과를 더 명확하게 만드는 한 가지 추가 사항을 추가하겠습니다.</p>
 <div id="cell-30" class="cell" data-execution_count="13">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb25"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="op">%%</span><span class="bu">file</span> mprun_demo.py</span>
 <span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> sum_of_lists(N):</span>
@@ -756,7 +756,7 @@ Line #      Hits         Time  Per Hit   % Time  Line Contents
 <pre><code>Overwriting mprun_demo.py</code></pre>
 </div>
 </div>
-<p>We can now import the new version of this function and run the memory line profiler:</p>
+<p>이제 이 함수의 새 버전을 가져오고 메모리 라인 프로파일러를 실행할 수 있습니다.</p>
 <div id="cell-32" class="cell" data-execution_count="14">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb27"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> mprun_demo <span class="im">import</span> sum_of_lists</span>
 <span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a><span class="op">%</span>mprun <span class="op">-</span>f sum_of_lists sum_of_lists(<span class="dv">1000000</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -777,8 +777,8 @@ Line #    Mem usage    Increment  Occurences   Line Contents
      7     66.9 MiB     -8.2 MiB           1       return total</code></pre>
 </div>
 </div>
-<p>Here, the <code>Increment</code> column tells us how much each line affects the total memory budget: observe that when we create and delete the list <code>L</code>, we are adding about 30 MB of memory usage. This is on top of the background memory usage from the Python interpreter itself.</p>
-<p>For more information on <code>%memit</code> and <code>%mprun</code>, as well as their available options, use the IPython help functionality (e.g., type <code>%memit?</code> at the IPython prompt).</p>
+<p>여기서 <code>Increment</code> 열은 각 행이 전체 메모리 예산에 얼마나 영향을 미치는지 알려줍니다. <code>L</code> 목록을 생성하고 삭제할 때 약 30MB의 메모리 사용량이 추가된다는 점을 관찰하세요. 이는 파이썬(Python) 인터프리터 자체의 백그라운드 메모리 사용량에 더해집니다.</p>
+<p>‘%memit’ 및 ‘%mprun’과 사용 가능한 옵션에 대한 자세한 내용을 보려면 IPython 도움말 기능을 사용하세요(예: IPython 프롬프트에서’%memit?’ 입력).</p>
 
 
 </section>
@@ -1186,13 +1186,13 @@ Line #    Mem usage    Increment  Occurences   Line Contents
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../notebooks/01.06-Errors-and-Debugging.html" class="pagination-link" aria-label="Errors and Debugging">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Errors and Debugging</span></span>
+      <a href="../notebooks/01.06-Errors-and-Debugging.html" class="pagination-link" aria-label="오류 및 디버깅">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">오류 및 디버깅</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../notebooks/01.08-More-IPython-Resources.html" class="pagination-link" aria-label="More IPython Resources">
-        <span class="nav-page-text"><span class="chapter-title">More IPython Resources</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../notebooks/01.08-More-IPython-Resources.html" class="pagination-link" aria-label="추가 IPython 리소스">
+        <span class="nav-page-text"><span class="chapter-title">추가 IPython 리소스</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

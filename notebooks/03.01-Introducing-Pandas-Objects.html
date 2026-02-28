@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Introducing Pandas Objects – 파이썬 데이터 사이언스 핸드북</title>
+<title>판다스 객체 소개 – 파이썬 데이터 사이언스 핸드북</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -77,7 +77,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-3778d3e438078121318a23701f9f68bb.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-803ae4f7a8810f475153517dc3c4ebae.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -121,7 +121,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../notebooks/03.00-Introduction-to-Pandas.html">Pandas를 이용한 데이터 조작</a></li><li class="breadcrumb-item"><a href="../notebooks/03.01-Introducing-Pandas-Objects.html"><span class="chapter-title">Introducing Pandas Objects</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../notebooks/03.00-Introduction-to-Pandas.html">Pandas를 이용한 데이터 조작</a></li><li class="breadcrumb-item"><a href="../notebooks/03.01-Introducing-Pandas-Objects.html"><span class="chapter-title">판다스 객체 소개</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -168,7 +168,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/01.00-IPython-Beyond-Normal-Python.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Jupyter: 일반 Python을 넘어서</span></a>
+  <a href="../notebooks/01.00-IPython-Beyond-Normal-Python.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Jupyter: 일반 파이썬(Python)을 넘어서</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -198,17 +198,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/01.06-Errors-and-Debugging.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Errors and Debugging</span></a>
+  <a href="../notebooks/01.06-Errors-and-Debugging.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">오류 및 디버깅</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/01.07-Timing-and-Profiling.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Profiling and Timing Code</span></a>
+  <a href="../notebooks/01.07-Timing-and-Profiling.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">프로파일링 및 타이밍 코드</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/01.08-More-IPython-Resources.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">More IPython Resources</span></a>
+  <a href="../notebooks/01.08-More-IPython-Resources.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">추가 IPython 리소스</span></a>
   </div>
 </li>
       </ul>
@@ -224,52 +224,52 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.00-Introduction-to-NumPy.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Introduction to NumPy</span></a>
+  <a href="../notebooks/02.00-Introduction-to-NumPy.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">NumPy 소개</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.01-Understanding-Data-Types.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Understanding Data Types in Python</span></a>
+  <a href="../notebooks/02.01-Understanding-Data-Types.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">파이썬(Python)의 데이터 유형 이해</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.02-The-Basics-Of-NumPy-Arrays.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">The Basics of NumPy Arrays</span></a>
+  <a href="../notebooks/02.02-The-Basics-Of-NumPy-Arrays.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">NumPy 배열의 기본</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.03-Computation-on-arrays-ufuncs.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Computation on NumPy Arrays: Universal Functions</span></a>
+  <a href="../notebooks/02.03-Computation-on-arrays-ufuncs.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">NumPy 배열 계산: 범용 함수</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.04-Computation-on-arrays-aggregates.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Aggregations: min, max, and Everything in Between</span></a>
+  <a href="../notebooks/02.04-Computation-on-arrays-aggregates.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">집계: 최소, 최대 및 그 사이의 모든 것</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.05-Computation-on-arrays-broadcasting.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Computation on Arrays: Broadcasting</span></a>
+  <a href="../notebooks/02.05-Computation-on-arrays-broadcasting.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">배열 계산: 브로드캐스팅</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.06-Boolean-Arrays-and-Masks.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Comparisons, Masks, and Boolean Logic</span></a>
+  <a href="../notebooks/02.06-Boolean-Arrays-and-Masks.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">비교, 마스크 및 부울 논리</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.07-Fancy-Indexing.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Fancy Indexing</span></a>
+  <a href="../notebooks/02.07-Fancy-Indexing.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">멋진 인덱싱</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.08-Sorting.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Sorting Arrays</span></a>
+  <a href="../notebooks/02.08-Sorting.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">배열 정렬</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.09-Structured-Data-NumPy.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Structured Data: NumPy’s Structured Arrays</span></a>
+  <a href="../notebooks/02.09-Structured-Data-NumPy.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">구조화된 데이터: NumPy의 구조화된 배열</span></a>
   </div>
 </li>
       </ul>
@@ -285,72 +285,72 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.00-Introduction-to-Pandas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Data Manipulation with Pandas</span></a>
+  <a href="../notebooks/03.00-Introduction-to-Pandas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">팬더를 이용한 데이터 조작</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.01-Introducing-Pandas-Objects.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Introducing Pandas Objects</span></a>
+  <a href="../notebooks/03.01-Introducing-Pandas-Objects.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">판다스 객체 소개</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.02-Data-Indexing-and-Selection.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Data Indexing and Selection</span></a>
+  <a href="../notebooks/03.02-Data-Indexing-and-Selection.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">데이터 인덱싱 및 선택</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.03-Operations-in-Pandas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Operating on Data in Pandas</span></a>
+  <a href="../notebooks/03.03-Operations-in-Pandas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Pandas에서 데이터 작업</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.04-Missing-Values.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Handling Missing Data</span></a>
+  <a href="../notebooks/03.04-Missing-Values.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">누락된 데이터 처리</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.05-Hierarchical-Indexing.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Hierarchical Indexing</span></a>
+  <a href="../notebooks/03.05-Hierarchical-Indexing.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">계층적 인덱싱</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.06-Concat-And-Append.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Combining Datasets: concat and append</span></a>
+  <a href="../notebooks/03.06-Concat-And-Append.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">데이터세트 결합: 연결 및 추가</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.07-Merge-and-Join.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Combining Datasets: merge and join</span></a>
+  <a href="../notebooks/03.07-Merge-and-Join.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">데이터세트 결합: 병합 및 조인</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.08-Aggregation-and-Grouping.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Aggregation and Grouping</span></a>
+  <a href="../notebooks/03.08-Aggregation-and-Grouping.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">집계 및 그룹화</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.09-Pivot-Tables.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Pivot Tables</span></a>
+  <a href="../notebooks/03.09-Pivot-Tables.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">피벗 테이블</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.10-Working-With-Strings.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Vectorized String Operations</span></a>
+  <a href="../notebooks/03.10-Working-With-Strings.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">벡터화된 문자열 작업</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.11-Working-with-Time-Series.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Working with Time Series</span></a>
+  <a href="../notebooks/03.11-Working-with-Time-Series.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">시계열 작업</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.12-Performance-Eval-and-Query.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">High-Performance Pandas: eval and query</span></a>
+  <a href="../notebooks/03.12-Performance-Eval-and-Query.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">고성능 Pandas: 평가 및 쿼리</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.13-Further-Resources.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Further Resources</span></a>
+  <a href="../notebooks/03.13-Further-Resources.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">추가 리소스</span></a>
   </div>
 </li>
       </ul>
@@ -366,77 +366,77 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.00-Introduction-To-Matplotlib.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Visualization with Matplotlib</span></a>
+  <a href="../notebooks/04.00-Introduction-To-Matplotlib.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Matplotlib를 사용한 시각화</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.01-Simple-Line-Plots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Simple Line Plots</span></a>
+  <a href="../notebooks/04.01-Simple-Line-Plots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">간단한 선 도표</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.02-Simple-Scatter-Plots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Simple Scatter Plots</span></a>
+  <a href="../notebooks/04.02-Simple-Scatter-Plots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">단순 산점도</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.03-Errorbars.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Visualizing Uncertainties</span></a>
+  <a href="../notebooks/04.03-Errorbars.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">불확실성 시각화</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.04-Density-and-Contour-Plots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Density and Contour Plots</span></a>
+  <a href="../notebooks/04.04-Density-and-Contour-Plots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">밀도 및 등고선 플롯</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.05-Histograms-and-Binnings.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Histograms, Binnings, and Density</span></a>
+  <a href="../notebooks/04.05-Histograms-and-Binnings.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">히스토그램, 비닝 및 밀도</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.06-Customizing-Legends.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Customizing Plot Legends</span></a>
+  <a href="../notebooks/04.06-Customizing-Legends.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">플롯 범례 사용자 정의</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.07-Customizing-Colorbars.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Customizing Colorbars</span></a>
+  <a href="../notebooks/04.07-Customizing-Colorbars.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">컬러바 사용자 정의</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.08-Multiple-Subplots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Multiple Subplots</span></a>
+  <a href="../notebooks/04.08-Multiple-Subplots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">다중 서브플롯</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.09-Text-and-Annotation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Text and Annotation</span></a>
+  <a href="../notebooks/04.09-Text-and-Annotation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">텍스트 및 주석</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.10-Customizing-Ticks.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Customizing Ticks</span></a>
+  <a href="../notebooks/04.10-Customizing-Ticks.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">눈금 사용자 정의</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.11-Settings-and-Stylesheets.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Customizing Matplotlib: Configurations and Stylesheets</span></a>
+  <a href="../notebooks/04.11-Settings-and-Stylesheets.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Matplotlib 사용자 정의: 구성 및 스타일시트</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.12-Three-Dimensional-Plotting.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Three-Dimensional Plotting in Matplotlib</span></a>
+  <a href="../notebooks/04.12-Three-Dimensional-Plotting.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Matplotlib의 3차원 플로팅</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.14-Visualization-With-Seaborn.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Visualization with Seaborn</span></a>
+  <a href="../notebooks/04.14-Visualization-With-Seaborn.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Seaborn을 이용한 시각화</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.15-Further-Resources.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Further Resources</span></a>
+  <a href="../notebooks/04.15-Further-Resources.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">추가 리소스</span></a>
   </div>
 </li>
       </ul>
@@ -452,82 +452,82 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.00-Machine-Learning.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Machine Learning</span></a>
+  <a href="../notebooks/05.00-Machine-Learning.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">머신러닝</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.01-What-Is-Machine-Learning.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">What Is Machine Learning?</span></a>
+  <a href="../notebooks/05.01-What-Is-Machine-Learning.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">머신러닝이란?</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.02-Introducing-Scikit-Learn.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Introducing Scikit-Learn</span></a>
+  <a href="../notebooks/05.02-Introducing-Scikit-Learn.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Scikit-Learn 소개</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.03-Hyperparameters-and-Model-Validation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Hyperparameters and Model Validation</span></a>
+  <a href="../notebooks/05.03-Hyperparameters-and-Model-Validation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">하이퍼파라미터 및 모델 검증</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.04-Feature-Engineering.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Feature Engineering</span></a>
+  <a href="../notebooks/05.04-Feature-Engineering.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">기능 엔지니어링</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.05-Naive-Bayes.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Naive Bayes Classification</span></a>
+  <a href="../notebooks/05.05-Naive-Bayes.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 나이브 베이즈 분류</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.06-Linear-Regression.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Linear Regression</span></a>
+  <a href="../notebooks/05.06-Linear-Regression.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 선형 회귀</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.07-Support-Vector-Machines.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Support Vector Machines</span></a>
+  <a href="../notebooks/05.07-Support-Vector-Machines.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 서포트 벡터 머신</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.08-Random-Forests.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Decision Trees and Random Forests</span></a>
+  <a href="../notebooks/05.08-Random-Forests.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 의사결정 트리 및 랜덤 포레스트</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.09-Principal-Component-Analysis.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Principal Component Analysis</span></a>
+  <a href="../notebooks/05.09-Principal-Component-Analysis.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 주성분 분석</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.10-Manifold-Learning.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Manifold Learning</span></a>
+  <a href="../notebooks/05.10-Manifold-Learning.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 다양한 학습</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.11-K-Means.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: k-Means Clustering</span></a>
+  <a href="../notebooks/05.11-K-Means.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: k-평균 클러스터링</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.12-Gaussian-Mixtures.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Gaussian Mixture Models</span></a>
+  <a href="../notebooks/05.12-Gaussian-Mixtures.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 가우스 혼합 모델</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.13-Kernel-Density-Estimation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Kernel Density Estimation</span></a>
+  <a href="../notebooks/05.13-Kernel-Density-Estimation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 커널 밀도 추정</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.14-Image-Features.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Application: A Face Detection Pipeline</span></a>
+  <a href="../notebooks/05.14-Image-Features.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">응용 분야: 얼굴 감지 파이프라인</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.15-Learning-More.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Further Machine Learning Resources</span></a>
+  <a href="../notebooks/05.15-Learning-More.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">추가 머신러닝(Machine Learning) 리소스</span></a>
   </div>
 </li>
       </ul>
@@ -543,7 +543,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/06.00-Figure-Code.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Appendix: Figure Code</span></a>
+  <a href="../notebooks/06.00-Figure-Code.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">부록: 그림 코드</span></a>
   </div>
 </li>
       </ul>
@@ -558,22 +558,21 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#the-pandas-series-object" id="toc-the-pandas-series-object" class="nav-link active" data-scroll-target="#the-pandas-series-object">The Pandas Series Object</a>
+  <li><a href="#팬더-시리즈-객체" id="toc-팬더-시리즈-객체" class="nav-link active" data-scroll-target="#팬더-시리즈-객체">팬더 시리즈 객체</a>
   <ul class="collapse">
-  <li><a href="#series-as-generalized-numpy-array" id="toc-series-as-generalized-numpy-array" class="nav-link" data-scroll-target="#series-as-generalized-numpy-array">Series as Generalized NumPy Array</a></li>
-  <li><a href="#series-as-specialized-dictionary" id="toc-series-as-specialized-dictionary" class="nav-link" data-scroll-target="#series-as-specialized-dictionary">Series as Specialized Dictionary</a></li>
-  <li><a href="#constructing-series-objects" id="toc-constructing-series-objects" class="nav-link" data-scroll-target="#constructing-series-objects">Constructing Series Objects</a></li>
+  <li><a href="#일반화된-numpy-배열로서의-시리즈" id="toc-일반화된-numpy-배열로서의-시리즈" class="nav-link" data-scroll-target="#일반화된-numpy-배열로서의-시리즈">일반화된 NumPy 배열로서의 시리즈</a></li>
+  <li><a href="#시리즈-객체-구성하기" id="toc-시리즈-객체-구성하기" class="nav-link" data-scroll-target="#시리즈-객체-구성하기">시리즈 객체 구성하기</a></li>
   </ul></li>
-  <li><a href="#the-pandas-dataframe-object" id="toc-the-pandas-dataframe-object" class="nav-link" data-scroll-target="#the-pandas-dataframe-object">The Pandas DataFrame Object</a>
+  <li><a href="#팬더-dataframe-객체" id="toc-팬더-dataframe-객체" class="nav-link" data-scroll-target="#팬더-dataframe-객체">팬더 DataFrame 객체</a>
   <ul class="collapse">
-  <li><a href="#dataframe-as-generalized-numpy-array" id="toc-dataframe-as-generalized-numpy-array" class="nav-link" data-scroll-target="#dataframe-as-generalized-numpy-array">DataFrame as Generalized NumPy Array</a></li>
-  <li><a href="#dataframe-as-specialized-dictionary" id="toc-dataframe-as-specialized-dictionary" class="nav-link" data-scroll-target="#dataframe-as-specialized-dictionary">DataFrame as Specialized Dictionary</a></li>
-  <li><a href="#constructing-dataframe-objects" id="toc-constructing-dataframe-objects" class="nav-link" data-scroll-target="#constructing-dataframe-objects">Constructing DataFrame Objects</a></li>
+  <li><a href="#일반화된-numpy-배열로서의-dataframe" id="toc-일반화된-numpy-배열로서의-dataframe" class="nav-link" data-scroll-target="#일반화된-numpy-배열로서의-dataframe">일반화된 NumPy 배열로서의 DataFrame</a></li>
+  <li><a href="#특수-사전으로서의-dataframe" id="toc-특수-사전으로서의-dataframe" class="nav-link" data-scroll-target="#특수-사전으로서의-dataframe">특수 사전으로서의 DataFrame</a></li>
+  <li><a href="#dataframe-객체-구성" id="toc-dataframe-객체-구성" class="nav-link" data-scroll-target="#dataframe-객체-구성">DataFrame 객체 구성</a></li>
   </ul></li>
-  <li><a href="#the-pandas-index-object" id="toc-the-pandas-index-object" class="nav-link" data-scroll-target="#the-pandas-index-object">The Pandas Index Object</a>
+  <li><a href="#팬더-인덱스-개체" id="toc-팬더-인덱스-개체" class="nav-link" data-scroll-target="#팬더-인덱스-개체">팬더 인덱스 개체</a>
   <ul class="collapse">
-  <li><a href="#index-as-immutable-array" id="toc-index-as-immutable-array" class="nav-link" data-scroll-target="#index-as-immutable-array">Index as Immutable Array</a></li>
-  <li><a href="#index-as-ordered-set" id="toc-index-as-ordered-set" class="nav-link" data-scroll-target="#index-as-ordered-set">Index as Ordered Set</a></li>
+  <li><a href="#불변-배열로서의-인덱스" id="toc-불변-배열로서의-인덱스" class="nav-link" data-scroll-target="#불변-배열로서의-인덱스">불변 배열로서의 인덱스</a></li>
+  <li><a href="#주문-세트로서의-인덱스" id="toc-주문-세트로서의-인덱스" class="nav-link" data-scroll-target="#주문-세트로서의-인덱스">주문 세트로서의 인덱스</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -581,9 +580,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../notebooks/03.00-Introduction-to-Pandas.html">Pandas를 이용한 데이터 조작</a></li><li class="breadcrumb-item"><a href="../notebooks/03.01-Introducing-Pandas-Objects.html"><span class="chapter-title">Introducing Pandas Objects</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../notebooks/03.00-Introduction-to-Pandas.html">Pandas를 이용한 데이터 조작</a></li><li class="breadcrumb-item"><a href="../notebooks/03.01-Introducing-Pandas-Objects.html"><span class="chapter-title">판다스 객체 소개</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-title">Introducing Pandas Objects</span></h1>
+<h1 class="title"><span class="chapter-title">판다스 객체 소개</span></h1>
 </div>
 
 
@@ -600,15 +599,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>At a very basic level, Pandas objects can be thought of as enhanced versions of NumPy structured arrays in which the rows and columns are identified with labels rather than simple integer indices. As we will see during the course of this chapter, Pandas provides a host of useful tools, methods, and functionality on top of the basic data structures, but nearly everything that follows will require an understanding of what these structures are. Thus, before we go any further, let’s take a look at these three fundamental Pandas data structures: the <code>Series</code>, <code>DataFrame</code>, and <code>Index</code>.</p>
-<p>We will start our code sessions with the standard NumPy and Pandas imports:</p>
+<p>매우 기본적인 수준에서 Pandas 개체는 행과 열이 단순한 정수 인덱스가 아닌 레이블로 식별되는 NumPy 구조 배열의 향상된 버전으로 생각할 수 있습니다. 이 장의 과정에서 살펴보겠지만 Pandas는 기본 데이터 구조 외에 유용한 도구, 방법 및 기능을 제공하지만 다음의 거의 모든 내용에서는 이러한 구조가 무엇인지 이해해야 합니다. 따라서 더 진행하기 전에 세 가지 기본 Pandas 데이터 구조인 ‘Series’, ‘DataFrame’ 및 ’Index’를 살펴보겠습니다.</p>
+<p>표준 NumPy 및 Pandas 가져오기로 코드 세션을 시작합니다.</p>
 <div id="cell-2" class="cell" data-tags="[]" data-execution_count="1">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<section id="the-pandas-series-object" class="level2">
-<h2 class="anchored" data-anchor-id="the-pandas-series-object">The Pandas Series Object</h2>
-<p>A Pandas <code>Series</code> is a one-dimensional array of indexed data. It can be created from a list or array as follows:</p>
+<section id="팬더-시리즈-객체" class="level2">
+<h2 class="anchored" data-anchor-id="팬더-시리즈-객체">팬더 시리즈 객체</h2>
+<p>Pandas ’시리즈’는 인덱스 데이터의 1차원 배열입니다. 다음과 같이 목록이나 배열에서 만들 수 있습니다.</p>
 <div id="cell-4" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="2">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> pd.Series([<span class="fl">0.25</span>, <span class="fl">0.5</span>, <span class="fl">0.75</span>, <span class="fl">1.0</span>])</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>data</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -620,21 +619,21 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 dtype: float64</code></pre>
 </div>
 </div>
-<p>The <code>Series</code> combines a sequence of values with an explicit sequence of indices, which we can access with the <code>values</code> and <code>index</code> attributes. The <code>values</code> are simply a familiar NumPy array:</p>
+<p>‘Series’는 일련의 값을 명시적인 색인 순서와 결합하며, 이는 ’values’ 및 ‘index’ 속성을 통해 액세스할 수 있습니다. ’값’은 단순히 친숙한 NumPy 배열입니다.</p>
 <div id="cell-6" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="3">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>data.values</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="3">
 <pre><code>array([0.25, 0.5 , 0.75, 1.  ])</code></pre>
 </div>
 </div>
-<p>The <code>index</code> is an array-like object of type <code>pd.Index</code>, which we’ll discuss in more detail momentarily:</p>
+<p><code>index</code>는 <code>pd.Index</code> 유형의 배열형 객체입니다. 이에 대해 잠시 더 자세히 설명하겠습니다.</p>
 <div id="cell-8" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="4">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>data.index</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="4">
 <pre><code>RangeIndex(start=0, stop=4, step=1)</code></pre>
 </div>
 </div>
-<p>Like with a NumPy array, data can be accessed by the associated index via the familiar Python square-bracket notation:</p>
+<p>NumPy 배열과 마찬가지로, 익숙한 파이썬(Python) 대괄호 표기법을 통해 관련 인덱스를 통해 데이터에 액세스할 수 있습니다.</p>
 <div id="cell-10" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="5">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>data[<span class="dv">1</span>]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="5">
@@ -649,11 +648,11 @@ dtype: float64</code></pre>
 dtype: float64</code></pre>
 </div>
 </div>
-<p>As we will see, though, the Pandas <code>Series</code> is much more general and flexible than the one-dimensional NumPy array that it emulates.</p>
-<section id="series-as-generalized-numpy-array" class="level3">
-<h3 class="anchored" data-anchor-id="series-as-generalized-numpy-array">Series as Generalized NumPy Array</h3>
-<p>From what we’ve seen so far, the <code>Series</code> object may appear to be basically interchangeable with a one-dimensional NumPy array. The essential difference is that while the NumPy array has an <em>implicitly defined</em> integer index used to access the values, the Pandas <code>Series</code> has an <em>explicitly defined</em> index associated with the values.</p>
-<p>This explicit index definition gives the <code>Series</code> object additional capabilities. For example, the index need not be an integer, but can consist of values of any desired type. So, if we wish, we can use strings as an index:</p>
+<p>하지만 앞으로 살펴보겠지만 Pandas ’시리즈’는 에뮬레이트하는 1차원 NumPy 배열보다 훨씬 더 일반적이고 유연합니다.</p>
+<section id="일반화된-numpy-배열로서의-시리즈" class="level3">
+<h3 class="anchored" data-anchor-id="일반화된-numpy-배열로서의-시리즈">일반화된 NumPy 배열로서의 시리즈</h3>
+<p>지금까지 살펴본 것에서 <code>Series</code> 객체는 기본적으로 1차원 NumPy 배열과 상호 교환 가능한 것처럼 보일 수 있습니다. 근본적인 차이점은 NumPy 배열에는 값에 액세스하는 데 사용되는 <em>암시적으로 정의된</em> 정수 인덱스가 있는 반면, Pandas <code>Series</code>에는 값과 관련된 <em>명시적으로 정의된</em> 인덱스가 있다는 것입니다.</p>
+<p>이 명시적인 인덱스 정의는 <code>Series</code> 객체에 추가 기능을 제공합니다. 예를 들어 인덱스는 정수일 필요는 없지만 원하는 유형의 값으로 구성될 수 있습니다. 따라서 원한다면 문자열을 인덱스로 사용할 수 있습니다.</p>
 <div id="cell-15" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="7">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> pd.Series([<span class="fl">0.25</span>, <span class="fl">0.5</span>, <span class="fl">0.75</span>, <span class="fl">1.0</span>],</span>
 <span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>                 index<span class="op">=</span>[<span class="st">'a'</span>, <span class="st">'b'</span>, <span class="st">'c'</span>, <span class="st">'d'</span>])</span>
@@ -666,14 +665,14 @@ d    1.00
 dtype: float64</code></pre>
 </div>
 </div>
-<p>And the item access works as expected:</p>
+<p>그리고 항목 액세스는 예상대로 작동합니다.</p>
 <div id="cell-17" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="8">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>data[<span class="st">'b'</span>]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="8">
 <pre><code>0.5</code></pre>
 </div>
 </div>
-<p>We can even use noncontiguous or nonsequential indices:</p>
+<p>비연속적이거나 비순차적 인덱스를 사용할 수도 있습니다.</p>
 <div id="cell-19" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="9">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> pd.Series([<span class="fl">0.25</span>, <span class="fl">0.5</span>, <span class="fl">0.75</span>, <span class="fl">1.0</span>],</span>
 <span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>                 index<span class="op">=</span>[<span class="dv">2</span>, <span class="dv">5</span>, <span class="dv">3</span>, <span class="dv">7</span>])</span>
@@ -692,11 +691,9 @@ dtype: float64</code></pre>
 <pre><code>0.5</code></pre>
 </div>
 </div>
-</section>
-<section id="series-as-specialized-dictionary" class="level3">
-<h3 class="anchored" data-anchor-id="series-as-specialized-dictionary">Series as Specialized Dictionary</h3>
-<p>In this way, you can think of a Pandas <code>Series</code> a bit like a specialization of a Python dictionary. A dictionary is a structure that maps arbitrary keys to a set of arbitrary values, and a <code>Series</code> is a structure that maps typed keys to a set of typed values. This typing is important: just as the type-specific compiled code behind a NumPy array makes it more efficient than a Python list for certain operations, the type information of a Pandas <code>Series</code> makes it more efficient than Python dictionaries for certain operations.</p>
-<p>The <code>Series</code>-as-dictionary analogy can be made even more clear by constructing a <code>Series</code> object directly from a Python dictionary, here the five most populous US states according to the 2020 census:</p>
+<p>전문사전으로서의 ### 시리즈</p>
+<p>이런 식으로 Pandas ’시리즈’를 파이썬(Python) 사전의 전문화와 비슷하다고 생각할 수 있습니다. 사전은 임의의 키를 임의의 값 집합에 매핑하는 구조이고, ’시리즈’는 입력된 키를 입력된 값 집합에 매핑하는 구조입니다. 이러한 입력은 중요합니다. NumPy 배열 뒤의 유형별 컴파일 코드가 특정 작업에 대해 파이썬(Python) 목록보다 더 효율적이듯이, Pandas <code>Series</code>의 유형 정보는 특정 작업에 대해 파이썬(Python) 사전보다 더 효율적입니다.</p>
+<p>사전으로서의 ‘Series’ 비유는 파이썬(Python) 사전에서 직접 ‘Series’ 객체를 구성함으로써 더욱 명확해질 수 있습니다. 여기에는 2020년 인구 조사에 따르면 미국에서 가장 인구가 많은 5개 주가 있습니다.</p>
 <div id="cell-22" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="11">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb20"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>population_dict <span class="op">=</span> {<span class="st">'California'</span>: <span class="dv">39538223</span>, <span class="st">'Texas'</span>: <span class="dv">29145505</span>,</span>
 <span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>                   <span class="st">'Florida'</span>: <span class="dv">21538187</span>, <span class="st">'New York'</span>: <span class="dv">20201249</span>,</span>
@@ -712,14 +709,14 @@ Pennsylvania    13002700
 dtype: int64</code></pre>
 </div>
 </div>
-<p>From here, typical dictionary-style item access can be performed:</p>
+<p>여기에서 일반적인 사전 스타일 항목 액세스를 수행할 수 있습니다.</p>
 <div id="cell-24" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="12">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb22"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>population[<span class="st">'California'</span>]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="12">
 <pre><code>39538223</code></pre>
 </div>
 </div>
-<p>Unlike a dictionary, though, the <code>Series</code> also supports array-style operations such as slicing:</p>
+<p>그러나 사전과 달리 <code>Series</code>는 슬라이싱과 같은 배열 스타일 작업도 지원합니다.</p>
 <div id="cell-26" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="13">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb24"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>population[<span class="st">'California'</span>:<span class="st">'Florida'</span>]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="13">
@@ -729,16 +726,16 @@ Florida       21538187
 dtype: int64</code></pre>
 </div>
 </div>
-<p>We’ll discuss some of the quirks of Pandas indexing and slicing in <a href="../notebooks/03.02-Data-Indexing-and-Selection.html">Data Indexing and Selection</a>.</p>
+<p><a href="../notebooks/03.02-Data-Indexing-and-Selection.html">데이터 인덱싱 및 선택</a>에서 Pandas 인덱싱 및 슬라이싱의 몇 가지 단점에 대해 논의하겠습니다.</p>
 </section>
-<section id="constructing-series-objects" class="level3">
-<h3 class="anchored" data-anchor-id="constructing-series-objects">Constructing Series Objects</h3>
-<p>We’ve already seen a few ways of constructing a Pandas <code>Series</code> from scratch. All of them are some version of the following:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb26"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>pd.Series(data, index<span class="op">=</span>index)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>where <code>index</code> is an optional argument, and <code>data</code> can be one of many entities.</p>
-<p>For example, <code>data</code> can be a list or NumPy array, in which case <code>index</code> defaults to an integer sequence:</p>
+<section id="시리즈-객체-구성하기" class="level3">
+<h3 class="anchored" data-anchor-id="시리즈-객체-구성하기">시리즈 객체 구성하기</h3>
+<p>우리는 이미 Pandas ’시리즈’를 처음부터 구성하는 몇 가지 방법을 살펴보았습니다. 이들 모두는 다음의 일부 버전입니다.</p>
+<p>``파이썬 pd.Series(데이터, 인덱스=인덱스) ````</p>
+<p>여기서 <code>index</code>는 선택적 인수이고 <code>data</code>는 여러 엔터티 중 하나일 수 있습니다.</p>
+<p>예를 들어 <code>data</code>는 목록이나 NumPy 배열일 수 있으며, 이 경우 <code>index</code>는 기본적으로 정수 시퀀스로 설정됩니다.</p>
 <div id="cell-29" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="14">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb27"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a>pd.Series([<span class="dv">2</span>, <span class="dv">4</span>, <span class="dv">6</span>])</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb26"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>pd.Series([<span class="dv">2</span>, <span class="dv">4</span>, <span class="dv">6</span>])</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="14">
 <pre><code>0    2
 1    4
@@ -746,9 +743,9 @@ dtype: int64</code></pre>
 dtype: int64</code></pre>
 </div>
 </div>
-<p>Or <code>data</code> can be a scalar, which is repeated to fill the specified index:</p>
+<p>또는 <code>data</code>는 지정된 인덱스를 채우기 위해 반복되는 스칼라일 수 있습니다.</p>
 <div id="cell-31" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="15">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb29"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a>pd.Series(<span class="dv">5</span>, index<span class="op">=</span>[<span class="dv">100</span>, <span class="dv">200</span>, <span class="dv">300</span>])</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb28"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a>pd.Series(<span class="dv">5</span>, index<span class="op">=</span>[<span class="dv">100</span>, <span class="dv">200</span>, <span class="dv">300</span>])</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="15">
 <pre><code>100    5
 200    5
@@ -756,9 +753,9 @@ dtype: int64</code></pre>
 dtype: int64</code></pre>
 </div>
 </div>
-<p>Or it can be a dictionary, in which case <code>index</code> defaults to the dictionary keys:</p>
+<p>또는 사전일 수도 있습니다. 이 경우 <code>index</code>는 기본적으로 사전 키로 설정됩니다.</p>
 <div id="cell-33" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="16">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb31"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a>pd.Series({<span class="dv">2</span>:<span class="st">'a'</span>, <span class="dv">1</span>:<span class="st">'b'</span>, <span class="dv">3</span>:<span class="st">'c'</span>})</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb30"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a>pd.Series({<span class="dv">2</span>:<span class="st">'a'</span>, <span class="dv">1</span>:<span class="st">'b'</span>, <span class="dv">3</span>:<span class="st">'c'</span>})</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="16">
 <pre><code>2    a
 1    b
@@ -766,9 +763,9 @@ dtype: int64</code></pre>
 dtype: object</code></pre>
 </div>
 </div>
-<p>In each case, the index can be explicitly set to control the order or the subset of keys used:</p>
+<p>각 경우에 인덱스는 사용된 키의 하위 집합이나 순서를 제어하도록 명시적으로 설정할 수 있습니다.</p>
 <div id="cell-35" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="17">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb33"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a>pd.Series({<span class="dv">2</span>:<span class="st">'a'</span>, <span class="dv">1</span>:<span class="st">'b'</span>, <span class="dv">3</span>:<span class="st">'c'</span>}, index<span class="op">=</span>[<span class="dv">1</span>, <span class="dv">2</span>])</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb32"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a>pd.Series({<span class="dv">2</span>:<span class="st">'a'</span>, <span class="dv">1</span>:<span class="st">'b'</span>, <span class="dv">3</span>:<span class="st">'c'</span>}, index<span class="op">=</span>[<span class="dv">1</span>, <span class="dv">2</span>])</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="17">
 <pre><code>1    b
 2    a
@@ -777,18 +774,18 @@ dtype: object</code></pre>
 </div>
 </section>
 </section>
-<section id="the-pandas-dataframe-object" class="level2">
-<h2 class="anchored" data-anchor-id="the-pandas-dataframe-object">The Pandas DataFrame Object</h2>
-<p>The next fundamental structure in Pandas is the <code>DataFrame</code>. Like the <code>Series</code> object discussed in the previous section, the <code>DataFrame</code> can be thought of either as a generalization of a NumPy array, or as a specialization of a Python dictionary. We’ll now take a look at each of these perspectives.</p>
-<section id="dataframe-as-generalized-numpy-array" class="level3">
-<h3 class="anchored" data-anchor-id="dataframe-as-generalized-numpy-array">DataFrame as Generalized NumPy Array</h3>
-<p>If a <code>Series</code> is an analog of a one-dimensional array with explicit indices, a <code>DataFrame</code> is an analog of a two-dimensional array with explicit row and column indices. Just as you might think of a two-dimensional array as an ordered sequence of aligned one-dimensional columns, you can think of a <code>DataFrame</code> as a sequence of aligned <code>Series</code> objects. Here, by “aligned” we mean that they share the same index.</p>
-<p>To demonstrate this, let’s first construct a new <code>Series</code> listing the area of each of the five states discussed in the previous section (in square kilometers):</p>
+<section id="팬더-dataframe-객체" class="level2">
+<h2 class="anchored" data-anchor-id="팬더-dataframe-객체">팬더 DataFrame 객체</h2>
+<p>Pandas의 다음 기본 구조는 ’DataFrame’입니다. 이전 섹션에서 설명한 <code>Series</code> 객체와 마찬가지로 <code>DataFrame</code>은 NumPy 배열의 일반화 또는 파이썬(Python) 사전의 특수화로 생각할 수 있습니다. 이제 이러한 관점을 각각 살펴보겠습니다.</p>
+<section id="일반화된-numpy-배열로서의-dataframe" class="level3">
+<h3 class="anchored" data-anchor-id="일반화된-numpy-배열로서의-dataframe">일반화된 NumPy 배열로서의 DataFrame</h3>
+<p>‘Series’가 명시적인 인덱스가 있는 1차원 배열과 유사하다면 ’DataFrame’은 명시적인 행 및 열 인덱스가 있는 2차원 배열과 유사합니다. 2차원 배열을 정렬된 1차원 열의 순서화된 시퀀스로 생각하는 것처럼 ’DataFrame’은 정렬된 ’Series’ 개체의 시퀀스로 생각할 수 있습니다. 여기서 “정렬”이란 동일한 인덱스를 공유한다는 의미입니다.</p>
+<p>이를 입증하기 위해 먼저 이전 섹션에서 논의한 5개 주 각각의 면적(제곱 킬로미터)을 나열하는 새로운 ’계열’을 구성해 보겠습니다.</p>
 <div id="cell-38" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="18">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb35"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a>area_dict <span class="op">=</span> {<span class="st">'California'</span>: <span class="dv">423967</span>, <span class="st">'Texas'</span>: <span class="dv">695662</span>, <span class="st">'Florida'</span>: <span class="dv">170312</span>, </span>
-<span id="cb35-2"><a href="#cb35-2" aria-hidden="true" tabindex="-1"></a>             <span class="st">'New York'</span>: <span class="dv">141297</span>, <span class="st">'Pennsylvania'</span>: <span class="dv">119280</span>}</span>
-<span id="cb35-3"><a href="#cb35-3" aria-hidden="true" tabindex="-1"></a>area <span class="op">=</span> pd.Series(area_dict)</span>
-<span id="cb35-4"><a href="#cb35-4" aria-hidden="true" tabindex="-1"></a>area</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb34"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a>area_dict <span class="op">=</span> {<span class="st">'California'</span>: <span class="dv">423967</span>, <span class="st">'Texas'</span>: <span class="dv">695662</span>, <span class="st">'Florida'</span>: <span class="dv">170312</span>, </span>
+<span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a>             <span class="st">'New York'</span>: <span class="dv">141297</span>, <span class="st">'Pennsylvania'</span>: <span class="dv">119280</span>}</span>
+<span id="cb34-3"><a href="#cb34-3" aria-hidden="true" tabindex="-1"></a>area <span class="op">=</span> pd.Series(area_dict)</span>
+<span id="cb34-4"><a href="#cb34-4" aria-hidden="true" tabindex="-1"></a>area</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="18">
 <pre><code>California      423967
 Texas           695662
@@ -798,11 +795,11 @@ Pennsylvania    119280
 dtype: int64</code></pre>
 </div>
 </div>
-<p>Now that we have this along with the <code>population</code> Series from before, we can use a dictionary to construct a single two-dimensional object containing this information:</p>
+<p>이제 이전의 <code>population</code> 시리즈와 함께 이것을 얻었으므로 사전을 사용하여 이 정보를 포함하는 단일 2차원 개체를 구성할 수 있습니다.</p>
 <div id="cell-40" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="19">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb37"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a>states <span class="op">=</span> pd.DataFrame({<span class="st">'population'</span>: population,</span>
-<span id="cb37-2"><a href="#cb37-2" aria-hidden="true" tabindex="-1"></a>                       <span class="st">'area'</span>: area})</span>
-<span id="cb37-3"><a href="#cb37-3" aria-hidden="true" tabindex="-1"></a>states</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb36"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a>states <span class="op">=</span> pd.DataFrame({<span class="st">'population'</span>: population,</span>
+<span id="cb36-2"><a href="#cb36-2" aria-hidden="true" tabindex="-1"></a>                       <span class="st">'area'</span>: area})</span>
+<span id="cb36-3"><a href="#cb36-3" aria-hidden="true" tabindex="-1"></a>states</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="19">
 <div>
 
@@ -847,27 +844,27 @@ dtype: int64</code></pre>
 </div>
 </div>
 </div>
-<p>Like the <code>Series</code> object, the <code>DataFrame</code> has an <code>index</code> attribute that gives access to the index labels:</p>
+<p><code>Series</code> 객체와 마찬가지로 <code>DataFrame</code>에는 인덱스 레이블에 대한 액세스를 제공하는 <code>index</code> 속성이 있습니다.</p>
 <div id="cell-42" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="20">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb38"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a>states.index</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb37"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a>states.index</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="20">
 <pre><code>Index(['California', 'Texas', 'Florida', 'New York', 'Pennsylvania'], dtype='object')</code></pre>
 </div>
 </div>
-<p>Additionally, the <code>DataFrame</code> has a <code>columns</code> attribute, which is an <code>Index</code> object holding the column labels:</p>
+<p>또한 <code>DataFrame</code>에는 열 레이블을 보유하는 <code>Index</code> 객체인 <code>columns</code> 속성이 있습니다.</p>
 <div id="cell-44" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="21">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb40"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a>states.columns</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb39"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a>states.columns</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="21">
 <pre><code>Index(['population', 'area'], dtype='object')</code></pre>
 </div>
 </div>
-<p>Thus the <code>DataFrame</code> can be thought of as a generalization of a two-dimensional NumPy array, where both the rows and columns have a generalized index for accessing the data.</p>
+<p>따라서 <code>DataFrame</code>은 행과 열 모두 데이터에 액세스하기 위한 일반화된 인덱스를 갖는 2차원 NumPy 배열의 일반화로 생각할 수 있습니다.</p>
 </section>
-<section id="dataframe-as-specialized-dictionary" class="level3">
-<h3 class="anchored" data-anchor-id="dataframe-as-specialized-dictionary">DataFrame as Specialized Dictionary</h3>
-<p>Similarly, we can also think of a <code>DataFrame</code> as a specialization of a dictionary. Where a dictionary maps a key to a value, a <code>DataFrame</code> maps a column name to a <code>Series</code> of column data. For example, asking for the <code>'area'</code> attribute returns the <code>Series</code> object containing the areas we saw earlier:</p>
+<section id="특수-사전으로서의-dataframe" class="level3">
+<h3 class="anchored" data-anchor-id="특수-사전으로서의-dataframe">특수 사전으로서의 DataFrame</h3>
+<p>마찬가지로 <code>DataFrame</code>을 사전의 특수화로 생각할 수도 있습니다. 사전이 키를 값에 매핑하는 경우 <code>DataFrame</code>은 열 이름을 열 데이터의 <code>시리즈</code>에 매핑합니다. 예를 들어 ‘area’ 속성을 요청하면 앞서 본 영역이 포함된 ‘Series’ 개체가 반환됩니다.</p>
 <div id="cell-47" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="22">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb42"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a>states[<span class="st">'area'</span>]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb41"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a>states[<span class="st">'area'</span>]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="22">
 <pre><code>California      423967
 Texas           695662
@@ -877,16 +874,16 @@ Pennsylvania    119280
 Name: area, dtype: int64</code></pre>
 </div>
 </div>
-<p>Notice the potential point of confusion here: in a two-dimensional NumPy array, <code>data[0]</code> will return the first <em>row</em>. For a <code>DataFrame</code>, <code>data['col0']</code> will return the first <em>column</em>. Because of this, it is probably better to think about <code>DataFrame</code>s as generalized dictionaries rather than generalized arrays, though both ways of looking at the situation can be useful. We’ll explore more flexible means of indexing <code>DataFrame</code>s in <a href="../notebooks/03.02-Data-Indexing-and-Selection.html">Data Indexing and Selection</a>.</p>
+<p>여기서 혼동될 수 있는 점을 주목하세요. 2차원 NumPy 배열에서 <code>data[0]</code>은 첫 번째 <em>행</em>을 반환합니다. <code>DataFrame</code>의 경우 <code>data['col0']</code>는 첫 번째 <em>열</em>을 반환합니다. 이 때문에 <code>DataFrame</code>을 일반화된 배열보다는 일반화된 사전으로 생각하는 것이 더 나을 것입니다. 하지만 상황을 보는 두 가지 방법 모두 유용할 수 있습니다. <a href="../notebooks/03.02-Data-Indexing-and-Selection.html">데이터 인덱싱 및 선택</a>에서 <code>DataFrame</code>을 인덱싱하는 보다 유연한 방법을 살펴보겠습니다.</p>
 </section>
-<section id="constructing-dataframe-objects" class="level3">
-<h3 class="anchored" data-anchor-id="constructing-dataframe-objects">Constructing DataFrame Objects</h3>
-<p>A Pandas <code>DataFrame</code> can be constructed in a variety of ways. Here we’ll explore several examples.</p>
-<section id="from-a-single-series-object" class="level4">
-<h4 class="anchored" data-anchor-id="from-a-single-series-object">From a single Series object</h4>
-<p>A <code>DataFrame</code> is a collection of <code>Series</code> objects, and a single-column <code>DataFrame</code> can be constructed from a single <code>Series</code>:</p>
+<section id="dataframe-객체-구성" class="level3">
+<h3 class="anchored" data-anchor-id="dataframe-객체-구성">DataFrame 객체 구성</h3>
+<p>Pandas <code>DataFrame</code>은 다양한 방법으로 구성될 수 있습니다. 여기에서는 몇 가지 예를 살펴보겠습니다.</p>
+<section id="단일-series-객체에서" class="level4">
+<h4 class="anchored" data-anchor-id="단일-series-객체에서">단일 Series 객체에서</h4>
+<p><code>DataFrame</code>은 <code>Series</code> 객체의 컬렉션이며, 단일 <code>Series</code>에서 단일 열 <code>DataFrame</code>을 구성할 수 있습니다.</p>
 <div id="cell-51" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="23">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb44"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb44-1"><a href="#cb44-1" aria-hidden="true" tabindex="-1"></a>pd.DataFrame(population, columns<span class="op">=</span>[<span class="st">'population'</span>])</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb43"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb43-1"><a href="#cb43-1" aria-hidden="true" tabindex="-1"></a>pd.DataFrame(population, columns<span class="op">=</span>[<span class="st">'population'</span>])</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="23">
 <div>
 
@@ -926,13 +923,13 @@ Name: area, dtype: int64</code></pre>
 </div>
 </div>
 </section>
-<section id="from-a-list-of-dicts" class="level4">
-<h4 class="anchored" data-anchor-id="from-a-list-of-dicts">From a list of dicts</h4>
-<p>Any list of dictionaries can be made into a <code>DataFrame</code>. We’ll use a simple list comprehension to create some data:</p>
+<section id="사전-목록에서" class="level4">
+<h4 class="anchored" data-anchor-id="사전-목록에서">사전 목록에서</h4>
+<p>모든 사전 목록을 <code>DataFrame</code>으로 만들 수 있습니다. 우리는 간단한 목록 이해를 사용하여 일부 데이터를 생성할 것입니다:</p>
 <div id="cell-53" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="24">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb45"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb45-1"><a href="#cb45-1" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> [{<span class="st">'a'</span>: i, <span class="st">'b'</span>: <span class="dv">2</span> <span class="op">*</span> i}</span>
-<span id="cb45-2"><a href="#cb45-2" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">3</span>)]</span>
-<span id="cb45-3"><a href="#cb45-3" aria-hidden="true" tabindex="-1"></a>pd.DataFrame(data)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb44"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb44-1"><a href="#cb44-1" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> [{<span class="st">'a'</span>: i, <span class="st">'b'</span>: <span class="dv">2</span> <span class="op">*</span> i}</span>
+<span id="cb44-2"><a href="#cb44-2" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">3</span>)]</span>
+<span id="cb44-3"><a href="#cb44-3" aria-hidden="true" tabindex="-1"></a>pd.DataFrame(data)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="24">
 <div>
 
@@ -967,9 +964,9 @@ Name: area, dtype: int64</code></pre>
 </div>
 </div>
 </div>
-<p>Even if some keys in the dictionary are missing, Pandas will fill them in with <code>NaN</code> values (i.e., “Not a Number”; see <a href="../notebooks/03.04-Missing-Values.html">Handling Missing Data</a>):</p>
+<p>사전의 일부 키가 누락된 경우에도 Pandas는 이를 <code>NaN</code> 값으로 채웁니다(예: “숫자가 아님”, <a href="../notebooks/03.04-Missing-Values.html">누락된 데이터 처리</a> 참조).</p>
 <div id="cell-55" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="25">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb46"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb46-1"><a href="#cb46-1" aria-hidden="true" tabindex="-1"></a>pd.DataFrame([{<span class="st">'a'</span>: <span class="dv">1</span>, <span class="st">'b'</span>: <span class="dv">2</span>}, {<span class="st">'b'</span>: <span class="dv">3</span>, <span class="st">'c'</span>: <span class="dv">4</span>}])</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb45"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb45-1"><a href="#cb45-1" aria-hidden="true" tabindex="-1"></a>pd.DataFrame([{<span class="st">'a'</span>: <span class="dv">1</span>, <span class="st">'b'</span>: <span class="dv">2</span>}, {<span class="st">'b'</span>: <span class="dv">3</span>, <span class="st">'c'</span>: <span class="dv">4</span>}])</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="25">
 <div>
 
@@ -1003,12 +1000,12 @@ Name: area, dtype: int64</code></pre>
 </div>
 </div>
 </section>
-<section id="from-a-dictionary-of-series-objects" class="level4">
-<h4 class="anchored" data-anchor-id="from-a-dictionary-of-series-objects">From a dictionary of Series objects</h4>
-<p>As we saw before, a <code>DataFrame</code> can be constructed from a dictionary of <code>Series</code> objects as well:</p>
+<section id="series-객체-사전에서" class="level4">
+<h4 class="anchored" data-anchor-id="series-객체-사전에서">Series 객체 사전에서</h4>
+<p>이전에 살펴본 것처럼 <code>DataFrame</code>은 <code>Series</code> 객체의 사전에서도 구성될 수 있습니다.</p>
 <div id="cell-57" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="26">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb47"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb47-1"><a href="#cb47-1" aria-hidden="true" tabindex="-1"></a>pd.DataFrame({<span class="st">'population'</span>: population,</span>
-<span id="cb47-2"><a href="#cb47-2" aria-hidden="true" tabindex="-1"></a>              <span class="st">'area'</span>: area})</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb46"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb46-1"><a href="#cb46-1" aria-hidden="true" tabindex="-1"></a>pd.DataFrame({<span class="st">'population'</span>: population,</span>
+<span id="cb46-2"><a href="#cb46-2" aria-hidden="true" tabindex="-1"></a>              <span class="st">'area'</span>: area})</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="26">
 <div>
 
@@ -1054,13 +1051,13 @@ Name: area, dtype: int64</code></pre>
 </div>
 </div>
 </section>
-<section id="from-a-two-dimensional-numpy-array" class="level4">
-<h4 class="anchored" data-anchor-id="from-a-two-dimensional-numpy-array">From a two-dimensional NumPy array</h4>
-<p>Given a two-dimensional array of data, we can create a <code>DataFrame</code> with any specified column and index names. If omitted, an integer index will be used for each:</p>
+<section id="차원-numpy-배열에서" class="level4">
+<h4 class="anchored" data-anchor-id="차원-numpy-배열에서">2차원 NumPy 배열에서</h4>
+<p>2차원 데이터 배열이 주어지면 지정된 열과 인덱스 이름을 사용하여 ’DataFrame’을 만들 수 있습니다. 생략하면 정수 인덱스가 각각에 사용됩니다.</p>
 <div id="cell-59" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="27">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb48"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb48-1"><a href="#cb48-1" aria-hidden="true" tabindex="-1"></a>pd.DataFrame(np.random.rand(<span class="dv">3</span>, <span class="dv">2</span>),</span>
-<span id="cb48-2"><a href="#cb48-2" aria-hidden="true" tabindex="-1"></a>             columns<span class="op">=</span>[<span class="st">'foo'</span>, <span class="st">'bar'</span>],</span>
-<span id="cb48-3"><a href="#cb48-3" aria-hidden="true" tabindex="-1"></a>             index<span class="op">=</span>[<span class="st">'a'</span>, <span class="st">'b'</span>, <span class="st">'c'</span>])</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb47"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb47-1"><a href="#cb47-1" aria-hidden="true" tabindex="-1"></a>pd.DataFrame(np.random.rand(<span class="dv">3</span>, <span class="dv">2</span>),</span>
+<span id="cb47-2"><a href="#cb47-2" aria-hidden="true" tabindex="-1"></a>             columns<span class="op">=</span>[<span class="st">'foo'</span>, <span class="st">'bar'</span>],</span>
+<span id="cb47-3"><a href="#cb47-3" aria-hidden="true" tabindex="-1"></a>             index<span class="op">=</span>[<span class="st">'a'</span>, <span class="st">'b'</span>, <span class="st">'c'</span>])</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="27">
 <div>
 
@@ -1096,18 +1093,18 @@ Name: area, dtype: int64</code></pre>
 </div>
 </div>
 </section>
-<section id="from-a-numpy-structured-array" class="level4">
-<h4 class="anchored" data-anchor-id="from-a-numpy-structured-array">From a NumPy structured array</h4>
-<p>We covered structured arrays in <a href="../notebooks/02.09-Structured-Data-NumPy.html">Structured Data: NumPy’s Structured Arrays</a>. A Pandas <code>DataFrame</code> operates much like a structured array, and can be created directly from one:</p>
+<section id="numpy-구조-배열에서" class="level4">
+<h4 class="anchored" data-anchor-id="numpy-구조-배열에서">NumPy 구조 배열에서</h4>
+<p><a href="../notebooks/02.09-Structured-Data-NumPy.html">구조화된 데이터: NumPy의 구조화된 배열</a>에서 구조화된 배열을 다루었습니다. Pandas <code>DataFrame</code>은 구조화된 배열과 매우 유사하게 작동하며 다음 중 하나에서 직접 생성될 수 있습니다.</p>
 <div id="cell-61" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="28">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb49"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb49-1"><a href="#cb49-1" aria-hidden="true" tabindex="-1"></a>A <span class="op">=</span> np.zeros(<span class="dv">3</span>, dtype<span class="op">=</span>[(<span class="st">'A'</span>, <span class="st">'i8'</span>), (<span class="st">'B'</span>, <span class="st">'f8'</span>)])</span>
-<span id="cb49-2"><a href="#cb49-2" aria-hidden="true" tabindex="-1"></a>A</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb48"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb48-1"><a href="#cb48-1" aria-hidden="true" tabindex="-1"></a>A <span class="op">=</span> np.zeros(<span class="dv">3</span>, dtype<span class="op">=</span>[(<span class="st">'A'</span>, <span class="st">'i8'</span>), (<span class="st">'B'</span>, <span class="st">'f8'</span>)])</span>
+<span id="cb48-2"><a href="#cb48-2" aria-hidden="true" tabindex="-1"></a>A</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="28">
 <pre><code>array([(0, 0.), (0, 0.), (0, 0.)], dtype=[('A', '&lt;i8'), ('B', '&lt;f8')])</code></pre>
 </div>
 </div>
 <div id="cell-62" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="29">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb51"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb51-1"><a href="#cb51-1" aria-hidden="true" tabindex="-1"></a>pd.DataFrame(A)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb50"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb50-1"><a href="#cb50-1" aria-hidden="true" tabindex="-1"></a>pd.DataFrame(A)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="29">
 <div>
 
@@ -1145,41 +1142,41 @@ Name: area, dtype: int64</code></pre>
 </section>
 </section>
 </section>
-<section id="the-pandas-index-object" class="level2">
-<h2 class="anchored" data-anchor-id="the-pandas-index-object">The Pandas Index Object</h2>
-<p>As you’ve seen, the <code>Series</code> and <code>DataFrame</code> objects both contain an explicit <em>index</em> that lets you reference and modify data. This <code>Index</code> object is an interesting structure in itself, and it can be thought of either as an <em>immutable array</em> or as an <em>ordered set</em> (technically a multiset, as <code>Index</code> objects may contain repeated values). Those views have some interesting consequences in terms of the operations available on <code>Index</code> objects. As a simple example, let’s construct an <code>Index</code> from a list of integers:</p>
+<section id="팬더-인덱스-개체" class="level2">
+<h2 class="anchored" data-anchor-id="팬더-인덱스-개체">팬더 인덱스 개체</h2>
+<p>보시다시피 <code>Series</code> 및 <code>DataFrame</code> 개체에는 모두 데이터를 참조하고 수정할 수 있는 명시적인 <em>인덱스</em>가 포함되어 있습니다. 이 ‘Index’ 개체는 그 자체로 흥미로운 구조이며 <em>불변 배열</em> 또는 <em>순서가 지정된 집합</em>(기술적으로는 다중 집합, ‘Index’ 개체에 반복된 값이 포함될 수 있음)으로 생각할 수 있습니다. 이러한 뷰는 ‘Index’ 개체에 사용할 수 있는 작업 측면에서 몇 가지 흥미로운 결과를 가져옵니다. 간단한 예로 정수 목록에서 <code>Index</code>를 구성해 보겠습니다.</p>
 <div id="cell-64" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="30">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb52"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb52-1"><a href="#cb52-1" aria-hidden="true" tabindex="-1"></a>ind <span class="op">=</span> pd.Index([<span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">5</span>, <span class="dv">7</span>, <span class="dv">11</span>])</span>
-<span id="cb52-2"><a href="#cb52-2" aria-hidden="true" tabindex="-1"></a>ind</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb51"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb51-1"><a href="#cb51-1" aria-hidden="true" tabindex="-1"></a>ind <span class="op">=</span> pd.Index([<span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">5</span>, <span class="dv">7</span>, <span class="dv">11</span>])</span>
+<span id="cb51-2"><a href="#cb51-2" aria-hidden="true" tabindex="-1"></a>ind</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="30">
 <pre><code>Int64Index([2, 3, 5, 7, 11], dtype='int64')</code></pre>
 </div>
 </div>
-<section id="index-as-immutable-array" class="level3">
-<h3 class="anchored" data-anchor-id="index-as-immutable-array">Index as Immutable Array</h3>
-<p>The <code>Index</code> in many ways operates like an array. For example, we can use standard Python indexing notation to retrieve values or slices:</p>
+<section id="불변-배열로서의-인덱스" class="level3">
+<h3 class="anchored" data-anchor-id="불변-배열로서의-인덱스">불변 배열로서의 인덱스</h3>
+<p>여러 면에서 ’인덱스’는 배열처럼 작동합니다. 예를 들어 표준 파이썬(Python) 인덱싱 표기법을 사용하여 값이나 조각을 검색할 수 있습니다.</p>
 <div id="cell-66" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="31">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb54"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb54-1"><a href="#cb54-1" aria-hidden="true" tabindex="-1"></a>ind[<span class="dv">1</span>]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb53"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb53-1"><a href="#cb53-1" aria-hidden="true" tabindex="-1"></a>ind[<span class="dv">1</span>]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="31">
 <pre><code>3</code></pre>
 </div>
 </div>
 <div id="cell-67" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="32">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb56"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb56-1"><a href="#cb56-1" aria-hidden="true" tabindex="-1"></a>ind[::<span class="dv">2</span>]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb55"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb55-1"><a href="#cb55-1" aria-hidden="true" tabindex="-1"></a>ind[::<span class="dv">2</span>]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="32">
 <pre><code>Int64Index([2, 5, 11], dtype='int64')</code></pre>
 </div>
 </div>
-<p><code>Index</code> objects also have many of the attributes familiar from NumPy arrays:</p>
+<p><code>Index</code> 객체에는 NumPy 배열과 친숙한 많은 속성도 있습니다.</p>
 <div id="cell-69" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="33">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb58"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb58-1"><a href="#cb58-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(ind.size, ind.shape, ind.ndim, ind.dtype)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb57"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb57-1"><a href="#cb57-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(ind.size, ind.shape, ind.ndim, ind.dtype)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>5 (5,) 1 int64</code></pre>
 </div>
 </div>
-<p>One difference between <code>Index</code> objects and NumPy arrays is that the indices are immutable—that is, they cannot be modified via the normal means:</p>
+<p><code>Index</code> 객체와 NumPy 배열의 한 가지 차이점은 색인이 불변이라는 것입니다. 즉, 일반적인 수단을 통해 수정할 수 없습니다.</p>
 <div id="cell-71" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="34">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb60"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb60-1"><a href="#cb60-1" aria-hidden="true" tabindex="-1"></a>ind[<span class="dv">1</span>] <span class="op">=</span> <span class="dv">0</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb59"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb59-1"><a href="#cb59-1" aria-hidden="true" tabindex="-1"></a>ind[<span class="dv">1</span>] <span class="op">=</span> <span class="dv">0</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-error">
 <div class="ansi-escaped-output">
 <pre><span class="ansi-red-fg">---------------------------------------------------------------------------</span>
@@ -1198,29 +1195,29 @@ Name: area, dtype: int64</code></pre>
 </div>
 </div>
 </div>
-<p>This immutability makes it safer to share indices between multiple <code>DataFrame</code>s and arrays, without the potential for side effects from inadvertent index modification.</p>
+<p>이러한 불변성은 부주의한 인덱스 수정으로 인한 부작용 가능성 없이 여러 <code>DataFrame</code>과 배열 간에 인덱스를 공유하는 것을 더 안전하게 만듭니다.</p>
 </section>
-<section id="index-as-ordered-set" class="level3">
-<h3 class="anchored" data-anchor-id="index-as-ordered-set">Index as Ordered Set</h3>
-<p>Pandas objects are designed to facilitate operations such as joins across datasets, which depend on many aspects of set arithmetic. The <code>Index</code> object follows many of the conventions used by Python’s built-in <code>set</code> data structure, so that unions, intersections, differences, and other combinations can be computed in a familiar way:</p>
+<section id="주문-세트로서의-인덱스" class="level3">
+<h3 class="anchored" data-anchor-id="주문-세트로서의-인덱스">주문 세트로서의 인덱스</h3>
+<p>Pandas 개체는 집합 산술의 여러 측면에 의존하는 데이터 세트 전체의 조인과 같은 작업을 용이하게 하도록 설계되었습니다. <code>Index</code> 객체는 파이썬(Python)의 내장 <code>set</code> 데이터 구조에서 사용되는 많은 규칙을 따르므로 합집합, 교집합, 차이 및 기타 조합을 익숙한 방식으로 계산할 수 있습니다.</p>
 <div id="cell-74" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="35">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb61"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb61-1"><a href="#cb61-1" aria-hidden="true" tabindex="-1"></a>indA <span class="op">=</span> pd.Index([<span class="dv">1</span>, <span class="dv">3</span>, <span class="dv">5</span>, <span class="dv">7</span>, <span class="dv">9</span>])</span>
-<span id="cb61-2"><a href="#cb61-2" aria-hidden="true" tabindex="-1"></a>indB <span class="op">=</span> pd.Index([<span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">5</span>, <span class="dv">7</span>, <span class="dv">11</span>])</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb60"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb60-1"><a href="#cb60-1" aria-hidden="true" tabindex="-1"></a>indA <span class="op">=</span> pd.Index([<span class="dv">1</span>, <span class="dv">3</span>, <span class="dv">5</span>, <span class="dv">7</span>, <span class="dv">9</span>])</span>
+<span id="cb60-2"><a href="#cb60-2" aria-hidden="true" tabindex="-1"></a>indB <span class="op">=</span> pd.Index([<span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">5</span>, <span class="dv">7</span>, <span class="dv">11</span>])</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <div id="cell-75" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="36">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb62"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb62-1"><a href="#cb62-1" aria-hidden="true" tabindex="-1"></a>indA.intersection(indB)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb61"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb61-1"><a href="#cb61-1" aria-hidden="true" tabindex="-1"></a>indA.intersection(indB)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="36">
 <pre><code>Int64Index([3, 5, 7], dtype='int64')</code></pre>
 </div>
 </div>
 <div id="cell-76" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="37">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb64"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb64-1"><a href="#cb64-1" aria-hidden="true" tabindex="-1"></a>indA.union(indB)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb63"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb63-1"><a href="#cb63-1" aria-hidden="true" tabindex="-1"></a>indA.union(indB)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="37">
 <pre><code>Int64Index([1, 2, 3, 5, 7, 9, 11], dtype='int64')</code></pre>
 </div>
 </div>
 <div id="cell-77" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="38">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb66"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb66-1"><a href="#cb66-1" aria-hidden="true" tabindex="-1"></a>indA.symmetric_difference(indB)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb65"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb65-1"><a href="#cb65-1" aria-hidden="true" tabindex="-1"></a>indA.symmetric_difference(indB)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="38">
 <pre><code>Int64Index([1, 2, 9, 11], dtype='int64')</code></pre>
 </div>
@@ -1633,13 +1630,13 @@ Name: area, dtype: int64</code></pre>
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../notebooks/03.00-Introduction-to-Pandas.html" class="pagination-link" aria-label="Data Manipulation with Pandas">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Data Manipulation with Pandas</span></span>
+      <a href="../notebooks/03.00-Introduction-to-Pandas.html" class="pagination-link" aria-label="팬더를 이용한 데이터 조작">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">팬더를 이용한 데이터 조작</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../notebooks/03.02-Data-Indexing-and-Selection.html" class="pagination-link" aria-label="Data Indexing and Selection">
-        <span class="nav-page-text"><span class="chapter-title">Data Indexing and Selection</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../notebooks/03.02-Data-Indexing-and-Selection.html" class="pagination-link" aria-label="데이터 인덱싱 및 선택">
+        <span class="nav-page-text"><span class="chapter-title">데이터 인덱싱 및 선택</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

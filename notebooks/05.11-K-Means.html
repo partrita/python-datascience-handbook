@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>In Depth: k-Means Clustering – 파이썬 데이터 사이언스 핸드북</title>
+<title>심층 분석: k-평균 클러스터링 – 파이썬 데이터 사이언스 핸드북</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -77,7 +77,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-3778d3e438078121318a23701f9f68bb.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-803ae4f7a8810f475153517dc3c4ebae.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -118,7 +118,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../notebooks/05.00-Machine-Learning.html">머신러닝</a></li><li class="breadcrumb-item"><a href="../notebooks/05.11-K-Means.html"><span class="chapter-title">In Depth: k-Means Clustering</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../notebooks/05.00-Machine-Learning.html">머신러닝</a></li><li class="breadcrumb-item"><a href="../notebooks/05.11-K-Means.html"><span class="chapter-title">심층 분석: k-평균 클러스터링</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -165,7 +165,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/01.00-IPython-Beyond-Normal-Python.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Jupyter: 일반 Python을 넘어서</span></a>
+  <a href="../notebooks/01.00-IPython-Beyond-Normal-Python.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Jupyter: 일반 파이썬(Python)을 넘어서</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -195,17 +195,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/01.06-Errors-and-Debugging.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Errors and Debugging</span></a>
+  <a href="../notebooks/01.06-Errors-and-Debugging.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">오류 및 디버깅</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/01.07-Timing-and-Profiling.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Profiling and Timing Code</span></a>
+  <a href="../notebooks/01.07-Timing-and-Profiling.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">프로파일링 및 타이밍 코드</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/01.08-More-IPython-Resources.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">More IPython Resources</span></a>
+  <a href="../notebooks/01.08-More-IPython-Resources.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">추가 IPython 리소스</span></a>
   </div>
 </li>
       </ul>
@@ -221,52 +221,52 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.00-Introduction-to-NumPy.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Introduction to NumPy</span></a>
+  <a href="../notebooks/02.00-Introduction-to-NumPy.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">NumPy 소개</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.01-Understanding-Data-Types.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Understanding Data Types in Python</span></a>
+  <a href="../notebooks/02.01-Understanding-Data-Types.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">파이썬(Python)의 데이터 유형 이해</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.02-The-Basics-Of-NumPy-Arrays.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">The Basics of NumPy Arrays</span></a>
+  <a href="../notebooks/02.02-The-Basics-Of-NumPy-Arrays.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">NumPy 배열의 기본</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.03-Computation-on-arrays-ufuncs.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Computation on NumPy Arrays: Universal Functions</span></a>
+  <a href="../notebooks/02.03-Computation-on-arrays-ufuncs.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">NumPy 배열 계산: 범용 함수</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.04-Computation-on-arrays-aggregates.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Aggregations: min, max, and Everything in Between</span></a>
+  <a href="../notebooks/02.04-Computation-on-arrays-aggregates.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">집계: 최소, 최대 및 그 사이의 모든 것</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.05-Computation-on-arrays-broadcasting.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Computation on Arrays: Broadcasting</span></a>
+  <a href="../notebooks/02.05-Computation-on-arrays-broadcasting.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">배열 계산: 브로드캐스팅</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.06-Boolean-Arrays-and-Masks.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Comparisons, Masks, and Boolean Logic</span></a>
+  <a href="../notebooks/02.06-Boolean-Arrays-and-Masks.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">비교, 마스크 및 부울 논리</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.07-Fancy-Indexing.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Fancy Indexing</span></a>
+  <a href="../notebooks/02.07-Fancy-Indexing.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">멋진 인덱싱</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.08-Sorting.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Sorting Arrays</span></a>
+  <a href="../notebooks/02.08-Sorting.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">배열 정렬</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.09-Structured-Data-NumPy.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Structured Data: NumPy’s Structured Arrays</span></a>
+  <a href="../notebooks/02.09-Structured-Data-NumPy.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">구조화된 데이터: NumPy의 구조화된 배열</span></a>
   </div>
 </li>
       </ul>
@@ -282,72 +282,72 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.00-Introduction-to-Pandas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Data Manipulation with Pandas</span></a>
+  <a href="../notebooks/03.00-Introduction-to-Pandas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">팬더를 이용한 데이터 조작</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.01-Introducing-Pandas-Objects.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Introducing Pandas Objects</span></a>
+  <a href="../notebooks/03.01-Introducing-Pandas-Objects.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">판다스 객체 소개</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.02-Data-Indexing-and-Selection.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Data Indexing and Selection</span></a>
+  <a href="../notebooks/03.02-Data-Indexing-and-Selection.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">데이터 인덱싱 및 선택</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.03-Operations-in-Pandas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Operating on Data in Pandas</span></a>
+  <a href="../notebooks/03.03-Operations-in-Pandas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Pandas에서 데이터 작업</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.04-Missing-Values.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Handling Missing Data</span></a>
+  <a href="../notebooks/03.04-Missing-Values.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">누락된 데이터 처리</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.05-Hierarchical-Indexing.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Hierarchical Indexing</span></a>
+  <a href="../notebooks/03.05-Hierarchical-Indexing.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">계층적 인덱싱</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.06-Concat-And-Append.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Combining Datasets: concat and append</span></a>
+  <a href="../notebooks/03.06-Concat-And-Append.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">데이터세트 결합: 연결 및 추가</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.07-Merge-and-Join.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Combining Datasets: merge and join</span></a>
+  <a href="../notebooks/03.07-Merge-and-Join.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">데이터세트 결합: 병합 및 조인</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.08-Aggregation-and-Grouping.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Aggregation and Grouping</span></a>
+  <a href="../notebooks/03.08-Aggregation-and-Grouping.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">집계 및 그룹화</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.09-Pivot-Tables.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Pivot Tables</span></a>
+  <a href="../notebooks/03.09-Pivot-Tables.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">피벗 테이블</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.10-Working-With-Strings.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Vectorized String Operations</span></a>
+  <a href="../notebooks/03.10-Working-With-Strings.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">벡터화된 문자열 작업</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.11-Working-with-Time-Series.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Working with Time Series</span></a>
+  <a href="../notebooks/03.11-Working-with-Time-Series.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">시계열 작업</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.12-Performance-Eval-and-Query.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">High-Performance Pandas: eval and query</span></a>
+  <a href="../notebooks/03.12-Performance-Eval-and-Query.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">고성능 Pandas: 평가 및 쿼리</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.13-Further-Resources.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Further Resources</span></a>
+  <a href="../notebooks/03.13-Further-Resources.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">추가 리소스</span></a>
   </div>
 </li>
       </ul>
@@ -363,77 +363,77 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.00-Introduction-To-Matplotlib.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Visualization with Matplotlib</span></a>
+  <a href="../notebooks/04.00-Introduction-To-Matplotlib.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Matplotlib를 사용한 시각화</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.01-Simple-Line-Plots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Simple Line Plots</span></a>
+  <a href="../notebooks/04.01-Simple-Line-Plots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">간단한 선 도표</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.02-Simple-Scatter-Plots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Simple Scatter Plots</span></a>
+  <a href="../notebooks/04.02-Simple-Scatter-Plots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">단순 산점도</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.03-Errorbars.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Visualizing Uncertainties</span></a>
+  <a href="../notebooks/04.03-Errorbars.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">불확실성 시각화</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.04-Density-and-Contour-Plots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Density and Contour Plots</span></a>
+  <a href="../notebooks/04.04-Density-and-Contour-Plots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">밀도 및 등고선 플롯</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.05-Histograms-and-Binnings.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Histograms, Binnings, and Density</span></a>
+  <a href="../notebooks/04.05-Histograms-and-Binnings.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">히스토그램, 비닝 및 밀도</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.06-Customizing-Legends.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Customizing Plot Legends</span></a>
+  <a href="../notebooks/04.06-Customizing-Legends.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">플롯 범례 사용자 정의</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.07-Customizing-Colorbars.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Customizing Colorbars</span></a>
+  <a href="../notebooks/04.07-Customizing-Colorbars.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">컬러바 사용자 정의</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.08-Multiple-Subplots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Multiple Subplots</span></a>
+  <a href="../notebooks/04.08-Multiple-Subplots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">다중 서브플롯</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.09-Text-and-Annotation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Text and Annotation</span></a>
+  <a href="../notebooks/04.09-Text-and-Annotation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">텍스트 및 주석</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.10-Customizing-Ticks.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Customizing Ticks</span></a>
+  <a href="../notebooks/04.10-Customizing-Ticks.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">눈금 사용자 정의</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.11-Settings-and-Stylesheets.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Customizing Matplotlib: Configurations and Stylesheets</span></a>
+  <a href="../notebooks/04.11-Settings-and-Stylesheets.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Matplotlib 사용자 정의: 구성 및 스타일시트</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.12-Three-Dimensional-Plotting.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Three-Dimensional Plotting in Matplotlib</span></a>
+  <a href="../notebooks/04.12-Three-Dimensional-Plotting.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Matplotlib의 3차원 플로팅</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.14-Visualization-With-Seaborn.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Visualization with Seaborn</span></a>
+  <a href="../notebooks/04.14-Visualization-With-Seaborn.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Seaborn을 이용한 시각화</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.15-Further-Resources.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Further Resources</span></a>
+  <a href="../notebooks/04.15-Further-Resources.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">추가 리소스</span></a>
   </div>
 </li>
       </ul>
@@ -449,82 +449,82 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.00-Machine-Learning.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Machine Learning</span></a>
+  <a href="../notebooks/05.00-Machine-Learning.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">머신러닝</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.01-What-Is-Machine-Learning.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">What Is Machine Learning?</span></a>
+  <a href="../notebooks/05.01-What-Is-Machine-Learning.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">머신러닝이란?</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.02-Introducing-Scikit-Learn.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Introducing Scikit-Learn</span></a>
+  <a href="../notebooks/05.02-Introducing-Scikit-Learn.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Scikit-Learn 소개</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.03-Hyperparameters-and-Model-Validation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Hyperparameters and Model Validation</span></a>
+  <a href="../notebooks/05.03-Hyperparameters-and-Model-Validation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">하이퍼파라미터 및 모델 검증</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.04-Feature-Engineering.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Feature Engineering</span></a>
+  <a href="../notebooks/05.04-Feature-Engineering.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">기능 엔지니어링</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.05-Naive-Bayes.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Naive Bayes Classification</span></a>
+  <a href="../notebooks/05.05-Naive-Bayes.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 나이브 베이즈 분류</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.06-Linear-Regression.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Linear Regression</span></a>
+  <a href="../notebooks/05.06-Linear-Regression.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 선형 회귀</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.07-Support-Vector-Machines.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Support Vector Machines</span></a>
+  <a href="../notebooks/05.07-Support-Vector-Machines.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 서포트 벡터 머신</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.08-Random-Forests.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Decision Trees and Random Forests</span></a>
+  <a href="../notebooks/05.08-Random-Forests.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 의사결정 트리 및 랜덤 포레스트</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.09-Principal-Component-Analysis.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Principal Component Analysis</span></a>
+  <a href="../notebooks/05.09-Principal-Component-Analysis.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 주성분 분석</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.10-Manifold-Learning.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Manifold Learning</span></a>
+  <a href="../notebooks/05.10-Manifold-Learning.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 다양한 학습</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.11-K-Means.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">In Depth: k-Means Clustering</span></a>
+  <a href="../notebooks/05.11-K-Means.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">심층 분석: k-평균 클러스터링</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.12-Gaussian-Mixtures.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Gaussian Mixture Models</span></a>
+  <a href="../notebooks/05.12-Gaussian-Mixtures.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 가우스 혼합 모델</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.13-Kernel-Density-Estimation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Kernel Density Estimation</span></a>
+  <a href="../notebooks/05.13-Kernel-Density-Estimation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 커널 밀도 추정</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.14-Image-Features.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Application: A Face Detection Pipeline</span></a>
+  <a href="../notebooks/05.14-Image-Features.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">응용 분야: 얼굴 감지 파이프라인</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.15-Learning-More.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Further Machine Learning Resources</span></a>
+  <a href="../notebooks/05.15-Learning-More.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">추가 머신러닝(Machine Learning) 리소스</span></a>
   </div>
 </li>
       </ul>
@@ -540,7 +540,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/06.00-Figure-Code.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Appendix: Figure Code</span></a>
+  <a href="../notebooks/06.00-Figure-Code.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">부록: 그림 코드</span></a>
   </div>
 </li>
       </ul>
@@ -555,12 +555,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#introducing-k-means" id="toc-introducing-k-means" class="nav-link active" data-scroll-target="#introducing-k-means">Introducing k-Means</a></li>
-  <li><a href="#expectationmaximization" id="toc-expectationmaximization" class="nav-link" data-scroll-target="#expectationmaximization">Expectation–Maximization</a></li>
-  <li><a href="#examples" id="toc-examples" class="nav-link" data-scroll-target="#examples">Examples</a>
+  <li><a href="#k-평균-소개" id="toc-k-평균-소개" class="nav-link active" data-scroll-target="#k-평균-소개">k-평균 소개</a></li>
+  <li><a href="#기대-극대화" id="toc-기대-극대화" class="nav-link" data-scroll-target="#기대-극대화">기대 – 극대화</a></li>
+  <li><a href="#예" id="toc-예" class="nav-link" data-scroll-target="#예">예</a>
   <ul class="collapse">
-  <li><a href="#example-1-k-means-on-digits" id="toc-example-1-k-means-on-digits" class="nav-link" data-scroll-target="#example-1-k-means-on-digits">Example 1: k-Means on Digits</a></li>
-  <li><a href="#example-2-k-means-for-color-compression" id="toc-example-2-k-means-for-color-compression" class="nav-link" data-scroll-target="#example-2-k-means-for-color-compression">Example 2: k-Means for Color Compression</a></li>
+  <li><a href="#예-1-숫자의-k-평균" id="toc-예-1-숫자의-k-평균" class="nav-link" data-scroll-target="#예-1-숫자의-k-평균">예 1: 숫자의 k-평균</a></li>
+  <li><a href="#예-2-색상-압축을-위한-k-평균" id="toc-예-2-색상-압축을-위한-k-평균" class="nav-link" data-scroll-target="#예-2-색상-압축을-위한-k-평균">예 2: 색상 압축을 위한 k-평균</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -568,9 +568,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../notebooks/05.00-Machine-Learning.html">머신러닝</a></li><li class="breadcrumb-item"><a href="../notebooks/05.11-K-Means.html"><span class="chapter-title">In Depth: k-Means Clustering</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../notebooks/05.00-Machine-Learning.html">머신러닝</a></li><li class="breadcrumb-item"><a href="../notebooks/05.11-K-Means.html"><span class="chapter-title">심층 분석: k-평균 클러스터링</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-title">In Depth: k-Means Clustering</span></h1>
+<h1 class="title"><span class="chapter-title">심층 분석: k-평균 클러스터링</span></h1>
 </div>
 
 
@@ -587,24 +587,24 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>In the previous chapters we explored unsupervised machine learning models for dimensionality reduction. Now we will move on to another class of unsupervised machine learning models: clustering algorithms. Clustering algorithms seek to learn, from the properties of the data, an optimal division or discrete labeling of groups of points.</p>
-<p>Many clustering algorithms are available in Scikit-Learn and elsewhere, but perhaps the simplest to understand is an algorithm known as <em>k-means clustering</em>, which is implemented in <code>sklearn.cluster.KMeans</code>.</p>
-<p>We begin with the standard imports:</p>
+<p>이전 장에서는 차원 축소를 위한 비지도 머신러닝 모델을 살펴보았습니다. 이제 우리는 비지도 머신러닝(Machine Learning) 모델의 또 다른 클래스인 클러스터링 알고리즘으로 넘어갈 것입니다. 클러스터링 알고리즘은 데이터 속성을 통해 점 그룹의 최적 분할 또는 이산 라벨링을 학습하려고 합니다.</p>
+<p>많은 클러스터링 알고리즘은 Scikit-Learn 및 다른 곳에서 사용할 수 있지만 아마도 가장 이해하기 쉬운 알고리즘은 <code>sklearn.cluster.KMeans</code>에 구현된 <em>k-평균 클러스터링</em>으로 알려진 알고리즘일 것입니다.</p>
+<p>표준 가져오기부터 시작합니다.</p>
 <div id="cell-2" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="1">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="op">%</span>matplotlib inline</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>plt.style.use(<span class="st">'seaborn-whitegrid'</span>)</span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<section id="introducing-k-means" class="level2">
-<h2 class="anchored" data-anchor-id="introducing-k-means">Introducing k-Means</h2>
-<p>The <em>k</em>-means algorithm searches for a predetermined number of clusters within an unlabeled multidimensional dataset. It accomplishes this using a simple conception of what the optimal clustering looks like:</p>
+<section id="k-평균-소개" class="level2">
+<h2 class="anchored" data-anchor-id="k-평균-소개">k-평균 소개</h2>
+<p><em>k</em>-평균 알고리즘은 레이블이 지정되지 않은 다차원 데이터 세트 내에서 미리 결정된 개수의 클러스터를 검색합니다. 최적의 클러스터링이 어떤 것인지에 대한 간단한 개념을 사용하여 이를 수행합니다.</p>
 <ul>
-<li>The <em>cluster center</em> is the arithmetic mean of all the points belonging to the cluster.</li>
-<li>Each point is closer to its own cluster center than to other cluster centers.</li>
+<li><em>클러스터 중심</em>은 클러스터에 속한 모든 포인트의 산술 평균입니다.</li>
+<li>각 지점은 다른 클러스터 중심보다 자체 클러스터 중심에 더 가깝습니다.</li>
 </ul>
-<p>Those two assumptions are the basis of the <em>k</em>-means model. We will soon dive into exactly <em>how</em> the algorithm reaches this solution, but for now let’s take a look at a simple dataset and see the <em>k</em>-means result.</p>
-<p>First, let’s generate a two-dimensional dataset containing four distinct blobs. To emphasize that this is an unsupervised algorithm, we will leave the labels out of the visualization (see the following figure):</p>
+<p>이 두 가지 가정은 <em>k</em>-평균 모델의 기초입니다. 우리는 곧 알고리즘이 이 해에 정확히 <em>어떻게</em> 도달하는지 알아볼 것입니다. 하지만 지금은 간단한 데이터 세트를 살펴보고 <em>k</em>-평균 결과를 살펴보겠습니다.</p>
+<p>먼저, 4개의 개별 블롭을 포함하는 2차원 데이터 세트를 생성해 보겠습니다. 이것이 비지도 알고리즘이라는 점을 강조하기 위해 시각화에서 레이블을 제외하겠습니다(다음 그림 참조).</p>
 <div id="cell-5" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="2">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.datasets <span class="im">import</span> make_blobs</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>X, y_true <span class="op">=</span> make_blobs(n_samples<span class="op">=</span><span class="dv">300</span>, centers<span class="op">=</span><span class="dv">4</span>,</span>
@@ -618,14 +618,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
-<p>By eye, it is relatively easy to pick out the four clusters. The <em>k</em>-means algorithm does this automatically, and in Scikit-Learn uses the typical estimator API:</p>
+<p>눈으로 보면 4개의 클러스터를 찾아내는 것이 상대적으로 쉽습니다. <em>k</em>-평균 알고리즘은 이를 자동으로 수행하며 Scikit-Learn에서는 일반적인 추정기 API를 사용합니다.</p>
 <div id="cell-7" class="cell" data-tags="[]" data-execution_count="3">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.cluster <span class="im">import</span> KMeans</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>kmeans <span class="op">=</span> KMeans(n_clusters<span class="op">=</span><span class="dv">4</span>)</span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>kmeans.fit(X)</span>
 <span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>y_kmeans <span class="op">=</span> kmeans.predict(X)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<p>Let’s visualize the results by plotting the data colored by these labels (the following figure). We will also plot the cluster centers as determined by the <em>k</em>-means estimator:</p>
+<p>이러한 레이블로 색상이 지정된 데이터를 플로팅하여 결과를 시각화해 보겠습니다(다음 그림). 또한 <em>k</em>-평균 추정기에 의해 결정된 대로 클러스터 중심을 표시합니다.</p>
 <div id="cell-9" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="4">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>plt.scatter(X[:, <span class="dv">0</span>], X[:, <span class="dv">1</span>], c<span class="op">=</span>y_kmeans, s<span class="op">=</span><span class="dv">50</span>, cmap<span class="op">=</span><span class="st">'viridis'</span>)</span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a></span>
@@ -639,24 +639,22 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
-<p>The good news is that the <em>k</em>-means algorithm (at least in this simple case) assigns the points to clusters very similarly to how we might assign them by eye. But you might wonder how this algorithm finds these clusters so quickly: after all, the number of possible combinations of cluster assignments is exponential in the number of data points—an exhaustive search would be very, very costly. Fortunately for us, such an exhaustive search is not necessary: instead, the typical approach to <em>k</em>-means involves an intuitive iterative approach known as <em>expectation–maximization</em>.</p>
+<p>좋은 소식은 <em>k</em>-평균 알고리즘(적어도 이 간단한 경우)이 눈으로 포인트를 할당하는 방법과 매우 유사하게 클러스터에 포인트를 할당한다는 것입니다. 그러나 이 알고리즘이 어떻게 이러한 클러스터를 그렇게 빨리 찾는지 궁금할 것입니다. 결국 클러스터 할당의 가능한 조합 수는 데이터 포인트 수에 따라 기하급수적으로 증가합니다. 철저한 검색에는 비용이 매우 많이 듭니다. 다행스럽게도 이러한 철저한 검색은 필요하지 않습니다. 대신 <em>k</em>-평균에 대한 일반적인 접근 방식에는 <em>기대값-최대화</em>로 알려진 직관적인 반복 접근 방식이 포함됩니다.</p>
 </section>
-<section id="expectationmaximization" class="level2">
-<h2 class="anchored" data-anchor-id="expectationmaximization">Expectation–Maximization</h2>
-<p>Expectation–maximization (E–M) is a powerful algorithm that comes up in a variety of contexts within data science. <em>k</em>-means is a particularly simple and easy-to-understand application of the algorithm, and we will walk through it briefly here. In short, the expectation–maximization approach here consists of the following procedure:</p>
+<section id="기대-극대화" class="level2">
+<h2 class="anchored" data-anchor-id="기대-극대화">기대 – 극대화</h2>
+<p>기대-최대화(E-M)는 데이터 과학(Data Science) 내의 다양한 맥락에서 나타나는 강력한 알고리즘입니다. <em>k</em>-평균은 특히 간단하고 이해하기 쉬운 알고리즘 적용이므로 여기서 간단히 살펴보겠습니다. 간단히 말해서, 기대치 최대화 접근법은 다음 절차로 구성됩니다.</p>
 <ol type="1">
-<li>Guess some cluster centers.</li>
-<li>Repeat until converged:
-<ol type="1">
-<li><em>E-step</em>: Assign points to the nearest cluster center.</li>
-<li><em>M-step</em>: Set the cluster centers to the mean of their assigned points.</li>
-</ol></li>
+<li>클러스터 센터를 추측해 보세요.</li>
+<li>수렴될 때까지 반복합니다.</li>
+<li><em>E-단계</em>: 가장 가까운 클러스터 중심에 포인트를 할당합니다.</li>
+<li><em>M-단계</em>: 클러스터 중심을 할당된 포인트의 평균으로 설정합니다.</li>
 </ol>
-<p>Here the <em>E-step</em> or <em>expectation step</em> is so named because it involves updating our expectation of which cluster each point belongs to. The <em>M-step</em> or <em>maximization step</em> is so named because it involves maximizing some fitness function that defines the locations of the cluster centers—in this case, that maximization is accomplished by taking a simple mean of the data in each cluster.</p>
-<p>The literature about this algorithm is vast, but can be summarized as follows: under typical circumstances, each repetition of the E-step and M-step will always result in a better estimate of the cluster characteristics.</p>
-<p>We can visualize the algorithm as shown in the following figure. For the particular initialization shown here, the clusters converge in just three iterations. (For an interactive version of this figure, refer to the code in the online <a href="https://github.com/jakevdp/PythonDataScienceHandbook/blob/master/notebooks/06.00-Figure-Code.ipynb#Interactive-K-Means">appendix</a>.)</p>
-<p><img src="images/05.11-expectation-maximization.png" class="img-fluid" alt="(run code in Appendix to generate image)"> <a href="https://github.com/jakevdp/PythonDataScienceHandbook/blob/master/notebooks/06.00-Figure-Code.ipynb#Expectation-Maximization">figure source in Appendix</a></p>
-<p>The <em>k</em>-means algorithm is simple enough that we can write it in a few lines of code. The following is a very basic implementation (see the following figure):</p>
+<p>여기서 <em>E-단계</em> 또는 <em>기대 단계</em>는 각 포인트가 속한 클러스터에 대한 기대를 업데이트하는 것과 관련되어 있기 때문에 그렇게 명명되었습니다. <em>M-단계</em> 또는 <em>최대화 단계</em>는 군집 중심의 위치를 ​​정의하는 일부 적합성 함수의 최대화를 포함하기 때문에 그렇게 명명되었습니다. 이 경우 최대화는 각 군집에 있는 데이터의 간단한 평균을 취하여 수행됩니다.</p>
+<p>이 알고리즘에 대한 문헌은 방대하지만 다음과 같이 요약할 수 있습니다. 일반적인 상황에서 E-단계와 M-단계를 반복할 때마다 항상 클러스터 특성을 더 잘 추정할 수 있습니다.</p>
+<p>다음 그림과 같이 알고리즘을 시각화할 수 있습니다. 여기에 표시된 특정 초기화의 경우 클러스터는 단 세 번의 반복으로 수렴됩니다. (이 그림의 대화형 버전은 온라인 <a href="https://github.com/jakevdp/파이썬(Python)DataScienceHandbook/blob/master/notebooks/06.00-Figure-Code.ipynb#Interactive-K-Means">부록</a>의 코드를 참조하세요.)</p>
+<p><img src="images/05.11-expectation-maximization.png" class="img-fluid" alt="(run code in Appendix to generate image)"> <a href="https://github.com/jakevdp/파이썬(Python)DataScienceHandbook/blob/master/notebooks/06.00-Figure-Code.ipynb#Expectation-Maximization">부록의 그림 소스</a></p>
+<p><em>k</em>-평균 알고리즘은 몇 줄의 코드로 작성할 수 있을 정도로 간단합니다. 다음은 매우 기본적인 구현입니다(다음 그림 참조).</p>
 <div id="cell-15" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="5">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.metrics <span class="im">import</span> pairwise_distances_argmin</span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a></span>
@@ -692,11 +690,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
-<p>Most well-tested implementations will do a bit more than this under the hood, but the preceding function gives the gist of the expectation–maximization approach.</p>
-<p>There are a few caveats to be aware of when using the expectation–maximization algorithm:</p>
-<section id="the-globally-optimal-result-may-not-be-achieved" class="level4">
-<h4 class="anchored" data-anchor-id="the-globally-optimal-result-may-not-be-achieved">The globally optimal result may not be achieved</h4>
-<p>First, although the E–M procedure is guaranteed to improve the result in each step, there is no assurance that it will lead to the <em>global</em> best solution. For example, if we use a different random seed in our simple procedure, the particular starting guesses lead to poor results (see the following figure):</p>
+<p>대부분의 잘 테스트된 구현은 내부적으로 이보다 약간 더 많은 작업을 수행하지만 앞의 함수는 기대치 최대화 접근 방식의 요점을 제공합니다.</p>
+<p>기대값 최대화 알고리즘을 사용할 때 주의해야 할 몇 가지 주의 사항이 있습니다.</p>
+<section id="전체적으로-최적의-결과를-얻지-못할-수도-있습니다." class="level4">
+<h4 class="anchored" data-anchor-id="전체적으로-최적의-결과를-얻지-못할-수도-있습니다.">전체적으로 최적의 결과를 얻지 못할 수도 있습니다.</h4>
+<p>첫째, E-M 절차는 각 단계에서 결과 개선을 보장하지만 <em>글로벌</em> 최고의 솔루션으로 이어질 것이라는 보장은 없습니다. 예를 들어 간단한 절차에서 다른 무작위 시드를 사용하는 경우 특정 시작 추측으로 인해 결과가 좋지 않습니다(다음 그림 참조).</p>
 <div id="cell-19" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="6">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>centers, labels <span class="op">=</span> find_clusters(X, <span class="dv">4</span>, rseed<span class="op">=</span><span class="dv">0</span>)</span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>plt.scatter(X[:, <span class="dv">0</span>], X[:, <span class="dv">1</span>], c<span class="op">=</span>labels,</span>
@@ -709,11 +707,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
-<p>Here the E–M approach has converged, but has not converged to a globally optimal configuration. For this reason, it is common for the algorithm to be run for multiple starting guesses, as indeed Scikit-Learn does by default (the number is set by the <code>n_init</code> parameter, which defaults to 10).</p>
+<p>여기서 E–M 접근 방식은 수렴되었지만 전체적으로 최적의 구성으로 수렴되지는 않았습니다. 이러한 이유로 실제로 Scikit-Learn이 기본적으로 수행하는 것처럼 알고리즘은 여러 시작 추측에 대해 실행되는 것이 일반적입니다(숫자는 <code>n_init</code> 매개변수에 의해 설정되며 기본값은 10입니다).</p>
 </section>
-<section id="the-number-of-clusters-must-be-selected-beforehand" class="level4">
-<h4 class="anchored" data-anchor-id="the-number-of-clusters-must-be-selected-beforehand">The number of clusters must be selected beforehand</h4>
-<p>Another common challenge with <em>k</em>-means is that you must tell it how many clusters you expect: it cannot learn the number of clusters from the data. For example, if we ask the algorithm to identify six clusters, it will happily proceed and find the best six clusters, as shown in Figure 47-6:</p>
+<section id="클러스터-수를-미리-선택해야-합니다." class="level4">
+<h4 class="anchored" data-anchor-id="클러스터-수를-미리-선택해야-합니다.">클러스터 수를 미리 선택해야 합니다.</h4>
+<p><em>k</em>-의미의 또 다른 일반적인 문제는 예상되는 클러스터 수를 알려주어야 한다는 것입니다. 즉, 데이터에서 클러스터 수를 학습할 수 없습니다. 예를 들어 알고리즘에 6개의 클러스터를 식별하도록 요청하면 그림 47-6과 같이 계속 진행하여 가장 좋은 6개의 클러스터를 찾습니다.</p>
 <div id="cell-22" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="7">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>labels <span class="op">=</span> KMeans(<span class="dv">6</span>, random_state<span class="op">=</span><span class="dv">0</span>).fit_predict(X)</span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>plt.scatter(X[:, <span class="dv">0</span>], X[:, <span class="dv">1</span>], c<span class="op">=</span>labels,</span>
@@ -726,13 +724,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
-<p>Whether the result is meaningful is a question that is difficult to answer definitively; one approach that is rather intuitive, but that we won’t discuss further here, is called <a href="http://scikit-learn.org/stable/auto_examples/cluster/plot_kmeans_silhouette_analysis.html">silhouette analysis</a>.</p>
-<p>Alternatively, you might use a more complicated clustering algorithm that has a better quantitative measure of the fitness per number of clusters (e.g., Gaussian mixture models; see <a href="../notebooks/05.12-Gaussian-Mixtures.html">In Depth: Gaussian Mixture Models</a>) or which <em>can</em> choose a suitable number of clusters (e.g., DBSCAN, mean-shift, or affinity propagation, all available in the <code>sklearn.cluster</code> submodule).</p>
+<p>결과가 의미가 있는지 여부는 확실하게 대답하기 어려운 질문입니다. 다소 직관적이지만 여기서는 더 이상 논의하지 않을 접근 방식 중 하나를 <a href="http://scikit-learn.org/stable/auto_examples/cluster/plot_kmeans_silhouette_analytic.html">실루엣 분석</a>이라고 합니다.</p>
+<p>또는 클러스터 수당 적합도를 더 정량적으로 측정하는 더 복잡한 클러스터링 알고리즘을 사용할 수도 있습니다(예: 가우스 혼합 모델, <a href="../notebooks/05.12-Gaussian-Mixtures.html">심층: 가우스 혼합 모델</a> 참조). 또는 적절한 수의 클러스터를 <em>선택할 수</em> 있습니다(예: DBSCAN, 평균 이동 또는 친화도 전파). <code>sklearn.cluster</code> 하위 모듈).</p>
 </section>
-<section id="k-means-is-limited-to-linear-cluster-boundaries" class="level4">
-<h4 class="anchored" data-anchor-id="k-means-is-limited-to-linear-cluster-boundaries">k-means is limited to linear cluster boundaries</h4>
-<p>The fundamental model assumptions of <em>k</em>-means (points will be closer to their own cluster center than to others) means that the algorithm will often be ineffective if the clusters have complicated geometries.</p>
-<p>In particular, the boundaries between <em>k</em>-means clusters will always be linear, which means that it will fail for more complicated boundaries. Consider the following data, along with the cluster labels found by the typical <em>k</em>-means approach (see the following figure):</p>
+<section id="k-평균은-선형-클러스터-경계로-제한됩니다." class="level4">
+<h4 class="anchored" data-anchor-id="k-평균은-선형-클러스터-경계로-제한됩니다.">k-평균은 선형 클러스터 경계로 제한됩니다.</h4>
+<p><em>k</em>-평균(포인트가 다른 포인트보다 자체 클러스터 중심에 더 가까움)에 대한 기본 모델 가정은 클러스터에 복잡한 형상이 있는 경우 알고리즘이 종종 비효율적이라는 것을 의미합니다.</p>
+<p>특히 <em>k</em>-평균 클러스터 사이의 경계는 항상 선형이므로 더 복잡한 경계에서는 실패합니다. 일반적인 <em>k</em>-평균 접근 방식으로 찾은 클러스터 레이블과 함께 다음 데이터를 고려하십시오(다음 그림 참조).</p>
 <div id="cell-25" class="cell" data-tags="[]" data-execution_count="8">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.datasets <span class="im">import</span> make_moons</span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>X, y <span class="op">=</span> make_moons(<span class="dv">200</span>, noise<span class="op">=</span><span class="fl">.05</span>, random_state<span class="op">=</span><span class="dv">0</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -749,8 +747,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
-<p>This situation is reminiscent of the discussion in <a href="../notebooks/05.07-Support-Vector-Machines.html">In-Depth: Support Vector Machines</a>, where we used a kernel transformation to project the data into a higher dimension where a linear separation is possible. We might imagine using the same trick to allow <em>k</em>-means to discover non-linear boundaries.</p>
-<p>One version of this kernelized <em>k</em>-means is implemented in Scikit-Learn within the <code>SpectralClustering</code> estimator. It uses the graph of nearest neighbors to compute a higher-dimensional representation of the data, and then assigns labels using a <em>k</em>-means algorithm (see the following figure):</p>
+<p>이 상황은 <a href="../notebooks/05.07-Support-Vector-Machines.html">심층: 지원 벡터 머신</a>의 논의를 연상시킵니다. 여기서 우리는 커널 변환을 사용하여 데이터를 선형 분리가 가능한 더 높은 차원으로 투영했습니다. <em>k</em>-수단이 비선형 경계를 발견할 수 있도록 동일한 트릭을 사용하는 것을 상상할 수 있습니다.</p>
+<p>이 커널화된 <em>k</em>-평균의 한 버전은 <code>SpectralClustering</code> 추정기 내의 Scikit-Learn에서 구현됩니다. 가장 가까운 이웃 그래프를 사용하여 데이터의 고차원 표현을 계산한 다음 <em>k</em>-평균 알고리즘을 사용하여 레이블을 할당합니다(다음 그림 참조).</p>
 <div id="cell-28" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="10">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.cluster <span class="im">import</span> SpectralClustering</span>
 <span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>model <span class="op">=</span> SpectralClustering(n_clusters<span class="op">=</span><span class="dv">2</span>, affinity<span class="op">=</span><span class="st">'nearest_neighbors'</span>,</span>
@@ -766,20 +764,20 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
-<p>We see that with this kernel transform approach, the kernelized <em>k</em>-means is able to find the more complicated nonlinear boundaries between clusters.</p>
+<p>이 커널 변환 접근 방식을 사용하면 커널화된 <em>k</em>-평균이 클러스터 간의 더 복잡한 비선형 경계를 찾을 수 있음을 확인할 수 있습니다.</p>
 </section>
-<section id="k-means-can-be-slow-for-large-numbers-of-samples" class="level4">
-<h4 class="anchored" data-anchor-id="k-means-can-be-slow-for-large-numbers-of-samples">k-means can be slow for large numbers of samples</h4>
-<p>Because each iteration of <em>k</em>-means must access every point in the dataset, the algorithm can be relatively slow as the number of samples grows. You might wonder if this requirement to use all data at each iteration can be relaxed; for example, you might just use a subset of the data to update the cluster centers at each step. This is the idea behind batch-based <em>k</em>-means algorithms, one form of which is implemented in <code>sklearn.cluster.MiniBatchKMeans</code>. The interface for this is the same as for standard <code>KMeans</code>; we will see an example of its use as we continue our discussion.</p>
+<section id="k-평균은-샘플-수가-많으면-느릴-수-있습니다." class="level4">
+<h4 class="anchored" data-anchor-id="k-평균은-샘플-수가-많으면-느릴-수-있습니다.">k-평균은 샘플 수가 많으면 느릴 수 있습니다.</h4>
+<p><em>k</em>-평균의 각 반복은 데이터 세트의 모든 포인트에 액세스해야 하기 때문에 샘플 수가 증가함에 따라 알고리즘이 상대적으로 느려질 수 있습니다. 각 반복에서 모든 데이터를 사용해야 하는 이 요구 사항을 완화할 수 있는지 궁금할 것입니다. 예를 들어 데이터의 하위 집합을 사용하여 각 단계에서 클러스터 중심을 업데이트할 수 있습니다. 이것이 배치 기반 <em>k</em>-평균 알고리즘의 기본 아이디어이며, 그 중 한 형태가 <code>sklearn.cluster.MiniBatchKMeans</code>에 구현되어 있습니다. 이에 대한 인터페이스는 표준 <code>KMeans</code>와 동일합니다. 토론을 계속하면서 그 사용 예를 살펴보겠습니다.</p>
 </section>
 </section>
-<section id="examples" class="level2">
-<h2 class="anchored" data-anchor-id="examples">Examples</h2>
-<p>Being careful about these limitations of the algorithm, we can use <em>k</em>-means to our advantage in a variety of situations. We’ll now take a look at a couple of examples.</p>
-<section id="example-1-k-means-on-digits" class="level3">
-<h3 class="anchored" data-anchor-id="example-1-k-means-on-digits">Example 1: k-Means on Digits</h3>
-<p>To start, let’s take a look at applying <em>k</em>-means on the same simple digits data that we saw in <a href="../notebooks/05.08-Random-Forests.html">In-Depth: Decision Trees and Random Forests</a> and <a href="../notebooks/05.09-Principal-Component-Analysis.html">In Depth: Principal Component Analysis</a>. Here we will attempt to use <em>k</em>-means to try to identify similar digits <em>without using the original label information</em>; this might be similar to a first step in extracting meaning from a new dataset about which you don’t have any <em>a priori</em> label information.</p>
-<p>We will start by loading the dataset, then find the clusters. Recall that the digits dataset consists of 1,797 samples with 64 features, where each of the 64 features is the brightness of one pixel in an 8 × 8 image:</p>
+<section id="예" class="level2">
+<h2 class="anchored" data-anchor-id="예">예</h2>
+<p>알고리즘의 이러한 제한 사항에 주의하여 다양한 상황에서 <em>k</em>-평균을 유리하게 사용할 수 있습니다. 이제 몇 가지 예를 살펴보겠습니다.</p>
+<section id="예-1-숫자의-k-평균" class="level3">
+<h3 class="anchored" data-anchor-id="예-1-숫자의-k-평균">예 1: 숫자의 k-평균</h3>
+<p>시작하려면 <a href="../notebooks/05.08-Random-Forests.html">심층: 의사결정 트리 및 랜덤 포레스트</a> 및 <a href="05.09-Principal-Component-Analytic.ipynb">심층: 주성분 분석</a>에서 본 것과 동일한 단순 숫자 데이터에 <em>k</em>-평균을 적용하는 방법을 살펴보겠습니다. 여기서는 <em>k</em>-원래 레이블 정보를 사용하지 않고* 유사한 숫자를 식별하려고 시도한다는 의미를 사용하려고 합니다. 이는 <em>선험적</em> 라벨 정보가 없는 새 데이터세트에서 의미를 추출하는 첫 번째 단계와 유사할 수 있습니다.</p>
+<p>먼저 데이터 세트를 로드한 다음 클러스터를 찾습니다. 숫자 데이터 세트는 64개의 특징을 가진 1,797개의 샘플로 구성되어 있으며, 여기서 64개의 특징 각각은 8 × 8 이미지에서 한 픽셀의 밝기입니다.</p>
 <div id="cell-33" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="11">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.datasets <span class="im">import</span> load_digits</span>
 <span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>digits <span class="op">=</span> load_digits()</span>
@@ -788,7 +786,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <pre><code>(1797, 64)</code></pre>
 </div>
 </div>
-<p>The clustering can be performed as we did before:</p>
+<p>클러스터링은 이전과 같이 수행할 수 있습니다.</p>
 <div id="cell-35" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="12">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>kmeans <span class="op">=</span> KMeans(n_clusters<span class="op">=</span><span class="dv">10</span>, random_state<span class="op">=</span><span class="dv">0</span>)</span>
 <span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>clusters <span class="op">=</span> kmeans.fit_predict(digits.data)</span>
@@ -797,7 +795,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <pre><code>(10, 64)</code></pre>
 </div>
 </div>
-<p>The result is 10 clusters in 64 dimensions. Notice that the cluster centers themselves are 64-dimensional points, and can be interpreted as representing the “typical” digit within the cluster. Let’s see what these cluster centers look like (see the following figure):</p>
+<p>결과는 64차원의 10개 클러스터입니다. 클러스터 중심 자체는 64차원 지점이며 클러스터 내의 “일반적인” 숫자를 나타내는 것으로 해석될 수 있습니다. 이러한 클러스터 센터가 어떻게 생겼는지 살펴보겠습니다(다음 그림 참조).</p>
 <div id="cell-37" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="13">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots(<span class="dv">2</span>, <span class="dv">5</span>, figsize<span class="op">=</span>(<span class="dv">8</span>, <span class="dv">3</span>))</span>
 <span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>centers <span class="op">=</span> kmeans.cluster_centers_.reshape(<span class="dv">10</span>, <span class="dv">8</span>, <span class="dv">8</span>)</span>
@@ -812,8 +810,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
-<p>We see that <em>even without the labels</em>, <code>KMeans</code> is able to find clusters whose centers are recognizable digits, with perhaps the exception of 1 and 8.</p>
-<p>Because <em>k</em>-means knows nothing about the identities of the clusters, the 0–9 labels may be permuted. We can fix this by matching each learned cluster label with the true labels found in the clusters:</p>
+<p><em>레이블이 없어도</em> <code>KMeans</code>는 1과 8을 제외하고 중심이 인식 가능한 숫자인 클러스터를 찾을 수 있음을 확인할 수 있습니다.</p>
+<p><em>k</em>는 클러스터의 ID에 대해 아무것도 모르기 때문에 0-9 레이블이 순열될 수 있습니다. 학습된 각 클러스터 레이블을 클러스터에서 발견된 실제 레이블과 일치시켜 이 문제를 해결할 수 있습니다.</p>
 <div id="cell-39" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="14">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> scipy.stats <span class="im">import</span> mode</span>
 <span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a></span>
@@ -822,7 +820,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a>    mask <span class="op">=</span> (clusters <span class="op">==</span> i)</span>
 <span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a>    labels[mask] <span class="op">=</span> mode(digits.target[mask])[<span class="dv">0</span>]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<p>Now we can check how accurate our unsupervised clustering was in finding similar digits within the data:</p>
+<p>이제 비지도 클러스터링이 데이터 내에서 유사한 숫자를 찾는 데 얼마나 정확한지 확인할 수 있습니다.</p>
 <div id="cell-41" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="15">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.metrics <span class="im">import</span> accuracy_score</span>
 <span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>accuracy_score(digits.target, labels)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -830,7 +828,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <pre><code>0.7935447968836951</code></pre>
 </div>
 </div>
-<p>With just a simple <em>k</em>-means algorithm, we discovered the correct grouping for 80% of the input digits! Let’s check the confusion matrix for this, visualized in the following figure:</p>
+<p>간단한 <em>k</em>-평균 알고리즘을 사용하여 입력 숫자의 80%에 대한 올바른 그룹화를 발견했습니다! 다음 그림에 시각화된 혼동 행렬을 확인해 보겠습니다.</p>
 <div id="cell-43" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="16">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.metrics <span class="im">import</span> confusion_matrix</span>
 <span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
@@ -849,8 +847,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
-<p>As we might expect from the cluster centers we visualized before, the main point of confusion is between the eights and ones. But this still shows that using <em>k</em>-means, we can essentially build a digit classifier <em>without reference to any known labels</em>!</p>
-<p>Just for fun, let’s try to push this even farther. We can use the t-distributed stochastic neighbor embedding algorithm (mentioned in <a href="../notebooks/05.10-Manifold-Learning.html">In-Depth: Manifold Learning</a>) to preprocess the data before performing <em>k</em>-means. t-SNE is a nonlinear embedding algorithm that is particularly adept at preserving points within clusters. Let’s see how it does:</p>
+<p>이전에 시각화한 클러스터 중심에서 예상할 수 있듯이 혼동의 주요 지점은 8과 1 사이입니다. 그러나 이것은 여전히 ​​<em>k</em>-수단을 사용하면 <em>알려진 레이블을 참조하지 않고</em> 숫자 분류기를 기본적으로 구축할 수 있음을 보여줍니다!</p>
+<p>재미삼아 이것을 더욱 발전시켜 보도록 하겠습니다. t-분포 확률론적 이웃 임베딩 알고리즘(<a href="../notebooks/05.10-Manifold-Learning.html">심층: 다양체 학습</a>에 언급됨)을 사용하여 <em>k</em>-평균을 수행하기 전에 데이터를 전처리할 수 있습니다. t-SNE는 클러스터 내의 지점을 보존하는 데 특히 적합한 비선형 임베딩 알고리즘입니다. 어떻게 되는지 살펴보겠습니다:</p>
 <div id="cell-45" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="17">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb20"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.manifold <span class="im">import</span> TSNE</span>
 <span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a></span>
@@ -875,12 +873,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <pre><code>0.9415692821368948</code></pre>
 </div>
 </div>
-<p>That’s a 94% classification accuracy <em>without using the labels</em>. This is the power of unsupervised learning when used carefully: it can extract information from the dataset that it might be difficult to extract by hand or by eye.</p>
+<p><em>라벨을 사용하지 않고도</em> 분류 정확도가 94%입니다. 이것이 주의 깊게 사용될 때 비지도 학습의 힘입니다. 즉, 손이나 눈으로 추출하기 어려울 수 있는 정보를 데이터세트에서 추출할 수 있습니다.</p>
 </section>
-<section id="example-2-k-means-for-color-compression" class="level3">
-<h3 class="anchored" data-anchor-id="example-2-k-means-for-color-compression">Example 2: k-Means for Color Compression</h3>
-<p>One interesting application of clustering is in color compression within images (this example is adapted from Scikit-Learn’s <a href="https://scikit-learn.org/stable/auto_examples/cluster/plot_color_quantization.html">“Color Quantization Using K-Means”</a>. For example, imagine you have an image with millions of colors. In most images, a large number of the colors will be unused, and many of the pixels in the image will have similar or even identical colors.</p>
-<p>For example, consider the image shown in the following figure, which is from the Scikit-Learn <code>datasets</code> module (for this to work, you’ll have to have the <code>PIL</code> Python package installed): (For a color version of this and following images, see the online version of this book).</p>
+<section id="예-2-색상-압축을-위한-k-평균" class="level3">
+<h3 class="anchored" data-anchor-id="예-2-색상-압축을-위한-k-평균">예 2: 색상 압축을 위한 k-평균</h3>
+<p>클러스터링의 흥미로운 적용 중 하나는 이미지 제 색상 압축입니다. 이 예는 Scikit-Learn의 <a href="https://scikit-learn.org/stable/auto_examples/cluster/plot_color_Quantization.html">“K-Means를 사용한 색상 양자화”</a>에서 채택되었습니다. 예를 들어 수백만 가지 색상의 이미지가 있다고 가정해 보겠습니다. 대부분의 이미지에서는 많은 색상이 사용되지 않으며 이미지의 많은 픽셀이 유사하거나 동일한 색상을 갖습니다.</p>
+<p>예를 들어 Scikit-Learn <code>datasets</code> 모듈의 다음 그림에 표시된 이미지를 고려해 보세요(이 작업을 위해서는 <code>PIL</code> 파이썬(Python) 패키지가 설치되어 있어야 합니다). (이 이미지와 다음 이미지의 컬러 버전을 보려면 이 책의 온라인 버전을 참조하세요.)</p>
 <div id="cell-48" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="18">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb22"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Note: this requires the PIL package to be installed</span></span>
 <span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.datasets <span class="im">import</span> load_sample_image</span>
@@ -895,14 +893,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
-<p>The image itself is stored in a three-dimensional array of size <code>(height, width, RGB)</code>, containing red/blue/green contributions as integers from 0 to 255:</p>
+<p>이미지 자체는 ‘(높이, 너비, RGB)’ 크기의 3차원 배열에 저장되며 0에서 255까지의 정수로 빨간색/파란색/녹색 기여도를 포함합니다.</p>
 <div id="cell-50" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="19">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb23"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>china.shape</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="19">
 <pre><code>(427, 640, 3)</code></pre>
 </div>
 </div>
-<p>One way we can view this set of pixels is as a cloud of points in a three-dimensional color space. We will reshape the data to <code>[n_samples, n_features]</code> and rescale the colors so that they lie between 0 and 1:</p>
+<p>이 픽셀 세트를 볼 수 있는 한 가지 방법은 3차원 색상 공간의 점 구름으로 보는 것입니다. 데이터를 <code>[n_samples, n_features]</code>로 재구성하고 색상 크기를 0과 1 사이에 있도록 다시 조정합니다.</p>
 <div id="cell-52" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="20">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb25"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> china <span class="op">/</span> <span class="fl">255.0</span>  <span class="co"># use 0...1 scale</span></span>
 <span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> data.reshape(<span class="op">-</span><span class="dv">1</span>, <span class="dv">3</span>)</span>
@@ -911,7 +909,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <pre><code>(273280, 3)</code></pre>
 </div>
 </div>
-<p>We can visualize these pixels in this color space, using a subset of 10,000 pixels for efficiency (see the following figure):</p>
+<p>효율성을 위해 10,000픽셀의 하위 집합을 사용하여 이 색상 공간에서 이러한 픽셀을 시각화할 수 있습니다(다음 그림 참조).</p>
 <div id="cell-54" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="21">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb27"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> plot_pixels(data, title, colors<span class="op">=</span><span class="va">None</span>, N<span class="op">=</span><span class="dv">10000</span>):</span>
 <span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> colors <span class="kw">is</span> <span class="va">None</span>:</span>
@@ -942,7 +940,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
-<p>Now let’s reduce these 16 million colors to just 16 colors, using a <em>k</em>-means clustering across the pixel space. Because we are dealing with a very large dataset, we will use the mini-batch <em>k</em>-means, which operates on subsets of the data to compute the result (shown in the following figure) much more quickly than the standard <em>k</em>-means algorithm:</p>
+<p>이제 픽셀 공간 전체에 걸쳐 클러스터링을 의미하는 <em>k</em>를 사용하여 이러한 1,600만 색상을 단 16개 색상으로 줄이겠습니다. 우리는 매우 큰 데이터 세트를 다루고 있기 때문에 데이터의 하위 집합에 대해 작동하는 미니 배치 <em>k</em>-평균을 사용하여 표준 <em>k</em>-평균 알고리즘보다 훨씬 빠르게 결과(다음 그림 참조)를 계산합니다.</p>
 <div id="cell-57" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="23">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb29"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.cluster <span class="im">import</span> MiniBatchKMeans</span>
 <span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a>kmeans <span class="op">=</span> MiniBatchKMeans(<span class="dv">16</span>)</span>
@@ -959,7 +957,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
-<p>The result is a recoloring of the original pixels, where each pixel is assigned the color of its closest cluster center. Plotting these new colors in the image space rather than the pixel space shows us the effect of this (see the following figure):</p>
+<p>결과적으로 원본 픽셀이 다시 칠해지고, 각 픽셀에는 가장 가까운 클러스터 중심의 색상이 할당됩니다. 픽셀 공간이 아닌 이미지 공간에 이러한 새로운 색상을 플로팅하면 이에 따른 효과가 표시됩니다(다음 그림 참조).</p>
 <div id="cell-59" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="24">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb30"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a>china_recolored <span class="op">=</span> new_colors.reshape(china.shape)</span>
 <span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a></span>
@@ -978,7 +976,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
-<p>Some detail is certainly lost in the rightmost panel, but the overall image is still easily recognizable. In terms of the bytes required to store the raw data, the image on the right achieves a compression factor of around 1 million! Now, this kind of approach is not going to match the fidelity of purpose-built image compression schemes like JPEG, but the example shows the power of thinking outside of the box with unsupervised methods like <em>k</em>-means.</p>
+<p>가장 오른쪽 패널에서는 일부 세부 사항이 확실히 손실되었지만 전체 이미지는 여전히 쉽게 알아살펴볼 수 있습니다. 원시 데이터를 저장하는 데 필요한 바이트 측면에서 오른쪽 이미지는 약 100만 개의 압축 계수를 달성합니다! 이제 이런 종류의 접근 방식은 JPEG와 같이 특별히 제작된 이미지 압축 체계의 충실도와 일치하지 않지만 이 예는 <em>k</em>-평균과 같은 비지도 방법을 사용하여 고정관념에서 벗어난 사고의 힘을 보여줍니다.</p>
 
 
 </section>
@@ -1387,13 +1385,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../notebooks/05.10-Manifold-Learning.html" class="pagination-link" aria-label="In Depth: Manifold Learning">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">In Depth: Manifold Learning</span></span>
+      <a href="../notebooks/05.10-Manifold-Learning.html" class="pagination-link" aria-label="심층 분석: 다양한 학습">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">심층 분석: 다양한 학습</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../notebooks/05.12-Gaussian-Mixtures.html" class="pagination-link" aria-label="In Depth: Gaussian Mixture Models">
-        <span class="nav-page-text"><span class="chapter-title">In Depth: Gaussian Mixture Models</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../notebooks/05.12-Gaussian-Mixtures.html" class="pagination-link" aria-label="심층 분석: 가우스 혼합 모델">
+        <span class="nav-page-text"><span class="chapter-title">심층 분석: 가우스 혼합 모델</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

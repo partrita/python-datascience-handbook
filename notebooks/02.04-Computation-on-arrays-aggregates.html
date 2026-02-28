@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Aggregations: min, max, and Everything in Between – 파이썬 데이터 사이언스 핸드북</title>
+<title>집계: 최소, 최대 및 그 사이의 모든 것 – 파이썬 데이터 사이언스 핸드북</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -77,7 +77,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-3778d3e438078121318a23701f9f68bb.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-803ae4f7a8810f475153517dc3c4ebae.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -118,7 +118,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../notebooks/02.00-Introduction-to-NumPy.html">NumPy 소개</a></li><li class="breadcrumb-item"><a href="../notebooks/02.04-Computation-on-arrays-aggregates.html"><span class="chapter-title">Aggregations: min, max, and Everything in Between</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../notebooks/02.00-Introduction-to-NumPy.html">NumPy 소개</a></li><li class="breadcrumb-item"><a href="../notebooks/02.04-Computation-on-arrays-aggregates.html"><span class="chapter-title">집계: 최소, 최대 및 그 사이의 모든 것</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -165,7 +165,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/01.00-IPython-Beyond-Normal-Python.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Jupyter: 일반 Python을 넘어서</span></a>
+  <a href="../notebooks/01.00-IPython-Beyond-Normal-Python.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Jupyter: 일반 파이썬(Python)을 넘어서</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -195,17 +195,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/01.06-Errors-and-Debugging.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Errors and Debugging</span></a>
+  <a href="../notebooks/01.06-Errors-and-Debugging.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">오류 및 디버깅</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/01.07-Timing-and-Profiling.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Profiling and Timing Code</span></a>
+  <a href="../notebooks/01.07-Timing-and-Profiling.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">프로파일링 및 타이밍 코드</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/01.08-More-IPython-Resources.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">More IPython Resources</span></a>
+  <a href="../notebooks/01.08-More-IPython-Resources.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">추가 IPython 리소스</span></a>
   </div>
 </li>
       </ul>
@@ -221,52 +221,52 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.00-Introduction-to-NumPy.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Introduction to NumPy</span></a>
+  <a href="../notebooks/02.00-Introduction-to-NumPy.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">NumPy 소개</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.01-Understanding-Data-Types.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Understanding Data Types in Python</span></a>
+  <a href="../notebooks/02.01-Understanding-Data-Types.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">파이썬(Python)의 데이터 유형 이해</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.02-The-Basics-Of-NumPy-Arrays.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">The Basics of NumPy Arrays</span></a>
+  <a href="../notebooks/02.02-The-Basics-Of-NumPy-Arrays.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">NumPy 배열의 기본</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.03-Computation-on-arrays-ufuncs.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Computation on NumPy Arrays: Universal Functions</span></a>
+  <a href="../notebooks/02.03-Computation-on-arrays-ufuncs.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">NumPy 배열 계산: 범용 함수</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.04-Computation-on-arrays-aggregates.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Aggregations: min, max, and Everything in Between</span></a>
+  <a href="../notebooks/02.04-Computation-on-arrays-aggregates.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">집계: 최소, 최대 및 그 사이의 모든 것</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.05-Computation-on-arrays-broadcasting.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Computation on Arrays: Broadcasting</span></a>
+  <a href="../notebooks/02.05-Computation-on-arrays-broadcasting.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">배열 계산: 브로드캐스팅</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.06-Boolean-Arrays-and-Masks.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Comparisons, Masks, and Boolean Logic</span></a>
+  <a href="../notebooks/02.06-Boolean-Arrays-and-Masks.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">비교, 마스크 및 부울 논리</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.07-Fancy-Indexing.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Fancy Indexing</span></a>
+  <a href="../notebooks/02.07-Fancy-Indexing.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">멋진 인덱싱</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.08-Sorting.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Sorting Arrays</span></a>
+  <a href="../notebooks/02.08-Sorting.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">배열 정렬</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.09-Structured-Data-NumPy.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Structured Data: NumPy’s Structured Arrays</span></a>
+  <a href="../notebooks/02.09-Structured-Data-NumPy.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">구조화된 데이터: NumPy의 구조화된 배열</span></a>
   </div>
 </li>
       </ul>
@@ -282,72 +282,72 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.00-Introduction-to-Pandas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Data Manipulation with Pandas</span></a>
+  <a href="../notebooks/03.00-Introduction-to-Pandas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">팬더를 이용한 데이터 조작</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.01-Introducing-Pandas-Objects.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Introducing Pandas Objects</span></a>
+  <a href="../notebooks/03.01-Introducing-Pandas-Objects.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">판다스 객체 소개</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.02-Data-Indexing-and-Selection.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Data Indexing and Selection</span></a>
+  <a href="../notebooks/03.02-Data-Indexing-and-Selection.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">데이터 인덱싱 및 선택</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.03-Operations-in-Pandas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Operating on Data in Pandas</span></a>
+  <a href="../notebooks/03.03-Operations-in-Pandas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Pandas에서 데이터 작업</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.04-Missing-Values.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Handling Missing Data</span></a>
+  <a href="../notebooks/03.04-Missing-Values.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">누락된 데이터 처리</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.05-Hierarchical-Indexing.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Hierarchical Indexing</span></a>
+  <a href="../notebooks/03.05-Hierarchical-Indexing.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">계층적 인덱싱</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.06-Concat-And-Append.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Combining Datasets: concat and append</span></a>
+  <a href="../notebooks/03.06-Concat-And-Append.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">데이터세트 결합: 연결 및 추가</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.07-Merge-and-Join.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Combining Datasets: merge and join</span></a>
+  <a href="../notebooks/03.07-Merge-and-Join.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">데이터세트 결합: 병합 및 조인</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.08-Aggregation-and-Grouping.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Aggregation and Grouping</span></a>
+  <a href="../notebooks/03.08-Aggregation-and-Grouping.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">집계 및 그룹화</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.09-Pivot-Tables.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Pivot Tables</span></a>
+  <a href="../notebooks/03.09-Pivot-Tables.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">피벗 테이블</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.10-Working-With-Strings.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Vectorized String Operations</span></a>
+  <a href="../notebooks/03.10-Working-With-Strings.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">벡터화된 문자열 작업</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.11-Working-with-Time-Series.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Working with Time Series</span></a>
+  <a href="../notebooks/03.11-Working-with-Time-Series.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">시계열 작업</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.12-Performance-Eval-and-Query.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">High-Performance Pandas: eval and query</span></a>
+  <a href="../notebooks/03.12-Performance-Eval-and-Query.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">고성능 Pandas: 평가 및 쿼리</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.13-Further-Resources.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Further Resources</span></a>
+  <a href="../notebooks/03.13-Further-Resources.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">추가 리소스</span></a>
   </div>
 </li>
       </ul>
@@ -363,77 +363,77 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.00-Introduction-To-Matplotlib.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Visualization with Matplotlib</span></a>
+  <a href="../notebooks/04.00-Introduction-To-Matplotlib.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Matplotlib를 사용한 시각화</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.01-Simple-Line-Plots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Simple Line Plots</span></a>
+  <a href="../notebooks/04.01-Simple-Line-Plots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">간단한 선 도표</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.02-Simple-Scatter-Plots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Simple Scatter Plots</span></a>
+  <a href="../notebooks/04.02-Simple-Scatter-Plots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">단순 산점도</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.03-Errorbars.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Visualizing Uncertainties</span></a>
+  <a href="../notebooks/04.03-Errorbars.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">불확실성 시각화</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.04-Density-and-Contour-Plots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Density and Contour Plots</span></a>
+  <a href="../notebooks/04.04-Density-and-Contour-Plots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">밀도 및 등고선 플롯</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.05-Histograms-and-Binnings.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Histograms, Binnings, and Density</span></a>
+  <a href="../notebooks/04.05-Histograms-and-Binnings.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">히스토그램, 비닝 및 밀도</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.06-Customizing-Legends.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Customizing Plot Legends</span></a>
+  <a href="../notebooks/04.06-Customizing-Legends.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">플롯 범례 사용자 정의</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.07-Customizing-Colorbars.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Customizing Colorbars</span></a>
+  <a href="../notebooks/04.07-Customizing-Colorbars.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">컬러바 사용자 정의</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.08-Multiple-Subplots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Multiple Subplots</span></a>
+  <a href="../notebooks/04.08-Multiple-Subplots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">다중 서브플롯</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.09-Text-and-Annotation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Text and Annotation</span></a>
+  <a href="../notebooks/04.09-Text-and-Annotation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">텍스트 및 주석</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.10-Customizing-Ticks.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Customizing Ticks</span></a>
+  <a href="../notebooks/04.10-Customizing-Ticks.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">눈금 사용자 정의</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.11-Settings-and-Stylesheets.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Customizing Matplotlib: Configurations and Stylesheets</span></a>
+  <a href="../notebooks/04.11-Settings-and-Stylesheets.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Matplotlib 사용자 정의: 구성 및 스타일시트</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.12-Three-Dimensional-Plotting.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Three-Dimensional Plotting in Matplotlib</span></a>
+  <a href="../notebooks/04.12-Three-Dimensional-Plotting.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Matplotlib의 3차원 플로팅</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.14-Visualization-With-Seaborn.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Visualization with Seaborn</span></a>
+  <a href="../notebooks/04.14-Visualization-With-Seaborn.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Seaborn을 이용한 시각화</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.15-Further-Resources.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Further Resources</span></a>
+  <a href="../notebooks/04.15-Further-Resources.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">추가 리소스</span></a>
   </div>
 </li>
       </ul>
@@ -449,82 +449,82 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.00-Machine-Learning.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Machine Learning</span></a>
+  <a href="../notebooks/05.00-Machine-Learning.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">머신러닝</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.01-What-Is-Machine-Learning.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">What Is Machine Learning?</span></a>
+  <a href="../notebooks/05.01-What-Is-Machine-Learning.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">머신러닝이란?</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.02-Introducing-Scikit-Learn.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Introducing Scikit-Learn</span></a>
+  <a href="../notebooks/05.02-Introducing-Scikit-Learn.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Scikit-Learn 소개</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.03-Hyperparameters-and-Model-Validation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Hyperparameters and Model Validation</span></a>
+  <a href="../notebooks/05.03-Hyperparameters-and-Model-Validation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">하이퍼파라미터 및 모델 검증</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.04-Feature-Engineering.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Feature Engineering</span></a>
+  <a href="../notebooks/05.04-Feature-Engineering.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">기능 엔지니어링</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.05-Naive-Bayes.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Naive Bayes Classification</span></a>
+  <a href="../notebooks/05.05-Naive-Bayes.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 나이브 베이즈 분류</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.06-Linear-Regression.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Linear Regression</span></a>
+  <a href="../notebooks/05.06-Linear-Regression.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 선형 회귀</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.07-Support-Vector-Machines.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Support Vector Machines</span></a>
+  <a href="../notebooks/05.07-Support-Vector-Machines.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 서포트 벡터 머신</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.08-Random-Forests.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Decision Trees and Random Forests</span></a>
+  <a href="../notebooks/05.08-Random-Forests.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 의사결정 트리 및 랜덤 포레스트</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.09-Principal-Component-Analysis.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Principal Component Analysis</span></a>
+  <a href="../notebooks/05.09-Principal-Component-Analysis.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 주성분 분석</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.10-Manifold-Learning.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Manifold Learning</span></a>
+  <a href="../notebooks/05.10-Manifold-Learning.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 다양한 학습</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.11-K-Means.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: k-Means Clustering</span></a>
+  <a href="../notebooks/05.11-K-Means.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: k-평균 클러스터링</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.12-Gaussian-Mixtures.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Gaussian Mixture Models</span></a>
+  <a href="../notebooks/05.12-Gaussian-Mixtures.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 가우스 혼합 모델</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.13-Kernel-Density-Estimation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Kernel Density Estimation</span></a>
+  <a href="../notebooks/05.13-Kernel-Density-Estimation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 커널 밀도 추정</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.14-Image-Features.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Application: A Face Detection Pipeline</span></a>
+  <a href="../notebooks/05.14-Image-Features.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">응용 분야: 얼굴 감지 파이프라인</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.15-Learning-More.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Further Machine Learning Resources</span></a>
+  <a href="../notebooks/05.15-Learning-More.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">추가 머신러닝(Machine Learning) 리소스</span></a>
   </div>
 </li>
       </ul>
@@ -540,7 +540,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/06.00-Figure-Code.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Appendix: Figure Code</span></a>
+  <a href="../notebooks/06.00-Figure-Code.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">부록: 그림 코드</span></a>
   </div>
 </li>
       </ul>
@@ -555,22 +555,22 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#summing-the-values-in-an-array" id="toc-summing-the-values-in-an-array" class="nav-link active" data-scroll-target="#summing-the-values-in-an-array">Summing the Values in an Array</a></li>
-  <li><a href="#minimum-and-maximum" id="toc-minimum-and-maximum" class="nav-link" data-scroll-target="#minimum-and-maximum">Minimum and Maximum</a>
+  <li><a href="#배열의-값-합산" id="toc-배열의-값-합산" class="nav-link active" data-scroll-target="#배열의-값-합산">배열의 값 합산</a></li>
+  <li><a href="#최소-및-최대" id="toc-최소-및-최대" class="nav-link" data-scroll-target="#최소-및-최대">최소 및 최대</a>
   <ul class="collapse">
-  <li><a href="#multidimensional-aggregates" id="toc-multidimensional-aggregates" class="nav-link" data-scroll-target="#multidimensional-aggregates">Multidimensional Aggregates</a></li>
-  <li><a href="#other-aggregation-functions" id="toc-other-aggregation-functions" class="nav-link" data-scroll-target="#other-aggregation-functions">Other Aggregation Functions</a></li>
+  <li><a href="#다차원-집계" id="toc-다차원-집계" class="nav-link" data-scroll-target="#다차원-집계">다차원 집계</a></li>
+  <li><a href="#기타-집계-함수" id="toc-기타-집계-함수" class="nav-link" data-scroll-target="#기타-집계-함수">기타 집계 함수</a></li>
   </ul></li>
-  <li><a href="#example-what-is-the-average-height-of-us-presidents" id="toc-example-what-is-the-average-height-of-us-presidents" class="nav-link" data-scroll-target="#example-what-is-the-average-height-of-us-presidents">Example: What Is the Average Height of US Presidents?</a></li>
+  <li><a href="#예-미국-대통령의-평균-키는-얼마입니까" id="toc-예-미국-대통령의-평균-키는-얼마입니까" class="nav-link" data-scroll-target="#예-미국-대통령의-평균-키는-얼마입니까">예: 미국 대통령의 평균 키는 얼마입니까?</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../notebooks/02.00-Introduction-to-NumPy.html">NumPy 소개</a></li><li class="breadcrumb-item"><a href="../notebooks/02.04-Computation-on-arrays-aggregates.html"><span class="chapter-title">Aggregations: min, max, and Everything in Between</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../notebooks/02.00-Introduction-to-NumPy.html">NumPy 소개</a></li><li class="breadcrumb-item"><a href="../notebooks/02.04-Computation-on-arrays-aggregates.html"><span class="chapter-title">집계: 최소, 최대 및 그 사이의 모든 것</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-title">Aggregations: min, max, and Everything in Between</span></h1>
+<h1 class="title"><span class="chapter-title">집계: 최소, 최대 및 그 사이의 모든 것</span></h1>
 </div>
 
 
@@ -587,11 +587,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>A first step in exploring any dataset is often to compute various summary statistics. Perhaps the most common summary statistics are the mean and standard deviation, which allow you to summarize the “typical” values in a dataset, but other aggregations are useful as well (the sum, product, median, minimum and maximum, quantiles, etc.).</p>
-<p>NumPy has fast built-in aggregation functions for working on arrays; we’ll discuss and try out some of them here.</p>
-<section id="summing-the-values-in-an-array" class="level2">
-<h2 class="anchored" data-anchor-id="summing-the-values-in-an-array">Summing the Values in an Array</h2>
-<p>As a quick example, consider computing the sum of all values in an array. Python itself can do this using the built-in <code>sum</code> function:</p>
+<p>데이터 세트를 탐색하는 첫 번째 단계는 다양한 요약 통계를 계산하는 것입니다. 아마도 가장 일반적인 요약 통계는 데이터 세트의 “일반적인” 값을 요약할 수 있는 평균 및 표준 편차일 것입니다. 그러나 다른 집계도 유용합니다(합계, 곱, 중앙값, 최소값 및 최대값, 분위수 등).</p>
+<p>NumPy에는 배열 작업을 위한 빠른 내장 집계 기능이 있습니다. 여기서는 그 중 일부에 대해 논의하고 시험해 보겠습니다.</p>
+<section id="배열의-값-합산" class="level2">
+<h2 class="anchored" data-anchor-id="배열의-값-합산">배열의 값 합산</h2>
+<p>간단한 예로 배열에 있는 모든 값의 합계를 계산하는 것을 고려해 보세요. 파이썬(Python) 자체에서는 내장 <code>sum</code> 함수를 사용하여 이 작업을 수행할 수 있습니다.</p>
 <div id="cell-3" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="1">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>rng <span class="op">=</span> np.random.default_rng()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -603,14 +603,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <pre><code>52.76825337322368</code></pre>
 </div>
 </div>
-<p>The syntax is quite similar to that of NumPy’s <code>sum</code> function, and the result is the same in the simplest case:</p>
+<p>구문은 NumPy의 ‘sum’ 함수와 매우 유사하며 가장 간단한 경우에도 결과는 동일합니다.</p>
 <div id="cell-6" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="3">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>np.<span class="bu">sum</span>(L)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="3">
 <pre><code>52.76825337322366</code></pre>
 </div>
 </div>
-<p>However, because it executes the operation in compiled code, NumPy’s version of the operation is computed much more quickly:</p>
+<p>그러나 컴파일된 코드에서 작업을 실행하기 때문에 NumPy의 작업 버전은 훨씬 더 빠르게 계산됩니다.</p>
 <div id="cell-8" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="4">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>big_array <span class="op">=</span> rng.random(<span class="dv">1000000</span>)</span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="op">%</span>timeit <span class="bu">sum</span>(big_array)</span>
@@ -620,18 +620,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 521 µs ± 8.37 µs per loop (mean ± std. dev. of 7 runs, 1000 loops each)</code></pre>
 </div>
 </div>
-<p>Be careful, though: the <code>sum</code> function and the <code>np.sum</code> function are not identical, which can sometimes lead to confusion! In particular, their optional arguments have different meanings (<code>sum(x, 1)</code> initializes the sum at <code>1</code>, while <code>np.sum(x, 1)</code> sums along axis <code>1</code>), and <code>np.sum</code> is aware of multiple array dimensions, as we will see in the following section.</p>
+<p>하지만 주의하세요: <code>sum</code> 함수와 <code>np.sum</code> 함수는 동일하지 않으므로 때로는 혼란을 초래할 수 있습니다! 특히, 선택적 인수는 서로 다른 의미를 갖습니다(<code>sum(x, 1)</code>는 합계를 <code>1</code>에서 초기화하고 <code>np.sum(x, 1)</code>은 <code>1</code> 축을 따라 합계를 초기화합니다). 그리고 <code>np.sum</code>은 다음 섹션에서 볼 수 있듯이 여러 배열 차원을 인식합니다.</p>
 </section>
-<section id="minimum-and-maximum" class="level2">
-<h2 class="anchored" data-anchor-id="minimum-and-maximum">Minimum and Maximum</h2>
-<p>Similarly, Python has built-in <code>min</code> and <code>max</code> functions, used to find the minimum value and maximum value of any given array:</p>
+<section id="최소-및-최대" class="level2">
+<h2 class="anchored" data-anchor-id="최소-및-최대">최소 및 최대</h2>
+<p>마찬가지로 파이썬(Python)에는 주어진 배열의 최소값과 최대값을 찾는 데 사용되는 ‘min’ 및 ‘max’ 함수가 내장되어 있습니다.</p>
 <div id="cell-11" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="5">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="bu">min</span>(big_array), <span class="bu">max</span>(big_array)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="5">
 <pre><code>(2.0114398036064074e-07, 0.9999997912802653)</code></pre>
 </div>
 </div>
-<p>NumPy’s corresponding functions have similar syntax, and again operate much more quickly:</p>
+<p>NumPy의 해당 함수는 비슷한 구문을 가지며 훨씬 더 빠르게 작동합니다.</p>
 <div id="cell-13" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="6">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>np.<span class="bu">min</span>(big_array), np.<span class="bu">max</span>(big_array)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="6">
@@ -646,17 +646,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 564 µs ± 3.11 µs per loop (mean ± std. dev. of 7 runs, 1000 loops each)</code></pre>
 </div>
 </div>
-<p>For <code>min</code>, <code>max</code>, <code>sum</code>, and several other NumPy aggregates, a shorter syntax is to use methods of the array object itself:</p>
+<p><code>min</code>, <code>max</code>, <code>sum</code> 및 기타 여러 NumPy 집계의 경우 더 짧은 구문은 배열 객체 자체의 메서드를 사용하는 것입니다.</p>
 <div id="cell-16" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="8">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(big_array.<span class="bu">min</span>(), big_array.<span class="bu">max</span>(), big_array.<span class="bu">sum</span>())</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>2.0114398036064074e-07 0.9999997912802653 499854.0273321711</code></pre>
 </div>
 </div>
-<p>Whenever possible, make sure that you are using the NumPy version of these aggregates when operating on NumPy arrays!</p>
-<section id="multidimensional-aggregates" class="level3">
-<h3 class="anchored" data-anchor-id="multidimensional-aggregates">Multidimensional Aggregates</h3>
-<p>One common type of aggregation operation is an aggregate along a row or column. Say you have some data stored in a two-dimensional array:</p>
+<p>가능할 때마다 NumPy 배열에서 작업할 때 이러한 집계의 NumPy 버전을 사용하고 있는지 확인하세요!</p>
+<section id="다차원-집계" class="level3">
+<h3 class="anchored" data-anchor-id="다차원-집계">다차원 집계</h3>
+<p>일반적인 집계 작업 유형 중 하나는 행이나 열에 따른 집계입니다. 2차원 배열에 일부 데이터가 저장되어 있다고 가정해 보겠습니다.</p>
 <div id="cell-19" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="9">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>M <span class="op">=</span> rng.integers(<span class="dv">0</span>, <span class="dv">10</span>, (<span class="dv">3</span>, <span class="dv">4</span>))</span>
 <span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(M)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -666,121 +666,116 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
  [4 8 3 7]]</code></pre>
 </div>
 </div>
-<p>NumPy aggregations will apply across all elements of a multidimensional array:</p>
+<p>NumPy 집계는 다차원 배열의 모든 요소에 적용됩니다.</p>
 <div id="cell-21" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="10">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>M.<span class="bu">sum</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="10">
 <pre><code>45</code></pre>
 </div>
 </div>
-<p>Aggregation functions take an additional argument specifying the <em>axis</em> along which the aggregate is computed. For example, we can find the minimum value within each column by specifying <code>axis=0</code>:</p>
+<p>집계 함수는 집계가 계산되는 <em>축</em>을 지정하는 추가 인수를 사용합니다. 예를 들어 <code>axis=0</code>을 지정하면 각 열 내에서 최소값을 찾을 수 있습니다.</p>
 <div id="cell-23" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="11">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb20"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>M.<span class="bu">min</span>(axis<span class="op">=</span><span class="dv">0</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="11">
 <pre><code>array([0, 3, 1, 0])</code></pre>
 </div>
 </div>
-<p>The function returns four values, corresponding to the four columns of numbers.</p>
-<p>Similarly, we can find the maximum value within each row:</p>
+<p>이 함수는 4개의 숫자 열에 해당하는 4개의 값을 반환합니다.</p>
+<p>마찬가지로 각 행 내에서 최대값을 찾을 수 있습니다.</p>
 <div id="cell-25" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="12">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb22"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>M.<span class="bu">max</span>(axis<span class="op">=</span><span class="dv">1</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="12">
 <pre><code>array([3, 9, 8])</code></pre>
 </div>
 </div>
-<p>The way the axis is specified here can be confusing to users coming from other languages. The <code>axis</code> keyword specifies the dimension of the array that will be <em>collapsed</em>, rather than the dimension that will be returned. So, specifying <code>axis=0</code> means that axis 0 will be collapsed: for two-dimensional arrays, values within each column will be aggregated.</p>
+<p>여기서 축이 지정되는 방식은 다른 언어를 사용하는 사용자에게 혼란을 줄 수 있습니다. <code>axis</code> 키워드는 반환될 차원이 아니라 <em>축소</em>될 배열의 차원을 지정합니다. 따라서 <code>axis=0</code>을 지정하면 축 0이 축소된다는 의미입니다. 2차원 배열의 경우 각 열 내의 값이 집계됩니다.</p>
 </section>
-<section id="other-aggregation-functions" class="level3">
-<h3 class="anchored" data-anchor-id="other-aggregation-functions">Other Aggregation Functions</h3>
-<p>NumPy provides several other aggregation functions with a similar API, and additionally most have a <code>NaN</code>-safe counterpart that computes the result while ignoring missing values, which are marked by the special IEEE floating-point <code>NaN</code> value (see <a href="../notebooks/03.04-Missing-Values.html">Handling Missing Data</a>).</p>
-<p>The following table provides a list of useful aggregation functions available in NumPy:</p>
+<section id="기타-집계-함수" class="level3">
+<h3 class="anchored" data-anchor-id="기타-집계-함수">기타 집계 함수</h3>
+<p>NumPy는 유사한 API를 사용하여 여러 다른 집계 함수를 제공하며, 추가로 대부분은 특수 IEEE 부동 소수점 ‘NaN’ 값으로 표시되는 누락된 값을 무시하면서 결과를 계산하는 ‘NaN’ 안전한 대응 기능을 제공합니다(<a href="../notebooks/03.04-Missing-Values.html">누락된 데이터 처리</a> 참조).</p>
+<p>다음 표는 NumPy에서 사용할 수 있는 유용한 집계 함수 목록을 제공합니다.</p>
 <table class="caption-top table">
-<colgroup>
-<col style="width: 20%">
-<col style="width: 22%">
-<col style="width: 56%">
-</colgroup>
 <thead>
 <tr class="header">
-<th>Function name</th>
-<th>NaN-safe version</th>
-<th>Description</th>
+<th>함수 이름</th>
+<th>NaN 안전 버전</th>
+<th>설명</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td><code>np.sum</code></td>
 <td><code>np.nansum</code></td>
-<td>Compute sum of elements</td>
+<td>요소의 합 계산</td>
 </tr>
 <tr class="even">
 <td><code>np.prod</code></td>
 <td><code>np.nanprod</code></td>
-<td>Compute product of elements</td>
+<td>요소의 곱을 계산</td>
 </tr>
 <tr class="odd">
 <td><code>np.mean</code></td>
 <td><code>np.nanmean</code></td>
-<td>Compute mean of elements</td>
+<td>요소의 평균 계산</td>
 </tr>
 <tr class="even">
 <td><code>np.std</code></td>
 <td><code>np.nanstd</code></td>
-<td>Compute standard deviation</td>
+<td>표준편차 계산</td>
 </tr>
 <tr class="odd">
 <td><code>np.var</code></td>
 <td><code>np.nanvar</code></td>
-<td>Compute variance</td>
+<td>분산 계산</td>
 </tr>
 <tr class="even">
-<td><code>np.min</code></td>
+<td><code>np.my</code></td>
 <td><code>np.nanmin</code></td>
-<td>Find minimum value</td>
+<td>최소값 찾기</td>
 </tr>
 <tr class="odd">
 <td><code>np.max</code></td>
 <td><code>np.nanmax</code></td>
-<td>Find maximum value</td>
+<td>최대값 찾기</td>
 </tr>
 <tr class="even">
 <td><code>np.argmin</code></td>
 <td><code>np.nanargmin</code></td>
-<td>Find index of minimum value</td>
+<td>최소값 인덱스 찾기</td>
 </tr>
 <tr class="odd">
 <td><code>np.argmax</code></td>
 <td><code>np.nanargmax</code></td>
-<td>Find index of maximum value</td>
+<td>최대값 인덱스 찾기</td>
 </tr>
 <tr class="even">
 <td><code>np.median</code></td>
 <td><code>np.nanmedian</code></td>
-<td>Compute median of elements</td>
+<td>요소의 중앙값 계산</td>
 </tr>
 <tr class="odd">
-<td><code>np.percentile</code></td>
+<td><code>np.백분위수</code></td>
 <td><code>np.nanpercentile</code></td>
-<td>Compute rank-based statistics of elements</td>
+<td>요소의 순위 기반 통계 계산</td>
 </tr>
 <tr class="even">
 <td><code>np.any</code></td>
-<td>N/A</td>
-<td>Evaluate whether any elements are true</td>
+<td>해당 없음</td>
+<td>요소가 참인지 평가</td>
 </tr>
 <tr class="odd">
 <td><code>np.all</code></td>
-<td>N/A</td>
-<td>Evaluate whether all elements are true</td>
+<td>해당 없음</td>
+<td>모든 요소가 참인지 평가</td>
 </tr>
 </tbody>
 </table>
-<p>You will see these aggregates often throughout the rest of the book.</p>
+<p>이 책의 나머지 부분 전체에서 이러한 집계를 자주 살펴볼 수 있습니다.</p>
 </section>
 </section>
-<section id="example-what-is-the-average-height-of-us-presidents" class="level2">
-<h2 class="anchored" data-anchor-id="example-what-is-the-average-height-of-us-presidents">Example: What Is the Average Height of US Presidents?</h2>
-<p>Aggregates available in NumPy can act as summary statistics for a set of values. As a small example, let’s consider the heights of all US presidents. This data is available in the file <em>president_heights.csv</em>, which is a comma-separated list of labels and values:</p>
+<section id="예-미국-대통령의-평균-키는-얼마입니까" class="level2">
+<h2 class="anchored" data-anchor-id="예-미국-대통령의-평균-키는-얼마입니까">예: 미국 대통령의 평균 키는 얼마입니까?</h2>
+<p>NumPy에서 사용 가능한 집계는 값 집합에 대한 요약 통계 역할을 할 수 있습니다. 작은 예로 모든 미국 대통령의 키를 생각해 봅시다. 이 데이터는 쉼표로 구분된 레이블 및 값 목록인 <em>president_heights.csv</em> 파일에서 사용할 수 있습니다.</p>
 <div id="cell-30" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="13">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb24"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="op">!</span>head <span class="op">-</span><span class="dv">4</span> data<span class="op">/</span>president_heights.csv</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
@@ -790,7 +785,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 3,Thomas Jefferson,189</code></pre>
 </div>
 </div>
-<p>We’ll use the Pandas package, which we’ll explore more fully in <a href="../notebooks/03.00-Introduction-to-Pandas.html">Part 3</a>, to read the file and extract this information (note that the heights are measured in centimeters):</p>
+<p><a href="../notebooks/03.00-Introduction-to-Pandas.html">3부</a>에서 더 자세히 살펴볼 Pandas 패키지를 사용하여 파일을 읽고 이 정보를 추출합니다(높이는 센티미터 단위로 측정됩니다).</p>
 <div id="cell-32" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="14">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb26"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
 <span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> pd.read_csv(<span class="st">'data/president_heights.csv'</span>)</span>
@@ -802,7 +797,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
  177 185 188 188 182 185 191 182]</code></pre>
 </div>
 </div>
-<p>Now that we have this data array, we can compute a variety of summary statistics:</p>
+<p>이제 이 데이터 배열이 있으므로 다양한 요약 통계를 계산할 수 있습니다.</p>
 <div id="cell-34" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="15">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb28"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Mean height:       "</span>, heights.mean())</span>
 <span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Standard deviation:"</span>, heights.std())</span>
@@ -815,7 +810,7 @@ Minimum height:     163
 Maximum height:     193</code></pre>
 </div>
 </div>
-<p>Note that in each case, the aggregation operation reduced the entire array to a single summarizing value, which gives us information about the distribution of values. We may also wish to compute quantiles:</p>
+<p>각 경우에 집계 작업은 전체 배열을 단일 요약 값으로 축소하여 값 분포에 대한 정보를 제공합니다. 분위수를 계산할 수도 있습니다:</p>
 <div id="cell-36" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="16">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb30"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"25th percentile:   "</span>, np.percentile(heights, <span class="dv">25</span>))</span>
 <span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Median:            "</span>, np.median(heights))</span>
@@ -826,8 +821,8 @@ Median:             182.0
 75th percentile:    183.5</code></pre>
 </div>
 </div>
-<p>We see that the median height of US presidents is 182 cm, or just shy of six feet.</p>
-<p>Of course, sometimes it’s more useful to see a visual representation of this data, which we can accomplish using tools in Matplotlib (we’ll discuss Matplotlib more fully in <a href="../notebooks/04.00-Introduction-To-Matplotlib.html">Part 4</a>). For example, this code generates the following chart:</p>
+<p>우리는 미국 대통령의 평균 키가 182cm, 즉 6피트에 조금 못 미치는 것을 확인할 수 있습니다.</p>
+<p>물론 때로는 Matplotlib의 도구를 사용하여 수행할 수 있는 이 데이터의 시각적 표현을 보는 것이 더 유용할 수 있습니다(Matplotlib에 대한 자세한 내용은 <a href="../notebooks/04.00-Introduction-To-Matplotlib.html">4부</a>에서 논의하겠습니다). 예를 들어 이 코드는 다음 차트를 생성합니다.</p>
 <div id="cell-38" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="17">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb32"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a><span class="op">%</span>matplotlib inline</span>
 <span id="cb32-2"><a href="#cb32-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
@@ -1253,13 +1248,13 @@ Median:             182.0
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../notebooks/02.03-Computation-on-arrays-ufuncs.html" class="pagination-link" aria-label="Computation on NumPy Arrays: Universal Functions">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Computation on NumPy Arrays: Universal Functions</span></span>
+      <a href="../notebooks/02.03-Computation-on-arrays-ufuncs.html" class="pagination-link" aria-label="NumPy 배열 계산: 범용 함수">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">NumPy 배열 계산: 범용 함수</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../notebooks/02.05-Computation-on-arrays-broadcasting.html" class="pagination-link" aria-label="Computation on Arrays: Broadcasting">
-        <span class="nav-page-text"><span class="chapter-title">Computation on Arrays: Broadcasting</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../notebooks/02.05-Computation-on-arrays-broadcasting.html" class="pagination-link" aria-label="배열 계산: 브로드캐스팅">
+        <span class="nav-page-text"><span class="chapter-title">배열 계산: 브로드캐스팅</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

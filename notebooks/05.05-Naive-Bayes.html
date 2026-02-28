@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>In Depth: Naive Bayes Classification – 파이썬 데이터 사이언스 핸드북</title>
+<title>심층 분석: 나이브 베이즈 분류 – 파이썬 데이터 사이언스 핸드북</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -77,7 +77,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-3778d3e438078121318a23701f9f68bb.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-803ae4f7a8810f475153517dc3c4ebae.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -147,7 +147,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../notebooks/05.00-Machine-Learning.html">머신러닝</a></li><li class="breadcrumb-item"><a href="../notebooks/05.05-Naive-Bayes.html"><span class="chapter-title">In Depth: Naive Bayes Classification</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../notebooks/05.00-Machine-Learning.html">머신러닝</a></li><li class="breadcrumb-item"><a href="../notebooks/05.05-Naive-Bayes.html"><span class="chapter-title">심층 분석: 나이브 베이즈 분류</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -194,7 +194,7 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/01.00-IPython-Beyond-Normal-Python.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Jupyter: 일반 Python을 넘어서</span></a>
+  <a href="../notebooks/01.00-IPython-Beyond-Normal-Python.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Jupyter: 일반 파이썬(Python)을 넘어서</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -224,17 +224,17 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/01.06-Errors-and-Debugging.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Errors and Debugging</span></a>
+  <a href="../notebooks/01.06-Errors-and-Debugging.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">오류 및 디버깅</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/01.07-Timing-and-Profiling.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Profiling and Timing Code</span></a>
+  <a href="../notebooks/01.07-Timing-and-Profiling.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">프로파일링 및 타이밍 코드</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/01.08-More-IPython-Resources.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">More IPython Resources</span></a>
+  <a href="../notebooks/01.08-More-IPython-Resources.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">추가 IPython 리소스</span></a>
   </div>
 </li>
       </ul>
@@ -250,52 +250,52 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.00-Introduction-to-NumPy.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Introduction to NumPy</span></a>
+  <a href="../notebooks/02.00-Introduction-to-NumPy.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">NumPy 소개</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.01-Understanding-Data-Types.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Understanding Data Types in Python</span></a>
+  <a href="../notebooks/02.01-Understanding-Data-Types.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">파이썬(Python)의 데이터 유형 이해</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.02-The-Basics-Of-NumPy-Arrays.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">The Basics of NumPy Arrays</span></a>
+  <a href="../notebooks/02.02-The-Basics-Of-NumPy-Arrays.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">NumPy 배열의 기본</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.03-Computation-on-arrays-ufuncs.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Computation on NumPy Arrays: Universal Functions</span></a>
+  <a href="../notebooks/02.03-Computation-on-arrays-ufuncs.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">NumPy 배열 계산: 범용 함수</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.04-Computation-on-arrays-aggregates.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Aggregations: min, max, and Everything in Between</span></a>
+  <a href="../notebooks/02.04-Computation-on-arrays-aggregates.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">집계: 최소, 최대 및 그 사이의 모든 것</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.05-Computation-on-arrays-broadcasting.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Computation on Arrays: Broadcasting</span></a>
+  <a href="../notebooks/02.05-Computation-on-arrays-broadcasting.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">배열 계산: 브로드캐스팅</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.06-Boolean-Arrays-and-Masks.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Comparisons, Masks, and Boolean Logic</span></a>
+  <a href="../notebooks/02.06-Boolean-Arrays-and-Masks.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">비교, 마스크 및 부울 논리</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.07-Fancy-Indexing.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Fancy Indexing</span></a>
+  <a href="../notebooks/02.07-Fancy-Indexing.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">멋진 인덱싱</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.08-Sorting.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Sorting Arrays</span></a>
+  <a href="../notebooks/02.08-Sorting.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">배열 정렬</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.09-Structured-Data-NumPy.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Structured Data: NumPy’s Structured Arrays</span></a>
+  <a href="../notebooks/02.09-Structured-Data-NumPy.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">구조화된 데이터: NumPy의 구조화된 배열</span></a>
   </div>
 </li>
       </ul>
@@ -311,72 +311,72 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.00-Introduction-to-Pandas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Data Manipulation with Pandas</span></a>
+  <a href="../notebooks/03.00-Introduction-to-Pandas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">팬더를 이용한 데이터 조작</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.01-Introducing-Pandas-Objects.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Introducing Pandas Objects</span></a>
+  <a href="../notebooks/03.01-Introducing-Pandas-Objects.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">판다스 객체 소개</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.02-Data-Indexing-and-Selection.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Data Indexing and Selection</span></a>
+  <a href="../notebooks/03.02-Data-Indexing-and-Selection.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">데이터 인덱싱 및 선택</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.03-Operations-in-Pandas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Operating on Data in Pandas</span></a>
+  <a href="../notebooks/03.03-Operations-in-Pandas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Pandas에서 데이터 작업</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.04-Missing-Values.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Handling Missing Data</span></a>
+  <a href="../notebooks/03.04-Missing-Values.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">누락된 데이터 처리</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.05-Hierarchical-Indexing.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Hierarchical Indexing</span></a>
+  <a href="../notebooks/03.05-Hierarchical-Indexing.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">계층적 인덱싱</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.06-Concat-And-Append.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Combining Datasets: concat and append</span></a>
+  <a href="../notebooks/03.06-Concat-And-Append.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">데이터세트 결합: 연결 및 추가</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.07-Merge-and-Join.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Combining Datasets: merge and join</span></a>
+  <a href="../notebooks/03.07-Merge-and-Join.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">데이터세트 결합: 병합 및 조인</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.08-Aggregation-and-Grouping.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Aggregation and Grouping</span></a>
+  <a href="../notebooks/03.08-Aggregation-and-Grouping.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">집계 및 그룹화</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.09-Pivot-Tables.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Pivot Tables</span></a>
+  <a href="../notebooks/03.09-Pivot-Tables.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">피벗 테이블</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.10-Working-With-Strings.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Vectorized String Operations</span></a>
+  <a href="../notebooks/03.10-Working-With-Strings.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">벡터화된 문자열 작업</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.11-Working-with-Time-Series.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Working with Time Series</span></a>
+  <a href="../notebooks/03.11-Working-with-Time-Series.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">시계열 작업</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.12-Performance-Eval-and-Query.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">High-Performance Pandas: eval and query</span></a>
+  <a href="../notebooks/03.12-Performance-Eval-and-Query.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">고성능 Pandas: 평가 및 쿼리</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.13-Further-Resources.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Further Resources</span></a>
+  <a href="../notebooks/03.13-Further-Resources.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">추가 리소스</span></a>
   </div>
 </li>
       </ul>
@@ -392,77 +392,77 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.00-Introduction-To-Matplotlib.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Visualization with Matplotlib</span></a>
+  <a href="../notebooks/04.00-Introduction-To-Matplotlib.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Matplotlib를 사용한 시각화</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.01-Simple-Line-Plots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Simple Line Plots</span></a>
+  <a href="../notebooks/04.01-Simple-Line-Plots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">간단한 선 도표</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.02-Simple-Scatter-Plots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Simple Scatter Plots</span></a>
+  <a href="../notebooks/04.02-Simple-Scatter-Plots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">단순 산점도</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.03-Errorbars.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Visualizing Uncertainties</span></a>
+  <a href="../notebooks/04.03-Errorbars.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">불확실성 시각화</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.04-Density-and-Contour-Plots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Density and Contour Plots</span></a>
+  <a href="../notebooks/04.04-Density-and-Contour-Plots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">밀도 및 등고선 플롯</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.05-Histograms-and-Binnings.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Histograms, Binnings, and Density</span></a>
+  <a href="../notebooks/04.05-Histograms-and-Binnings.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">히스토그램, 비닝 및 밀도</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.06-Customizing-Legends.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Customizing Plot Legends</span></a>
+  <a href="../notebooks/04.06-Customizing-Legends.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">플롯 범례 사용자 정의</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.07-Customizing-Colorbars.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Customizing Colorbars</span></a>
+  <a href="../notebooks/04.07-Customizing-Colorbars.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">컬러바 사용자 정의</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.08-Multiple-Subplots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Multiple Subplots</span></a>
+  <a href="../notebooks/04.08-Multiple-Subplots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">다중 서브플롯</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.09-Text-and-Annotation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Text and Annotation</span></a>
+  <a href="../notebooks/04.09-Text-and-Annotation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">텍스트 및 주석</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.10-Customizing-Ticks.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Customizing Ticks</span></a>
+  <a href="../notebooks/04.10-Customizing-Ticks.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">눈금 사용자 정의</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.11-Settings-and-Stylesheets.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Customizing Matplotlib: Configurations and Stylesheets</span></a>
+  <a href="../notebooks/04.11-Settings-and-Stylesheets.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Matplotlib 사용자 정의: 구성 및 스타일시트</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.12-Three-Dimensional-Plotting.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Three-Dimensional Plotting in Matplotlib</span></a>
+  <a href="../notebooks/04.12-Three-Dimensional-Plotting.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Matplotlib의 3차원 플로팅</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.14-Visualization-With-Seaborn.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Visualization with Seaborn</span></a>
+  <a href="../notebooks/04.14-Visualization-With-Seaborn.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Seaborn을 이용한 시각화</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.15-Further-Resources.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Further Resources</span></a>
+  <a href="../notebooks/04.15-Further-Resources.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">추가 리소스</span></a>
   </div>
 </li>
       </ul>
@@ -478,82 +478,82 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.00-Machine-Learning.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Machine Learning</span></a>
+  <a href="../notebooks/05.00-Machine-Learning.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">머신러닝</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.01-What-Is-Machine-Learning.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">What Is Machine Learning?</span></a>
+  <a href="../notebooks/05.01-What-Is-Machine-Learning.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">머신러닝이란?</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.02-Introducing-Scikit-Learn.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Introducing Scikit-Learn</span></a>
+  <a href="../notebooks/05.02-Introducing-Scikit-Learn.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Scikit-Learn 소개</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.03-Hyperparameters-and-Model-Validation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Hyperparameters and Model Validation</span></a>
+  <a href="../notebooks/05.03-Hyperparameters-and-Model-Validation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">하이퍼파라미터 및 모델 검증</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.04-Feature-Engineering.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Feature Engineering</span></a>
+  <a href="../notebooks/05.04-Feature-Engineering.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">기능 엔지니어링</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.05-Naive-Bayes.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">In Depth: Naive Bayes Classification</span></a>
+  <a href="../notebooks/05.05-Naive-Bayes.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">심층 분석: 나이브 베이즈 분류</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.06-Linear-Regression.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Linear Regression</span></a>
+  <a href="../notebooks/05.06-Linear-Regression.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 선형 회귀</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.07-Support-Vector-Machines.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Support Vector Machines</span></a>
+  <a href="../notebooks/05.07-Support-Vector-Machines.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 서포트 벡터 머신</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.08-Random-Forests.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Decision Trees and Random Forests</span></a>
+  <a href="../notebooks/05.08-Random-Forests.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 의사결정 트리 및 랜덤 포레스트</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.09-Principal-Component-Analysis.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Principal Component Analysis</span></a>
+  <a href="../notebooks/05.09-Principal-Component-Analysis.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 주성분 분석</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.10-Manifold-Learning.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Manifold Learning</span></a>
+  <a href="../notebooks/05.10-Manifold-Learning.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 다양한 학습</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.11-K-Means.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: k-Means Clustering</span></a>
+  <a href="../notebooks/05.11-K-Means.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: k-평균 클러스터링</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.12-Gaussian-Mixtures.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Gaussian Mixture Models</span></a>
+  <a href="../notebooks/05.12-Gaussian-Mixtures.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 가우스 혼합 모델</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.13-Kernel-Density-Estimation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Kernel Density Estimation</span></a>
+  <a href="../notebooks/05.13-Kernel-Density-Estimation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 커널 밀도 추정</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.14-Image-Features.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Application: A Face Detection Pipeline</span></a>
+  <a href="../notebooks/05.14-Image-Features.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">응용 분야: 얼굴 감지 파이프라인</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.15-Learning-More.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Further Machine Learning Resources</span></a>
+  <a href="../notebooks/05.15-Learning-More.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">추가 머신러닝(Machine Learning) 리소스</span></a>
   </div>
 </li>
       </ul>
@@ -569,7 +569,7 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/06.00-Figure-Code.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Appendix: Figure Code</span></a>
+  <a href="../notebooks/06.00-Figure-Code.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">부록: 그림 코드</span></a>
   </div>
 </li>
       </ul>
@@ -584,22 +584,22 @@ window.Quarto = {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#bayesian-classification" id="toc-bayesian-classification" class="nav-link active" data-scroll-target="#bayesian-classification">Bayesian Classification</a></li>
-  <li><a href="#gaussian-naive-bayes" id="toc-gaussian-naive-bayes" class="nav-link" data-scroll-target="#gaussian-naive-bayes">Gaussian Naive Bayes</a></li>
-  <li><a href="#multinomial-naive-bayes" id="toc-multinomial-naive-bayes" class="nav-link" data-scroll-target="#multinomial-naive-bayes">Multinomial Naive Bayes</a>
+  <li><a href="#베이지안-분류" id="toc-베이지안-분류" class="nav-link active" data-scroll-target="#베이지안-분류">베이지안 분류</a></li>
+  <li><a href="#가우스-나이브-베이즈" id="toc-가우스-나이브-베이즈" class="nav-link" data-scroll-target="#가우스-나이브-베이즈">가우스 나이브 베이즈</a></li>
+  <li><a href="#다항식-나이브-베이즈" id="toc-다항식-나이브-베이즈" class="nav-link" data-scroll-target="#다항식-나이브-베이즈">다항식 나이브 베이즈</a>
   <ul class="collapse">
-  <li><a href="#example-classifying-text" id="toc-example-classifying-text" class="nav-link" data-scroll-target="#example-classifying-text">Example: Classifying Text</a></li>
+  <li><a href="#예-텍스트-분류" id="toc-예-텍스트-분류" class="nav-link" data-scroll-target="#예-텍스트-분류">예: 텍스트 분류</a></li>
   </ul></li>
-  <li><a href="#when-to-use-naive-bayes" id="toc-when-to-use-naive-bayes" class="nav-link" data-scroll-target="#when-to-use-naive-bayes">When to Use Naive Bayes</a></li>
+  <li><a href="#naive-bayes를-사용해야-하는-경우" id="toc-naive-bayes를-사용해야-하는-경우" class="nav-link" data-scroll-target="#naive-bayes를-사용해야-하는-경우">Naive Bayes를 사용해야 하는 경우</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../notebooks/05.00-Machine-Learning.html">머신러닝</a></li><li class="breadcrumb-item"><a href="../notebooks/05.05-Naive-Bayes.html"><span class="chapter-title">In Depth: Naive Bayes Classification</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../notebooks/05.00-Machine-Learning.html">머신러닝</a></li><li class="breadcrumb-item"><a href="../notebooks/05.05-Naive-Bayes.html"><span class="chapter-title">심층 분석: 나이브 베이즈 분류</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-title">In Depth: Naive Bayes Classification</span></h1>
+<h1 class="title"><span class="chapter-title">심층 분석: 나이브 베이즈 분류</span></h1>
 </div>
 
 
@@ -616,21 +616,21 @@ window.Quarto = {
 </header>
 
 
-<p>The previous four chapters have given a general overview of the concepts of machine learning. In this chapter and the ones that follow, we will be taking a closer look first at four algorithms for supervised learning, and then at four algorithms for unsupervised learning. We start here with our first supervised method, naive Bayes classification.</p>
-<p>Naive Bayes models are a group of extremely fast and simple classification algorithms that are often suitable for very high-dimensional datasets. Because they are so fast and have so few tunable parameters, they end up being useful as a quick-and-dirty baseline for a classification problem. This chapter will provide an intuitive explanation of how naive Bayes classifiers work, followed by a few examples of them in action on some datasets.</p>
-<section id="bayesian-classification" class="level2">
-<h2 class="anchored" data-anchor-id="bayesian-classification">Bayesian Classification</h2>
-<p>Naive Bayes classifiers are built on Bayesian classification methods. These rely on Bayes’s theorem, which is an equation describing the relationship of conditional probabilities of statistical quantities. In Bayesian classification, we’re interested in finding the probability of a label <span class="math inline">\(L\)</span> given some observed features, which we can write as <span class="math inline">\(P(L~|~{\rm features})\)</span>. Bayes’s theorem tells us how to express this in terms of quantities we can compute more directly:</p>
+<p>이전 4개 장에서는 머신러닝(Machine Learning) 개념에 대한 일반적인 개요를 제공했습니다. 이 장과 다음 장에서 우리는 먼저 지도 학습을 위한 네 가지 알고리즘을 자세히 살펴보세요. 그리고 비지도 학습을 위한 네 가지 알고리즘이 있습니다. 여기서는 첫 번째 지도 방법인 Naive Bayes 분류부터 시작합니다.</p>
+<p>Naive Bayes 모델은 매우 고차원 데이터 세트에 적합한 매우 빠르고 간단한 분류 알고리즘 그룹입니다. 속도가 매우 빠르고 조정 가능한 매개변수가 거의 없기 때문에 분류 문제에 대한 빠르고 간단한 기준으로 유용하게 사용됩니다. 이번 장에서는 Naive Bayes 분류기가 작동하는 방식에 대한 직관적인 설명을 제공하고 일부 데이터 세트에서 작동하는 몇 가지 예를 제공합니다.</p>
+<section id="베이지안-분류" class="level2">
+<h2 class="anchored" data-anchor-id="베이지안-분류">베이지안 분류</h2>
+<p>Naive Bayes 분류기는 베이지안 분류 방법을 기반으로 구축되었습니다. 이는 통계량의 조건부 확률 관계를 설명하는 방정식인 베이즈 정리에 의존합니다. 베이지안 분류에서는 <span class="math inline">\(P(L~|~{\rm feature})\)</span>로 쓸 수 있는 일부 관찰된 특징이 주어지면 <span class="math inline">\(L\)</span> 레이블의 확률을 찾는 데 관심이 있습니다. 베이즈의 정리는 이를 보다 직접적으로 계산할 수 있는 수량으로 표현하는 방법을 알려줍니다.</p>
 <p><span class="math display">\[
-P(L~|~{\rm features}) = \frac{P({\rm features}~|~L)P(L)}{P({\rm features})}
+P(L~|~{\rm 특징}) = \frac{P({\rm 특징}~|~L)P(L)}{P({\rm 특징})}
 \]</span></p>
-<p>If we are trying to decide between two labels—let’s call them <span class="math inline">\(L_1\)</span> and <span class="math inline">\(L_2\)</span>—then one way to make this decision is to compute the ratio of the posterior probabilities for each label:</p>
+<p>두 레이블(<span class="math inline">\(L_1\)</span> 및 <span class="math inline">\(L_2\)</span>) 중에서 결정하려는 경우 이 결정을 내리는 한 가지 방법은 각 레이블에 대한 사후 확률의 비율을 계산하는 것입니다.</p>
 <p><span class="math display">\[
-\frac{P(L_1~|~{\rm features})}{P(L_2~|~{\rm features})} = \frac{P({\rm features}~|~L_1)}{P({\rm features}~|~L_2)}\frac{P(L_1)}{P(L_2)}
+\frac{P(L_1~|~{\rm 기능})}{P(L_2~|~{\rm 기능})} = \frac{P({\rm 기능}~|~L_1)}{P({\rm 기능}~|~L_2)}\frac{P(L_1)}{P(L_2)}
 \]</span></p>
-<p>All we need now is some model by which we can compute <span class="math inline">\(P({\rm features}~|~L_i)\)</span> for each label. Such a model is called a <em>generative model</em> because it specifies the hypothetical random process that generates the data. Specifying this generative model for each label is the main piece of the training of such a Bayesian classifier. The general version of such a training step is a very difficult task, but we can make it simpler through the use of some simplifying assumptions about the form of this model.</p>
-<p>This is where the “naive” in “naive Bayes” comes in: if we make very naive assumptions about the generative model for each label, we can find a rough approximation of the generative model for each class, and then proceed with the Bayesian classification. Different types of naive Bayes classifiers rest on different naive assumptions about the data, and we will examine a few of these in the following sections.</p>
-<p>We begin with the standard imports:</p>
+<p>이제 우리에게 필요한 것은 각 레이블에 대해 <span class="math inline">\(P({\rm feature}~|~L_i)\)</span>를 계산할 수 있는 모델입니다. 이러한 모델은 데이터를 생성하는 가상의 무작위 프로세스를 지정하므로 <em>생성 모델</em>이라고 합니다. 각 레이블에 대해 이 생성 모델을 지정하는 것이 베이지안 분류기 훈련의 주요 부분입니다. 이러한 훈련 단계의 일반적인 버전은 매우 어려운 작업이지만, 이 모델의 형태에 대한 몇 가지 단순화된 가정을 사용하여 더 간단하게 만들 수 있습니다.</p>
+<p>여기서 “순진한 베이즈”의 “순진한”이 등장합니다. 각 레이블의 생성 모델에 대해 매우 순진한 가정을 하면 각 클래스에 대한 생성 모델의 대략적인 근사치를 찾은 다음 베이지안 분류를 진행할 수 있습니다. 다양한 유형의 나이브 베이즈 분류기는 데이터에 대한 다양한 나이브 가정을 기반으로 하며 다음 섹션에서 이들 중 몇 가지를 검토할 것입니다.</p>
+<p>표준 가져오기부터 시작합니다.</p>
 <div id="cell-3" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="1">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="op">%</span>matplotlib inline</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
@@ -639,9 +639,9 @@ P(L~|~{\rm features}) = \frac{P({\rm features}~|~L)P(L)}{P({\rm features})}
 <span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>plt.style.use(<span class="st">'seaborn-whitegrid'</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </section>
-<section id="gaussian-naive-bayes" class="level2">
-<h2 class="anchored" data-anchor-id="gaussian-naive-bayes">Gaussian Naive Bayes</h2>
-<p>Perhaps the easiest naive Bayes classifier to understand is Gaussian naive Bayes. With this classifier, the assumption is that <em>data from each label is drawn from a simple Gaussian distribution</em>. Imagine that we have the following data, shown in Figure 41-1:</p>
+<section id="가우스-나이브-베이즈" class="level2">
+<h2 class="anchored" data-anchor-id="가우스-나이브-베이즈">가우스 나이브 베이즈</h2>
+<p>아마도 이해하기 가장 쉬운 순진한 베이즈 분류기는 가우스 순진한 베이즈일 것입니다. 이 분류기를 사용하면 <em>각 라벨의 데이터가 단순 가우스 분포</em>에서 추출된다고 가정합니다. 그림 41-1에 표시된 다음 데이터가 있다고 상상해 보십시오.</p>
 <div id="cell-5" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="2">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.datasets <span class="im">import</span> make_blobs</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>X, y <span class="op">=</span> make_blobs(<span class="dv">100</span>, <span class="dv">2</span>, centers<span class="op">=</span><span class="dv">2</span>, random_state<span class="op">=</span><span class="dv">2</span>, cluster_std<span class="op">=</span><span class="fl">1.5</span>)</span>
@@ -654,22 +654,22 @@ P(L~|~{\rm features}) = \frac{P({\rm features}~|~L)P(L)}{P({\rm features})}
 </div>
 </div>
 </div>
-<p>The simplest Gaussian model is to assume that the data is described by a Gaussian distribution with no covariance between dimensions. This model can be fit by computing the mean and standard deviation of the points within each label, which is all we need to define such a distribution. The result of this naive Gaussian assumption is shown in the following figure:</p>
-<p><img src="images/05.05-gaussian-NB.png" class="img-fluid" alt="(run code in Appendix to generate image)"> <a href="https://github.com/jakevdp/PythonDataScienceHandbook/blob/master/notebooks/06.00-Figure-Code.ipynb#Gaussian-Naive-Bayes">figure source in Appendix</a></p>
-<p>The ellipses here represent the Gaussian generative model for each label, with larger probability toward the center of the ellipses. With this generative model in place for each class, we have a simple recipe to compute the likelihood <span class="math inline">\(P({\rm features}~|~L_1)\)</span> for any data point, and thus we can quickly compute the posterior ratio and determine which label is the most probable for a given point.</p>
-<p>This procedure is implemented in Scikit-Learn’s <code>sklearn.naive_bayes.GaussianNB</code> estimator:</p>
+<p>가장 간단한 가우스 모델은 데이터가 차원 간 공분산 없이 가우스 분포로 설명된다고 가정하는 것입니다. 이 모델은 각 레이블 제 점의 평균 및 표준 편차를 계산하여 적합할 수 있으며, 이는 이러한 분포를 정의하는 데 필요한 전부입니다. 이 순진한 가우스 가정의 결과는 다음 그림에 나와 있습니다.</p>
+<p><img src="images/05.05-gaussian-NB.png" class="img-fluid" alt="(run code in Appendix to generate image)"> <a href="https://github.com/jakevdp/파이썬(Python)DataScienceHandbook/blob/master/notebooks/06.00-Figure-Code.ipynb#Gaussian-Naive-Bayes">부록의 그림 소스</a></p>
+<p>여기의 타원은 각 레이블에 대한 가우스 생성 모델을 나타내며 타원 중심으로 갈수록 확률이 더 높습니다. 각 클래스에 대해 이 생성 모델을 적용하면 모든 데이터 포인트에 대한 우도 <span class="math inline">\(P({\rm feature}~|~L_1)\)</span>를 계산하는 간단한 방법이 있으므로 사후 비율을 빠르게 계산하고 주어진 포인트에 대해 가장 가능성이 높은 레이블을 결정할 수 있습니다.</p>
+<p>이 절차는 Scikit-Learn의 <code>sklearn.naive_bayes.GaussianNB</code> 추정기에서 구현됩니다.</p>
 <div id="cell-9" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="3">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.naive_bayes <span class="im">import</span> GaussianNB</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>model <span class="op">=</span> GaussianNB()</span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>model.fit(X, y)<span class="op">;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<p>Let’s generate some new data and predict the label:</p>
+<p>새로운 데이터를 생성하고 라벨을 예측해 보겠습니다.</p>
 <div id="cell-11" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="4">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>rng <span class="op">=</span> np.random.RandomState(<span class="dv">0</span>)</span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>Xnew <span class="op">=</span> [<span class="op">-</span><span class="dv">6</span>, <span class="op">-</span><span class="dv">14</span>] <span class="op">+</span> [<span class="dv">14</span>, <span class="dv">18</span>] <span class="op">*</span> rng.rand(<span class="dv">2000</span>, <span class="dv">2</span>)</span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>ynew <span class="op">=</span> model.predict(Xnew)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<p>Now we can plot this new data to get an idea of where the decision boundary is (see the following figure):</p>
+<p>이제 이 새로운 데이터를 플롯하여 결정 경계가 어디에 있는지 알 수 있습니다(다음 그림 참조).</p>
 <div id="cell-13" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="5">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>plt.scatter(X[:, <span class="dv">0</span>], X[:, <span class="dv">1</span>], c<span class="op">=</span>y, s<span class="op">=</span><span class="dv">50</span>, cmap<span class="op">=</span><span class="st">'RdBu'</span>)</span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>lim <span class="op">=</span> plt.axis()</span>
@@ -683,8 +683,8 @@ P(L~|~{\rm features}) = \frac{P({\rm features}~|~L)P(L)}{P({\rm features})}
 </div>
 </div>
 </div>
-<p>We see a slightly curved boundary in the classifications—in general, the boundary produced by a Gaussian naive Bayes model will be quadratic.</p>
-<p>A nice aspect of this Bayesian formalism is that it naturally allows for probabilistic classification, which we can compute using the <code>predict_proba</code> method:</p>
+<p>분류에서 약간 구부러진 경계를 살펴볼 수 있습니다. 일반적으로 Gaussian Naive Bayes 모델에 의해 생성된 경계는 2차입니다.</p>
+<p>이 베이지안 형식의 좋은 점은 ‘predict_proba’ 방법을 사용하여 계산할 수 있는 확률적 분류를 자연스럽게 허용한다는 것입니다.</p>
 <div id="cell-15" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="6">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>yprob <span class="op">=</span> model.predict_proba(Xnew)</span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>yprob[<span class="op">-</span><span class="dv">8</span>:].<span class="bu">round</span>(<span class="dv">2</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -699,17 +699,17 @@ P(L~|~{\rm features}) = \frac{P({\rm features}~|~L)P(L)}{P({\rm features})}
        [0.15, 0.85]])</code></pre>
 </div>
 </div>
-<p>The columns give the posterior probabilities of the first and second labels, respectively. If you are looking for estimates of uncertainty in your classification, Bayesian approaches like this can be a good place to start.</p>
-<p>Of course, the final classification will only be as good as the model assumptions that lead to it, which is why Gaussian naive Bayes often does not produce very good results. Still, in many cases—especially as the number of features becomes large—this assumption is not detrimental enough to prevent Gaussian naive Bayes from being a reliable method.</p>
+<p>열은 각각 첫 번째 레이블과 두 번째 레이블의 사후 확률을 제공합니다. 분류의 불확실성 추정치를 찾고 있다면 이와 같은 베이지안 접근 방식이 좋은 시작점이 될 수 있습니다.</p>
+<p>물론 최종 분류는 이를 도출하는 모델 가정만큼만 우수하므로 Gaussian Naive Bayes는 종종 좋은 결과를 생성하지 못합니다. 그럼에도 불구하고 많은 경우, 특히 특징 수가 많아질수록 이 가정은 Gaussian Naive Bayes가 신뢰할 수 있는 방법이 되는 것을 방해할 만큼 해롭지 않습니다.</p>
 </section>
-<section id="multinomial-naive-bayes" class="level2">
-<h2 class="anchored" data-anchor-id="multinomial-naive-bayes">Multinomial Naive Bayes</h2>
-<p>The Gaussian assumption just described is by no means the only simple assumption that could be used to specify the generative distribution for each label. Another useful example is multinomial naive Bayes, where the features are assumed to be generated from a simple multinomial distribution. The multinomial distribution describes the probability of observing counts among a number of categories, and thus multinomial naive Bayes is most appropriate for features that represent counts or count rates.</p>
-<p>The idea is precisely the same as before, except that instead of modeling the data distribution with the best-fit Gaussian, we model it with a best-fit multinomial distribution.</p>
-<section id="example-classifying-text" class="level3">
-<h3 class="anchored" data-anchor-id="example-classifying-text">Example: Classifying Text</h3>
-<p>One place where multinomial naive Bayes is often used is in text classification, where the features are related to word counts or frequencies within the documents to be classified. We discussed the extraction of such features from text in <a href="../notebooks/05.04-Feature-Engineering.html">Feature Engineering</a>; here we will use the sparse word count features from the 20 Newsgroups corpus made available through Scikit-Learn to show how we might classify these short documents into categories.</p>
-<p>Let’s download the data and take a look at the target names:</p>
+<section id="다항식-나이브-베이즈" class="level2">
+<h2 class="anchored" data-anchor-id="다항식-나이브-베이즈">다항식 나이브 베이즈</h2>
+<p>방금 설명한 가우스 가정은 결코 각 레이블에 대한 생성 분포를 지정하는 데 사용할 수 있는 유일한 간단한 가정이 아닙니다. 또 다른 유용한 예는 다항식 Naive Bayes입니다. 여기서 특징은 단순 다항 분포에서 생성된 것으로 가정됩니다. 다항 분포는 여러 범주 중에서 개수를 관찰할 확률을 설명하므로 개수 또는 개수 비율을 나타내는 특성에는 다항 순진 베이즈가 가장 적합합니다.</p>
+<p>최적의 가우스 분포를 사용하여 데이터 분포를 모델링하는 대신 최적의 다항 분포를 사용하여 모델링한다는 점을 제외하면 아이디어는 이전과 정확히 동일합니다.</p>
+<section id="예-텍스트-분류" class="level3">
+<h3 class="anchored" data-anchor-id="예-텍스트-분류">예: 텍스트 분류</h3>
+<p>다항식 나이브 베이즈가 자주 사용되는 곳 중 하나는 텍스트 분류입니다. 여기서 기능은 분류할 문서 내의 단어 수 또는 빈도와 관련됩니다. 우리는 <a href="../notebooks/05.04-Feature-Engineering.html">Feature Engineering</a>의 텍스트에서 이러한 기능을 추출하는 방법을 논의했습니다. 여기서는 Scikit-Learn을 통해 제공되는 20개 뉴스그룹 코퍼스의 희소 단어 수 기능을 사용하여 이러한 짧은 문서를 카테고리로 분류하는 방법을 보여줍니다.</p>
+<p>데이터를 다운로드하고 대상 이름을 살펴보겠습니다.</p>
 <div id="cell-19" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="7">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.datasets <span class="im">import</span> fetch_20newsgroups</span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a></span>
@@ -738,14 +738,14 @@ P(L~|~{\rm features}) = \frac{P({\rm features}~|~L)P(L)}{P({\rm features})}
  'talk.religion.misc']</code></pre>
 </div>
 </div>
-<p>For simplicity here, we will select just a few of these categories and download the training and testing sets:</p>
+<p>여기서는 단순화를 위해 이러한 범주 중 몇 가지만 선택하고 훈련 및 테스트 세트를 다운로드하겠습니다.</p>
 <div id="cell-21" class="cell" data-editable="true" data-tags="[]" data-execution_count="8">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>categories <span class="op">=</span> [<span class="st">'talk.religion.misc'</span>, <span class="st">'soc.religion.christian'</span>,</span>
 <span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>              <span class="st">'sci.space'</span>, <span class="st">'comp.graphics'</span>]</span>
 <span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>train <span class="op">=</span> fetch_20newsgroups(subset<span class="op">=</span><span class="st">'train'</span>, categories<span class="op">=</span>categories)</span>
 <span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>test <span class="op">=</span> fetch_20newsgroups(subset<span class="op">=</span><span class="st">'test'</span>, categories<span class="op">=</span>categories)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<p>Here is a representative entry from the data:</p>
+<p>다음은 데이터의 대표적인 항목입니다.</p>
 <div id="cell-23" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="9">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(train.data[<span class="dv">5</span>][<span class="dv">48</span>:])</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
@@ -768,7 +768,7 @@ then mail to Federal Communications Commission 1919 H Street Washington DC
 </code></pre>
 </div>
 </div>
-<p>In order to use this data for machine learning, we need to be able to convert the content of each string into a vector of numbers. For this we will use the TF-IDF vectorizer (introduced in <a href="../notebooks/05.04-Feature-Engineering.html">Feature Engineering</a>), and create a pipeline that attaches it to a multinomial naive Bayes classifier:</p>
+<p>이 데이터를 머신러닝(Machine Learning)에 사용하려면 각 문자열의 내용을 숫자 벡터로 변환할 수 있어야 합니다. 이를 위해 TF-IDF 벡터화기(<a href="../notebooks/05.04-Feature-Engineering.html">Feature Engineering</a>에 도입됨)를 사용하고 이를 다항식 Naive Bayes 분류기에 연결하는 파이프라인을 생성합니다.</p>
 <div id="cell-25" class="cell" data-editable="true" data-tags="[]" data-execution_count="10">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.feature_extraction.text <span class="im">import</span> TfidfVectorizer</span>
 <span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.naive_bayes <span class="im">import</span> MultinomialNB</span>
@@ -776,12 +776,12 @@ then mail to Federal Communications Commission 1919 H Street Washington DC
 <span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>model <span class="op">=</span> make_pipeline(TfidfVectorizer(), MultinomialNB())</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<p>With this pipeline, we can apply the model to the training data and predict labels for the test data:</p>
+<p>이 파이프라인을 사용하면 모델을 훈련 데이터에 적용하고 테스트 데이터의 레이블을 예측할 수 있습니다.</p>
 <div id="cell-27" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="11">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>model.fit(train.data, train.target)</span>
 <span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>labels <span class="op">=</span> model.predict(test.data)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<p>Now that we have predicted the labels for the test data, we can evaluate them to learn about the performance of the estimator. For example, let’s take a look at the confusion matrix between the true and predicted labels for the test data (see the following figure):</p>
+<p>이제 테스트 데이터의 레이블을 예측했으므로 이를 평가하여 추정기의 성능을 알아살펴볼 수 있습니다. 예를 들어 테스트 데이터에 대한 실제 레이블과 예측 레이블 사이의 혼동 행렬을 살펴보겠습니다(다음 그림 참조).</p>
 <div id="cell-29" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="12">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.metrics <span class="im">import</span> confusion_matrix</span>
 <span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>mat <span class="op">=</span> confusion_matrix(test.target, labels)</span>
@@ -798,14 +798,14 @@ then mail to Federal Communications Commission 1919 H Street Washington DC
 </div>
 </div>
 </div>
-<p>Evidently, even this very simple classifier can successfully separate space discussions from computer discussions, but it gets confused between discussions about religion and discussions about Christianity. This is perhaps to be expected!</p>
-<p>The cool thing here is that we now have the tools to determine the category for <em>any</em> string, using the <code>predict</code> method of this pipeline. Here’s a utility function that will return the prediction for a single string:</p>
+<p>분명히 이 매우 간단한 분류자조차도 컴퓨터 토론과 우주 토론을 성공적으로 분리할 수 있지만 종교에 관한 토론과 기독교에 관한 토론을 혼동하게 됩니다. 이는 아마도 예상할 수 있는 일입니다!</p>
+<p>여기서 멋진 점은 이제 이 파이프라인의 <code>predict</code> 메서드를 사용하여 <em>모든</em> 문자열의 범주를 결정하는 도구가 있다는 것입니다. 다음은 단일 문자열에 대한 예측을 반환하는 유틸리티 함수입니다.</p>
 <div id="cell-31" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="13">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> predict_category(s, train<span class="op">=</span>train, model<span class="op">=</span>model):</span>
 <span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>    pred <span class="op">=</span> model.predict([s])</span>
 <span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> train.target_names[pred[<span class="dv">0</span>]]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<p>Let’s try it out:</p>
+<p>시도해 봅시다:</p>
 <div id="cell-33" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="14">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>predict_category(<span class="st">'sending a payload to the ISS'</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="14">
@@ -824,26 +824,24 @@ then mail to Federal Communications Commission 1919 H Street Washington DC
 <pre><code>'comp.graphics'</code></pre>
 </div>
 </div>
-<p>Remember that this is nothing more sophisticated than a simple probability model for the (weighted) frequency of each word in the string; nevertheless, the result is striking. Even a very naive algorithm, when used carefully and trained on a large set of high-dimensional data, can be surprisingly effective.</p>
+<p>이는 문자열에 있는 각 단어의 (가중치) 빈도에 대한 단순한 확률 모델보다 더 정교한 것은 아니라는 점을 기억하십시오. 그럼에도 불구하고 결과는 놀랍습니다. 매우 순진한 알고리즘이라도 신중하게 사용하고 대규모 고차원 데이터 세트에 대해 학습하면 놀라울 정도로 효과적일 수 있습니다.</p>
 </section>
 </section>
-<section id="when-to-use-naive-bayes" class="level2">
-<h2 class="anchored" data-anchor-id="when-to-use-naive-bayes">When to Use Naive Bayes</h2>
-<p>Because naive Bayes classifiers make such stringent assumptions about data, they will generally not perform as well as more complicated models. That said, they have several advantages:</p>
+<section id="naive-bayes를-사용해야-하는-경우" class="level2">
+<h2 class="anchored" data-anchor-id="naive-bayes를-사용해야-하는-경우">Naive Bayes를 사용해야 하는 경우</h2>
+<p>나이브 베이즈 분류기는 데이터에 대해 엄격한 가정을 하기 때문에 일반적으로 더 복잡한 모델만큼 성능을 ​​발휘하지 못합니다. 즉, 다음과 같은 몇 가지 장점이 있습니다.</p>
 <ul>
-<li>They are fast for both training and prediction.</li>
-<li>They provide straightforward probabilistic prediction.</li>
-<li>They are often easily interpretable.</li>
-<li>They have few (if any) tunable parameters.</li>
+<li>훈련과 예측 모두 빠릅니다.</li>
+<li>간단한 확률적 예측을 제공합니다. Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know. Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.</li>
 </ul>
-<p>These advantages mean a naive Bayes classifier is often a good choice as an initial baseline classification. If it performs suitably, then congratulations: you have a very fast, very interpretable classifier for your problem. If it does not perform well, then you can begin exploring more sophisticated models, with some baseline knowledge of how well they should perform.</p>
-<p>Naive Bayes classifiers tend to perform especially well in the following situations:</p>
+<p>이러한 장점은 Naive Bayes 분류기가 초기 기준 분류로 좋은 선택이 되는 경우가 많다는 것을 의미합니다. 적절하게 수행된다면 축하합니다. 문제에 대한 매우 빠르고 해석 가능한 분류기를 갖게 된 것입니다. 성능이 좋지 않으면 모델이 얼마나 잘 수행되어야 하는지에 대한 기본 지식을 바탕으로 보다 정교한 모델 탐색을 시작할 수 있습니다.</p>
+<p>Naive Bayes 분류기는 다음과 같은 상황에서 특히 잘 작동하는 경향이 있습니다.</p>
 <ul>
-<li>When the naive assumptions actually match the data (very rare in practice)</li>
-<li>For very well-separated categories, when model complexity is less important</li>
-<li>For very high-dimensional data, when model complexity is less important</li>
+<li>순진한 가정이 실제로 데이터와 일치하는 경우(실제로는 매우 드뭅니다)</li>
+<li>매우 잘 구분된 범주의 경우 모델 복잡성이 덜 중요한 경우</li>
+<li>매우 고차원적인 데이터의 경우 모델 복잡성이 덜 중요한 경우</li>
 </ul>
-<p>The last two points seem distinct, but they actually are related: as the dimensionality of a dataset grows, it is much less likely for any two points to be found close together (after all, they must be close in <em>every single dimension</em> to be close overall). This means that clusters in high dimensions tend to be more separated, on average, than clusters in low dimensions, assuming the new dimensions actually add information. For this reason, simplistic classifiers like the ones discussed here tend to work as well or better than more complicated classifiers as the dimensionality grows: once you have enough data, even a simple model can be very powerful.</p>
+<p>마지막 두 점은 별개로 보이지만 실제로는 서로 관련이 있습니다. 데이터 세트의 차원이 커짐에 따라 두 점이 서로 가깝게 발견될 가능성이 훨씬 줄어듭니다. 결국 두 점이 전체적으로 가까워지려면 <em>모든 단일 차원</em>에서 가까워야 합니다. 이는 새로운 차원이 실제로 정보를 추가한다고 가정할 때 높은 차원의 클러스터가 낮은 차원의 클러스터보다 평균적으로 더 분리되는 경향이 있음을 의미합니다. 이러한 이유로 여기에서 논의된 것과 같은 단순한 분류자는 차원이 커짐에 따라 더 복잡한 분류자보다 잘 작동하거나 더 잘 작동하는 경향이 있습니다. 데이터가 충분하면 간단한 모델도 매우 강력할 수 있습니다.</p>
 
 
 </section>
@@ -1251,13 +1249,13 @@ then mail to Federal Communications Commission 1919 H Street Washington DC
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../notebooks/05.04-Feature-Engineering.html" class="pagination-link" aria-label="Feature Engineering">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Feature Engineering</span></span>
+      <a href="../notebooks/05.04-Feature-Engineering.html" class="pagination-link" aria-label="기능 엔지니어링">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">기능 엔지니어링</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../notebooks/05.06-Linear-Regression.html" class="pagination-link" aria-label="In Depth: Linear Regression">
-        <span class="nav-page-text"><span class="chapter-title">In Depth: Linear Regression</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../notebooks/05.06-Linear-Regression.html" class="pagination-link" aria-label="심층 분석: 선형 회귀">
+        <span class="nav-page-text"><span class="chapter-title">심층 분석: 선형 회귀</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Computation on Arrays: Broadcasting – 파이썬 데이터 사이언스 핸드북</title>
+<title>배열 계산: 브로드캐스팅 – 파이썬 데이터 사이언스 핸드북</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -77,7 +77,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-3778d3e438078121318a23701f9f68bb.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-803ae4f7a8810f475153517dc3c4ebae.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -147,7 +147,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../notebooks/02.00-Introduction-to-NumPy.html">NumPy 소개</a></li><li class="breadcrumb-item"><a href="../notebooks/02.05-Computation-on-arrays-broadcasting.html"><span class="chapter-title">Computation on Arrays: Broadcasting</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../notebooks/02.00-Introduction-to-NumPy.html">NumPy 소개</a></li><li class="breadcrumb-item"><a href="../notebooks/02.05-Computation-on-arrays-broadcasting.html"><span class="chapter-title">배열 계산: 브로드캐스팅</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -194,7 +194,7 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/01.00-IPython-Beyond-Normal-Python.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Jupyter: 일반 Python을 넘어서</span></a>
+  <a href="../notebooks/01.00-IPython-Beyond-Normal-Python.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Jupyter: 일반 파이썬(Python)을 넘어서</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -224,17 +224,17 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/01.06-Errors-and-Debugging.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Errors and Debugging</span></a>
+  <a href="../notebooks/01.06-Errors-and-Debugging.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">오류 및 디버깅</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/01.07-Timing-and-Profiling.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Profiling and Timing Code</span></a>
+  <a href="../notebooks/01.07-Timing-and-Profiling.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">프로파일링 및 타이밍 코드</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/01.08-More-IPython-Resources.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">More IPython Resources</span></a>
+  <a href="../notebooks/01.08-More-IPython-Resources.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">추가 IPython 리소스</span></a>
   </div>
 </li>
       </ul>
@@ -250,52 +250,52 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.00-Introduction-to-NumPy.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Introduction to NumPy</span></a>
+  <a href="../notebooks/02.00-Introduction-to-NumPy.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">NumPy 소개</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.01-Understanding-Data-Types.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Understanding Data Types in Python</span></a>
+  <a href="../notebooks/02.01-Understanding-Data-Types.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">파이썬(Python)의 데이터 유형 이해</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.02-The-Basics-Of-NumPy-Arrays.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">The Basics of NumPy Arrays</span></a>
+  <a href="../notebooks/02.02-The-Basics-Of-NumPy-Arrays.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">NumPy 배열의 기본</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.03-Computation-on-arrays-ufuncs.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Computation on NumPy Arrays: Universal Functions</span></a>
+  <a href="../notebooks/02.03-Computation-on-arrays-ufuncs.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">NumPy 배열 계산: 범용 함수</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.04-Computation-on-arrays-aggregates.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Aggregations: min, max, and Everything in Between</span></a>
+  <a href="../notebooks/02.04-Computation-on-arrays-aggregates.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">집계: 최소, 최대 및 그 사이의 모든 것</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.05-Computation-on-arrays-broadcasting.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Computation on Arrays: Broadcasting</span></a>
+  <a href="../notebooks/02.05-Computation-on-arrays-broadcasting.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">배열 계산: 브로드캐스팅</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.06-Boolean-Arrays-and-Masks.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Comparisons, Masks, and Boolean Logic</span></a>
+  <a href="../notebooks/02.06-Boolean-Arrays-and-Masks.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">비교, 마스크 및 부울 논리</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.07-Fancy-Indexing.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Fancy Indexing</span></a>
+  <a href="../notebooks/02.07-Fancy-Indexing.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">멋진 인덱싱</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.08-Sorting.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Sorting Arrays</span></a>
+  <a href="../notebooks/02.08-Sorting.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">배열 정렬</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.09-Structured-Data-NumPy.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Structured Data: NumPy’s Structured Arrays</span></a>
+  <a href="../notebooks/02.09-Structured-Data-NumPy.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">구조화된 데이터: NumPy의 구조화된 배열</span></a>
   </div>
 </li>
       </ul>
@@ -311,72 +311,72 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.00-Introduction-to-Pandas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Data Manipulation with Pandas</span></a>
+  <a href="../notebooks/03.00-Introduction-to-Pandas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">팬더를 이용한 데이터 조작</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.01-Introducing-Pandas-Objects.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Introducing Pandas Objects</span></a>
+  <a href="../notebooks/03.01-Introducing-Pandas-Objects.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">판다스 객체 소개</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.02-Data-Indexing-and-Selection.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Data Indexing and Selection</span></a>
+  <a href="../notebooks/03.02-Data-Indexing-and-Selection.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">데이터 인덱싱 및 선택</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.03-Operations-in-Pandas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Operating on Data in Pandas</span></a>
+  <a href="../notebooks/03.03-Operations-in-Pandas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Pandas에서 데이터 작업</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.04-Missing-Values.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Handling Missing Data</span></a>
+  <a href="../notebooks/03.04-Missing-Values.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">누락된 데이터 처리</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.05-Hierarchical-Indexing.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Hierarchical Indexing</span></a>
+  <a href="../notebooks/03.05-Hierarchical-Indexing.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">계층적 인덱싱</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.06-Concat-And-Append.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Combining Datasets: concat and append</span></a>
+  <a href="../notebooks/03.06-Concat-And-Append.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">데이터세트 결합: 연결 및 추가</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.07-Merge-and-Join.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Combining Datasets: merge and join</span></a>
+  <a href="../notebooks/03.07-Merge-and-Join.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">데이터세트 결합: 병합 및 조인</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.08-Aggregation-and-Grouping.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Aggregation and Grouping</span></a>
+  <a href="../notebooks/03.08-Aggregation-and-Grouping.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">집계 및 그룹화</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.09-Pivot-Tables.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Pivot Tables</span></a>
+  <a href="../notebooks/03.09-Pivot-Tables.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">피벗 테이블</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.10-Working-With-Strings.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Vectorized String Operations</span></a>
+  <a href="../notebooks/03.10-Working-With-Strings.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">벡터화된 문자열 작업</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.11-Working-with-Time-Series.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Working with Time Series</span></a>
+  <a href="../notebooks/03.11-Working-with-Time-Series.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">시계열 작업</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.12-Performance-Eval-and-Query.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">High-Performance Pandas: eval and query</span></a>
+  <a href="../notebooks/03.12-Performance-Eval-and-Query.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">고성능 Pandas: 평가 및 쿼리</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.13-Further-Resources.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Further Resources</span></a>
+  <a href="../notebooks/03.13-Further-Resources.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">추가 리소스</span></a>
   </div>
 </li>
       </ul>
@@ -392,77 +392,77 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.00-Introduction-To-Matplotlib.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Visualization with Matplotlib</span></a>
+  <a href="../notebooks/04.00-Introduction-To-Matplotlib.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Matplotlib를 사용한 시각화</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.01-Simple-Line-Plots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Simple Line Plots</span></a>
+  <a href="../notebooks/04.01-Simple-Line-Plots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">간단한 선 도표</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.02-Simple-Scatter-Plots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Simple Scatter Plots</span></a>
+  <a href="../notebooks/04.02-Simple-Scatter-Plots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">단순 산점도</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.03-Errorbars.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Visualizing Uncertainties</span></a>
+  <a href="../notebooks/04.03-Errorbars.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">불확실성 시각화</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.04-Density-and-Contour-Plots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Density and Contour Plots</span></a>
+  <a href="../notebooks/04.04-Density-and-Contour-Plots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">밀도 및 등고선 플롯</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.05-Histograms-and-Binnings.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Histograms, Binnings, and Density</span></a>
+  <a href="../notebooks/04.05-Histograms-and-Binnings.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">히스토그램, 비닝 및 밀도</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.06-Customizing-Legends.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Customizing Plot Legends</span></a>
+  <a href="../notebooks/04.06-Customizing-Legends.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">플롯 범례 사용자 정의</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.07-Customizing-Colorbars.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Customizing Colorbars</span></a>
+  <a href="../notebooks/04.07-Customizing-Colorbars.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">컬러바 사용자 정의</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.08-Multiple-Subplots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Multiple Subplots</span></a>
+  <a href="../notebooks/04.08-Multiple-Subplots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">다중 서브플롯</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.09-Text-and-Annotation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Text and Annotation</span></a>
+  <a href="../notebooks/04.09-Text-and-Annotation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">텍스트 및 주석</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.10-Customizing-Ticks.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Customizing Ticks</span></a>
+  <a href="../notebooks/04.10-Customizing-Ticks.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">눈금 사용자 정의</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.11-Settings-and-Stylesheets.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Customizing Matplotlib: Configurations and Stylesheets</span></a>
+  <a href="../notebooks/04.11-Settings-and-Stylesheets.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Matplotlib 사용자 정의: 구성 및 스타일시트</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.12-Three-Dimensional-Plotting.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Three-Dimensional Plotting in Matplotlib</span></a>
+  <a href="../notebooks/04.12-Three-Dimensional-Plotting.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Matplotlib의 3차원 플로팅</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.14-Visualization-With-Seaborn.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Visualization with Seaborn</span></a>
+  <a href="../notebooks/04.14-Visualization-With-Seaborn.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Seaborn을 이용한 시각화</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.15-Further-Resources.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Further Resources</span></a>
+  <a href="../notebooks/04.15-Further-Resources.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">추가 리소스</span></a>
   </div>
 </li>
       </ul>
@@ -478,82 +478,82 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.00-Machine-Learning.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Machine Learning</span></a>
+  <a href="../notebooks/05.00-Machine-Learning.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">머신러닝</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.01-What-Is-Machine-Learning.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">What Is Machine Learning?</span></a>
+  <a href="../notebooks/05.01-What-Is-Machine-Learning.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">머신러닝이란?</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.02-Introducing-Scikit-Learn.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Introducing Scikit-Learn</span></a>
+  <a href="../notebooks/05.02-Introducing-Scikit-Learn.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Scikit-Learn 소개</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.03-Hyperparameters-and-Model-Validation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Hyperparameters and Model Validation</span></a>
+  <a href="../notebooks/05.03-Hyperparameters-and-Model-Validation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">하이퍼파라미터 및 모델 검증</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.04-Feature-Engineering.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Feature Engineering</span></a>
+  <a href="../notebooks/05.04-Feature-Engineering.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">기능 엔지니어링</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.05-Naive-Bayes.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Naive Bayes Classification</span></a>
+  <a href="../notebooks/05.05-Naive-Bayes.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 나이브 베이즈 분류</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.06-Linear-Regression.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Linear Regression</span></a>
+  <a href="../notebooks/05.06-Linear-Regression.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 선형 회귀</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.07-Support-Vector-Machines.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Support Vector Machines</span></a>
+  <a href="../notebooks/05.07-Support-Vector-Machines.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 서포트 벡터 머신</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.08-Random-Forests.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Decision Trees and Random Forests</span></a>
+  <a href="../notebooks/05.08-Random-Forests.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 의사결정 트리 및 랜덤 포레스트</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.09-Principal-Component-Analysis.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Principal Component Analysis</span></a>
+  <a href="../notebooks/05.09-Principal-Component-Analysis.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 주성분 분석</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.10-Manifold-Learning.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Manifold Learning</span></a>
+  <a href="../notebooks/05.10-Manifold-Learning.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 다양한 학습</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.11-K-Means.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: k-Means Clustering</span></a>
+  <a href="../notebooks/05.11-K-Means.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: k-평균 클러스터링</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.12-Gaussian-Mixtures.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Gaussian Mixture Models</span></a>
+  <a href="../notebooks/05.12-Gaussian-Mixtures.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 가우스 혼합 모델</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.13-Kernel-Density-Estimation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Kernel Density Estimation</span></a>
+  <a href="../notebooks/05.13-Kernel-Density-Estimation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 커널 밀도 추정</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.14-Image-Features.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Application: A Face Detection Pipeline</span></a>
+  <a href="../notebooks/05.14-Image-Features.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">응용 분야: 얼굴 감지 파이프라인</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.15-Learning-More.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Further Machine Learning Resources</span></a>
+  <a href="../notebooks/05.15-Learning-More.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">추가 머신러닝(Machine Learning) 리소스</span></a>
   </div>
 </li>
       </ul>
@@ -569,7 +569,7 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/06.00-Figure-Code.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Appendix: Figure Code</span></a>
+  <a href="../notebooks/06.00-Figure-Code.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">부록: 그림 코드</span></a>
   </div>
 </li>
       </ul>
@@ -584,17 +584,17 @@ window.Quarto = {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#introducing-broadcasting" id="toc-introducing-broadcasting" class="nav-link active" data-scroll-target="#introducing-broadcasting">Introducing Broadcasting</a></li>
-  <li><a href="#rules-of-broadcasting" id="toc-rules-of-broadcasting" class="nav-link" data-scroll-target="#rules-of-broadcasting">Rules of Broadcasting</a>
+  <li><a href="#방송을-소개합니다" id="toc-방송을-소개합니다" class="nav-link active" data-scroll-target="#방송을-소개합니다">방송을 소개합니다</a></li>
+  <li><a href="#방송-규칙" id="toc-방송-규칙" class="nav-link" data-scroll-target="#방송-규칙">방송 규칙</a>
   <ul class="collapse">
-  <li><a href="#broadcasting-example-1" id="toc-broadcasting-example-1" class="nav-link" data-scroll-target="#broadcasting-example-1">Broadcasting Example 1</a></li>
-  <li><a href="#broadcasting-example-2" id="toc-broadcasting-example-2" class="nav-link" data-scroll-target="#broadcasting-example-2">Broadcasting Example 2</a></li>
-  <li><a href="#broadcasting-example-3" id="toc-broadcasting-example-3" class="nav-link" data-scroll-target="#broadcasting-example-3">Broadcasting Example 3</a></li>
+  <li><a href="#방송예시-1" id="toc-방송예시-1" class="nav-link" data-scroll-target="#방송예시-1">방송예시 1</a></li>
+  <li><a href="#방송-예시-2" id="toc-방송-예시-2" class="nav-link" data-scroll-target="#방송-예시-2">방송 예시 2</a></li>
+  <li><a href="#방송-예시-3" id="toc-방송-예시-3" class="nav-link" data-scroll-target="#방송-예시-3">방송 예시 3</a></li>
   </ul></li>
-  <li><a href="#broadcasting-in-practice" id="toc-broadcasting-in-practice" class="nav-link" data-scroll-target="#broadcasting-in-practice">Broadcasting in Practice</a>
+  <li><a href="#방송실습" id="toc-방송실습" class="nav-link" data-scroll-target="#방송실습">방송실습</a>
   <ul class="collapse">
-  <li><a href="#centering-an-array" id="toc-centering-an-array" class="nav-link" data-scroll-target="#centering-an-array">Centering an Array</a></li>
-  <li><a href="#plotting-a-two-dimensional-function" id="toc-plotting-a-two-dimensional-function" class="nav-link" data-scroll-target="#plotting-a-two-dimensional-function">Plotting a Two-Dimensional Function</a></li>
+  <li><a href="#배열-중심-맞추기" id="toc-배열-중심-맞추기" class="nav-link" data-scroll-target="#배열-중심-맞추기">배열 중심 맞추기</a></li>
+  <li><a href="#차원-함수-그래프-그리기" id="toc-차원-함수-그래프-그리기" class="nav-link" data-scroll-target="#차원-함수-그래프-그리기">2차원 함수 그래프 그리기</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -602,9 +602,9 @@ window.Quarto = {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../notebooks/02.00-Introduction-to-NumPy.html">NumPy 소개</a></li><li class="breadcrumb-item"><a href="../notebooks/02.05-Computation-on-arrays-broadcasting.html"><span class="chapter-title">Computation on Arrays: Broadcasting</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../notebooks/02.00-Introduction-to-NumPy.html">NumPy 소개</a></li><li class="breadcrumb-item"><a href="../notebooks/02.05-Computation-on-arrays-broadcasting.html"><span class="chapter-title">배열 계산: 브로드캐스팅</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-title">Computation on Arrays: Broadcasting</span></h1>
+<h1 class="title"><span class="chapter-title">배열 계산: 브로드캐스팅</span></h1>
 </div>
 
 
@@ -621,10 +621,10 @@ window.Quarto = {
 </header>
 
 
-<p>We saw in <a href="../notebooks/02.03-Computation-on-arrays-ufuncs.html">Computation on NumPy Arrays: Universal Functions</a> how NumPy’s universal functions can be used to <em>vectorize</em> operations and thereby remove slow Python loops. This chapter discusses <em>broadcasting</em>: a set of rules by which NumPy lets you apply binary operations (e.g., addition, subtraction, multiplication, etc.) between arrays of different sizes and shapes.</p>
-<section id="introducing-broadcasting" class="level2">
-<h2 class="anchored" data-anchor-id="introducing-broadcasting">Introducing Broadcasting</h2>
-<p>Recall that for arrays of the same size, binary operations are performed on an element-by-element basis:</p>
+<p>우리는 <a href="../notebooks/02.03-Computation-on-arrays-ufuncs.html">NumPy 배열에 대한 계산: 범용 함수</a>에서 NumPy의 범용 함수를 사용하여 <em>벡터화</em> 작업을 수행하여 느린 파이썬(Python) 루프를 제거하는 방법을 확인했습니다. 이번 장에서는 <em>브로드캐스팅</em>에 대해 설명합니다. NumPy를 사용하여 다양한 크기와 모양의 배열 사이에 이진 연산(예: 덧셈, 뺄셈, 곱셈 등)을 적용할 수 있는 규칙 집합입니다.</p>
+<section id="방송을-소개합니다" class="level2">
+<h2 class="anchored" data-anchor-id="방송을-소개합니다">방송을 소개합니다</h2>
+<p>동일한 크기의 배열에 대해 이진 연산은 요소별로 수행됩니다.</p>
 <div id="cell-3" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="1">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
@@ -636,15 +636,15 @@ window.Quarto = {
 <pre><code>array([5, 6, 7])</code></pre>
 </div>
 </div>
-<p>Broadcasting allows these types of binary operations to be performed on arrays of different sizes—for example, we can just as easily add a scalar (think of it as a zero-dimensional array) to an array:</p>
+<p>브로드캐스트를 사용하면 다양한 크기의 배열에서 이러한 유형의 이진 연산을 수행할 수 있습니다. 예를 들어 스칼라(0차원 배열로 생각)를 배열에 쉽게 추가할 수 있습니다.</p>
 <div id="cell-6" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="3">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>a <span class="op">+</span> <span class="dv">5</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="3">
 <pre><code>array([5, 6, 7])</code></pre>
 </div>
 </div>
-<p>We can think of this as an operation that stretches or duplicates the value <code>5</code> into the array <code>[5, 5, 5]</code>, and adds the results.</p>
-<p>We can similarly extend this idea to arrays of higher dimension. Observe the result when we add a one-dimensional array to a two-dimensional array:</p>
+<p>이것을 <code>5</code> 값을 <code>[5, 5, 5]</code> 배열로 늘리거나 복제하고 결과를 추가하는 작업으로 생각할 수 있습니다.</p>
+<p>마찬가지로 이 아이디어를 더 높은 차원의 배열로 확장할 수 있습니다. 2차원 배열에 1차원 배열을 추가할 때의 결과를 살펴보세요.</p>
 <div id="cell-8" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="4">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>M <span class="op">=</span> np.ones((<span class="dv">3</span>, <span class="dv">3</span>))</span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>M</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -662,8 +662,8 @@ window.Quarto = {
        [1., 2., 3.]])</code></pre>
 </div>
 </div>
-<p>Here the one-dimensional array <code>a</code> is stretched, or broadcasted, across the second dimension in order to match the shape of <code>M</code>.</p>
-<p>While these examples are relatively easy to understand, more complicated cases can involve broadcasting of both arrays. Consider the following example:</p>
+<p>여기서 1차원 배열 ’a’는 ’M’의 모양과 일치하도록 두 번째 차원에 걸쳐 늘어나거나 브로드캐스팅됩니다.</p>
+<p>이러한 예는 상대적으로 이해하기 쉽지만 더 복잡한 경우에는 두 어레이의 브로드캐스팅이 포함될 수 있습니다. 다음 예를 고려하십시오.</p>
 <div id="cell-11" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="6">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>a <span class="op">=</span> np.arange(<span class="dv">3</span>)</span>
 <span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>b <span class="op">=</span> np.arange(<span class="dv">3</span>)[:, np.newaxis]</span>
@@ -685,47 +685,47 @@ window.Quarto = {
        [2, 3, 4]])</code></pre>
 </div>
 </div>
-<p>Just as before we stretched or broadcasted one value to match the shape of the other, here we’ve stretched <em>both</em> <code>a</code> and <code>b</code> to match a common shape, and the result is a two-dimensional array! The geometry of these examples is visualized in the following figure. (Code to produce this plot can be found in the online <a href="https://github.com/jakevdp/PythonDataScienceHandbook/blob/master/notebooks/06.00-Figure-Code.ipynb#Broadcasting">appendix</a>, and is adapted from a source published in the <a href="http://astroml.org">astroML</a> documentation. Used by permission.)</p>
+<p>이전에 다른 값의 모양과 일치하도록 하나의 값을 늘리거나 브로드캐스팅한 것처럼 여기서는 <em>둘 다</em> <code>a</code>와 <code>b</code>를 늘려 공통 모양과 일치시켰으며 결과는 2차원 배열입니다! 이러한 예의 기하학적 구조는 다음 그림에 시각화되어 있습니다. (이 플롯을 생성하는 코드는 온라인 <a href="https://github.com/jakevdp/파이썬(Python)DataScienceHandbook/blob/master/notebooks/06.00-Figure-Code.ipynb#Broadcasting">부록</a>에서 찾을 수 있으며 <a href="http://astroml.org">astroML</a> 문서에 게시된 소스에서 수정되었습니다. 허가를 받아 사용됩니다.)</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/02.05-broadcasting.png" class="img-fluid figure-img"></p>
 <figcaption>Broadcasting Visual</figcaption>
 </figure>
 </div>
-<p>The light boxes represent the broadcasted values. This way of thinking about broadcasting may raise questions about its efficiency in terms of memory use, but worry not: NumPy broadcasting does not actually copy the broadcasted values in memory. Still, this can be a useful mental model as we think about broadcasting.</p>
+<p>라이트 박스는 브로드캐스트된 값을 나타냅니다. 방송에 대한 이러한 사고 방식은 메모리 사용 측면에서 효율성에 대한 의문을 제기할 수 있지만 걱정하지 마십시오. NumPy 방송은 실제로 방송된 값을 메모리에 복사하지 않습니다. 그럼에도 불구하고 이것은 우리가 방송에 대해 생각할 때 유용한 정신 모델이 될 수 있습니다.</p>
 </section>
-<section id="rules-of-broadcasting" class="level2">
-<h2 class="anchored" data-anchor-id="rules-of-broadcasting">Rules of Broadcasting</h2>
-<p>Broadcasting in NumPy follows a strict set of rules to determine the interaction between the two arrays:</p>
+<section id="방송-규칙" class="level2">
+<h2 class="anchored" data-anchor-id="방송-규칙">방송 규칙</h2>
+<p>NumPy의 브로드캐스팅은 두 배열 간의 상호 작용을 결정하기 위해 엄격한 규칙 세트를 따릅니다.</p>
 <ul>
-<li>Rule 1: If the two arrays differ in their number of dimensions, the shape of the one with fewer dimensions is <em>padded</em> with ones on its leading (left) side.</li>
-<li>Rule 2: If the shape of the two arrays does not match in any dimension, the array with shape equal to 1 in that dimension is stretched to match the other shape.</li>
-<li>Rule 3: If in any dimension the sizes disagree and neither is equal to 1, an error is raised.</li>
+<li>규칙 1: 두 배열의 차원 수가 다른 경우, 차원 수가 더 적은 배열의 모양은 앞쪽(왼쪽)에 배열이 <em>채워집니다</em>.</li>
+<li>규칙 2: 두 배열의 모양이 어떤 차원에서도 일치하지 않으면 해당 차원에서 1과 같은 모양의 배열이 다른 모양과 일치하도록 늘어납니다.</li>
+<li>규칙 3: 어떤 차원에서든 크기가 일치하지 않고 둘 다 1이 아닌 경우 오류가 발생합니다.</li>
 </ul>
-<p>To make these rules clear, let’s consider a few examples in detail.</p>
-<section id="broadcasting-example-1" class="level3">
-<h3 class="anchored" data-anchor-id="broadcasting-example-1">Broadcasting Example 1</h3>
-<p>Suppose we want to add a two-dimensional array to a one-dimensional array:</p>
+<p>이러한 규칙을 명확하게 하기 위해 몇 가지 예를 자세히 살펴보겠습니다.</p>
+<section id="방송예시-1" class="level3">
+<h3 class="anchored" data-anchor-id="방송예시-1">방송예시 1</h3>
+<p>1차원 배열에 2차원 배열을 추가한다고 가정해 보겠습니다.</p>
 <div id="cell-18" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="8">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>M <span class="op">=</span> np.ones((<span class="dv">2</span>, <span class="dv">3</span>))</span>
 <span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>a <span class="op">=</span> np.arange(<span class="dv">3</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<p>Let’s consider an operation on these two arrays, which have the following shapes:</p>
+<p>다음과 같은 모양을 갖는 두 배열에 대한 작업을 고려해 보겠습니다.</p>
 <ul>
-<li><code>M.shape</code> is <code>(2, 3)</code></li>
-<li><code>a.shape</code> is <code>(3,)</code></li>
+<li><code>M.shape</code>는 <code>(2, 3)</code>입니다.</li>
+<li><code>a.shape</code>은 <code>(3,)</code>입니다.</li>
 </ul>
-<p>We see by rule 1 that the array <code>a</code> has fewer dimensions, so we pad it on the left with ones:</p>
+<p>규칙 1을 통해 배열 ’a’의 차원이 더 적다는 것을 알 수 있으므로 왼쪽을 1로 채웁니다.</p>
 <ul>
-<li><code>M.shape</code> remains <code>(2, 3)</code></li>
-<li><code>a.shape</code> becomes <code>(1, 3)</code></li>
+<li><code>M.shape</code>는 <code>(2, 3)</code>로 유지됩니다.</li>
+<li><code>a.shape</code>는 <code>(1, 3)</code>이 됩니다.</li>
 </ul>
-<p>By rule 2, we now see that the first dimension disagrees, so we stretch this dimension to match:</p>
+<p>규칙 2에 따르면 이제 첫 번째 차원이 일치하지 않는다는 것을 알 수 있으므로 일치하도록 이 차원을 늘립니다.</p>
 <ul>
-<li><code>M.shape</code> remains <code>(2, 3)</code></li>
-<li><code>a.shape</code> becomes <code>(2, 3)</code></li>
+<li><code>M.shape</code>는 <code>(2, 3)</code>로 유지됩니다.</li>
+<li><code>a.shape</code>는 <code>(2, 3)</code>이 됩니다.</li>
 </ul>
-<p>The shapes now match, and we see that the final shape will be <code>(2, 3)</code>:</p>
+<p>이제 모양이 일치하며 최종 모양은 ’(2, 3)’이 됩니다.</p>
 <div id="cell-20" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="9">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>M <span class="op">+</span> a</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="9">
@@ -734,29 +734,29 @@ window.Quarto = {
 </div>
 </div>
 </section>
-<section id="broadcasting-example-2" class="level3">
-<h3 class="anchored" data-anchor-id="broadcasting-example-2">Broadcasting Example 2</h3>
-<p>Now let’s take a look at an example where both arrays need to be broadcast:</p>
+<section id="방송-예시-2" class="level3">
+<h3 class="anchored" data-anchor-id="방송-예시-2">방송 예시 2</h3>
+<p>이제 두 배열을 모두 브로드캐스트해야 하는 예를 살펴보겠습니다.</p>
 <div id="cell-22" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="10">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>a <span class="op">=</span> np.arange(<span class="dv">3</span>).reshape((<span class="dv">3</span>, <span class="dv">1</span>))</span>
 <span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>b <span class="op">=</span> np.arange(<span class="dv">3</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<p>Again, we’ll start by determining the shapes of the arrays:</p>
+<p>다시 한번 배열의 모양을 결정하는 것부터 시작하겠습니다.</p>
 <ul>
-<li><code>a.shape</code> is <code>(3, 1)</code></li>
-<li><code>b.shape</code> is <code>(3,)</code></li>
+<li><code>a.shape</code>은 <code>(3, 1)</code>입니다.</li>
+<li><code>b.shape</code>은 <code>(3,)</code>입니다.</li>
 </ul>
-<p>Rule 1 says we must pad the shape of <code>b</code> with ones:</p>
+<p>규칙 1은 <code>b</code>의 모양을 1로 채워야 한다고 말합니다.</p>
 <ul>
-<li><code>a.shape</code> remains <code>(3, 1)</code></li>
-<li><code>b.shape</code> becomes <code>(1, 3)</code></li>
+<li><code>a.shape</code>는 <code>(3, 1)</code>로 유지됩니다.</li>
+<li><code>b.shape</code>는 <code>(1, 3)</code>이 됩니다.</li>
 </ul>
-<p>And rule 2 tells us that we must upgrade each of these <code>1</code>s to match the corresponding size of the other array:</p>
+<p>그리고 규칙 2는 다른 배열의 해당 크기와 일치하도록 이러한 <code>1</code> 각각을 업그레이드해야 함을 알려줍니다.</p>
 <ul>
-<li><code>a.shape</code> becomes <code>(3, 3)</code></li>
-<li><code>b.shape</code> becomes <code>(3, 3)</code></li>
+<li><code>a.shape</code>는 <code>(3, 3)</code>이 됩니다.</li>
+<li><code>b.shape</code>는 <code>(3, 3)</code>이 됩니다.</li>
 </ul>
-<p>Because the results match, these shapes are compatible. We can see this here:</p>
+<p>결과가 일치하므로 이러한 모양은 호환됩니다. 우리는 이것을 여기서 볼 수 있습니다:</p>
 <div id="cell-24" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="11">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>a <span class="op">+</span> b</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="11">
@@ -766,29 +766,29 @@ window.Quarto = {
 </div>
 </div>
 </section>
-<section id="broadcasting-example-3" class="level3">
-<h3 class="anchored" data-anchor-id="broadcasting-example-3">Broadcasting Example 3</h3>
-<p>Next, let’s take a look at an example in which the two arrays are not compatible:</p>
+<section id="방송-예시-3" class="level3">
+<h3 class="anchored" data-anchor-id="방송-예시-3">방송 예시 3</h3>
+<p>다음으로 두 어레이가 호환되지 않는 예를 살펴보겠습니다.</p>
 <div id="cell-26" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="12">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb20"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>M <span class="op">=</span> np.ones((<span class="dv">3</span>, <span class="dv">2</span>))</span>
 <span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>a <span class="op">=</span> np.arange(<span class="dv">3</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<p>This is just a slightly different situation than in the first example: the matrix <code>M</code> is transposed. How does this affect the calculation? The shapes of the arrays are as follows:</p>
+<p>이는 첫 번째 예와는 약간 다른 상황입니다. 행렬 ’M’이 전치됩니다. 이것이 계산에 어떤 영향을 미치나요? 배열의 모양은 다음과 같습니다.</p>
 <ul>
-<li><code>M.shape</code> is <code>(3, 2)</code></li>
-<li><code>a.shape</code> is <code>(3,)</code></li>
+<li><code>M.shape</code>는 <code>(3, 2)</code>입니다.</li>
+<li><code>a.shape</code>은 <code>(3,)</code>입니다.</li>
 </ul>
-<p>Again, rule 1 tells us that we must pad the shape of <code>a</code> with ones:</p>
+<p>다시, 규칙 1은 <code>a</code>의 모양을 1로 채워야 한다고 말합니다.</p>
 <ul>
-<li><code>M.shape</code> remains <code>(3, 2)</code></li>
-<li><code>a.shape</code> becomes <code>(1, 3)</code></li>
+<li><code>M.shape</code>는 <code>(3, 2)</code>로 유지됩니다.</li>
+<li><code>a.shape</code>는 <code>(1, 3)</code>이 됩니다.</li>
 </ul>
-<p>By rule 2, the first dimension of <code>a</code> is then stretched to match that of <code>M</code>:</p>
+<p>규칙 2에 따라 ’a’의 첫 번째 차원은 ’M’의 차원과 일치하도록 확장됩니다.</p>
 <ul>
-<li><code>M.shape</code> remains <code>(3, 2)</code></li>
-<li><code>a.shape</code> becomes <code>(3, 3)</code></li>
+<li><code>M.shape</code>는 <code>(3, 2)</code>로 유지됩니다.</li>
+<li><code>a.shape</code>는 <code>(3, 3)</code>이 됩니다.</li>
 </ul>
-<p>Now we hit rule 3—the final shapes do not match, so these two arrays are incompatible, as we can observe by attempting this operation:</p>
+<p>이제 규칙 3에 도달했습니다. 최종 모양이 일치하지 않으므로 이 두 배열은 호환되지 않습니다. 이 작업을 시도하면 확인할 수 있습니다.</p>
 <div id="cell-28" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="13">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>M <span class="op">+</span> a</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-error">
@@ -802,7 +802,7 @@ window.Quarto = {
 </div>
 </div>
 </div>
-<p>Note the potential confusion here: you could imagine making <code>a</code> and <code>M</code> compatible by, say, padding <code>a</code>’s shape with ones on the right rather than the left. But this is not how the broadcasting rules work! That sort of flexibility might be useful in some cases, but it would lead to potential areas of ambiguity. If right-side padding is what you’d like, you can do this explicitly by reshaping the array (we’ll use the <code>np.newaxis</code> keyword introduced in <a href="../notebooks/02.02-The-Basics-Of-NumPy-Arrays.html">The Basics of NumPy Arrays</a> for this):</p>
+<p>여기에서 잠재적인 혼란을 주목하십시오: 예를 들어 <code>a</code>의 모양을 왼쪽이 아닌 오른쪽에 패딩하여 <code>a</code>와 <code>M</code>을 호환 가능하게 만드는 것을 상상할 수 있습니다. 하지만 이것은 방송 규칙이 작동하는 방식이 아닙니다! 이러한 종류의 유연성은 어떤 경우에는 유용할 수 있지만 잠재적으로 모호한 영역으로 이어질 수 있습니다. 오른쪽 패딩을 원하는 경우 배열을 재구성하여 이를 명시적으로 수행할 수 있습니다(이를 위해 <a href="../notebooks/02.02-The-Basics-Of-NumPy-Arrays.html">NumPy 배열의 기본</a>에 소개된 <code>np.newaxis</code> 키워드를 사용합니다):</p>
 <div id="cell-30" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="14">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb22"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>a[:, np.newaxis].shape</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="14">
@@ -817,7 +817,7 @@ window.Quarto = {
        [3., 3.]])</code></pre>
 </div>
 </div>
-<p>Also notice that while we’ve been focusing on the <code>+</code> operator here, these broadcasting rules apply to <em>any</em> binary ufunc. For example, here is the <code>logaddexp(a, b)</code> function, which computes <code>log(exp(a) + exp(b))</code> with more precision than the naive approach:</p>
+<p>또한 여기서는 ‘+’ 연산자에 중점을 두었지만 이러한 브로드캐스팅 규칙은 <em>모든</em> 바이너리 ufunc에 적용됩니다. 예를 들어 다음은 순진한 접근 방식보다 더 정확하게 <code>log(exp(a) + exp(b))</code>를 계산하는 <code>logaddexp(a, b)</code> 함수입니다.</p>
 <div id="cell-33" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="16">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb26"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>np.logaddexp(M, a[:, np.newaxis])</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="16">
@@ -826,20 +826,20 @@ window.Quarto = {
        [2.31326169, 2.31326169]])</code></pre>
 </div>
 </div>
-<p>For more information on the many available universal functions, refer to <a href="../notebooks/02.03-Computation-on-arrays-ufuncs.html">Computation on NumPy Arrays: Universal Functions</a>.</p>
+<p>사용 가능한 다양한 범용 함수에 대한 자세한 내용은 <a href="../notebooks/02.03-Computation-on-arrays-ufuncs.html">NumPy 배열 계산: 범용 함수</a>를 참조하세요.</p>
 </section>
 </section>
-<section id="broadcasting-in-practice" class="level2">
-<h2 class="anchored" data-anchor-id="broadcasting-in-practice">Broadcasting in Practice</h2>
-<p>Broadcasting operations form the core of many examples you’ll see throughout this book. We’ll now take a look at some instances of where they can be useful.</p>
-<section id="centering-an-array" class="level3">
-<h3 class="anchored" data-anchor-id="centering-an-array">Centering an Array</h3>
-<p>In <a href="../notebooks/02.03-Computation-on-arrays-ufuncs.html">Computation on NumPy Arrays: Universal Functions</a>, we saw that ufuncs allow a NumPy user to remove the need to explicitly write slow Python loops. Broadcasting extends this ability. One commonly seen example in data science is subtracting the row-wise mean from an array of data. Imagine we have an array of 10 observations, each of which consists of 3 values. Using the standard convention (see <a href="../notebooks/05.02-Introducing-Scikit-Learn.html#Data-Representation-in-Scikit-Learn">Data Representation in Scikit-Learn</a>), we’ll store this in a <span class="math inline">\(10 \times 3\)</span> array:</p>
+<section id="방송실습" class="level2">
+<h2 class="anchored" data-anchor-id="방송실습">방송실습</h2>
+<p>방송 작업은 이 책 전반에 걸쳐 보게 될 많은 예제의 핵심을 구성합니다. 이제 이것이 유용할 수 있는 몇 가지 사례를 살펴보겠습니다.</p>
+<section id="배열-중심-맞추기" class="level3">
+<h3 class="anchored" data-anchor-id="배열-중심-맞추기">배열 중심 맞추기</h3>
+<p><a href="../notebooks/02.03-Computation-on-arrays-ufuncs.html">NumPy 배열에 대한 계산: 범용 함수</a>에서 우리는 ufuncs를 사용하면 NumPy 사용자가 느린 파이썬(Python) 루프를 명시적으로 작성할 필요가 없다는 것을 확인했습니다. 방송은 이 능력을 확장합니다. 데이터 과학(Data Science)에서 흔히 볼 수 있는 예 중 하나는 데이터 배열에서 행별 평균을 빼는 것입니다. 각각 3개의 값으로 구성된 10개의 관측값 배열이 있다고 가정해 보겠습니다. 표준 규칙(<a href="../notebooks/05.02-Introducing-Scikit-Learn.html#Data-Representation-in-Scikit-Learn">Scikit-Learn의 데이터 표현</a> 참조)을 사용하여 이를 <span class="math inline">\(10 \times 3\)</span> 배열에 저장합니다.</p>
 <div id="cell-39" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="17">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb28"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a>rng <span class="op">=</span> np.random.default_rng(seed<span class="op">=</span><span class="dv">1701</span>)</span>
 <span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a>X <span class="op">=</span> rng.random((<span class="dv">10</span>, <span class="dv">3</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<p>We can compute the mean of each column using the <code>mean</code> aggregate across the first dimension:</p>
+<p>첫 번째 차원에서 ‘평균’ 집계를 사용하여 각 열의 평균을 계산할 수 있습니다.</p>
 <div id="cell-41" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="18">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb29"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a>Xmean <span class="op">=</span> X.mean(<span class="dv">0</span>)</span>
 <span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a>Xmean</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -847,22 +847,22 @@ window.Quarto = {
 <pre><code>array([0.38503638, 0.36991443, 0.63896043])</code></pre>
 </div>
 </div>
-<p>And now we can center the <code>X</code> array by subtracting the mean (this is a broadcasting operation):</p>
+<p>이제 평균을 빼서 <code>X</code> 배열을 중앙에 배치할 수 있습니다(이것은 브로드캐스트 작업입니다).</p>
 <div id="cell-43" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="19">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb31"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a>X_centered <span class="op">=</span> X <span class="op">-</span> Xmean</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<p>To double-check that we’ve done this correctly, we can check that the centered array has a mean near zero:</p>
+<p>이 작업을 올바르게 수행했는지 다시 확인하기 위해 중앙 배열의 평균이 0에 가까운지 확인할 수 있습니다.</p>
 <div id="cell-45" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="20">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb32"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a>X_centered.mean(<span class="dv">0</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="20">
 <pre><code>array([ 4.99600361e-17, -4.44089210e-17,  0.00000000e+00])</code></pre>
 </div>
 </div>
-<p>To within machine precision, the mean is now zero.</p>
+<p>기계 정밀도 내에서 평균은 이제 0입니다.</p>
 </section>
-<section id="plotting-a-two-dimensional-function" class="level3">
-<h3 class="anchored" data-anchor-id="plotting-a-two-dimensional-function">Plotting a Two-Dimensional Function</h3>
-<p>One place that broadcasting often comes in handy is in displaying images based on two-dimensional functions. If we want to define a function <span class="math inline">\(z = f(x, y)\)</span>, broadcasting can be used to compute the function across the grid:</p>
+<section id="차원-함수-그래프-그리기" class="level3">
+<h3 class="anchored" data-anchor-id="차원-함수-그래프-그리기">2차원 함수 그래프 그리기</h3>
+<p>방송이 종종 유용하게 활용되는 곳 중 하나는 2차원 기능을 기반으로 이미지를 표시하는 것입니다. <span class="math inline">\(z = f(x, y)\)</span> 함수를 정의하려면 브로드캐스팅을 사용하여 그리드 전체에 걸쳐 함수를 계산할 수 있습니다.</p>
 <div id="cell-49" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="21">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb34"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a><span class="co"># x and y have 50 steps from 0 to 5</span></span>
 <span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> np.linspace(<span class="dv">0</span>, <span class="dv">5</span>, <span class="dv">50</span>)</span>
@@ -870,7 +870,7 @@ window.Quarto = {
 <span id="cb34-4"><a href="#cb34-4" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb34-5"><a href="#cb34-5" aria-hidden="true" tabindex="-1"></a>z <span class="op">=</span> np.sin(x) <span class="op">**</span> <span class="dv">10</span> <span class="op">+</span> np.cos(<span class="dv">10</span> <span class="op">+</span> y <span class="op">*</span> x) <span class="op">*</span> np.cos(x)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<p>We’ll use Matplotlib to plot this two-dimensional array, shown in the following figure (these tools will be discussed in full in <a href="../notebooks/04.04-Density-and-Contour-Plots.html">Density and Contour Plots</a>):</p>
+<p>다음 그림과 같이 Matplotlib를 사용하여 이 2차원 배열을 플롯합니다(이러한 도구는 <a href="../notebooks/04.04-Density-and-Contour-Plots.html">밀도 및 등고선 플롯</a>에서 자세히 설명합니다).</p>
 <div id="cell-51" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="22">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb35"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a><span class="op">%</span>matplotlib inline</span>
 <span id="cb35-2"><a href="#cb35-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -886,7 +886,7 @@ window.Quarto = {
 </div>
 </div>
 </div>
-<p>The result is a compelling visualization of the two-dimensional function.</p>
+<p>그 결과 2차원 함수가 눈에 띄게 시각화되었습니다.</p>
 
 
 </section>
@@ -1295,13 +1295,13 @@ window.Quarto = {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../notebooks/02.04-Computation-on-arrays-aggregates.html" class="pagination-link" aria-label="Aggregations: min, max, and Everything in Between">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Aggregations: min, max, and Everything in Between</span></span>
+      <a href="../notebooks/02.04-Computation-on-arrays-aggregates.html" class="pagination-link" aria-label="집계: 최소, 최대 및 그 사이의 모든 것">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">집계: 최소, 최대 및 그 사이의 모든 것</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../notebooks/02.06-Boolean-Arrays-and-Masks.html" class="pagination-link" aria-label="Comparisons, Masks, and Boolean Logic">
-        <span class="nav-page-text"><span class="chapter-title">Comparisons, Masks, and Boolean Logic</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../notebooks/02.06-Boolean-Arrays-and-Masks.html" class="pagination-link" aria-label="비교, 마스크 및 부울 논리">
+        <span class="nav-page-text"><span class="chapter-title">비교, 마스크 및 부울 논리</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

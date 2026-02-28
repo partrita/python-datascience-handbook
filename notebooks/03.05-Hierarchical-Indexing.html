@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Hierarchical Indexing – 파이썬 데이터 사이언스 핸드북</title>
+<title>계층적 인덱싱 – 파이썬 데이터 사이언스 핸드북</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -77,7 +77,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-3778d3e438078121318a23701f9f68bb.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-803ae4f7a8810f475153517dc3c4ebae.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -121,7 +121,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../notebooks/03.00-Introduction-to-Pandas.html">Pandas를 이용한 데이터 조작</a></li><li class="breadcrumb-item"><a href="../notebooks/03.05-Hierarchical-Indexing.html"><span class="chapter-title">Hierarchical Indexing</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../notebooks/03.00-Introduction-to-Pandas.html">Pandas를 이용한 데이터 조작</a></li><li class="breadcrumb-item"><a href="../notebooks/03.05-Hierarchical-Indexing.html"><span class="chapter-title">계층적 인덱싱</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -168,7 +168,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/01.00-IPython-Beyond-Normal-Python.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Jupyter: 일반 Python을 넘어서</span></a>
+  <a href="../notebooks/01.00-IPython-Beyond-Normal-Python.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Jupyter: 일반 파이썬(Python)을 넘어서</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -198,17 +198,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/01.06-Errors-and-Debugging.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Errors and Debugging</span></a>
+  <a href="../notebooks/01.06-Errors-and-Debugging.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">오류 및 디버깅</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/01.07-Timing-and-Profiling.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Profiling and Timing Code</span></a>
+  <a href="../notebooks/01.07-Timing-and-Profiling.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">프로파일링 및 타이밍 코드</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/01.08-More-IPython-Resources.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">More IPython Resources</span></a>
+  <a href="../notebooks/01.08-More-IPython-Resources.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">추가 IPython 리소스</span></a>
   </div>
 </li>
       </ul>
@@ -224,52 +224,52 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.00-Introduction-to-NumPy.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Introduction to NumPy</span></a>
+  <a href="../notebooks/02.00-Introduction-to-NumPy.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">NumPy 소개</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.01-Understanding-Data-Types.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Understanding Data Types in Python</span></a>
+  <a href="../notebooks/02.01-Understanding-Data-Types.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">파이썬(Python)의 데이터 유형 이해</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.02-The-Basics-Of-NumPy-Arrays.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">The Basics of NumPy Arrays</span></a>
+  <a href="../notebooks/02.02-The-Basics-Of-NumPy-Arrays.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">NumPy 배열의 기본</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.03-Computation-on-arrays-ufuncs.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Computation on NumPy Arrays: Universal Functions</span></a>
+  <a href="../notebooks/02.03-Computation-on-arrays-ufuncs.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">NumPy 배열 계산: 범용 함수</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.04-Computation-on-arrays-aggregates.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Aggregations: min, max, and Everything in Between</span></a>
+  <a href="../notebooks/02.04-Computation-on-arrays-aggregates.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">집계: 최소, 최대 및 그 사이의 모든 것</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.05-Computation-on-arrays-broadcasting.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Computation on Arrays: Broadcasting</span></a>
+  <a href="../notebooks/02.05-Computation-on-arrays-broadcasting.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">배열 계산: 브로드캐스팅</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.06-Boolean-Arrays-and-Masks.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Comparisons, Masks, and Boolean Logic</span></a>
+  <a href="../notebooks/02.06-Boolean-Arrays-and-Masks.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">비교, 마스크 및 부울 논리</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.07-Fancy-Indexing.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Fancy Indexing</span></a>
+  <a href="../notebooks/02.07-Fancy-Indexing.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">멋진 인덱싱</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.08-Sorting.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Sorting Arrays</span></a>
+  <a href="../notebooks/02.08-Sorting.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">배열 정렬</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.09-Structured-Data-NumPy.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Structured Data: NumPy’s Structured Arrays</span></a>
+  <a href="../notebooks/02.09-Structured-Data-NumPy.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">구조화된 데이터: NumPy의 구조화된 배열</span></a>
   </div>
 </li>
       </ul>
@@ -285,72 +285,72 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.00-Introduction-to-Pandas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Data Manipulation with Pandas</span></a>
+  <a href="../notebooks/03.00-Introduction-to-Pandas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">팬더를 이용한 데이터 조작</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.01-Introducing-Pandas-Objects.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Introducing Pandas Objects</span></a>
+  <a href="../notebooks/03.01-Introducing-Pandas-Objects.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">판다스 객체 소개</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.02-Data-Indexing-and-Selection.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Data Indexing and Selection</span></a>
+  <a href="../notebooks/03.02-Data-Indexing-and-Selection.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">데이터 인덱싱 및 선택</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.03-Operations-in-Pandas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Operating on Data in Pandas</span></a>
+  <a href="../notebooks/03.03-Operations-in-Pandas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Pandas에서 데이터 작업</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.04-Missing-Values.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Handling Missing Data</span></a>
+  <a href="../notebooks/03.04-Missing-Values.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">누락된 데이터 처리</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.05-Hierarchical-Indexing.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Hierarchical Indexing</span></a>
+  <a href="../notebooks/03.05-Hierarchical-Indexing.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">계층적 인덱싱</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.06-Concat-And-Append.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Combining Datasets: concat and append</span></a>
+  <a href="../notebooks/03.06-Concat-And-Append.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">데이터세트 결합: 연결 및 추가</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.07-Merge-and-Join.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Combining Datasets: merge and join</span></a>
+  <a href="../notebooks/03.07-Merge-and-Join.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">데이터세트 결합: 병합 및 조인</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.08-Aggregation-and-Grouping.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Aggregation and Grouping</span></a>
+  <a href="../notebooks/03.08-Aggregation-and-Grouping.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">집계 및 그룹화</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.09-Pivot-Tables.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Pivot Tables</span></a>
+  <a href="../notebooks/03.09-Pivot-Tables.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">피벗 테이블</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.10-Working-With-Strings.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Vectorized String Operations</span></a>
+  <a href="../notebooks/03.10-Working-With-Strings.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">벡터화된 문자열 작업</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.11-Working-with-Time-Series.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Working with Time Series</span></a>
+  <a href="../notebooks/03.11-Working-with-Time-Series.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">시계열 작업</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.12-Performance-Eval-and-Query.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">High-Performance Pandas: eval and query</span></a>
+  <a href="../notebooks/03.12-Performance-Eval-and-Query.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">고성능 Pandas: 평가 및 쿼리</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.13-Further-Resources.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Further Resources</span></a>
+  <a href="../notebooks/03.13-Further-Resources.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">추가 리소스</span></a>
   </div>
 </li>
       </ul>
@@ -366,77 +366,77 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.00-Introduction-To-Matplotlib.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Visualization with Matplotlib</span></a>
+  <a href="../notebooks/04.00-Introduction-To-Matplotlib.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Matplotlib를 사용한 시각화</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.01-Simple-Line-Plots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Simple Line Plots</span></a>
+  <a href="../notebooks/04.01-Simple-Line-Plots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">간단한 선 도표</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.02-Simple-Scatter-Plots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Simple Scatter Plots</span></a>
+  <a href="../notebooks/04.02-Simple-Scatter-Plots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">단순 산점도</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.03-Errorbars.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Visualizing Uncertainties</span></a>
+  <a href="../notebooks/04.03-Errorbars.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">불확실성 시각화</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.04-Density-and-Contour-Plots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Density and Contour Plots</span></a>
+  <a href="../notebooks/04.04-Density-and-Contour-Plots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">밀도 및 등고선 플롯</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.05-Histograms-and-Binnings.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Histograms, Binnings, and Density</span></a>
+  <a href="../notebooks/04.05-Histograms-and-Binnings.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">히스토그램, 비닝 및 밀도</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.06-Customizing-Legends.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Customizing Plot Legends</span></a>
+  <a href="../notebooks/04.06-Customizing-Legends.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">플롯 범례 사용자 정의</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.07-Customizing-Colorbars.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Customizing Colorbars</span></a>
+  <a href="../notebooks/04.07-Customizing-Colorbars.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">컬러바 사용자 정의</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.08-Multiple-Subplots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Multiple Subplots</span></a>
+  <a href="../notebooks/04.08-Multiple-Subplots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">다중 서브플롯</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.09-Text-and-Annotation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Text and Annotation</span></a>
+  <a href="../notebooks/04.09-Text-and-Annotation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">텍스트 및 주석</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.10-Customizing-Ticks.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Customizing Ticks</span></a>
+  <a href="../notebooks/04.10-Customizing-Ticks.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">눈금 사용자 정의</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.11-Settings-and-Stylesheets.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Customizing Matplotlib: Configurations and Stylesheets</span></a>
+  <a href="../notebooks/04.11-Settings-and-Stylesheets.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Matplotlib 사용자 정의: 구성 및 스타일시트</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.12-Three-Dimensional-Plotting.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Three-Dimensional Plotting in Matplotlib</span></a>
+  <a href="../notebooks/04.12-Three-Dimensional-Plotting.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Matplotlib의 3차원 플로팅</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.14-Visualization-With-Seaborn.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Visualization with Seaborn</span></a>
+  <a href="../notebooks/04.14-Visualization-With-Seaborn.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Seaborn을 이용한 시각화</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.15-Further-Resources.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Further Resources</span></a>
+  <a href="../notebooks/04.15-Further-Resources.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">추가 리소스</span></a>
   </div>
 </li>
       </ul>
@@ -452,82 +452,82 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.00-Machine-Learning.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Machine Learning</span></a>
+  <a href="../notebooks/05.00-Machine-Learning.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">머신러닝</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.01-What-Is-Machine-Learning.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">What Is Machine Learning?</span></a>
+  <a href="../notebooks/05.01-What-Is-Machine-Learning.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">머신러닝이란?</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.02-Introducing-Scikit-Learn.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Introducing Scikit-Learn</span></a>
+  <a href="../notebooks/05.02-Introducing-Scikit-Learn.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Scikit-Learn 소개</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.03-Hyperparameters-and-Model-Validation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Hyperparameters and Model Validation</span></a>
+  <a href="../notebooks/05.03-Hyperparameters-and-Model-Validation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">하이퍼파라미터 및 모델 검증</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.04-Feature-Engineering.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Feature Engineering</span></a>
+  <a href="../notebooks/05.04-Feature-Engineering.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">기능 엔지니어링</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.05-Naive-Bayes.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Naive Bayes Classification</span></a>
+  <a href="../notebooks/05.05-Naive-Bayes.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 나이브 베이즈 분류</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.06-Linear-Regression.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Linear Regression</span></a>
+  <a href="../notebooks/05.06-Linear-Regression.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 선형 회귀</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.07-Support-Vector-Machines.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Support Vector Machines</span></a>
+  <a href="../notebooks/05.07-Support-Vector-Machines.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 서포트 벡터 머신</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.08-Random-Forests.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Decision Trees and Random Forests</span></a>
+  <a href="../notebooks/05.08-Random-Forests.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 의사결정 트리 및 랜덤 포레스트</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.09-Principal-Component-Analysis.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Principal Component Analysis</span></a>
+  <a href="../notebooks/05.09-Principal-Component-Analysis.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 주성분 분석</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.10-Manifold-Learning.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Manifold Learning</span></a>
+  <a href="../notebooks/05.10-Manifold-Learning.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 다양한 학습</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.11-K-Means.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: k-Means Clustering</span></a>
+  <a href="../notebooks/05.11-K-Means.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: k-평균 클러스터링</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.12-Gaussian-Mixtures.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Gaussian Mixture Models</span></a>
+  <a href="../notebooks/05.12-Gaussian-Mixtures.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 가우스 혼합 모델</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.13-Kernel-Density-Estimation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Kernel Density Estimation</span></a>
+  <a href="../notebooks/05.13-Kernel-Density-Estimation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 커널 밀도 추정</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.14-Image-Features.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Application: A Face Detection Pipeline</span></a>
+  <a href="../notebooks/05.14-Image-Features.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">응용 분야: 얼굴 감지 파이프라인</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.15-Learning-More.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Further Machine Learning Resources</span></a>
+  <a href="../notebooks/05.15-Learning-More.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">추가 머신러닝(Machine Learning) 리소스</span></a>
   </div>
 </li>
       </ul>
@@ -543,7 +543,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/06.00-Figure-Code.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Appendix: Figure Code</span></a>
+  <a href="../notebooks/06.00-Figure-Code.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">부록: 그림 코드</span></a>
   </div>
 </li>
       </ul>
@@ -558,28 +558,28 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#a-multiply-indexed-series" id="toc-a-multiply-indexed-series" class="nav-link active" data-scroll-target="#a-multiply-indexed-series">A Multiply Indexed Series</a>
+  <li><a href="#곱셈-인덱스-시리즈" id="toc-곱셈-인덱스-시리즈" class="nav-link active" data-scroll-target="#곱셈-인덱스-시리즈">곱셈 인덱스 시리즈</a>
   <ul class="collapse">
-  <li><a href="#the-bad-way" id="toc-the-bad-way" class="nav-link" data-scroll-target="#the-bad-way">The Bad Way</a></li>
-  <li><a href="#the-better-way-the-pandas-multiindex" id="toc-the-better-way-the-pandas-multiindex" class="nav-link" data-scroll-target="#the-better-way-the-pandas-multiindex">The Better Way: The Pandas MultiIndex</a></li>
-  <li><a href="#multiindex-as-extra-dimension" id="toc-multiindex-as-extra-dimension" class="nav-link" data-scroll-target="#multiindex-as-extra-dimension">MultiIndex as Extra Dimension</a></li>
+  <li><a href="#나쁜-방법" id="toc-나쁜-방법" class="nav-link" data-scroll-target="#나쁜-방법">나쁜 방법</a></li>
+  <li><a href="#더-나은-방법-pandas-multiindex" id="toc-더-나은-방법-pandas-multiindex" class="nav-link" data-scroll-target="#더-나은-방법-pandas-multiindex">더 나은 방법: Pandas MultiIndex</a></li>
+  <li><a href="#추가-차원으로서의-multiindex" id="toc-추가-차원으로서의-multiindex" class="nav-link" data-scroll-target="#추가-차원으로서의-multiindex">추가 차원으로서의 MultiIndex</a></li>
   </ul></li>
-  <li><a href="#methods-of-multiindex-creation" id="toc-methods-of-multiindex-creation" class="nav-link" data-scroll-target="#methods-of-multiindex-creation">Methods of MultiIndex Creation</a>
+  <li><a href="#multiindex-생성-방법" id="toc-multiindex-생성-방법" class="nav-link" data-scroll-target="#multiindex-생성-방법">MultiIndex 생성 방법</a>
   <ul class="collapse">
-  <li><a href="#explicit-multiindex-constructors" id="toc-explicit-multiindex-constructors" class="nav-link" data-scroll-target="#explicit-multiindex-constructors">Explicit MultiIndex Constructors</a></li>
-  <li><a href="#multiindex-level-names" id="toc-multiindex-level-names" class="nav-link" data-scroll-target="#multiindex-level-names">MultiIndex Level Names</a></li>
-  <li><a href="#multiindex-for-columns" id="toc-multiindex-for-columns" class="nav-link" data-scroll-target="#multiindex-for-columns">MultiIndex for Columns</a></li>
+  <li><a href="#명시적-multiindex-생성자" id="toc-명시적-multiindex-생성자" class="nav-link" data-scroll-target="#명시적-multiindex-생성자">명시적 MultiIndex 생성자</a></li>
+  <li><a href="#multiindex-수준-이름" id="toc-multiindex-수준-이름" class="nav-link" data-scroll-target="#multiindex-수준-이름">MultiIndex 수준 이름</a></li>
+  <li><a href="#열용-multiindex" id="toc-열용-multiindex" class="nav-link" data-scroll-target="#열용-multiindex">열용 MultiIndex</a></li>
   </ul></li>
-  <li><a href="#indexing-and-slicing-a-multiindex" id="toc-indexing-and-slicing-a-multiindex" class="nav-link" data-scroll-target="#indexing-and-slicing-a-multiindex">Indexing and Slicing a MultiIndex</a>
+  <li><a href="#multiindex-인덱싱-및-슬라이싱" id="toc-multiindex-인덱싱-및-슬라이싱" class="nav-link" data-scroll-target="#multiindex-인덱싱-및-슬라이싱">MultiIndex 인덱싱 및 슬라이싱</a>
   <ul class="collapse">
-  <li><a href="#multiply-indexed-series" id="toc-multiply-indexed-series" class="nav-link" data-scroll-target="#multiply-indexed-series">Multiply Indexed Series</a></li>
-  <li><a href="#multiply-indexed-dataframes" id="toc-multiply-indexed-dataframes" class="nav-link" data-scroll-target="#multiply-indexed-dataframes">Multiply Indexed DataFrames</a></li>
+  <li><a href="#인덱스-시리즈-곱하기" id="toc-인덱스-시리즈-곱하기" class="nav-link" data-scroll-target="#인덱스-시리즈-곱하기">인덱스 시리즈 곱하기</a></li>
+  <li><a href="#인덱싱된-dataframe-곱하기" id="toc-인덱싱된-dataframe-곱하기" class="nav-link" data-scroll-target="#인덱싱된-dataframe-곱하기">인덱싱된 DataFrame 곱하기</a></li>
   </ul></li>
-  <li><a href="#rearranging-multi-indexes" id="toc-rearranging-multi-indexes" class="nav-link" data-scroll-target="#rearranging-multi-indexes">Rearranging Multi-Indexes</a>
+  <li><a href="#다중-인덱스-재배열" id="toc-다중-인덱스-재배열" class="nav-link" data-scroll-target="#다중-인덱스-재배열">다중 인덱스 재배열</a>
   <ul class="collapse">
-  <li><a href="#sorted-and-unsorted-indices" id="toc-sorted-and-unsorted-indices" class="nav-link" data-scroll-target="#sorted-and-unsorted-indices">Sorted and Unsorted Indices</a></li>
-  <li><a href="#stacking-and-unstacking-indices" id="toc-stacking-and-unstacking-indices" class="nav-link" data-scroll-target="#stacking-and-unstacking-indices">Stacking and Unstacking Indices</a></li>
-  <li><a href="#index-setting-and-resetting" id="toc-index-setting-and-resetting" class="nav-link" data-scroll-target="#index-setting-and-resetting">Index Setting and Resetting</a></li>
+  <li><a href="#정렬된-인덱스와-정렬되지-않은-인덱스" id="toc-정렬된-인덱스와-정렬되지-않은-인덱스" class="nav-link" data-scroll-target="#정렬된-인덱스와-정렬되지-않은-인덱스">정렬된 인덱스와 정렬되지 않은 인덱스</a></li>
+  <li><a href="#인덱스-스태킹-및-언스택" id="toc-인덱스-스태킹-및-언스택" class="nav-link" data-scroll-target="#인덱스-스태킹-및-언스택">인덱스 스태킹 및 언스택</a></li>
+  <li><a href="#인덱스-설정-및-재설정" id="toc-인덱스-설정-및-재설정" class="nav-link" data-scroll-target="#인덱스-설정-및-재설정">인덱스 설정 및 재설정</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -587,9 +587,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../notebooks/03.00-Introduction-to-Pandas.html">Pandas를 이용한 데이터 조작</a></li><li class="breadcrumb-item"><a href="../notebooks/03.05-Hierarchical-Indexing.html"><span class="chapter-title">Hierarchical Indexing</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../notebooks/03.00-Introduction-to-Pandas.html">Pandas를 이용한 데이터 조작</a></li><li class="breadcrumb-item"><a href="../notebooks/03.05-Hierarchical-Indexing.html"><span class="chapter-title">계층적 인덱싱</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-title">Hierarchical Indexing</span></h1>
+<h1 class="title"><span class="chapter-title">계층적 인덱싱</span></h1>
 </div>
 
 
@@ -606,19 +606,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>Up to this point we’ve been focused primarily on one-dimensional and two-dimensional data, stored in Pandas <code>Series</code> and <code>DataFrame</code> objects, respectively. Often it is useful to go beyond this and store higher-dimensional data—that is, data indexed by more than one or two keys. Early Pandas versions provided <code>Panel</code> and <code>Panel4D</code> objects that could be thought of as 3D or 4D analogs to the 2D <code>DataFrame</code>, but they were somewhat clunky to use in practice. A far more common pattern for handling higher-dimensional data is to make use of <em>hierarchical indexing</em> (also known as <em>multi-indexing</em>) to incorporate multiple index <em>levels</em> within a single index. In this way, higher-dimensional data can be compactly represented within the familiar one-dimensional <code>Series</code> and two-dimensional <code>DataFrame</code> objects. (If you’re interested in true <em>N</em>-dimensional arrays with Pandas-style flexible indices, you can look into the excellent <a href="https://xarray.pydata.org/">Xarray package</a>.)</p>
-<p>In this chapter, we’ll explore the direct creation of <code>MultiIndex</code> objects; considerations when indexing, slicing, and computing statistics across multiply indexed data; and useful routines for converting between simple and hierarchically indexed representations of data.</p>
-<p>We begin with the standard imports:</p>
+<p>지금까지 우리는 주로 Pandas ‘Series’ 및 ‘DataFrame’ 개체에 저장된 1차원 및 2차원 데이터에 중점을 두었습니다. 종종 이를 뛰어넘어 고차원 데이터, 즉 하나 또는 두 개 이상의 키로 인덱싱된 데이터를 저장하는 것이 유용합니다. 초기 Pandas 버전은 2D <code>DataFrame</code>에 대한 3D 또는 4D 아날로그로 생각할 수 있는 <code>Panel</code> 및 <code>Panel4D</code> 개체를 제공했지만 실제로 사용하기에는 다소 투박했습니다. 고차원 데이터를 처리하는 훨씬 더 일반적인 패턴은 <em>계층적 인덱싱</em>(<em>다중 인덱싱</em>이라고도 함)을 사용하여 단일 인덱스 내에 여러 인덱스 <em>수준</em>을 통합하는 것입니다. 이러한 방식으로 고차원 데이터는 익숙한 1차원 <code>Series</code> 객체와 2차원 <code>DataFrame</code> 객체 내에서 간결하게 표현될 수 있습니다. (Pandas 스타일의 유연한 인덱스가 있는 진정한 <em>N</em> 차원 배열에 관심이 있다면 뛰어난 <a href="https://xarray.pydata.org/">Xarray 패키지</a>를 살펴보세요.)</p>
+<p>이번 장에서는 <code>MultiIndex</code> 객체를 직접 생성하는 방법을 살펴보겠습니다. 다중 인덱싱된 데이터에 대한 인덱싱, 슬라이싱 및 통계 계산 시 고려 사항 간단한 데이터 표현과 계층적으로 인덱스된 데이터 표현 사이를 변환하는 데 유용한 루틴입니다.</p>
+<p>표준 가져오기부터 시작합니다.</p>
 <div id="cell-2" class="cell" data-editable="true" data-tags="[]" data-execution_count="1">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<section id="a-multiply-indexed-series" class="level2">
-<h2 class="anchored" data-anchor-id="a-multiply-indexed-series">A Multiply Indexed Series</h2>
-<p>Let’s start by considering how we might represent two-dimensional data within a one-dimensional <code>Series</code>. For concreteness, we will consider a series of data where each point has a character and numerical key.</p>
-<section id="the-bad-way" class="level3">
-<h3 class="anchored" data-anchor-id="the-bad-way">The Bad Way</h3>
-<p>Suppose you would like to track data about states from two different years. Using the Pandas tools we’ve already covered, you might be tempted to simply use Python tuples as keys:</p>
+<section id="곱셈-인덱스-시리즈" class="level2">
+<h2 class="anchored" data-anchor-id="곱셈-인덱스-시리즈">곱셈 인덱스 시리즈</h2>
+<p>1차원 <code>시리즈</code> 내에서 2차원 데이터를 어떻게 표현할 수 있는지 고려하는 것부터 시작해 보겠습니다. 구체적으로 설명하기 위해 각 지점에 문자와 숫자 키가 있는 일련의 데이터를 고려해 보겠습니다.</p>
+<section id="나쁜-방법" class="level3">
+<h3 class="anchored" data-anchor-id="나쁜-방법">나쁜 방법</h3>
+<p>서로 다른 두 해의 주에 대한 데이터를 추적하고 싶다고 가정해 보겠습니다. 이미 다룬 Pandas 도구를 사용하면 단순히 파이썬(Python) 튜플을 키로 사용하고 싶은 유혹을 느낄 수도 있습니다.</p>
 <div id="cell-5" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="2">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>index <span class="op">=</span> [(<span class="st">'California'</span>, <span class="dv">2010</span>), (<span class="st">'California'</span>, <span class="dv">2020</span>),</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>         (<span class="st">'New York'</span>, <span class="dv">2010</span>), (<span class="st">'New York'</span>, <span class="dv">2020</span>),</span>
@@ -638,7 +638,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 dtype: int64</code></pre>
 </div>
 </div>
-<p>With this indexing scheme, you can straightforwardly index or slice the series based on this tuple index:</p>
+<p>이 인덱싱 방식을 사용하면 이 튜플 인덱스를 기반으로 계열을 직접 인덱싱하거나 분할할 수 있습니다.</p>
 <div id="cell-7" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="3">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>pop[(<span class="st">'California'</span>, <span class="dv">2020</span>):(<span class="st">'Texas'</span>, <span class="dv">2010</span>)]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="3">
@@ -649,7 +649,7 @@ dtype: int64</code></pre>
 dtype: int64</code></pre>
 </div>
 </div>
-<p>But the convenience ends there. For example, if you need to select all values from 2010, you’ll need to do some messy (and potentially slow) munging to make it happen:</p>
+<p>그러나 편리함은 거기서 끝입니다. 예를 들어 2010년의 모든 값을 선택해야 하는 경우 이를 실현하기 위해 지저분하고 잠재적으로 느린 작업을 수행해야 합니다.</p>
 <div id="cell-9" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="4">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>pop[[i <span class="cf">for</span> i <span class="kw">in</span> pop.index <span class="cf">if</span> i[<span class="dv">1</span>] <span class="op">==</span> <span class="dv">2010</span>]]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="4">
@@ -659,16 +659,16 @@ dtype: int64</code></pre>
 dtype: int64</code></pre>
 </div>
 </div>
-<p>This produces the desired result, but is not as clean (or as efficient for large datasets) as the slicing syntax we’ve grown to love in Pandas.</p>
+<p>이는 원하는 결과를 생성하지만 Pandas에서 우리가 좋아하게 된 슬라이싱 구문만큼 깨끗하지 않습니다(또는 대규모 데이터 세트의 경우 효율적이지 않습니다).</p>
 </section>
-<section id="the-better-way-the-pandas-multiindex" class="level3">
-<h3 class="anchored" data-anchor-id="the-better-way-the-pandas-multiindex">The Better Way: The Pandas MultiIndex</h3>
-<p>Fortunately, Pandas provides a better way. Our tuple-based indexing is essentially a rudimentary multi-index, and the Pandas <code>MultiIndex</code> type gives us the types of operations we wish to have. We can create a multi-index from the tuples as follows:</p>
+<section id="더-나은-방법-pandas-multiindex" class="level3">
+<h3 class="anchored" data-anchor-id="더-나은-방법-pandas-multiindex">더 나은 방법: Pandas MultiIndex</h3>
+<p>다행히 Pandas는 더 나은 방법을 제공합니다. 튜플 기반 인덱싱은 본질적으로 기본적인 다중 인덱스이며 Pandas ‘MultiIndex’ 유형은 우리가 원하는 작업 유형을 제공합니다. 다음과 같이 튜플에서 다중 인덱스를 만들 수 있습니다.</p>
 <div id="cell-12" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="5">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>index <span class="op">=</span> pd.MultiIndex.from_tuples(index)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<p>The <code>MultiIndex</code> represents multiple <em>levels</em> of indexing—in this case, the state names and the years—as well as multiple <em>labels</em> for each data point which encode these levels.</p>
-<p>If we reindex our series with this <code>MultiIndex</code>, we see the hierarchical representation of the data:</p>
+<p>’MultiIndex’는 여러 색인 <em>레벨</em>(이 경우에는 주 이름과 연도)뿐만 아니라 이러한 수준을 인코딩하는 각 데이터 포인트에 대한 여러 <em>레이블</em>을 나타냅니다.</p>
+<p>이 <code>MultiIndex</code>를 사용하여 시리즈를 다시 색인화하면 데이터의 계층적 표현을 살펴볼 수 있습니다.</p>
 <div id="cell-14" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="6">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>pop <span class="op">=</span> pop.reindex(index)</span>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>pop</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -682,8 +682,8 @@ Texas       2010    25145561
 dtype: int64</code></pre>
 </div>
 </div>
-<p>Here the first two columns of the Series representation show the multiple index values, while the third column shows the data. Notice that some entries are missing in the first column: in this multi-index representation, any blank entry indicates the same value as the line above it.</p>
-<p>Now to access all data for which the second index is 2020, we can use the Pandas slicing notation:</p>
+<p>여기서 시리즈 표현의 처음 두 열은 여러 인덱스 값을 표시하고 세 번째 열은 데이터를 표시합니다. 첫 번째 열에는 일부 항목이 누락되어 있습니다. 이 다중 인덱스 표현에서 빈 항목은 그 위의 줄과 동일한 값을 나타냅니다.</p>
+<p>이제 두 번째 인덱스가 2020인 모든 데이터에 액세스하려면 Pandas 슬라이싱 표기법을 사용할 수 있습니다.</p>
 <div id="cell-17" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="7">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>pop[:, <span class="dv">2020</span>]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="7">
@@ -693,11 +693,11 @@ Texas         29145505
 dtype: int64</code></pre>
 </div>
 </div>
-<p>The result is a singly indexed Series with just the keys we’re interested in. This syntax is much more convenient (and the operation is much more efficient!) than the home-spun tuple-based multi-indexing solution that we started with. We’ll now further discuss this sort of indexing operation on hierarchically indexed data.</p>
+<p>결과는 우리가 관심 있는 키만 포함하는 단일 인덱스 시리즈입니다. 이 구문은 우리가 시작한 홈 스펀 튜플 기반 다중 인덱싱 솔루션보다 훨씬 더 편리합니다(그리고 작업이 훨씬 더 효율적입니다!). 이제 계층적으로 인덱싱된 데이터에 대한 이러한 종류의 인덱싱 작업에 대해 자세히 설명하겠습니다.</p>
 </section>
-<section id="multiindex-as-extra-dimension" class="level3">
-<h3 class="anchored" data-anchor-id="multiindex-as-extra-dimension">MultiIndex as Extra Dimension</h3>
-<p>You might notice something else here: we could easily have stored the same data using a simple <code>DataFrame</code> with index and column labels. In fact, Pandas is built with this equivalence in mind. The <code>unstack</code> method will quickly convert a multiply indexed <code>Series</code> into a conventionally indexed <code>DataFrame</code>:</p>
+<section id="추가-차원으로서의-multiindex" class="level3">
+<h3 class="anchored" data-anchor-id="추가-차원으로서의-multiindex">추가 차원으로서의 MultiIndex</h3>
+<p>여기서 다른 점을 발견할 수 있습니다. 인덱스 및 열 레이블이 있는 간단한 ’DataFrame’을 사용하여 동일한 데이터를 쉽게 저장할 수 있었습니다. 실제로 Pandas는 이러한 동등성을 염두에 두고 구축되었습니다. <code>unstack</code> 메서드는 다중 색인 <code>Series</code>를 기존 색인 <code>DataFrame</code>으로 빠르게 변환합니다.</p>
 <div id="cell-20" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="8">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>pop_df <span class="op">=</span> pop.unstack()</span>
 <span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>pop_df</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -735,7 +735,7 @@ dtype: int64</code></pre>
 </div>
 </div>
 </div>
-<p>Naturally, the <code>stack</code> method provides the opposite operation:</p>
+<p>당연히 <code>stack</code> 방법은 반대 작업을 제공합니다.</p>
 <div id="cell-22" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="9">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>pop_df.stack()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="9">
@@ -748,7 +748,7 @@ Texas       2010    25145561
 dtype: int64</code></pre>
 </div>
 </div>
-<p>Seeing this, you might wonder why would we would bother with hierarchical indexing at all. The reason is simple: just as we were able to use multi-indexing to manipulate two-dimensional data within a one-dimensional <code>Series</code>, we can also use it to manipulate data of three or more dimensions in a <code>Series</code> or <code>DataFrame</code>. Each extra level in a multi-index represents an extra dimension of data; taking advantage of this property gives us much more flexibility in the types of data we can represent. Concretely, we might want to add another column of demographic data for each state at each year (say, population under 18); with a <code>MultiIndex</code> this is as easy as adding another column to the <code>DataFrame</code>:</p>
+<p>이것을 보면 왜 우리가 계층적 인덱싱에 신경을 쓰려고 하는지 궁금할 것입니다. 그 이유는 간단합니다. 다중 인덱싱을 사용하여 1차원 <code>시리즈</code> 내에서 2차원 데이터를 조작할 수 있었던 것과 마찬가지로 이를 사용하여 <code>시리즈</code> 또는 <code>DataFrame</code>에서 3차원 이상의 데이터를 조작할 수도 있습니다. 다중 인덱스의 각 추가 수준은 데이터의 추가 차원을 나타냅니다. 이 속성을 활용하면 표현할 수 있는 데이터 유형에 훨씬 더 많은 유연성이 제공됩니다. 구체적으로, 우리는 매년 각 주에 대한 또 다른 인구통계 데이터 열을 추가할 수 있습니다(예: 18세 미만 인구). ’MultiIndex’를 사용하면 <code>DataFrame</code>에 다른 열을 추가하는 것만큼 쉽습니다.</p>
 <div id="cell-24" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="10">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>pop_df <span class="op">=</span> pd.DataFrame({<span class="st">'total'</span>: pop,</span>
 <span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>                       <span class="st">'under18'</span>: [<span class="dv">9284094</span>, <span class="dv">8898092</span>,</span>
@@ -808,7 +808,7 @@ dtype: int64</code></pre>
 </div>
 </div>
 </div>
-<p>In addition, all the ufuncs and other functionality discussed in <a href="../notebooks/03.03-Operations-in-Pandas.html">Operating on Data in Pandas</a> work with hierarchical indices as well. Here we compute the fraction of people under 18 by year, given the above data:</p>
+<p>또한 <a href="../notebooks/03.03-Operations-in-Pandas.html">Pandas의 데이터 작업</a>에서 설명한 모든 ufunc 및 기타 기능은 계층적 인덱스에서도 작동합니다. 여기서는 위 데이터를 바탕으로 18세 미만의 인구 비율을 연도별로 계산합니다.</p>
 <div id="cell-26" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="11">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>f_u18 <span class="op">=</span> pop_df[<span class="st">'under18'</span>] <span class="op">/</span> pop_df[<span class="st">'total'</span>]</span>
 <span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>f_u18.unstack()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -846,12 +846,12 @@ dtype: int64</code></pre>
 </div>
 </div>
 </div>
-<p>This allows us to easily and quickly manipulate and explore even high-dimensional data.</p>
+<p>이를 통해 고차원 데이터도 쉽고 빠르게 조작하고 탐색할 수 있습니다.</p>
 </section>
 </section>
-<section id="methods-of-multiindex-creation" class="level2">
-<h2 class="anchored" data-anchor-id="methods-of-multiindex-creation">Methods of MultiIndex Creation</h2>
-<p>The most straightforward way to construct a multiply indexed <code>Series</code> or <code>DataFrame</code> is to simply pass a list of two or more index arrays to the constructor. For example:</p>
+<section id="multiindex-생성-방법" class="level2">
+<h2 class="anchored" data-anchor-id="multiindex-생성-방법">MultiIndex 생성 방법</h2>
+<p>다중 인덱스 <code>Series</code> 또는 <code>DataFrame</code>을 구성하는 가장 간단한 방법은 두 개 이상의 인덱스 배열 목록을 생성자에 전달하는 것입니다. 예를 들어:</p>
 <div id="cell-29" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="12">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.DataFrame(np.random.rand(<span class="dv">4</span>, <span class="dv">2</span>),</span>
 <span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>                  index<span class="op">=</span>[[<span class="st">'a'</span>, <span class="st">'a'</span>, <span class="st">'b'</span>, <span class="st">'b'</span>], [<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">1</span>, <span class="dv">2</span>]],</span>
@@ -899,8 +899,8 @@ dtype: int64</code></pre>
 </div>
 </div>
 </div>
-<p>The work of creating the <code>MultiIndex</code> is done in the background.</p>
-<p>Similarly, if you pass a dictionary with appropriate tuples as keys, Pandas will automatically recognize this and use a <code>MultiIndex</code> by default:</p>
+<p><code>MultiIndex</code> 생성 작업은 백그라운드에서 수행됩니다.</p>
+<p>마찬가지로 적절한 튜플을 키로 사용하여 사전을 전달하면 Pandas는 이를 자동으로 인식하고 기본적으로 <code>MultiIndex</code>를 사용합니다.</p>
 <div id="cell-31" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="13">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> {(<span class="st">'California'</span>, <span class="dv">2010</span>): <span class="dv">37253956</span>,</span>
 <span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>        (<span class="st">'California'</span>, <span class="dv">2020</span>): <span class="dv">39538223</span>,</span>
@@ -919,10 +919,10 @@ Texas       2010    25145561
 dtype: int64</code></pre>
 </div>
 </div>
-<p>Nevertheless, it is sometimes useful to explicitly create a <code>MultiIndex</code>; we’ll look at a couple of methods for doing this next.</p>
-<section id="explicit-multiindex-constructors" class="level3">
-<h3 class="anchored" data-anchor-id="explicit-multiindex-constructors">Explicit MultiIndex Constructors</h3>
-<p>For more flexibility in how the index is constructed, you can instead use the constructor methods available in the <code>pd.MultiIndex</code> class. For example, as we did before, you can construct a <code>MultiIndex</code> from a simple list of arrays giving the index values within each level:</p>
+<p>그럼에도 불구하고 때로는 ’MultiIndex’를 명시적으로 생성하는 것이 유용할 수 있습니다. 다음에는 이 작업을 수행하는 몇 가지 방법을 살펴보겠습니다.</p>
+<section id="명시적-multiindex-생성자" class="level3">
+<h3 class="anchored" data-anchor-id="명시적-multiindex-생성자">명시적 MultiIndex 생성자</h3>
+<p>인덱스 구성 방법에 대한 유연성을 높이려면 <code>pd.MultiIndex</code> 클래스에서 제공되는 생성자 메서드를 대신 사용할 수 있습니다. 예를 들어 이전에 했던 것처럼 각 레벨 내의 인덱스 값을 제공하는 간단한 배열 목록에서 <code>MultiIndex</code>를 구성할 수 있습니다.</p>
 <div id="cell-34" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="14">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>pd.MultiIndex.from_arrays([[<span class="st">'a'</span>, <span class="st">'a'</span>, <span class="st">'b'</span>, <span class="st">'b'</span>], [<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">1</span>, <span class="dv">2</span>]])</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="14">
@@ -933,7 +933,7 @@ dtype: int64</code></pre>
            )</code></pre>
 </div>
 </div>
-<p>Or you can construct it from a list of tuples giving the multiple index values of each point:</p>
+<p>또는 각 지점의 여러 인덱스 값을 제공하는 튜플 목록에서 이를 구성할 수 있습니다.</p>
 <div id="cell-36" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="15">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb23"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>pd.MultiIndex.from_tuples([(<span class="st">'a'</span>, <span class="dv">1</span>), (<span class="st">'a'</span>, <span class="dv">2</span>), (<span class="st">'b'</span>, <span class="dv">1</span>), (<span class="st">'b'</span>, <span class="dv">2</span>)])</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="15">
@@ -944,7 +944,7 @@ dtype: int64</code></pre>
            )</code></pre>
 </div>
 </div>
-<p>You can even construct it from a Cartesian product of single indices:</p>
+<p>단일 인덱스의 데카르트 곱으로 구성할 수도 있습니다.</p>
 <div id="cell-38" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="16">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb25"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>pd.MultiIndex.from_product([[<span class="st">'a'</span>, <span class="st">'b'</span>], [<span class="dv">1</span>, <span class="dv">2</span>]])</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="16">
@@ -955,7 +955,7 @@ dtype: int64</code></pre>
            )</code></pre>
 </div>
 </div>
-<p>Similarly, you can construct a <code>MultiIndex</code> directly using its internal encoding by passing <code>levels</code> (a list of lists containing available index values for each level) and <code>codes</code> (a list of lists that reference these labels):</p>
+<p>마찬가지로 <code>levels</code>(각 레벨에 사용 가능한 인덱스 값이 포함된 목록 목록) 및 <code>codes</code>(이러한 라벨을 참조하는 목록 목록)를 전달하여 내부 인코딩을 사용하여 직접 <code>MultiIndex</code>를 구성할 수 있습니다.</p>
 <div id="cell-40" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="17">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb27"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a>pd.MultiIndex(levels<span class="op">=</span>[[<span class="st">'a'</span>, <span class="st">'b'</span>], [<span class="dv">1</span>, <span class="dv">2</span>]],</span>
 <span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a>              codes<span class="op">=</span>[[<span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">1</span>], [<span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">0</span>, <span class="dv">1</span>]])</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -967,11 +967,11 @@ dtype: int64</code></pre>
            )</code></pre>
 </div>
 </div>
-<p>Any of these objects can be passed as the <code>index</code> argument when creating a <code>Series</code> or <code>DataFrame</code>, or be passed to the <code>reindex</code> method of an existing <code>Series</code> or <code>DataFrame</code>.</p>
+<p>이러한 개체는 <code>Series</code> 또는 <code>DataFrame</code>을 생성할 때 <code>index</code> 인수로 전달되거나 기존 <code>Series</code> 또는 <code>DataFrame</code>의 <code>reindex</code> 메서드에 전달될 수 있습니다.</p>
 </section>
-<section id="multiindex-level-names" class="level3">
-<h3 class="anchored" data-anchor-id="multiindex-level-names">MultiIndex Level Names</h3>
-<p>Sometimes it is convenient to name the levels of the <code>MultiIndex</code>. This can be accomplished by passing the <code>names</code> argument to any of the previously discussed <code>MultiIndex</code> constructors, or by setting the <code>names</code> attribute of the index after the fact:</p>
+<section id="multiindex-수준-이름" class="level3">
+<h3 class="anchored" data-anchor-id="multiindex-수준-이름">MultiIndex 수준 이름</h3>
+<p>때로는 <code>MultiIndex</code>의 수준에 이름을 지정하는 것이 편리합니다. 이는 앞에서 설명한 <code>MultiIndex</code> 생성자에 <code>names</code> 인수를 전달하거나 사실 뒤에 인덱스의 <code>names</code> 속성을 설정하여 수행할 수 있습니다.</p>
 <div id="cell-43" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="18">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb29"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a>pop.index.names <span class="op">=</span> [<span class="st">'state'</span>, <span class="st">'year'</span>]</span>
 <span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a>pop</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -986,11 +986,11 @@ Texas       2010    25145561
 dtype: int64</code></pre>
 </div>
 </div>
-<p>With more involved datasets, this can be a useful way to keep track of the meaning of various index values.</p>
+<p>더 많은 데이터 세트가 포함된 경우 이는 다양한 인덱스 값의 의미를 추적하는 유용한 방법이 될 수 있습니다.</p>
 </section>
-<section id="multiindex-for-columns" class="level3">
-<h3 class="anchored" data-anchor-id="multiindex-for-columns">MultiIndex for Columns</h3>
-<p>In a <code>DataFrame</code>, the rows and columns are completely symmetric, and just as the rows can have multiple levels of indices, the columns can have multiple levels as well. Consider the following, which is a mock-up of some (somewhat realistic) medical data:</p>
+<section id="열용-multiindex" class="level3">
+<h3 class="anchored" data-anchor-id="열용-multiindex">열용 MultiIndex</h3>
+<p><code>DataFrame</code>에서 행과 열은 완전히 대칭이며 행이 여러 수준의 인덱스를 가질 수 있는 것처럼 열도 여러 수준을 가질 수 있습니다. 일부 (다소 현실적인) 의료 데이터의 모형인 다음을 고려하십시오.</p>
 <div id="cell-46" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="19">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb31"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a><span class="co"># hierarchical indices and columns</span></span>
 <span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a>index <span class="op">=</span> pd.MultiIndex.from_product([[<span class="dv">2013</span>, <span class="dv">2014</span>], [<span class="dv">1</span>, <span class="dv">2</span>]],</span>
@@ -1085,7 +1085,7 @@ dtype: int64</code></pre>
 </div>
 </div>
 </div>
-<p>This is fundamentally four-dimensional data, where the dimensions are the subject, the measurement type, the year, and the visit number. With this in place we can, for example, index the top-level column by the person’s name and get a full <code>DataFrame</code> containing just that person’s information:</p>
+<p>이는 기본적으로 대상, 측정 유형, 연도, 방문 횟수를 차원으로 하는 4차원 데이터입니다. 예를 들어 이를 사용하면 사람 이름으로 최상위 열을 색인화하고 해당 사람의 정보만 포함하는 전체 ’DataFrame’을 얻을 수 있습니다.</p>
 <div id="cell-48" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="20">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb32"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a>health_data[<span class="st">'Guido'</span>]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="20">
@@ -1138,12 +1138,12 @@ dtype: int64</code></pre>
 </div>
 </section>
 </section>
-<section id="indexing-and-slicing-a-multiindex" class="level2">
-<h2 class="anchored" data-anchor-id="indexing-and-slicing-a-multiindex">Indexing and Slicing a MultiIndex</h2>
-<p>Indexing and slicing on a <code>MultiIndex</code> is designed to be intuitive, and it helps if you think about the indices as added dimensions. We’ll first look at indexing multiply indexed <code>Series</code>, and then multiply indexed <code>DataFrame</code> objects.</p>
-<section id="multiply-indexed-series" class="level3">
-<h3 class="anchored" data-anchor-id="multiply-indexed-series">Multiply Indexed Series</h3>
-<p>Consider the multiply indexed <code>Series</code> of state populations we saw earlier:</p>
+<section id="multiindex-인덱싱-및-슬라이싱" class="level2">
+<h2 class="anchored" data-anchor-id="multiindex-인덱싱-및-슬라이싱">MultiIndex 인덱싱 및 슬라이싱</h2>
+<p>’MultiIndex’의 인덱싱 및 슬라이싱은 직관적으로 설계되었으며 인덱스를 추가된 차원으로 생각하면 도움이 됩니다. 먼저 인덱싱된 <code>Series</code>를 인덱싱하고 곱한 다음 인덱싱된 <code>DataFrame</code> 객체를 곱하는 방법을 살펴보겠습니다.</p>
+<section id="인덱스-시리즈-곱하기" class="level3">
+<h3 class="anchored" data-anchor-id="인덱스-시리즈-곱하기">인덱스 시리즈 곱하기</h3>
+<p>앞서 본 주 인구의 다중 색인 ’계열’을 고려해보세요.</p>
 <div id="cell-51" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="21">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb33"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a>pop</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="21">
@@ -1157,14 +1157,14 @@ Texas       2010    25145561
 dtype: int64</code></pre>
 </div>
 </div>
-<p>We can access single elements by indexing with multiple terms:</p>
+<p>여러 용어로 색인을 생성하여 단일 요소에 액세스할 수 있습니다.</p>
 <div id="cell-53" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="22">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb35"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a>pop[<span class="st">'California'</span>, <span class="dv">2010</span>]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="22">
 <pre><code>37253956</code></pre>
 </div>
 </div>
-<p>The <code>MultiIndex</code> also supports <em>partial indexing</em>, or indexing just one of the levels in the index. The result is another <code>Series</code>, with the lower-level indices maintained:</p>
+<p>’MultiIndex’는 <em>부분 인덱싱</em>, 즉 인덱스 수준 중 하나만 인덱싱하는 기능도 지원합니다. 결과는 하위 수준 인덱스가 유지되는 또 다른 ’시리즈’입니다.</p>
 <div id="cell-55" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="23">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb37"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a>pop[<span class="st">'California'</span>]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="23">
@@ -1174,7 +1174,7 @@ dtype: int64</code></pre>
 dtype: int64</code></pre>
 </div>
 </div>
-<p>Partial slicing is available as well, as long as the <code>MultiIndex</code> is sorted (see the discussion in <a href="#Sorted-and-unsorted-indices">Sorted and Unsorted Indices</a>):</p>
+<p>’MultiIndex’가 정렬되어 있는 한 부분 슬라이싱도 가능합니다(<a href="#Sorted-and-unsorted-indices">정렬 및 정렬되지 않은 인덱스</a>의 설명 참조).</p>
 <div id="cell-57" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="24">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb39"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a>pop.loc[<span class="st">'California'</span>:<span class="st">'New York'</span>]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="24">
@@ -1186,7 +1186,7 @@ New York    2010    19378102
 dtype: int64</code></pre>
 </div>
 </div>
-<p>With sorted indices, partial indexing can be performed on lower levels by passing an empty slice in the first index:</p>
+<p>정렬된 인덱스를 사용하면 첫 번째 인덱스에 빈 조각을 전달하여 하위 수준에서 부분 인덱싱을 수행할 수 있습니다.</p>
 <div id="cell-59" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="25">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb41"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a>pop[:, <span class="dv">2010</span>]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="25">
@@ -1197,7 +1197,7 @@ Texas         25145561
 dtype: int64</code></pre>
 </div>
 </div>
-<p>Other types of indexing and selection (discussed in <a href="../notebooks/03.02-Data-Indexing-and-Selection.html">Data Indexing and Selection</a>) work as well; for example, selection based on Boolean masks:</p>
+<p>다른 유형의 인덱싱 및 선택(<a href="../notebooks/03.02-Data-Indexing-and-Selection.html">데이터 인덱싱 및 선택</a>에서 설명)도 작동합니다. 예를 들어 부울 마스크를 기반으로 한 선택:</p>
 <div id="cell-61" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="26">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb43"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb43-1"><a href="#cb43-1" aria-hidden="true" tabindex="-1"></a>pop[pop <span class="op">&gt;</span> <span class="dv">22000000</span>]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="26">
@@ -1209,7 +1209,7 @@ Texas       2010    25145561
 dtype: int64</code></pre>
 </div>
 </div>
-<p>Selection based on fancy indexing also works:</p>
+<p>팬시 인덱싱을 기반으로 한 선택도 가능합니다.</p>
 <div id="cell-63" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="27">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb45"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb45-1"><a href="#cb45-1" aria-hidden="true" tabindex="-1"></a>pop[[<span class="st">'California'</span>, <span class="st">'Texas'</span>]]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="27">
@@ -1222,9 +1222,9 @@ dtype: int64</code></pre>
 </div>
 </div>
 </section>
-<section id="multiply-indexed-dataframes" class="level3">
-<h3 class="anchored" data-anchor-id="multiply-indexed-dataframes">Multiply Indexed DataFrames</h3>
-<p>A multiply indexed <code>DataFrame</code> behaves in a similar manner. Consider our toy medical <code>DataFrame</code> from before:</p>
+<section id="인덱싱된-dataframe-곱하기" class="level3">
+<h3 class="anchored" data-anchor-id="인덱싱된-dataframe-곱하기">인덱싱된 DataFrame 곱하기</h3>
+<p>다중 인덱스 <code>DataFrame</code>은 비슷한 방식으로 작동합니다. 이전의 장난감 의료 <code>DataFrame</code>을 생각해 보세요.</p>
 <div id="cell-65" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="28">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb47"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb47-1"><a href="#cb47-1" aria-hidden="true" tabindex="-1"></a>health_data</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="28">
@@ -1306,7 +1306,7 @@ dtype: int64</code></pre>
 </div>
 </div>
 </div>
-<p>Remember that columns are primary in a <code>DataFrame</code>, and the syntax used for multiply indexed <code>Series</code> applies to the columns. For example, we can recover Guido’s heart rate data with a simple operation:</p>
+<p>열은 <code>DataFrame</code>의 기본 열이며 다중 색인 <code>Series</code>에 사용되는 구문이 열에 적용된다는 점을 기억하세요. 예를 들어 간단한 작업으로 Guido의 심박수 데이터를 복구할 수 있습니다.</p>
 <div id="cell-67" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="29">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb48"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb48-1"><a href="#cb48-1" aria-hidden="true" tabindex="-1"></a>health_data[<span class="st">'Guido'</span>, <span class="st">'HR'</span>]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="29">
@@ -1318,7 +1318,7 @@ dtype: int64</code></pre>
 Name: (Guido, HR), dtype: float64</code></pre>
 </div>
 </div>
-<p>Also, as with the single-index case, we can use the <code>loc</code>, <code>iloc</code>, and <code>ix</code> indexers introduced in <a href="../notebooks/03.02-Data-Indexing-and-Selection.html">Data Indexing and Selection</a>. For example:</p>
+<p>또한 단일 인덱스의 경우와 마찬가지로 <a href="../notebooks/03.02-Data-Indexing-and-Selection.html">데이터 인덱싱 및 선택</a>에 소개된 <code>loc</code>, <code>iloc</code>, <code>ix</code> 인덱서를 사용할 수 있습니다. 예를 들어:</p>
 <div id="cell-69" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="30">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb50"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb50-1"><a href="#cb50-1" aria-hidden="true" tabindex="-1"></a>health_data.iloc[:<span class="dv">2</span>, :<span class="dv">2</span>]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="30">
@@ -1363,7 +1363,7 @@ Name: (Guido, HR), dtype: float64</code></pre>
 </div>
 </div>
 </div>
-<p>These indexers provide an array-like view of the underlying two-dimensional data, but each individual index in <code>loc</code> or <code>iloc</code> can be passed a tuple of multiple indices. For example:</p>
+<p>이러한 인덱서는 기본 2차원 데이터에 대한 배열과 유사한 보기를 제공하지만 ‘loc’ 또는 ’iloc’의 각 개별 인덱스는 여러 인덱스의 튜플을 전달할 수 있습니다. 예를 들어:</p>
 <div id="cell-71" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="31">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb51"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb51-1"><a href="#cb51-1" aria-hidden="true" tabindex="-1"></a>health_data.loc[:, (<span class="st">'Bob'</span>, <span class="st">'HR'</span>)]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="31">
@@ -1375,7 +1375,7 @@ Name: (Guido, HR), dtype: float64</code></pre>
 Name: (Bob, HR), dtype: float64</code></pre>
 </div>
 </div>
-<p>Working with slices within these index tuples is not especially convenient; trying to create a slice within a tuple will lead to a syntax error:</p>
+<p>이러한 인덱스 튜플 내에서 슬라이스로 작업하는 것은 특별히 편리하지 않습니다. 튜플 내에 슬라이스를 만들려고 하면 구문 오류가 발생합니다.</p>
 <div id="cell-73" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="32">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb53"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb53-1"><a href="#cb53-1" aria-hidden="true" tabindex="-1"></a>health_data.loc[(:, <span class="dv">1</span>), (:, <span class="st">'HR'</span>)]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-error">
@@ -1388,7 +1388,7 @@ Name: (Bob, HR), dtype: float64</code></pre>
 </div>
 </div>
 </div>
-<p>You could get around this by building the desired slice explicitly using Python’s built-in <code>slice</code> function, but a better way in this context is to use an <code>IndexSlice</code> object, which Pandas provides for precisely this situation. For example:</p>
+<p>파이썬(Python)에 내장된 <code>slice</code> 함수를 사용하여 원하는 슬라이스를 명시적으로 구축하여 이 문제를 해결할 수 있지만, 이 맥락에서 더 좋은 방법은 Pandas가 정확하게 이 상황에 제공하는 <code>IndexSlice</code> 객체를 사용하는 것입니다. 예를 들어:</p>
 <div id="cell-75" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="33">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb54"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb54-1"><a href="#cb54-1" aria-hidden="true" tabindex="-1"></a>idx <span class="op">=</span> pd.IndexSlice</span>
 <span id="cb54-2"><a href="#cb54-2" aria-hidden="true" tabindex="-1"></a>health_data.loc[idx[:, <span class="dv">1</span>], idx[:, <span class="st">'HR'</span>]]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -1441,16 +1441,16 @@ Name: (Bob, HR), dtype: float64</code></pre>
 </div>
 </div>
 </div>
-<p>As you can see, there are many ways to interact with data in multiply indexed <code>Series</code> and <code>DataFrame</code>s, and as with many tools in this book the best way to become familiar with them is to try them out!</p>
+<p>보시다시피, 다중 인덱스 <code>Series</code> 및 <code>DataFrame</code>에서 데이터와 상호 작용하는 방법은 여러 가지가 있으며, 이 책에 있는 많은 도구와 마찬가지로 이러한 도구에 익숙해지는 가장 좋은 방법은 직접 사용해 보는 것입니다!</p>
 </section>
 </section>
-<section id="rearranging-multi-indexes" class="level2">
-<h2 class="anchored" data-anchor-id="rearranging-multi-indexes">Rearranging Multi-Indexes</h2>
-<p>One of the keys to working with multiply indexed data is knowing how to effectively transform the data. There are a number of operations that will preserve all the information in the dataset, but rearrange it for the purposes of various computations. We saw a brief example of this in the <code>stack</code> and <code>unstack</code> methods, but there are many more ways to finely control the rearrangement of data between hierarchical indices and columns, and we’ll explore them here.</p>
-<section id="sorted-and-unsorted-indices" class="level3">
-<h3 class="anchored" data-anchor-id="sorted-and-unsorted-indices">Sorted and Unsorted Indices</h3>
-<p>Earlier I briefly mentioned a caveat, but I should emphasize it more here. <em>Many of the <code>MultiIndex</code> slicing operations will fail if the index is not sorted.</em> Let’s take a closer look.</p>
-<p>We’ll start by creating some simple multiply indexed data where the indices are <em>not lexographically sorted</em>:</p>
+<section id="다중-인덱스-재배열" class="level2">
+<h2 class="anchored" data-anchor-id="다중-인덱스-재배열">다중 인덱스 재배열</h2>
+<p>다중 인덱스 데이터 작업의 핵심 중 하나는 데이터를 효과적으로 변환하는 방법을 아는 것입니다. 데이터 세트의 모든 정보를 보존하지만 다양한 계산 목적에 맞게 재배열하는 여러 작업이 있습니다. 이에 대한 간략한 예는 <code>stack</code> 및 <code>unstack</code> 방법에서 보았지만 계층적 인덱스와 열 간의 데이터 재배열을 미세하게 제어할 수 있는 더 많은 방법이 있으므로 여기서 살펴보겠습니다.</p>
+<section id="정렬된-인덱스와-정렬되지-않은-인덱스" class="level3">
+<h3 class="anchored" data-anchor-id="정렬된-인덱스와-정렬되지-않은-인덱스">정렬된 인덱스와 정렬되지 않은 인덱스</h3>
+<p>앞서 간략하게 주의사항을 언급했지만 여기서는 더 강조하고 싶습니다. <em>인덱스가 정렬되지 않으면 ‘MultiIndex’ 슬라이싱 작업 중 다수가 실패합니다.</em> 좀 더 자세히 살펴보겠습니다.</p>
+<p>인덱스가 <em>사전순으로 정렬되지 않은</em> 간단한 다중 인덱스 데이터를 만드는 것부터 시작하겠습니다.</p>
 <div id="cell-79" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="34">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb55"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb55-1"><a href="#cb55-1" aria-hidden="true" tabindex="-1"></a>index <span class="op">=</span> pd.MultiIndex.from_product([[<span class="st">'a'</span>, <span class="st">'c'</span>, <span class="st">'b'</span>], [<span class="dv">1</span>, <span class="dv">2</span>]])</span>
 <span id="cb55-2"><a href="#cb55-2" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> pd.Series(np.random.rand(<span class="dv">6</span>), index<span class="op">=</span>index)</span>
@@ -1467,7 +1467,7 @@ b     1      0.100183
 dtype: float64</code></pre>
 </div>
 </div>
-<p>If we try to take a partial slice of this index, it will result in an error:</p>
+<p>이 인덱스의 일부 조각을 가져오려고 하면 오류가 발생합니다.</p>
 <div id="cell-81" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="35">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb57"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb57-1"><a href="#cb57-1" aria-hidden="true" tabindex="-1"></a><span class="cf">try</span>:</span>
 <span id="cb57-2"><a href="#cb57-2" aria-hidden="true" tabindex="-1"></a>    data[<span class="st">'a'</span>:<span class="st">'b'</span>]</span>
@@ -1477,7 +1477,7 @@ dtype: float64</code></pre>
 <pre><code>KeyError 'Key length (1) was greater than MultiIndex lexsort depth (0)'</code></pre>
 </div>
 </div>
-<p>Although it is not entirely clear from the error message, this is the result of the <code>MultiIndex</code> not being sorted. For various reasons, partial slices and other similar operations require the levels in the <code>MultiIndex</code> to be in sorted (i.e., lexographical) order. Pandas provides a number of convenience routines to perform this type of sorting, such as the <code>sort_index</code> and <code>sortlevel</code> methods of the <code>DataFrame</code>. We’ll use the simplest, <code>sort_index</code>, here:</p>
+<p>오류 메시지에서 완전히 명확하지는 않지만 <code>MultiIndex</code>가 정렬되지 않은 결과입니다. 여러 가지 이유로 부분 슬라이스 및 기타 유사한 작업을 수행하려면 ’MultiIndex’의 수준이 정렬된(즉, 사전순) 순서로 되어 있어야 합니다. Pandas는 <code>DataFrame</code>의 <code>sort_index</code> 및 <code>sortlevel</code> 메서드와 같이 이러한 유형의 정렬을 수행하기 위한 다양한 편의 루틴을 제공합니다. 여기서는 가장 간단한 <code>sort_index</code>를 사용하겠습니다.</p>
 <div id="cell-83" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="36">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb59"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb59-1"><a href="#cb59-1" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> data.sort_index()</span>
 <span id="cb59-2"><a href="#cb59-2" aria-hidden="true" tabindex="-1"></a>data</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -1492,7 +1492,7 @@ c     1      0.206217
 dtype: float64</code></pre>
 </div>
 </div>
-<p>With the index sorted in this way, partial slicing will work as expected:</p>
+<p>이런 방식으로 인덱스를 정렬하면 부분 슬라이싱이 예상대로 작동합니다.</p>
 <div id="cell-85" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="37">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb61"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb61-1"><a href="#cb61-1" aria-hidden="true" tabindex="-1"></a>data[<span class="st">'a'</span>:<span class="st">'b'</span>]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="37">
@@ -1505,9 +1505,9 @@ dtype: float64</code></pre>
 </div>
 </div>
 </section>
-<section id="stacking-and-unstacking-indices" class="level3">
-<h3 class="anchored" data-anchor-id="stacking-and-unstacking-indices">Stacking and Unstacking Indices</h3>
-<p>As we saw briefly before, it is possible to convert a dataset from a stacked multi-index to a simple two-dimensional representation, optionally specifying the level to use:</p>
+<section id="인덱스-스태킹-및-언스택" class="level3">
+<h3 class="anchored" data-anchor-id="인덱스-스태킹-및-언스택">인덱스 스태킹 및 언스택</h3>
+<p>이전에 간략하게 살펴보았듯이, 누적된 다중 인덱스에서 간단한 2차원 표현으로 데이터세트를 변환하고 선택적으로 사용할 수준을 지정하는 것이 가능합니다.</p>
 <div id="cell-87" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="38">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb63"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb63-1"><a href="#cb63-1" aria-hidden="true" tabindex="-1"></a>pop.unstack(level<span class="op">=</span><span class="dv">0</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="38">
@@ -1589,7 +1589,7 @@ dtype: float64</code></pre>
 </div>
 </div>
 </div>
-<p>The opposite of <code>unstack</code> is <code>stack</code>, which here can be used to recover the original series:</p>
+<p>’unstack’의 반대는 ’stack’입니다. 여기서는 원래 시리즈를 복구하는 데 사용할 수 있습니다.</p>
 <div id="cell-90" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="40">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb65"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb65-1"><a href="#cb65-1" aria-hidden="true" tabindex="-1"></a>pop.unstack().stack()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="40">
@@ -1604,9 +1604,9 @@ dtype: int64</code></pre>
 </div>
 </div>
 </section>
-<section id="index-setting-and-resetting" class="level3">
-<h3 class="anchored" data-anchor-id="index-setting-and-resetting">Index Setting and Resetting</h3>
-<p>Another way to rearrange hierarchical data is to turn the index labels into columns; this can be accomplished with the <code>reset_index</code> method. Calling this on the population dictionary will result in a <code>DataFrame</code> with <code>state</code> and <code>year</code> columns holding the information that was formerly in the index. For clarity, we can optionally specify the name of the data for the column representation:</p>
+<section id="인덱스-설정-및-재설정" class="level3">
+<h3 class="anchored" data-anchor-id="인덱스-설정-및-재설정">인덱스 설정 및 재설정</h3>
+<p>계층적 데이터를 재배열하는 또 다른 방법은 인덱스 레이블을 열로 바꾸는 것입니다. 이는 <code>reset_index</code> 메소드를 사용하여 수행할 수 있습니다. 인구 사전에서 이를 호출하면 이전에 인덱스에 있었던 정보를 보유하는 <code>state</code> 및 <code>year</code> 열이 있는 <code>DataFrame</code>이 생성됩니다. 명확성을 위해 선택적으로 열 표현에 대한 데이터 이름을 지정할 수 있습니다.</p>
 <div id="cell-92" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="41">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb67"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb67-1"><a href="#cb67-1" aria-hidden="true" tabindex="-1"></a>pop_flat <span class="op">=</span> pop.reset_index(name<span class="op">=</span><span class="st">'population'</span>)</span>
 <span id="cb67-2"><a href="#cb67-2" aria-hidden="true" tabindex="-1"></a>pop_flat</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -1666,7 +1666,7 @@ dtype: int64</code></pre>
 </div>
 </div>
 </div>
-<p>A common pattern is to build a <code>MultiIndex</code> from the column values. This can be done with the <code>set_index</code> method of the <code>DataFrame</code>, which returns a multiply indexed <code>DataFrame</code>:</p>
+<p>일반적인 패턴은 열 값에서 <code>MultiIndex</code>를 작성하는 것입니다. 이는 다중 인덱스 <code>DataFrame</code>을 반환하는 <code>DataFrame</code>의 <code>set_index</code> 메서드를 사용하여 수행할 수 있습니다.</p>
 <div id="cell-94" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="42">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb68"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb68-1"><a href="#cb68-1" aria-hidden="true" tabindex="-1"></a>pop_flat.set_index([<span class="st">'state'</span>, <span class="st">'year'</span>])</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="42">
@@ -1720,7 +1720,7 @@ dtype: int64</code></pre>
 </div>
 </div>
 </div>
-<p>In practice, this type of reindexing is one of the more useful patterns when exploring real-world datasets.</p>
+<p>실제로 이러한 유형의 재인덱싱은 실제 데이터 세트를 탐색할 때 더 유용한 패턴 중 하나입니다.</p>
 
 
 </section>
@@ -2129,13 +2129,13 @@ dtype: int64</code></pre>
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../notebooks/03.04-Missing-Values.html" class="pagination-link" aria-label="Handling Missing Data">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Handling Missing Data</span></span>
+      <a href="../notebooks/03.04-Missing-Values.html" class="pagination-link" aria-label="누락된 데이터 처리">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">누락된 데이터 처리</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../notebooks/03.06-Concat-And-Append.html" class="pagination-link" aria-label="Combining Datasets: concat and append">
-        <span class="nav-page-text"><span class="chapter-title">Combining Datasets: concat and append</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../notebooks/03.06-Concat-And-Append.html" class="pagination-link" aria-label="데이터세트 결합: 연결 및 추가">
+        <span class="nav-page-text"><span class="chapter-title">데이터세트 결합: 연결 및 추가</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

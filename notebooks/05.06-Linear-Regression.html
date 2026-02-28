@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>In Depth: Linear Regression – 파이썬 데이터 사이언스 핸드북</title>
+<title>심층 분석: 선형 회귀 – 파이썬 데이터 사이언스 핸드북</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -77,7 +77,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-3778d3e438078121318a23701f9f68bb.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-803ae4f7a8810f475153517dc3c4ebae.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -150,7 +150,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../notebooks/05.00-Machine-Learning.html">머신러닝</a></li><li class="breadcrumb-item"><a href="../notebooks/05.06-Linear-Regression.html"><span class="chapter-title">In Depth: Linear Regression</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../notebooks/05.00-Machine-Learning.html">머신러닝</a></li><li class="breadcrumb-item"><a href="../notebooks/05.06-Linear-Regression.html"><span class="chapter-title">심층 분석: 선형 회귀</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -197,7 +197,7 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/01.00-IPython-Beyond-Normal-Python.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Jupyter: 일반 Python을 넘어서</span></a>
+  <a href="../notebooks/01.00-IPython-Beyond-Normal-Python.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Jupyter: 일반 파이썬(Python)을 넘어서</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -227,17 +227,17 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/01.06-Errors-and-Debugging.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Errors and Debugging</span></a>
+  <a href="../notebooks/01.06-Errors-and-Debugging.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">오류 및 디버깅</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/01.07-Timing-and-Profiling.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Profiling and Timing Code</span></a>
+  <a href="../notebooks/01.07-Timing-and-Profiling.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">프로파일링 및 타이밍 코드</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/01.08-More-IPython-Resources.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">More IPython Resources</span></a>
+  <a href="../notebooks/01.08-More-IPython-Resources.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">추가 IPython 리소스</span></a>
   </div>
 </li>
       </ul>
@@ -253,52 +253,52 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.00-Introduction-to-NumPy.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Introduction to NumPy</span></a>
+  <a href="../notebooks/02.00-Introduction-to-NumPy.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">NumPy 소개</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.01-Understanding-Data-Types.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Understanding Data Types in Python</span></a>
+  <a href="../notebooks/02.01-Understanding-Data-Types.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">파이썬(Python)의 데이터 유형 이해</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.02-The-Basics-Of-NumPy-Arrays.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">The Basics of NumPy Arrays</span></a>
+  <a href="../notebooks/02.02-The-Basics-Of-NumPy-Arrays.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">NumPy 배열의 기본</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.03-Computation-on-arrays-ufuncs.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Computation on NumPy Arrays: Universal Functions</span></a>
+  <a href="../notebooks/02.03-Computation-on-arrays-ufuncs.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">NumPy 배열 계산: 범용 함수</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.04-Computation-on-arrays-aggregates.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Aggregations: min, max, and Everything in Between</span></a>
+  <a href="../notebooks/02.04-Computation-on-arrays-aggregates.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">집계: 최소, 최대 및 그 사이의 모든 것</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.05-Computation-on-arrays-broadcasting.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Computation on Arrays: Broadcasting</span></a>
+  <a href="../notebooks/02.05-Computation-on-arrays-broadcasting.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">배열 계산: 브로드캐스팅</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.06-Boolean-Arrays-and-Masks.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Comparisons, Masks, and Boolean Logic</span></a>
+  <a href="../notebooks/02.06-Boolean-Arrays-and-Masks.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">비교, 마스크 및 부울 논리</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.07-Fancy-Indexing.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Fancy Indexing</span></a>
+  <a href="../notebooks/02.07-Fancy-Indexing.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">멋진 인덱싱</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.08-Sorting.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Sorting Arrays</span></a>
+  <a href="../notebooks/02.08-Sorting.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">배열 정렬</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.09-Structured-Data-NumPy.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Structured Data: NumPy’s Structured Arrays</span></a>
+  <a href="../notebooks/02.09-Structured-Data-NumPy.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">구조화된 데이터: NumPy의 구조화된 배열</span></a>
   </div>
 </li>
       </ul>
@@ -314,72 +314,72 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.00-Introduction-to-Pandas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Data Manipulation with Pandas</span></a>
+  <a href="../notebooks/03.00-Introduction-to-Pandas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">팬더를 이용한 데이터 조작</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.01-Introducing-Pandas-Objects.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Introducing Pandas Objects</span></a>
+  <a href="../notebooks/03.01-Introducing-Pandas-Objects.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">판다스 객체 소개</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.02-Data-Indexing-and-Selection.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Data Indexing and Selection</span></a>
+  <a href="../notebooks/03.02-Data-Indexing-and-Selection.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">데이터 인덱싱 및 선택</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.03-Operations-in-Pandas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Operating on Data in Pandas</span></a>
+  <a href="../notebooks/03.03-Operations-in-Pandas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Pandas에서 데이터 작업</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.04-Missing-Values.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Handling Missing Data</span></a>
+  <a href="../notebooks/03.04-Missing-Values.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">누락된 데이터 처리</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.05-Hierarchical-Indexing.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Hierarchical Indexing</span></a>
+  <a href="../notebooks/03.05-Hierarchical-Indexing.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">계층적 인덱싱</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.06-Concat-And-Append.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Combining Datasets: concat and append</span></a>
+  <a href="../notebooks/03.06-Concat-And-Append.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">데이터세트 결합: 연결 및 추가</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.07-Merge-and-Join.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Combining Datasets: merge and join</span></a>
+  <a href="../notebooks/03.07-Merge-and-Join.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">데이터세트 결합: 병합 및 조인</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.08-Aggregation-and-Grouping.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Aggregation and Grouping</span></a>
+  <a href="../notebooks/03.08-Aggregation-and-Grouping.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">집계 및 그룹화</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.09-Pivot-Tables.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Pivot Tables</span></a>
+  <a href="../notebooks/03.09-Pivot-Tables.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">피벗 테이블</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.10-Working-With-Strings.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Vectorized String Operations</span></a>
+  <a href="../notebooks/03.10-Working-With-Strings.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">벡터화된 문자열 작업</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.11-Working-with-Time-Series.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Working with Time Series</span></a>
+  <a href="../notebooks/03.11-Working-with-Time-Series.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">시계열 작업</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.12-Performance-Eval-and-Query.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">High-Performance Pandas: eval and query</span></a>
+  <a href="../notebooks/03.12-Performance-Eval-and-Query.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">고성능 Pandas: 평가 및 쿼리</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.13-Further-Resources.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Further Resources</span></a>
+  <a href="../notebooks/03.13-Further-Resources.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">추가 리소스</span></a>
   </div>
 </li>
       </ul>
@@ -395,77 +395,77 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.00-Introduction-To-Matplotlib.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Visualization with Matplotlib</span></a>
+  <a href="../notebooks/04.00-Introduction-To-Matplotlib.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Matplotlib를 사용한 시각화</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.01-Simple-Line-Plots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Simple Line Plots</span></a>
+  <a href="../notebooks/04.01-Simple-Line-Plots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">간단한 선 도표</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.02-Simple-Scatter-Plots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Simple Scatter Plots</span></a>
+  <a href="../notebooks/04.02-Simple-Scatter-Plots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">단순 산점도</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.03-Errorbars.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Visualizing Uncertainties</span></a>
+  <a href="../notebooks/04.03-Errorbars.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">불확실성 시각화</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.04-Density-and-Contour-Plots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Density and Contour Plots</span></a>
+  <a href="../notebooks/04.04-Density-and-Contour-Plots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">밀도 및 등고선 플롯</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.05-Histograms-and-Binnings.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Histograms, Binnings, and Density</span></a>
+  <a href="../notebooks/04.05-Histograms-and-Binnings.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">히스토그램, 비닝 및 밀도</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.06-Customizing-Legends.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Customizing Plot Legends</span></a>
+  <a href="../notebooks/04.06-Customizing-Legends.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">플롯 범례 사용자 정의</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.07-Customizing-Colorbars.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Customizing Colorbars</span></a>
+  <a href="../notebooks/04.07-Customizing-Colorbars.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">컬러바 사용자 정의</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.08-Multiple-Subplots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Multiple Subplots</span></a>
+  <a href="../notebooks/04.08-Multiple-Subplots.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">다중 서브플롯</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.09-Text-and-Annotation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Text and Annotation</span></a>
+  <a href="../notebooks/04.09-Text-and-Annotation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">텍스트 및 주석</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.10-Customizing-Ticks.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Customizing Ticks</span></a>
+  <a href="../notebooks/04.10-Customizing-Ticks.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">눈금 사용자 정의</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.11-Settings-and-Stylesheets.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Customizing Matplotlib: Configurations and Stylesheets</span></a>
+  <a href="../notebooks/04.11-Settings-and-Stylesheets.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Matplotlib 사용자 정의: 구성 및 스타일시트</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.12-Three-Dimensional-Plotting.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Three-Dimensional Plotting in Matplotlib</span></a>
+  <a href="../notebooks/04.12-Three-Dimensional-Plotting.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Matplotlib의 3차원 플로팅</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.14-Visualization-With-Seaborn.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Visualization with Seaborn</span></a>
+  <a href="../notebooks/04.14-Visualization-With-Seaborn.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Seaborn을 이용한 시각화</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/04.15-Further-Resources.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Further Resources</span></a>
+  <a href="../notebooks/04.15-Further-Resources.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">추가 리소스</span></a>
   </div>
 </li>
       </ul>
@@ -481,82 +481,82 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.00-Machine-Learning.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Machine Learning</span></a>
+  <a href="../notebooks/05.00-Machine-Learning.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">머신러닝</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.01-What-Is-Machine-Learning.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">What Is Machine Learning?</span></a>
+  <a href="../notebooks/05.01-What-Is-Machine-Learning.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">머신러닝이란?</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.02-Introducing-Scikit-Learn.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Introducing Scikit-Learn</span></a>
+  <a href="../notebooks/05.02-Introducing-Scikit-Learn.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Scikit-Learn 소개</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.03-Hyperparameters-and-Model-Validation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Hyperparameters and Model Validation</span></a>
+  <a href="../notebooks/05.03-Hyperparameters-and-Model-Validation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">하이퍼파라미터 및 모델 검증</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.04-Feature-Engineering.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Feature Engineering</span></a>
+  <a href="../notebooks/05.04-Feature-Engineering.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">기능 엔지니어링</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.05-Naive-Bayes.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Naive Bayes Classification</span></a>
+  <a href="../notebooks/05.05-Naive-Bayes.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 나이브 베이즈 분류</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.06-Linear-Regression.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">In Depth: Linear Regression</span></a>
+  <a href="../notebooks/05.06-Linear-Regression.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">심층 분석: 선형 회귀</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.07-Support-Vector-Machines.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Support Vector Machines</span></a>
+  <a href="../notebooks/05.07-Support-Vector-Machines.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 서포트 벡터 머신</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.08-Random-Forests.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Decision Trees and Random Forests</span></a>
+  <a href="../notebooks/05.08-Random-Forests.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 의사결정 트리 및 랜덤 포레스트</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.09-Principal-Component-Analysis.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Principal Component Analysis</span></a>
+  <a href="../notebooks/05.09-Principal-Component-Analysis.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 주성분 분석</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.10-Manifold-Learning.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Manifold Learning</span></a>
+  <a href="../notebooks/05.10-Manifold-Learning.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 다양한 학습</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.11-K-Means.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: k-Means Clustering</span></a>
+  <a href="../notebooks/05.11-K-Means.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: k-평균 클러스터링</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.12-Gaussian-Mixtures.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Gaussian Mixture Models</span></a>
+  <a href="../notebooks/05.12-Gaussian-Mixtures.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 가우스 혼합 모델</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.13-Kernel-Density-Estimation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">In Depth: Kernel Density Estimation</span></a>
+  <a href="../notebooks/05.13-Kernel-Density-Estimation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">심층 분석: 커널 밀도 추정</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.14-Image-Features.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Application: A Face Detection Pipeline</span></a>
+  <a href="../notebooks/05.14-Image-Features.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">응용 분야: 얼굴 감지 파이프라인</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/05.15-Learning-More.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Further Machine Learning Resources</span></a>
+  <a href="../notebooks/05.15-Learning-More.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">추가 머신러닝(Machine Learning) 리소스</span></a>
   </div>
 </li>
       </ul>
@@ -572,7 +572,7 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/06.00-Figure-Code.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Appendix: Figure Code</span></a>
+  <a href="../notebooks/06.00-Figure-Code.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">부록: 그림 코드</span></a>
   </div>
 </li>
       </ul>
@@ -587,27 +587,27 @@ window.Quarto = {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#simple-linear-regression" id="toc-simple-linear-regression" class="nav-link active" data-scroll-target="#simple-linear-regression">Simple Linear Regression</a></li>
-  <li><a href="#basis-function-regression" id="toc-basis-function-regression" class="nav-link" data-scroll-target="#basis-function-regression">Basis Function Regression</a>
+  <li><a href="#단순-선형-회귀" id="toc-단순-선형-회귀" class="nav-link active" data-scroll-target="#단순-선형-회귀">단순 선형 회귀</a></li>
+  <li><a href="#기초-함수-회귀" id="toc-기초-함수-회귀" class="nav-link" data-scroll-target="#기초-함수-회귀">기초 함수 회귀</a>
   <ul class="collapse">
-  <li><a href="#polynomial-basis-functions" id="toc-polynomial-basis-functions" class="nav-link" data-scroll-target="#polynomial-basis-functions">Polynomial Basis Functions</a></li>
-  <li><a href="#gaussian-basis-functions" id="toc-gaussian-basis-functions" class="nav-link" data-scroll-target="#gaussian-basis-functions">Gaussian Basis Functions</a></li>
+  <li><a href="#다항식-기저-함수" id="toc-다항식-기저-함수" class="nav-link" data-scroll-target="#다항식-기저-함수">다항식 기저 함수</a></li>
+  <li><a href="#가우스-기반-함수" id="toc-가우스-기반-함수" class="nav-link" data-scroll-target="#가우스-기반-함수">가우스 기반 함수</a></li>
   </ul></li>
-  <li><a href="#regularization" id="toc-regularization" class="nav-link" data-scroll-target="#regularization">Regularization</a>
+  <li><a href="#정규화" id="toc-정규화" class="nav-link" data-scroll-target="#정규화">정규화</a>
   <ul class="collapse">
-  <li><a href="#ridge-regression-l_2-regularization" id="toc-ridge-regression-l_2-regularization" class="nav-link" data-scroll-target="#ridge-regression-l_2-regularization">Ridge Regression (<span class="math inline">\(L_2\)</span> Regularization)</a></li>
-  <li><a href="#lasso-regression-l_1-regularization" id="toc-lasso-regression-l_1-regularization" class="nav-link" data-scroll-target="#lasso-regression-l_1-regularization">Lasso Regression (<span class="math inline">\(L_1\)</span> Regularization)</a></li>
+  <li><a href="#능형-회귀l_2-정규화" id="toc-능형-회귀l_2-정규화" class="nav-link" data-scroll-target="#능형-회귀l_2-정규화">능형 회귀(<span class="math inline">\(L_2\)</span> 정규화)</a></li>
+  <li><a href="#올가미-회귀l_1-정규화" id="toc-올가미-회귀l_1-정규화" class="nav-link" data-scroll-target="#올가미-회귀l_1-정규화">올가미 회귀(<span class="math inline">\(L_1\)</span> 정규화)</a></li>
   </ul></li>
-  <li><a href="#example-predicting-bicycle-traffic" id="toc-example-predicting-bicycle-traffic" class="nav-link" data-scroll-target="#example-predicting-bicycle-traffic">Example: Predicting Bicycle Traffic</a></li>
+  <li><a href="#예-자전거-교통량-예측" id="toc-예-자전거-교통량-예측" class="nav-link" data-scroll-target="#예-자전거-교통량-예측">예: 자전거 교통량 예측</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../notebooks/05.00-Machine-Learning.html">머신러닝</a></li><li class="breadcrumb-item"><a href="../notebooks/05.06-Linear-Regression.html"><span class="chapter-title">In Depth: Linear Regression</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../notebooks/05.00-Machine-Learning.html">머신러닝</a></li><li class="breadcrumb-item"><a href="../notebooks/05.06-Linear-Regression.html"><span class="chapter-title">심층 분석: 선형 회귀</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-title">In Depth: Linear Regression</span></h1>
+<h1 class="title"><span class="chapter-title">심층 분석: 선형 회귀</span></h1>
 </div>
 
 
@@ -624,21 +624,21 @@ window.Quarto = {
 </header>
 
 
-<p>Just as naive Bayes (discussed in <a href="../notebooks/05.05-Naive-Bayes.html">In Depth: Naive Bayes Classification</a>) is a good starting point for classification tasks, linear regression models are a good starting point for regression tasks. Such models are popular because they can be fit quickly and are straightforward to interpret. You are already familiar with the simplest form of linear regression model (i.e., fitting a straight line to two-dimensional data), but such models can be extended to model more complicated data behavior.</p>
-<p>In this chapter we will start with a quick walkthrough of the mathematics behind this well-known problem, before moving on to see how linear models can be generalized to account for more complicated patterns in data.</p>
-<p>We begin with the standard imports:</p>
+<p>Naive Bayes(<a href="../notebooks/05.05-Naive-Bayes.html">심층: Naive Bayes 분류</a>에서 논의)가 분류 작업의 좋은 시작점인 것처럼 선형 회귀 모델은 회귀 작업의 좋은 시작점입니다. 이러한 모델은 신속하게 적합할 수 있고 해석하기 쉽기 때문에 인기가 있습니다. 여러분은 이미 가장 간단한 형태의 선형 회귀 모델(즉, 2차원 데이터에 직선을 맞추는 것)에 익숙하지만 이러한 모델을 확장하여 더 복잡한 데이터 동작을 모델링할 수 있습니다.</p>
+<p>이번 장에서는 이 잘 알려진 문제 뒤에 있는 수학을 빠르게 살펴보는 것부터 시작하여 데이터의 더 복잡한 패턴을 설명하기 위해 선형 모델을 일반화하는 방법을 살펴보겠습니다.</p>
+<p>표준 가져오기부터 시작합니다.</p>
 <div id="cell-2" class="cell" data-editable="true" data-tags="[]" data-execution_count="1">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="op">%</span>matplotlib inline</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>plt.style.use(<span class="st">'seaborn-whitegrid'</span>)</span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<section id="simple-linear-regression" class="level2">
-<h2 class="anchored" data-anchor-id="simple-linear-regression">Simple Linear Regression</h2>
-<p>We will start with the most familiar linear regression, a straight-line fit to data. A straight-line fit is a model of the form: <span class="math display">\[
-y = ax + b
-\]</span> where <span class="math inline">\(a\)</span> is commonly known as the <em>slope</em>, and <span class="math inline">\(b\)</span> is commonly known as the <em>intercept</em>.</p>
-<p>Consider the following data, which is scattered about a line with a slope of 2 and an intercept of –5 (see the following figure):</p>
+<section id="단순-선형-회귀" class="level2">
+<h2 class="anchored" data-anchor-id="단순-선형-회귀">단순 선형 회귀</h2>
+<p>가장 친숙한 선형 회귀, 즉 데이터에 대한 직선 적합부터 시작하겠습니다. 직선 맞춤은 다음과 같은 형태의 모델입니다. <span class="math display">\[
+y = 도끼 + b
+\]</span> 여기서 <span class="math inline">\(a\)</span>는 일반적으로 <em>기울기</em>로 알려져 있고 <span class="math inline">\(b\)</span>는 일반적으로 <em>절편</em>으로 알려져 있습니다.</p>
+<p>기울기가 2이고 절편이 –5인 선 주위에 흩어져 있는 다음 데이터를 고려해 보세요(다음 그림 참조).</p>
 <div id="cell-4" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="2">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>rng <span class="op">=</span> np.random.RandomState(<span class="dv">1</span>)</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> <span class="dv">10</span> <span class="op">*</span> rng.rand(<span class="dv">50</span>)</span>
@@ -652,7 +652,7 @@ y = ax + b
 </div>
 </div>
 </div>
-<p>We can use Scikit-Learn’s <code>LinearRegression</code> estimator to fit this data and construct the best-fit line, as shown in the following figure:</p>
+<p>다음 그림과 같이 Scikit-Learn의 <code>LinearRegression</code> 추정기를 사용하여 이 데이터를 맞추고 가장 적합한 선을 구성할 수 있습니다.</p>
 <div id="cell-6" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="3">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.linear_model <span class="im">import</span> LinearRegression</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>model <span class="op">=</span> LinearRegression(fit_intercept<span class="op">=</span><span class="va">True</span>)</span>
@@ -672,7 +672,7 @@ y = ax + b
 </div>
 </div>
 </div>
-<p>The slope and intercept of the data are contained in the model’s fit parameters, which in Scikit-Learn are always marked by a trailing underscore. Here the relevant parameters are <code>coef_</code> and <code>intercept_</code>:</p>
+<p>데이터의 기울기와 절편은 모델의 맞춤 매개변수에 포함되어 있으며 Scikit-Learn에서는 항상 밑줄로 표시됩니다. 여기서 관련 매개변수는 <code>coef_</code> 및 <code>intercept_</code>입니다.</p>
 <div id="cell-8" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="4">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Model slope:    "</span>, model.coef_[<span class="dv">0</span>])</span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Model intercept:"</span>, model.intercept_)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -681,11 +681,11 @@ y = ax + b
 Model intercept: -4.998577085553204</code></pre>
 </div>
 </div>
-<p>We see that the results are very close to the values used to generate the data, as we might hope.</p>
-<p>The <code>LinearRegression</code> estimator is much more capable than this, however—in addition to simple straight-line fits, it can also handle multidimensional linear models of the form: <span class="math display">\[
+<p>우리가 바라는 대로 결과가 데이터를 생성하는 데 사용된 값과 매우 유사하다는 것을 확인할 수 있습니다.</p>
+<p>‘LinearRegression’ 추정기는 이보다 훨씬 더 많은 기능을 제공하지만 단순한 직선 피팅 외에도 다음 형식의 다차원 선형 모델도 처리할 수 있습니다. <span class="math display">\[
 y = a_0 + a_1 x_1 + a_2 x_2 + \cdots
-\]</span> where there are multiple <span class="math inline">\(x\)</span> values. Geometrically, this is akin to fitting a plane to points in three dimensions, or fitting a hyperplane to points in higher dimensions.</p>
-<p>The multidimensional nature of such regressions makes them more difficult to visualize, but we can see one of these fits in action by building some example data, using NumPy’s matrix multiplication operator:</p>
+\]</span> <span class="math inline">\(x\)</span> 값이 여러 개 있는 경우. 기하학적으로 이는 평면을 3차원 점에 맞추거나 초평면을 더 높은 차원 점에 맞추는 것과 유사합니다.</p>
+<p>이러한 회귀의 다차원적 특성으로 인해 시각화하기가 더 어렵지만 NumPy의 행렬 곱셈 연산자를 사용하여 몇 가지 예제 데이터를 구축하면 이러한 적합성 중 하나가 실제로 작동하는 것을 살펴볼 수 있습니다.</p>
 <div id="cell-11" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="5">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>rng <span class="op">=</span> np.random.RandomState(<span class="dv">1</span>)</span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>X <span class="op">=</span> <span class="dv">10</span> <span class="op">*</span> rng.rand(<span class="dv">100</span>, <span class="dv">3</span>)</span>
@@ -699,20 +699,20 @@ y = a_0 + a_1 x_1 + a_2 x_2 + \cdots
 [ 1.5 -2.   1. ]</code></pre>
 </div>
 </div>
-<p>Here the <span class="math inline">\(y\)</span> data is constructed from a linear combination of three random <span class="math inline">\(x\)</span> values, and the linear regression recovers the coefficients used to construct the data.</p>
-<p>In this way, we can use the single <code>LinearRegression</code> estimator to fit lines, planes, or hyperplanes to our data. It still appears that this approach would be limited to strictly linear relationships between variables, but it turns out we can relax this as well.</p>
+<p>여기서 <span class="math inline">\(y\)</span> 데이터는 세 개의 임의 <span class="math inline">\(x\)</span> 값의 선형 조합으로 구성되며 선형 회귀는 데이터를 구성하는 데 사용된 계수를 복구합니다.</p>
+<p>이러한 방식으로 단일 <code>LinearRegression</code> 추정기를 사용하여 선, 평면 또는 초평면을 데이터에 맞출 수 있습니다. 여전히 이 접근 방식은 변수 간의 엄격한 선형 관계로 제한되는 것처럼 보이지만 이를 완화할 수도 있는 것으로 나타났습니다.</p>
 </section>
-<section id="basis-function-regression" class="level2">
-<h2 class="anchored" data-anchor-id="basis-function-regression">Basis Function Regression</h2>
-<p>One trick you can use to adapt linear regression to nonlinear relationships between variables is to transform the data according to <em>basis functions</em>. We have seen one version of this before, in the <code>PolynomialRegression</code> pipeline used in <a href="../notebooks/05.03-Hyperparameters-and-Model-Validation.html">Hyperparameters and Model Validation</a> and <a href="../notebooks/05.04-Feature-Engineering.html">Feature Engineering</a>. The idea is to take our multidimensional linear model: <span class="math display">\[
+<section id="기초-함수-회귀" class="level2">
+<h2 class="anchored" data-anchor-id="기초-함수-회귀">기초 함수 회귀</h2>
+<p>변수 간의 비선형 관계에 선형 회귀를 적용하는 데 사용할 수 있는 한 가지 방법은 <em>기저 함수</em>에 따라 데이터를 변환하는 것입니다. 우리는 이전에 <a href="../notebooks/05.03-Hyperparameters-and-Model-Validation.html">초매개변수 및 모델 검증</a> 및 <a href="../notebooks/05.04-Feature-Engineering.html">기능 엔지니어링</a>에 사용된 <code>PolynomialRegression</code> 파이프라인에서 이 버전 중 하나를 본 적이 있습니다. 아이디어는 다차원 선형 모델을 취하는 것입니다. <span class="math display">\[
 y = a_0 + a_1 x_1 + a_2 x_2 + a_3 x_3 + \cdots
-\]</span> and build the <span class="math inline">\(x_1, x_2, x_3,\)</span> and so on from our single-dimensional input <span class="math inline">\(x\)</span>. That is, we let <span class="math inline">\(x_n = f_n(x)\)</span>, where <span class="math inline">\(f_n()\)</span> is some function that transforms our data.</p>
-<p>For example, if <span class="math inline">\(f_n(x) = x^n\)</span>, our model becomes a polynomial regression: <span class="math display">\[
+\]</span> 1차원 입력 <span class="math inline">\(x\)</span>에서 <span class="math inline">\(x_1, x_2, x_3,\)</span> 등을 만듭니다. 즉, <span class="math inline">\(x_n = f_n(x)\)</span>라고 합니다. 여기서 <span class="math inline">\(f_n()\)</span>은 데이터를 변환하는 함수입니다.</p>
+<p>예를 들어 <span class="math inline">\(f_n(x) = x^n\)</span>이면 모델은 다항식 회귀가 됩니다. <span class="math display">\[
 y = a_0 + a_1 x + a_2 x^2 + a_3 x^3 + \cdots
-\]</span> Notice that this is <em>still a linear model</em>—the linearity refers to the fact that the coefficients <span class="math inline">\(a_n\)</span> never multiply or divide each other. What we have effectively done is taken our one-dimensional <span class="math inline">\(x\)</span> values and projected them into a higher dimension, so that a linear fit can fit more complicated relationships between <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span>.</p>
-<section id="polynomial-basis-functions" class="level3">
-<h3 class="anchored" data-anchor-id="polynomial-basis-functions">Polynomial Basis Functions</h3>
-<p>This polynomial projection is useful enough that it is built into Scikit-Learn, using the <code>PolynomialFeatures</code> transformer:</p>
+\]</span> 이것은 <em>여전히 선형 모델</em>입니다. 선형성은 <span class="math inline">\(a_n\)</span> 계수가 서로 곱하거나 나누어지지 않는다는 사실을 나타냅니다. 우리가 효과적으로 수행한 작업은 1차원 <span class="math inline">\(x\)</span> 값을 가져와 더 높은 차원에 투영하여 선형 맞춤이 <span class="math inline">\(x\)</span>와 <span class="math inline">\(y\)</span> 사이의 더 복잡한 관계에 맞도록 하는 것입니다.</p>
+<section id="다항식-기저-함수" class="level3">
+<h3 class="anchored" data-anchor-id="다항식-기저-함수">다항식 기저 함수</h3>
+<p>이 다항식 투영은 <code>PolynomialFeatures</code> 변환기를 사용하여 Scikit-Learn에 내장될 만큼 유용합니다.</p>
 <div id="cell-15" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="6">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.preprocessing <span class="im">import</span> PolynomialFeatures</span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> np.array([<span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>])</span>
@@ -724,14 +724,14 @@ y = a_0 + a_1 x + a_2 x^2 + a_3 x^3 + \cdots
        [ 4., 16., 64.]])</code></pre>
 </div>
 </div>
-<p>We see here that the transformer has converted our one-dimensional array into a three-dimensional array, where each column contains the exponentiated value. This new, higher-dimensional data representation can then be plugged into a linear regression.</p>
-<p>As we saw in <a href="../notebooks/05.04-Feature-Engineering.html">Feature Engineering</a>, the cleanest way to accomplish this is to use a pipeline. Let’s make a 7th-degree polynomial model in this way:</p>
+<p>여기서는 변환기가 1차원 배열을 3차원 배열로 변환했으며, 각 열에는 지수화된 값이 포함되어 있음을 확인할 수 있습니다. 이 새로운 고차원 데이터 표현은 선형 회귀에 연결될 수 있습니다.</p>
+<p><a href="../notebooks/05.04-Feature-Engineering.html">Feature Engineering</a>에서 본 것처럼 이를 수행하는 가장 깔끔한 방법은 파이프라인을 사용하는 것입니다. 이런 식으로 7차 다항식 모델을 만들어 보겠습니다.</p>
 <div id="cell-17" class="cell" data-editable="true" data-tags="[]" data-execution_count="7">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.pipeline <span class="im">import</span> make_pipeline</span>
 <span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>poly_model <span class="op">=</span> make_pipeline(PolynomialFeatures(<span class="dv">7</span>),</span>
 <span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>                           LinearRegression())</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<p>With this transform in place, we can use the linear model to fit much more complicated relationships between <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span>. For example, here is a sine wave with noise (see the following figure):</p>
+<p>이 변환을 사용하면 선형 모델을 사용하여 <span class="math inline">\(x\)</span>와 <span class="math inline">\(y\)</span> 사이의 훨씬 더 복잡한 관계를 맞출 수 있습니다. 예를 들어 노이즈가 있는 사인파는 다음과 같습니다(다음 그림 참조).</p>
 <div id="cell-19" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="8">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>rng <span class="op">=</span> np.random.RandomState(<span class="dv">1</span>)</span>
 <span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> <span class="dv">10</span> <span class="op">*</span> rng.rand(<span class="dv">50</span>)</span>
@@ -750,14 +750,14 @@ y = a_0 + a_1 x + a_2 x^2 + a_3 x^3 + \cdots
 </div>
 </div>
 </div>
-<p>Our linear model, through the use of seventh-order polynomial basis functions, can provide an excellent fit to this nonlinear data!</p>
+<p>우리의 선형 모델은 7차 다항식 기반 함수를 사용하여 이 비선형 데이터에 탁월한 적합성을 제공할 수 있습니다!</p>
 </section>
-<section id="gaussian-basis-functions" class="level3">
-<h3 class="anchored" data-anchor-id="gaussian-basis-functions">Gaussian Basis Functions</h3>
-<p>Of course, other basis functions are possible. For example, one useful pattern is to fit a model that is not a sum of polynomial bases, but a sum of Gaussian bases. The result might look something like the following figure:</p>
+<section id="가우스-기반-함수" class="level3">
+<h3 class="anchored" data-anchor-id="가우스-기반-함수">가우스 기반 함수</h3>
+<p>물론, 다른 기본 기능도 가능합니다. 예를 들어 유용한 패턴 중 하나는 다항식 베이스의 합이 아니라 가우스 베이스의 합인 모델을 피팅하는 것입니다. 결과는 다음 그림과 유사할 수 있습니다.</p>
 <p><img src="images/05.06-gaussian-basis.png" class="img-fluid"></p>
-<p><a href="https://github.com/jakevdp/PythonDataScienceHandbook/blob/master/notebooks/06.00-Figure-Code.ipynb">figure source in Appendix</a></p>
-<p>The shaded regions in the plot are the scaled basis functions, and when added together they reproduce the smooth curve through the data. These Gaussian basis functions are not built into Scikit-Learn, but we can write a custom transformer that will create them, as shown here and illustrated in the following figure (Scikit-Learn transformers are implemented as Python classes; reading Scikit-Learn’s source is a good way to see how they can be created):</p>
+<p><a href="https://github.com/jakevdp/파이썬(Python)DataScienceHandbook/blob/master/notebooks/06.00-Figure-Code.ipynb">부록의 그림 소스</a></p>
+<p>플롯에서 음영 처리된 영역은 스케일링된 기본 함수이며, 함께 추가되면 데이터 전체에서 부드러운 곡선을 재현합니다. 이러한 가우스 기반 함수는 Scikit-Learn에 내장되어 있지 않지만 여기에 표시되고 다음 그림에 설명된 대로 이를 생성할 사용자 정의 변환기를 작성할 수 있습니다(Scikit-Learn 변환기는 파이썬(Python) 클래스로 구현됩니다. Scikit-Learn의 소스를 읽는 것은 생성 방법을 확인하는 좋은 방법입니다).</p>
 <div id="cell-24" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="9">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.base <span class="im">import</span> BaseEstimator, TransformerMixin</span>
 <span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a></span>
@@ -799,12 +799,12 @@ y = a_0 + a_1 x + a_2 x^2 + a_3 x^3 + \cdots
 </div>
 </div>
 </div>
-<p>I’ve included this example just to make clear that there is nothing magic about polynomial basis functions: if you have some sort of intuition into the generating process of your data that makes you think one basis or another might be appropriate, you can use that instead.</p>
+<p>다항식 기저 함수에는 마술 같은 것이 없다는 점을 분명히 하기 위해 이 예를 포함시켰습니다. 데이터 생성 과정에 대해 일종의 직관이 있어 하나의 기저 또는 다른 기저가 적절할 수 있다고 생각하게 만드는 경우 대신 이를 사용할 수 있습니다.</p>
 </section>
 </section>
-<section id="regularization" class="level2">
-<h2 class="anchored" data-anchor-id="regularization">Regularization</h2>
-<p>The introduction of basis functions into our linear regression makes the model much more flexible, but it also can very quickly lead to overfitting (refer back to <a href="../notebooks/05.03-Hyperparameters-and-Model-Validation.html">Hyperparameters and Model Validation</a> for a discussion of this). For example, the following figure shows what happens if we use a large number of Gaussian basis functions:</p>
+<section id="정규화" class="level2">
+<h2 class="anchored" data-anchor-id="정규화">정규화</h2>
+<p>선형 회귀에 기본 함수를 도입하면 모델이 훨씬 더 유연해지지만 매우 빠르게 과적합으로 이어질 수도 있습니다(이에 대한 자세한 내용은 <a href="../notebooks/05.03-Hyperparameters-and-Model-Validation.html">하이퍼매개변수 및 모델 검증</a>을 참조하세요). 예를 들어 다음 그림은 다수의 가우스 기반 함수를 사용하면 어떤 일이 발생하는지 보여줍니다.</p>
 <div id="cell-27" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="10">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>model <span class="op">=</span> make_pipeline(GaussianFeatures(<span class="dv">30</span>),</span>
 <span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>                      LinearRegression())</span>
@@ -823,7 +823,7 @@ y = a_0 + a_1 x + a_2 x^2 + a_3 x^3 + \cdots
 </div>
 </div>
 </div>
-<p>With the data projected to the 30-dimensional basis, the model has far too much flexibility and goes to extreme values between locations where it is constrained by data. We can see the reason for this if we plot the coefficients of the Gaussian bases with respect to their locations, as shown in the following figure:</p>
+<p>데이터를 30차원 기반으로 투영하면 모델의 유연성이 너무 높아 데이터의 제약을 받는 위치 사이에서 극단값으로 이동합니다. 다음 그림과 같이 위치에 대한 가우스 베이스의 계수를 플롯하면 그 이유를 확인할 수 있습니다.</p>
 <div id="cell-29" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="11">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> basis_plot(model, title<span class="op">=</span><span class="va">None</span>):</span>
 <span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>    fig, ax <span class="op">=</span> plt.subplots(<span class="dv">2</span>, sharex<span class="op">=</span><span class="va">True</span>)</span>
@@ -851,12 +851,12 @@ y = a_0 + a_1 x + a_2 x^2 + a_3 x^3 + \cdots
 </div>
 </div>
 </div>
-<p>The lower panel of this figure shows the amplitude of the basis function at each location. This is typical overfitting behavior when basis functions overlap: the coefficients of adjacent basis functions blow up and cancel each other out. We know that such behavior is problematic, and it would be nice if we could limit such spikes explicitly in the model by penalizing large values of the model parameters. Such a penalty is known as <em>regularization</em>, and comes in several forms.</p>
-<section id="ridge-regression-l_2-regularization" class="level3">
-<h3 class="anchored" data-anchor-id="ridge-regression-l_2-regularization">Ridge Regression (<span class="math inline">\(L_2\)</span> Regularization)</h3>
-<p>Perhaps the most common form of regularization is known as <em>ridge regression</em> or <span class="math inline">\(L_2\)</span> <em>regularization</em> (sometimes also called <em>Tikhonov regularization</em>). This proceeds by penalizing the sum of squares (2-norms) of the model coefficients <span class="math inline">\(\theta_n\)</span>. In this case, the penalty on the model fit would be: <span class="math display">\[
+<p>이 그림의 아래쪽 패널은 각 위치의 기본 함수의 진폭을 보여줍니다. 이는 기저 함수가 겹칠 때의 전형적인 과적합 동작입니다. 인접한 기저 함수의 계수가 서로 폭발하고 상쇄됩니다. 우리는 그러한 행동이 문제가 있다는 것을 알고 있으며, 모델 매개변수의 큰 값에 불이익을 주어 모델에서 그러한 급증을 명시적으로 제한할 수 있다면 좋을 것입니다. 이러한 처벌은 <em>정규화</em>로 알려져 있으며 여러 형태로 나타납니다.</p>
+<section id="능형-회귀l_2-정규화" class="level3">
+<h3 class="anchored" data-anchor-id="능형-회귀l_2-정규화">능형 회귀(<span class="math inline">\(L_2\)</span> 정규화)</h3>
+<p>아마도 가장 일반적인 정규화 형태는 <em>능선 회귀</em> 또는 <span class="math inline">\(L_2\)</span> <em>정규화</em>(<em>Tikhonov 정규화</em>라고도 함)일 것입니다. 이는 모델 계수 <span class="math inline">\(\theta_n\)</span>의 제곱합(2-norms)에 페널티를 적용하여 진행됩니다. 이 경우 모델 적합성에 대한 페널티는 다음과 같습니다. <span class="math display">\[
 P = \alpha\sum_{n=1}^N \theta_n^2
-\]</span> where <span class="math inline">\(\alpha\)</span> is a free parameter that controls the strength of the penalty. This type of penalized model is built into Scikit-Learn with the <code>Ridge</code> estimator (see the following figure):</p>
+\]</span> 여기서 <span class="math inline">\(\alpha\)</span>는 페널티의 강도를 제어하는 ​​자유 매개변수입니다. 이러한 유형의 페널티 모델은 ‘Ridge’ 추정기를 사용하여 Scikit-Learn에 내장되어 있습니다(다음 그림 참조).</p>
 <div id="cell-32" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="12">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.linear_model <span class="im">import</span> Ridge</span>
 <span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>model <span class="op">=</span> make_pipeline(GaussianFeatures(<span class="dv">30</span>), Ridge(alpha<span class="op">=</span><span class="fl">0.1</span>))</span>
@@ -869,14 +869,14 @@ P = \alpha\sum_{n=1}^N \theta_n^2
 </div>
 </div>
 </div>
-<p>The <span class="math inline">\(\alpha\)</span> parameter is essentially a knob controlling the complexity of the resulting model. In the limit <span class="math inline">\(\alpha \to 0\)</span>, we recover the standard linear regression result; in the limit <span class="math inline">\(\alpha \to \infty\)</span>, all model responses will be suppressed. One advantage of ridge regression in particular is that it can be computed very efficiently—at hardly more computational cost than the original linear regression model.</p>
+<p><span class="math inline">\(\alpha\)</span> 매개변수는 본질적으로 결과 모델의 복잡성을 제어하는 ​​손잡이입니다. <span class="math inline">\(\alpha\to 0\)</span> 한계에서 표준 선형 회귀 결과를 복구합니다. <span class="math inline">\(\alpha\to\infty\)</span> 한도에서는 모든 모델 응답이 억제됩니다. 특히 능선 회귀의 한 가지 장점은 매우 효율적으로 계산할 수 있다는 것입니다. 원래 선형 회귀 모델보다 계산 비용이 거의 들지 않습니다.</p>
 </section>
-<section id="lasso-regression-l_1-regularization" class="level3">
-<h3 class="anchored" data-anchor-id="lasso-regression-l_1-regularization">Lasso Regression (<span class="math inline">\(L_1\)</span> Regularization)</h3>
-<p>Another common type of regularization is known as <em>lasso regression</em> or <em>L<sub>1</sub> regularization</em> involves penalizing the sum of absolute values (1-norms) of regression coefficients: <span class="math display">\[
+<section id="올가미-회귀l_1-정규화" class="level3">
+<h3 class="anchored" data-anchor-id="올가미-회귀l_1-정규화">올가미 회귀(<span class="math inline">\(L_1\)</span> 정규화)</h3>
+<p>또 다른 일반적인 유형의 정규화는 <em>올가미 회귀</em> 또는 <em>L<sub>1</sub> 정규화</em>로 알려져 있으며 회귀 계수의 절대값(1-노름)의 합에 페널티를 적용하는 것과 관련됩니다. <span class="math display">\[
 P = \alpha\sum_{n=1}^N |\theta_n|
-\]</span> Though this is conceptually very similar to ridge regression, the results can differ surprisingly. For example, due to its construction, lasso regression tends to favor <em>sparse models</em> where possible: that is, it preferentially sets many model coefficients to exactly zero.</p>
-<p>We can see this behavior if we duplicate the previous example using L1-normalized coefficients (see the following figure):</p>
+\]</span> 이는 개념적으로 능선 회귀와 매우 유사하지만 결과는 놀랍게도 다를 수 있습니다. 예를 들어 올가미 회귀는 구조상 가능한 경우 <em>희소 모델</em>을 선호하는 경향이 있습니다. 즉, 많은 모델 계수를 정확히 0으로 우선 설정합니다.</p>
+<p>L1 정규화된 계수를 사용하여 이전 예제를 복제하면 이 동작을 볼 수 있습니다(다음 그림 참조).</p>
 <div id="cell-35" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="13">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.linear_model <span class="im">import</span> Lasso</span>
 <span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>model <span class="op">=</span> make_pipeline(GaussianFeatures(<span class="dv">30</span>), Lasso(alpha<span class="op">=</span><span class="fl">0.001</span>, max_iter<span class="op">=</span><span class="dv">2000</span>))</span>
@@ -889,14 +889,14 @@ P = \alpha\sum_{n=1}^N |\theta_n|
 </div>
 </div>
 </div>
-<p>With the lasso regression penalty, the majority of the coefficients are exactly zero, with the functional behavior being modeled by a small subset of the available basis functions. As with ridge regularization, the <span class="math inline">\(\alpha\)</span> parameter tunes the strength of the penalty and should be determined via, for example, cross-validation (refer back to <a href="../notebooks/05.03-Hyperparameters-and-Model-Validation.html">Hyperparameters and Model Validation</a> for a discussion of this).</p>
+<p>올가미 회귀 페널티를 사용하면 대부분의 계수가 정확히 0이며 기능적 동작은 사용 가능한 기본 함수의 작은 하위 집합으로 모델링됩니다. 능선 정규화와 마찬가지로 <span class="math inline">\(\alpha\)</span> 매개변수는 페널티의 강도를 조정하며 교차 검증 등을 통해 결정해야 합니다(이에 대한 자세한 내용은 <a href="../notebooks/05.03-Hyperparameters-and-Model-Validation.html">하이퍼매개변수 및 모델 검증</a>을 참조하세요).</p>
 </section>
 </section>
-<section id="example-predicting-bicycle-traffic" class="level2">
-<h2 class="anchored" data-anchor-id="example-predicting-bicycle-traffic">Example: Predicting Bicycle Traffic</h2>
-<p>As an example, let’s take a look at whether we can predict the number of bicycle trips across Seattle’s Fremont Bridge based on weather, season, and other factors. We already saw this data in <a href="../notebooks/03.11-Working-with-Time-Series.html">Working With Time Series</a>, but here we will join the bike data with another dataset and try to determine the extent to which weather and seasonal factors—temperature, precipitation, and daylight hours—affect the volume of bicycle traffic through this corridor. Fortunately, the National Oceanic and Atmospheric Administration (NOAA) makes its daily <a href="http://www.ncdc.noaa.gov/cdo-web/search?datasetid=GHCND">weather station data</a> available—I used station ID USW00024233—and we can easily use Pandas to join the two data sources. We will perform a simple linear regression to relate weather and other information to bicycle counts, in order to estimate how a change in any one of these parameters affects the number of riders on a given day.</p>
-<p>In particular, this is an example of how the tools of Scikit-Learn can be used in a statistical modeling framework, in which the parameters of the model are assumed to have interpretable meaning. As discussed previously, this is not a standard approach within machine learning, but such interpretation is possible for some models.</p>
-<p>Let’s start by loading the two datasets, indexing by date:</p>
+<section id="예-자전거-교통량-예측" class="level2">
+<h2 class="anchored" data-anchor-id="예-자전거-교통량-예측">예: 자전거 교통량 예측</h2>
+<p>예를 들어 날씨, 계절 및 기타 요인을 기반으로 시애틀의 프리몬트 브리지를 통과하는 자전거 여행 횟수를 예측할 수 있는지 살펴보겠습니다. 우리는 이미 <a href="../notebooks/03.11-Working-with-Time-Series.html">Working With Time Series</a>에서 이 데이터를 보았지만 여기서는 자전거 데이터를 다른 데이터세트와 결합하여 날씨와 계절 요인(온도, 강수량, 일광 시간)이 이 통로를 통과하는 자전거 교통량에 영향을 미치는 정도를 결정하려고 합니다. 다행히 미국 국립해양대기청(NOAA)에서는 일일 <a href="http://www.ncdc.noaa.gov/cdo-web/search?datasetid=GHCND">기상 관측소 데이터</a>를 제공하고 있으며(저는 관측소 ID USW00024233을 사용했습니다) Pandas를 사용하여 두 데이터 소스를 쉽게 결합할 수 있습니다. 우리는 이러한 매개변수 중 하나의 변화가 특정 날짜의 라이더 수에 어떤 영향을 미치는지 추정하기 위해 날씨 및 기타 정보를 자전거 수와 연관시키는 간단한 선형 회귀를 수행할 것입니다.</p>
+<p>특히 이는 모델의 매개변수가 해석 가능한 의미를 갖는 것으로 가정되는 통계 모델링 프레임워크에서 Scikit-Learn 도구를 어떻게 사용할 수 있는지 보여주는 예입니다. 이전에 논의한 것처럼 이는 머신러닝(Machine Learning) 제 표준 접근 방식은 아니지만 일부 모델에서는 이러한 해석이 가능합니다.</p>
+<p>날짜별로 인덱싱하여 두 개의 데이터세트를 로드하는 것부터 시작해 보겠습니다.</p>
 <div id="cell-39" class="cell" data-editable="true" data-tags="[]" data-execution_count="14">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="co"># url = 'https://raw.githubusercontent.com/jakevdp/bicycle-data/main'</span></span>
 <span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a><span class="co"># !curl -O {url}/FremontBridge.csv</span></span>
@@ -909,24 +909,24 @@ P = \alpha\sum_{n=1}^N |\theta_n|
 <span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a>weather <span class="op">=</span> pd.read_csv(<span class="st">'SeattleWeather.csv'</span>,</span>
 <span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a>                      index_col<span class="op">=</span><span class="st">'DATE'</span>, parse_dates<span class="op">=</span><span class="va">True</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<p>For simplicity, let’s look at data prior to 2020 in order to avoid the effects of the COVID-19 pandemic, which significantly affected commuting patterns in Seattle:</p>
+<p>단순화를 위해 시애틀의 통근 패턴에 큰 영향을 미친 코로나19 팬데믹의 영향을 피하기 위해 2020년 이전의 데이터를 살펴보겠습니다.</p>
 <div id="cell-42" class="cell" data-execution_count="16">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>counts <span class="op">=</span> counts[counts.index <span class="op">&lt;</span> <span class="st">"2020-01-01"</span>]</span>
 <span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>weather <span class="op">=</span> weather[weather.index <span class="op">&lt;</span> <span class="st">"2020-01-01"</span>]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<p>Next we will compute the total daily bicycle traffic, and put this in its own <code>DataFrame</code>:</p>
+<p>다음으로 일일 총 자전거 교통량을 계산하고 이를 자체 <code>DataFrame</code>에 넣습니다.</p>
 <div id="cell-44" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="17">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb20"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>daily <span class="op">=</span> counts.resample(<span class="st">'d'</span>).<span class="bu">sum</span>()</span>
 <span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>daily[<span class="st">'Total'</span>] <span class="op">=</span> daily.<span class="bu">sum</span>(axis<span class="op">=</span><span class="dv">1</span>)</span>
 <span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a>daily <span class="op">=</span> daily[[<span class="st">'Total'</span>]] <span class="co"># remove other columns</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<p>We saw previously that the patterns of use generally vary from day to day. Let’s account for this in our data by adding binary columns that indicate the day of the week:</p>
+<p>우리는 이전에 사용 패턴이 일반적으로 날마다 다르다는 것을 확인했습니다. 요일을 나타내는 이진 열을 추가하여 데이터에 이를 설명하겠습니다.</p>
 <div id="cell-46" class="cell" data-editable="true" data-tags="[]" data-execution_count="18">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>days <span class="op">=</span> [<span class="st">'Mon'</span>, <span class="st">'Tue'</span>, <span class="st">'Wed'</span>, <span class="st">'Thu'</span>, <span class="st">'Fri'</span>, <span class="st">'Sat'</span>, <span class="st">'Sun'</span>]</span>
 <span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">7</span>):</span>
 <span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a>    daily[days[i]] <span class="op">=</span> (daily.index.dayofweek <span class="op">==</span> i).astype(<span class="bu">float</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<p>Similarly, we might expect riders to behave differently on holidays; let’s add an indicator of this as well:</p>
+<p>마찬가지로 우리는 라이더가 휴일에 다르게 행동할 것으로 예상할 수 있습니다. 이에 대한 표시도 추가해 보겠습니다.</p>
 <div id="cell-48" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="19">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb22"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> pandas.tseries.holiday <span class="im">import</span> USFederalHolidayCalendar</span>
 <span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>cal <span class="op">=</span> USFederalHolidayCalendar()</span>
@@ -934,7 +934,7 @@ P = \alpha\sum_{n=1}^N |\theta_n|
 <span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a>daily <span class="op">=</span> daily.join(pd.Series(<span class="dv">1</span>, index<span class="op">=</span>holidays, name<span class="op">=</span><span class="st">'holiday'</span>))</span>
 <span id="cb22-5"><a href="#cb22-5" aria-hidden="true" tabindex="-1"></a>daily[<span class="st">'holiday'</span>].fillna(<span class="dv">0</span>, inplace<span class="op">=</span><span class="va">True</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<p>We also might suspect that the hours of daylight would affect how many people ride. Let’s use the standard astronomical calculation to add this information (see the following figure):</p>
+<p>우리는 또한 일광 시간이 탑승하는 사람 수에 영향을 미칠 것이라고 의심할 수도 있습니다. 표준 천문학적 계산을 사용하여 이 정보를 추가해 보겠습니다(다음 그림 참조).</p>
 <div id="cell-50" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="20">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb23"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> hours_of_daylight(date, axis<span class="op">=</span><span class="fl">23.44</span>, latitude<span class="op">=</span><span class="fl">47.61</span>):</span>
 <span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""Compute the hours of daylight for the given date"""</span></span>
@@ -954,7 +954,7 @@ P = \alpha\sum_{n=1}^N |\theta_n|
 </div>
 </div>
 </div>
-<p>We can also add the average temperature and total precipitation to the data. In addition to the inches of precipitation, let’s add a flag that indicates whether a day is dry (has zero precipitation):</p>
+<p>또한 평균 기온과 총 강수량을 데이터에 추가할 수도 있습니다. 강수량 인치 외에 하루가 건조한지(강수량이 0인지) 나타내는 플래그를 추가해 보겠습니다.</p>
 <div id="cell-52" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="21">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb24"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>weather[<span class="st">'Temp (F)'</span>] <span class="op">=</span> <span class="fl">0.5</span> <span class="op">*</span> (weather[<span class="st">'TMIN'</span>] <span class="op">+</span> weather[<span class="st">'TMAX'</span>])</span>
 <span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>weather[<span class="st">'Rainfall (in)'</span>] <span class="op">=</span> weather[<span class="st">'PRCP'</span>]</span>
@@ -962,11 +962,11 @@ P = \alpha\sum_{n=1}^N |\theta_n|
 <span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb24-5"><a href="#cb24-5" aria-hidden="true" tabindex="-1"></a>daily <span class="op">=</span> daily.join(weather[[<span class="st">'Rainfall (in)'</span>, <span class="st">'Temp (F)'</span>, <span class="st">'dry day'</span>]])</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<p>Finally, let’s add a counter that increases from day 1, and measures how many years have passed. This will let us measure any observed annual increase or decrease in daily crossings:</p>
+<p>마지막으로, 1일부터 증가하고 몇 년이 지났는지 측정하는 카운터를 추가해 보겠습니다. 이를 통해 일일 횡단 횟수의 연간 증가 또는 감소를 관찰할 수 있습니다.</p>
 <div id="cell-54" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="22">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb25"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>daily[<span class="st">'annual'</span>] <span class="op">=</span> (daily.index <span class="op">-</span> daily.index[<span class="dv">0</span>]).days <span class="op">/</span> <span class="fl">365.</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<p>Now our data is in order, and we can take a look at it:</p>
+<p>이제 데이터가 정리되었으므로 살펴살펴볼 수 있습니다.</p>
 <div id="cell-56" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="23">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb26"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>daily.head()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="23">
@@ -1102,7 +1102,7 @@ P = \alpha\sum_{n=1}^N |\theta_n|
 </div>
 </div>
 </div>
-<p>With this in place, we can choose the columns to use, and fit a linear regression model to our data. We will set <code>fit_intercept=False</code>, because the daily flags essentially operate as their own day-specific intercepts:</p>
+<p>이를 통해 사용할 열을 선택하고 선형 회귀 모델을 데이터에 맞출 수 있습니다. 일일 플래그는 기본적으로 자체 날짜별 인터셉트로 작동하므로 <code>fit_intercept=False</code>를 설정합니다.</p>
 <div id="cell-58" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="24">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb27"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Drop any rows with null values</span></span>
 <span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a>daily.dropna(axis<span class="op">=</span><span class="dv">0</span>, how<span class="op">=</span><span class="st">'any'</span>, inplace<span class="op">=</span><span class="va">True</span>)</span>
@@ -1117,7 +1117,7 @@ P = \alpha\sum_{n=1}^N |\theta_n|
 <span id="cb27-11"><a href="#cb27-11" aria-hidden="true" tabindex="-1"></a>model.fit(X, y)</span>
 <span id="cb27-12"><a href="#cb27-12" aria-hidden="true" tabindex="-1"></a>daily[<span class="st">'predicted'</span>] <span class="op">=</span> model.predict(X)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<p>Finally, we can compare the total and predicted bicycle traffic visually (see the following figure):</p>
+<p>마지막으로 전체 자전거 통행량과 ​​예상 자전거 통행량을 시각적으로 비교할 수 있습니다(다음 그림 참조).</p>
 <div id="cell-60" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="25">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb28"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a>daily[[<span class="st">'Total'</span>, <span class="st">'predicted'</span>]].plot(alpha<span class="op">=</span><span class="fl">0.5</span>)<span class="op">;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
@@ -1128,7 +1128,7 @@ P = \alpha\sum_{n=1}^N |\theta_n|
 </div>
 </div>
 </div>
-<p>From the fact that the data and model predictions don’t line up exactly, it is evident that we have missed some key features. Either our features are not complete (i.e., people decide whether to ride to work based on more than just these features), or there are some nonlinear relationships that we have failed to take into account (e.g., perhaps people ride less at both high and low temperatures). Nevertheless, our rough approximation is enough to give us some insights, and we can take a look at the coefficients of the linear model to estimate how much each feature contributes to the daily bicycle count:</p>
+<p>데이터와 모델 예측이 정확히 일치하지 않는다는 사실을 보면 몇 가지 핵심 기능을 놓친 것이 분명합니다. 우리의 기능이 완전하지 않거나(예: 사람들이 이러한 기능보다 더 많은 것을 기반으로 출근할지 여부를 결정함), 우리가 고려하지 못한 일부 비선형 관계가 있습니다(예: 고온 및 저온 모두에서 사람들이 덜 타는 경우). 그럼에도 불구하고 대략적인 근사치는 몇 가지 통찰력을 제공하기에 충분하며 선형 모델의 계수를 살펴보고 각 기능이 일일 자전거 수에 얼마나 기여하는지 추정할 수 있습니다.</p>
 <div id="cell-62" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="26">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb29"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a>params <span class="op">=</span> pd.Series(model.coef_, index<span class="op">=</span>X.columns)</span>
 <span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a>params</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -1149,14 +1149,14 @@ annual             324.437749
 dtype: float64</code></pre>
 </div>
 </div>
-<p>These numbers are difficult to interpret without some measure of their uncertainty. We can compute these uncertainties quickly using bootstrap resamplings of the data:</p>
+<p>이 숫자는 불확실성을 측정하지 않으면 해석하기 어렵습니다. 데이터의 부트스트랩 리샘플링을 사용하여 이러한 불확실성을 신속하게 계산할 수 있습니다.</p>
 <div id="cell-64" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="27">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb31"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.utils <span class="im">import</span> resample</span>
 <span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a>np.random.seed(<span class="dv">1</span>)</span>
 <span id="cb31-3"><a href="#cb31-3" aria-hidden="true" tabindex="-1"></a>err <span class="op">=</span> np.std([model.fit(<span class="op">*</span>resample(X, y)).coef_</span>
 <span id="cb31-4"><a href="#cb31-4" aria-hidden="true" tabindex="-1"></a>              <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">1000</span>)], <span class="dv">0</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<p>With these errors estimated, let’s again look at the results:</p>
+<p>이러한 오류를 추정한 후 결과를 다시 살펴보겠습니다.</p>
 <div id="cell-66" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="28">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb32"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(pd.DataFrame({<span class="st">'effect'</span>: params.<span class="bu">round</span>(<span class="dv">0</span>),</span>
 <span id="cb32-2"><a href="#cb32-2" aria-hidden="true" tabindex="-1"></a>                    <span class="st">'uncertainty'</span>: err.<span class="bu">round</span>(<span class="dv">0</span>)}))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -1177,8 +1177,8 @@ Temp (F)         179.0          7.0
 annual           324.0         22.0</code></pre>
 </div>
 </div>
-<p>The <code>effect</code> column here, roughly speaking, shows how the number of riders is affected by a change of the feature in question. For example, there is a clear divide when it comes to the day of the week: there are thousands fewer riders on weekends than on weekdays. We also see that for each additional hour of daylight, 409 ± 26 more people choose to ride; a temperature increase of one degree Fahrenheit encourages 179 ± 7 people to grab their bicycle; a dry day means an average of 2,111 ± 101 more riders, and every inch of rainfall leads 2,790 ± 186 riders to choose another mode of transport. Once all these effects are accounted for, we see a modest increase of 324 ± 22 new daily riders each year.</p>
-<p>Our simple model is almost certainly missing some relevant information. For example, as mentioned earlier, nonlinear effects (such as effects of precipitation <em>and</em> cold temperature) and nonlinear trends within each variable (such as disinclination to ride at very cold and very hot temperatures) cannot be accounted for in a simple linear model. Additionally, we have thrown away some of the finer-grained information (such as the difference between a rainy morning and a rainy afternoon), and we have ignored correlations between days (such as the possible effect of a rainy Tuesday on Wednesday’s numbers, or the effect of an unexpected sunny day after a streak of rainy days). These are all potentially interesting effects, and you now have the tools to begin exploring them if you wish!</p>
+<p>대략적으로 말하면 여기의 ‘효과’ 열은 문제의 기능 변경이 라이더 수에 어떤 영향을 미치는지 보여줍니다. 예를 들어 요일의 경우에는 분명한 차이가 있습니다. 주말에는 평일보다 라이더가 수천 명 더 적습니다. 우리는 또한 일광 시간이 추가될 때마다 409 ± 26명의 사람들이 더 많은 사람들이 자전거를 타는 것을 선택한다는 것을 확인할 수 있습니다. 화씨 1도의 온도 상승으로 인해 179±7명의 사람들이 자전거를 움켜쥐게 됩니다. 건조한 날은 평균 2,111 ± 101명의 라이더가 더 많다는 것을 의미합니다. 비가 내릴 때마다 2,790 ± 186명의 라이더가 다른 운송 수단을 선택하게 됩니다. 이러한 모든 효과를 고려하면 매년 324 ± 22명의 새로운 일일 라이더가 조금씩 증가하는 것을 살펴볼 수 있습니다.</p>
+<p>우리의 간단한 모델에는 일부 관련 정보가 누락된 것이 거의 확실합니다. 예를 들어 앞에서 언급한 것처럼 비선형 효과(예: 강수량 <em>및</em> 추운 기온의 영향)와 각 변수 내의 비선형 추세(예: 매우 추운 날씨와 매우 더운 기온에서 운전을 꺼리는 경향)는 간단한 선형 모델에서 설명할 수 없습니다. 또한, 우리는 보다 세밀한 정보(예: 비오는 아침과 비오는 오후의 차이)를 버렸고 요일 간 상관관계(예: 비오는 화요일이 수요일 숫자에 미치는 영향 또는 연속 비오는 날 이후 예상치 못한 맑은 날의 효과 등)를 무시했습니다. 이것들은 모두 잠재적으로 흥미로운 효과이며, 원하는 경우 이제 탐색을 시작할 수 있는 도구가 있습니다!</p>
 
 
 </section>
@@ -1586,13 +1586,13 @@ annual           324.0         22.0</code></pre>
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../notebooks/05.05-Naive-Bayes.html" class="pagination-link" aria-label="In Depth: Naive Bayes Classification">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">In Depth: Naive Bayes Classification</span></span>
+      <a href="../notebooks/05.05-Naive-Bayes.html" class="pagination-link" aria-label="심층 분석: 나이브 베이즈 분류">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">심층 분석: 나이브 베이즈 분류</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../notebooks/05.07-Support-Vector-Machines.html" class="pagination-link" aria-label="In Depth: Support Vector Machines">
-        <span class="nav-page-text"><span class="chapter-title">In Depth: Support Vector Machines</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../notebooks/05.07-Support-Vector-Machines.html" class="pagination-link" aria-label="심층 분석: 서포트 벡터 머신">
+        <span class="nav-page-text"><span class="chapter-title">심층 분석: 서포트 벡터 머신</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
