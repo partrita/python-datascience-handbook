@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>NumPy 배열의 기본 – 파이썬 데이터 사이언스 핸드북</title>
+<title>NumPy 배열의 기초 – 파이썬 데이터 사이언스 핸드북</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -77,7 +77,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-803ae4f7a8810f475153517dc3c4ebae.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-2b8c928036a03c400d959948b846e3b2.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -147,7 +147,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../notebooks/02.00-Introduction-to-NumPy.html">NumPy 소개</a></li><li class="breadcrumb-item"><a href="../notebooks/02.02-The-Basics-Of-NumPy-Arrays.html"><span class="chapter-title">NumPy 배열의 기본</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../notebooks/02.00-Introduction-to-NumPy.html">NumPy 소개</a></li><li class="breadcrumb-item"><a href="../notebooks/02.02-The-Basics-Of-NumPy-Arrays.html"><span class="chapter-title">NumPy 배열의 기초</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -209,7 +209,7 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/01.03-Magic-Commands.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">IPython 매직 명령</span></a>
+  <a href="../notebooks/01.03-Magic-Commands.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">IPython 매직 명령어</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -219,17 +219,17 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/01.05-IPython-And-Shell-Commands.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">IPython 및 셸 명령</span></a>
+  <a href="../notebooks/01.05-IPython-And-Shell-Commands.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">IPython과 셸 명령어</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/01.06-Errors-and-Debugging.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">오류 및 디버깅</span></a>
+  <a href="../notebooks/01.06-Errors-and-Debugging.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">오류와 디버깅</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/01.07-Timing-and-Profiling.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">프로파일링 및 타이밍 코드</span></a>
+  <a href="../notebooks/01.07-Timing-and-Profiling.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">코드 성능 측정 및 프로파일링</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -255,22 +255,22 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.01-Understanding-Data-Types.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">파이썬(Python)의 데이터 유형 이해</span></a>
+  <a href="../notebooks/02.01-Understanding-Data-Types.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">파이썬의 데이터 타입 이해하기</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.02-The-Basics-Of-NumPy-Arrays.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">NumPy 배열의 기본</span></a>
+  <a href="../notebooks/02.02-The-Basics-Of-NumPy-Arrays.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">NumPy 배열의 기초</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.03-Computation-on-arrays-ufuncs.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">NumPy 배열 계산: 범용 함수</span></a>
+  <a href="../notebooks/02.03-Computation-on-arrays-ufuncs.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">NumPy 배열 연산: 범용 함수(Universal Functions)</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.04-Computation-on-arrays-aggregates.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">집계: 최소, 최대 및 그 사이의 모든 것</span></a>
+  <a href="../notebooks/02.04-Computation-on-arrays-aggregates.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">집계: 최소값, 최대값 그리고 그 밖의 모든 것</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -280,12 +280,12 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.06-Boolean-Arrays-and-Masks.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">비교, 마스크 및 부울 논리</span></a>
+  <a href="../notebooks/02.06-Boolean-Arrays-and-Masks.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">비교, 마스크, 불리언 논리</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.07-Fancy-Indexing.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">멋진 인덱싱</span></a>
+  <a href="../notebooks/02.07-Fancy-Indexing.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">팬시 인덱싱(Fancy Indexing)</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -295,7 +295,7 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.09-Structured-Data-NumPy.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">구조화된 데이터: NumPy의 구조화된 배열</span></a>
+  <a href="../notebooks/02.09-Structured-Data-NumPy.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">구조화된 데이터: NumPy 구조화된 배열</span></a>
   </div>
 </li>
       </ul>
@@ -311,12 +311,12 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.00-Introduction-to-Pandas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">팬더를 이용한 데이터 조작</span></a>
+  <a href="../notebooks/03.00-Introduction-to-Pandas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Pandas로 데이터 다루기</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.01-Introducing-Pandas-Objects.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">판다스 객체 소개</span></a>
+  <a href="../notebooks/03.01-Introducing-Pandas-Objects.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Pandas 객체 소개</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -326,7 +326,7 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.03-Operations-in-Pandas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Pandas에서 데이터 작업</span></a>
+  <a href="../notebooks/03.03-Operations-in-Pandas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Pandas로 데이터 연산하기</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -341,42 +341,42 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.06-Concat-And-Append.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">데이터세트 결합: 연결 및 추가</span></a>
+  <a href="../notebooks/03.06-Concat-And-Append.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">데이터 결합: 연결(Concat) 및 추가(Append)</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.07-Merge-and-Join.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">데이터세트 결합: 병합 및 조인</span></a>
+  <a href="../notebooks/03.07-Merge-and-Join.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">데이터 결합: 병합(Merge)과 조인(Join)</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.08-Aggregation-and-Grouping.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">집계 및 그룹화</span></a>
+  <a href="../notebooks/03.08-Aggregation-and-Grouping.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">집계(Aggregation)와 그룹화(Grouping)</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.09-Pivot-Tables.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">피벗 테이블</span></a>
+  <a href="../notebooks/03.09-Pivot-Tables.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">피벗 테이블(Pivot Tables)</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.10-Working-With-Strings.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">벡터화된 문자열 작업</span></a>
+  <a href="../notebooks/03.10-Working-With-Strings.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">벡터화된 문자열 연산</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.11-Working-with-Time-Series.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">시계열 작업</span></a>
+  <a href="../notebooks/03.11-Working-with-Time-Series.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">시계열 데이터 다루기</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.12-Performance-Eval-and-Query.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">고성능 Pandas: 평가 및 쿼리</span></a>
+  <a href="../notebooks/03.12-Performance-Eval-and-Query.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">고성능 Pandas: eval()과 query()</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.13-Further-Resources.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">추가 리소스</span></a>
+  <a href="../notebooks/03.13-Further-Resources.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">더 읽을거리</span></a>
   </div>
 </li>
       </ul>
@@ -585,19 +585,19 @@ window.Quarto = {
    
   <ul>
   <li><a href="#numpy-배열-속성" id="toc-numpy-배열-속성" class="nav-link active" data-scroll-target="#numpy-배열-속성">NumPy 배열 속성</a></li>
-  <li><a href="#배열-인덱싱-단일-요소에-액세스" id="toc-배열-인덱싱-단일-요소에-액세스" class="nav-link" data-scroll-target="#배열-인덱싱-단일-요소에-액세스">배열 인덱싱: 단일 요소에 액세스</a></li>
-  <li><a href="#배열-슬라이싱-하위-배열-액세스" id="toc-배열-슬라이싱-하위-배열-액세스" class="nav-link" data-scroll-target="#배열-슬라이싱-하위-배열-액세스">배열 슬라이싱: 하위 배열 액세스</a>
+  <li><a href="#배열-인덱싱-단일-요소에-접근하기" id="toc-배열-인덱싱-단일-요소에-접근하기" class="nav-link" data-scroll-target="#배열-인덱싱-단일-요소에-접근하기">배열 인덱싱: 단일 요소에 접근하기</a></li>
+  <li><a href="#배열-슬라이싱-하위-배열에-접근하기" id="toc-배열-슬라이싱-하위-배열에-접근하기" class="nav-link" data-scroll-target="#배열-슬라이싱-하위-배열에-접근하기">배열 슬라이싱: 하위 배열에 접근하기</a>
   <ul class="collapse">
-  <li><a href="#차원-하위-배열" id="toc-차원-하위-배열" class="nav-link" data-scroll-target="#차원-하위-배열">1차원 하위 ​​배열</a></li>
-  <li><a href="#다차원-하위-배열" id="toc-다차원-하위-배열" class="nav-link" data-scroll-target="#다차원-하위-배열">다차원 하위 ​​배열</a></li>
-  <li><a href="#복사하지-않는-뷰로서의-하위-배열" id="toc-복사하지-않는-뷰로서의-하위-배열" class="nav-link" data-scroll-target="#복사하지-않는-뷰로서의-하위-배열">복사하지 않는 뷰로서의 하위 배열</a></li>
-  <li><a href="#배열-복사본-만들기" id="toc-배열-복사본-만들기" class="nav-link" data-scroll-target="#배열-복사본-만들기">배열 복사본 만들기</a></li>
+  <li><a href="#차원-하위-배열" id="toc-차원-하위-배열" class="nav-link" data-scroll-target="#차원-하위-배열">1차원 하위 배열</a></li>
+  <li><a href="#다차원-하위-배열" id="toc-다차원-하위-배열" class="nav-link" data-scroll-target="#다차원-하위-배열">다차원 하위 배열</a></li>
+  <li><a href="#사본이-아닌-뷰view로서의-하위-배열" id="toc-사본이-아닌-뷰view로서의-하위-배열" class="nav-link" data-scroll-target="#사본이-아닌-뷰view로서의-하위-배열">사본이 아닌 뷰(View)로서의 하위 배열</a></li>
+  <li><a href="#배열의-사본-만들기" id="toc-배열의-사본-만들기" class="nav-link" data-scroll-target="#배열의-사본-만들기">배열의 사본 만들기</a></li>
   </ul></li>
-  <li><a href="#배열-재구성" id="toc-배열-재구성" class="nav-link" data-scroll-target="#배열-재구성">배열 재구성</a></li>
-  <li><a href="#배열-연결-및-분할" id="toc-배열-연결-및-분할" class="nav-link" data-scroll-target="#배열-연결-및-분할">배열 연결 및 분할</a>
+  <li><a href="#배열-재구성하기" id="toc-배열-재구성하기" class="nav-link" data-scroll-target="#배열-재구성하기">배열 재구성하기</a></li>
+  <li><a href="#배열-합치기-및-나누기" id="toc-배열-합치기-및-나누기" class="nav-link" data-scroll-target="#배열-합치기-및-나누기">배열 합치기 및 나누기</a>
   <ul class="collapse">
-  <li><a href="#배열-연결" id="toc-배열-연결" class="nav-link" data-scroll-target="#배열-연결">배열 연결</a></li>
-  <li><a href="#배열-분할" id="toc-배열-분할" class="nav-link" data-scroll-target="#배열-분할">배열 분할</a></li>
+  <li><a href="#배열-합치기" id="toc-배열-합치기" class="nav-link" data-scroll-target="#배열-합치기">배열 합치기</a></li>
+  <li><a href="#배열-나누기" id="toc-배열-나누기" class="nav-link" data-scroll-target="#배열-나누기">배열 나누기</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -605,9 +605,9 @@ window.Quarto = {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../notebooks/02.00-Introduction-to-NumPy.html">NumPy 소개</a></li><li class="breadcrumb-item"><a href="../notebooks/02.02-The-Basics-Of-NumPy-Arrays.html"><span class="chapter-title">NumPy 배열의 기본</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../notebooks/02.00-Introduction-to-NumPy.html">NumPy 소개</a></li><li class="breadcrumb-item"><a href="../notebooks/02.02-The-Basics-Of-NumPy-Arrays.html"><span class="chapter-title">NumPy 배열의 기초</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-title">NumPy 배열의 기본</span></h1>
+<h1 class="title"><span class="chapter-title">NumPy 배열의 기초</span></h1>
 </div>
 
 
@@ -624,27 +624,27 @@ window.Quarto = {
 </header>
 
 
-<p>파이썬(Python)의 데이터 조작은 NumPy 배열 조작과 거의 동의어입니다. Pandas(<a href="../notebooks/03.00-Introduction-to-Pandas.html">Part 3</a>)와 같은 최신 도구도 NumPy 배열을 기반으로 구축되었습니다. 이번 장에서는 NumPy 배열 조작을 사용하여 데이터 및 하위 배열에 액세스하고 배열을 분할, 재구성 및 결합하는 몇 가지 예를 제시합니다. 여기에 표시된 작업 유형은 다소 무미건조하고 현학적인 것처럼 보일 수 있지만 이 책 전체에서 사용되는 다른 많은 예제의 구성 요소를 구성합니다. 그들을 잘 알아가세요!</p>
-<p>여기서는 기본 배열 조작의 몇 가지 범주를 다루겠습니다.</p>
+<p>파이썬에서 데이터를 다루는 것은 곧 NumPy 배열을 다루는 것과 같습니다. Pandas(<a href="../notebooks/03.00-Introduction-to-Pandas.html">3부</a>) 같은 최신 도구들도 모두 NumPy 배열을 기반으로 만들어졌습니다. 이번 섹션에서는 NumPy 배열을 사용해 데이터와 하위 배열에 접근하고, 배열을 나누고 재구성하며 합치는 다양한 작업 예시를 살펴보겠습니다. 여기서 다루는 내용이 조금 지루하고 기초적인 것처럼 보일 수 있지만, 책 전체에서 사용될 수많은 예제의 든든한 밑바탕이 됩니다. 그러니 이러한 기초 작업들을 확실히 익혀두시기 바랍니다.</p>
+<p>여기서는 크게 다음 다섯 가지 범주의 배열 조작법을 다룹니다.</p>
 <ul>
-<li><em>배열의 속성</em>: 배열의 크기, 모양, 메모리 소비 및 데이터 유형 결정</li>
-<li><em>배열 인덱싱</em>: 개별 배열 요소의 값 가져오기 및 설정</li>
-<li><em>배열 분할</em>: 더 큰 배열 내에서 더 작은 하위 배열 가져오기 및 설정</li>
-<li><em>배열 재구성</em>: 주어진 배열의 모양 변경</li>
-<li><em>배열 결합 및 분할</em>: 여러 배열을 하나로 결합하고 하나의 배열을 여러 개로 분할</li>
+<li><em>배열의 속성 확인</em>: 배열의 크기, 모양, 메모리 소비량, 데이터 타입 결정</li>
+<li><em>배열 인덱싱</em>: 개별 배열 요소의 값을 가져오거나 설정</li>
+<li><em>배열 슬라이싱</em>: 큰 배열 안에서 작은 하위 배열을 가져오거나 설정</li>
+<li><em>배열 재구성</em>: 배열의 모양(shape) 변경</li>
+<li><em>배열 합치기 및 나누기</em>: 여러 배열을 하나로 합치거나 하나의 배열을 여러 개로 나누기</li>
 </ul>
 <section id="numpy-배열-속성" class="level2">
 <h2 class="anchored" data-anchor-id="numpy-배열-속성">NumPy 배열 속성</h2>
-<p>먼저 몇 가지 유용한 배열 속성에 대해 논의해 보겠습니다. 1차원, 2차원, 3차원의 무작위 배열을 정의하는 것부터 시작하겠습니다. 우리는 NumPy의 난수 생성기를 사용할 것입니다. 이 생성기는 이 코드가 실행될 때마다 동일한 난수 배열이 생성되도록 하기 위해 설정된 값으로 <em>시드</em>됩니다.</p>
+<p>먼저 배열의 유용한 속성들을 알아보겠습니다. 실습을 위해 1차원, 2차원, 3차원 난수 배열을 정의해 보죠. 이 코드를 실행할 때마다 항상 같은 배열이 생성되도록 NumPy의 난수 생성기에 특정 <em>시드(seed)</em> 값을 설정하겠습니다.</p>
 <div id="cell-4" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="1">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>rng <span class="op">=</span> np.random.default_rng(seed<span class="op">=</span><span class="dv">1701</span>)  <span class="co"># seed for reproducibility</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>rng <span class="op">=</span> np.random.default_rng(seed<span class="op">=</span><span class="dv">1701</span>)  <span class="co"># 재현성을 위한 시드 설정</span></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>x1 <span class="op">=</span> rng.integers(<span class="dv">10</span>, size<span class="op">=</span><span class="dv">6</span>)  <span class="co"># one-dimensional array</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>x2 <span class="op">=</span> rng.integers(<span class="dv">10</span>, size<span class="op">=</span>(<span class="dv">3</span>, <span class="dv">4</span>))  <span class="co"># two-dimensional array</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>x3 <span class="op">=</span> rng.integers(<span class="dv">10</span>, size<span class="op">=</span>(<span class="dv">3</span>, <span class="dv">4</span>, <span class="dv">5</span>))  <span class="co"># three-dimensional array</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>x1 <span class="op">=</span> rng.integers(<span class="dv">10</span>, size<span class="op">=</span><span class="dv">6</span>)  <span class="co"># 1차원 배열</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>x2 <span class="op">=</span> rng.integers(<span class="dv">10</span>, size<span class="op">=</span>(<span class="dv">3</span>, <span class="dv">4</span>))  <span class="co"># 2차원 배열</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>x3 <span class="op">=</span> rng.integers(<span class="dv">10</span>, size<span class="op">=</span>(<span class="dv">3</span>, <span class="dv">4</span>, <span class="dv">5</span>))  <span class="co"># 3차원 배열</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<p>각 배열에는 <code>ndim</code>(차원 수), <code>shape</code>(각 차원의 크기), <code>size</code>(배열의 전체 크기) 및 <code>dtype</code>(각 요소의 유형)을 포함한 속성이 있습니다.</p>
+<p>각 배열은 <code>ndim</code>(차원의 수), <code>shape</code>(각 차원의 크기), <code>size</code>(배열의 전체 요소 개수), <code>dtype</code>(각 요소의 데이터 타입) 속성을 가집니다.</p>
 <div id="cell-6" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="2">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"x3 ndim: "</span>, x3.ndim)</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"x3 shape:"</span>, x3.shape)</span>
@@ -657,11 +657,11 @@ x3 size:  60
 dtype:    int64</code></pre>
 </div>
 </div>
-<p>데이터 유형에 대한 자세한 내용은 <a href="../notebooks/02.01-Understanding-Data-Types.html">파이썬(Python)의 데이터 유형 이해</a>를 참조하세요.</p>
+<p>데이터 타입에 대해 더 자세히 알고 싶다면 <a href="../notebooks/02.01-Understanding-Data-Types.html">파이썬의 데이터 타입 이해하기</a> 섹션을 참조하세요.</p>
 </section>
-<section id="배열-인덱싱-단일-요소에-액세스" class="level2">
-<h2 class="anchored" data-anchor-id="배열-인덱싱-단일-요소에-액세스">배열 인덱싱: 단일 요소에 액세스</h2>
-<p>파이썬(Python)의 표준 목록 인덱싱에 익숙하다면 NumPy의 인덱싱이 매우 친숙하게 느껴질 것입니다. 1차원 배열에서 <span class="math inline">\(i^{th}\)</span> 값(0부터 계산)은 파이썬(Python) 목록과 마찬가지로 대괄호 안에 원하는 인덱스를 지정하여 액세스할 수 있습니다.</p>
+<section id="배열-인덱싱-단일-요소에-접근하기" class="level2">
+<h2 class="anchored" data-anchor-id="배열-인덱싱-단일-요소에-접근하기">배열 인덱싱: 단일 요소에 접근하기</h2>
+<p>파이썬의 표준 리스트 인덱싱에 익숙하다면 NumPy의 인덱싱도 매우 친숙하게 느껴질 것입니다. 1차원 배열에서 <span class="math inline">\(i\)</span>번째 값(0부터 시작)은 리스트와 마찬가지로 대괄호 안에 인덱스를 넣어 접근합니다.</p>
 <div id="cell-10" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="3">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>x1</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="3">
@@ -680,7 +680,7 @@ dtype:    int64</code></pre>
 <pre><code>8</code></pre>
 </div>
 </div>
-<p>배열 끝에서부터 색인을 생성하려면 음수 색인을 사용할 수 있습니다.</p>
+<p>배열의 끝에서부터 거꾸로 접근하려면 음수 인덱스를 사용하면 됩니다.</p>
 <div id="cell-14" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="6">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>x1[<span class="op">-</span><span class="dv">1</span>]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="6">
@@ -693,7 +693,7 @@ dtype:    int64</code></pre>
 <pre><code>8</code></pre>
 </div>
 </div>
-<p>다차원 배열에서는 쉼표로 구분된 <code>(행, 열)</code> 튜플을 사용하여 항목에 액세스할 수 있습니다.</p>
+<p>다차원 배열에서는 쉼표로 구분된 <code>(행, 열)</code> 튜플을 사용하여 각 항목에 접근합니다.</p>
 <div id="cell-17" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="8">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>x2</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="8">
@@ -720,7 +720,7 @@ dtype:    int64</code></pre>
 <pre><code>9</code></pre>
 </div>
 </div>
-<p>위의 인덱스 표기법을 사용하여 값을 수정할 수도 있습니다.</p>
+<p>같은 인덱스 표기법을 사용하여 값을 수정할 수도 있습니다.</p>
 <div id="cell-22" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="12">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb22"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>x2[<span class="dv">0</span>, <span class="dv">0</span>] <span class="op">=</span> <span class="dv">12</span></span>
 <span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>x2</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -730,21 +730,22 @@ dtype:    int64</code></pre>
        [ 0,  0,  6,  9]])</code></pre>
 </div>
 </div>
-<p>파이썬(Python) 목록과 달리 NumPy 배열은 고정된 유형을 가집니다. 예를 들어 부동 소수점 값을 정수 배열에 삽입하려고 하면 값이 자동으로 잘립니다. 이 행동을 모르고 버리지 마십시오!</p>
+<p>파이썬 리스트와 달리 NumPy 배열은 고정된 데이터 타입을 가집니다. 예를 들어 정수형 배열에 실수값을 넣으려고 하면, 소수점 이하가 자동으로 잘려 나갑니다. 이러한 동작을 미리 알고 주의하는 것이 좋습니다.</p>
 <div id="cell-24" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="13">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb24"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>x1[<span class="dv">0</span>] <span class="op">=</span> <span class="fl">3.14159</span>  <span class="co"># this will be truncated!</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb24"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>x1[<span class="dv">0</span>] <span class="op">=</span> <span class="fl">3.14159</span>  <span class="co"># 이 값은 정수로 잘려서 저장됩니다!</span></span>
 <span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>x1</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="13">
 <pre><code>array([3, 4, 0, 3, 8, 6])</code></pre>
 </div>
 </div>
 </section>
-<section id="배열-슬라이싱-하위-배열-액세스" class="level2">
-<h2 class="anchored" data-anchor-id="배열-슬라이싱-하위-배열-액세스">배열 슬라이싱: 하위 배열 액세스</h2>
-<p>대괄호를 사용하여 개별 배열 요소에 액세스할 수 있는 것처럼 대괄호를 사용하여 콜론(<code>:</code>) 문자로 표시된 <em>슬라이스</em> 표기법으로 하위 배열에 액세스할 수도 있습니다. NumPy 슬라이싱 구문은 표준 파이썬(Python) 목록의 구문을 따릅니다. 배열 ’x’의 조각에 접근하려면 다음을 사용하세요: `<code>파이썬 x[시작:중지:단계] ```` 이들 중 하나라도 지정되지 않은 경우 기본값은</code>start=0<code>,</code>stop=&lt;크기 크기&gt;<code>,</code>step=1` 값입니다. 한 차원과 여러 차원에서 하위 배열에 액세스하는 몇 가지 예를 살펴보겠습니다.</p>
+<section id="배열-슬라이싱-하위-배열에-접근하기" class="level2">
+<h2 class="anchored" data-anchor-id="배열-슬라이싱-하위-배열에-접근하기">배열 슬라이싱: 하위 배열에 접근하기</h2>
+<p>대괄호를 사용해 개별 요소에 접근하듯, 콜론(<code>:</code>) 기호를 사용한 <em>슬라이스(slice)</em> 표기법으로 하위 배열에 접근합니다. NumPy 슬라이싱 구문은 표준 파이썬 리스트와 동일합니다. 배열 <code>x</code>의 일부를 가져오려면 다음 구문을 사용합니다.</p>
+<p>`<code>python x[start:stop:step] ```` 인자를 생략하면</code>start=0<code>,</code>stop=&lt;배열 크기&gt;<code>,</code>step=1` 값이 적용됩니다. 1차원과 다차원 배열에서 하위 배열에 접근하는 몇 가지 예시를 살펴보겠습니다.</p>
 <section id="차원-하위-배열" class="level3">
-<h3 class="anchored" data-anchor-id="차원-하위-배열">1차원 하위 ​​배열</h3>
-<p>다음은 1차원 하위 ​​배열의 요소에 액세스하는 몇 가지 예입니다.</p>
+<h3 class="anchored" data-anchor-id="차원-하위-배열">1차원 하위 배열</h3>
+<p>다음은 1차원 배열의 요소에 접근하는 여러 방법입니다.</p>
 <div id="cell-28" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="14">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb26"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>x1</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="14">
@@ -752,52 +753,52 @@ dtype:    int64</code></pre>
 </div>
 </div>
 <div id="cell-29" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="15">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb28"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a>x1[:<span class="dv">3</span>]  <span class="co"># first three elements</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb28"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a>x1[:<span class="dv">3</span>]  <span class="co"># 처음 세 요소</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="15">
 <pre><code>array([3, 4, 0])</code></pre>
 </div>
 </div>
 <div id="cell-30" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="16">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb30"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a>x1[<span class="dv">3</span>:]  <span class="co"># elements after index 3</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb30"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a>x1[<span class="dv">3</span>:]  <span class="co"># 인덱스 3 이후의 요소들</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="16">
 <pre><code>array([3, 8, 6])</code></pre>
 </div>
 </div>
 <div id="cell-31" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="17">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb32"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a>x1[<span class="dv">1</span>:<span class="dv">4</span>]  <span class="co"># middle subarray</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb32"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a>x1[<span class="dv">1</span>:<span class="dv">4</span>]  <span class="co"># 중간 부분의 하위 배열</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="17">
 <pre><code>array([4, 0, 3])</code></pre>
 </div>
 </div>
 <div id="cell-32" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="18">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb34"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a>x1[::<span class="dv">2</span>]  <span class="co"># every second element</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb34"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a>x1[::<span class="dv">2</span>]  <span class="co"># 한 요소씩 건너뛰며 가져오기</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="18">
 <pre><code>array([3, 0, 8])</code></pre>
 </div>
 </div>
 <div id="cell-33" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="19">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb36"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a>x1[<span class="dv">1</span>::<span class="dv">2</span>]  <span class="co"># every second element, starting at index 1</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb36"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a>x1[<span class="dv">1</span>::<span class="dv">2</span>]  <span class="co"># 인덱스 1부터 시작해 한 요소씩 건너뛰기</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="19">
 <pre><code>array([4, 3, 6])</code></pre>
 </div>
 </div>
-<p>잠재적으로 혼란스러운 경우는 <code>step</code> 값이 음수인 경우입니다. 이 경우 <code>start</code>와 <code>stop</code>의 기본값이 교체됩니다. 이는 배열을 뒤집는 편리한 방법이 됩니다.</p>
+<p>조금 헷갈릴 수 있는 부분은 <code>step</code> 값이 음수인 경우입니다. 이때는 <code>start</code>와 <code>stop</code>의 기본값이 서로 뒤바뀝니다. 이 방식은 배열을 뒤집는 아주 편리한 방법이 되기도 합니다.</p>
 <div id="cell-35" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="20">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb38"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a>x1[::<span class="op">-</span><span class="dv">1</span>]  <span class="co"># all elements, reversed</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb38"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a>x1[::<span class="op">-</span><span class="dv">1</span>]  <span class="co"># 모든 요소의 순서를 뒤집기</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="20">
 <pre><code>array([6, 8, 3, 0, 4, 3])</code></pre>
 </div>
 </div>
 <div id="cell-36" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="21">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb40"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a>x1[<span class="dv">4</span>::<span class="op">-</span><span class="dv">2</span>]  <span class="co"># every second element from index 4, reversed</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb40"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a>x1[<span class="dv">4</span>::<span class="op">-</span><span class="dv">2</span>]  <span class="co"># 인덱스 4부터 시작해 역순으로 한 요소씩 건너뛰기</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="21">
 <pre><code>array([8, 0, 3])</code></pre>
 </div>
 </div>
 </section>
 <section id="다차원-하위-배열" class="level3">
-<h3 class="anchored" data-anchor-id="다차원-하위-배열">다차원 하위 ​​배열</h3>
-<p>다차원 조각은 여러 조각이 쉼표로 구분되어 동일한 방식으로 작동합니다. 예를 들어:</p>
+<h3 class="anchored" data-anchor-id="다차원-하위-배열">다차원 하위 배열</h3>
+<p>다차원 슬라이싱도 같은 방식으로 작동하며, 각 차원을 쉼표로 구분해 줍니다. 예를 들어 보죠.</p>
 <div id="cell-38" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="22">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb42"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a>x2</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="22">
@@ -807,14 +808,14 @@ dtype:    int64</code></pre>
 </div>
 </div>
 <div id="cell-39" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="23">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb44"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb44-1"><a href="#cb44-1" aria-hidden="true" tabindex="-1"></a>x2[:<span class="dv">2</span>, :<span class="dv">3</span>]  <span class="co"># first two rows &amp; three columns</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb44"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb44-1"><a href="#cb44-1" aria-hidden="true" tabindex="-1"></a>x2[:<span class="dv">2</span>, :<span class="dv">3</span>]  <span class="co"># 처음 두 행과 처음 세 열</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="23">
 <pre><code>array([[12,  1,  3],
        [ 4,  0,  2]])</code></pre>
 </div>
 </div>
 <div id="cell-40" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="24">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb46"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb46-1"><a href="#cb46-1" aria-hidden="true" tabindex="-1"></a>x2[:<span class="dv">3</span>, ::<span class="dv">2</span>]  <span class="co"># three rows, every second column</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb46"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb46-1"><a href="#cb46-1" aria-hidden="true" tabindex="-1"></a>x2[:<span class="dv">3</span>, ::<span class="dv">2</span>]  <span class="co"># 모든 행에서 한 열씩 건너뛰기</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="24">
 <pre><code>array([[12,  3],
        [ 4,  2],
@@ -822,40 +823,40 @@ dtype:    int64</code></pre>
 </div>
 </div>
 <div id="cell-41" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="25">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb48"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb48-1"><a href="#cb48-1" aria-hidden="true" tabindex="-1"></a>x2[::<span class="op">-</span><span class="dv">1</span>, ::<span class="op">-</span><span class="dv">1</span>]  <span class="co"># all rows &amp; columns, reversed</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb48"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb48-1"><a href="#cb48-1" aria-hidden="true" tabindex="-1"></a>x2[::<span class="op">-</span><span class="dv">1</span>, ::<span class="op">-</span><span class="dv">1</span>]  <span class="co"># 모든 행과 열의 순서를 완전히 뒤집기</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="25">
 <pre><code>array([[ 9,  6,  0,  0],
        [ 3,  2,  0,  4],
        [ 7,  3,  1, 12]])</code></pre>
 </div>
 </div>
-<section id="배열-행-및-열에-액세스하기" class="level4">
-<h4 class="anchored" data-anchor-id="배열-행-및-열에-액세스하기">배열 행 및 열에 액세스하기</h4>
-<p>일반적으로 필요한 루틴 중 하나는 배열의 단일 행이나 열에 액세스하는 것입니다. 이는 단일 콜론(<code>:</code>)으로 표시된 빈 슬라이스를 사용하여 인덱싱과 슬라이싱을 결합하여 수행할 수 있습니다.</p>
+<section id="배열의-행과-열에-접근하기" class="level4">
+<h4 class="anchored" data-anchor-id="배열의-행과-열에-접근하기">배열의 행과 열에 접근하기</h4>
+<p>일반적으로 배열의 특정 행이나 열 하나를 통째로 가져와야 할 때가 많습니다. 이럴 때는 인덱싱과 슬라이싱을 조합해, 콜론(<code>:</code>)만 표시한 빈 슬라이스를 사용하면 됩니다.</p>
 <div id="cell-43" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="26">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb50"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb50-1"><a href="#cb50-1" aria-hidden="true" tabindex="-1"></a>x2[:, <span class="dv">0</span>]  <span class="co"># first column of x2</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb50"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb50-1"><a href="#cb50-1" aria-hidden="true" tabindex="-1"></a>x2[:, <span class="dv">0</span>]  <span class="co"># x2의 첫 번째 열</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="26">
 <pre><code>array([12,  4,  0])</code></pre>
 </div>
 </div>
 <div id="cell-44" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="27">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb52"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb52-1"><a href="#cb52-1" aria-hidden="true" tabindex="-1"></a>x2[<span class="dv">0</span>, :]  <span class="co"># first row of x2</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb52"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb52-1"><a href="#cb52-1" aria-hidden="true" tabindex="-1"></a>x2[<span class="dv">0</span>, :]  <span class="co"># x2의 첫 번째 행</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="27">
 <pre><code>array([12,  1,  3,  7])</code></pre>
 </div>
 </div>
-<p>행 액세스의 경우 보다 간결한 구문을 위해 빈 조각을 생략할 수 있습니다.</p>
+<p>행에 접근할 때는 더 간결하게 빈 슬라이스를 생략할 수도 있습니다.</p>
 <div id="cell-46" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="28">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb54"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb54-1"><a href="#cb54-1" aria-hidden="true" tabindex="-1"></a>x2[<span class="dv">0</span>]  <span class="co"># equivalent to x2[0, :]</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb54"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb54-1"><a href="#cb54-1" aria-hidden="true" tabindex="-1"></a>x2[<span class="dv">0</span>]  <span class="co"># x2[0, :]와 동일한 결과</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="28">
 <pre><code>array([12,  1,  3,  7])</code></pre>
 </div>
 </div>
 </section>
 </section>
-<section id="복사하지-않는-뷰로서의-하위-배열" class="level3">
-<h3 class="anchored" data-anchor-id="복사하지-않는-뷰로서의-하위-배열">복사하지 않는 뷰로서의 하위 배열</h3>
-<p>파이썬(Python) 목록 슬라이스와 달리 NumPy 배열 슬라이스는 배열 데이터의 <em>사본</em>이 아닌 <em>뷰</em>로 반환됩니다. 이전의 2차원 배열을 생각해 보세요.</p>
+<section id="사본이-아닌-뷰view로서의-하위-배열" class="level3">
+<h3 class="anchored" data-anchor-id="사본이-아닌-뷰view로서의-하위-배열">사본이 아닌 뷰(View)로서의 하위 배열</h3>
+<p>파이썬 리스트와 결정적으로 다른 점 하나는, NumPy 배열을 슬라이싱하면 데이터의 <em>사본(copy)</em>이 아니라 <em>뷰(view)</em>를 반환한다는 점입니다. 앞서 보았던 2차원 배열을 예로 들어보죠.</p>
 <div id="cell-48" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="29">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb56"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb56-1"><a href="#cb56-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(x2)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
@@ -864,7 +865,7 @@ dtype:    int64</code></pre>
  [ 0  0  6  9]]</code></pre>
 </div>
 </div>
-<p>여기서 <span class="math inline">\(2 \times 2\)</span> 하위 배열을 추출해 보겠습니다.</p>
+<p>여기서 <span class="math inline">\(2 \times 2\)</span> 크기의 하위 배열을 추출해 보겠습니다.</p>
 <div id="cell-50" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="30">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb58"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb58-1"><a href="#cb58-1" aria-hidden="true" tabindex="-1"></a>x2_sub <span class="op">=</span> x2[:<span class="dv">2</span>, :<span class="dv">2</span>]</span>
 <span id="cb58-2"><a href="#cb58-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(x2_sub)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -873,7 +874,7 @@ dtype:    int64</code></pre>
  [ 4  0]]</code></pre>
 </div>
 </div>
-<p>이제 이 하위 배열을 수정하면 원래 배열이 변경된 것을 볼 수 있습니다! 관찰하다:</p>
+<p>이제 이 하위 배열의 값을 수정하면, 원래 배열의 값도 함께 변하는 것을 확인합니다!</p>
 <div id="cell-52" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="31">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb60"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb60-1"><a href="#cb60-1" aria-hidden="true" tabindex="-1"></a>x2_sub[<span class="dv">0</span>, <span class="dv">0</span>] <span class="op">=</span> <span class="dv">99</span></span>
 <span id="cb60-2"><a href="#cb60-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(x2_sub)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -890,11 +891,11 @@ dtype:    int64</code></pre>
  [ 0  0  6  9]]</code></pre>
 </div>
 </div>
-<p>일부 사용자는 이것이 놀랍다고 생각할 수도 있지만 이점이 있을 수 있습니다. 예를 들어 대규모 데이터세트로 작업할 때 기본 데이터 버퍼를 복사할 필요 없이 이러한 데이터세트의 일부에 액세스하고 처리할 수 있습니다.</p>
+<p>이러한 동작이 처음에는 의외일 수 있지만, 상당히 큰 장점이기도 합니다. 대용량 데이터 세트를 다룰 때 데이터를 일일이 복사할 필요 없이 특정 부분만 효율적으로 접근해 처리할 수 있기 때문입니다.</p>
 </section>
-<section id="배열-복사본-만들기" class="level3">
-<h3 class="anchored" data-anchor-id="배열-복사본-만들기">배열 복사본 만들기</h3>
-<p>배열 뷰의 뛰어난 기능에도 불구하고 때로는 배열이나 하위 배열 내의 데이터를 명시적으로 복사하는 것이 유용할 때가 있습니다. 이 작업은 <code>복사</code> 방법을 사용하여 가장 쉽게 수행할 수 있습니다.</p>
+<section id="배열의-사본-만들기" class="level3">
+<h3 class="anchored" data-anchor-id="배열의-사본-만들기">배열의 사본 만들기</h3>
+<p>물론 뷰의 장점과는 별개로, 배열이나 하위 배열의 데이터를 명시적으로 복사해야 할 때도 있습니다. 이럴 때는 <code>copy()</code> 메서드를 사용하면 됩니다.</p>
 <div id="cell-56" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="33">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb64"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb64-1"><a href="#cb64-1" aria-hidden="true" tabindex="-1"></a>x2_sub_copy <span class="op">=</span> x2[:<span class="dv">2</span>, :<span class="dv">2</span>].copy()</span>
 <span id="cb64-2"><a href="#cb64-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(x2_sub_copy)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -903,7 +904,7 @@ dtype:    int64</code></pre>
  [ 4  0]]</code></pre>
 </div>
 </div>
-<p>이제 이 하위 배열을 수정하면 원래 배열은 건드리지 않습니다.</p>
+<p>이제 이 사본 배열을 수정해도 원본 배열에는 아무런 영향을 주지 않습니다.</p>
 <div id="cell-58" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="34">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb66"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb66-1"><a href="#cb66-1" aria-hidden="true" tabindex="-1"></a>x2_sub_copy[<span class="dv">0</span>, <span class="dv">0</span>] <span class="op">=</span> <span class="dv">42</span></span>
 <span id="cb66-2"><a href="#cb66-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(x2_sub_copy)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -922,9 +923,9 @@ dtype:    int64</code></pre>
 </div>
 </section>
 </section>
-<section id="배열-재구성" class="level2">
-<h2 class="anchored" data-anchor-id="배열-재구성">배열 재구성</h2>
-<p>또 다른 유용한 작업 유형은 ‘reshape’ 메서드를 사용하여 수행할 수 있는 배열 재구성입니다. 예를 들어 <span class="math inline">\(3 \times 3\)</span> 그리드에 1부터 9까지의 숫자를 넣으려면 다음과 같이 하면 됩니다:</p>
+<section id="배열-재구성하기" class="level2">
+<h2 class="anchored" data-anchor-id="배열-재구성하기">배열 재구성하기</h2>
+<p>배열의 모양을 바꾸는 또 다른 중요한 기능은 <code>reshape()</code> 메서드입니다. 예를 들어 1부터 9까지의 숫자를 <span class="math inline">\(3 \times 3\)</span> 격자 모양으로 배치하고 싶다면 다음과 같이 하면 됩니다.</p>
 <div id="cell-61" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="36">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb70"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb70-1"><a href="#cb70-1" aria-hidden="true" tabindex="-1"></a>grid <span class="op">=</span> np.arange(<span class="dv">1</span>, <span class="dv">10</span>).reshape(<span class="dv">3</span>, <span class="dv">3</span>)</span>
 <span id="cb70-2"><a href="#cb70-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(grid)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -934,46 +935,46 @@ dtype:    int64</code></pre>
  [7 8 9]]</code></pre>
 </div>
 </div>
-<p>이것이 작동하려면 초기 배열의 크기가 재구성된 배열의 크기와 일치해야 하며 대부분의 경우 <code>reshape</code> 메소드는 초기 배열의 복사 없음 보기를 반환합니다.</p>
-<p>일반적인 재형성 작업은 1차원 배열을 2차원 행 또는 열 행렬로 변환하는 것입니다.</p>
+<p>이 작업이 가능하려면 원래 배열의 크기와 바꿀 배열의 크기가 일치해야 합니다. 대부분의 경우 <code>reshape()</code> 메서드는 원본 배열의 뷰(view)를 반환합니다.</p>
+<p>자주 쓰이는 재구성 작업 중 하나는 1차원 배열을 2차원 행 또는 열 벡터로 변환하는 것입니다.</p>
 <div id="cell-64" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="37">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb72"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb72-1"><a href="#cb72-1" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> np.array([<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>])</span>
-<span id="cb72-2"><a href="#cb72-2" aria-hidden="true" tabindex="-1"></a>x.reshape((<span class="dv">1</span>, <span class="dv">3</span>))  <span class="co"># row vector via reshape</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb72-2"><a href="#cb72-2" aria-hidden="true" tabindex="-1"></a>x.reshape((<span class="dv">1</span>, <span class="dv">3</span>))  <span class="co"># reshape을 이용한 행 벡터 변환</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="37">
 <pre><code>array([[1, 2, 3]])</code></pre>
 </div>
 </div>
 <div id="cell-65" class="cell" data-execution_count="38">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb74"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb74-1"><a href="#cb74-1" aria-hidden="true" tabindex="-1"></a>x.reshape((<span class="dv">3</span>, <span class="dv">1</span>))  <span class="co"># column vector via reshape</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb74"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb74-1"><a href="#cb74-1" aria-hidden="true" tabindex="-1"></a>x.reshape((<span class="dv">3</span>, <span class="dv">1</span>))  <span class="co"># reshape을 이용한 열 벡터 변환</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="38">
 <pre><code>array([[1],
        [2],
        [3]])</code></pre>
 </div>
 </div>
-<p>이에 대한 편리한 약칭은 슬라이싱 구문에서 <code>np.newaxis</code>를 사용하는 것입니다:</p>
+<p>이를 더 간편하게 표현하는 방법은 슬라이싱 구문에 <code>np.newaxis</code>를 사용하는 것입니다.</p>
 <div id="cell-67" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="39">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb76"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb76-1"><a href="#cb76-1" aria-hidden="true" tabindex="-1"></a>x[np.newaxis, :]  <span class="co"># row vector via newaxis</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb76"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb76-1"><a href="#cb76-1" aria-hidden="true" tabindex="-1"></a>x[np.newaxis, :]  <span class="co"># newaxis를 이용한 행 벡터 변환</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="39">
 <pre><code>array([[1, 2, 3]])</code></pre>
 </div>
 </div>
 <div id="cell-68" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="40">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb78"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb78-1"><a href="#cb78-1" aria-hidden="true" tabindex="-1"></a>x[:, np.newaxis]  <span class="co"># column vector via newaxis</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb78"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb78-1"><a href="#cb78-1" aria-hidden="true" tabindex="-1"></a>x[:, np.newaxis]  <span class="co"># newaxis를 이용한 열 벡터 변환</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="40">
 <pre><code>array([[1],
        [2],
        [3]])</code></pre>
 </div>
 </div>
-<p>이는 이 책의 나머지 부분에서 자주 활용하게 될 패턴입니다.</p>
+<p>이는 앞으로 이 책에서 매우 자주 보게 될 유용한 패턴입니다.</p>
 </section>
-<section id="배열-연결-및-분할" class="level2">
-<h2 class="anchored" data-anchor-id="배열-연결-및-분할">배열 연결 및 분할</h2>
-<p>이전 루틴은 모두 단일 어레이에서 작동했습니다. NumPy는 또한 여러 배열을 하나로 결합하고 반대로 단일 배열을 여러 배열로 분할하는 도구를 제공합니다.</p>
-<section id="배열-연결" class="level3">
-<h3 class="anchored" data-anchor-id="배열-연결">배열 연결</h3>
-<p>NumPy에서 두 배열의 연결 또는 결합은 주로 <code>np.concatenate</code>, <code>np.vstack</code> 및 <code>np.hstack</code> 루틴을 사용하여 수행됩니다. <code>np.concatenate</code>는 여기에서 볼 수 있듯이 첫 번째 인수로 튜플이나 배열 목록을 사용합니다.</p>
+<section id="배열-합치기-및-나누기" class="level2">
+<h2 class="anchored" data-anchor-id="배열-합치기-및-나누기">배열 합치기 및 나누기</h2>
+<p>지금까지는 단일 배열 안에서 일어나는 작업들을 알아보았습니다. NumPy는 여러 배열을 하나로 합치거나, 반대로 하나의 배열을 여러 개로 나누는 도구도 제공합니다.</p>
+<section id="배열-합치기" class="level3">
+<h3 class="anchored" data-anchor-id="배열-합치기">배열 합치기</h3>
+<p>NumPy에서 배열을 합칠 때는 주로 <code>np.concatenate</code>, <code>np.vstack</code>, <code>np.hstack</code> 함수를 사용합니다. <code>np.concatenate</code>는 아래 예시처럼 배열들이 담긴 튜플이나 리스트를 첫 번째 인자로 받습니다.</p>
 <div id="cell-72" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="41">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb80"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb80-1"><a href="#cb80-1" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> np.array([<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>])</span>
 <span id="cb80-2"><a href="#cb80-2" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> np.array([<span class="dv">3</span>, <span class="dv">2</span>, <span class="dv">1</span>])</span>
@@ -982,7 +983,7 @@ dtype:    int64</code></pre>
 <pre><code>array([1, 2, 3, 3, 2, 1])</code></pre>
 </div>
 </div>
-<p>한 번에 두 개 이상의 배열을 연결할 수도 있습니다.</p>
+<p>한 번에 세 개 이상의 배열을 합치는 것도 가능합니다.</p>
 <div id="cell-74" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="42">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb82"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb82-1"><a href="#cb82-1" aria-hidden="true" tabindex="-1"></a>z <span class="op">=</span> np.array([<span class="dv">99</span>, <span class="dv">99</span>, <span class="dv">99</span>])</span>
 <span id="cb82-2"><a href="#cb82-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(np.concatenate([x, y, z]))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -990,13 +991,13 @@ dtype:    int64</code></pre>
 <pre><code>[ 1  2  3  3  2  1 99 99 99]</code></pre>
 </div>
 </div>
-<p>그리고 2차원 배열에도 사용할 수 있습니다.</p>
+<p>이 방식은 2차원 배열에도 동일하게 적용됩니다.</p>
 <div id="cell-76" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="43">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb84"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb84-1"><a href="#cb84-1" aria-hidden="true" tabindex="-1"></a>grid <span class="op">=</span> np.array([[<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>],</span>
 <span id="cb84-2"><a href="#cb84-2" aria-hidden="true" tabindex="-1"></a>                 [<span class="dv">4</span>, <span class="dv">5</span>, <span class="dv">6</span>]])</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <div id="cell-77" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="44">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb85"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb85-1"><a href="#cb85-1" aria-hidden="true" tabindex="-1"></a><span class="co"># concatenate along the first axis</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb85"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb85-1"><a href="#cb85-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 첫 번째 축(행 방향)을 따라 합치기</span></span>
 <span id="cb85-2"><a href="#cb85-2" aria-hidden="true" tabindex="-1"></a>np.concatenate([grid, grid])</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="44">
 <pre><code>array([[1, 2, 3],
@@ -1006,16 +1007,16 @@ dtype:    int64</code></pre>
 </div>
 </div>
 <div id="cell-78" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="45">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb87"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb87-1"><a href="#cb87-1" aria-hidden="true" tabindex="-1"></a><span class="co"># concatenate along the second axis (zero-indexed)</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb87"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb87-1"><a href="#cb87-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 두 번째 축(열 방향)을 따라 합치기</span></span>
 <span id="cb87-2"><a href="#cb87-2" aria-hidden="true" tabindex="-1"></a>np.concatenate([grid, grid], axis<span class="op">=</span><span class="dv">1</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="45">
 <pre><code>array([[1, 2, 3, 1, 2, 3],
        [4, 5, 6, 4, 5, 6]])</code></pre>
 </div>
 </div>
-<p>혼합 차원 배열로 작업하려면 <code>np.vstack</code>(수직 스택) 및 <code>np.hstack</code>(수평 스택) 함수를 사용하는 것이 더 명확할 수 있습니다.</p>
+<p>서로 차원이 다른 배열을 합칠 때는 <code>np.vstack</code>(수직 스택)이나 <code>np.hstack</code>(수평 스택) 함수를 쓰는 것이 훨씬 직관적입니다.</p>
 <div id="cell-80" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="46">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb89"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb89-1"><a href="#cb89-1" aria-hidden="true" tabindex="-1"></a><span class="co"># vertically stack the arrays</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb89"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb89-1"><a href="#cb89-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 배열을 세로로 쌓기</span></span>
 <span id="cb89-2"><a href="#cb89-2" aria-hidden="true" tabindex="-1"></a>np.vstack([x, grid])</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="46">
 <pre><code>array([[1, 2, 3],
@@ -1024,7 +1025,7 @@ dtype:    int64</code></pre>
 </div>
 </div>
 <div id="cell-81" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="47">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb91"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb91-1"><a href="#cb91-1" aria-hidden="true" tabindex="-1"></a><span class="co"># horizontally stack the arrays</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb91"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb91-1"><a href="#cb91-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 배열을 가로로 쌓기</span></span>
 <span id="cb91-2"><a href="#cb91-2" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> np.array([[<span class="dv">99</span>],</span>
 <span id="cb91-3"><a href="#cb91-3" aria-hidden="true" tabindex="-1"></a>              [<span class="dv">99</span>]])</span>
 <span id="cb91-4"><a href="#cb91-4" aria-hidden="true" tabindex="-1"></a>np.hstack([grid, y])</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -1033,11 +1034,11 @@ dtype:    int64</code></pre>
        [ 4,  5,  6, 99]])</code></pre>
 </div>
 </div>
-<p>마찬가지로, 고차원 배열의 경우 <code>np.dstack</code>은 세 번째 축을 따라 배열을 쌓습니다.</p>
+<p>참고로 3차원 이상의 배열에서는 <code>np.dstack</code>을 사용하여 세 번째 축(깊이 방향)을 따라 합칠 수 있습니다.</p>
 </section>
-<section id="배열-분할" class="level3">
-<h3 class="anchored" data-anchor-id="배열-분할">배열 분할</h3>
-<p>연결의 반대는 분할이며, 이는 <code>np.split</code>, <code>np.hsplit</code> 및 <code>np.vsplit</code> 함수에 의해 구현됩니다. 이들 각각에 대해 분할 지점을 제공하는 인덱스 목록을 전달할 수 있습니다.</p>
+<section id="배열-나누기" class="level3">
+<h3 class="anchored" data-anchor-id="배열-나누기">배열 나누기</h3>
+<p>합치기의 반대는 나누기이며, <code>np.split</code>, <code>np.hsplit</code>, <code>np.vsplit</code> 함수로 수행합니다. 각 함수에 나눌 지점을 인덱스 리스트 형태로 전달합니다.</p>
 <div id="cell-84" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="48">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb93"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb93-1"><a href="#cb93-1" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> [<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">99</span>, <span class="dv">99</span>, <span class="dv">3</span>, <span class="dv">2</span>, <span class="dv">1</span>]</span>
 <span id="cb93-2"><a href="#cb93-2" aria-hidden="true" tabindex="-1"></a>x1, x2, x3 <span class="op">=</span> np.split(x, [<span class="dv">3</span>, <span class="dv">5</span>])</span>
@@ -1046,7 +1047,7 @@ dtype:    int64</code></pre>
 <pre><code>[1 2 3] [99 99] [3 2 1]</code></pre>
 </div>
 </div>
-<p><em>N</em> 분할 지점은 <em>N</em> + 1 하위 배열로 이어집니다. 관련 함수 <code>np.hsplit</code>과 <code>np.vsplit</code>은 유사합니다:</p>
+<p><span class="math inline">\(N\)</span>개의 분할 지점은 <span class="math inline">\(N+1\)</span>개의 하위 배열을 만들어냅니다. <code>np.hsplit</code>과 <code>np.vsplit</code>도 비슷한 방식으로 작동합니다.</p>
 <div id="cell-86" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="49">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb95"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb95-1"><a href="#cb95-1" aria-hidden="true" tabindex="-1"></a>grid <span class="op">=</span> np.arange(<span class="dv">16</span>).reshape((<span class="dv">4</span>, <span class="dv">4</span>))</span>
 <span id="cb95-2"><a href="#cb95-2" aria-hidden="true" tabindex="-1"></a>grid</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -1083,7 +1084,7 @@ dtype:    int64</code></pre>
  [14 15]]</code></pre>
 </div>
 </div>
-<p>마찬가지로, 고차원 배열의 경우 <code>np.dsplit</code>은 세 번째 축을 따라 배열을 분할합니다.</p>
+<p>마찬가지로 <code>np.dsplit</code>을 사용하면 세 번째 축을 따라 배열을 나눌 수 있습니다.</p>
 
 
 </section>
@@ -1492,13 +1493,13 @@ dtype:    int64</code></pre>
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../notebooks/02.01-Understanding-Data-Types.html" class="pagination-link" aria-label="파이썬(Python)의 데이터 유형 이해">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">파이썬(Python)의 데이터 유형 이해</span></span>
+      <a href="../notebooks/02.01-Understanding-Data-Types.html" class="pagination-link" aria-label="파이썬의 데이터 타입 이해하기">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">파이썬의 데이터 타입 이해하기</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../notebooks/02.03-Computation-on-arrays-ufuncs.html" class="pagination-link" aria-label="NumPy 배열 계산: 범용 함수">
-        <span class="nav-page-text"><span class="chapter-title">NumPy 배열 계산: 범용 함수</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../notebooks/02.03-Computation-on-arrays-ufuncs.html" class="pagination-link" aria-label="NumPy 배열 연산: 범용 함수(Universal Functions)">
+        <span class="nav-page-text"><span class="chapter-title">NumPy 배열 연산: 범용 함수(Universal Functions)</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

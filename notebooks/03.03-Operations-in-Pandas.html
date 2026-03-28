@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Pandas에서 데이터 작업 – 파이썬 데이터 사이언스 핸드북</title>
+<title>Pandas로 데이터 연산하기 – 파이썬 데이터 사이언스 핸드북</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -77,7 +77,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-803ae4f7a8810f475153517dc3c4ebae.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-2b8c928036a03c400d959948b846e3b2.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -121,7 +121,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../notebooks/03.00-Introduction-to-Pandas.html">Pandas를 이용한 데이터 조작</a></li><li class="breadcrumb-item"><a href="../notebooks/03.03-Operations-in-Pandas.html"><span class="chapter-title">Pandas에서 데이터 작업</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../notebooks/03.00-Introduction-to-Pandas.html">Pandas를 이용한 데이터 조작</a></li><li class="breadcrumb-item"><a href="../notebooks/03.03-Operations-in-Pandas.html"><span class="chapter-title">Pandas로 데이터 연산하기</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -183,7 +183,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/01.03-Magic-Commands.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">IPython 매직 명령</span></a>
+  <a href="../notebooks/01.03-Magic-Commands.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">IPython 매직 명령어</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -193,17 +193,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/01.05-IPython-And-Shell-Commands.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">IPython 및 셸 명령</span></a>
+  <a href="../notebooks/01.05-IPython-And-Shell-Commands.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">IPython과 셸 명령어</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/01.06-Errors-and-Debugging.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">오류 및 디버깅</span></a>
+  <a href="../notebooks/01.06-Errors-and-Debugging.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">오류와 디버깅</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/01.07-Timing-and-Profiling.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">프로파일링 및 타이밍 코드</span></a>
+  <a href="../notebooks/01.07-Timing-and-Profiling.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">코드 성능 측정 및 프로파일링</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -229,22 +229,22 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.01-Understanding-Data-Types.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">파이썬(Python)의 데이터 유형 이해</span></a>
+  <a href="../notebooks/02.01-Understanding-Data-Types.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">파이썬의 데이터 타입 이해하기</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.02-The-Basics-Of-NumPy-Arrays.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">NumPy 배열의 기본</span></a>
+  <a href="../notebooks/02.02-The-Basics-Of-NumPy-Arrays.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">NumPy 배열의 기초</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.03-Computation-on-arrays-ufuncs.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">NumPy 배열 계산: 범용 함수</span></a>
+  <a href="../notebooks/02.03-Computation-on-arrays-ufuncs.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">NumPy 배열 연산: 범용 함수(Universal Functions)</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.04-Computation-on-arrays-aggregates.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">집계: 최소, 최대 및 그 사이의 모든 것</span></a>
+  <a href="../notebooks/02.04-Computation-on-arrays-aggregates.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">집계: 최소값, 최대값 그리고 그 밖의 모든 것</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -254,12 +254,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.06-Boolean-Arrays-and-Masks.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">비교, 마스크 및 부울 논리</span></a>
+  <a href="../notebooks/02.06-Boolean-Arrays-and-Masks.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">비교, 마스크, 불리언 논리</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.07-Fancy-Indexing.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">멋진 인덱싱</span></a>
+  <a href="../notebooks/02.07-Fancy-Indexing.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">팬시 인덱싱(Fancy Indexing)</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -269,7 +269,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.09-Structured-Data-NumPy.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">구조화된 데이터: NumPy의 구조화된 배열</span></a>
+  <a href="../notebooks/02.09-Structured-Data-NumPy.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">구조화된 데이터: NumPy 구조화된 배열</span></a>
   </div>
 </li>
       </ul>
@@ -285,12 +285,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.00-Introduction-to-Pandas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">팬더를 이용한 데이터 조작</span></a>
+  <a href="../notebooks/03.00-Introduction-to-Pandas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Pandas로 데이터 다루기</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.01-Introducing-Pandas-Objects.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">판다스 객체 소개</span></a>
+  <a href="../notebooks/03.01-Introducing-Pandas-Objects.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Pandas 객체 소개</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -300,7 +300,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.03-Operations-in-Pandas.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Pandas에서 데이터 작업</span></a>
+  <a href="../notebooks/03.03-Operations-in-Pandas.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Pandas로 데이터 연산하기</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -315,42 +315,42 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.06-Concat-And-Append.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">데이터세트 결합: 연결 및 추가</span></a>
+  <a href="../notebooks/03.06-Concat-And-Append.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">데이터 결합: 연결(Concat) 및 추가(Append)</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.07-Merge-and-Join.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">데이터세트 결합: 병합 및 조인</span></a>
+  <a href="../notebooks/03.07-Merge-and-Join.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">데이터 결합: 병합(Merge)과 조인(Join)</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.08-Aggregation-and-Grouping.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">집계 및 그룹화</span></a>
+  <a href="../notebooks/03.08-Aggregation-and-Grouping.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">집계(Aggregation)와 그룹화(Grouping)</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.09-Pivot-Tables.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">피벗 테이블</span></a>
+  <a href="../notebooks/03.09-Pivot-Tables.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">피벗 테이블(Pivot Tables)</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.10-Working-With-Strings.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">벡터화된 문자열 작업</span></a>
+  <a href="../notebooks/03.10-Working-With-Strings.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">벡터화된 문자열 연산</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.11-Working-with-Time-Series.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">시계열 작업</span></a>
+  <a href="../notebooks/03.11-Working-with-Time-Series.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">시계열 데이터 다루기</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.12-Performance-Eval-and-Query.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">고성능 Pandas: 평가 및 쿼리</span></a>
+  <a href="../notebooks/03.12-Performance-Eval-and-Query.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">고성능 Pandas: eval()과 query()</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.13-Further-Resources.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">추가 리소스</span></a>
+  <a href="../notebooks/03.13-Further-Resources.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">더 읽을거리</span></a>
   </div>
 </li>
       </ul>
@@ -561,19 +561,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#ufuncs-인덱스-보존" id="toc-ufuncs-인덱스-보존" class="nav-link active" data-scroll-target="#ufuncs-인덱스-보존">Ufuncs: 인덱스 보존</a></li>
   <li><a href="#ufuncs-인덱스-정렬" id="toc-ufuncs-인덱스-정렬" class="nav-link" data-scroll-target="#ufuncs-인덱스-정렬">Ufuncs: 인덱스 정렬</a>
   <ul class="collapse">
-  <li><a href="#시리즈-인덱스-정렬" id="toc-시리즈-인덱스-정렬" class="nav-link" data-scroll-target="#시리즈-인덱스-정렬">시리즈 인덱스 정렬</a></li>
-  <li><a href="#dataframes의-인덱스-정렬" id="toc-dataframes의-인덱스-정렬" class="nav-link" data-scroll-target="#dataframes의-인덱스-정렬">DataFrames의 인덱스 정렬</a></li>
+  <li><a href="#series-인덱스-정렬" id="toc-series-인덱스-정렬" class="nav-link" data-scroll-target="#series-인덱스-정렬">Series 인덱스 정렬</a></li>
+  <li><a href="#dataframe-인덱스-정렬" id="toc-dataframe-인덱스-정렬" class="nav-link" data-scroll-target="#dataframe-인덱스-정렬">DataFrame 인덱스 정렬</a></li>
   </ul></li>
-  <li><a href="#ufuncs-dataframe과-시리즈-간의-작업" id="toc-ufuncs-dataframe과-시리즈-간의-작업" class="nav-link" data-scroll-target="#ufuncs-dataframe과-시리즈-간의-작업">Ufuncs: DataFrame과 시리즈 간의 작업</a></li>
+  <li><a href="#ufuncs-dataframe과-series-간의-연산" id="toc-ufuncs-dataframe과-series-간의-연산" class="nav-link" data-scroll-target="#ufuncs-dataframe과-series-간의-연산">Ufuncs: DataFrame과 Series 간의 연산</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../notebooks/03.00-Introduction-to-Pandas.html">Pandas를 이용한 데이터 조작</a></li><li class="breadcrumb-item"><a href="../notebooks/03.03-Operations-in-Pandas.html"><span class="chapter-title">Pandas에서 데이터 작업</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../notebooks/03.00-Introduction-to-Pandas.html">Pandas를 이용한 데이터 조작</a></li><li class="breadcrumb-item"><a href="../notebooks/03.03-Operations-in-Pandas.html"><span class="chapter-title">Pandas로 데이터 연산하기</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-title">Pandas에서 데이터 작업</span></h1>
+<h1 class="title"><span class="chapter-title">Pandas로 데이터 연산하기</span></h1>
 </div>
 
 
@@ -590,11 +590,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>NumPy의 장점 중 하나는 기본 산술(덧셈, 뺄셈, 곱셈 등)과 더 복잡한 연산(삼각 함수, 지수 및 로그 함수 등)을 사용하여 요소별 연산을 빠르게 수행할 수 있다는 것입니다. Pandas는 NumPy에서 이 기능의 대부분을 상속하며 <a href="../notebooks/02.03-Computation-on-arrays-ufuncs.html">NumPy 배열에 대한 계산: 범용 함수</a>에 소개된 ufuncs가 이에 대한 핵심입니다.</p>
-<p>그러나 Pandas에는 몇 가지 유용한 변형이 포함되어 있습니다. 부정 및 삼각 함수와 같은 단항 연산의 경우 이러한 ufunc는 출력에서 ​​<em>인덱스 및 열 레이블</em>을 유지하며, 더하기 및 곱셈과 같은 이진 연산의 경우 Pandas는 객체를 ufunc에 전달할 때 자동으로 <em>인덱스를 정렬</em>합니다. 이는 데이터의 컨텍스트를 유지하고 다양한 소스의 데이터를 결합하는 것(원시 NumPy 배열을 사용하여 잠재적으로 오류가 발생하기 쉬운 작업)이 Pandas를 사용하면 본질적으로 완벽하다는 것을 의미합니다. 추가적으로 1차원 <code>Series</code> 구조와 2차원 <code>DataFrame</code> 구조 사이에 잘 ​​정의된 작업이 있다는 것도 살펴보겠습니다.</p>
+<p>NumPy의 큰 장점 중 하나는 기본 산술 연산(덧셈, 뺄셈, 곱셈 등)은 물론, 복잡한 연산(삼각 함수, 지수 및 로그 함수 등)까지 요소별로 빠르게 수행할 수 있다는 점입니다. Pandas는 NumPy의 이러한 기능을 대부분 상속받았으며, <a href="../notebooks/02.03-Computation-on-arrays-ufuncs.html">NumPy 배열 연산: 범용 함수</a>에서 소개한 ufunc가 그 핵심 역할을 합니다.</p>
+<p>하지만 Pandas에는 몇 가지 유용한 차별점이 있습니다. 단항 연산(부호 변경, 삼각 함수 등)의 경우 ufunc 결과에서도 <em>인덱스와 열 레이블</em>이 그대로 유지됩니다. 이항 연산(덧셈, 곱셈 등)의 경우에는 Pandas가 객체를 ufunc에 전달할 때 자동으로 <em>인덱스를 정렬</em>합니다. 덕분에 데이터의 맥락을 유지하면서 서로 다른 소스의 데이터를 결합하는 작업이 Pandas에서는 매우 매끄럽게 이루어집니다. (NumPy 배열만 사용했다면 오류가 발생하기 쉬웠을 작업들입니다.) 추가적으로 1차원 <code>Series</code>와 2차원 <code>DataFrame</code> 사이의 연산 규칙도 함께 살펴보겠습니다.</p>
 <section id="ufuncs-인덱스-보존" class="level2">
 <h2 class="anchored" data-anchor-id="ufuncs-인덱스-보존">Ufuncs: 인덱스 보존</h2>
-<p>Pandas는 NumPy와 함께 작동하도록 설계되었으므로 모든 NumPy ufunc는 Pandas ‘Series’ 및 ‘DataFrame’ 개체에서 작동합니다. 이를 보여주기 위해 간단한 <code>Series</code>와 <code>DataFrame</code>을 정의하는 것부터 시작해 보겠습니다.</p>
+<p>Pandas는 NumPy와 함께 사용하도록 설계되었으므로, 모든 NumPy ufunc는 Pandas ‘Series’와 ’DataFrame’ 객체에서 잘 작동합니다. 이를 확인하기 위해 먼저 간단한 <code>Series</code>와 <code>DataFrame</code>을 정의해 보겠습니다.</p>
 <div id="cell-3" class="cell" data-tags="[]" data-execution_count="1">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -657,7 +657,7 @@ dtype: int64</code></pre>
 </div>
 </div>
 </div>
-<p>이 개체 중 하나에 NumPy ufunc를 적용하면 결과는 <em>인덱스가 보존된 다른 Pandas 개체가 됩니다.</em></p>
+<p>이러한 객체에 NumPy ufunc를 적용하면, 결과물은 <em>인덱스가 보존된 또 다른 Pandas 객체</em>가 됩니다.</p>
 <div id="cell-7" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="4">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>np.exp(ser)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="4">
@@ -668,7 +668,7 @@ dtype: int64</code></pre>
 dtype: float64</code></pre>
 </div>
 </div>
-<p>이는 더 복잡한 작업 시퀀스에도 적용됩니다.</p>
+<p>이는 더 복잡한 연산 과정에서도 동일하게 적용됩니다.</p>
 <div id="cell-9" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="5">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>np.sin(df <span class="op">*</span> np.pi <span class="op">/</span> <span class="dv">4</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="5">
@@ -713,21 +713,21 @@ dtype: float64</code></pre>
 </div>
 </div>
 </div>
-<p><a href="../notebooks/02.03-Computation-on-arrays-ufuncs.html">NumPy 배열 계산: 범용 함수</a>에서 논의된 모든 ufunc는 유사한 방식으로 사용될 수 있습니다.</p>
+<p><a href="../notebooks/02.03-Computation-on-arrays-ufuncs.html">NumPy 배열 연산: 범용 함수</a>에서 다룬 모든 ufunc를 같은 방식으로 활용합니다.</p>
 </section>
 <section id="ufuncs-인덱스-정렬" class="level2">
 <h2 class="anchored" data-anchor-id="ufuncs-인덱스-정렬">Ufuncs: 인덱스 정렬</h2>
-<p>두 개의 ‘Series’ 또는 ‘DataFrame’ 개체에 대한 이진 작업의 경우 Pandas는 작업을 수행하는 과정에서 인덱스를 정렬합니다. 이는 다음 몇 가지 예에서 볼 수 있듯이 불완전한 데이터로 작업할 때 매우 편리합니다.</p>
-<section id="시리즈-인덱스-정렬" class="level3">
-<h3 class="anchored" data-anchor-id="시리즈-인덱스-정렬">시리즈 인덱스 정렬</h3>
-<p>예를 들어 두 개의 서로 다른 데이터 소스를 결합하고 <em>지역</em> 기준으로 미국 상위 3개 주만 찾고 <em>인구</em> 기준으로 미국 상위 3개 주만 찾으려고 한다고 가정해 보겠습니다.</p>
+<p>두 개의 ‘Series’ 또는 ‘DataFrame’ 객체에 이항 연산을 수행할 때, Pandas는 연산 과정에서 자동으로 인덱스를 정렬합니다. 이는 다음 예제들처럼 일부 데이터가 누락된 경우를 다룰 때 매우 편리합니다.</p>
+<section id="series-인덱스-정렬" class="level3">
+<h3 class="anchored" data-anchor-id="series-인덱스-정렬">Series 인덱스 정렬</h3>
+<p>예를 들어 서로 다른 소스에서 데이터를 가져와서, <em>면적</em> 기준 미국 상위 3개 주와 <em>인구</em> 기준 미국 상위 3개 주를 비교한다고 가정해 보겠습니다.</p>
 <div id="cell-13" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="6">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>area <span class="op">=</span> pd.Series({<span class="st">'Alaska'</span>: <span class="dv">1723337</span>, <span class="st">'Texas'</span>: <span class="dv">695662</span>,</span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>                  <span class="st">'California'</span>: <span class="dv">423967</span>}, name<span class="op">=</span><span class="st">'area'</span>)</span>
 <span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>population <span class="op">=</span> pd.Series({<span class="st">'California'</span>: <span class="dv">39538223</span>, <span class="st">'Texas'</span>: <span class="dv">29145505</span>,</span>
 <span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>                        <span class="st">'Florida'</span>: <span class="dv">21538187</span>}, name<span class="op">=</span><span class="st">'population'</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<p>인구 밀도를 계산하기 위해 이들을 나누면 어떤 일이 발생하는지 봅시다.</p>
+<p>인구 밀도를 계산하기 위해 이들을 나누면 어떤 결과가 나오는지 살펴보겠습니다.</p>
 <div id="cell-15" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="7">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>population <span class="op">/</span> area</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="7">
@@ -738,14 +738,14 @@ Texas         41.896072
 dtype: float64</code></pre>
 </div>
 </div>
-<p>결과 배열에는 두 입력 배열의 인덱스 <em>합집합</em>이 포함되며, 이는 다음 인덱스에서 직접 확인할 수 있습니다.</p>
+<p>결과 배열에는 두 입력 배열 인덱스의 <em>합집합</em>이 포함됩니다. 이는 다음과 같이 인덱스를 확인하여 알 수 있습니다.</p>
 <div id="cell-17" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="8">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>area.index.union(population.index)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="8">
 <pre><code>Index(['Alaska', 'California', 'Florida', 'Texas'], dtype='object')</code></pre>
 </div>
 </div>
-<p>항목이 없는 항목은 <code>NaN</code> 또는 “숫자가 아님”으로 표시됩니다. 이는 Pandas가 누락된 데이터를 표시하는 방법입니다(<a href="../notebooks/03.04-Missing-Values.html">누락된 데이터 처리</a>에서 누락된 데이터에 대한 자세한 설명 참조). 이 인덱스 일치는 파이썬(Python)의 내장 산술 표현식에 대해 이러한 방식으로 구현됩니다. 누락된 값은 <code>NaN</code>으로 표시됩니다.</p>
+<p>어느 한쪽에만 데이터가 있는 항목은 <code>NaN</code>(“Not a Number”)으로 표시됩니다. 이는 Pandas가 누락된 데이터를 처리하는 표준 방식입니다.(<a href="../notebooks/03.04-Missing-Values.html">누락된 데이터 처리</a>에서 더 자세히 다룹니다.) 이러한 인덱스 매칭 방식은 Python의 모든 내장 산술 연산 식에 적용되며, 누락된 값은 모두 <code>NaN</code>이 됩니다.</p>
 <div id="cell-19" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="9">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>A <span class="op">=</span> pd.Series([<span class="dv">2</span>, <span class="dv">4</span>, <span class="dv">6</span>], index<span class="op">=</span>[<span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">2</span>])</span>
 <span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>B <span class="op">=</span> pd.Series([<span class="dv">1</span>, <span class="dv">3</span>, <span class="dv">5</span>], index<span class="op">=</span>[<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>])</span>
@@ -758,7 +758,7 @@ dtype: float64</code></pre>
 dtype: float64</code></pre>
 </div>
 </div>
-<p>NaN 값을 사용하는 것이 원하는 동작이 아닌 경우 연산자 대신 적절한 개체 메서드를 사용하여 채우기 값을 수정할 수 있습니다. 예를 들어 <code>A.add(B)</code> 호출은 <code>A + B</code> 호출과 동일하지만 <code>A</code> 또는 <code>B</code>에서 누락될 수 있는 요소에 대한 채우기 값을 선택적으로 명시적으로 지정할 수 있습니다.</p>
+<p>만약 <code>NaN</code> 값을 원하지 않는다면, 연산자 대신 객체 메서드를 사용하여 채우기(Fill) 값을 직접 지정합니다. 예를 들어 <code>A.add(B)</code>는 <code>A + B</code>와 같지만, <code>A</code>나 <code>B</code>에 없는 요소를 어떤 값으로 채울지 명시할 수 있는 옵션을 제공합니다.</p>
 <div id="cell-21" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="10">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>A.add(B, fill_value<span class="op">=</span><span class="dv">0</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="10">
@@ -770,9 +770,9 @@ dtype: float64</code></pre>
 </div>
 </div>
 </section>
-<section id="dataframes의-인덱스-정렬" class="level3">
-<h3 class="anchored" data-anchor-id="dataframes의-인덱스-정렬">DataFrames의 인덱스 정렬</h3>
-<p><code>DataFrame</code> 객체에 대한 작업을 수행할 때 열과 인덱스 <em>모두</em>에 대해 유사한 유형의 정렬이 발생합니다.</p>
+<section id="dataframe-인덱스-정렬" class="level3">
+<h3 class="anchored" data-anchor-id="dataframe-인덱스-정렬">DataFrame 인덱스 정렬</h3>
+<p><code>DataFrame</code> 객체 연산에서도 행(Index)과 열(Column) <em>모두</em>에 대해 동일한 방식의 정렬이 이루어집니다.</p>
 <div id="cell-23" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="11">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>A <span class="op">=</span> pd.DataFrame(rng.integers(<span class="dv">0</span>, <span class="dv">20</span>, (<span class="dv">2</span>, <span class="dv">2</span>)),</span>
 <span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>                 columns<span class="op">=</span>[<span class="st">'a'</span>, <span class="st">'b'</span>])</span>
@@ -888,7 +888,7 @@ dtype: float64</code></pre>
 </div>
 </div>
 </div>
-<p>두 개체의 순서에 관계없이 인덱스가 올바르게 정렬되고 결과의 인덱스가 정렬됩니다. ’Series’의 경우와 마찬가지로 관련 개체의 산술 메서드를 사용하고 누락된 항목 대신 사용할 원하는 ’fill_value’를 전달할 수 있습니다. 여기에서는 <code>A</code>에 있는 모든 값의 평균을 채울 것입니다.</p>
+<p>두 객체의 순서에 상관없이 인덱스가 정확히 매칭되며, 결과물은 정렬된 상태로 반환됩니다. ’Series’와 마찬가지로 산술 메서드를 사용하여 누락된 데이터를 원하는 값(<code>fill_value</code>)으로 채울 수 있습니다. 여기서는 <code>A</code>에 들어있는 모든 값의 평균으로 채워보겠습니다.</p>
 <div id="cell-27" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="14">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb20"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>A.add(B, fill_value<span class="op">=</span>A.values.mean())</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="14">
@@ -929,18 +929,18 @@ dtype: float64</code></pre>
 </div>
 </div>
 </div>
-<p>다음 표에는 파이썬(Python) 연산자와 이에 상응하는 Pandas 개체 메서드가 나열되어 있습니다.</p>
+<p>다음 표는 Python 연산자와 그에 대응하는 Pandas 객체 메서드입니다.</p>
 <table class="caption-top table">
 <thead>
 <tr class="header">
-<th>파이썬 연산자</th>
+<th>Python 연산자</th>
 <th>Pandas 메서드</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td><code>+</code></td>
-<td><code>추가</code></td>
+<td><code>add</code></td>
 </tr>
 <tr class="even">
 <td><code>-</code></td>
@@ -948,7 +948,7 @@ dtype: float64</code></pre>
 </tr>
 <tr class="odd">
 <td><code>*</code></td>
-<td><code>mul</code>, <code>곱하기</code></td>
+<td><code>mul</code>, <code>multiply</code></td>
 </tr>
 <tr class="even">
 <td><code>/</code></td>
@@ -960,19 +960,19 @@ dtype: float64</code></pre>
 </tr>
 <tr class="even">
 <td><code>%</code></td>
-<td>모드’</td>
+<td><code>mod</code></td>
 </tr>
 <tr class="odd">
 <td><code>**</code></td>
-<td>‘펑’</td>
+<td><code>pow</code></td>
 </tr>
 </tbody>
 </table>
 </section>
 </section>
-<section id="ufuncs-dataframe과-시리즈-간의-작업" class="level2">
-<h2 class="anchored" data-anchor-id="ufuncs-dataframe과-시리즈-간의-작업">Ufuncs: DataFrame과 시리즈 간의 작업</h2>
-<p>‘DataFrame’과 ’Series’ 간의 작업을 수행할 때 인덱스와 열 정렬이 유사하게 유지되며 결과는 2차원 및 1차원 NumPy 배열 간의 작업과 유사합니다. 2차원 배열과 해당 행 중 하나의 차이점을 찾는 일반적인 작업을 생각해 보세요.</p>
+<section id="ufuncs-dataframe과-series-간의-연산" class="level2">
+<h2 class="anchored" data-anchor-id="ufuncs-dataframe과-series-간의-연산">Ufuncs: DataFrame과 Series 간의 연산</h2>
+<p><code>DataFrame</code>과 <code>Series</code> 사이의 연산에서도 인덱스와 열 정렬은 동일하게 유지됩니다. 이는 2차원 배열과 1차원 NumPy 배열 간의 연산과 매우 흡사합니다. 먼저, 2차원 배열에서 그 배열의 한 행을 빼는 흔한 작업을 예로 들어보겠습니다.</p>
 <div id="cell-30" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="15">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>A <span class="op">=</span> rng.integers(<span class="dv">10</span>, size<span class="op">=</span>(<span class="dv">3</span>, <span class="dv">4</span>))</span>
 <span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>A</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -990,8 +990,8 @@ dtype: float64</code></pre>
        [ 4, -2,  4,  1]])</code></pre>
 </div>
 </div>
-<p>NumPy의 브로드캐스팅 규칙(<a href="../notebooks/02.05-Computation-on-arrays-broadcasting.html">배열에 대한 계산: 브로드캐스트</a> 참조)에 따라 2차원 배열과 해당 행 중 하나 사이의 빼기가 행 단위로 적용됩니다.</p>
-<p>Pandas에서는 기본적으로 규칙이 행 단위로 유사하게 작동합니다.</p>
+<p>NumPy의 브로드캐스팅(Broadcasting) 규칙(<a href="../notebooks/02.05-Computation-on-arrays-broadcasting.html">배열 연산: 브로드캐스팅</a> 참고)에 따라, 2차원 배열에서 한 행을 빼면 행 단위로 뺄셈이 적용됩니다.</p>
+<p>Pandas에서도 이와 유사하게 행 단위 연산이 기본으로 작동합니다.</p>
 <div id="cell-33" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="17">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb25"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.DataFrame(A, columns<span class="op">=</span>[<span class="st">'Q'</span>, <span class="st">'R'</span>, <span class="st">'S'</span>, <span class="st">'T'</span>])</span>
 <span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a>df <span class="op">-</span> df.iloc[<span class="dv">0</span>]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -1037,7 +1037,7 @@ dtype: float64</code></pre>
 </div>
 </div>
 </div>
-<p>대신 열 단위로 작업하려면 <code>axis</code> 키워드를 지정하면서 앞서 언급한 객체 메서드를 사용할 수 있습니다.</p>
+<p>대신 열 단위로 연산하고 싶다면, 앞서 언급한 객체 메서드를 사용하면서 <code>axis</code> 키워드를 지정하면 됩니다.</p>
 <div id="cell-35" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="18">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb26"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>df.subtract(df[<span class="st">'R'</span>], axis<span class="op">=</span><span class="dv">0</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="18">
@@ -1082,7 +1082,7 @@ dtype: float64</code></pre>
 </div>
 </div>
 </div>
-<p>이전에 설명한 작업과 마찬가지로 이러한 <code>DataFrame</code>/<code>Series</code> 작업은 두 요소 사이의 인덱스를 자동으로 정렬합니다.</p>
+<p>다른 연산들과 마찬가지로, 이러한 <code>DataFrame</code>/<code>Series</code> 간 연산에서도 두 요소 사이의 인덱싱은 자동으로 정렬됩니다.</p>
 <div id="cell-37" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="19">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb27"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a>halfrow <span class="op">=</span> df.iloc[<span class="dv">0</span>, ::<span class="dv">2</span>]</span>
 <span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a>halfrow</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -1136,7 +1136,7 @@ Name: 0, dtype: int64</code></pre>
 </div>
 </div>
 </div>
-<p>이러한 인덱스와 열의 보존 및 정렬은 Pandas의 데이터 작업이 항상 데이터 컨텍스트를 유지하여 원시 NumPy 배열에서 이종 및/또는 잘못 정렬된 데이터로 작업할 때 발생할 수 있는 일반적인 오류를 방지한다는 것을 의미합니다.</p>
+<p>Pandas는 연산 시 인덱스와 열 정보를 보존하고 자동으로 정렬해주므로 데이터의 맥락이 항상 유지됩니다. 덕분에 가공되지 않은 NumPy 배열로 서로 다른 형태나 순서의 데이터를 다룰 때 흔히 발생하는 오류를 효과적으로 방지합니다.</p>
 
 
 </section>

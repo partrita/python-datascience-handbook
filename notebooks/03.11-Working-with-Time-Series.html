@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>시계열 작업 – 파이썬 데이터 사이언스 핸드북</title>
+<title>시계열 데이터 다루기 – 파이썬 데이터 사이언스 핸드북</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -77,7 +77,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-803ae4f7a8810f475153517dc3c4ebae.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-2b8c928036a03c400d959948b846e3b2.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -150,7 +150,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../notebooks/03.00-Introduction-to-Pandas.html">Pandas를 이용한 데이터 조작</a></li><li class="breadcrumb-item"><a href="../notebooks/03.11-Working-with-Time-Series.html"><span class="chapter-title">시계열 작업</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../notebooks/03.00-Introduction-to-Pandas.html">Pandas를 이용한 데이터 조작</a></li><li class="breadcrumb-item"><a href="../notebooks/03.11-Working-with-Time-Series.html"><span class="chapter-title">시계열 데이터 다루기</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -212,7 +212,7 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/01.03-Magic-Commands.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">IPython 매직 명령</span></a>
+  <a href="../notebooks/01.03-Magic-Commands.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">IPython 매직 명령어</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -222,17 +222,17 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/01.05-IPython-And-Shell-Commands.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">IPython 및 셸 명령</span></a>
+  <a href="../notebooks/01.05-IPython-And-Shell-Commands.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">IPython과 셸 명령어</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/01.06-Errors-and-Debugging.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">오류 및 디버깅</span></a>
+  <a href="../notebooks/01.06-Errors-and-Debugging.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">오류와 디버깅</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/01.07-Timing-and-Profiling.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">프로파일링 및 타이밍 코드</span></a>
+  <a href="../notebooks/01.07-Timing-and-Profiling.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">코드 성능 측정 및 프로파일링</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -258,22 +258,22 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.01-Understanding-Data-Types.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">파이썬(Python)의 데이터 유형 이해</span></a>
+  <a href="../notebooks/02.01-Understanding-Data-Types.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">파이썬의 데이터 타입 이해하기</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.02-The-Basics-Of-NumPy-Arrays.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">NumPy 배열의 기본</span></a>
+  <a href="../notebooks/02.02-The-Basics-Of-NumPy-Arrays.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">NumPy 배열의 기초</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.03-Computation-on-arrays-ufuncs.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">NumPy 배열 계산: 범용 함수</span></a>
+  <a href="../notebooks/02.03-Computation-on-arrays-ufuncs.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">NumPy 배열 연산: 범용 함수(Universal Functions)</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.04-Computation-on-arrays-aggregates.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">집계: 최소, 최대 및 그 사이의 모든 것</span></a>
+  <a href="../notebooks/02.04-Computation-on-arrays-aggregates.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">집계: 최소값, 최대값 그리고 그 밖의 모든 것</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -283,12 +283,12 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.06-Boolean-Arrays-and-Masks.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">비교, 마스크 및 부울 논리</span></a>
+  <a href="../notebooks/02.06-Boolean-Arrays-and-Masks.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">비교, 마스크, 불리언 논리</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.07-Fancy-Indexing.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">멋진 인덱싱</span></a>
+  <a href="../notebooks/02.07-Fancy-Indexing.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">팬시 인덱싱(Fancy Indexing)</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -298,7 +298,7 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.09-Structured-Data-NumPy.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">구조화된 데이터: NumPy의 구조화된 배열</span></a>
+  <a href="../notebooks/02.09-Structured-Data-NumPy.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">구조화된 데이터: NumPy 구조화된 배열</span></a>
   </div>
 </li>
       </ul>
@@ -314,12 +314,12 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.00-Introduction-to-Pandas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">팬더를 이용한 데이터 조작</span></a>
+  <a href="../notebooks/03.00-Introduction-to-Pandas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Pandas로 데이터 다루기</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.01-Introducing-Pandas-Objects.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">판다스 객체 소개</span></a>
+  <a href="../notebooks/03.01-Introducing-Pandas-Objects.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Pandas 객체 소개</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -329,7 +329,7 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.03-Operations-in-Pandas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Pandas에서 데이터 작업</span></a>
+  <a href="../notebooks/03.03-Operations-in-Pandas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Pandas로 데이터 연산하기</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -344,42 +344,42 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.06-Concat-And-Append.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">데이터세트 결합: 연결 및 추가</span></a>
+  <a href="../notebooks/03.06-Concat-And-Append.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">데이터 결합: 연결(Concat) 및 추가(Append)</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.07-Merge-and-Join.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">데이터세트 결합: 병합 및 조인</span></a>
+  <a href="../notebooks/03.07-Merge-and-Join.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">데이터 결합: 병합(Merge)과 조인(Join)</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.08-Aggregation-and-Grouping.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">집계 및 그룹화</span></a>
+  <a href="../notebooks/03.08-Aggregation-and-Grouping.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">집계(Aggregation)와 그룹화(Grouping)</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.09-Pivot-Tables.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">피벗 테이블</span></a>
+  <a href="../notebooks/03.09-Pivot-Tables.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">피벗 테이블(Pivot Tables)</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.10-Working-With-Strings.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">벡터화된 문자열 작업</span></a>
+  <a href="../notebooks/03.10-Working-With-Strings.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">벡터화된 문자열 연산</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.11-Working-with-Time-Series.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">시계열 작업</span></a>
+  <a href="../notebooks/03.11-Working-with-Time-Series.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">시계열 데이터 다루기</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.12-Performance-Eval-and-Query.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">고성능 Pandas: 평가 및 쿼리</span></a>
+  <a href="../notebooks/03.12-Performance-Eval-and-Query.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">고성능 Pandas: eval()과 query()</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.13-Further-Resources.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">추가 리소스</span></a>
+  <a href="../notebooks/03.13-Further-Resources.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">더 읽을거리</span></a>
   </div>
 </li>
       </ul>
@@ -587,24 +587,24 @@ window.Quarto = {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#파이썬python의-날짜와-시간" id="toc-파이썬python의-날짜와-시간" class="nav-link active" data-scroll-target="#파이썬python의-날짜와-시간">파이썬(Python)의 날짜와 시간</a>
+  <li><a href="#파이썬에서의-날짜와-시간-표현" id="toc-파이썬에서의-날짜와-시간-표현" class="nav-link active" data-scroll-target="#파이썬에서의-날짜와-시간-표현">파이썬에서의 날짜와 시간 표현</a>
   <ul class="collapse">
   <li><a href="#기본-파이썬python-날짜-및-시간-datetime-및-dateutil" id="toc-기본-파이썬python-날짜-및-시간-datetime-및-dateutil" class="nav-link" data-scroll-target="#기본-파이썬python-날짜-및-시간-datetime-및-dateutil">기본 파이썬(Python) 날짜 및 시간: datetime 및 dateutil</a></li>
-  <li><a href="#시간-배열-numpy의-datetime64" id="toc-시간-배열-numpy의-datetime64" class="nav-link" data-scroll-target="#시간-배열-numpy의-datetime64">시간 배열: NumPy의 datetime64</a></li>
-  <li><a href="#pandas의-날짜와-시간-두-세계-모두에서-최고" id="toc-pandas의-날짜와-시간-두-세계-모두에서-최고" class="nav-link" data-scroll-target="#pandas의-날짜와-시간-두-세계-모두에서-최고">Pandas의 날짜와 시간: 두 세계 모두에서 최고</a></li>
+  <li><a href="#시간-배열-연산-numpy의-datetime64" id="toc-시간-배열-연산-numpy의-datetime64" class="nav-link" data-scroll-target="#시간-배열-연산-numpy의-datetime64">시간 배열 연산: NumPy의 datetime64</a></li>
+  <li><a href="#pandas의-날짜와-시간-두-방식의-장점-결합" id="toc-pandas의-날짜와-시간-두-방식의-장점-결합" class="nav-link" data-scroll-target="#pandas의-날짜와-시간-두-방식의-장점-결합">Pandas의 날짜와 시간: 두 방식의 장점 결합</a></li>
   </ul></li>
-  <li><a href="#pandas-시계열-시간별-인덱싱" id="toc-pandas-시계열-시간별-인덱싱" class="nav-link" data-scroll-target="#pandas-시계열-시간별-인덱싱">Pandas 시계열: 시간별 인덱싱</a></li>
-  <li><a href="#pandas-시계열-데이터-구조" id="toc-pandas-시계열-데이터-구조" class="nav-link" data-scroll-target="#pandas-시계열-데이터-구조">Pandas 시계열 데이터 구조</a></li>
-  <li><a href="#정규-시퀀스-pd.date_range" id="toc-정규-시퀀스-pd.date_range" class="nav-link" data-scroll-target="#정규-시퀀스-pd.date_range">정규 시퀀스: pd.date_range</a></li>
-  <li><a href="#주파수-및-오프셋" id="toc-주파수-및-오프셋" class="nav-link" data-scroll-target="#주파수-및-오프셋">주파수 및 오프셋</a></li>
-  <li><a href="#리샘플링-이동-및-윈도잉" id="toc-리샘플링-이동-및-윈도잉" class="nav-link" data-scroll-target="#리샘플링-이동-및-윈도잉">리샘플링, 이동 및 윈도잉</a>
+  <li><a href="#pandas-시계열-시간-기준-인덱싱" id="toc-pandas-시계열-시간-기준-인덱싱" class="nav-link" data-scroll-target="#pandas-시계열-시간-기준-인덱싱">Pandas 시계열: 시간 기준 인덱싱</a></li>
+  <li><a href="#pandas의-시계열-데이터-구조" id="toc-pandas의-시계열-데이터-구조" class="nav-link" data-scroll-target="#pandas의-시계열-데이터-구조">Pandas의 시계열 데이터 구조</a></li>
+  <li><a href="#정기적인-시퀀스-생성-pd.date_range" id="toc-정기적인-시퀀스-생성-pd.date_range" class="nav-link" data-scroll-target="#정기적인-시퀀스-생성-pd.date_range">정기적인 시퀀스 생성: pd.date_range</a></li>
+  <li><a href="#빈도frequency와-오프셋offset" id="toc-빈도frequency와-오프셋offset" class="nav-link" data-scroll-target="#빈도frequency와-오프셋offset">빈도(Frequency)와 오프셋(Offset)</a></li>
+  <li><a href="#리샘플링-시프트shift-윈도잉windowing" id="toc-리샘플링-시프트shift-윈도잉windowing" class="nav-link" data-scroll-target="#리샘플링-시프트shift-윈도잉windowing">리샘플링, 시프트(Shift), 윈도잉(Windowing)</a>
   <ul class="collapse">
   <li><a href="#주파수-리샘플링-및-변환" id="toc-주파수-리샘플링-및-변환" class="nav-link" data-scroll-target="#주파수-리샘플링-및-변환">주파수 리샘플링 및 변환</a></li>
   <li><a href="#시간-이동" id="toc-시간-이동" class="nav-link" data-scroll-target="#시간-이동">시간 이동</a></li>
   <li><a href="#롤링-윈도우" id="toc-롤링-윈도우" class="nav-link" data-scroll-target="#롤링-윈도우">롤링 윈도우</a></li>
   </ul></li>
   <li><a href="#자세히-알아볼-수-있는-곳" id="toc-자세히-알아볼-수-있는-곳" class="nav-link" data-scroll-target="#자세히-알아볼-수-있는-곳">자세히 알아볼 수 있는 곳</a></li>
-  <li><a href="#예-시애틀-자전거-수-시각화" id="toc-예-시애틀-자전거-수-시각화" class="nav-link" data-scroll-target="#예-시애틀-자전거-수-시각화">예: 시애틀 자전거 수 시각화</a>
+  <li><a href="#예제-시애틀-프리몬트-다리의-자전거-통행량-시각화" id="toc-예제-시애틀-프리몬트-다리의-자전거-통행량-시각화" class="nav-link" data-scroll-target="#예제-시애틀-프리몬트-다리의-자전거-통행량-시각화">예제: 시애틀 프리몬트 다리의 자전거 통행량 시각화</a>
   <ul class="collapse">
   <li><a href="#데이터-시각화" id="toc-데이터-시각화" class="nav-link" data-scroll-target="#데이터-시각화">데이터 시각화</a></li>
   <li><a href="#데이터-심층-분석" id="toc-데이터-심층-분석" class="nav-link" data-scroll-target="#데이터-심층-분석">데이터 심층 분석</a></li>
@@ -615,9 +615,9 @@ window.Quarto = {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../notebooks/03.00-Introduction-to-Pandas.html">Pandas를 이용한 데이터 조작</a></li><li class="breadcrumb-item"><a href="../notebooks/03.11-Working-with-Time-Series.html"><span class="chapter-title">시계열 작업</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../notebooks/03.00-Introduction-to-Pandas.html">Pandas를 이용한 데이터 조작</a></li><li class="breadcrumb-item"><a href="../notebooks/03.11-Working-with-Time-Series.html"><span class="chapter-title">시계열 데이터 다루기</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-title">시계열 작업</span></h1>
+<h1 class="title"><span class="chapter-title">시계열 데이터 다루기</span></h1>
 </div>
 
 
@@ -634,19 +634,19 @@ window.Quarto = {
 </header>
 
 
-<p>Pandas는 원래 금융 모델링의 맥락에서 개발되었으므로 예상할 수 있듯이 날짜, 시간 및 시간 인덱스 데이터 작업을 위한 광범위한 도구 세트가 포함되어 있습니다. 날짜 및 시간 데이터는 몇 가지 형태로 제공되며 여기서는 이에 대해 설명하겠습니다.</p>
+<p>Pandas는 초기 금융 모델링을 위해 개발된 만큼, 예상할 수 있듯이 날짜, 시간 및 시간 인덱스 데이터 작업을 위한 광범위한 도구 세트가 포함되어 있습니다. 날짜와 시간 데이터는 크게 세 가지 형태로 나뉘는데, 각각의 특징은 다음과 같습니다.</p>
 <ul>
 <li><em>타임스탬프</em>는 특정 시점을 나타냅니다(예: 2021년 7월 4일 오전 7시).</li>
 <li><em>시간 간격</em> 및 <em>기간</em>은 특정 시작 지점과 끝 지점 사이의 시간 길이를 나타냅니다. 예를 들어 2021년 6월입니다. 기간은 일반적으로 각 간격이 균일한 길이이고 겹치지 않는 특별한 경우의 시간 간격을 참조합니다(예: 일로 구성된 24시간 기간).</li>
 <li><em>시간 차이</em> 또는 <em>기간</em>은 정확한 시간 길이를 나타냅니다(예: 22.56초의 기간).</li>
 </ul>
 <p>이번 장에서는 Pandas에서 이러한 각 유형의 날짜/시간 데이터를 사용하는 방법을 소개합니다. 이는 파이썬(Python) 또는 Pandas에서 사용할 수 있는 시계열 도구에 대한 완전한 가이드는 아니지만, 대신 사용자로서 시계열 작업에 접근하는 방법에 대한 광범위한 개요를 제공하기 위한 것입니다. 파이썬(Python)에서 날짜와 시간을 처리하는 도구에 대해 간략하게 설명하고 Pandas에서 제공하는 도구에 대해 더 구체적으로 설명하겠습니다. 더 깊이 있는 몇 가지 리소스를 나열한 후 Pandas에서 시계열 데이터 작업에 대한 몇 가지 간단한 예를 검토하겠습니다.</p>
-<section id="파이썬python의-날짜와-시간" class="level2">
-<h2 class="anchored" data-anchor-id="파이썬python의-날짜와-시간">파이썬(Python)의 날짜와 시간</h2>
+<section id="파이썬에서의-날짜와-시간-표현" class="level2">
+<h2 class="anchored" data-anchor-id="파이썬에서의-날짜와-시간-표현">파이썬에서의 날짜와 시간 표현</h2>
 <p>파이썬(Python) 세계에는 날짜, 시간, 델타 및 시간 범위에 대한 다양한 표현이 있습니다. Pandas에서 제공하는 시계열 도구는 데이터 과학(Data Science) 애플리케이션에 가장 유용한 경향이 있지만 파이썬(Python)에서 사용되는 다른 도구와의 관계를 확인하는 것도 도움이 됩니다.</p>
 <section id="기본-파이썬python-날짜-및-시간-datetime-및-dateutil" class="level3">
 <h3 class="anchored" data-anchor-id="기본-파이썬python-날짜-및-시간-datetime-및-dateutil">기본 파이썬(Python) 날짜 및 시간: datetime 및 dateutil</h3>
-<p>날짜 및 시간 작업을 위한 파이썬(Python)의 기본 개체는 내장 <code>datetime</code> 모듈에 있습니다. 타사 <code>dateutil</code> 모듈과 함께 이를 사용하여 날짜 및 시간에 대한 다양한 유용한 기능을 빠르게 수행할 수 있습니다. 예를 들어 <code>datetime</code> 유형을 사용하여 수동으로 날짜를 작성할 수 있습니다.</p>
+<p>날짜 및 시간 작업을 위한 파이썬(Python)의 기본 개체는 내장 <code>datetime</code> 모듈에 있습니다. 타사 <code>dateutil</code> 모듈과 함께 이를 사용하여 날짜 및 시간에 대한 다양한 유용한 기능을 빠르게 수행합니다. 예를 들어 <code>datetime</code> 유형을 사용하여 수동으로 날짜를 작성합니다.</p>
 <div id="cell-4" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="1">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> datetime <span class="im">import</span> datetime</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>datetime(year<span class="op">=</span><span class="dv">2021</span>, month<span class="op">=</span><span class="dv">7</span>, day<span class="op">=</span><span class="dv">4</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -654,7 +654,7 @@ window.Quarto = {
 <pre><code>datetime.datetime(2021, 7, 4, 0, 0)</code></pre>
 </div>
 </div>
-<p>또는 <code>dateutil</code> 모듈을 사용하여 다양한 문자열 형식의 날짜를 구문 분석할 수 있습니다.</p>
+<p>또는 <code>dateutil</code> 모듈을 사용하여 다양한 문자열 형식의 날짜를 구문 분석합니다.</p>
 <div id="cell-6" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="2">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> dateutil <span class="im">import</span> parser</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>date <span class="op">=</span> parser.parse(<span class="st">"4th of July, 2021"</span>)</span>
@@ -663,19 +663,19 @@ window.Quarto = {
 <pre><code>datetime.datetime(2021, 7, 4, 0, 0)</code></pre>
 </div>
 </div>
-<p><code>datetime</code> 객체가 있으면 요일을 인쇄하는 등의 작업을 수행할 수 있습니다.</p>
+<p><code>datetime</code> 객체가 있으면 요일을 인쇄하는 등의 작업을 수행합니다.</p>
 <div id="cell-8" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="3">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>date.strftime(<span class="st">'%A'</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="3">
 <pre><code>'Sunday'</code></pre>
 </div>
 </div>
-<p>여기서는 날짜 인쇄(<code>'%A'</code>)를 위한 표준 문자열 형식 코드 중 하나를 사용했습니다. 이에 대해서는 파이썬(Python) <a href="https://docs.python.org/3/library/datetime.html"><code>datetime</code> 문서</a>의 <a href="https://docs.python.org/3/library/datetime.html#strftime-and-strptime-behavior"><code>strftime</code> 섹션</a>에서 읽을 수 있습니다. 다른 유용한 날짜 유틸리티에 대한 문서는 <a href="http://labix.org/python-dateutil"><code>dateutil</code>의 온라인 문서</a>에서 찾을 수 있습니다. 알아야 할 관련 패키지는 <a href="http://pytz.sourceforge.net/"><code>pytz</code></a>이며, 여기에는 시계열 데이터에서 가장 편두통을 유발하는 요소인 시간대를 작업하기 위한 도구가 포함되어 있습니다.</p>
-<p><code>datetime</code> 및 <code>dateutil</code>의 장점은 유연성과 쉬운 구문에 있습니다. 이러한 객체와 내장 메소드를 사용하여 관심 있는 거의 모든 작업을 쉽게 수행할 수 있습니다. 날짜와 시간의 큰 배열로 작업하려는 경우에는 다음과 같이 분류됩니다. 파이썬(Python) 숫자 변수 목록이 NumPy 스타일 유형의 숫자 ​​배열에 비해 차선인 것처럼 파이썬(Python) <code>datetime</code> 객체 목록은 인코딩된 날짜의 유형 배열에 비해 차선입니다.</p>
+<p>여기서는 날짜 인쇄(<code>'%A'</code>)를 위한 표준 문자열 형식 코드 중 하나를 사용했습니다. 이에 대해서는 파이썬(Python) <a href="https://docs.python.org/3/library/datetime.html"><code>datetime</code> 문서</a>의 <a href="https://docs.python.org/3/library/datetime.html#strftime-and-strptime-behavior"><code>strftime</code> 섹션</a>에서 읽을 수 있습니다. 다른 유용한 날짜 유틸리티에 대한 문서는 <a href="http://labix.org/python-dateutil"><code>dateutil</code>의 온라인 문서</a>에서 찾을 수 있습니다. 알아야 할 관련 패키지는 <a href="http://pytz.sourceforge.net/"><code>pytz</code></a>이며, 여기에는 시계열 데이터 작업 시 가장 까다로운 부분 중 하나인 시간대(Timezone)를 작업하기 위한 도구가 포함되어 있습니다.</p>
+<p><code>datetime</code> 및 <code>dateutil</code>의 장점은 유연성과 쉬운 구문에 있습니다. 이러한 객체와 내장 메소드를 사용하여 관심 있는 거의 모든 작업을 쉽게 수행합니다. 날짜와 시간의 큰 배열로 작업하려는 경우에는 다음과 같이 분류됩니다. 파이썬(Python) 숫자 변수 목록이 NumPy 스타일 유형의 숫자 ​​배열에 비해 차선인 것처럼 파이썬(Python) <code>datetime</code> 객체 목록은 인코딩된 날짜의 유형 배열에 비해 차선입니다.</p>
 </section>
-<section id="시간-배열-numpy의-datetime64" class="level3">
-<h3 class="anchored" data-anchor-id="시간-배열-numpy의-datetime64">시간 배열: NumPy의 datetime64</h3>
-<p>NumPy의 ‘datetime64’ dtype은 날짜를 64비트 정수로 인코딩하므로 날짜 배열을 간결하게 표현하고 효율적인 방식으로 작동할 수 있습니다. <code>datetime64</code>에는 특정 입력 형식이 필요합니다.</p>
+<section id="시간-배열-연산-numpy의-datetime64" class="level3">
+<h3 class="anchored" data-anchor-id="시간-배열-연산-numpy의-datetime64">시간 배열 연산: NumPy의 datetime64</h3>
+<p>NumPy의 ‘datetime64’ dtype은 날짜를 64비트 정수로 인코딩하므로 날짜 배열을 간결하게 표현하고 효율적인 방식으로 작동합니다. <code>datetime64</code>에는 특정 입력 형식이 필요합니다.</p>
 <div id="cell-11" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="4">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>date <span class="op">=</span> np.array(<span class="st">'2021-07-04'</span>, dtype<span class="op">=</span>np.datetime64)</span>
@@ -684,7 +684,7 @@ window.Quarto = {
 <pre><code>array('2021-07-04', dtype='datetime64[D]')</code></pre>
 </div>
 </div>
-<p>이 형식으로 날짜가 있으면 이에 대해 벡터화된 작업을 빠르게 수행할 수 있습니다.</p>
+<p>이 형식으로 날짜가 있으면 이에 대해 벡터화된 작업을 빠르게 수행합니다.</p>
 <div id="cell-13" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="5">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>date <span class="op">+</span> np.arange(<span class="dv">12</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="5">
@@ -710,7 +710,7 @@ window.Quarto = {
 <pre><code>numpy.datetime64('2021-07-04T12:00')</code></pre>
 </div>
 </div>
-<p>다양한 형식 코드 중 하나를 사용하여 원하는 기본 단위를 강제할 수 있습니다. 예를 들어 여기서는 나노초 기반 시간을 강제 적용합니다.</p>
+<p>다양한 형식 코드 중 하나를 사용하여 원하는 기본 단위를 강제합니다. 예를 들어 여기서는 나노초 기반 시간을 강제 적용합니다.</p>
 <div id="cell-19" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="8">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>np.datetime64(<span class="st">'2021-07-04 12:59:59.50'</span>, <span class="st">'ns'</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="8">
@@ -809,12 +809,12 @@ window.Quarto = {
 </tbody>
 </table>
 <p>실제 세계에서 볼 수 있는 데이터 유형의 경우 유용한 기본값은 <code>datetime64[ns]</code>입니다. 이는 유용한 최신 날짜 범위를 적절한 정밀도로 인코딩할 수 있기 때문입니다.</p>
-<p>마지막으로, <code>datetime64</code> 데이터 유형은 내장된 파이썬(Python) <code>datetime</code> 유형의 일부 결함을 해결하지만 <code>datetime</code>, 특히 <code>dateutil</code>에서 제공하는 편리한 방법과 기능이 많이 부족하다는 점에 유의하세요. 자세한 내용은 <a href="http://docs.scipy.org/doc/numpy/reference/arrays.datetime.html">NumPy의 <code>datetime64</code> 문서</a>에서 확인할 수 있습니다.</p>
+<p>마지막으로, <code>datetime64</code> 데이터 유형은 내장된 파이썬(Python) <code>datetime</code> 유형의 일부 결함을 해결하지만 <code>datetime</code>, 특히 <code>dateutil</code>에서 제공하는 편리한 방법과 기능이 많이 부족하다는 점에 유의하세요. 자세한 내용은 <a href="http://docs.scipy.org/doc/numpy/reference/arrays.datetime.html">NumPy의 <code>datetime64</code> 문서</a>에서 확인합니다.</p>
 </section>
-<section id="pandas의-날짜와-시간-두-세계-모두에서-최고" class="level3">
-<h3 class="anchored" data-anchor-id="pandas의-날짜와-시간-두-세계-모두에서-최고">Pandas의 날짜와 시간: 두 세계 모두에서 최고</h3>
-<p>Pandas는 <code>datetime</code> 및 <code>dateutil</code>의 사용 용이성과 <code>numpy.datetime64</code>의 효율적인 저장 및 벡터화된 인터페이스를 결합한 <code>Timestamp</code> 객체를 제공하기 위해 방금 논의한 모든 도구를 기반으로 구축되었습니다. Pandas는 이러한 <code>Timestamp</code> 개체 그룹에서 <code>Series</code> 또는 <code>DataFrame</code>의 데이터를 색인화하는 데 사용할 수 있는 <code>DatetimeIndex</code>를 생성할 수 있습니다.</p>
-<p>예를 들어 Pandas 도구를 사용하여 이전 데모를 반복할 수 있습니다. Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.</p>
+<section id="pandas의-날짜와-시간-두-방식의-장점-결합" class="level3">
+<h3 class="anchored" data-anchor-id="pandas의-날짜와-시간-두-방식의-장점-결합">Pandas의 날짜와 시간: 두 방식의 장점 결합</h3>
+<p>Pandas는 <code>datetime</code> 및 <code>dateutil</code>의 사용 용이성과 <code>numpy.datetime64</code>의 효율적인 저장 및 벡터화된 인터페이스를 결합한 <code>Timestamp</code> 객체를 제공하기 위해 방금 논의한 모든 도구를 기반으로 구축되었습니다. Pandas는 이러한 <code>Timestamp</code> 개체 그룹에서 <code>Series</code> 또는 <code>DataFrame</code>의 데이터를 색인화하는 데 사용할 수 있는 <code>DatetimeIndex</code>를 생성합니다.</p>
+<p>예를 들어 Pandas 도구를 사용하여 이전 데모를 반복합니다. Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.</p>
 <div id="cell-24" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="9">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
 <span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>date <span class="op">=</span> pd.to_datetime(<span class="st">"4th of July, 2021"</span>)</span>
@@ -829,7 +829,7 @@ window.Quarto = {
 <pre><code>'Sunday'</code></pre>
 </div>
 </div>
-<p>또한 동일한 객체에 대해 NumPy 스타일 벡터화 작업을 직접 수행할 수 있습니다.</p>
+<p>또한 동일한 객체에 대해 NumPy 스타일 벡터화 작업을 직접 수행합니다.</p>
 <div id="cell-27" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="11">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>date <span class="op">+</span> pd.to_timedelta(np.arange(<span class="dv">12</span>), <span class="st">'D'</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="11">
@@ -842,9 +842,9 @@ window.Quarto = {
 <p>다음 섹션에서는 Pandas에서 제공하는 도구를 사용하여 시계열 데이터를 조작하는 방법을 자세히 살펴보겠습니다.</p>
 </section>
 </section>
-<section id="pandas-시계열-시간별-인덱싱" class="level2">
-<h2 class="anchored" data-anchor-id="pandas-시계열-시간별-인덱싱">Pandas 시계열: 시간별 인덱싱</h2>
-<p>Pandas 시계열 도구는 타임스탬프로 데이터를 색인화하기 시작할 때 정말 유용합니다. 예를 들어 시간 인덱스 데이터가 있는 <code>Series</code> 객체를 생성할 수 있습니다.</p>
+<section id="pandas-시계열-시간-기준-인덱싱" class="level2">
+<h2 class="anchored" data-anchor-id="pandas-시계열-시간-기준-인덱싱">Pandas 시계열: 시간 기준 인덱싱</h2>
+<p>Pandas 시계열 도구는 타임스탬프로 데이터를 색인화하기 시작할 때 정말 유용합니다. 예를 들어 시간 인덱스 데이터가 있는 <code>Series</code> 객체를 생성합니다.</p>
 <div id="cell-30" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="12">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb23"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>index <span class="op">=</span> pd.DatetimeIndex([<span class="st">'2020-07-04'</span>, <span class="st">'2020-08-04'</span>,</span>
 <span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a>                          <span class="st">'2021-07-04'</span>, <span class="st">'2021-08-04'</span>])</span>
@@ -858,7 +858,7 @@ window.Quarto = {
 dtype: int64</code></pre>
 </div>
 </div>
-<p>이제 이 데이터가 <code>계열</code>에 있으므로 이전 장에서 논의한 <code>계열</code> 인덱싱 패턴을 사용하여 날짜로 강제 변환할 수 있는 값을 전달할 수 있습니다.</p>
+<p>이제 이 데이터가 <code>계열</code>에 있으므로 이전 장에서 논의한 <code>계열</code> 인덱싱 패턴을 사용하여 날짜로 강제 변환할 수 있는 값을 전달합니다.</p>
 <div id="cell-32" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="13">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb25"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>data[<span class="st">'2020-07-04'</span>:<span class="st">'2021-07-04'</span>]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="13">
@@ -879,15 +879,15 @@ dtype: int64</code></pre>
 </div>
 <p>나중에 날짜를 인덱스로 사용하는 편리성에 대한 추가 예를 살펴보겠습니다. 하지만 먼저 사용 가능한 시계열 데이터 구조를 자세히 살펴보겠습니다.</p>
 </section>
-<section id="pandas-시계열-데이터-구조" class="level2">
-<h2 class="anchored" data-anchor-id="pandas-시계열-데이터-구조">Pandas 시계열 데이터 구조</h2>
+<section id="pandas의-시계열-데이터-구조" class="level2">
+<h2 class="anchored" data-anchor-id="pandas의-시계열-데이터-구조">Pandas의 시계열 데이터 구조</h2>
 <p>이번 섹션에서는 시계열 데이터 작업을 위한 기본 Pandas 데이터 구조를 소개합니다.</p>
 <ul>
 <li><em>타임스탬프</em>의 경우 Pandas는 <code>Timestamp</code> 유형을 제공합니다. 앞서 언급했듯이 이는 본질적으로 파이썬(Python)의 기본 <code>datetime</code>을 대체하지만 보다 효율적인 <code>numpy.datetime64</code> 데이터 유형을 기반으로 합니다. 연관된 <code>Index</code> 구조는 <code>DatetimeIndex</code>입니다.</li>
 <li><em>기간</em>의 경우 Pandas는 <code>Period</code> 유형을 제공합니다. 이는 <code>numpy.datetime64</code>를 기반으로 고정 빈도 간격을 인코딩합니다. 관련 인덱스 구조는 ’PeriodIndex’입니다.</li>
 <li><em>시간 델타</em> 또는 <em>기간</em>의 경우 Pandas는 <code>Timedelta</code> 유형을 제공합니다. <code>Timedelta</code>는 파이썬(Python)의 기본 <code>datetime.timedelta</code> 유형을 보다 효율적으로 대체하며 <code>numpy.timedelta64</code>를 기반으로 합니다. 연관된 인덱스 구조는 ’TimedeltaIndex’입니다.</li>
 </ul>
-<p>이러한 날짜/시간 개체 중 가장 기본적인 것은 <code>Timestamp</code> 및 <code>DatetimeIndex</code> 개체입니다. 이러한 클래스 객체를 직접 호출할 수도 있지만 다양한 형식을 구문 분석할 수 있는 <code>pd.to_datetime</code> 함수를 사용하는 것이 더 일반적입니다. 단일 날짜를 <code>pd.to_datetime</code>에 전달하면 <code>Timestamp</code>가 생성됩니다. 기본적으로 일련의 날짜를 전달하면 여기에서 볼 수 있듯이 ’DatetimeIndex’가 생성됩니다.</p>
+<p>이러한 날짜/시간 개체 중 가장 기본적인 것은 <code>Timestamp</code> 및 <code>DatetimeIndex</code> 개체입니다. 이러한 클래스 객체를 직접 호출할 수도 있지만 다양한 형식을 구문 분석할 수 있는 <code>pd.to_datetime</code> 함수를 사용하는 것이 더 일반적입니다. 단일 날짜를 <code>pd.to_datetime</code>에 전달하면 <code>Timestamp</code>가 생성됩니다. 일련의 날짜를 전달하면 여기에서 볼 수 있듯이 ’DatetimeIndex’가 생성됩니다.</p>
 <div id="cell-38" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="15">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb29"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a>dates <span class="op">=</span> pd.to_datetime([datetime(<span class="dv">2021</span>, <span class="dv">7</span>, <span class="dv">3</span>), <span class="st">'4th of July, 2021'</span>,</span>
 <span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a>                       <span class="st">'2021-Jul-6'</span>, <span class="st">'07-07-2021'</span>, <span class="st">'20210708'</span>])</span>
@@ -898,7 +898,7 @@ dtype: int64</code></pre>
               dtype='datetime64[ns]', freq=None)</code></pre>
 </div>
 </div>
-<p>모든 <code>DatetimeIndex</code>는 빈도 코드를 추가하여 <code>to_ period</code> 함수를 사용하여 <code>PeriodIndex</code>로 변환할 수 있습니다. 여기서는 ``D’’를 사용하여 일일 빈도를 나타냅니다.</p>
+<p>모든 <code>DatetimeIndex</code>는 빈도 코드를 추가하여 <code>to_ period</code> 함수를 사용하여 <code>PeriodIndex</code>로 변환합니다. 여기서는 ``D’’를 사용하여 일일 빈도를 나타냅니다.</p>
 <div id="cell-40" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="16">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb31"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a>dates.to_period(<span class="st">'D'</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="16">
@@ -915,8 +915,8 @@ dtype: int64</code></pre>
 </div>
 </div>
 </section>
-<section id="정규-시퀀스-pd.date_range" class="level2">
-<h2 class="anchored" data-anchor-id="정규-시퀀스-pd.date_range">정규 시퀀스: pd.date_range</h2>
+<section id="정기적인-시퀀스-생성-pd.date_range" class="level2">
+<h2 class="anchored" data-anchor-id="정기적인-시퀀스-생성-pd.date_range">정기적인 시퀀스 생성: pd.date_range</h2>
 <p>정규 날짜 시퀀스를 보다 편리하게 생성하기 위해 Pandas는 이러한 목적으로 몇 가지 함수를 제공합니다. 타임스탬프용 <code>pd.date_range</code>, 마침표용 <code>pd.기간_범위</code>, 시간 델타용 <code>pd.timedelta_range</code>. 우리는 파이썬(Python)의 <code>range</code>와 NumPy의 <code>np.arange</code>가 시작점, 끝점 및 선택적 단계 크기를 취하고 시퀀스를 반환한다는 것을 확인했습니다. 마찬가지로 <code>pd.date_range</code>는 시작 날짜, 종료 날짜 및 선택적 빈도 코드를 허용하여 일반적인 날짜 순서를 만듭니다.</p>
 <div id="cell-44" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="18">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb35"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a>pd.date_range(<span class="st">'2015-07-03'</span>, <span class="st">'2015-07-10'</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -926,7 +926,7 @@ dtype: int64</code></pre>
               dtype='datetime64[ns]', freq='D')</code></pre>
 </div>
 </div>
-<p>또는 시작 및 종료 지점이 아닌 시작 지점과 기간 수를 사용하여 날짜 범위를 지정할 수 있습니다.</p>
+<p>또는 시작 및 종료 지점이 아닌 시작 지점과 기간 수를 사용하여 날짜 범위를 지정합니다.</p>
 <div id="cell-46" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="19">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb37"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a>pd.date_range(<span class="st">'2015-07-03'</span>, periods<span class="op">=</span><span class="dv">8</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="19">
@@ -966,9 +966,9 @@ dtype: int64</code></pre>
 </div>
 <p>이 모든 것에는 다음 섹션에 요약되어 있는 Pandas 주파수 코드에 대한 이해가 필요합니다.</p>
 </section>
-<section id="주파수-및-오프셋" class="level2">
-<h2 class="anchored" data-anchor-id="주파수-및-오프셋">주파수 및 오프셋</h2>
-<p>이러한 Pandas 시계열 도구의 기본은 <em>빈도</em> 또는 <em>날짜 오프셋</em> 개념입니다. 다음 표에는 사용 가능한 주요 코드가 요약되어 있습니다. 이전 섹션에서 설명한 <code>D</code>(일) 및 <code>H</code>(시간) 코드와 마찬가지로 이를 사용하여 원하는 주파수 간격을 지정할 수 있습니다.</p>
+<section id="빈도frequency와-오프셋offset" class="level2">
+<h2 class="anchored" data-anchor-id="빈도frequency와-오프셋offset">빈도(Frequency)와 오프셋(Offset)</h2>
+<p>이러한 Pandas 시계열 도구의 기본은 <em>빈도</em> 또는 <em>날짜 오프셋</em> 개념입니다. 다음 표에는 사용 가능한 주요 코드가 요약되어 있습니다. 이전 섹션에서 설명한 <code>D</code>(일) 및 <code>H</code>(시간) 코드와 마찬가지로 이를 사용하여 원하는 주파수 간격을 지정합니다.</p>
 <table class="caption-top table">
 <thead>
 <tr class="header">
@@ -1078,16 +1078,16 @@ dtype: int64</code></pre>
 </tr>
 </tbody>
 </table>
-<p>또한 3자리 월 코드를 접미사로 추가하여 분기별 또는 연간 코드를 표시하는 데 사용되는 월을 변경할 수 있습니다.</p>
+<p>또한 3자리 월 코드를 접미사로 추가하여 분기별 또는 연간 코드를 표시하는 데 사용되는 월을 변경합니다.</p>
 <ul>
 <li><code>Q-JAN</code>, <code>BQ-FEB</code>, <code>QS-MAR</code>, <code>BQS-APR</code> 등</li>
 <li><code>A-JAN</code>, <code>BA-FEB</code>, <code>AS-MAR</code>, <code>BAS-APR</code> 등</li>
 </ul>
-<p>같은 방법으로 주간 빈도의 분할 지점은 세 글자의 평일 코드를 추가하여 수정할 수 있습니다.</p>
+<p>같은 방법으로 주간 빈도의 분할 지점은 세 글자의 평일 코드를 추가하여 수정합니다.</p>
 <ul>
 <li><code>W-SUN</code>, <code>W-MON</code>, <code>W-TUE</code>, <code>W-WED</code> 등</li>
 </ul>
-<p>또한 코드를 숫자와 결합하여 다른 주파수를 지정할 수도 있습니다. 예를 들어 2시간 30분 빈도의 경우 다음과 같이 시(<code>H</code>)와 분(<code>T</code>) 코드를 결합할 수 있습니다.</p>
+<p>또한 코드를 숫자와 결합하여 다른 주파수를 지정할 수도 있습니다. 예를 들어 2시간 30분 빈도의 경우 다음과 같이 시(<code>H</code>)와 분(<code>T</code>) 코드를 결합합니다.</p>
 <div id="cell-59" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="23">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb45"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb45-1"><a href="#cb45-1" aria-hidden="true" tabindex="-1"></a>pd.timedelta_range(<span class="dv">0</span>, periods<span class="op">=</span><span class="dv">6</span>, freq<span class="op">=</span><span class="st">"2H30T"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="23">
@@ -1096,7 +1096,7 @@ dtype: int64</code></pre>
                dtype='timedelta64[ns]', freq='150T')</code></pre>
 </div>
 </div>
-<p>이러한 짧은 코드는 모두 ‘pd.tseries.offsets’ 모듈에서 찾을 수 있는 Pandas 시계열 오프셋의 특정 인스턴스를 참조합니다. 예를 들어 다음과 같이 영업일 오프셋을 직접 생성할 수 있습니다.</p>
+<p>이러한 짧은 코드는 모두 ‘pd.tseries.offsets’ 모듈에서 찾을 수 있는 Pandas 시계열 오프셋의 특정 인스턴스를 참조합니다. 예를 들어 다음과 같이 영업일 오프셋을 직접 생성합니다.</p>
 <div id="cell-61" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="24">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb47"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb47-1"><a href="#cb47-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> pandas.tseries.offsets <span class="im">import</span> BDay</span>
 <span id="cb47-2"><a href="#cb47-2" aria-hidden="true" tabindex="-1"></a>pd.date_range(<span class="st">'2015-07-01'</span>, periods<span class="op">=</span><span class="dv">6</span>, freq<span class="op">=</span>BDay())</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -1108,8 +1108,8 @@ dtype: int64</code></pre>
 </div>
 <p>주파수 및 오프셋 사용에 대한 자세한 내용은 Pandas 문서의 <a href="https://pandas.pydata.org/pandas-docs/stable/user_guide/timeseries.html#dateoffset-objects"><code>DateOffset</code> 섹션</a>을 참조하세요.</p>
 </section>
-<section id="리샘플링-이동-및-윈도잉" class="level2">
-<h2 class="anchored" data-anchor-id="리샘플링-이동-및-윈도잉">리샘플링, 이동 및 윈도잉</h2>
+<section id="리샘플링-시프트shift-윈도잉windowing" class="level2">
+<h2 class="anchored" data-anchor-id="리샘플링-시프트shift-윈도잉windowing">리샘플링, 시프트(Shift), 윈도잉(Windowing)</h2>
 <p>날짜와 시간을 인덱스로 사용하여 데이터를 직관적으로 구성하고 액세스하는 기능은 Pandas 시계열 도구의 중요한 측면입니다. 일반적으로 인덱싱된 데이터의 이점(작업 중 자동 정렬, 직관적인 데이터 슬라이싱 및 액세스 등)이 여전히 적용되며 Pandas는 몇 가지 추가 시계열별 작업을 제공합니다.</p>
 <p>여기에서는 일부 주가 데이터를 예로 들어 그 중 몇 가지를 살펴보겠습니다. Pandas는 주로 금융 환경에서 개발되었기 때문에 금융 데이터를 위한 몇 가지 매우 구체적인 도구가 포함되어 있습니다. 예를 들어 함께 제공되는 <code>pandas-datareader</code> 패키지(<code>pip install pandas-datareader</code>를 통해 설치 가능)는 다양한 온라인 소스에서 데이터를 가져오는 방법을 알고 있습니다. 여기서는 S&amp;P 500 가격 내역의 일부를 로드합니다.</p>
 <div id="cell-64" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="25">
@@ -1199,7 +1199,7 @@ dtype: int64</code></pre>
 <div id="cell-66" class="cell" data-tags="[]" data-execution_count="26">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb50"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb50-1"><a href="#cb50-1" aria-hidden="true" tabindex="-1"></a>sp500 <span class="op">=</span> sp500[<span class="st">'Close'</span>]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<p>일반적인 Matplotlib 설정 상용구(<a href="../notebooks/04.00-Introduction-To-Matplotlib.html">4부</a> 참조) 이후 <code>plot</code> 메서드를 사용하여 이를 시각화할 수 있습니다. 결과는 다음 그림에 나와 있습니다.</p>
+<p>일반적인 Matplotlib 설정 상용구(<a href="../notebooks/04.00-Introduction-To-Matplotlib.html">4부</a> 참조) 이후 <code>plot</code> 메서드를 사용하여 이를 시각화합니다. 결과는 다음 그림에 나와 있습니다.</p>
 <div id="cell-68" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="27">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb51"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb51-1"><a href="#cb51-1" aria-hidden="true" tabindex="-1"></a><span class="op">%</span>matplotlib inline</span>
 <span id="cb51-2"><a href="#cb51-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
@@ -1215,7 +1215,7 @@ dtype: int64</code></pre>
 </div>
 <section id="주파수-리샘플링-및-변환" class="level3">
 <h3 class="anchored" data-anchor-id="주파수-리샘플링-및-변환">주파수 리샘플링 및 변환</h3>
-<p>시계열 데이터를 처리할 때 일반적으로 필요한 것 중 하나는 더 높거나 낮은 빈도로 리샘플링하는 것입니다. 이는 <code>resample</code> 방법이나 훨씬 간단한 <code>asfreq</code> 방법을 사용하여 수행할 수 있습니다. 둘 사이의 주요 차이점은 <code>resample</code>은 기본적으로 <em>데이터 집계</em>인 반면 <code>asfreq</code>는 기본적으로 <em>데이터 선택</em>이라는 것입니다.</p>
+<p>시계열 데이터를 처리할 때 일반적으로 필요한 것 중 하나는 더 높거나 낮은 빈도로 리샘플링하는 것입니다. 이는 <code>resample</code> 방법이나 훨씬 간단한 <code>asfreq</code> 방법을 사용하여 수행합니다. 둘 사이의 주요 차이점은 <code>resample</code>은 <em>데이터 집계</em>인 반면 <code>asfreq</code>는 <em>데이터 선택</em>이라는 것입니다.</p>
 <p>S&amp;P 500 종가 데이터를 다운샘플링할 때 두 값이 무엇을 반환하는지 비교해 보겠습니다. 여기서는 사업연도 말에 데이터를 다시 샘플링하겠습니다. 다음 그림은 결과를 보여줍니다.</p>
 <div id="cell-70" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="28">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb52"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb52-1"><a href="#cb52-1" aria-hidden="true" tabindex="-1"></a>sp500.plot(alpha<span class="op">=</span><span class="fl">0.5</span>, style<span class="op">=</span><span class="st">'-'</span>)</span>
@@ -1232,7 +1232,7 @@ dtype: int64</code></pre>
 </div>
 </div>
 <p>차이점에 주목하세요. 각 지점에서 <code>resample</code>은 <em>이전 연도의 평균</em>을 보고하고, <code>asfreq</code>는 <em>연말의 값</em>을 보고합니다.</p>
-<p>업샘플링의 경우 <code>resample</code>과 <code>asfreq</code>는 대체로 동일하지만 <code>resample</code>에는 더 많은 옵션을 사용할 수 있습니다. 이 경우 두 방법 모두의 기본값은 업샘플링된 포인트를 비워 두는 것입니다. 즉, NA 값으로 채워집니다. <a href="../notebooks/03.04-Missing-Values.html">누락된 데이터 처리</a>에서 설명한 <code>pd.fillna</code> 함수와 마찬가지로 <code>asfreq</code>는 값이 대치되는 방법을 지정하기 위해 <code>method</code> 인수를 허용합니다. 여기서는 영업일 데이터를 일일 빈도(예: 주말 포함)로 다시 샘플링합니다. 다음 그림은 결과를 보여줍니다.</p>
+<p>업샘플링의 경우 <code>resample</code>과 <code>asfreq</code>는 대체로 동일하지만 <code>resample</code>에는 더 많은 옵션을 사용합니다. 이 경우 두 방법 모두의 기본값은 업샘플링된 포인트를 비워 두는 것입니다. 즉, NA 값으로 채워집니다. <a href="../notebooks/03.04-Missing-Values.html">누락된 데이터 처리</a>에서 설명한 <code>pd.fillna</code> 함수와 마찬가지로 <code>asfreq</code>는 값이 대치되는 방법을 지정하기 위해 <code>method</code> 인수를 허용합니다. 여기서는 영업일 데이터를 일일 빈도(예: 주말 포함)로 다시 샘플링합니다. 다음 그림은 결과를 보여줍니다.</p>
 <div id="cell-73" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="29">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb53"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb53-1"><a href="#cb53-1" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots(<span class="dv">2</span>, sharex<span class="op">=</span><span class="va">True</span>)</span>
 <span id="cb53-2"><a href="#cb53-2" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> sp500.iloc[:<span class="dv">20</span>]</span>
@@ -1274,7 +1274,7 @@ dtype: int64</code></pre>
 </section>
 <section id="롤링-윈도우" class="level3">
 <h3 class="anchored" data-anchor-id="롤링-윈도우">롤링 윈도우</h3>
-<p>롤링 통계 계산은 Pandas에서 구현하는 세 번째 유형의 시계열별 작업입니다. 이는 ‘Series’ 및 ‘DataFrame’ 개체의 ‘rolling’ 속성을 통해 수행할 수 있으며, 이는 ‘groupby’ 작업에서 본 것과 유사한 보기를 반환합니다(<a href="../notebooks/03.08-Aggregation-and-Grouping.html">집계 및 그룹화</a> 참조). 이 롤링 보기에서는 기본적으로 다양한 집계 작업을 사용할 수 있습니다.</p>
+<p>롤링 통계 계산은 Pandas에서 구현하는 세 번째 유형의 시계열별 작업입니다. 이는 ‘Series’ 및 ‘DataFrame’ 개체의 ‘rolling’ 속성을 통해 수행할 수 있으며, 이는 ‘groupby’ 작업에서 본 것과 유사한 보기를 반환합니다(<a href="../notebooks/03.08-Aggregation-and-Grouping.html">집계 및 그룹화</a> 참조). 이 롤링 보기에서는 다양한 집계 작업을 사용합니다.</p>
 <p>예를 들어 주가의 1년 중심 이동 평균과 표준 편차를 볼 수 있습니다(다음 그림 참조).</p>
 <div id="cell-80" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="31">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb55"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb55-1"><a href="#cb55-1" aria-hidden="true" tabindex="-1"></a>rolling <span class="op">=</span> sp500.rolling(<span class="dv">365</span>, center<span class="op">=</span><span class="va">True</span>)</span>
@@ -1292,7 +1292,7 @@ dtype: int64</code></pre>
 </div>
 </div>
 </div>
-<p>‘groupby’ 작업과 마찬가지로 ‘aggregate’ 및 ‘apply’ 메서드를 사용자 지정 롤링 계산에 사용할 수 있습니다.</p>
+<p>‘groupby’ 작업과 마찬가지로 ‘aggregate’ 및 ‘apply’ 메서드를 사용자 지정 롤링 계산에 사용합니다.</p>
 </section>
 </section>
 <section id="자세히-알아볼-수-있는-곳" class="level2">
@@ -1301,10 +1301,10 @@ dtype: int64</code></pre>
 <p>또 다른 훌륭한 리소스는 Wes McKinney(O’Reilly)가 쓴 책 <a href="https://learning.oreilly.com/library/view/python-for-data/9781098104023/"><em>데이터 분석을 위한 파이썬(Python)</em></a>입니다. Pandas 사용에 대한 귀중한 리소스입니다. 특히 이 책은 비즈니스 및 금융 맥락에서 시계열 도구를 강조하고 비즈니스 달력, 시간대 및 관련 주제의 특정 세부 사항에 훨씬 더 중점을 둡니다.</p>
 <p>언제나 그렇듯이, IPython 도움말 기능을 사용하여 여기에서 설명하는 함수와 메서드에 사용할 수 있는 추가 옵션을 탐색하고 시험해 볼 수도 있습니다. 저는 이것이 새로운 파이썬(Python) 도구를 배우는 가장 좋은 방법이라고 생각합니다.</p>
 </section>
-<section id="예-시애틀-자전거-수-시각화" class="level2">
-<h2 class="anchored" data-anchor-id="예-시애틀-자전거-수-시각화">예: 시애틀 자전거 수 시각화</h2>
-<p>시계열 데이터 작업에 대한 보다 자세한 예로 시애틀의 <a href="http://www.openstreetmap.org/#map=17/47.64813/-122.34965">Fremont Bridge</a>의 자전거 수를 살펴보겠습니다. 이 데이터는 2012년 말에 설치된 자동화된 자전거 카운터에서 나온 것입니다. 이 카운터에는 다리의 동쪽과 서쪽 보도에 유도 센서가 있습니다. 시간당 자전거 수는 <a href="http://data.seattle.gov">http://data.seattle.gov</a>에서 다운로드할 수 있습니다. Fremont Bridge 자전거 카운터 데이터세트는 교통 카테고리에서 사용할 수 있습니다.</p>
-<p>이 책에 사용된 CSV는 다음과 같이 다운로드할 수 있습니다.</p>
+<section id="예제-시애틀-프리몬트-다리의-자전거-통행량-시각화" class="level2">
+<h2 class="anchored" data-anchor-id="예제-시애틀-프리몬트-다리의-자전거-통행량-시각화">예제: 시애틀 프리몬트 다리의 자전거 통행량 시각화</h2>
+<p>시계열 데이터 작업에 대한 보다 자세한 예로 시애틀의 <a href="http://www.openstreetmap.org/#map=17/47.64813/-122.34965">Fremont Bridge</a>의 자전거 수를 살펴보겠습니다. 이 데이터는 2012년 말에 설치된 자동화된 자전거 카운터에서 나온 것입니다. 이 카운터에는 다리의 동쪽과 서쪽 보도에 유도 센서가 있습니다. 시간당 자전거 수는 <a href="http://data.seattle.gov">http://data.seattle.gov</a>에서 다운로드합니다. Fremont Bridge 자전거 카운터 데이터 세트는 교통 카테고리에서 사용합니다.</p>
+<p>이 책에 사용된 CSV는 다음과 같이 다운로드합니다.</p>
 <div id="cell-84" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="32">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb56"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb56-1"><a href="#cb56-1" aria-hidden="true" tabindex="-1"></a><span class="co"># url = ('https://raw.githubusercontent.com/jakevdp/'</span></span>
 <span id="cb56-2"><a href="#cb56-2" aria-hidden="true" tabindex="-1"></a><span class="co">#        'bicycle-data/main/FremontBridge.csv')</span></span>
@@ -1447,7 +1447,7 @@ dtype: int64</code></pre>
 </div>
 <section id="데이터-시각화" class="level3">
 <h3 class="anchored" data-anchor-id="데이터-시각화">데이터 시각화</h3>
-<p>데이터세트를 시각화함으로써 데이터세트에 대한 통찰력을 얻을 수 있습니다. 원시 데이터를 그리는 것부터 시작해 보겠습니다(다음 그림 참조).</p>
+<p>데이터 세트를 시각화함으로써 데이터 세트에 대한 통찰력을 얻을 수 있습니다. 원시 데이터를 그리는 것부터 시작해 보겠습니다(다음 그림 참조).</p>
 <div id="cell-92" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="36">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb60"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb60-1"><a href="#cb60-1" aria-hidden="true" tabindex="-1"></a>data.plot()</span>
 <span id="cb60-2"><a href="#cb60-2" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">'Hourly Bicycle Count'</span>)<span class="op">;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -1501,7 +1501,7 @@ dtype: int64</code></pre>
 </section>
 <section id="데이터-심층-분석" class="level3">
 <h3 class="anchored" data-anchor-id="데이터-심층-분석">데이터 심층 분석</h3>
-<p>이러한 평활화된 데이터 보기는 데이터의 일반적인 추세를 파악하는 데 유용하지만 구조의 대부분을 숨깁니다. 예를 들어 하루 중 시간의 함수로 평균 트래픽을 살펴보고 싶을 수 있습니다. <a href="../notebooks/03.08-Aggregation-and-Grouping.html">집계 및 그룹화</a>에서 설명한 ‘groupby’ 기능을 사용하여 이 작업을 수행할 수 있습니다(다음 그림 참조).</p>
+<p>이러한 평활화된 데이터 보기는 데이터의 일반적인 추세를 파악하는 데 유용하지만 구조의 대부분을 숨깁니다. 예를 들어 하루 중 시간의 함수로 평균 트래픽을 살펴보고 싶을 수 있습니다. <a href="../notebooks/03.08-Aggregation-and-Grouping.html">집계 및 그룹화</a>에서 설명한 ‘groupby’ 기능을 사용하여 이 작업을 수행합니다(다음 그림 참조).</p>
 <div id="cell-100" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="40">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb64"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb64-1"><a href="#cb64-1" aria-hidden="true" tabindex="-1"></a>by_time <span class="op">=</span> data.groupby(data.index.time).mean()</span>
 <span id="cb64-2"><a href="#cb64-2" aria-hidden="true" tabindex="-1"></a>hourly_ticks <span class="op">=</span> <span class="dv">4</span> <span class="op">*</span> <span class="dv">60</span> <span class="op">*</span> <span class="dv">60</span> <span class="op">*</span> np.arange(<span class="dv">6</span>)</span>
@@ -1515,7 +1515,7 @@ dtype: int64</code></pre>
 </div>
 </div>
 <p>시간당 교통량은 오전 8시와 오후 5시경에 가장 많은 트래픽을 보이는 강력한 이중 패턴입니다. 이는 다리를 건너는 통근 교통량이 많다는 증거일 가능성이 높습니다. 방향성 요소도 있는데, 데이터에 따르면 오전 출퇴근 시간에는 동쪽 보도를 더 많이 사용하고, 오후 출근 시간에는 서쪽 보도를 더 많이 사용하는 것으로 나타났습니다. 갈다.</p>
-<p>또한 요일에 따라 상황이 어떻게 변하는지 궁금할 수도 있습니다. 이번에도 간단한 <code>groupby</code>를 사용하여 이 작업을 수행할 수 있습니다(다음 그림 참조).</p>
+<p>또한 요일에 따라 상황이 어떻게 변하는지 궁금할 수도 있습니다. 이번에도 간단한 <code>groupby</code>를 사용하여 이 작업을 수행합니다(다음 그림 참조).</p>
 <div id="cell-102" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="41">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb65"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb65-1"><a href="#cb65-1" aria-hidden="true" tabindex="-1"></a>by_weekday <span class="op">=</span> data.groupby(data.index.dayofweek).mean()</span>
 <span id="cb65-2"><a href="#cb65-2" aria-hidden="true" tabindex="-1"></a>by_weekday.index <span class="op">=</span> [<span class="st">'Mon'</span>, <span class="st">'Tues'</span>, <span class="st">'Wed'</span>, <span class="st">'Thurs'</span>, <span class="st">'Fri'</span>, <span class="st">'Sat'</span>, <span class="st">'Sun'</span>]</span>
@@ -1959,13 +1959,13 @@ dtype: int64</code></pre>
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../notebooks/03.10-Working-With-Strings.html" class="pagination-link" aria-label="벡터화된 문자열 작업">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">벡터화된 문자열 작업</span></span>
+      <a href="../notebooks/03.10-Working-With-Strings.html" class="pagination-link" aria-label="벡터화된 문자열 연산">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">벡터화된 문자열 연산</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../notebooks/03.12-Performance-Eval-and-Query.html" class="pagination-link" aria-label="고성능 Pandas: 평가 및 쿼리">
-        <span class="nav-page-text"><span class="chapter-title">고성능 Pandas: 평가 및 쿼리</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../notebooks/03.12-Performance-Eval-and-Query.html" class="pagination-link" aria-label="고성능 Pandas: eval()과 query()">
+        <span class="nav-page-text"><span class="chapter-title">고성능 Pandas: eval()과 query()</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

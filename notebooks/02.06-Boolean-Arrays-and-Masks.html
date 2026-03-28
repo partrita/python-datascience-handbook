@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>비교, 마스크 및 부울 논리 – 파이썬 데이터 사이언스 핸드북</title>
+<title>비교, 마스크, 불리언 논리 – 파이썬 데이터 사이언스 핸드북</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -77,7 +77,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-803ae4f7a8810f475153517dc3c4ebae.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-2b8c928036a03c400d959948b846e3b2.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -118,7 +118,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../notebooks/02.00-Introduction-to-NumPy.html">NumPy 소개</a></li><li class="breadcrumb-item"><a href="../notebooks/02.06-Boolean-Arrays-and-Masks.html"><span class="chapter-title">비교, 마스크 및 부울 논리</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../notebooks/02.00-Introduction-to-NumPy.html">NumPy 소개</a></li><li class="breadcrumb-item"><a href="../notebooks/02.06-Boolean-Arrays-and-Masks.html"><span class="chapter-title">비교, 마스크, 불리언 논리</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -180,7 +180,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/01.03-Magic-Commands.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">IPython 매직 명령</span></a>
+  <a href="../notebooks/01.03-Magic-Commands.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">IPython 매직 명령어</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -190,17 +190,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/01.05-IPython-And-Shell-Commands.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">IPython 및 셸 명령</span></a>
+  <a href="../notebooks/01.05-IPython-And-Shell-Commands.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">IPython과 셸 명령어</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/01.06-Errors-and-Debugging.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">오류 및 디버깅</span></a>
+  <a href="../notebooks/01.06-Errors-and-Debugging.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">오류와 디버깅</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/01.07-Timing-and-Profiling.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">프로파일링 및 타이밍 코드</span></a>
+  <a href="../notebooks/01.07-Timing-and-Profiling.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">코드 성능 측정 및 프로파일링</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -226,22 +226,22 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.01-Understanding-Data-Types.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">파이썬(Python)의 데이터 유형 이해</span></a>
+  <a href="../notebooks/02.01-Understanding-Data-Types.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">파이썬의 데이터 타입 이해하기</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.02-The-Basics-Of-NumPy-Arrays.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">NumPy 배열의 기본</span></a>
+  <a href="../notebooks/02.02-The-Basics-Of-NumPy-Arrays.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">NumPy 배열의 기초</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.03-Computation-on-arrays-ufuncs.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">NumPy 배열 계산: 범용 함수</span></a>
+  <a href="../notebooks/02.03-Computation-on-arrays-ufuncs.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">NumPy 배열 연산: 범용 함수(Universal Functions)</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.04-Computation-on-arrays-aggregates.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">집계: 최소, 최대 및 그 사이의 모든 것</span></a>
+  <a href="../notebooks/02.04-Computation-on-arrays-aggregates.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">집계: 최소값, 최대값 그리고 그 밖의 모든 것</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -251,12 +251,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.06-Boolean-Arrays-and-Masks.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">비교, 마스크 및 부울 논리</span></a>
+  <a href="../notebooks/02.06-Boolean-Arrays-and-Masks.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">비교, 마스크, 불리언 논리</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.07-Fancy-Indexing.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">멋진 인덱싱</span></a>
+  <a href="../notebooks/02.07-Fancy-Indexing.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">팬시 인덱싱(Fancy Indexing)</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -266,7 +266,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.09-Structured-Data-NumPy.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">구조화된 데이터: NumPy의 구조화된 배열</span></a>
+  <a href="../notebooks/02.09-Structured-Data-NumPy.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">구조화된 데이터: NumPy 구조화된 배열</span></a>
   </div>
 </li>
       </ul>
@@ -282,12 +282,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.00-Introduction-to-Pandas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">팬더를 이용한 데이터 조작</span></a>
+  <a href="../notebooks/03.00-Introduction-to-Pandas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Pandas로 데이터 다루기</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.01-Introducing-Pandas-Objects.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">판다스 객체 소개</span></a>
+  <a href="../notebooks/03.01-Introducing-Pandas-Objects.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Pandas 객체 소개</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -297,7 +297,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.03-Operations-in-Pandas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Pandas에서 데이터 작업</span></a>
+  <a href="../notebooks/03.03-Operations-in-Pandas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Pandas로 데이터 연산하기</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -312,42 +312,42 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.06-Concat-And-Append.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">데이터세트 결합: 연결 및 추가</span></a>
+  <a href="../notebooks/03.06-Concat-And-Append.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">데이터 결합: 연결(Concat) 및 추가(Append)</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.07-Merge-and-Join.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">데이터세트 결합: 병합 및 조인</span></a>
+  <a href="../notebooks/03.07-Merge-and-Join.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">데이터 결합: 병합(Merge)과 조인(Join)</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.08-Aggregation-and-Grouping.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">집계 및 그룹화</span></a>
+  <a href="../notebooks/03.08-Aggregation-and-Grouping.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">집계(Aggregation)와 그룹화(Grouping)</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.09-Pivot-Tables.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">피벗 테이블</span></a>
+  <a href="../notebooks/03.09-Pivot-Tables.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">피벗 테이블(Pivot Tables)</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.10-Working-With-Strings.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">벡터화된 문자열 작업</span></a>
+  <a href="../notebooks/03.10-Working-With-Strings.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">벡터화된 문자열 연산</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.11-Working-with-Time-Series.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">시계열 작업</span></a>
+  <a href="../notebooks/03.11-Working-with-Time-Series.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">시계열 데이터 다루기</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.12-Performance-Eval-and-Query.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">고성능 Pandas: 평가 및 쿼리</span></a>
+  <a href="../notebooks/03.12-Performance-Eval-and-Query.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">고성능 Pandas: eval()과 query()</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.13-Further-Resources.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">추가 리소스</span></a>
+  <a href="../notebooks/03.13-Further-Resources.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">더 읽을거리</span></a>
   </div>
 </li>
       </ul>
@@ -557,12 +557,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <ul>
   <li><a href="#예-비오는-날-계산" id="toc-예-비오는-날-계산" class="nav-link active" data-scroll-target="#예-비오는-날-계산">예: 비오는 날 계산</a></li>
   <li><a href="#ufuncs로서의-비교-연산자" id="toc-ufuncs로서의-비교-연산자" class="nav-link" data-scroll-target="#ufuncs로서의-비교-연산자">Ufuncs로서의 비교 연산자</a></li>
-  <li><a href="#부울-배열-작업" id="toc-부울-배열-작업" class="nav-link" data-scroll-target="#부울-배열-작업">부울 배열 작업</a>
+  <li><a href="#불리언-배열-작업" id="toc-불리언-배열-작업" class="nav-link" data-scroll-target="#불리언-배열-작업">불리언 배열 작업</a>
   <ul class="collapse">
-  <li><a href="#항목-계산" id="toc-항목-계산" class="nav-link" data-scroll-target="#항목-계산">항목 계산</a></li>
-  <li><a href="#부울-연산자" id="toc-부울-연산자" class="nav-link" data-scroll-target="#부울-연산자">부울 연산자</a></li>
+  <li><a href="#요소-개수-세기" id="toc-요소-개수-세기" class="nav-link" data-scroll-target="#요소-개수-세기">요소 개수 세기</a></li>
+  <li><a href="#불리언-연산자" id="toc-불리언-연산자" class="nav-link" data-scroll-target="#불리언-연산자">불리언 연산자</a></li>
   </ul></li>
-  <li><a href="#부울-배열을-마스크로-사용" id="toc-부울-배열을-마스크로-사용" class="nav-link" data-scroll-target="#부울-배열을-마스크로-사용">부울 배열을 마스크로 사용</a></li>
+  <li><a href="#불리언-배열을-마스크로-사용" id="toc-불리언-배열을-마스크로-사용" class="nav-link" data-scroll-target="#불리언-배열을-마스크로-사용">불리언 배열을 마스크로 사용</a></li>
   <li><a href="#키워드-및또는-연산자-비교" id="toc-키워드-및또는-연산자-비교" class="nav-link" data-scroll-target="#키워드-및또는-연산자-비교">키워드 및/또는 연산자 비교 &amp;/|</a></li>
   </ul>
 </nav>
@@ -570,9 +570,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../notebooks/02.00-Introduction-to-NumPy.html">NumPy 소개</a></li><li class="breadcrumb-item"><a href="../notebooks/02.06-Boolean-Arrays-and-Masks.html"><span class="chapter-title">비교, 마스크 및 부울 논리</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../notebooks/02.00-Introduction-to-NumPy.html">NumPy 소개</a></li><li class="breadcrumb-item"><a href="../notebooks/02.06-Boolean-Arrays-and-Masks.html"><span class="chapter-title">비교, 마스크, 불리언 논리</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-title">비교, 마스크 및 부울 논리</span></h1>
+<h1 class="title"><span class="chapter-title">비교, 마스크, 불리언 논리</span></h1>
 </div>
 
 
@@ -589,10 +589,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>이번 장에서는 NumPy 배열 내의 값을 검사하고 조작하기 위해 부울 마스크를 사용하는 방법을 다룹니다. 마스킹은 일부 기준에 따라 배열의 값을 추출, 수정, 계산 또는 조작하려는 경우에 발생합니다. 예를 들어 특정 값보다 큰 모든 값을 계산하거나 일부 임계값을 초과하는 모든 이상값을 제거할 수 있습니다. NumPy에서 부울 마스킹은 이러한 유형의 작업을 수행하는 가장 효율적인 방법인 경우가 많습니다.</p>
+<p>이번 장에서는 NumPy 배열 내의 값을 검사하고 조작하기 위해 불리언 마스크를 사용하는 방법을 다룹니다. 마스킹은 일부 기준에 따라 배열의 값을 추출, 수정, 계산 또는 조작하려는 경우에 발생하게 됩니다. 예를 들어 특정 값보다 큰 모든 값을 계산하거나 일부 임계값을 초과하는 모든 이상값을 제거합니다. NumPy에서 불리언 마스킹은 이러한 유형의 작업을 수행하는 가장 효율적인 방법인 경우가 많습니다.</p>
 <section id="예-비오는-날-계산" class="level2">
 <h2 class="anchored" data-anchor-id="예-비오는-날-계산">예: 비오는 날 계산</h2>
-<p>특정 도시에서 1년 동안 매일 강수량을 나타내는 일련의 데이터가 있다고 가정해 보세요. 예를 들어 여기서는 Pandas를 사용하여 2015년 시애틀 시의 일일 강수량 통계를 로드합니다(<a href="../notebooks/03.00-Introduction-to-Pandas.html">파트 3</a> 참조).</p>
+<p>특정 도시에서 1년 동안 매일 강수량을 나타내는 일련의 데이터가 있다고 가정해 보세요. 예를 들어 여기서는 Pandas를 사용하여 2015년 시애틀 시의 일일 강수량 통계를 불러옵니다(<a href="../notebooks/03.00-Introduction-to-Pandas.html">파트 3</a> 참조).</p>
 <div id="cell-3" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="1">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> vega_datasets <span class="im">import</span> data</span>
@@ -605,8 +605,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <pre><code>365</code></pre>
 </div>
 </div>
-<p>배열에는 2015년 1월 1일부터 12월 31일까지의 일일 강우량을 밀리미터 단위로 제공하는 365개의 값이 포함되어 있습니다.</p>
-<p>첫 번째 빠른 시각화로, Matplotlib를 사용하여 생성된 다음 그림에서 비오는 날의 히스토그램을 살펴보겠습니다(이 도구는 <a href="../notebooks/04.00-Introduction-To-Matplotlib.html">4부</a>에서 더 자세히 살펴보겠습니다).</p>
+<p>배열에는 2015년 1월 1일부터 12월 31일까지의 일일 강우량을 밀리미터 단위로 제공하는 365개의 데이터가 들어 있습니다.</p>
+<p>첫 번째 빠른 시각화 수단으로 Matplotlib를 사용하여 생성된 다음 그림에서 비오는 날의 히스토그램을 살펴보겠습니다(이 도구는 <a href="../notebooks/04.00-Introduction-To-Matplotlib.html">4부</a>에서 더 자세히 살펴보겠습니다).</p>
 <div id="cell-5" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="2">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="op">%</span>matplotlib inline</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
@@ -622,12 +622,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
-<p>이 히스토그램은 데이터가 어떤 모양인지에 대한 일반적인 아이디어를 제공합니다. 도시에 비가 많이 온다는 평판에도 불구하고 2015년에는 시애틀의 대부분의 날에 강수량이 거의 0에 가까웠습니다. 그러나 이는 우리가 보고 싶은 일부 정보를 제대로 전달하지 못합니다. 예를 들어 일년에 비가 오는 날이 몇 번이나 있었습니까? 그 비오는 날의 평균 강수량은 얼마였습니까? 강수량이 10mm를 넘는 날은 며칠입니까?</p>
-<p>이에 대한 한 가지 접근 방식은 이러한 질문에 직접 대답하는 것입니다. 즉, 원하는 범위의 값을 볼 때마다 카운터를 증가시키면서 데이터를 반복할 수 있습니다. 그러나 이 장 전체에서 논의된 이유로 인해 이러한 접근 방식은 코드 작성 시간과 결과 계산 시간 측면에서 매우 비효율적입니다. 우리는 <a href="../notebooks/02.03-Computation-on-arrays-ufuncs.html">NumPy 배열에 대한 계산: 범용 함수</a>에서 NumPy의 ufunc를 루프 대신 사용하여 배열에 대한 빠른 요소별 산술 연산을 수행할 수 있음을 확인했습니다. 같은 방식으로 다른 ufunc를 사용하여 배열에 대한 요소별 <em>비교</em>를 수행한 다음 결과를 조작하여 우리가 가진 질문에 답할 수 있습니다. 지금은 데이터를 제쳐두고 이러한 유형의 질문에 신속하게 답하기 위해 <em>마스킹</em>을 사용하는 NumPy의 몇 가지 일반 도구에 대해 논의하겠습니다.</p>
+<p>이 히스토그램은 데이터가 어떤 모양인지에 대한 일반적인 인상을 줍니다. 도시에 비가 많이 온다는 평판에도 불구하고 2015년에는 시애틀의 대부분의 날에 강수량이 거의 0에 가까웠습니다. 그러나 이는 우리가 보고 싶은 일부 정보를 제대로 전달하지 못합니다. 예를 들어 일년에 비가 오는 날이 몇 번이나 있었습니까? 그 비오는 날의 평균 강수량은 얼마였습니까? 강수량이 10mm를 넘는 날은 며칠입니까?</p>
+<p>이에 대한 한 가지 접근 방식은 이러한 질문에 직접 대답하는 것입니다. 즉, 원하는 범위의 값을 볼 때마다 카운터를 증가시키면서 데이터를 반복합니다. 그러나 이 장 전체에서 논의한 이유로 이러한 접근 방식은 코드 작성 시간과 결과 계산 시간 측면에서 매우 비효율적입니다. 우리는 <a href="../notebooks/02.03-Computation-on-arrays-ufuncs.html">NumPy 배열 계산: 범용 함수</a>에서 NumPy의 ufunc를 루프 대신 사용하여 배열에 대한 빠른 요소별 산술 연산을 수행할 수 있음을 알아보았습니다. 같은 방식으로 다른 ufunc를 사용하여 배열에 대한 요소별 <em>비교</em>를 수행한 다음 결과를 조작하여 우리가 가진 질문에 답합니다. 지금은 데이터를 제쳐두고 이러한 유형의 질문에 신속하게 답하기 위해 <em>마스킹</em>을 사용하는 NumPy의 몇 가지 일반 도구를 살펴보겠습니다.</p>
 </section>
 <section id="ufuncs로서의-비교-연산자" class="level2">
 <h2 class="anchored" data-anchor-id="ufuncs로서의-비교-연산자">Ufuncs로서의 비교 연산자</h2>
-<p><a href="../notebooks/02.03-Computation-on-arrays-ufuncs.html">NumPy 배열에 대한 계산: 범용 함수</a>에서는 ufunc를 도입했으며 특히 산술 연산자에 중점을 두었습니다. 배열에 <code>+</code>, <code>-</code>, <code>*</code>, <code>/</code> 및 기타 연산자를 사용하면 요소별 작업이 수행된다는 것을 확인했습니다. NumPy는 또한 <code>&lt;</code>(보다 작음) 및 <code>&gt;</code>(보다 큼)과 같은 비교 연산자를 요소별 ufunc로 구현합니다. 이러한 비교 연산자의 결과는 항상 부울 데이터 유형의 배열입니다. 6가지 표준 비교 작업을 모두 사용할 수 있습니다.</p>
+<p><a href="../notebooks/02.03-Computation-on-arrays-ufuncs.html">NumPy 배열 계산: 범용 함수</a>에서는 ufunc를 소개하고 산술 연산자에 중점을 두었습니다. 배열에 <code>+</code>, <code>-</code>, <code>*</code>, <code>/</code> 및 기타 연산자를 사용하면 요소별 작업이 수행된다는 것을 알아보았습니다. NumPy는 또한 <code>&lt;</code>(보다 작음) 및 <code>&gt;</code>(보다 큼)과 같은 비교 연산자를 요소별 ufunc로 구현하고 있습니다. 이러한 비교 연산자의 결과는 항상 불리언 데이터 유형의 배열입니다. 6가지 표준 비교 작업을 모두 활용하면 됩니다.</p>
 <div id="cell-9" class="cell" data-tags="[]" data-execution_count="4">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> np.array([<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>, <span class="dv">5</span>])</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
@@ -705,7 +705,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </tr>
 </tbody>
 </table>
-<p>산술 ufunc의 경우와 마찬가지로 이는 모든 크기와 모양의 배열에서 작동합니다. 다음은 2차원 예입니다.</p>
+<p>산술 ufunc의 경우와 마찬가지로 이는 모든 크기와 모양의 배열에서 작동하며, 다음은 2차원 예입니다.</p>
 <div id="cell-20" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="12">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb20"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>rng <span class="op">=</span> np.random.default_rng(seed<span class="op">=</span><span class="dv">1701</span>)</span>
 <span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> rng.integers(<span class="dv">10</span>, size<span class="op">=</span>(<span class="dv">3</span>, <span class="dv">4</span>))</span>
@@ -724,11 +724,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
        [ True, False,  True,  True]])</code></pre>
 </div>
 </div>
-<p>각각의 경우 결과는 부울 배열이며 NumPy는 이러한 부울 결과를 처리하기 위한 여러 가지 간단한 패턴을 제공합니다.</p>
+<p>각각의 경우 결과는 불리언 배열이며 NumPy는 이러한 불리언 결과를 처리하기 위한 여러 가지 간단한 패턴이 있습니다.</p>
 </section>
-<section id="부울-배열-작업" class="level2">
-<h2 class="anchored" data-anchor-id="부울-배열-작업">부울 배열 작업</h2>
-<p>부울 배열이 주어지면 수행할 수 있는 유용한 작업이 많이 있습니다. 앞서 만든 2차원 배열 <code>x</code>를 사용하여 작업하겠습니다.</p>
+<section id="불리언-배열-작업" class="level2">
+<h2 class="anchored" data-anchor-id="불리언-배열-작업">불리언 배열 작업</h2>
+<p>불리언 배열이 주어지면 수행할 수 있는 다양한 작업을 수행합니다. 앞서 만든 2차원 배열 <code>x</code>를 사용하여 활용해 보겠습니다.</p>
 <div id="cell-24" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="14">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb24"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(x)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
@@ -737,9 +737,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
  [3 7 4 0]]</code></pre>
 </div>
 </div>
-<section id="항목-계산" class="level3">
-<h3 class="anchored" data-anchor-id="항목-계산">항목 계산</h3>
-<p>부울 배열의 <code>True</code> 항목 수를 계산하려면 <code>np.count_nonzero</code>가 유용합니다.</p>
+<section id="요소-개수-세기" class="level3">
+<h3 class="anchored" data-anchor-id="요소-개수-세기">요소 개수 세기</h3>
+<p>불리언 배열의 <code>True</code> 항목 수를 계산하려면 <code>np.count_nonzero</code>가 유용합니다.</p>
 <div id="cell-26" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="15">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb26"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="co"># how many values less than 6?</span></span>
 <span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a>np.count_nonzero(x <span class="op">&lt;</span> <span class="dv">6</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -747,14 +747,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <pre><code>8</code></pre>
 </div>
 </div>
-<p>6보다 작은 배열 항목이 8개 있다는 것을 확인할 수 있습니다. 이 정보를 얻는 또 다른 방법은 <code>np.sum</code>을 사용하는 것입니다. 이 경우 ’False’는 ’0’으로 해석되고 ’True’는 ’1’로 해석됩니다.</p>
+<p>6보다 작은 배열 항목이 8개 있다는 것을 확인합니다. 이 정보를 얻는 또 다른 방법은 <code>np.sum</code>을 사용하는 것입니다. 이 경우 ’False’는 ’0’으로 간주되고 ’True’는 ’1’로 해석됩니다.</p>
 <div id="cell-28" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="16">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb28"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a>np.<span class="bu">sum</span>(x <span class="op">&lt;</span> <span class="dv">6</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="16">
 <pre><code>8</code></pre>
 </div>
 </div>
-<p><code>np.sum</code>의 장점은 다른 NumPy 집계 함수와 마찬가지로 이 합계가 행이나 열에서도 수행될 수 있다는 것입니다.</p>
+<p><code>np.sum</code>의 장점 중 하나는 다른 NumPy 집계 함수와 마찬가지로 이 합계가 행이나 열에서도 수행될 수 있다는 것입니다.</p>
 <div id="cell-30" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="17">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb30"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a><span class="co"># how many values less than 6 in each row?</span></span>
 <span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a>np.<span class="bu">sum</span>(x <span class="op">&lt;</span> <span class="dv">6</span>, axis<span class="op">=</span><span class="dv">1</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -762,8 +762,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <pre><code>array([3, 2, 3])</code></pre>
 </div>
 </div>
-<p>이는 행렬의 각 행에서 6보다 작은 값의 수를 계산합니다.</p>
-<p>값 중 일부 또는 전부가 <code>True</code>인지 빠르게 확인하고 싶다면 (예상하셨겠지만) <code>np.any</code> 또는 <code>np.all</code>을 사용할 수 있습니다.</p>
+<p>이는 행렬의 각 행에서 6보다 작은 값의 수를 세어 줍니다.</p>
+<p>값 중 일부 또는 전부가 <code>True</code>인지 빠르게 확인하려면 (예상하셨겠지만) <code>np.any</code> 또는 <code>np.all</code>을 활용하면 됩니다.</p>
 <div id="cell-32" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="18">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb32"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a><span class="co"># are there any values greater than 8?</span></span>
 <span id="cb32-2"><a href="#cb32-2" aria-hidden="true" tabindex="-1"></a>np.<span class="bu">any</span>(x <span class="op">&gt;</span> <span class="dv">8</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -792,7 +792,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <pre><code>False</code></pre>
 </div>
 </div>
-<p><code>np.all</code> 및 <code>np.any</code>는 특정 축에서도 사용할 수 있습니다. 예를 들어:</p>
+<p><code>np.all</code> 및 <code>np.any</code>는 특정 축에서도 활용하면 됩니다. 예를 들어:</p>
 <div id="cell-37" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="22">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb40"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a><span class="co"># are all values in each row less than 8?</span></span>
 <span id="cb40-2"><a href="#cb40-2" aria-hidden="true" tabindex="-1"></a>np.<span class="bu">all</span>(x <span class="op">&lt;</span> <span class="dv">8</span>, axis<span class="op">=</span><span class="dv">1</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -803,10 +803,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>여기서 세 번째 행의 모든 ​​요소는 8보다 작지만 다른 행의 경우에는 그렇지 않습니다.</p>
 <p>마지막으로 빠른 경고: <a href="../notebooks/02.04-Computation-on-arrays-aggregates.html">집계: 최소, 최대 및 그 사이의 모든 것</a>에서 언급한 대로 파이썬(Python)에는 <code>sum</code>, <code>any</code> 및 <code>all</code> 함수가 내장되어 있습니다. 이는 NumPy 버전과 구문이 다르며 특히 다차원 배열에 사용될 때 실패하거나 의도하지 않은 결과를 생성합니다. 이 예제에서는 <code>np.sum</code>, <code>np.any</code> 및 <code>np.all</code>을 사용하고 있는지 확인하세요!</p>
 </section>
-<section id="부울-연산자" class="level3">
-<h3 class="anchored" data-anchor-id="부울-연산자">부울 연산자</h3>
-<p>우리는 이미 비가 20mm 미만인 날 또는 비가 10mm 이상인 날을 계산하는 방법을 살펴보았습니다. 하지만 비가 10mm 이상, 20mm 미만인 날이 며칠인지 알고 싶다면 어떻게 해야 할까요? 파이썬(Python)의 <em>비트 논리 연산자</em>, <code>&amp;</code>, <code>|</code>, <code>^</code> 및 <code>~</code>를 사용하여 이를 수행할 수 있습니다. 표준 산술 연산자와 마찬가지로 NumPy는 이를 (보통 부울) 배열에서 요소별로 작동하는 ufunc로 오버로드합니다.</p>
-<p>예를 들어 이러한 종류의 복합 질문을 다음과 같이 해결할 수 있습니다.</p>
+<section id="불리언-연산자" class="level3">
+<h3 class="anchored" data-anchor-id="불리언-연산자">불리언 연산자</h3>
+<p>우리는 이미 비가 20mm 미만인 날 또는 비가 10mm 이상인 날을 계산하는 방법을 살펴보았습니다. 하지만 비가 10mm 이상, 20mm 미만인 날이 며칠인지 알고 싶다면 어떻게 해야 할까요? 파이썬(Python)의 <em>비트 논리 연산자</em>, <code>&amp;</code>, <code>|</code>, <code>^</code> 및 <code>~</code>를 사용하여 이를 수행합니다. 표준 산술 연산자와 마찬가지로 NumPy는 이를 (보통 불리언) 배열에서 요소별로 작동하는 ufunc로 오버로드합니다.</p>
+<p>예를 들어 이러한 종류의 복합 질문을 다음과 같이 해결합니다.</p>
 <div id="cell-40" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="23">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb42"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a>np.<span class="bu">sum</span>((rainfall_mm <span class="op">&gt;</span> <span class="dv">10</span>) <span class="op">&amp;</span> (rainfall_mm <span class="op">&lt;</span> <span class="dv">20</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="23">
@@ -814,17 +814,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 <p>이는 16일 동안 10~20mm의 강수량이 있었음을 알려줍니다.</p>
-<p>여기서 괄호가 중요합니다. 연산자 우선순위 규칙으로 인해 괄호를 제거하면 이 표현식은 다음과 같이 평가되어 오류가 발생합니다.</p>
+<p>여기서 괄호가 중요합니다. 연산자 우선순위 규칙으로 인해 괄호를 제거하면 이 표현식은 다음과 같이 평가되어 오류가 발생하게 됩니다.</p>
 <p>``파이썬 강수량_mm &gt; (10 &amp; 강수량_mm) &lt; 20 ````</p>
-<p>좀 더 복잡한 표현을 보여드리겠습니다. De Morgan의 법칙을 사용하면 동일한 결과를 다른 방식으로 계산할 수 있습니다.</p>
+<p>좀 더 복잡한 표현을 보여드리겠습니다. De Morgan의 법칙을 사용하면 동일한 결과를 다른 방식으로 계산합니다.</p>
 <div id="cell-42" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="24">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb44"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb44-1"><a href="#cb44-1" aria-hidden="true" tabindex="-1"></a>np.<span class="bu">sum</span>(<span class="op">~</span>( (rainfall_mm <span class="op">&lt;=</span> <span class="dv">10</span>) <span class="op">|</span> (rainfall_mm <span class="op">&gt;=</span> <span class="dv">20</span>) ))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="24">
 <pre><code>16</code></pre>
 </div>
 </div>
-<p>배열에서 비교 연산자와 부울 연산자를 결합하면 광범위하고 효율적인 논리 연산이 가능해집니다.</p>
-<p>다음 표에는 비트 부울 연산자와 해당 ufunc가 요약되어 있습니다.</p>
+<p>배열에서 비교 연산자와 불리언 연산자를 조합하면 광범위하고 효율적인 논리 연산이 가능해집니다.</p>
+<p>다음 표에는 비트 불리언 연산자와 해당 ufunc가 요약되어 있습니다.</p>
 <table class="caption-top table">
 <thead>
 <tr class="header">
@@ -849,7 +849,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </tr>
 </tbody>
 </table>
-<p>이러한 도구를 사용하면 날씨 데이터에 관해 가질 수 있는 많은 질문에 답할 수 있습니다. 다음은 마스킹과 집계를 결합할 때 계산할 수 있는 결과의 몇 가지 예입니다.</p>
+<p>이러한 도구를 사용하면 날씨 데이터에 관해 가질 수 있는 많은 질문에 답합니다. 다음은 마스킹과 집계를 결합할 때 계산할 수 있는 결과의 몇 가지 예입니다.</p>
 <div id="cell-46" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="25">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb46"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb46-1"><a href="#cb46-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Number days without rain:  "</span>, np.<span class="bu">sum</span>(rainfall_mm <span class="op">==</span> <span class="dv">0</span>))</span>
 <span id="cb46-2"><a href="#cb46-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Number days with rain:     "</span>, np.<span class="bu">sum</span>(rainfall_mm <span class="op">!=</span> <span class="dv">0</span>))</span>
@@ -865,9 +865,9 @@ Rainy days with &lt; 5 mm:     83</code></pre>
 </div>
 </section>
 </section>
-<section id="부울-배열을-마스크로-사용" class="level2">
-<h2 class="anchored" data-anchor-id="부울-배열을-마스크로-사용">부울 배열을 마스크로 사용</h2>
-<p>이전 섹션에서는 부울 배열에서 직접 계산된 집계를 살펴보았습니다. 더 강력한 패턴은 부울 배열을 마스크로 사용하여 데이터 자체의 특정 하위 집합을 선택하는 것입니다. 이전의 <code>x</code> 배열로 돌아가 보겠습니다.</p>
+<section id="불리언-배열을-마스크로-사용" class="level2">
+<h2 class="anchored" data-anchor-id="불리언-배열을-마스크로-사용">불리언 배열을 마스크로 사용</h2>
+<p>이전 섹션에서는 불리언 배열에서 직접 계산된 집계를 살펴보았습니다. 더 강력한 패턴은 불리언 배열을 마스크로 사용하여 데이터 자체의 특정 하위 집합을 추출하는 것입니다. 이전의 <code>x</code> 배열로 돌아가 보겠습니다.</p>
 <div id="cell-48" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="26">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb48"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb48-1"><a href="#cb48-1" aria-hidden="true" tabindex="-1"></a>x</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="26">
@@ -876,7 +876,7 @@ Rainy days with &lt; 5 mm:     83</code></pre>
        [3, 7, 4, 0]])</code></pre>
 </div>
 </div>
-<p>예를 들어 5보다 작은 배열의 모든 값으로 구성된 배열을 원한다고 가정합니다. 이미 본 것처럼 이 조건에 대한 부울 배열을 쉽게 얻을 수 있습니다.</p>
+<p>예를 들어 5보다 작은 배열의 모든 값으로 구성된 배열을 추출하고 싶다고 가정해 봅시다. 이미 본 것처럼 이 조건에 대한 불리언 배열을 쉽게 얻을 수 있습니다.</p>
 <div id="cell-50" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="27">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb50"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb50-1"><a href="#cb50-1" aria-hidden="true" tabindex="-1"></a>x <span class="op">&lt;</span> <span class="dv">5</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="27">
@@ -885,15 +885,15 @@ Rainy days with &lt; 5 mm:     83</code></pre>
        [ True, False,  True,  True]])</code></pre>
 </div>
 </div>
-<p>이제 배열에서 이러한 값을 <em>선택</em>하려면 이 부울 배열에서 색인을 생성하면 됩니다. 이를 <em>마스킹</em> 작업이라고 합니다.</p>
+<p>이제 배열에서 이러한 값을 <em>선택</em>하려면 이 불리언 배열에서 인덱싱하면 됩니다. 이를 <em>마스킹</em> 작업이라고 합니다.</p>
 <div id="cell-52" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="28">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb52"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb52-1"><a href="#cb52-1" aria-hidden="true" tabindex="-1"></a>x[x <span class="op">&lt;</span> <span class="dv">5</span>]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="28">
 <pre><code>array([4, 0, 3, 3, 1, 3, 4, 0])</code></pre>
 </div>
 </div>
-<p>반환되는 것은 이 조건을 충족하는 모든 값으로 채워진 1차원 배열입니다. 즉, 마스크 배열이 <code>True</code>인 위치의 모든 값입니다.</p>
-<p>그런 다음 우리는 원하는 대로 이러한 가치를 자유롭게 운영할 수 있습니다. 예를 들어 시애틀 강우 데이터에 대한 몇 가지 관련 통계를 계산할 수 있습니다.</p>
+<p>반환되는 것은 이 조건을 만족하는 모든 값으로 채워진 1차원 배열입니다. 즉, 마스크 배열이 <code>True</code>인 위치의 모든 값입니다.</p>
+<p>그런 다음 우리는 원하는 대로 이러한 가치를 자유롭게 처리합니다. 예를 들어 시애틀 강우 데이터에 대한 몇 가지 관련 통계를 계산합니다.</p>
 <div id="cell-54" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="29">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb54"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb54-1"><a href="#cb54-1" aria-hidden="true" tabindex="-1"></a><span class="co"># construct a mask of all rainy days</span></span>
 <span id="cb54-2"><a href="#cb54-2" aria-hidden="true" tabindex="-1"></a>rainy <span class="op">=</span> (rainfall_mm <span class="op">&gt;</span> <span class="dv">0</span>)</span>
@@ -917,13 +917,13 @@ Maximum precip on summer days in 2015 (mm):  32.5
 Median precip on non-summer rainy days (mm): 4.1</code></pre>
 </div>
 </div>
-<p>부울 연산, 마스킹 연산 및 집계를 결합함으로써 데이터 세트에 대한 이러한 종류의 질문에 매우 빠르게 답할 수 있습니다.</p>
+<p>불리언 연산, 마스킹 연산 및 집계를 결합함으로써 데이터 세트에 대한 이러한 종류의 질문에 매우 빠르게 답합니다.</p>
 </section>
 <section id="키워드-및또는-연산자-비교" class="level2">
 <h2 class="anchored" data-anchor-id="키워드-및또는-연산자-비교">키워드 및/또는 연산자 비교 &amp;/|</h2>
-<p>흔히 혼동되는 점 중 하나는 키워드 <code>and</code>와 <code>or</code>와 연산자 <code>&amp;</code>와 <code>|</code> 사이의 차이입니다. 언제 다른 것을 사용하겠습니까?</p>
-<p>차이점은 다음과 같습니다. <code>and</code>와 <code>or</code>는 객체 전체에 대해 작동하는 반면, <code>&amp;</code>와 <code>|</code>는 객체 내의 요소에 대해 작동합니다.</p>
-<p><code>and</code> 또는 <code>or</code>를 사용하는 것은 파이썬(Python)에게 객체를 단일 부울 엔터티로 처리하도록 요청하는 것과 같습니다. 파이썬(Python)에서는 0이 아닌 모든 정수가 ’True’로 평가됩니다. 따라서:</p>
+<p>자주 헷갈리는 부분은 키워드 <code>and</code>와 <code>or</code>와 연산자 <code>&amp;</code>와 <code>|</code> 사이의 차이입니다. 각각 언제 사용해야 할까요?</p>
+<p>차이점은 다음과 같습니다. <code>and</code>와 <code>or</code>는 객체 전체를 대상으로 하지만, <code>&amp;</code>와 <code>|</code>는 객체 내의 요소에 대해 작동하며,</p>
+<p><code>and</code> 또는 <code>or</code>를 사용하는 것은 파이썬(Python)에게 객체를 단일 불리언 엔터티로 처리하도록 요청하는 셈입니다. 파이썬(Python)에서는 0이 아닌 모든 정수가 ’True’로 평가됩니다. 따라서:</p>
 <div id="cell-57" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="30">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb56"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb56-1"><a href="#cb56-1" aria-hidden="true" tabindex="-1"></a><span class="bu">bool</span>(<span class="dv">42</span>), <span class="bu">bool</span>(<span class="dv">0</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="30">
@@ -942,7 +942,7 @@ Median precip on non-summer rainy days (mm): 4.1</code></pre>
 <pre><code>True</code></pre>
 </div>
 </div>
-<p>정수에 <code>&amp;</code> 및 <code>|</code>를 사용하면 표현식은 요소의 비트 표현에 따라 작동하며 숫자를 구성하는 개별 비트에 <em>and</em> 또는 <em>or</em>를 적용합니다.</p>
+<p>정수에 <code>&amp;</code> 및 <code>|</code>를 사용하면 표현식은 요소의 비트 표현에 기준으로 작동하며 숫자를 구성하는 개별 비트에 <em>and</em> 또는 <em>or</em>를 적용합니다.</p>
 <div id="cell-61" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="33">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb62"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb62-1"><a href="#cb62-1" aria-hidden="true" tabindex="-1"></a><span class="bu">bin</span>(<span class="dv">42</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="33">
@@ -967,8 +967,8 @@ Median precip on non-summer rainy days (mm): 4.1</code></pre>
 <pre><code>'0b111011'</code></pre>
 </div>
 </div>
-<p>결과를 산출하기 위해 이진 표현의 해당 비트가 비교된다는 점에 유의하세요.</p>
-<p>NumPy에 부울 값의 배열이 있는 경우 이는 <code>1 = True</code> 및 <code>0 = False</code>인 비트 문자열로 간주할 수 있으며 <code>&amp;</code> 및 <code>|</code>는 이전 예와 유사하게 작동합니다.</p>
+<p>결과를 산출하기 위해 이진 표현의 해당 비트가 비교됨을 알 수 있습니다.</p>
+<p>NumPy에 불리언 값의 배열이 있는 경우 이는 <code>1 = True</code> 및 <code>0 = False</code>인 비트 문자열로 간주할 수 있으며 <code>&amp;</code> 및 <code>|</code>는 이전 예와 유사하게 작동하며,</p>
 <div id="cell-66" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="37">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb70"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb70-1"><a href="#cb70-1" aria-hidden="true" tabindex="-1"></a>A <span class="op">=</span> np.array([<span class="dv">1</span>, <span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">0</span>], dtype<span class="op">=</span><span class="bu">bool</span>)</span>
 <span id="cb70-2"><a href="#cb70-2" aria-hidden="true" tabindex="-1"></a>B <span class="op">=</span> np.array([<span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">1</span>], dtype<span class="op">=</span><span class="bu">bool</span>)</span>
@@ -977,7 +977,7 @@ Median precip on non-summer rainy days (mm): 4.1</code></pre>
 <pre><code>array([ True,  True,  True, False,  True,  True])</code></pre>
 </div>
 </div>
-<p>그러나 이러한 배열에 ’or’를 사용하면 잘 정의된 값이 아닌 전체 배열 개체의 참 또는 거짓을 평가하려고 시도합니다.</p>
+<p>그러나 이러한 배열에 ’or’를 사용하면 잘 정의된 값이 아닌 전체 배열 개체의 참 또는 거짓을 평가하려고 시도하기 때문입니다.</p>
 <div id="cell-68" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="38">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb72"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb72-1"><a href="#cb72-1" aria-hidden="true" tabindex="-1"></a>A <span class="kw">or</span> B</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-error">
@@ -991,7 +991,7 @@ Median precip on non-summer rainy days (mm): 4.1</code></pre>
 </div>
 </div>
 </div>
-<p>마찬가지로, 주어진 배열에서 부울 표현식을 평가할 때 <code>or</code> 또는 <code>and</code> 대신 <code>|</code> 또는 <code>&amp;</code>를 사용해야 합니다.</p>
+<p>마찬가지로, 주어진 배열에서 불리언 표현식을 평가할 때 <code>or</code> 또는 <code>and</code> 대신 <code>|</code> 또는 <code>&amp;</code>를 사용해야 합니다.</p>
 <div id="cell-70" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="39">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb73"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb73-1"><a href="#cb73-1" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> np.arange(<span class="dv">10</span>)</span>
 <span id="cb73-2"><a href="#cb73-2" aria-hidden="true" tabindex="-1"></a>(x <span class="op">&gt;</span> <span class="dv">4</span>) <span class="op">&amp;</span> (x <span class="op">&lt;</span> <span class="dv">8</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -1000,7 +1000,7 @@ Median precip on non-summer rainy days (mm): 4.1</code></pre>
        False])</code></pre>
 </div>
 </div>
-<p>전체 배열의 참 또는 거짓을 평가하려고 하면 이전에 본 것과 동일한 ’ValueError’가 발생합니다.</p>
+<p>전체 배열의 참 또는 거짓을 평가하려고 하면 이전에 본 것과 동일한 ’ValueError’가 발생하게 됩니다.</p>
 <div id="cell-72" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="40">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb75"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb75-1"><a href="#cb75-1" aria-hidden="true" tabindex="-1"></a>(x <span class="op">&gt;</span> <span class="dv">4</span>) <span class="kw">and</span> (x <span class="op">&lt;</span> <span class="dv">8</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-error">
@@ -1014,7 +1014,7 @@ Median precip on non-summer rainy days (mm): 4.1</code></pre>
 </div>
 </div>
 </div>
-<p>따라서 이것을 기억하십시오: <code>and</code>와 <code>or</code>는 전체 객체에 대해 단일 부울 평가를 수행하는 반면 <code>&amp;</code>와 <code>|</code>는 객체의 내용(개별 비트 또는 바이트)에 대해 여러 부울 평가를 수행합니다. Boolean NumPy 배열의 경우 후자가 거의 항상 원하는 작업입니다.</p>
+<p>따라서 이것을 기억하십시오: <code>and</code>와 <code>or</code>는 전체 객체에 대해 단일 불리언 평가를 수행하는 반면 <code>&amp;</code>와 <code>|</code>는 객체의 내용(개별 비트 또는 바이트)에 대해 여러 불리언 평가를 수행합니다. Boolean NumPy 배열의 경우 후자가 대부분의 상황에서 적절한 방식입니다.</p>
 
 
 </section>
@@ -1427,8 +1427,8 @@ Median precip on non-summer rainy days (mm): 4.1</code></pre>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../notebooks/02.07-Fancy-Indexing.html" class="pagination-link" aria-label="멋진 인덱싱">
-        <span class="nav-page-text"><span class="chapter-title">멋진 인덱싱</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../notebooks/02.07-Fancy-Indexing.html" class="pagination-link" aria-label="팬시 인덱싱(Fancy Indexing)">
+        <span class="nav-page-text"><span class="chapter-title">팬시 인덱싱(Fancy Indexing)</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

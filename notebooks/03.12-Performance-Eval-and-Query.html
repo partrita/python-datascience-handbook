@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>고성능 Pandas: 평가 및 쿼리 – 파이썬 데이터 사이언스 핸드북</title>
+<title>고성능 Pandas: eval()과 query() – 파이썬 데이터 사이언스 핸드북</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -77,7 +77,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-803ae4f7a8810f475153517dc3c4ebae.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-2b8c928036a03c400d959948b846e3b2.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -121,7 +121,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../notebooks/03.00-Introduction-to-Pandas.html">Pandas를 이용한 데이터 조작</a></li><li class="breadcrumb-item"><a href="../notebooks/03.12-Performance-Eval-and-Query.html"><span class="chapter-title">고성능 Pandas: 평가 및 쿼리</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../notebooks/03.00-Introduction-to-Pandas.html">Pandas를 이용한 데이터 조작</a></li><li class="breadcrumb-item"><a href="../notebooks/03.12-Performance-Eval-and-Query.html"><span class="chapter-title">고성능 Pandas: eval()과 query()</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -183,7 +183,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/01.03-Magic-Commands.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">IPython 매직 명령</span></a>
+  <a href="../notebooks/01.03-Magic-Commands.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">IPython 매직 명령어</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -193,17 +193,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/01.05-IPython-And-Shell-Commands.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">IPython 및 셸 명령</span></a>
+  <a href="../notebooks/01.05-IPython-And-Shell-Commands.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">IPython과 셸 명령어</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/01.06-Errors-and-Debugging.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">오류 및 디버깅</span></a>
+  <a href="../notebooks/01.06-Errors-and-Debugging.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">오류와 디버깅</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/01.07-Timing-and-Profiling.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">프로파일링 및 타이밍 코드</span></a>
+  <a href="../notebooks/01.07-Timing-and-Profiling.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">코드 성능 측정 및 프로파일링</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -229,22 +229,22 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.01-Understanding-Data-Types.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">파이썬(Python)의 데이터 유형 이해</span></a>
+  <a href="../notebooks/02.01-Understanding-Data-Types.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">파이썬의 데이터 타입 이해하기</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.02-The-Basics-Of-NumPy-Arrays.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">NumPy 배열의 기본</span></a>
+  <a href="../notebooks/02.02-The-Basics-Of-NumPy-Arrays.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">NumPy 배열의 기초</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.03-Computation-on-arrays-ufuncs.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">NumPy 배열 계산: 범용 함수</span></a>
+  <a href="../notebooks/02.03-Computation-on-arrays-ufuncs.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">NumPy 배열 연산: 범용 함수(Universal Functions)</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.04-Computation-on-arrays-aggregates.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">집계: 최소, 최대 및 그 사이의 모든 것</span></a>
+  <a href="../notebooks/02.04-Computation-on-arrays-aggregates.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">집계: 최소값, 최대값 그리고 그 밖의 모든 것</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -254,12 +254,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.06-Boolean-Arrays-and-Masks.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">비교, 마스크 및 부울 논리</span></a>
+  <a href="../notebooks/02.06-Boolean-Arrays-and-Masks.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">비교, 마스크, 불리언 논리</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.07-Fancy-Indexing.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">멋진 인덱싱</span></a>
+  <a href="../notebooks/02.07-Fancy-Indexing.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">팬시 인덱싱(Fancy Indexing)</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -269,7 +269,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/02.09-Structured-Data-NumPy.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">구조화된 데이터: NumPy의 구조화된 배열</span></a>
+  <a href="../notebooks/02.09-Structured-Data-NumPy.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">구조화된 데이터: NumPy 구조화된 배열</span></a>
   </div>
 </li>
       </ul>
@@ -285,12 +285,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.00-Introduction-to-Pandas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">팬더를 이용한 데이터 조작</span></a>
+  <a href="../notebooks/03.00-Introduction-to-Pandas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Pandas로 데이터 다루기</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.01-Introducing-Pandas-Objects.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">판다스 객체 소개</span></a>
+  <a href="../notebooks/03.01-Introducing-Pandas-Objects.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Pandas 객체 소개</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -300,7 +300,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.03-Operations-in-Pandas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Pandas에서 데이터 작업</span></a>
+  <a href="../notebooks/03.03-Operations-in-Pandas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Pandas로 데이터 연산하기</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -315,42 +315,42 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.06-Concat-And-Append.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">데이터세트 결합: 연결 및 추가</span></a>
+  <a href="../notebooks/03.06-Concat-And-Append.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">데이터 결합: 연결(Concat) 및 추가(Append)</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.07-Merge-and-Join.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">데이터세트 결합: 병합 및 조인</span></a>
+  <a href="../notebooks/03.07-Merge-and-Join.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">데이터 결합: 병합(Merge)과 조인(Join)</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.08-Aggregation-and-Grouping.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">집계 및 그룹화</span></a>
+  <a href="../notebooks/03.08-Aggregation-and-Grouping.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">집계(Aggregation)와 그룹화(Grouping)</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.09-Pivot-Tables.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">피벗 테이블</span></a>
+  <a href="../notebooks/03.09-Pivot-Tables.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">피벗 테이블(Pivot Tables)</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.10-Working-With-Strings.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">벡터화된 문자열 작업</span></a>
+  <a href="../notebooks/03.10-Working-With-Strings.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">벡터화된 문자열 연산</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.11-Working-with-Time-Series.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">시계열 작업</span></a>
+  <a href="../notebooks/03.11-Working-with-Time-Series.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">시계열 데이터 다루기</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.12-Performance-Eval-and-Query.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">고성능 Pandas: 평가 및 쿼리</span></a>
+  <a href="../notebooks/03.12-Performance-Eval-and-Query.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">고성능 Pandas: eval()과 query()</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/03.13-Further-Resources.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">추가 리소스</span></a>
+  <a href="../notebooks/03.13-Further-Resources.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">더 읽을거리</span></a>
   </div>
 </li>
       </ul>
@@ -558,23 +558,24 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#쿼리-및-평가-동기-부여-복합-표현식" id="toc-쿼리-및-평가-동기-부여-복합-표현식" class="nav-link active" data-scroll-target="#쿼리-및-평가-동기-부여-복합-표현식">쿼리 및 평가 동기 부여: 복합 표현식</a></li>
-  <li><a href="#열-단위-작업을-위한-dataframe.eval" id="toc-열-단위-작업을-위한-dataframe.eval" class="nav-link" data-scroll-target="#열-단위-작업을-위한-dataframe.eval">열 단위 작업을 위한 DataFrame.eval</a>
+  <li><a href="#eval과-query가-필요한-이유-복합-표현식" id="toc-eval과-query가-필요한-이유-복합-표현식" class="nav-link active" data-scroll-target="#eval과-query가-필요한-이유-복합-표현식">eval()과 query()가 필요한 이유: 복합 표현식</a></li>
+  <li><a href="#효율적인-연산을-위한-pandas.eval" id="toc-효율적인-연산을-위한-pandas.eval" class="nav-link" data-scroll-target="#효율적인-연산을-위한-pandas.eval">효율적인 연산을 위한 pandas.eval()</a></li>
+  <li><a href="#열-단위-연산을-위한-dataframe.eval" id="toc-열-단위-연산을-위한-dataframe.eval" class="nav-link" data-scroll-target="#열-단위-연산을-위한-dataframe.eval">열 단위 연산을 위한 DataFrame.eval()</a>
   <ul class="collapse">
-  <li><a href="#dataframe.eval의-할당" id="toc-dataframe.eval의-할당" class="nav-link" data-scroll-target="#dataframe.eval의-할당">DataFrame.eval의 할당</a></li>
-  <li><a href="#dataframe.eval의-지역-변수" id="toc-dataframe.eval의-지역-변수" class="nav-link" data-scroll-target="#dataframe.eval의-지역-변수">DataFrame.eval의 지역 변수</a></li>
+  <li><a href="#dataframe.eval을-이용한-할당" id="toc-dataframe.eval을-이용한-할당" class="nav-link" data-scroll-target="#dataframe.eval을-이용한-할당">DataFrame.eval()을 이용한 할당</a></li>
+  <li><a href="#dataframe.eval과-지역-변수" id="toc-dataframe.eval과-지역-변수" class="nav-link" data-scroll-target="#dataframe.eval과-지역-변수">DataFrame.eval()과 지역 변수</a></li>
   </ul></li>
-  <li><a href="#dataframe.query-메서드" id="toc-dataframe.query-메서드" class="nav-link" data-scroll-target="#dataframe.query-메서드">DataFrame.query 메서드</a></li>
-  <li><a href="#성능-이-기능을-사용해야-하는-경우" id="toc-성능-이-기능을-사용해야-하는-경우" class="nav-link" data-scroll-target="#성능-이-기능을-사용해야-하는-경우">성능: 이 기능을 사용해야 하는 경우</a></li>
+  <li><a href="#dataframe.query-메서드" id="toc-dataframe.query-메서드" class="nav-link" data-scroll-target="#dataframe.query-메서드">DataFrame.query() 메서드</a></li>
+  <li><a href="#성능-언제-이-기능들을-사용해야-할까" id="toc-성능-언제-이-기능들을-사용해야-할까" class="nav-link" data-scroll-target="#성능-언제-이-기능들을-사용해야-할까">성능: 언제 이 기능들을 사용해야 할까?</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../notebooks/03.00-Introduction-to-Pandas.html">Pandas를 이용한 데이터 조작</a></li><li class="breadcrumb-item"><a href="../notebooks/03.12-Performance-Eval-and-Query.html"><span class="chapter-title">고성능 Pandas: 평가 및 쿼리</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../notebooks/03.00-Introduction-to-Pandas.html">Pandas를 이용한 데이터 조작</a></li><li class="breadcrumb-item"><a href="../notebooks/03.12-Performance-Eval-and-Query.html"><span class="chapter-title">고성능 Pandas: eval()과 query()</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-title">고성능 Pandas: 평가 및 쿼리</span></h1>
+<h1 class="title"><span class="chapter-title">고성능 Pandas: eval()과 query()</span></h1>
 </div>
 
 
@@ -591,11 +592,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>이전 장에서 이미 살펴본 것처럼 PyData 스택의 강력한 기능은 직관적인 상위 수준 구문을 통해 기본 작업을 하위 수준의 컴파일된 코드로 푸시하는 NumPy 및 Pandas의 기능을 기반으로 구축되었습니다. 예는 NumPy의 벡터화/브로드캐스트 작업과 Pandas의 그룹화 유형 작업입니다. 이러한 추상화는 많은 일반적인 사용 사례에서 효율적이고 효과적이지만 임시 중간 개체 생성에 의존하는 경우가 많으며 이로 인해 계산 시간과 메모리 사용에 과도한 오버헤드가 발생할 수 있습니다.</p>
-<p>이 문제를 해결하기 위해 Pandas에는 비용이 많이 드는 중간 배열을 할당하지 않고도 C 속도 작업에 직접 액세스할 수 있는 몇 가지 메서드인 <a href="https://github.com/pydata/numexpr">NumExpr 패키지</a>를 사용하는 <code>eval</code> 및 <code>query</code>가 포함되어 있습니다. 이번 장에서는 사용법을 안내하고 언제 사용을 고려할 수 있는지에 대한 몇 가지 경험 법칙을 제시하겠습니다.</p>
-<section id="쿼리-및-평가-동기-부여-복합-표현식" class="level2">
-<h2 class="anchored" data-anchor-id="쿼리-및-평가-동기-부여-복합-표현식">쿼리 및 평가 동기 부여: 복합 표현식</h2>
-<p>우리는 이전에 NumPy와 Pandas가 빠른 벡터화 작업을 지원한다는 것을 확인했습니다. 예를 들어 두 배열의 요소를 추가하는 경우:</p>
+<p>앞서 살펴본 것처럼 PyData 스택의 강력한 성능은 직관적인 상위 수준 구문을 바탕으로 기본 작업을 하위 수준의 컴파일된 코드로 변환해 실행하는 NumPy와 Pandas의 기능 덕분입니다. NumPy의 벡터화/브로드캐스팅 연산이나 Pandas의 그룹화 연산이 대표적인 예입니다. 이러한 추상화 방식은 일반적인 사용 사례에서 매우 효율적이지만, 임시 중간 객체를 생성하는 과정에서 계산 시간과 메모리 사용량이 늘어나는 오버헤드가 발생합니다.</p>
+<p>이 문제를 해결하기 위해 Pandas는 <a href="https://github.com/pydata/numexpr">NumExpr 패키지</a>를 활용하는 <code>eval()</code>과 <code>query()</code> 메서드를 제공합니다. 이 메서드들을 사용하면 불필요한 중간 배열을 할당하지 않고도 C 언어 수준의 빠른 연산 속도를 얻을 수 있습니다. 이번 장에서는 이 메서드들의 사용법과 함께, 어떤 상황에서 사용하면 좋은지 판단할 수 있는 몇 가지 기준을 알아보겠습니다.</p>
+<section id="eval과-query가-필요한-이유-복합-표현식" class="level2">
+<h2 class="anchored" data-anchor-id="eval과-query가-필요한-이유-복합-표현식">eval()과 query()가 필요한 이유: 복합 표현식</h2>
+<p>앞서 NumPy와 Pandas가 빠른 벡터화 연산을 지원한다는 점을 확인했습니다. 예를 들어 두 배열의 요소를 더하는 경우를 살펴보겠습니다.</p>
 <div id="cell-3" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="1">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>rng <span class="op">=</span> np.random.default_rng(<span class="dv">42</span>)</span>
@@ -606,7 +607,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <pre><code>2.21 ms ± 142 µs per loop (mean ± std. dev. of 7 runs, 100 loops each)</code></pre>
 </div>
 </div>
-<p><a href="../notebooks/02.03-Computation-on-arrays-ufuncs.html">NumPy 배열 계산: 범용 함수</a>에서 설명한 대로 이는 파이썬(Python) 루프나 이해를 통해 추가하는 것보다 훨씬 빠릅니다.</p>
+<p><a href="../notebooks/02.03-Computation-on-arrays-ufuncs.html">NumPy 배열 연산: 범용 함수</a>에서 설명했듯이, 이는 파이썬 루프나 리스트 컴프리헨션(list comprehension)을 사용하는 것보다 훨씬 빠릅니다.</p>
 <div id="cell-5" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="2">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="op">%</span>timeit np.fromiter((xi <span class="op">+</span> yi <span class="cf">for</span> xi, yi <span class="kw">in</span> <span class="bu">zip</span>(x, y)),</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>                    dtype<span class="op">=</span>x.dtype, count<span class="op">=</span><span class="bu">len</span>(x))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -614,17 +615,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <pre><code>263 ms ± 43.4 ms per loop (mean ± std. dev. of 7 runs, 1 loop each)</code></pre>
 </div>
 </div>
-<p>그러나 이 추상화는 복합 표현식을 계산할 때 효율성이 떨어질 수 있습니다. 예를 들어 다음 표현식을 고려해보세요.</p>
+<p>하지만 복합 표현식을 계산할 때는 이러한 추상화 방식의 효율이 떨어질 수 있습니다. 예를 들어 다음 표현식을 살펴보겠습니다.</p>
 <div id="cell-7" class="cell" data-tags="[]" data-execution_count="3">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>mask <span class="op">=</span> (x <span class="op">&gt;</span> <span class="fl">0.5</span>) <span class="op">&amp;</span> (y <span class="op">&lt;</span> <span class="fl">0.5</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<p>NumPy는 각 하위 표현식을 평가하므로 이는 대략 다음과 동일합니다.</p>
+<p>NumPy는 각 하위 표현식을 순차적으로 계산하므로, 이는 내부적으로 다음과 같이 처리됩니다.</p>
 <div id="cell-9" class="cell" data-tags="[]" data-execution_count="4">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>tmp1 <span class="op">=</span> (x <span class="op">&gt;</span> <span class="fl">0.5</span>)</span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>tmp2 <span class="op">=</span> (y <span class="op">&lt;</span> <span class="fl">0.5</span>)</span>
 <span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>mask <span class="op">=</span> tmp1 <span class="op">&amp;</span> tmp2</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<p>즉, <em>모든 중간 단계는 명시적으로 메모리에 할당됩니다</em>. <code>x</code> 및 <code>y</code> 배열이 매우 큰 경우 상당한 메모리와 계산 오버헤드가 발생할 수 있습니다. NumExpr 라이브러리는 전체 중간 배열을 할당할 필요 없이 이러한 유형의 복합 표현식 요소를 요소별로 계산할 수 있는 기능을 제공합니다. <a href="https://github.com/pydata/numexpr">NumExpr 문서</a>에 더 자세한 내용이 있지만 당분간은 라이브러리가 계산하려는 NumPy 스타일 표현식을 제공하는 <em>문자열</em>을 허용한다고 말하는 것으로 충분합니다.</p>
+<p>즉, <em>모든 중간 단계 결과가 메모리에 명시적으로 할당됩니다</em>. <code>x</code>와 <code>y</code> 배열이 매우 크다면 메모리와 계산 오버헤드가 상당히 커질 수 있습니다. NumExpr 라이브러리는 모든 중간 배열을 할당하지 않고도 이러한 복합 표현식을 요소별(element-wise)로 계산하는 기능을 제공합니다. 더 자세한 내용은 <a href="https://github.com/pydata/numexpr">NumExpr 문서</a>에서 확인할 수 있지만, 여기서는 라이브러리가 계산할 NumPy 스타일의 표현식을 <em>문자열</em> 형태로 받는다는 점만 알아두면 충분합니다.</p>
 <div id="cell-11" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="5">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numexpr</span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>mask_numexpr <span class="op">=</span> numexpr.evaluate(<span class="st">'(x &gt; 0.5) &amp; (y &lt; 0.5)'</span>)</span>
@@ -633,30 +634,32 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <pre><code>True</code></pre>
 </div>
 </div>
-<p>여기서의 이점은 NumExpr이 가능한 경우 임시 배열을 피하는 방식으로 표현식을 평가하므로 NumPy보다 훨씬 더 효율적일 수 있다는 것입니다. 특히 대규모 배열에 대한 긴 계산 시퀀스의 경우 더욱 그렇습니다. 여기서 논의할 Pandas ‘eval’ 및 ‘query’ 도구는 개념적으로 유사하며 본질적으로 NumExpr 기능의 Pandas 전용 래퍼입니다.</p>
-<p>효율적인 운영을 위한 ## pandas.eval</p>
-<p>Pandas의 <code>eval</code> 함수는 문자열 표현식을 사용하여 <code>DataFrame</code> 객체에 대한 작업을 효율적으로 계산합니다. 예를 들어 다음 데이터를 고려해보세요.</p>
+<p>NumExpr의 장점은 가능한 한 임시 배열을 생성하지 않고 표현식을 계산하므로 NumPy보다 훨씬 더 효율적이라는 점입니다. 특히 대규모 배열을 대상으로 복잡한 연산을 수행할 때 더욱 빛을 발합니다. 이번 장에서 다룰 Pandas의 <code>eval()</code>과 <code>query()</code> 메서드도 개념적으로 이와 유사하며, 본질적으로 NumExpr 기능을 Pandas에 맞춰 감싼(wrapper) 도구입니다.</p>
+</section>
+<section id="효율적인-연산을-위한-pandas.eval" class="level2">
+<h2 class="anchored" data-anchor-id="효율적인-연산을-위한-pandas.eval">효율적인 연산을 위한 pandas.eval()</h2>
+<p>Pandas의 <code>eval()</code> 함수는 문자열 표현식을 사용하여 <code>DataFrame</code> 객체의 연산을 효율적으로 수행합니다. 예를 들어 다음과 같은 데이터를 살펴보겠습니다.</p>
 <div id="cell-14" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="6">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>nrows, ncols <span class="op">=</span> <span class="dv">100000</span>, <span class="dv">100</span></span>
 <span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>df1, df2, df3, df4 <span class="op">=</span> (pd.DataFrame(rng.random((nrows, ncols)))</span>
 <span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>                      <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">4</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<p>일반적인 Pandas 접근 방식을 사용하여 4개의 <code>DataFrame</code> 모두의 합계를 계산하려면 다음과 같이 합계를 작성하면 됩니다.</p>
+<p>일반적인 Pandas 방식으로 4개 <code>DataFrame</code>의 합을 구하려면 다음과 같이 작성합니다.</p>
 <div id="cell-16" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="7">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="op">%</span>timeit df1 <span class="op">+</span> df2 <span class="op">+</span> df3 <span class="op">+</span> df4</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>73.2 ms ± 6.72 ms per loop (mean ± std. dev. of 7 runs, 10 loops each)</code></pre>
 </div>
 </div>
-<p>표현식을 문자열로 구성하여 <code>pd.eval</code>을 통해 동일한 결과를 계산할 수 있습니다.</p>
+<p>연산식을 문자열로 만들어 <code>pd.eval()</code>에 전달하면 동일한 결과를 얻을 수 있습니다.</p>
 <div id="cell-18" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="8">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="op">%</span>timeit pd.<span class="bu">eval</span>(<span class="st">'df1 + df2 + df3 + df4'</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>34 ms ± 4.2 ms per loop (mean ± std. dev. of 7 runs, 10 loops each)</code></pre>
 </div>
 </div>
-<p>이 표현식의 ‘eval’ 버전은 약 50% 더 빠르고(그리고 훨씬 적은 메모리를 사용하며) 동일한 결과를 제공합니다.</p>
+<p><code>eval()</code>을 사용한 버전은 약 50% 더 빠르면서 메모리 사용량도 훨씬 적고, 결과값은 동일합니다.</p>
 <div id="cell-20" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="9">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>np.allclose(df1 <span class="op">+</span> df2 <span class="op">+</span> df3 <span class="op">+</span> df4,</span>
 <span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>            pd.<span class="bu">eval</span>(<span class="st">'df1 + df2 + df3 + df4'</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -664,14 +667,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <pre><code>True</code></pre>
 </div>
 </div>
-<p><code>pd.eval</code>은 광범위한 작업을 지원합니다. 이를 설명하기 위해 다음 정수 데이터를 사용합니다.</p>
+<p><code>pd.eval()</code>은 다양한 연산을 지원합니다. 이를 확인하기 위해 다음과 같은 정수 데이터를 만들어 보겠습니다.</p>
 <div id="cell-22" class="cell" data-tags="[]" data-execution_count="10">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>df1, df2, df3, df4, df5 <span class="op">=</span> (pd.DataFrame(rng.integers(<span class="dv">0</span>, <span class="dv">1000</span>, (<span class="dv">100</span>, <span class="dv">3</span>)))</span>
 <span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>                           <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">5</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <section id="산술-연산자" class="level4">
 <h4 class="anchored" data-anchor-id="산술-연산자">산술 연산자</h4>
-<p><code>pd.eval</code>은 모든 산술 연산자를 지원합니다. 예를 들어:</p>
+<p><code>pd.eval()</code>은 모든 산술 연산자를 지원합니다. 예를 들면 다음과 같습니다.</p>
 <div id="cell-24" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="11">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>result1 <span class="op">=</span> <span class="op">-</span>df1 <span class="op">*</span> df2 <span class="op">/</span> (df3 <span class="op">+</span> df4) <span class="op">-</span> df5</span>
 <span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>result2 <span class="op">=</span> pd.<span class="bu">eval</span>(<span class="st">'-df1 * df2 / (df3 + df4) - df5'</span>)</span>
@@ -683,7 +686,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="비교-연산자" class="level4">
 <h4 class="anchored" data-anchor-id="비교-연산자">비교 연산자</h4>
-<p><code>pd.eval</code>은 연결된 표현식을 포함한 모든 비교 연산자를 지원합니다.</p>
+<p><code>pd.eval()</code>은 연쇄(chained) 표현식을 포함한 모든 비교 연산자를 지원합니다.</p>
 <div id="cell-26" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="12">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>result1 <span class="op">=</span> (df1 <span class="op">&lt;</span> df2) <span class="op">&amp;</span> (df2 <span class="op">&lt;=</span> df3) <span class="op">&amp;</span> (df3 <span class="op">!=</span> df4)</span>
 <span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>result2 <span class="op">=</span> pd.<span class="bu">eval</span>(<span class="st">'df1 &lt; df2 &lt;= df3 != df4'</span>)</span>
@@ -695,7 +698,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="비트-연산자" class="level4">
 <h4 class="anchored" data-anchor-id="비트-연산자">비트 연산자</h4>
-<p><code>pd.eval</code>은 <code>&amp;</code> 및 <code>|</code> 비트 연산자를 지원합니다:</p>
+<p><code>pd.eval()</code>은 <code>&amp;</code>와 <code>|</code> 비트 연산자를 지원합니다.</p>
 <div id="cell-28" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="13">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>result1 <span class="op">=</span> (df1 <span class="op">&lt;</span> <span class="fl">0.5</span>) <span class="op">&amp;</span> (df2 <span class="op">&lt;</span> <span class="fl">0.5</span>) <span class="op">|</span> (df3 <span class="op">&lt;</span> df4)</span>
 <span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>result2 <span class="op">=</span> pd.<span class="bu">eval</span>(<span class="st">'(df1 &lt; 0.5) &amp; (df2 &lt; 0.5) | (df3 &lt; df4)'</span>)</span>
@@ -704,7 +707,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <pre><code>True</code></pre>
 </div>
 </div>
-<p>또한 부울 표현식에서 리터럴 <code>and</code> 및 <code>or</code> 사용을 지원합니다.</p>
+<p>또한 불리언(boolean) 표현식에서 <code>and</code>와 <code>or</code> 키워드 사용도 지원합니다.</p>
 <div id="cell-30" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="14">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb23"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>result3 <span class="op">=</span> pd.<span class="bu">eval</span>(<span class="st">'(df1 &lt; 0.5) and (df2 &lt; 0.5) or (df3 &lt; df4)'</span>)</span>
 <span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a>np.allclose(result1, result3)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -713,9 +716,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </section>
-<section id="객체-속성-및-인덱스" class="level4">
-<h4 class="anchored" data-anchor-id="객체-속성-및-인덱스">객체 속성 및 인덱스</h4>
-<p><code>pd.eval</code>은 <code>obj.attr</code> 구문을 통해 객체 속성에 대한 액세스를 지원하고 <code>obj[index]</code> 구문을 통해 인덱스에 대한 액세스를 지원합니다.</p>
+<section id="객체-속성과-인덱스" class="level4">
+<h4 class="anchored" data-anchor-id="객체-속성과-인덱스">객체 속성과 인덱스</h4>
+<p><code>pd.eval()</code>은 <code>obj.attr</code> 구문을 통한 객체 속성 접근과 <code>obj[index]</code> 구문을 통한 인덱스 접근을 지원합니다.</p>
 <div id="cell-32" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="15">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb25"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>result1 <span class="op">=</span> df2.T[<span class="dv">0</span>] <span class="op">+</span> df3.iloc[<span class="dv">1</span>]</span>
 <span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a>result2 <span class="op">=</span> pd.<span class="bu">eval</span>(<span class="st">'df2.T[0] + df3.iloc[1]'</span>)</span>
@@ -725,14 +728,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </section>
-<section id="기타-작업" class="level4">
-<h4 class="anchored" data-anchor-id="기타-작업">기타 작업</h4>
-<p>함수 호출, 조건문, 루프 및 기타 관련 구성과 같은 기타 작업은 현재 <code>pd.eval</code>에 구현되지 <em>않습니다</em>. 이러한 더 복잡한 유형의 표현식을 실행하려면 NumExpr 라이브러리 자체를 사용할 수 있습니다.</p>
+<section id="기타-연산" class="level4">
+<h4 class="anchored" data-anchor-id="기타-연산">기타 연산</h4>
+<p>함수 호출, 조건문, 루프 등 복잡한 구문은 현재 <code>pd.eval()</code>에서 지원하지 <em>않습니다</em>. 이러한 복잡한 표현식을 실행하려면 NumExpr 라이브러리를 직접 사용해야 합니다.</p>
 </section>
 </section>
-<section id="열-단위-작업을-위한-dataframe.eval" class="level2">
-<h2 class="anchored" data-anchor-id="열-단위-작업을-위한-dataframe.eval">열 단위 작업을 위한 DataFrame.eval</h2>
-<p>Pandas에 최상위 <code>pd.eval</code> 함수가 있는 것처럼 <code>DataFrame</code> 객체에는 비슷한 방식으로 작동하는 <code>eval</code> 메서드가 있습니다. ‘eval’ 메서드의 장점은 열을 이름으로 참조할 수 있다는 것입니다. 이 레이블이 지정된 배열을 예로 사용하겠습니다.</p>
+<section id="열-단위-연산을-위한-dataframe.eval" class="level2">
+<h2 class="anchored" data-anchor-id="열-단위-연산을-위한-dataframe.eval">열 단위 연산을 위한 DataFrame.eval()</h2>
+<p>최상위 함수인 <code>pd.eval()</code>처럼 <code>DataFrame</code> 객체도 비슷한 기능을 수행하는 <code>eval()</code> 메서드를 가지고 있습니다. <code>eval()</code> 메서드의 장점은 열 이름을 직접 변수처럼 참조할 수 있다는 점입니다. 다음과 같은 <code>DataFrame</code>을 예로 들어보겠습니다.</p>
 <div id="cell-35" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="16">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb27"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.DataFrame(rng.random((<span class="dv">1000</span>, <span class="dv">3</span>)), columns<span class="op">=</span>[<span class="st">'A'</span>, <span class="st">'B'</span>, <span class="st">'C'</span>])</span>
 <span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a>df.head()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -786,7 +789,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
-<p>이전 섹션에서와 같이 <code>pd.eval</code>을 사용하면 다음과 같이 세 개의 열이 있는 표현식을 계산할 수 있습니다.</p>
+<p>앞서 본 것처럼 <code>pd.eval()</code>을 사용하면 세 개의 열로 구성된 표현식을 다음과 같이 계산합니다.</p>
 <div id="cell-37" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="17">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb28"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a>result1 <span class="op">=</span> (df[<span class="st">'A'</span>] <span class="op">+</span> df[<span class="st">'B'</span>]) <span class="op">/</span> (df[<span class="st">'C'</span>] <span class="op">-</span> <span class="dv">1</span>)</span>
 <span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a>result2 <span class="op">=</span> pd.<span class="bu">eval</span>(<span class="st">"(df.A + df.B) / (df.C - 1)"</span>)</span>
@@ -795,7 +798,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <pre><code>True</code></pre>
 </div>
 </div>
-<p><code>DataFrame.eval</code> 메서드를 사용하면 열이 포함된 표현식을 훨씬 더 간결하게 평가할 수 있습니다.</p>
+<p><code>DataFrame.eval()</code> 메서드를 사용하면 열이 포함된 표현식을 훨씬 간결하게 계산합니다.</p>
 <div id="cell-39" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="18">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb30"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a>result3 <span class="op">=</span> df.<span class="bu">eval</span>(<span class="st">'(A + B) / (C - 1)'</span>)</span>
 <span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a>np.allclose(result1, result3)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -803,10 +806,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <pre><code>True</code></pre>
 </div>
 </div>
-<p>여기서는 평가된 표현식 내에서 <em>열 이름을 변수</em>로 처리하고 그 결과는 우리가 원하는 대로라는 점에 유의하세요.</p>
-<section id="dataframe.eval의-할당" class="level3">
-<h3 class="anchored" data-anchor-id="dataframe.eval의-할당">DataFrame.eval의 할당</h3>
-<p>방금 설명한 옵션 외에도 <code>DataFrame.eval</code>을 사용하면 모든 열에 할당할 수 있습니다. <code>'A'</code>, <code>'B'</code>, <code>'C'</code> 열이 있는 이전의 <code>DataFrame</code>을 사용해 보겠습니다.</p>
+<p>표현식 안에서 <em>열 이름을 변수</em>처럼 다룰 수 있으며, 결과도 동일함을 확인합니다.</p>
+<section id="dataframe.eval을-이용한-할당" class="level3">
+<h3 class="anchored" data-anchor-id="dataframe.eval을-이용한-할당">DataFrame.eval()을 이용한 할당</h3>
+<p><code>DataFrame.eval()</code>은 연산뿐만 아니라 새로운 열을 할당하는 데도 사용합니다. 앞서 사용한 <code>'A'</code>, <code>'B'</code>, <code>'C'</code> 열이 있는 <code>DataFrame</code>을 다시 활용해 보겠습니다.</p>
 <div id="cell-42" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="19">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb32"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a>df.head()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="19">
@@ -859,7 +862,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
-<p><code>df.eval</code>을 사용하여 새 열 <code>'D'</code>를 생성하고 다른 열에서 계산된 값을 여기에 할당할 수 있습니다.</p>
+<p><code>df.eval()</code>을 사용하여 새 열 <code>'D'</code>를 만들고, 다른 열의 계산 결과를 할당해보겠습니다.</p>
 <div id="cell-44" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="20">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb33"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a>df.<span class="bu">eval</span>(<span class="st">'D = (A + B) / C'</span>, inplace<span class="op">=</span><span class="va">True</span>)</span>
 <span id="cb33-2"><a href="#cb33-2" aria-hidden="true" tabindex="-1"></a>df.head()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -919,7 +922,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
-<p>같은 방법으로 기존 열을 수정할 수 있습니다.</p>
+<p>같은 방식으로 기존 열의 값을 수정할 수도 있습니다.</p>
 <div id="cell-46" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="21">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb34"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a>df.<span class="bu">eval</span>(<span class="st">'D = (A - B) / C'</span>, inplace<span class="op">=</span><span class="va">True</span>)</span>
 <span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a>df.head()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -980,9 +983,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </section>
-<section id="dataframe.eval의-지역-변수" class="level3">
-<h3 class="anchored" data-anchor-id="dataframe.eval의-지역-변수">DataFrame.eval의 지역 변수</h3>
-<p><code>DataFrame.eval</code> 메서드는 로컬 파이썬(Python) 변수와 함께 작동할 수 있는 추가 구문을 지원합니다. 다음을 고려하십시오.</p>
+<section id="dataframe.eval과-지역-변수" class="level3">
+<h3 class="anchored" data-anchor-id="dataframe.eval과-지역-변수">DataFrame.eval()과 지역 변수</h3>
+<p><code>DataFrame.eval()</code> 메서드는 로컬 파이썬 변수를 사용할 수 있는 특별한 구문을 지원합니다. 다음 예시를 살펴보겠습니다.</p>
 <div id="cell-48" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="22">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb35"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a>column_mean <span class="op">=</span> df.mean(<span class="dv">1</span>)</span>
 <span id="cb35-2"><a href="#cb35-2" aria-hidden="true" tabindex="-1"></a>result1 <span class="op">=</span> df[<span class="st">'A'</span>] <span class="op">+</span> column_mean</span>
@@ -992,12 +995,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <pre><code>True</code></pre>
 </div>
 </div>
-<p>여기서 <code>@</code> 문자는 <em>열 이름</em>이 아닌 <em>변수 이름</em>을 표시하며 두 개의 “네임스페이스”, 즉 열의 네임스페이스와 파이썬(Python) 객체의 네임스페이스와 관련된 표현식을 효율적으로 평가할 수 있게 해줍니다. 이 <code>@</code> 문자는 <code>pandas.eval</code> <em>함수</em>가 아닌 <code>DataFrame.eval</code> <em>메소드</em>에서만 지원됩니다. <code>pandas.eval</code> 함수는 one(파이썬(Python)) 네임스페이스에만 액세스할 수 있기 때문입니다.</p>
+<p><code>@</code> 기호는 <em>열 이름</em>이 아닌 <em>변수 이름</em>임을 나타냅니다. 덕분에 열의 네임스페이스와 파이썬 객체의 네임스페이스라는 두 영역을 오가며 효율적으로 연산합니다. 참고로 이 <code>@</code> 구문은 <code>DataFrame.eval()</code> <em>메서드</em>에서만 지원됩니다. <code>pd.eval()</code> <em>함수</em>는 파이썬 네임스페이스 하나만 접근할 수 있기 때문입니다.</p>
 </section>
 </section>
 <section id="dataframe.query-메서드" class="level2">
-<h2 class="anchored" data-anchor-id="dataframe.query-메서드">DataFrame.query 메서드</h2>
-<p><code>DataFrame</code>에는 평가된 문자열을 기반으로 하는 <code>query</code>라는 또 다른 메서드가 있습니다. 다음을 고려하십시오.</p>
+<h2 class="anchored" data-anchor-id="dataframe.query-메서드">DataFrame.query() 메서드</h2>
+<p><code>DataFrame</code>에는 문자열 표현식을 바탕으로 데이터를 필터링하는 <code>query()</code> 메서드도 있습니다. 다음 예시를 살펴보겠습니다.</p>
 <div id="cell-51" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="23">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb37"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a>result1 <span class="op">=</span> df[(df.A <span class="op">&lt;</span> <span class="fl">0.5</span>) <span class="op">&amp;</span> (df.B <span class="op">&lt;</span> <span class="fl">0.5</span>)]</span>
 <span id="cb37-2"><a href="#cb37-2" aria-hidden="true" tabindex="-1"></a>result2 <span class="op">=</span> pd.<span class="bu">eval</span>(<span class="st">'df[(df.A &lt; 0.5) &amp; (df.B &lt; 0.5)]'</span>)</span>
@@ -1006,7 +1009,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <pre><code>True</code></pre>
 </div>
 </div>
-<p><code>DataFrame.eval</code> 논의에 사용된 예와 마찬가지로 이는 <code>DataFrame</code>의 열과 ​​관련된 표현식입니다. 하지만 <code>DataFrame.eval</code> 구문으로는 표현할 수 없습니다! 대신 이러한 유형의 필터링 작업에는 <code>query</code> 메서드를 사용할 수 있습니다.</p>
+<p><code>DataFrame.eval()</code>과 마찬가지로 열 이름을 사용한 표현식이지만, 필터링 연산은 <code>DataFrame.eval()</code> 구문으로 처리할 수 없습니다. 대신 이러한 필터링 작업에 바로 <code>query()</code> 메서드를 사용합니다.</p>
 <div id="cell-53" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="24">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb39"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a>result2 <span class="op">=</span> df.query(<span class="st">'A &lt; 0.5 and B &lt; 0.5'</span>)</span>
 <span id="cb39-2"><a href="#cb39-2" aria-hidden="true" tabindex="-1"></a>np.allclose(result1, result2)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -1014,7 +1017,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <pre><code>True</code></pre>
 </div>
 </div>
-<p>더 효율적인 계산일 뿐만 아니라 마스킹 표현식에 비해 읽고 이해하기가 훨씬 쉽습니다. <code>query</code> 메소드는 지역 변수를 표시하기 위해 <code>@</code> 플래그도 허용합니다.</p>
+<p>연산이 효율적일 뿐만 아니라, 기존의 마스킹 방식보다 가독성도 훨씬 좋습니다. <code>query()</code> 메서드 역시 지역 변수를 참조할 때 <code>@</code> 기호를 사용합니다.</p>
 <div id="cell-55" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="25">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb41"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a>Cmean <span class="op">=</span> df[<span class="st">'C'</span>].mean()</span>
 <span id="cb41-2"><a href="#cb41-2" aria-hidden="true" tabindex="-1"></a>result1 <span class="op">=</span> df[(df.A <span class="op">&lt;</span> Cmean) <span class="op">&amp;</span> (df.B <span class="op">&lt;</span> Cmean)]</span>
@@ -1025,28 +1028,28 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </section>
-<section id="성능-이-기능을-사용해야-하는-경우" class="level2">
-<h2 class="anchored" data-anchor-id="성능-이-기능을-사용해야-하는-경우">성능: 이 기능을 사용해야 하는 경우</h2>
-<p><code>eval</code>과 <code>query</code> 사용 여부를 고려할 때 <em>계산 시간</em>과 <em>메모리 사용</em>이라는 두 가지 고려 사항이 있습니다. 메모리 사용은 가장 예측 가능한 측면입니다. 이미 언급했듯이 NumPy 배열 또는 Pandas <code>DataFrame</code>과 관련된 모든 복합 표현식은 암시적으로 임시 배열을 생성하게 됩니다. 예를 들면 다음과 같습니다.</p>
+<section id="성능-언제-이-기능들을-사용해야-할까" class="level2">
+<h2 class="anchored" data-anchor-id="성능-언제-이-기능들을-사용해야-할까">성능: 언제 이 기능들을 사용해야 할까?</h2>
+<p><code>eval()</code>과 <code>query()</code>의 도입을 고려할 때는 <em>계산 시간</em>과 <em>메모리 사용량</em>이라는 두 가지 측면을 살펴봐야 합니다. 메모리 사용량은 예측하기 쉽습니다. 앞서 언급했듯이 NumPy 배열이나 Pandas <code>DataFrame</code>이 포함된 복합 표현식은 내부적으로 임시 배열을 생성합니다. 예를 들어 보겠습니다.</p>
 <div id="cell-57" class="cell" data-tags="[]" data-execution_count="26">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb43"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb43-1"><a href="#cb43-1" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> df[(df.A <span class="op">&lt;</span> <span class="fl">0.5</span>) <span class="op">&amp;</span> (df.B <span class="op">&lt;</span> <span class="fl">0.5</span>)]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<p>대략 다음과 같습니다.</p>
+<p>이 코드는 내부적으로 다음과 같이 동작합니다.</p>
 <div id="cell-59" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="27">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb44"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb44-1"><a href="#cb44-1" aria-hidden="true" tabindex="-1"></a>tmp1 <span class="op">=</span> df.A <span class="op">&lt;</span> <span class="fl">0.5</span></span>
 <span id="cb44-2"><a href="#cb44-2" aria-hidden="true" tabindex="-1"></a>tmp2 <span class="op">=</span> df.B <span class="op">&lt;</span> <span class="fl">0.5</span></span>
 <span id="cb44-3"><a href="#cb44-3" aria-hidden="true" tabindex="-1"></a>tmp3 <span class="op">=</span> tmp1 <span class="op">&amp;</span> tmp2</span>
 <span id="cb44-4"><a href="#cb44-4" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> df[tmp3]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<p>임시 <code>DataFrame</code>의 크기가 사용 가능한 시스템 메모리(일반적으로 수 기가바이트)에 비해 상당한 경우 ‘eval’ 또는 ‘query’ 표현식을 사용하는 것이 좋습니다. 다음을 사용하여 배열의 대략적인 크기를 바이트 단위로 확인할 수 있습니다.</p>
+<p>생성되는 임시 <code>DataFrame</code>의 크기가 시스템 메모리(보통 수 GB 단위)와 비교했을 때 무시하지 못할 수준이라면 <code>eval()</code>이나 <code>query()</code>를 사용하는 것이 좋습니다. 배열의 대략적인 메모리 크기는 다음과 같이 바이트 단위로 확인합니다.</p>
 <div id="cell-61" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="28">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb45"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb45-1"><a href="#cb45-1" aria-hidden="true" tabindex="-1"></a>df.values.nbytes</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="28">
 <pre><code>32000</code></pre>
 </div>
 </div>
-<p>성능 측면에서는 시스템 메모리를 최대로 사용하지 않는 경우에도 <code>eval</code>이 더 빠를 수 있습니다. 문제는 임시 개체를 시스템의 L1 또는 L2 CPU 캐시 크기(일반적으로 몇 메가바이트)와 비교하는 방법입니다. 그 값이 훨씬 더 크면 ’eval’을 사용하면 서로 다른 메모리 캐시 사이에서 값이 느리게 이동할 가능성이 있는 것을 피할 수 있습니다. 실제로, 전통적인 방법과 <code>eval</code>/<code>query</code> 방법 사이의 계산 시간 차이는 일반적으로 중요하지 않습니다. 어쨌든 작은 배열의 경우 전통적인 방법이 더 빠릅니다! <code>eval</code>/<code>query</code>의 이점은 주로 저장된 메모리와 때로는 제공되는 더 깔끔한 구문에 있습니다.</p>
-<p>여기서는 <code>eval</code>과 <code>query</code>에 대한 대부분의 세부 사항을 다루었습니다. 이에 대한 자세한 내용은 Pandas 설명서를 참조하세요. 특히 이러한 쿼리를 실행하기 위해 다양한 파서와 엔진을 지정할 수 있습니다. 이에 대한 자세한 내용은 문서의 <a href="https://pandas.pydata.org/pandas-docs/dev/user_guide/enhancingperf.html">‘성능 향상’ 섹션</a>에 있는 토론을 참조하세요.</p>
+<p>성능 면에서는 시스템 메모리가 넉넉하더라도 <code>eval()</code>이 더 빠를 때가 있습니다. 생성되는 임시 객체의 크기가 CPU 캐시(L1 또는 L2, 보통 수 MB 단위)보다 훨씬 크다면, <code>eval()</code>을 통해 메모리 캐시 간의 불필요한 데이터 이동을 줄일 수 있기 때문입니다. 사실 일반적인 방식과 <code>eval()</code>/<code>query()</code> 방식의 계산 시간 차이가 그리 크지 않은 경우도 많습니다. 오히려 데이터 크기가 작을 때는 일반적인 방식이 더 빠르기도 합니다. 따라서 <code>eval()</code>과 <code>query()</code>를 사용하는 주된 이유는 메모리 절약과 간결한 구문에 있다고 볼 수 있습니다.</p>
+<p>지금까지 <code>eval()</code>과 <code>query()</code>의 핵심적인 내용을 살펴보았습니다. 더 자세한 정보는 Pandas 공식 문서를 참고하시기 바랍니다. 특히 쿼리 실행을 위해 다양한 파서(parser)와 엔진을 지정할 수도 있는데, 이에 대한 내용은 문서를 통해 더 깊이 있게 확인해 보실 수 있습니다.</p>
 
 
 </section>
@@ -1454,13 +1457,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../notebooks/03.11-Working-with-Time-Series.html" class="pagination-link" aria-label="시계열 작업">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">시계열 작업</span></span>
+      <a href="../notebooks/03.11-Working-with-Time-Series.html" class="pagination-link" aria-label="시계열 데이터 다루기">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">시계열 데이터 다루기</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../notebooks/03.13-Further-Resources.html" class="pagination-link" aria-label="추가 리소스">
-        <span class="nav-page-text"><span class="chapter-title">추가 리소스</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../notebooks/03.13-Further-Resources.html" class="pagination-link" aria-label="더 읽을거리">
+        <span class="nav-page-text"><span class="chapter-title">더 읽을거리</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
