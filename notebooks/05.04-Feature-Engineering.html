@@ -625,22 +625,23 @@ window.Quarto = {
 <p>숫자가 아닌 데이터의 일반적인 유형 중 하나는 <em>범주형</em> 데이터입니다. 예를 들어 주택 가격에 대한 일부 데이터를 탐색 중이고 “가격” 및 “객실”과 같은 숫자 특성과 함께 “이웃” 정보도 있다고 가정해 보겠습니다. 예를 들어 데이터는 다음과 같을 수 있습니다.</p>
 <div id="cell-3" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="1">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> [</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    {<span class="st">'price'</span>: <span class="dv">850000</span>, <span class="st">'rooms'</span>: <span class="dv">4</span>, <span class="st">'neighborhood'</span>: <span class="st">'Queen Anne'</span>},</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    {<span class="st">'price'</span>: <span class="dv">700000</span>, <span class="st">'rooms'</span>: <span class="dv">3</span>, <span class="st">'neighborhood'</span>: <span class="st">'Fremont'</span>},</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    {<span class="st">'price'</span>: <span class="dv">650000</span>, <span class="st">'rooms'</span>: <span class="dv">3</span>, <span class="st">'neighborhood'</span>: <span class="st">'Wallingford'</span>},</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    {<span class="st">'price'</span>: <span class="dv">600000</span>, <span class="st">'rooms'</span>: <span class="dv">2</span>, <span class="st">'neighborhood'</span>: <span class="st">'Fremont'</span>}</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    {<span class="st">"price"</span>: <span class="dv">850000</span>, <span class="st">"rooms"</span>: <span class="dv">4</span>, <span class="st">"neighborhood"</span>: <span class="st">"Queen Anne"</span>},</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    {<span class="st">"price"</span>: <span class="dv">700000</span>, <span class="st">"rooms"</span>: <span class="dv">3</span>, <span class="st">"neighborhood"</span>: <span class="st">"Fremont"</span>},</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    {<span class="st">"price"</span>: <span class="dv">650000</span>, <span class="st">"rooms"</span>: <span class="dv">3</span>, <span class="st">"neighborhood"</span>: <span class="st">"Wallingford"</span>},</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    {<span class="st">"price"</span>: <span class="dv">600000</span>, <span class="st">"rooms"</span>: <span class="dv">2</span>, <span class="st">"neighborhood"</span>: <span class="st">"Fremont"</span>},</span>
 <span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>간단한 숫자 매핑을 사용하여 이 데이터를 인코딩하고 싶을 수도 있습니다.</p>
 <div id="cell-5" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="2">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>{<span class="st">'Queen Anne'</span>: <span class="dv">1</span>, <span class="st">'Fremont'</span>: <span class="dv">2</span>, <span class="st">'Wallingford'</span>: <span class="dv">3</span>}<span class="op">;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>{<span class="st">"Queen Anne"</span>: <span class="dv">1</span>, <span class="st">"Fremont"</span>: <span class="dv">2</span>, <span class="st">"Wallingford"</span>: <span class="dv">3</span>}<span class="op">;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>그러나 이는 Scikit-Learn에서는 일반적으로 유용한 접근 방식이 아닌 것으로 나타났습니다. 패키지의 모델은 숫자 특징이 대수적 양을 반영한다는 기본 가정을 하기 때문에 이러한 매핑은 예를 들어 <em>Queen Anne &lt; Fremont &lt; Wallingford</em> 또는 심지어 <em>Wallingford–Queen Anne = Fremont</em>를 암시합니다. 이는 (틈새 인구학적 농담은 제쳐두고) 별 의미가 없습니다.</p>
 <p>이 경우 입증된 기술 중 하나는 <em>원-핫 인코딩</em>을 사용하는 것입니다. 이 방법은 각각 값이 1 또는 0인 범주의 존재 여부를 나타내는 추가 열을 효과적으로 생성합니다. 데이터가 사전 목록 형식을 취하는 경우 Scikit-Learn의 <code>DictVectorizer</code>가 이 작업을 수행합니다.</p>
 <div id="cell-7" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="3">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.feature_extraction <span class="im">import</span> DictVectorizer</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>vec <span class="op">=</span> DictVectorizer(sparse<span class="op">=</span><span class="va">False</span>, dtype<span class="op">=</span><span class="bu">int</span>)</span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>vec.fit_transform(data)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>vec <span class="op">=</span> DictVectorizer(sparse<span class="op">=</span><span class="va">False</span>, dtype<span class="op">=</span><span class="bu">int</span>)</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>vec.fit_transform(data)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="3">
 <pre><code>array([[     0,      1,      0, 850000,      4],
        [     1,      0,      0, 700000,      3],
@@ -673,9 +674,7 @@ window.Quarto = {
 <p>특성 엔지니어링의 또 다른 일반적인 요구 사항은 텍스트를 대표적인 숫자 값 집합으로 변환하는 것입니다. 예를 들어 소셜 미디어 데이터의 대부분의 자동 마이닝은 텍스트를 숫자로 인코딩하는 어떤 형태에 의존합니다. 이러한 유형의 데이터를 인코딩하는 가장 간단한 방법 중 하나는 <em>단어 수</em>를 사용하는 것입니다. 즉, 텍스트의 각 조각을 가져와 그 안에 있는 각 단어의 발생 횟수를 세어 결과를 표에 표시합니다.</p>
 <p>예를 들어 다음 세 가지 문구 세트를 고려해 보세요.</p>
 <div id="cell-14" class="cell" data-editable="true" data-tags="[]" data-execution_count="6">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>sample <span class="op">=</span> [<span class="st">'problem of evil'</span>,</span>
-<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>          <span class="st">'evil queen'</span>,</span>
-<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>          <span class="st">'horizon problem'</span>]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>sample <span class="op">=</span> [<span class="st">"problem of evil"</span>, <span class="st">"evil queen"</span>, <span class="st">"horizon problem"</span>]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>단어 수를 기반으로 이 데이터를 벡터화하기 위해 “문제”, “~의”, “악” 등의 단어를 나타내는 개별 열을 구성합니다. 이 간단한 예에서는 이 작업을 수동으로 수행하는 것이 가능하지만 Scikit-Learn의 <code>CountVectorizer</code>를 사용하면 지루함을 피합니다.</p>
 <div id="cell-16" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="7">
@@ -692,7 +691,8 @@ window.Quarto = {
 <p>결과는 각 단어가 나타나는 횟수를 기록하는 희소 행렬입니다. 이를 레이블이 지정된 열이 있는 <code>DataFrame</code>으로 변환하면 검사하기가 더 쉽습니다.</p>
 <div id="cell-18" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="8">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
-<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>pd.DataFrame(X.toarray(), columns<span class="op">=</span>vec.get_feature_names_out())</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>pd.DataFrame(X.toarray(), columns<span class="op">=</span>vec.get_feature_names_out())</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="8">
 <div>
 
@@ -742,9 +742,10 @@ window.Quarto = {
 <p>그러나 간단한 원시 단어 수를 사용하는 데에는 몇 가지 문제가 있습니다. 매우 자주 나타나는 단어에 너무 많은 가중치를 부여하는 기능이 발생할 수 있으며 일부 분류 알고리즘에서는 이것이 차선책일 수 있습니다. 이 문제를 해결하기 위한 한 가지 접근 방식은 <em>용어 빈도-역 문서 빈도</em>(<em>TF-IDF</em>)로 알려져 있으며, 이는 문서에 단어가 나타나는 빈도를 측정하여 단어 수에 가중치를 부여합니다. 이러한 기능을 계산하는 구문은 이전 예와 유사합니다.</p>
 <div id="cell-20" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="9">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.feature_extraction.text <span class="im">import</span> TfidfVectorizer</span>
-<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>vec <span class="op">=</span> TfidfVectorizer()</span>
-<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>X <span class="op">=</span> vec.fit_transform(sample)</span>
-<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>pd.DataFrame(X.toarray(), columns<span class="op">=</span>vec.get_feature_names_out())</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>vec <span class="op">=</span> TfidfVectorizer()</span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>X <span class="op">=</span> vec.fit_transform(sample)</span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>pd.DataFrame(X.toarray(), columns<span class="op">=</span>vec.get_feature_names_out())</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="9">
 <div>
 
@@ -821,11 +822,12 @@ window.Quarto = {
 <p>그림 40-2와 같이 <code>LinearRegression</code>을 사용하여 데이터에 선을 맞추고 최적의 결과를 얻을 수 있습니다.</p>
 <div id="cell-26" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="11">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.linear_model <span class="im">import</span> LinearRegression</span>
-<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>X <span class="op">=</span> x[:, np.newaxis]</span>
-<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>model <span class="op">=</span> LinearRegression().fit(X, y)</span>
-<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a>yfit <span class="op">=</span> model.predict(X)</span>
-<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a>plt.scatter(x, y)</span>
-<span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a>plt.plot(x, yfit)<span class="op">;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>X <span class="op">=</span> x[:, np.newaxis]</span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a>model <span class="op">=</span> LinearRegression().fit(X, y)</span>
+<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a>yfit <span class="op">=</span> model.predict(X)</span>
+<span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a>plt.scatter(x, y)</span>
+<span id="cb15-7"><a href="#cb15-7" aria-hidden="true" tabindex="-1"></a>plt.plot(x, yfit)<span class="op">;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -838,9 +840,10 @@ window.Quarto = {
 <p>이에 대한 한 가지 접근 방식은 데이터를 변환하여 추가 기능 열을 추가하여 모델의 유연성을 높이는 것입니다. 예를 들어 다음과 같은 방법으로 데이터에 다항식 기능을 추가합니다.</p>
 <div id="cell-28" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="12">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.preprocessing <span class="im">import</span> PolynomialFeatures</span>
-<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>poly <span class="op">=</span> PolynomialFeatures(degree<span class="op">=</span><span class="dv">3</span>, include_bias<span class="op">=</span><span class="va">False</span>)</span>
-<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a>X2 <span class="op">=</span> poly.fit_transform(X)</span>
-<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(X2)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a>poly <span class="op">=</span> PolynomialFeatures(degree<span class="op">=</span><span class="dv">3</span>, include_bias<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a>X2 <span class="op">=</span> poly.fit_transform(X)</span>
+<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(X2)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[[  1.   1.   1.]
  [  2.   4.   8.]
@@ -870,20 +873,18 @@ window.Quarto = {
 <p>기능 엔지니어링의 또 다른 일반적인 요구 사항은 누락된 데이터를 처리하는 것입니다. <a href="../notebooks/03.04-Missing-Values.html">누락된 데이터 처리</a>에서 <code>DataFrame</code> 객체의 누락된 데이터 처리에 대해 논의했으며, <code>NaN</code>이 누락된 값을 표시하는 데 자주 사용되는 것을 확인했습니다. 예를 들어 다음과 같은 데이터 세트가 있습니다.</p>
 <div id="cell-33" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="14">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> numpy <span class="im">import</span> nan</span>
-<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>X <span class="op">=</span> np.array([[ nan, <span class="dv">0</span>,   <span class="dv">3</span>  ],</span>
-<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a>              [ <span class="dv">3</span>,   <span class="dv">7</span>,   <span class="dv">9</span>  ],</span>
-<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a>              [ <span class="dv">3</span>,   <span class="dv">5</span>,   <span class="dv">2</span>  ],</span>
-<span id="cb19-5"><a href="#cb19-5" aria-hidden="true" tabindex="-1"></a>              [ <span class="dv">4</span>,   nan, <span class="dv">6</span>  ],</span>
-<span id="cb19-6"><a href="#cb19-6" aria-hidden="true" tabindex="-1"></a>              [ <span class="dv">8</span>,   <span class="dv">8</span>,   <span class="dv">1</span>  ]])</span>
-<span id="cb19-7"><a href="#cb19-7" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> np.array([<span class="dv">14</span>, <span class="dv">16</span>, <span class="op">-</span><span class="dv">1</span>,  <span class="dv">8</span>, <span class="op">-</span><span class="dv">5</span>])</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a>X <span class="op">=</span> np.array([[nan, <span class="dv">0</span>, <span class="dv">3</span>], [<span class="dv">3</span>, <span class="dv">7</span>, <span class="dv">9</span>], [<span class="dv">3</span>, <span class="dv">5</span>, <span class="dv">2</span>], [<span class="dv">4</span>, nan, <span class="dv">6</span>], [<span class="dv">8</span>, <span class="dv">8</span>, <span class="dv">1</span>]])</span>
+<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> np.array([<span class="dv">14</span>, <span class="dv">16</span>, <span class="op">-</span><span class="dv">1</span>, <span class="dv">8</span>, <span class="op">-</span><span class="dv">5</span>])</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>이러한 데이터에 일반적인 머신러닝(Machine Learning) 모델을 적용할 때 먼저 누락된 값을 적절한 채우기 값으로 바꿔야 합니다. 이를 결측값의 <em>대체</em>라고 하며, 전략은 단순한 것(예: 결측값을 열의 평균으로 대체)부터 정교한 것(예: 행렬 완성 또는 강력한 모델을 사용하여 이러한 데이터를 처리하는 것)까지 다양합니다.</p>
 <p>정교한 접근 방식은 애플리케이션별로 매우 구체적인 경향이 있으므로 여기서는 자세히 다루지 않겠습니다. 평균, 중앙값 또는 가장 빈번한 값을 사용하는 기준 대치 접근 방식의 경우 Scikit-Learn은 ‘SimpleImputer’ 클래스를 제공합니다.</p>
 <div id="cell-35" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="15">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb20"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.impute <span class="im">import</span> SimpleImputer</span>
-<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>imp <span class="op">=</span> SimpleImputer(strategy<span class="op">=</span><span class="st">'mean'</span>)</span>
-<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a>X2 <span class="op">=</span> imp.fit_transform(X)</span>
-<span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a>X2</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a>imp <span class="op">=</span> SimpleImputer(strategy<span class="op">=</span><span class="st">"mean"</span>)</span>
+<span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a>X2 <span class="op">=</span> imp.fit_transform(X)</span>
+<span id="cb20-5"><a href="#cb20-5" aria-hidden="true" tabindex="-1"></a>X2</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="15">
 <pre><code>array([[4.5, 0. , 3. ],
        [3. , 7. , 9. ],
@@ -913,9 +914,9 @@ window.Quarto = {
 <div id="cell-39" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="17">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb24"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.pipeline <span class="im">import</span> make_pipeline</span>
 <span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a>model <span class="op">=</span> make_pipeline(SimpleImputer(strategy<span class="op">=</span><span class="st">'mean'</span>),</span>
-<span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a>                      PolynomialFeatures(degree<span class="op">=</span><span class="dv">2</span>),</span>
-<span id="cb24-5"><a href="#cb24-5" aria-hidden="true" tabindex="-1"></a>                      LinearRegression())</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a>model <span class="op">=</span> make_pipeline(</span>
+<span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a>    SimpleImputer(strategy<span class="op">=</span><span class="st">"mean"</span>), PolynomialFeatures(degree<span class="op">=</span><span class="dv">2</span>), LinearRegression()</span>
+<span id="cb24-5"><a href="#cb24-5" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>이 파이프라인은 표준 Scikit-Learn 객체처럼 보이고 작동하며 모든 입력 데이터에 지정된 모든 단계를 적용합니다.</p>
 <div id="cell-41" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="18">

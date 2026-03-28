@@ -612,10 +612,11 @@ window.Quarto = {
 
 <p>윤곽선이나 색상으로 구분된 영역을 사용하여 3차원 데이터를 2차원으로 표시하는 것이 유용한 경우가 있습니다. 이 작업에 도움이 될 수 있는 세 가지 Matplotlib 함수가 있습니다: 등고선 도표용 ‘plt.contour’, 채워진 등고선 도표용 ‘plt.contourf’, 이미지 표시용 ‘plt.imshow’. 이번 장에서는 이를 사용하는 몇 가지 예를 살펴봅니다. 우리가 사용할 함수를 플로팅하고 가져오기 위해 노트북을 설정하는 것부터 시작하겠습니다.</p>
 <div id="cell-2" class="cell" data-tags="[]" data-execution_count="1">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="op">%</span>matplotlib inline</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>plt.style.use(<span class="st">'seaborn-white'</span>)</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="op">%</span>matplotlib inline</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>plt.style.use(<span class="st">"seaborn-white"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <section id="차원-함수-시각화" class="level2">
 <h2 class="anchored" data-anchor-id="차원-함수-시각화">3차원 함수 시각화</h2>
@@ -634,7 +635,7 @@ window.Quarto = {
 </div>
 <p>이제 표준 선 전용 등고선 플롯을 사용하여 이를 살펴보겠습니다(다음 그림 참조).</p>
 <div id="cell-9" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="4">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>plt.contour(X, Y, Z, colors<span class="op">=</span><span class="st">'black'</span>)<span class="op">;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>plt.contour(X, Y, Z, colors<span class="op">=</span><span class="st">"black"</span>)<span class="op">;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -645,7 +646,7 @@ window.Quarto = {
 </div>
 <p>단일 색상을 사용하는 경우 음수 값은 점선으로, 양수 값은 실선으로 표시됩니다. 또는 <code>cmap</code> 인수로 컬러맵을 지정하여 선을 색상으로 구분합니다. 여기에서는 다음 그림과 같이 데이터 범위 내에서 20개의 동일한 간격으로 더 많은 선을 그리도록 지정합니다.</p>
 <div id="cell-11" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="5">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>plt.contour(X, Y, Z, <span class="dv">20</span>, cmap<span class="op">=</span><span class="st">'RdGy'</span>)<span class="op">;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>plt.contour(X, Y, Z, <span class="dv">20</span>, cmap<span class="op">=</span><span class="st">"RdGy"</span>)<span class="op">;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -659,7 +660,7 @@ window.Quarto = {
 <p>우리의 플롯은 더 좋아 보이지만 선 사이의 공간이 약간 산만해질 수 있습니다. <code>plt.contour</code>와 거의 동일한 구문을 사용하는 <code>plt.contourf</code> 함수를 사용하여 채워진 등고선 플롯으로 전환하여 이를 변경합니다.</p>
 <p>또한 플롯에 대한 레이블이 지정된 색상 정보가 있는 추가 축을 생성하는 <code>plt.colorbar</code> 명령을 추가합니다(다음 그림 참조).</p>
 <div id="cell-13" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="6">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>plt.contourf(X, Y, Z, <span class="dv">20</span>, cmap<span class="op">=</span><span class="st">'RdGy'</span>)</span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>plt.contourf(X, Y, Z, <span class="dv">20</span>, cmap<span class="op">=</span><span class="st">"RdGy"</span>)</span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>plt.colorbar()<span class="op">;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div>
@@ -672,9 +673,15 @@ window.Quarto = {
 <p>The colorbar makes it clear that the black regions are “peaks,” while the red regions are “valleys.”</p>
 <p>이 플롯의 한 가지 잠재적인 문제는 약간 얼룩덜룩하다는 것입니다. 색상 단계는 연속적이지 않고 불연속적이므로 항상 원하는 것은 아닙니다. 이는 윤곽선 수를 매우 높은 숫자로 설정하여 해결할 수 있지만 이로 인해 플롯이 다소 비효율적이게 됩니다. Matplotlib는 레벨의 각 단계에 대해 새 다각형을 렌더링해야 합니다. 부드러운 표현을 생성하는 더 좋은 방법은 ‘interpolation’ 인수를 제공하여 데이터의 부드러운 2차원 표현을 생성하는 ‘plt.imshow’ 함수를 사용하는 것입니다(다음 그림 참조).</p>
 <div id="cell-15" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="7">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>plt.imshow(Z, extent<span class="op">=</span>[<span class="dv">0</span>, <span class="dv">5</span>, <span class="dv">0</span>, <span class="dv">5</span>], origin<span class="op">=</span><span class="st">'lower'</span>, cmap<span class="op">=</span><span class="st">'RdGy'</span>,</span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>           interpolation<span class="op">=</span><span class="st">'gaussian'</span>, aspect<span class="op">=</span><span class="st">'equal'</span>)</span>
-<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>plt.colorbar()<span class="op">;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>plt.imshow(</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>    Z,</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>    extent<span class="op">=</span>[<span class="dv">0</span>, <span class="dv">5</span>, <span class="dv">0</span>, <span class="dv">5</span>],</span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>    origin<span class="op">=</span><span class="st">"lower"</span>,</span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>    cmap<span class="op">=</span><span class="st">"RdGy"</span>,</span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>    interpolation<span class="op">=</span><span class="st">"gaussian"</span>,</span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>    aspect<span class="op">=</span><span class="st">"equal"</span>,</span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a>plt.colorbar()<span class="op">;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -691,12 +698,11 @@ window.Quarto = {
 </ul>
 <p>마지막으로 등고선 플롯과 이미지 플롯을 결합하는 것이 유용한 경우가 있습니다. 예를 들어 여기서는 부분적으로 투명한 배경 이미지(<code>alpha</code> 매개변수를 통해 투명도가 설정된)를 사용하고 <code>plt.clabel</code> 함수를 사용하여 윤곽선 자체에 레이블이 있는 윤곽선을 오버플로팅합니다(다음 그림 참조).</p>
 <div id="cell-18" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="8">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>contours <span class="op">=</span> plt.contour(X, Y, Z, <span class="dv">3</span>, colors<span class="op">=</span><span class="st">'black'</span>)</span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>contours <span class="op">=</span> plt.contour(X, Y, Z, <span class="dv">3</span>, colors<span class="op">=</span><span class="st">"black"</span>)</span>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>plt.clabel(contours, inline<span class="op">=</span><span class="va">True</span>, fontsize<span class="op">=</span><span class="dv">8</span>)</span>
 <span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>plt.imshow(Z, extent<span class="op">=</span>[<span class="dv">0</span>, <span class="dv">5</span>, <span class="dv">0</span>, <span class="dv">5</span>], origin<span class="op">=</span><span class="st">'lower'</span>,</span>
-<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>           cmap<span class="op">=</span><span class="st">'RdGy'</span>, alpha<span class="op">=</span><span class="fl">0.5</span>)</span>
-<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>plt.colorbar()<span class="op">;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>plt.imshow(Z, extent<span class="op">=</span>[<span class="dv">0</span>, <span class="dv">5</span>, <span class="dv">0</span>, <span class="dv">5</span>], origin<span class="op">=</span><span class="st">"lower"</span>, cmap<span class="op">=</span><span class="st">"RdGy"</span>, alpha<span class="op">=</span><span class="fl">0.5</span>)</span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>plt.colorbar()<span class="op">;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">

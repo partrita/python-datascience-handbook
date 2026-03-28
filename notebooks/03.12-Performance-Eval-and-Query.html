@@ -609,8 +609,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <p><a href="../notebooks/02.03-Computation-on-arrays-ufuncs.html">NumPy 배열 연산: 범용 함수</a>에서 설명했듯이, 이는 파이썬 루프나 리스트 컴프리헨션(list comprehension)을 사용하는 것보다 훨씬 빠릅니다.</p>
 <div id="cell-5" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="2">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="op">%</span>timeit np.fromiter((xi <span class="op">+</span> yi <span class="cf">for</span> xi, yi <span class="kw">in</span> <span class="bu">zip</span>(x, y)),</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>                    dtype<span class="op">=</span>x.dtype, count<span class="op">=</span><span class="bu">len</span>(x))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="op">%</span>timeit np.fromiter((xi <span class="op">+</span> yi <span class="cf">for</span> xi, yi <span class="kw">in</span> <span class="bu">zip</span>(x, y)), dtype<span class="op">=</span>x.dtype, count<span class="op">=</span><span class="bu">len</span>(x))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>263 ms ± 43.4 ms per loop (mean ± std. dev. of 7 runs, 1 loop each)</code></pre>
 </div>

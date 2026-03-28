@@ -615,10 +615,10 @@ window.Quarto = {
 
 <p>때로는 데이터의 다양한 관점을 나란히 비교하는 것이 도움이 될 수 있습니다. 이를 위해 Matplotlib에는 <em>서브플롯</em>, 즉 단일 그림 내에서 함께 존재할 수 있는 작은 축 그룹이라는 개념이 있습니다. 이러한 하위 플롯은 삽입, 플롯 그리드 또는 기타 더 복잡한 레이아웃일 수 있습니다. 이번 장에서는 Matplotlib에서 서브플롯을 생성하는 네 가지 루틴을 살펴보겠습니다. 사용할 패키지를 가져오는 것부터 시작하겠습니다.</p>
 <div id="cell-2" class="cell" data-tags="[]" data-execution_count="1">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="op">%</span>matplotlib inline</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>plt.style.use(<span class="st">'seaborn-white'</span>)</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="op">%</span>matplotlib inline</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>plt.style.use(<span class="st">'seaborn-white'</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <section id="plt.axes-직접-서브플롯" class="level2">
 <h2 class="anchored" data-anchor-id="plt.axes-직접-서브플롯">plt.axes: 직접 서브플롯</h2>

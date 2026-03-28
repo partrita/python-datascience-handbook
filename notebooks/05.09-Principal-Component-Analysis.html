@@ -626,7 +626,8 @@ window.Quarto = {
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="op">%</span>matplotlib inline</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>plt.style.use(<span class="st">'seaborn-whitegrid'</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>plt.style.use(<span class="st">"seaborn-whitegrid"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <section id="주성분-분석-소개" class="level2">
 <h2 class="anchored" data-anchor-id="주성분-분석-소개">주성분 분석 소개</h2>
@@ -635,7 +636,7 @@ window.Quarto = {
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>rng <span class="op">=</span> np.random.RandomState(<span class="dv">1</span>)</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>X <span class="op">=</span> np.dot(rng.rand(<span class="dv">2</span>, <span class="dv">2</span>), rng.randn(<span class="dv">2</span>, <span class="dv">200</span>)).T</span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>plt.scatter(X[:, <span class="dv">0</span>], X[:, <span class="dv">1</span>])</span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>plt.axis(<span class="st">'equal'</span>)<span class="op">;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>plt.axis(<span class="st">"equal"</span>)<span class="op">;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -648,8 +649,9 @@ window.Quarto = {
 <p>주성분 분석에서는 데이터에서 <em>주축</em> 목록을 찾고 해당 축을 사용하여 데이터 세트를 설명함으로써 이 관계를 정량화합니다. Scikit-Learn의 ‘PCA’ 추정기를 사용하면 다음과 같이 계산합니다.</p>
 <div id="cell-6" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="3">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.decomposition <span class="im">import</span> PCA</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>pca <span class="op">=</span> PCA(n_components<span class="op">=</span><span class="dv">2</span>)</span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>pca.fit(X)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>pca <span class="op">=</span> PCA(n_components<span class="op">=</span><span class="dv">2</span>)</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>pca.fit(X)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="3">
 <pre><code>PCA(n_components=2)</code></pre>
 </div>
@@ -672,16 +674,16 @@ window.Quarto = {
 <div id="cell-11" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="6">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> draw_vector(v0, v1, ax<span class="op">=</span><span class="va">None</span>):</span>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>    ax <span class="op">=</span> ax <span class="kw">or</span> plt.gca()</span>
-<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>    arrowprops<span class="op">=</span><span class="bu">dict</span>(arrowstyle<span class="op">=</span><span class="st">'-&gt;'</span>, linewidth<span class="op">=</span><span class="dv">2</span>,</span>
-<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>                    shrinkA<span class="op">=</span><span class="dv">0</span>, shrinkB<span class="op">=</span><span class="dv">0</span>)</span>
-<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>    ax.annotate(<span class="st">''</span>, v1, v0, arrowprops<span class="op">=</span>arrowprops)</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>    arrowprops <span class="op">=</span> <span class="bu">dict</span>(arrowstyle<span class="op">=</span><span class="st">"-&gt;"</span>, linewidth<span class="op">=</span><span class="dv">2</span>, shrinkA<span class="op">=</span><span class="dv">0</span>, shrinkB<span class="op">=</span><span class="dv">0</span>)</span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>    ax.annotate(<span class="st">""</span>, v1, v0, arrowprops<span class="op">=</span>arrowprops)</span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a><span class="co"># plot data</span></span>
 <span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a>plt.scatter(X[:, <span class="dv">0</span>], X[:, <span class="dv">1</span>], alpha<span class="op">=</span><span class="fl">0.2</span>)</span>
 <span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> length, vector <span class="kw">in</span> <span class="bu">zip</span>(pca.explained_variance_, pca.components_):</span>
 <span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a>    v <span class="op">=</span> vector <span class="op">*</span> <span class="dv">3</span> <span class="op">*</span> np.sqrt(length)</span>
 <span id="cb9-11"><a href="#cb9-11" aria-hidden="true" tabindex="-1"></a>    draw_vector(pca.mean_, pca.mean_ <span class="op">+</span> v)</span>
-<span id="cb9-12"><a href="#cb9-12" aria-hidden="true" tabindex="-1"></a>plt.axis(<span class="st">'equal'</span>)<span class="op">;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb9-12"><a href="#cb9-12" aria-hidden="true" tabindex="-1"></a>plt.axis(<span class="st">"equal"</span>)<span class="op">;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -715,7 +717,7 @@ transformed shape: (200, 1)</code></pre>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>X_new <span class="op">=</span> pca.inverse_transform(X_pca)</span>
 <span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>plt.scatter(X[:, <span class="dv">0</span>], X[:, <span class="dv">1</span>], alpha<span class="op">=</span><span class="fl">0.2</span>)</span>
 <span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>plt.scatter(X_new[:, <span class="dv">0</span>], X_new[:, <span class="dv">1</span>], alpha<span class="op">=</span><span class="fl">0.8</span>)</span>
-<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>plt.axis(<span class="st">'equal'</span>)<span class="op">;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>plt.axis(<span class="st">"equal"</span>)<span class="op">;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -733,8 +735,9 @@ transformed shape: (200, 1)</code></pre>
 <p>데이터를 로드하는 것부터 시작하겠습니다.</p>
 <div id="cell-21" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="9">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.datasets <span class="im">import</span> load_digits</span>
-<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>digits <span class="op">=</span> load_digits()</span>
-<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>digits.data.shape</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>digits <span class="op">=</span> load_digits()</span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>digits.data.shape</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="9">
 <pre><code>(1797, 64)</code></pre>
 </div>
@@ -752,12 +755,17 @@ transformed shape: (200, 1)</code></pre>
 </div>
 <p>이제 다음 그림과 같이 각 점의 처음 두 주성분을 플롯하여 데이터에 대해 알아살펴볼 수 있습니다.</p>
 <div id="cell-25" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="11">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>plt.scatter(projected[:, <span class="dv">0</span>], projected[:, <span class="dv">1</span>],</span>
-<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>            c<span class="op">=</span>digits.target, edgecolor<span class="op">=</span><span class="st">'none'</span>, alpha<span class="op">=</span><span class="fl">0.5</span>,</span>
-<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>            cmap<span class="op">=</span>plt.cm.get_cmap(<span class="st">'rainbow'</span>, <span class="dv">10</span>))</span>
-<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">'component 1'</span>)</span>
-<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">'component 2'</span>)</span>
-<span id="cb17-6"><a href="#cb17-6" aria-hidden="true" tabindex="-1"></a>plt.colorbar()<span class="op">;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>plt.scatter(</span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>    projected[:, <span class="dv">0</span>],</span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>    projected[:, <span class="dv">1</span>],</span>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a>    c<span class="op">=</span>digits.target,</span>
+<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a>    edgecolor<span class="op">=</span><span class="st">"none"</span>,</span>
+<span id="cb17-6"><a href="#cb17-6" aria-hidden="true" tabindex="-1"></a>    alpha<span class="op">=</span><span class="fl">0.5</span>,</span>
+<span id="cb17-7"><a href="#cb17-7" aria-hidden="true" tabindex="-1"></a>    cmap<span class="op">=</span>plt.cm.get_cmap(<span class="st">"rainbow"</span>, <span class="dv">10</span>),</span>
+<span id="cb17-8"><a href="#cb17-8" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb17-9"><a href="#cb17-9" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">"component 1"</span>)</span>
+<span id="cb17-10"><a href="#cb17-10" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">"component 2"</span>)</span>
+<span id="cb17-11"><a href="#cb17-11" aria-hidden="true" tabindex="-1"></a>plt.colorbar()<span class="op">;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -795,8 +803,8 @@ x = [x_1, x_2, x_3 \cdots x_{64}]
 <div id="cell-34" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="12">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>pca <span class="op">=</span> PCA().fit(digits.data)</span>
 <span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>plt.plot(np.cumsum(pca.explained_variance_ratio_))</span>
-<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">'number of components'</span>)</span>
-<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">'cumulative explained variance'</span>)<span class="op">;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">"number of components"</span>)</span>
+<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">"cumulative explained variance"</span>)<span class="op">;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -815,14 +823,20 @@ x = [x_1, x_2, x_3 \cdots x_{64}]
 <p>이것이 숫자 데이터로 어떻게 보이는지 살펴보겠습니다. 먼저 잡음이 없는 여러 입력 샘플을 플롯합니다(다음 그림).</p>
 <div id="cell-37" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="13">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> plot_digits(data):</span>
-<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>    fig, axes <span class="op">=</span> plt.subplots(<span class="dv">4</span>, <span class="dv">10</span>, figsize<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">4</span>),</span>
-<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a>                             subplot_kw<span class="op">=</span>{<span class="st">'xticks'</span>:[], <span class="st">'yticks'</span>:[]},</span>
-<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a>                             gridspec_kw<span class="op">=</span><span class="bu">dict</span>(hspace<span class="op">=</span><span class="fl">0.1</span>, wspace<span class="op">=</span><span class="fl">0.1</span>))</span>
-<span id="cb19-5"><a href="#cb19-5" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> i, ax <span class="kw">in</span> <span class="bu">enumerate</span>(axes.flat):</span>
-<span id="cb19-6"><a href="#cb19-6" aria-hidden="true" tabindex="-1"></a>        ax.imshow(data[i].reshape(<span class="dv">8</span>, <span class="dv">8</span>),</span>
-<span id="cb19-7"><a href="#cb19-7" aria-hidden="true" tabindex="-1"></a>                  cmap<span class="op">=</span><span class="st">'binary'</span>, interpolation<span class="op">=</span><span class="st">'nearest'</span>,</span>
-<span id="cb19-8"><a href="#cb19-8" aria-hidden="true" tabindex="-1"></a>                  clim<span class="op">=</span>(<span class="dv">0</span>, <span class="dv">16</span>))</span>
-<span id="cb19-9"><a href="#cb19-9" aria-hidden="true" tabindex="-1"></a>plot_digits(digits.data)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>    fig, axes <span class="op">=</span> plt.subplots(</span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a>        <span class="dv">4</span>,</span>
+<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a>        <span class="dv">10</span>,</span>
+<span id="cb19-5"><a href="#cb19-5" aria-hidden="true" tabindex="-1"></a>        figsize<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">4</span>),</span>
+<span id="cb19-6"><a href="#cb19-6" aria-hidden="true" tabindex="-1"></a>        subplot_kw<span class="op">=</span>{<span class="st">"xticks"</span>: [], <span class="st">"yticks"</span>: []},</span>
+<span id="cb19-7"><a href="#cb19-7" aria-hidden="true" tabindex="-1"></a>        gridspec_kw<span class="op">=</span><span class="bu">dict</span>(hspace<span class="op">=</span><span class="fl">0.1</span>, wspace<span class="op">=</span><span class="fl">0.1</span>),</span>
+<span id="cb19-8"><a href="#cb19-8" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb19-9"><a href="#cb19-9" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> i, ax <span class="kw">in</span> <span class="bu">enumerate</span>(axes.flat):</span>
+<span id="cb19-10"><a href="#cb19-10" aria-hidden="true" tabindex="-1"></a>        ax.imshow(</span>
+<span id="cb19-11"><a href="#cb19-11" aria-hidden="true" tabindex="-1"></a>            data[i].reshape(<span class="dv">8</span>, <span class="dv">8</span>), cmap<span class="op">=</span><span class="st">"binary"</span>, interpolation<span class="op">=</span><span class="st">"nearest"</span>, clim<span class="op">=</span>(<span class="dv">0</span>, <span class="dv">16</span>)</span>
+<span id="cb19-12"><a href="#cb19-12" aria-hidden="true" tabindex="-1"></a>        )</span>
+<span id="cb19-13"><a href="#cb19-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-14"><a href="#cb19-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-15"><a href="#cb19-15" aria-hidden="true" tabindex="-1"></a>plot_digits(digits.data)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -879,9 +893,10 @@ x = [x_1, x_2, x_3 \cdots x_{64}]
 <p>앞서 우리는 지원 벡터 머신을 사용하여 얼굴 인식을 위한 특징 선택기로 PCA 투영을 사용하는 예를 살펴보았습니다(<a href="../notebooks/05.07-Support-Vector-Machines.html">심층: 지원 벡터 머신</a> 참조). 여기에서 우리는 과거를 되돌아보고 그 내용에 대해 좀 더 살펴보겠습니다. Scikit-Learn을 통해 제공되는 LFW(Labeled Faces in the Wild) 데이터 세트를 사용하고 있었다는 점을 상기해 보세요.</p>
 <div id="cell-47" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="18">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb26"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.datasets <span class="im">import</span> fetch_lfw_people</span>
-<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a>faces <span class="op">=</span> fetch_lfw_people(min_faces_per_person<span class="op">=</span><span class="dv">60</span>)</span>
-<span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(faces.target_names)</span>
-<span id="cb26-4"><a href="#cb26-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(faces.images.shape)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a>faces <span class="op">=</span> fetch_lfw_people(min_faces_per_person<span class="op">=</span><span class="dv">60</span>)</span>
+<span id="cb26-4"><a href="#cb26-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(faces.target_names)</span>
+<span id="cb26-5"><a href="#cb26-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(faces.images.shape)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>['Ariel Sharon' 'Colin Powell' 'Donald Rumsfeld' 'George W Bush'
  'Gerhard Schroeder' 'Hugo Chavez' 'Junichiro Koizumi' 'Tony Blair']
@@ -890,7 +905,7 @@ x = [x_1, x_2, x_3 \cdots x_{64}]
 </div>
 <p>이 데이터 세트에 걸쳐 있는 주요 축을 살펴보겠습니다. 이것은 큰 데이터 세트이기 때문에 <code>PCA</code> 추정기에서 `“무작위” 고유 솔버를 사용합니다. 이는 일부 정확도를 희생하면서 표준 접근 방식보다 더 빠르게 첫 번째 <span class="math inline">\(N\)</span> 주성분을 근사화하기 위해 무작위 방법을 사용합니다. 이러한 절충안은 고차원 데이터(여기서는 거의 3,000차원)에 유용합니다. 처음 150개의 구성요소를 살펴보겠습니다.</p>
 <div id="cell-49" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="19">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb28"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a>pca <span class="op">=</span> PCA(<span class="dv">150</span>, svd_solver<span class="op">=</span><span class="st">'randomized'</span>, random_state<span class="op">=</span><span class="dv">42</span>)</span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb28"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a>pca <span class="op">=</span> PCA(<span class="dv">150</span>, svd_solver<span class="op">=</span><span class="st">"randomized"</span>, random_state<span class="op">=</span><span class="dv">42</span>)</span>
 <span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a>pca.fit(faces.data)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="19">
 <pre><code>PCA(n_components=150, random_state=42, svd_solver='randomized')</code></pre>
@@ -898,11 +913,15 @@ x = [x_1, x_2, x_3 \cdots x_{64}]
 </div>
 <p>이 경우 처음 몇 가지 주요 구성 요소(이러한 구성 요소는 기술적으로 <em>고유 벡터</em>라고 알려져 있음)와 관련된 이미지를 시각화하는 것이 흥미로울 수 있습니다. 따라서 이러한 유형의 이미지를 <em>고유얼굴</em>이라고 부르기도 합니다. 다음 그림에서 볼 수 있듯이 소리만큼이나 소름끼칩니다.)</p>
 <div id="cell-51" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="20">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb30"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a>fig, axes <span class="op">=</span> plt.subplots(<span class="dv">3</span>, <span class="dv">8</span>, figsize<span class="op">=</span>(<span class="dv">9</span>, <span class="dv">4</span>),</span>
-<span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a>                         subplot_kw<span class="op">=</span>{<span class="st">'xticks'</span>:[], <span class="st">'yticks'</span>:[]},</span>
-<span id="cb30-3"><a href="#cb30-3" aria-hidden="true" tabindex="-1"></a>                         gridspec_kw<span class="op">=</span><span class="bu">dict</span>(hspace<span class="op">=</span><span class="fl">0.1</span>, wspace<span class="op">=</span><span class="fl">0.1</span>))</span>
-<span id="cb30-4"><a href="#cb30-4" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i, ax <span class="kw">in</span> <span class="bu">enumerate</span>(axes.flat):</span>
-<span id="cb30-5"><a href="#cb30-5" aria-hidden="true" tabindex="-1"></a>    ax.imshow(pca.components_[i].reshape(<span class="dv">62</span>, <span class="dv">47</span>), cmap<span class="op">=</span><span class="st">'bone'</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb30"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a>fig, axes <span class="op">=</span> plt.subplots(</span>
+<span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a>    <span class="dv">3</span>,</span>
+<span id="cb30-3"><a href="#cb30-3" aria-hidden="true" tabindex="-1"></a>    <span class="dv">8</span>,</span>
+<span id="cb30-4"><a href="#cb30-4" aria-hidden="true" tabindex="-1"></a>    figsize<span class="op">=</span>(<span class="dv">9</span>, <span class="dv">4</span>),</span>
+<span id="cb30-5"><a href="#cb30-5" aria-hidden="true" tabindex="-1"></a>    subplot_kw<span class="op">=</span>{<span class="st">"xticks"</span>: [], <span class="st">"yticks"</span>: []},</span>
+<span id="cb30-6"><a href="#cb30-6" aria-hidden="true" tabindex="-1"></a>    gridspec_kw<span class="op">=</span><span class="bu">dict</span>(hspace<span class="op">=</span><span class="fl">0.1</span>, wspace<span class="op">=</span><span class="fl">0.1</span>),</span>
+<span id="cb30-7"><a href="#cb30-7" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb30-8"><a href="#cb30-8" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i, ax <span class="kw">in</span> <span class="bu">enumerate</span>(axes.flat):</span>
+<span id="cb30-9"><a href="#cb30-9" aria-hidden="true" tabindex="-1"></a>    ax.imshow(pca.components_[i].reshape(<span class="dv">62</span>, <span class="dv">47</span>), cmap<span class="op">=</span><span class="st">"bone"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -914,8 +933,8 @@ x = [x_1, x_2, x_3 \cdots x_{64}]
 <p>결과는 매우 흥미롭고 이미지가 어떻게 변화하는지에 대한 통찰력을 제공합니다. 예를 들어 처음 몇 개의 고유면(왼쪽 상단부터)은 얼굴의 조명 각도와 연관되어 있는 것처럼 보이고 나중에 주요 벡터는 눈, 코, 입술과 같은 특정 특징을 선택하는 것처럼 보입니다. 투영이 보존하는 데이터 정보의 양을 확인하기 위해 이러한 구성요소의 누적 분산을 살펴보겠습니다(다음 그림 참조).</p>
 <div id="cell-53" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="21">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb31"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a>plt.plot(np.cumsum(pca.explained_variance_ratio_))</span>
-<span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">'number of components'</span>)</span>
-<span id="cb31-3"><a href="#cb31-3" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">'cumulative explained variance'</span>)<span class="op">;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">"number of components"</span>)</span>
+<span id="cb31-3"><a href="#cb31-3" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">"cumulative explained variance"</span>)<span class="op">;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -933,15 +952,19 @@ x = [x_1, x_2, x_3 \cdots x_{64}]
 </div>
 <div id="cell-56" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="23">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb33"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Plot the results</span></span>
-<span id="cb33-2"><a href="#cb33-2" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots(<span class="dv">2</span>, <span class="dv">10</span>, figsize<span class="op">=</span>(<span class="dv">10</span>, <span class="fl">2.5</span>),</span>
-<span id="cb33-3"><a href="#cb33-3" aria-hidden="true" tabindex="-1"></a>                       subplot_kw<span class="op">=</span>{<span class="st">'xticks'</span>:[], <span class="st">'yticks'</span>:[]},</span>
-<span id="cb33-4"><a href="#cb33-4" aria-hidden="true" tabindex="-1"></a>                       gridspec_kw<span class="op">=</span><span class="bu">dict</span>(hspace<span class="op">=</span><span class="fl">0.1</span>, wspace<span class="op">=</span><span class="fl">0.1</span>))</span>
-<span id="cb33-5"><a href="#cb33-5" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">10</span>):</span>
-<span id="cb33-6"><a href="#cb33-6" aria-hidden="true" tabindex="-1"></a>    ax[<span class="dv">0</span>, i].imshow(faces.data[i].reshape(<span class="dv">62</span>, <span class="dv">47</span>), cmap<span class="op">=</span><span class="st">'binary_r'</span>)</span>
-<span id="cb33-7"><a href="#cb33-7" aria-hidden="true" tabindex="-1"></a>    ax[<span class="dv">1</span>, i].imshow(projected[i].reshape(<span class="dv">62</span>, <span class="dv">47</span>), cmap<span class="op">=</span><span class="st">'binary_r'</span>)</span>
-<span id="cb33-8"><a href="#cb33-8" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb33-9"><a href="#cb33-9" aria-hidden="true" tabindex="-1"></a>ax[<span class="dv">0</span>, <span class="dv">0</span>].set_ylabel(<span class="st">'full-dim</span><span class="ch">\n</span><span class="st">input'</span>)</span>
-<span id="cb33-10"><a href="#cb33-10" aria-hidden="true" tabindex="-1"></a>ax[<span class="dv">1</span>, <span class="dv">0</span>].set_ylabel(<span class="st">'150-dim</span><span class="ch">\n</span><span class="st">reconstruction'</span>)<span class="op">;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb33-2"><a href="#cb33-2" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots(</span>
+<span id="cb33-3"><a href="#cb33-3" aria-hidden="true" tabindex="-1"></a>    <span class="dv">2</span>,</span>
+<span id="cb33-4"><a href="#cb33-4" aria-hidden="true" tabindex="-1"></a>    <span class="dv">10</span>,</span>
+<span id="cb33-5"><a href="#cb33-5" aria-hidden="true" tabindex="-1"></a>    figsize<span class="op">=</span>(<span class="dv">10</span>, <span class="fl">2.5</span>),</span>
+<span id="cb33-6"><a href="#cb33-6" aria-hidden="true" tabindex="-1"></a>    subplot_kw<span class="op">=</span>{<span class="st">"xticks"</span>: [], <span class="st">"yticks"</span>: []},</span>
+<span id="cb33-7"><a href="#cb33-7" aria-hidden="true" tabindex="-1"></a>    gridspec_kw<span class="op">=</span><span class="bu">dict</span>(hspace<span class="op">=</span><span class="fl">0.1</span>, wspace<span class="op">=</span><span class="fl">0.1</span>),</span>
+<span id="cb33-8"><a href="#cb33-8" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb33-9"><a href="#cb33-9" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">10</span>):</span>
+<span id="cb33-10"><a href="#cb33-10" aria-hidden="true" tabindex="-1"></a>    ax[<span class="dv">0</span>, i].imshow(faces.data[i].reshape(<span class="dv">62</span>, <span class="dv">47</span>), cmap<span class="op">=</span><span class="st">"binary_r"</span>)</span>
+<span id="cb33-11"><a href="#cb33-11" aria-hidden="true" tabindex="-1"></a>    ax[<span class="dv">1</span>, i].imshow(projected[i].reshape(<span class="dv">62</span>, <span class="dv">47</span>), cmap<span class="op">=</span><span class="st">"binary_r"</span>)</span>
+<span id="cb33-12"><a href="#cb33-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb33-13"><a href="#cb33-13" aria-hidden="true" tabindex="-1"></a>ax[<span class="dv">0</span>, <span class="dv">0</span>].set_ylabel(<span class="st">"full-dim</span><span class="ch">\n</span><span class="st">input"</span>)</span>
+<span id="cb33-14"><a href="#cb33-14" aria-hidden="true" tabindex="-1"></a>ax[<span class="dv">1</span>, <span class="dv">0</span>].set_ylabel(<span class="st">"150-dim</span><span class="ch">\n</span><span class="st">reconstruction"</span>)<span class="op">;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">

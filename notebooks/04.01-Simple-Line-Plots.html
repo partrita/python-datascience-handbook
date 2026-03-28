@@ -616,9 +616,10 @@ window.Quarto = {
 <p>아마도 모든 플롯 중 가장 간단한 것은 단일 함수 <span class="math inline">\(y = f(x)\)</span>의 시각화일 것입니다. 여기서는 이러한 유형의 간단한 플롯을 생성하는 방법을 먼저 살펴보겠습니다. 다음 모든 장에서와 마찬가지로 사용할 패키지를 플로팅하고 가져오기 위한 노트북을 설정하는 것부터 시작하겠습니다.</p>
 <div id="cell-2" class="cell" data-tags="[]" data-execution_count="1">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="op">%</span>matplotlib inline</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>plt.style.use(<span class="st">'seaborn-whitegrid'</span>)</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>plt.style.use(<span class="st">"seaborn-whitegrid"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>모든 Matplotlib 플롯에 대해 그림과 축을 만드는 것부터 시작합니다. 가장 간단한 형태로 다음과 같이 수행합니다(다음 그림 참조).</p>
 <div id="cell-4" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="2">
@@ -677,12 +678,12 @@ window.Quarto = {
 <h2 class="anchored" data-anchor-id="플롯-조정-선-색상-및-스타일">플롯 조정: 선 색상 및 스타일</h2>
 <p>플롯에 적용할 첫 번째 조정은 선 색상과 스타일을 제어하는 ​​것입니다. ‘plt.plot’ 함수는 이를 지정하는 데 사용할 수 있는 추가 인수를 사용합니다. 색상을 조정하려면 상상할 수 있는 거의 모든 색상을 나타내는 문자열 인수를 허용하는 ‘color’ 키워드를 사용합니다. 색상은 다양한 방법으로 지정합니다. 다음 예제의 출력은 다음 그림을 참조하세요.</p>
 <div id="cell-14" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="6">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>plt.plot(x, np.sin(x <span class="op">-</span> <span class="dv">0</span>), color<span class="op">=</span><span class="st">'blue'</span>)        <span class="co"># specify color by name</span></span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>plt.plot(x, np.sin(x <span class="op">-</span> <span class="dv">1</span>), color<span class="op">=</span><span class="st">'g'</span>)           <span class="co"># short color code (rgbcmyk)</span></span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>plt.plot(x, np.sin(x <span class="op">-</span> <span class="dv">2</span>), color<span class="op">=</span><span class="st">'0.75'</span>)        <span class="co"># grayscale between 0 and 1</span></span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>plt.plot(x, np.sin(x <span class="op">-</span> <span class="dv">3</span>), color<span class="op">=</span><span class="st">'#FFDD44'</span>)     <span class="co"># hex code (RRGGBB, 00 to FF)</span></span>
-<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>plt.plot(x, np.sin(x <span class="op">-</span> <span class="dv">4</span>), color<span class="op">=</span>(<span class="fl">1.0</span>,<span class="fl">0.2</span>,<span class="fl">0.3</span>)) <span class="co"># RGB tuple, values 0 to 1</span></span>
-<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>plt.plot(x, np.sin(x <span class="op">-</span> <span class="dv">5</span>), color<span class="op">=</span><span class="st">'chartreuse'</span>)<span class="op">;</span> <span class="co"># HTML color names supported</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>plt.plot(x, np.sin(x <span class="op">-</span> <span class="dv">0</span>), color<span class="op">=</span><span class="st">"blue"</span>)  <span class="co"># specify color by name</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>plt.plot(x, np.sin(x <span class="op">-</span> <span class="dv">1</span>), color<span class="op">=</span><span class="st">"g"</span>)  <span class="co"># short color code (rgbcmyk)</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>plt.plot(x, np.sin(x <span class="op">-</span> <span class="dv">2</span>), color<span class="op">=</span><span class="st">"0.75"</span>)  <span class="co"># grayscale between 0 and 1</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>plt.plot(x, np.sin(x <span class="op">-</span> <span class="dv">3</span>), color<span class="op">=</span><span class="st">"#FFDD44"</span>)  <span class="co"># hex code (RRGGBB, 00 to FF)</span></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>plt.plot(x, np.sin(x <span class="op">-</span> <span class="dv">4</span>), color<span class="op">=</span>(<span class="fl">1.0</span>, <span class="fl">0.2</span>, <span class="fl">0.3</span>))  <span class="co"># RGB tuple, values 0 to 1</span></span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>plt.plot(x, np.sin(x <span class="op">-</span> <span class="dv">5</span>), color<span class="op">=</span><span class="st">"chartreuse"</span>)<span class="op">;</span>  <span class="co"># HTML color names supported</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -694,16 +695,15 @@ window.Quarto = {
 <p>색상을 지정하지 않으면 Matplotlib는 여러 줄의 기본 색상 세트를 자동으로 순환합니다.</p>
 <p>마찬가지로 <code>linestyle</code> 키워드를 사용하여 선 스타일을 조정합니다(다음 그림 참조).</p>
 <div id="cell-16" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="7">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>plt.plot(x, x <span class="op">+</span> <span class="dv">0</span>, linestyle<span class="op">=</span><span class="st">'solid'</span>)</span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>plt.plot(x, x <span class="op">+</span> <span class="dv">1</span>, linestyle<span class="op">=</span><span class="st">'dashed'</span>)</span>
-<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>plt.plot(x, x <span class="op">+</span> <span class="dv">2</span>, linestyle<span class="op">=</span><span class="st">'dashdot'</span>)</span>
-<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>plt.plot(x, x <span class="op">+</span> <span class="dv">3</span>, linestyle<span class="op">=</span><span class="st">'dotted'</span>)<span class="op">;</span></span>
-<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a><span class="co"># For short, you can use the following codes:</span></span>
-<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>plt.plot(x, x <span class="op">+</span> <span class="dv">4</span>, linestyle<span class="op">=</span><span class="st">'-'</span>)  <span class="co"># solid</span></span>
-<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>plt.plot(x, x <span class="op">+</span> <span class="dv">5</span>, linestyle<span class="op">=</span><span class="st">'--'</span>) <span class="co"># dashed</span></span>
-<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a>plt.plot(x, x <span class="op">+</span> <span class="dv">6</span>, linestyle<span class="op">=</span><span class="st">'-.'</span>) <span class="co"># dashdot</span></span>
-<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a>plt.plot(x, x <span class="op">+</span> <span class="dv">7</span>, linestyle<span class="op">=</span><span class="st">':'</span>)<span class="op">;</span>  <span class="co"># dotted</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>plt.plot(x, x <span class="op">+</span> <span class="dv">0</span>, linestyle<span class="op">=</span><span class="st">"solid"</span>)</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>plt.plot(x, x <span class="op">+</span> <span class="dv">1</span>, linestyle<span class="op">=</span><span class="st">"dashed"</span>)</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>plt.plot(x, x <span class="op">+</span> <span class="dv">2</span>, linestyle<span class="op">=</span><span class="st">"dashdot"</span>)</span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>plt.plot(x, x <span class="op">+</span> <span class="dv">3</span>, linestyle<span class="op">=</span><span class="st">"dotted"</span>)</span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a><span class="co"># For short, you can use the following codes:</span></span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>plt.plot(x, x <span class="op">+</span> <span class="dv">4</span>, linestyle<span class="op">=</span><span class="st">"-"</span>)  <span class="co"># solid</span></span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>plt.plot(x, x <span class="op">+</span> <span class="dv">5</span>, linestyle<span class="op">=</span><span class="st">"--"</span>)  <span class="co"># dashed</span></span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>plt.plot(x, x <span class="op">+</span> <span class="dv">6</span>, linestyle<span class="op">=</span><span class="st">"-."</span>)  <span class="co"># dashdot</span></span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a>plt.plot(x, x <span class="op">+</span> <span class="dv">7</span>, linestyle<span class="op">=</span><span class="st">":"</span>)<span class="op">;</span>  <span class="co"># dotted</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -714,10 +714,10 @@ window.Quarto = {
 </div>
 <p>코드를 읽는 사람에게는 덜 명확할 수 있지만 <code>linestyle</code> 및 <code>color</code> 코드를 <code>plt.plot</code> 함수에 대한 키워드가 아닌 단일 인수로 결합하여 일부 키 입력을 절약합니다. 다음 그림은 결과를 보여줍니다.</p>
 <div id="cell-18" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="8">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>plt.plot(x, x <span class="op">+</span> <span class="dv">0</span>, <span class="st">'-g'</span>)   <span class="co"># solid green</span></span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>plt.plot(x, x <span class="op">+</span> <span class="dv">1</span>, <span class="st">'--c'</span>)  <span class="co"># dashed cyan</span></span>
-<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>plt.plot(x, x <span class="op">+</span> <span class="dv">2</span>, <span class="st">'-.k'</span>)  <span class="co"># dashdot black</span></span>
-<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>plt.plot(x, x <span class="op">+</span> <span class="dv">3</span>, <span class="st">':r'</span>)<span class="op">;</span>  <span class="co"># dotted red</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>plt.plot(x, x <span class="op">+</span> <span class="dv">0</span>, <span class="st">"-g"</span>)  <span class="co"># solid green</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>plt.plot(x, x <span class="op">+</span> <span class="dv">1</span>, <span class="st">"--c"</span>)  <span class="co"># dashed cyan</span></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>plt.plot(x, x <span class="op">+</span> <span class="dv">2</span>, <span class="st">"-.k"</span>)  <span class="co"># dashdot black</span></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>plt.plot(x, x <span class="op">+</span> <span class="dv">3</span>, <span class="st">":r"</span>)<span class="op">;</span>  <span class="co"># dotted red</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -762,7 +762,7 @@ window.Quarto = {
 <p>유용한 관련 방법은 <code>plt.axis</code>입니다(<em>e</em>가 있는 <em>axes</em>와 <em>i</em>가 있는 <em>axis</em> 사이의 잠재적인 혼동에 유의하세요). 이 방법을 사용하면 축 제한을 보다 질적으로 지정합니다. 예를 들어 다음 그림과 같이 현재 콘텐츠 주위의 경계를 자동으로 강화합니다.</p>
 <div id="cell-25" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="11">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>plt.plot(x, np.sin(x))</span>
-<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>plt.axis(<span class="st">'tight'</span>)<span class="op">;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>plt.axis(<span class="st">"tight"</span>)<span class="op">;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -774,7 +774,7 @@ window.Quarto = {
 <p>또는 다음 그림에서 볼 수 있듯이 <code>x</code>의 한 단위가 <code>y</code>의 한 단위와 시각적으로 동일하도록 동일한 축 비율을 원하도록 지정합니다.</p>
 <div id="cell-27" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="12">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>plt.plot(x, np.sin(x))</span>
-<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>plt.axis(<span class="st">'equal'</span>)<span class="op">;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>plt.axis(<span class="st">"equal"</span>)<span class="op">;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -804,9 +804,9 @@ window.Quarto = {
 <p>이러한 레이블의 위치, 크기 및 스타일은 독스트링에 설명된 함수에 대한 선택적 인수를 사용하여 조정합니다.</p>
 <p>단일 축 내에 여러 선이 표시되는 경우 각 선 유형에 레이블을 지정하는 플롯 범례를 만드는 것이 유용합니다. 다시 말하지만, Matplotlib에는 이러한 범례를 빠르게 생성하는 방법이 내장되어 있습니다. 이는 (여러분이 추측한) <code>plt.legend</code> 메소드를 통해 수행됩니다. 이를 사용하는 유효한 방법은 여러 가지가 있지만 <code>plot</code> 함수의 <code>label</code> 키워드를 사용하여 각 줄의 레이블을 지정하는 것이 가장 쉬운 방법입니다(다음 그림 참조).</p>
 <div id="cell-33" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="14">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>plt.plot(x, np.sin(x), <span class="st">'-g'</span>, label<span class="op">=</span><span class="st">'sin(x)'</span>)</span>
-<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>plt.plot(x, np.cos(x), <span class="st">':b'</span>, label<span class="op">=</span><span class="st">'cos(x)'</span>)</span>
-<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>plt.axis(<span class="st">'equal'</span>)</span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>plt.plot(x, np.sin(x), <span class="st">"-g"</span>, label<span class="op">=</span><span class="st">"sin(x)"</span>)</span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>plt.plot(x, np.cos(x), <span class="st">":b"</span>, label<span class="op">=</span><span class="st">"cos(x)"</span>)</span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>plt.axis(<span class="st">"equal"</span>)</span>
 <span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a>plt.legend()<span class="op">;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
@@ -833,9 +833,7 @@ window.Quarto = {
 <div id="cell-36" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="15">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>ax <span class="op">=</span> plt.axes()</span>
 <span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>ax.plot(x, np.sin(x))</span>
-<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>ax.<span class="bu">set</span>(xlim<span class="op">=</span>(<span class="dv">0</span>, <span class="dv">10</span>), ylim<span class="op">=</span>(<span class="op">-</span><span class="dv">2</span>, <span class="dv">2</span>),</span>
-<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a>       xlabel<span class="op">=</span><span class="st">'x'</span>, ylabel<span class="op">=</span><span class="st">'sin(x)'</span>,</span>
-<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a>       title<span class="op">=</span><span class="st">'A Simple Plot'</span>)<span class="op">;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>ax.<span class="bu">set</span>(xlim<span class="op">=</span>(<span class="dv">0</span>, <span class="dv">10</span>), ylim<span class="op">=</span>(<span class="op">-</span><span class="dv">2</span>, <span class="dv">2</span>), xlabel<span class="op">=</span><span class="st">"x"</span>, ylabel<span class="op">=</span><span class="st">"sin(x)"</span>, title<span class="op">=</span><span class="st">"A Simple Plot"</span>)<span class="op">;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">

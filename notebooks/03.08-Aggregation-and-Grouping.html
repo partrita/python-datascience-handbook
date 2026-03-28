@@ -599,29 +599,33 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> display(<span class="bu">object</span>):</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""Display HTML representation of multiple objects"""</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>    template <span class="op">=</span> <span class="st">"""&lt;div style="float: left; padding: 10px;"&gt;</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="st">    &lt;p style='font-family:"Courier New", Courier, monospace'&gt;</span><span class="sc">{0}</span><span class="st">&lt;/p&gt;</span><span class="sc">{1}</span></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="st">    &lt;/div&gt;"""</span></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, <span class="op">*</span>args):</span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.args <span class="op">=</span> args</span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>        </span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> _repr_html_(<span class="va">self</span>):</span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="st">'</span><span class="ch">\n</span><span class="st">'</span>.join(<span class="va">self</span>.template.<span class="bu">format</span>(a, <span class="bu">eval</span>(a)._repr_html_())</span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>                         <span class="cf">for</span> a <span class="kw">in</span> <span class="va">self</span>.args)</span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> <span class="fu">__repr__</span>(<span class="va">self</span>):</span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="st">'</span><span class="ch">\n\n</span><span class="st">'</span>.join(a <span class="op">+</span> <span class="st">'</span><span class="ch">\n</span><span class="st">'</span> <span class="op">+</span> <span class="bu">repr</span>(<span class="bu">eval</span>(a))</span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>                           <span class="cf">for</span> a <span class="kw">in</span> <span class="va">self</span>.args)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> display(<span class="bu">object</span>):</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""Display HTML representation of multiple objects"""</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>    template <span class="op">=</span> <span class="st">"""&lt;div style="float: left; padding: 10px;"&gt;</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="st">    &lt;p style='font-family:"Courier New", Courier, monospace'&gt;</span><span class="sc">{0}</span><span class="st">&lt;/p&gt;</span><span class="sc">{1}</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="st">    &lt;/div&gt;"""</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, <span class="op">*</span>args):</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.args <span class="op">=</span> args</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> _repr_html_(<span class="va">self</span>):</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="st">"</span><span class="ch">\n</span><span class="st">"</span>.join(</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>            <span class="va">self</span>.template.<span class="bu">format</span>(a, <span class="bu">eval</span>(a)._repr_html_()) <span class="cf">for</span> a <span class="kw">in</span> <span class="va">self</span>.args</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>        )</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> <span class="fu">__repr__</span>(<span class="va">self</span>):</span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="st">"</span><span class="ch">\n\n</span><span class="st">"</span>.join(a <span class="op">+</span> <span class="st">"</span><span class="ch">\n</span><span class="st">"</span> <span class="op">+</span> <span class="bu">repr</span>(<span class="bu">eval</span>(a)) <span class="cf">for</span> a <span class="kw">in</span> <span class="va">self</span>.args)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <section id="예제-행성planets-데이터" class="level2">
 <h2 class="anchored" data-anchor-id="예제-행성planets-데이터">예제: 행성(Planets) 데이터</h2>
 <p>여기서는 <a href="http://seaborn.pydata.org/">Seaborn 패키지</a>(<a href="../notebooks/04.14-Visualization-With-Seaborn.html">Visualization With Seaborn</a> 참조)를 통해 제공되는 Planets 데이터 세트를 사용합니다. 이는 천문학자들이 다른 별 주위에서 발견한 행성(<em>외계 행성(Exoplanets)</em>으로 불림)에 대한 정보를 제공합니다. 간단한 Seaborn 명령으로 다운로드합니다.</p>
 <div id="cell-5" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="2">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>planets <span class="op">=</span> sns.load_dataset(<span class="st">'planets'</span>)</span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>planets.shape</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>planets <span class="op">=</span> sns.load_dataset(<span class="st">"planets"</span>)</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>planets.shape</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="2">
 <pre><code>(1035, 6)</code></pre>
 </div>
@@ -728,9 +732,8 @@ dtype: float64</code></pre>
 </div>
 <p><code>DataFrame</code>의 경우 집계는 각 열 내에서 결과를 반환합니다.</p>
 <div id="cell-14" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="7">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.DataFrame({<span class="st">'A'</span>: rng.rand(<span class="dv">5</span>),</span>
-<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>                   <span class="st">'B'</span>: rng.rand(<span class="dv">5</span>)})</span>
-<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>df</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.DataFrame({<span class="st">"A"</span>: rng.rand(<span class="dv">5</span>), <span class="st">"B"</span>: rng.rand(<span class="dv">5</span>)})</span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>df</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="7">
 <div>
 
@@ -785,7 +788,7 @@ dtype: float64</code></pre>
 </div>
 <p><code>axis</code> 인수를 지정하면 대신 각 행 내에서 집계합니다.</p>
 <div id="cell-17" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="9">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>df.mean(axis<span class="op">=</span><span class="st">'columns'</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>df.mean(axis<span class="op">=</span><span class="st">"columns"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="9">
 <pre><code>0    0.088290
 1    0.513997
@@ -948,9 +951,10 @@ dtype: float64</code></pre>
 <p>앞서 설명한 마스킹, 집계 및 병합 명령을 조합하여 수동으로 수행할 수도 있지만 중요한 사실은 <em>중간 분할을 명시적으로 인스턴스화할 필요가 없다는 점입니다</em>. 오히려 ’groupby’는 (종종) 데이터에 대한 단일 전달로 이 작업을 수행하여 각 그룹에 대한 합계, 평균, 개수, 최소 또는 기타 집계를 업데이트합니다. ’groupby’의 장점은 이러한 단계를 추상화한다는 것입니다. 사용자는 내부적으로 계산이 <em>어떻게</em> 수행되는지 생각할 필요가 없고 오히려 <em>작업 전체</em>에 대해 생각합니다.</p>
 <p>구체적인 예로, 다음 그림에 표시된 계산에 Pandas를 사용하는 방법을 살펴보겠습니다. 입력 <code>DataFrame</code>을 생성하는 것부터 시작하겠습니다.</p>
 <div id="cell-27" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="11">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.DataFrame({<span class="st">'key'</span>: [<span class="st">'A'</span>, <span class="st">'B'</span>, <span class="st">'C'</span>, <span class="st">'A'</span>, <span class="st">'B'</span>, <span class="st">'C'</span>],</span>
-<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>                   <span class="st">'data'</span>: <span class="bu">range</span>(<span class="dv">6</span>)}, columns<span class="op">=</span>[<span class="st">'key'</span>, <span class="st">'data'</span>])</span>
-<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>df</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.DataFrame(</span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>    {<span class="st">"key"</span>: [<span class="st">"A"</span>, <span class="st">"B"</span>, <span class="st">"C"</span>, <span class="st">"A"</span>, <span class="st">"B"</span>, <span class="st">"C"</span>], <span class="st">"data"</span>: <span class="bu">range</span>(<span class="dv">6</span>)}, columns<span class="op">=</span>[<span class="st">"key"</span>, <span class="st">"data"</span>]</span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a>df</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="11">
 <div>
 
@@ -1002,7 +1006,7 @@ dtype: float64</code></pre>
 </div>
 <p>가장 기본적인 분할-적용-결합 작업은 원하는 키 열의 이름을 전달하여 <code>DataFrame</code>의 <code>groupby</code> 메서드로 계산합니다.</p>
 <div id="cell-29" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="12">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>df.groupby(<span class="st">'key'</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>df.groupby(<span class="st">"key"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="12">
 <pre><code>&lt;pandas.core.groupby.generic.DataFrameGroupBy object at 0x11d241e20&gt;</code></pre>
 </div>
@@ -1010,7 +1014,7 @@ dtype: float64</code></pre>
 <p>반환되는 것은 <code>DataFrame</code> 개체 집합이 아니라 <code>DataFrameGroupBy</code> 개체입니다. 이 개체는 마법이 있는 곳입니다. 그룹을 파헤칠 준비가 되어 있지만 집계가 적용될 때까지 실제 계산을 수행하지 않는 <code>DataFrame</code>의 특수 보기로 생각합니다. 이런 “지연 평가(Lazy Evaluation)” 방식 덕분에 사용자에게 거의 투명한 방식으로 공통 집계를 효율적으로 구현할 수 있음을 의미합니다.</p>
 <p>결과를 생성하기 위해 이 <code>DataFrameGroupBy</code> 개체에 집계를 적용하면 적절한 적용/결합 단계를 수행하여 원하는 결과를 생성합니다.</p>
 <div id="cell-31" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="13">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb20"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>df.groupby(<span class="st">'key'</span>).<span class="bu">sum</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb20"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>df.groupby(<span class="st">"key"</span>).<span class="bu">sum</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="13">
 <div>
 
@@ -1055,20 +1059,20 @@ dtype: float64</code></pre>
 <h4 class="anchored" data-anchor-id="열-인덱싱">열 인덱싱</h4>
 <p><code>GroupBy</code> 개체는 <code>DataFrame</code>과 동일한 방식으로 열 인덱싱을 지원하고 수정된 <code>GroupBy</code> 객체를 반환합니다. 예를 들어:</p>
 <div id="cell-35" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="14">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>planets.groupby(<span class="st">'method'</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>planets.groupby(<span class="st">"method"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="14">
 <pre><code>&lt;pandas.core.groupby.generic.DataFrameGroupBy object at 0x11d1bc820&gt;</code></pre>
 </div>
 </div>
 <div id="cell-36" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="15">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb23"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>planets.groupby(<span class="st">'method'</span>)[<span class="st">'orbital_period'</span>]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb23"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>planets.groupby(<span class="st">"method"</span>)[<span class="st">"orbital_period"</span>]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="15">
 <pre><code>&lt;pandas.core.groupby.generic.SeriesGroupBy object at 0x11d1bcd60&gt;</code></pre>
 </div>
 </div>
 <p>여기서는 열 이름을 참조하여 원래 <code>DataFrame</code> 그룹에서 특정 <code>Series</code> 그룹을 선택했습니다. <code>GroupBy</code> 개체와 마찬가지로 개체에 대한 집계를 호출할 때까지 계산이 수행되지 않습니다.</p>
 <div id="cell-38" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="16">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb25"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>planets.groupby(<span class="st">'method'</span>)[<span class="st">'orbital_period'</span>].median()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb25"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>planets.groupby(<span class="st">"method"</span>)[<span class="st">"orbital_period"</span>].median()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="16">
 <pre><code>method
 Astrometry                         631.180000
@@ -1090,7 +1094,7 @@ Name: orbital_period, dtype: float64</code></pre>
 <h4 class="anchored" data-anchor-id="그룹에-대한-반복">그룹에 대한 반복</h4>
 <p><code>GroupBy</code> 객체는 그룹에 대한 직접 반복을 지원하여 각 그룹을 <code>Series</code> 또는 <code>DataFrame</code>으로 반환합니다.</p>
 <div id="cell-41" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="17">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb27"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (method, group) <span class="kw">in</span> planets.groupby(<span class="st">'method'</span>):</span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb27"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> method, group <span class="kw">in</span> planets.groupby(<span class="st">"method"</span>):</span>
 <span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"</span><span class="sc">{0:30s}</span><span class="st"> shape=</span><span class="sc">{1}</span><span class="st">"</span>.<span class="bu">format</span>(method, group.shape))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>Astrometry                     shape=(2, 6)
@@ -1111,7 +1115,7 @@ Transit Timing Variations      shape=(4, 6)</code></pre>
 <h4 class="anchored" data-anchor-id="메서드-디스패치method-dispatch">메서드 디스패치(Method Dispatch)</h4>
 <p>파이썬의 클래스 매직(Magic Method)을 활용해 <code>GroupBy</code> 객체에 의해 명시적으로 구현되지 않은 모든 메서드는 <code>DataFrame</code> 또는 <code>Series</code> 객체인지 여부에 관계없이 그룹을 통해 전달되고 호출됩니다. 예를 들어 <code>describe</code> 메서드를 사용하는 것은 각 그룹을 나타내는 <code>DataFrame</code>에서 <code>describe</code>를 호출하는 것과 같습니다.</p>
 <div id="cell-44" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="18">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb29"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a>planets.groupby(<span class="st">'method'</span>)[<span class="st">'year'</span>].describe().unstack()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb29"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a>planets.groupby(<span class="st">"method"</span>)[<span class="st">"year"</span>].describe().unstack()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="18">
 <pre><code>       method                       
 count  Astrometry                          2.0
@@ -1138,11 +1142,15 @@ Length: 80, dtype: float64</code></pre>
 <p>다음 하위 섹션에서는 이 <code>DataFrame</code>을 사용합니다.</p>
 <div id="cell-47" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="19">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb31"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a>rng <span class="op">=</span> np.random.RandomState(<span class="dv">0</span>)</span>
-<span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.DataFrame({<span class="st">'key'</span>: [<span class="st">'A'</span>, <span class="st">'B'</span>, <span class="st">'C'</span>, <span class="st">'A'</span>, <span class="st">'B'</span>, <span class="st">'C'</span>],</span>
-<span id="cb31-3"><a href="#cb31-3" aria-hidden="true" tabindex="-1"></a>                   <span class="st">'data1'</span>: <span class="bu">range</span>(<span class="dv">6</span>),</span>
-<span id="cb31-4"><a href="#cb31-4" aria-hidden="true" tabindex="-1"></a>                   <span class="st">'data2'</span>: rng.randint(<span class="dv">0</span>, <span class="dv">10</span>, <span class="dv">6</span>)},</span>
-<span id="cb31-5"><a href="#cb31-5" aria-hidden="true" tabindex="-1"></a>                   columns <span class="op">=</span> [<span class="st">'key'</span>, <span class="st">'data1'</span>, <span class="st">'data2'</span>])</span>
-<span id="cb31-6"><a href="#cb31-6" aria-hidden="true" tabindex="-1"></a>df</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.DataFrame(</span>
+<span id="cb31-3"><a href="#cb31-3" aria-hidden="true" tabindex="-1"></a>    {</span>
+<span id="cb31-4"><a href="#cb31-4" aria-hidden="true" tabindex="-1"></a>        <span class="st">"key"</span>: [<span class="st">"A"</span>, <span class="st">"B"</span>, <span class="st">"C"</span>, <span class="st">"A"</span>, <span class="st">"B"</span>, <span class="st">"C"</span>],</span>
+<span id="cb31-5"><a href="#cb31-5" aria-hidden="true" tabindex="-1"></a>        <span class="st">"data1"</span>: <span class="bu">range</span>(<span class="dv">6</span>),</span>
+<span id="cb31-6"><a href="#cb31-6" aria-hidden="true" tabindex="-1"></a>        <span class="st">"data2"</span>: rng.randint(<span class="dv">0</span>, <span class="dv">10</span>, <span class="dv">6</span>),</span>
+<span id="cb31-7"><a href="#cb31-7" aria-hidden="true" tabindex="-1"></a>    },</span>
+<span id="cb31-8"><a href="#cb31-8" aria-hidden="true" tabindex="-1"></a>    columns<span class="op">=</span>[<span class="st">"key"</span>, <span class="st">"data1"</span>, <span class="st">"data2"</span>],</span>
+<span id="cb31-9"><a href="#cb31-9" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb31-10"><a href="#cb31-10" aria-hidden="true" tabindex="-1"></a>df</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="19">
 <div>
 
@@ -1203,7 +1211,7 @@ Length: 80, dtype: float64</code></pre>
 <h4 class="anchored" data-anchor-id="집계">집계</h4>
 <p>이제 <code>sum</code>, <code>median</code> 등과 같은 <code>GroupBy</code> 집계에 익숙하지만 <code>aggregate</code> 방법을 사용하면 훨씬 더 많은 유연성을 얻을 수 있습니다. 문자열, 함수 또는 이들의 목록을 가져와서 모든 집계를 한 번에 계산합니다. 다음은 이 모든 것을 결합한 간단한 예입니다.</p>
 <div id="cell-49" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="20">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb32"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a>df.groupby(<span class="st">'key'</span>).aggregate([<span class="st">'min'</span>, np.median, <span class="bu">max</span>])</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb32"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a>df.groupby(<span class="st">"key"</span>).aggregate([<span class="st">"min"</span>, np.median, <span class="bu">max</span>])</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="20">
 <div>
 
@@ -1270,8 +1278,7 @@ Length: 80, dtype: float64</code></pre>
 </div>
 <p>또 다른 일반적인 패턴은 해당 열에 적용할 작업에 사전 매핑 열 이름을 전달하는 것입니다.</p>
 <div id="cell-51" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="21">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb33"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a>df.groupby(<span class="st">'key'</span>).aggregate({<span class="st">'data1'</span>: <span class="st">'min'</span>,</span>
-<span id="cb33-2"><a href="#cb33-2" aria-hidden="true" tabindex="-1"></a>                             <span class="st">'data2'</span>: <span class="st">'max'</span>})</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb33"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a>df.groupby(<span class="st">"key"</span>).aggregate({<span class="st">"data1"</span>: <span class="st">"min"</span>, <span class="st">"data2"</span>: <span class="st">"max"</span>})</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="21">
 <div>
 
@@ -1317,10 +1324,10 @@ Length: 80, dtype: float64</code></pre>
 <p>필터링 작업을 사용하면 그룹 속성을 기반으로 데이터를 삭제합니다. 예를 들어 표준 편차가 일부 임계값보다 큰 모든 그룹을 유지하려고 합니다.</p>
 <div id="cell-53" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="22">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb34"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> filter_func(x):</span>
-<span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> x[<span class="st">'data2'</span>].std() <span class="op">&gt;</span> <span class="dv">4</span></span>
+<span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> x[<span class="st">"data2"</span>].std() <span class="op">&gt;</span> <span class="dv">4</span></span>
 <span id="cb34-3"><a href="#cb34-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb34-4"><a href="#cb34-4" aria-hidden="true" tabindex="-1"></a>display(<span class="st">'df'</span>, <span class="st">"df.groupby('key').std()"</span>,</span>
-<span id="cb34-5"><a href="#cb34-5" aria-hidden="true" tabindex="-1"></a>        <span class="st">"df.groupby('key').filter(filter_func)"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb34-4"><a href="#cb34-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-5"><a href="#cb34-5" aria-hidden="true" tabindex="-1"></a>display(<span class="st">"df"</span>, <span class="st">"df.groupby('key').std()"</span>, <span class="st">"df.groupby('key').filter(filter_func)"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="22">
 <div style="float: left; padding: 10px;">
     <p style="font-family:&quot;Courier New&quot;, Courier, monospace">df</p><div>
@@ -1468,7 +1475,9 @@ Length: 80, dtype: float64</code></pre>
 <div id="cell-56" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="23">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb35"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> center(x):</span>
 <span id="cb35-2"><a href="#cb35-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> x <span class="op">-</span> x.mean()</span>
-<span id="cb35-3"><a href="#cb35-3" aria-hidden="true" tabindex="-1"></a>df.groupby(<span class="st">'key'</span>).transform(center)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb35-3"><a href="#cb35-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb35-4"><a href="#cb35-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb35-5"><a href="#cb35-5" aria-hidden="true" tabindex="-1"></a>df.groupby(<span class="st">"key"</span>).transform(center)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="23">
 <div>
 
@@ -1526,10 +1535,11 @@ Length: 80, dtype: float64</code></pre>
 <div id="cell-58" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="24">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb36"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> norm_by_data2(x):</span>
 <span id="cb36-2"><a href="#cb36-2" aria-hidden="true" tabindex="-1"></a>    <span class="co"># x is a DataFrame of group values</span></span>
-<span id="cb36-3"><a href="#cb36-3" aria-hidden="true" tabindex="-1"></a>    x[<span class="st">'data1'</span>] <span class="op">/=</span> x[<span class="st">'data2'</span>].<span class="bu">sum</span>()</span>
+<span id="cb36-3"><a href="#cb36-3" aria-hidden="true" tabindex="-1"></a>    x[<span class="st">"data1"</span>] <span class="op">/=</span> x[<span class="st">"data2"</span>].<span class="bu">sum</span>()</span>
 <span id="cb36-4"><a href="#cb36-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> x</span>
 <span id="cb36-5"><a href="#cb36-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb36-6"><a href="#cb36-6" aria-hidden="true" tabindex="-1"></a>df.groupby(<span class="st">'key'</span>).<span class="bu">apply</span>(norm_by_data2)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb36-6"><a href="#cb36-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb36-7"><a href="#cb36-7" aria-hidden="true" tabindex="-1"></a>df.groupby(<span class="st">"key"</span>).<span class="bu">apply</span>(norm_by_data2)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="24">
 <div>
 
@@ -1634,7 +1644,7 @@ Length: 80, dtype: float64</code></pre>
 </div>
 <p>물론 이는 이전에 <code>df.groupby('key')</code>를 수행하는 또 다른 더 자세한 방법이 있음을 의미합니다.</p>
 <div id="cell-64" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="26">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb38"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a>df.groupby(df[<span class="st">'key'</span>]).<span class="bu">sum</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb38"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a>df.groupby(df[<span class="st">"key"</span>]).<span class="bu">sum</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="26">
 <div>
 
@@ -1679,9 +1689,9 @@ Length: 80, dtype: float64</code></pre>
 <h4 class="anchored" data-anchor-id="그룹에-대한-사전-또는-시리즈-매핑-색인">그룹에 대한 사전 또는 시리즈 매핑 색인</h4>
 <p>또 다른 방법은 인덱스 값을 그룹 키에 매핑하는 사전을 제공하는 것입니다.</p>
 <div id="cell-66" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="27">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb39"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a>df2 <span class="op">=</span> df.set_index(<span class="st">'key'</span>)</span>
-<span id="cb39-2"><a href="#cb39-2" aria-hidden="true" tabindex="-1"></a>mapping <span class="op">=</span> {<span class="st">'A'</span>: <span class="st">'vowel'</span>, <span class="st">'B'</span>: <span class="st">'consonant'</span>, <span class="st">'C'</span>: <span class="st">'consonant'</span>}</span>
-<span id="cb39-3"><a href="#cb39-3" aria-hidden="true" tabindex="-1"></a>display(<span class="st">'df2'</span>, <span class="st">'df2.groupby(mapping).sum()'</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb39"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a>df2 <span class="op">=</span> df.set_index(<span class="st">"key"</span>)</span>
+<span id="cb39-2"><a href="#cb39-2" aria-hidden="true" tabindex="-1"></a>mapping <span class="op">=</span> {<span class="st">"A"</span>: <span class="st">"vowel"</span>, <span class="st">"B"</span>: <span class="st">"consonant"</span>, <span class="st">"C"</span>: <span class="st">"consonant"</span>}</span>
+<span id="cb39-3"><a href="#cb39-3" aria-hidden="true" tabindex="-1"></a>display(<span class="st">"df2"</span>, <span class="st">"df2.groupby(mapping).sum()"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="27">
 <div style="float: left; padding: 10px;">
     <p style="font-family:&quot;Courier New&quot;, Courier, monospace">df2</p><div>
@@ -1872,10 +1882,10 @@ Length: 80, dtype: float64</code></pre>
 <h3 class="anchored" data-anchor-id="그룹화-예">그룹화 예</h3>
 <p>이에 대한 예로서, 몇 줄의 파이썬(Python) 코드로 이 모든 것을 하나로 묶어 발견된 행성의 수를 방법 및 10년 단위로 계산합니다.</p>
 <div id="cell-72" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="30">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb42"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a>decade <span class="op">=</span> <span class="dv">10</span> <span class="op">*</span> (planets[<span class="st">'year'</span>] <span class="op">//</span> <span class="dv">10</span>)</span>
-<span id="cb42-2"><a href="#cb42-2" aria-hidden="true" tabindex="-1"></a>decade <span class="op">=</span> decade.astype(<span class="bu">str</span>) <span class="op">+</span> <span class="st">'s'</span></span>
-<span id="cb42-3"><a href="#cb42-3" aria-hidden="true" tabindex="-1"></a>decade.name <span class="op">=</span> <span class="st">'decade'</span></span>
-<span id="cb42-4"><a href="#cb42-4" aria-hidden="true" tabindex="-1"></a>planets.groupby([<span class="st">'method'</span>, decade])[<span class="st">'number'</span>].<span class="bu">sum</span>().unstack().fillna(<span class="dv">0</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb42"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a>decade <span class="op">=</span> <span class="dv">10</span> <span class="op">*</span> (planets[<span class="st">"year"</span>] <span class="op">//</span> <span class="dv">10</span>)</span>
+<span id="cb42-2"><a href="#cb42-2" aria-hidden="true" tabindex="-1"></a>decade <span class="op">=</span> decade.astype(<span class="bu">str</span>) <span class="op">+</span> <span class="st">"s"</span></span>
+<span id="cb42-3"><a href="#cb42-3" aria-hidden="true" tabindex="-1"></a>decade.name <span class="op">=</span> <span class="st">"decade"</span></span>
+<span id="cb42-4"><a href="#cb42-4" aria-hidden="true" tabindex="-1"></a>planets.groupby([<span class="st">"method"</span>, decade])[<span class="st">"number"</span>].<span class="bu">sum</span>().unstack().fillna(<span class="dv">0</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="30">
 <div>
 

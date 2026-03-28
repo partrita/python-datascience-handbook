@@ -655,9 +655,8 @@ dtype: float64</code></pre>
 <p>지금까지 살펴본 바로는 <code>Series</code> 객체가 1차원 NumPy 배열과 호환되는 것처럼 보일 수 있습니다. 근본적인 차이점은 NumPy 배열이 값에 접근할 때 <em>암시적으로 정의된</em> 정수 인덱스를 사용하는 반면, Pandas <code>Series</code>는 값과 연결된 <em>명시적으로 정의된</em> 인덱스를 가진다는 점입니다.</p>
 <p>이러한 명시적 인덱스 정의 덕분에 <code>Series</code> 객체는 추가 기능을 제공합니다. 예를 들어 인덱스가 꼭 정수일 필요는 없으며, 원하는 타입의 값으로 구성합니다. 원한다면 문자열을 인덱스로 사용할 수도 있습니다.</p>
 <div id="cell-15" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="7">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> pd.Series([<span class="fl">0.25</span>, <span class="fl">0.5</span>, <span class="fl">0.75</span>, <span class="fl">1.0</span>],</span>
-<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>                 index<span class="op">=</span>[<span class="st">'a'</span>, <span class="st">'b'</span>, <span class="st">'c'</span>, <span class="st">'d'</span>])</span>
-<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>data</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> pd.Series([<span class="fl">0.25</span>, <span class="fl">0.5</span>, <span class="fl">0.75</span>, <span class="fl">1.0</span>], index<span class="op">=</span>[<span class="st">"a"</span>, <span class="st">"b"</span>, <span class="st">"c"</span>, <span class="st">"d"</span>])</span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>data</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="7">
 <pre><code>a    0.25
 b    0.50
@@ -668,16 +667,15 @@ dtype: float64</code></pre>
 </div>
 <p>항목 접근 역시 예상대로 잘 작동합니다.</p>
 <div id="cell-17" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="8">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>data[<span class="st">'b'</span>]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>data[<span class="st">"b"</span>]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="8">
 <pre><code>0.5</code></pre>
 </div>
 </div>
 <p>불연속적이거나 비순차적인 인덱스를 사용할 수도 있습니다.</p>
 <div id="cell-19" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="9">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> pd.Series([<span class="fl">0.25</span>, <span class="fl">0.5</span>, <span class="fl">0.75</span>, <span class="fl">1.0</span>],</span>
-<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>                 index<span class="op">=</span>[<span class="dv">2</span>, <span class="dv">5</span>, <span class="dv">3</span>, <span class="dv">7</span>])</span>
-<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a>data</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> pd.Series([<span class="fl">0.25</span>, <span class="fl">0.5</span>, <span class="fl">0.75</span>, <span class="fl">1.0</span>], index<span class="op">=</span>[<span class="dv">2</span>, <span class="dv">5</span>, <span class="dv">3</span>, <span class="dv">7</span>])</span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>data</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="9">
 <pre><code>2    0.25
 5    0.50
@@ -698,11 +696,15 @@ dtype: float64</code></pre>
 <p>이런 관점에서 Pandas ’Series’는 Python 딕셔너리를 특수화한 것과 비슷하다고 생각합니다. 딕셔너리가 임의의 키를 임의의 값 집합에 매핑하는 구조라면, ’Series’는 타입이 지정된 키를 타입이 지정된 값 집합에 매핑합니다. 타입 지정은 성능 면에서 중요합니다. NumPy 배열의 타입별 컴파일 코드가 특정 연산에서 Python 리스트보다 효율적이듯, Pandas <code>Series</code>의 타입 정보도 특정 연산에서 Python 딕셔너리보다 훨씬 효율적입니다.</p>
 <p>Python 딕셔너리에서 직접 ‘Series’ 객체를 구성해 보면 ’Series’를 딕셔너리에 비유하는 것이 더욱 명확해집니다. 다음은 2020년 인구 조사 기준 미국에서 가장 인구가 많은 5개 주입니다.</p>
 <div id="cell-22" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="11">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb20"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>population_dict <span class="op">=</span> {<span class="st">'California'</span>: <span class="dv">39538223</span>, <span class="st">'Texas'</span>: <span class="dv">29145505</span>,</span>
-<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>                   <span class="st">'Florida'</span>: <span class="dv">21538187</span>, <span class="st">'New York'</span>: <span class="dv">20201249</span>,</span>
-<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a>                   <span class="st">'Pennsylvania'</span>: <span class="dv">13002700</span>}</span>
-<span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a>population <span class="op">=</span> pd.Series(population_dict)</span>
-<span id="cb20-5"><a href="#cb20-5" aria-hidden="true" tabindex="-1"></a>population</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb20"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>population_dict <span class="op">=</span> {</span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>    <span class="st">"California"</span>: <span class="dv">39538223</span>,</span>
+<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Texas"</span>: <span class="dv">29145505</span>,</span>
+<span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Florida"</span>: <span class="dv">21538187</span>,</span>
+<span id="cb20-5"><a href="#cb20-5" aria-hidden="true" tabindex="-1"></a>    <span class="st">"New York"</span>: <span class="dv">20201249</span>,</span>
+<span id="cb20-6"><a href="#cb20-6" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Pennsylvania"</span>: <span class="dv">13002700</span>,</span>
+<span id="cb20-7"><a href="#cb20-7" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb20-8"><a href="#cb20-8" aria-hidden="true" tabindex="-1"></a>population <span class="op">=</span> pd.Series(population_dict)</span>
+<span id="cb20-9"><a href="#cb20-9" aria-hidden="true" tabindex="-1"></a>population</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="11">
 <pre><code>California      39538223
 Texas           29145505
@@ -714,14 +716,14 @@ dtype: int64</code></pre>
 </div>
 <p>여기서 일반적인 딕셔너리 스타일로 항목에 접근합니다.</p>
 <div id="cell-24" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="12">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb22"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>population[<span class="st">'California'</span>]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb22"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>population[<span class="st">"California"</span>]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="12">
 <pre><code>39538223</code></pre>
 </div>
 </div>
 <p>하지만 딕셔너리와 달리 <code>Series</code>는 슬라이싱 같은 배열 스타일의 작업도 지원합니다.</p>
 <div id="cell-26" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="13">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb24"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>population[<span class="st">'California'</span>:<span class="st">'Florida'</span>]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb24"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>population[<span class="st">"California"</span>:<span class="st">"Florida"</span>]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="13">
 <pre><code>California    39538223
 Texas         29145505
@@ -758,7 +760,7 @@ dtype: int64</code></pre>
 </div>
 <p>딕셔너리일 수도 있는데, 이 경우 <code>index</code>는 딕셔너리의 키로 설정됩니다.</p>
 <div id="cell-33" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="16">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb30"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a>pd.Series({<span class="dv">2</span>:<span class="st">'a'</span>, <span class="dv">1</span>:<span class="st">'b'</span>, <span class="dv">3</span>:<span class="st">'c'</span>})</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb30"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a>pd.Series({<span class="dv">2</span>: <span class="st">"a"</span>, <span class="dv">1</span>: <span class="st">"b"</span>, <span class="dv">3</span>: <span class="st">"c"</span>})</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="16">
 <pre><code>2    a
 1    b
@@ -768,7 +770,7 @@ dtype: object</code></pre>
 </div>
 <p>필요한 경우 인덱스를 명시적으로 설정하여 사용할 키를 선택하거나 순서를 제어합니다.</p>
 <div id="cell-35" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="17">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb32"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a>pd.Series({<span class="dv">2</span>:<span class="st">'a'</span>, <span class="dv">1</span>:<span class="st">'b'</span>, <span class="dv">3</span>:<span class="st">'c'</span>}, index<span class="op">=</span>[<span class="dv">1</span>, <span class="dv">2</span>])</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb32"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a>pd.Series({<span class="dv">2</span>: <span class="st">"a"</span>, <span class="dv">1</span>: <span class="st">"b"</span>, <span class="dv">3</span>: <span class="st">"c"</span>}, index<span class="op">=</span>[<span class="dv">1</span>, <span class="dv">2</span>])</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="17">
 <pre><code>1    b
 2    a
@@ -785,10 +787,15 @@ dtype: object</code></pre>
 <p>‘Series’가 명시적 인덱스가 있는 1차원 배열과 비슷하다면, ’DataFrame’은 명시적 행 및 열 인덱스가 있는 2차원 배열과 비슷합니다. 2차원 배열을 정렬된 1차원 열들의 시퀀스로 보듯, ’DataFrame’은 정렬된 ’Series’ 객체들의 시퀀스로 생각합니다. 여기서 “정렬”이란 동일한 인덱스를 공유한다는 뜻입니다.</p>
 <p>이를 확인하기 위해 먼저 앞서 다룬 5개 주의 면적(km²)을 나열하는 새로운 ’Series’를 구성해 보겠습니다.</p>
 <div id="cell-38" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="18">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb34"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a>area_dict <span class="op">=</span> {<span class="st">'California'</span>: <span class="dv">423967</span>, <span class="st">'Texas'</span>: <span class="dv">695662</span>, <span class="st">'Florida'</span>: <span class="dv">170312</span>, </span>
-<span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a>             <span class="st">'New York'</span>: <span class="dv">141297</span>, <span class="st">'Pennsylvania'</span>: <span class="dv">119280</span>}</span>
-<span id="cb34-3"><a href="#cb34-3" aria-hidden="true" tabindex="-1"></a>area <span class="op">=</span> pd.Series(area_dict)</span>
-<span id="cb34-4"><a href="#cb34-4" aria-hidden="true" tabindex="-1"></a>area</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb34"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a>area_dict <span class="op">=</span> {</span>
+<span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a>    <span class="st">"California"</span>: <span class="dv">423967</span>,</span>
+<span id="cb34-3"><a href="#cb34-3" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Texas"</span>: <span class="dv">695662</span>,</span>
+<span id="cb34-4"><a href="#cb34-4" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Florida"</span>: <span class="dv">170312</span>,</span>
+<span id="cb34-5"><a href="#cb34-5" aria-hidden="true" tabindex="-1"></a>    <span class="st">"New York"</span>: <span class="dv">141297</span>,</span>
+<span id="cb34-6"><a href="#cb34-6" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Pennsylvania"</span>: <span class="dv">119280</span>,</span>
+<span id="cb34-7"><a href="#cb34-7" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb34-8"><a href="#cb34-8" aria-hidden="true" tabindex="-1"></a>area <span class="op">=</span> pd.Series(area_dict)</span>
+<span id="cb34-9"><a href="#cb34-9" aria-hidden="true" tabindex="-1"></a>area</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="18">
 <pre><code>California      423967
 Texas           695662
@@ -800,9 +807,8 @@ dtype: int64</code></pre>
 </div>
 <p>이제 <code>area</code>와 기존 <code>population</code> 시리즈가 준비되었으므로, 딕셔너리를 사용하여 이 정보를 포함하는 단일 2차원 객체를 생성합니다.</p>
 <div id="cell-40" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="19">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb36"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a>states <span class="op">=</span> pd.DataFrame({<span class="st">'population'</span>: population,</span>
-<span id="cb36-2"><a href="#cb36-2" aria-hidden="true" tabindex="-1"></a>                       <span class="st">'area'</span>: area})</span>
-<span id="cb36-3"><a href="#cb36-3" aria-hidden="true" tabindex="-1"></a>states</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb36"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a>states <span class="op">=</span> pd.DataFrame({<span class="st">"population"</span>: population, <span class="st">"area"</span>: area})</span>
+<span id="cb36-2"><a href="#cb36-2" aria-hidden="true" tabindex="-1"></a>states</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="19">
 <div>
 
@@ -867,7 +873,7 @@ dtype: int64</code></pre>
 <h3 class="anchored" data-anchor-id="특수화된-딕셔너리로서의-dataframe">특수화된 딕셔너리로서의 DataFrame</h3>
 <p>마찬가지로 <code>DataFrame</code>을 딕셔너리의 특수 형태로 볼 수도 있습니다. 딕셔너리가 키를 값에 매핑하듯, <code>DataFrame</code>은 열 이름을 해당 열 데이터를 담은 <code>Series</code> 객체에 매핑합니다. 예를 들어 ‘area’ 속성을 요청하면 앞서 살펴본 면적 데이터가 포함된 ‘Series’ 객체가 반환됩니다.</p>
 <div id="cell-47" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="22">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb41"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a>states[<span class="st">'area'</span>]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb41"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a>states[<span class="st">"area"</span>]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="22">
 <pre><code>California      423967
 Texas           695662
@@ -886,7 +892,7 @@ Name: area, dtype: int64</code></pre>
 <h4 class="anchored" data-anchor-id="단일-series-객체로-생성">단일 Series 객체로 생성</h4>
 <p><code>DataFrame</code>은 <code>Series</code> 객체들의 집합이며, 단일 <code>Series</code>로도 한 개 열을 가진 <code>DataFrame</code>을 만들 수 있습니다.</p>
 <div id="cell-51" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="23">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb43"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb43-1"><a href="#cb43-1" aria-hidden="true" tabindex="-1"></a>pd.DataFrame(population, columns<span class="op">=</span>[<span class="st">'population'</span>])</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb43"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb43-1"><a href="#cb43-1" aria-hidden="true" tabindex="-1"></a>pd.DataFrame(population, columns<span class="op">=</span>[<span class="st">"population"</span>])</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="23">
 <div>
 
@@ -930,9 +936,8 @@ Name: area, dtype: int64</code></pre>
 <h4 class="anchored" data-anchor-id="딕셔너리-리스트로-생성">딕셔너리 리스트로 생성</h4>
 <p>딕셔너리 리스트를 <code>DataFrame</code>으로 변환합니다. 리스트 컴프리헨션을 사용하여 간단한 데이터를 생성해 보겠습니다.</p>
 <div id="cell-53" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="24">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb44"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb44-1"><a href="#cb44-1" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> [{<span class="st">'a'</span>: i, <span class="st">'b'</span>: <span class="dv">2</span> <span class="op">*</span> i}</span>
-<span id="cb44-2"><a href="#cb44-2" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">3</span>)]</span>
-<span id="cb44-3"><a href="#cb44-3" aria-hidden="true" tabindex="-1"></a>pd.DataFrame(data)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb44"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb44-1"><a href="#cb44-1" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> [{<span class="st">"a"</span>: i, <span class="st">"b"</span>: <span class="dv">2</span> <span class="op">*</span> i} <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">3</span>)]</span>
+<span id="cb44-2"><a href="#cb44-2" aria-hidden="true" tabindex="-1"></a>pd.DataFrame(data)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="24">
 <div>
 
@@ -969,7 +974,7 @@ Name: area, dtype: int64</code></pre>
 </div>
 <p>딕셔너리에서 일부 키가 누락된 경우, Pandas는 해당 부분을 <code>NaN</code>(“Not a Number”) 값으로 채웁니다(<a href="../notebooks/03.04-Missing-Values.html">누락된 데이터 처리</a> 참고).</p>
 <div id="cell-55" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="25">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb45"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb45-1"><a href="#cb45-1" aria-hidden="true" tabindex="-1"></a>pd.DataFrame([{<span class="st">'a'</span>: <span class="dv">1</span>, <span class="st">'b'</span>: <span class="dv">2</span>}, {<span class="st">'b'</span>: <span class="dv">3</span>, <span class="st">'c'</span>: <span class="dv">4</span>}])</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb45"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb45-1"><a href="#cb45-1" aria-hidden="true" tabindex="-1"></a>pd.DataFrame([{<span class="st">"a"</span>: <span class="dv">1</span>, <span class="st">"b"</span>: <span class="dv">2</span>}, {<span class="st">"b"</span>: <span class="dv">3</span>, <span class="st">"c"</span>: <span class="dv">4</span>}])</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="25">
 <div>
 
@@ -1007,8 +1012,7 @@ Name: area, dtype: int64</code></pre>
 <h4 class="anchored" data-anchor-id="series-객체-딕셔너리로-생성">Series 객체 딕셔너리로 생성</h4>
 <p>앞서 보았듯이 <code>DataFrame</code>은 <code>Series</code> 객체들을 담은 딕셔너리로도 생성합니다.</p>
 <div id="cell-57" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="26">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb46"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb46-1"><a href="#cb46-1" aria-hidden="true" tabindex="-1"></a>pd.DataFrame({<span class="st">'population'</span>: population,</span>
-<span id="cb46-2"><a href="#cb46-2" aria-hidden="true" tabindex="-1"></a>              <span class="st">'area'</span>: area})</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb46"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb46-1"><a href="#cb46-1" aria-hidden="true" tabindex="-1"></a>pd.DataFrame({<span class="st">"population"</span>: population, <span class="st">"area"</span>: area})</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="26">
 <div>
 
@@ -1058,9 +1062,7 @@ Name: area, dtype: int64</code></pre>
 <h4 class="anchored" data-anchor-id="차원-numpy-배열로-생성">2차원 NumPy 배열로 생성</h4>
 <p>2차원 데이터 배열이 있으면 열 이름과 인덱스 이름을 지정하여 ’DataFrame’을 만들 수 있습니다. 생략할 경우 각각 정수 인덱스가 기본으로 사용됩니다.</p>
 <div id="cell-59" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="27">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb47"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb47-1"><a href="#cb47-1" aria-hidden="true" tabindex="-1"></a>pd.DataFrame(np.random.rand(<span class="dv">3</span>, <span class="dv">2</span>),</span>
-<span id="cb47-2"><a href="#cb47-2" aria-hidden="true" tabindex="-1"></a>             columns<span class="op">=</span>[<span class="st">'foo'</span>, <span class="st">'bar'</span>],</span>
-<span id="cb47-3"><a href="#cb47-3" aria-hidden="true" tabindex="-1"></a>             index<span class="op">=</span>[<span class="st">'a'</span>, <span class="st">'b'</span>, <span class="st">'c'</span>])</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb47"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb47-1"><a href="#cb47-1" aria-hidden="true" tabindex="-1"></a>pd.DataFrame(np.random.rand(<span class="dv">3</span>, <span class="dv">2</span>), columns<span class="op">=</span>[<span class="st">"foo"</span>, <span class="st">"bar"</span>], index<span class="op">=</span>[<span class="st">"a"</span>, <span class="st">"b"</span>, <span class="st">"c"</span>])</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="27">
 <div>
 
@@ -1100,7 +1102,7 @@ Name: area, dtype: int64</code></pre>
 <h4 class="anchored" data-anchor-id="numpy-구조화-배열로-생성">NumPy 구조화 배열로 생성</h4>
 <p><a href="../notebooks/02.09-Structured-Data-NumPy.html">구조화된 데이터: NumPy의 구조화된 배열</a>에서 다뤘듯, Pandas <code>DataFrame</code>은 구조화 배열과 매우 비슷하게 동작하며 다음과 같이 직접 생성합니다.</p>
 <div id="cell-61" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="28">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb48"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb48-1"><a href="#cb48-1" aria-hidden="true" tabindex="-1"></a>A <span class="op">=</span> np.zeros(<span class="dv">3</span>, dtype<span class="op">=</span>[(<span class="st">'A'</span>, <span class="st">'i8'</span>), (<span class="st">'B'</span>, <span class="st">'f8'</span>)])</span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb48"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb48-1"><a href="#cb48-1" aria-hidden="true" tabindex="-1"></a>A <span class="op">=</span> np.zeros(<span class="dv">3</span>, dtype<span class="op">=</span>[(<span class="st">"A"</span>, <span class="st">"i8"</span>), (<span class="st">"B"</span>, <span class="st">"f8"</span>)])</span>
 <span id="cb48-2"><a href="#cb48-2" aria-hidden="true" tabindex="-1"></a>A</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="28">
 <pre><code>array([(0, 0.), (0, 0.), (0, 0.)], dtype=[('A', '&lt;i8'), ('B', '&lt;f8')])</code></pre>

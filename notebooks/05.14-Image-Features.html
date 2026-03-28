@@ -595,10 +595,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>이번 장에서는 특징 추출 기술 중 하나인 <a href="https://en.wikipedia.org/wiki/Histogram_of_%20Oriented_gradients">HOG(지향성 그래디언트 히스토그램)</a>를 살펴보겠습니다. 이는 이미지 픽셀을 조명과 같은 교란 요인에 관계없이 광범위하게 유익한 이미지 특징에 민감한 벡터 표현으로 변환합니다. 우리는 이러한 기능을 사용하여 책의 이 부분 전체에서 살펴본 머신러닝(Machine Learning) 알고리즘과 개념을 사용하여 간단한 얼굴 감지 파이프라인을 개발할 것입니다.</p>
 <p>표준 가져오기부터 시작합니다.</p>
 <div id="cell-2" class="cell" data-tags="[]" data-execution_count="1">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="op">%</span>matplotlib inline</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>plt.style.use(<span class="st">'seaborn-whitegrid'</span>)</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="op">%</span>matplotlib inline</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>plt.style.use(<span class="st">'seaborn-whitegrid'</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <section id="hog-기능" class="level2">
 <h2 class="anchored" data-anchor-id="hog-기능">HOG 기능</h2>

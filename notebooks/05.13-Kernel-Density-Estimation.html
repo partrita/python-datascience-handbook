@@ -620,10 +620,10 @@ window.Quarto = {
 <p>이전 장에서 우리는 클러스터링 추정기와 밀도 추정기의 일종의 하이브리드인 가우스 혼합 모델을 다루었습니다. 밀도 추정기는 <span class="math inline">\(D\)</span> 차원 데이터 세트를 가져와서 데이터가 추출되는 <span class="math inline">\(D\)</span> 차원 확률 분포의 추정치를 생성하는 알고리즘이라는 점을 기억하세요. GMM 알고리즘은 밀도를 가우스 분포의 가중 합으로 표현하여 이를 수행합니다. <em>커널 밀도 추정</em>(KDE)은 어떤 의미에서는 가우스 혼합 아이디어를 논리적 극단으로 끌어올리는 알고리즘입니다. 즉, <em>포인트당</em> 하나의 가우스 구성 요소로 구성된 혼합을 사용하여 본질적으로 비모수적 밀도 추정기를 생성합니다. 이번 장에서는 KDE의 동기와 용도를 살펴보겠습니다.</p>
 <p>표준 가져오기부터 시작합니다.</p>
 <div id="cell-2" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="1">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="op">%</span>matplotlib inline</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>plt.style.use(<span class="st">'seaborn-whitegrid'</span>)</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="op">%</span>matplotlib inline</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>plt.style.use(<span class="st">'seaborn-whitegrid'</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <section id="커널-밀도-추정-동기-부여-히스토그램" class="level2">
 <h2 class="anchored" data-anchor-id="커널-밀도-추정-동기-부여-히스토그램">커널 밀도 추정 동기 부여: 히스토그램</h2>

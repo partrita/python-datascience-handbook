@@ -618,8 +618,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>때로는 작업을 여러 번 반복하는 것이 최선의 측정 방식이 아닐 수도 있습니다. 예를 들어 리스트를 정렬하는 작업은 반복해서 측정하면 결과가 왜곡될 수 있습니다. 이미 정렬된 리스트를 다시 정렬하는 것은 섞여 있는 리스트를 정렬하는 것보다 훨씬 빠르기 때문입니다.</p>
 <div id="cell-7" class="cell" data-execution_count="3">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> random</span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>L <span class="op">=</span> [random.random() <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">100000</span>)]</span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="op">%</span>timeit L.sort()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>L <span class="op">=</span> [random.random() <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">100000</span>)]</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="op">%</span>timeit L.sort()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>1.71 ms ± 334 µs per loop (mean ± std. dev. of 7 runs, 1000 loops each)</code></pre>
 </div>
@@ -627,9 +628,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>이럴 때는 <code>%time</code> 매직 명령어가 더 적절한 선택입니다. 또한 시스템의 일시적인 지연이 전체 결과에 큰 영향을 주지 않는, 실행 시간이 아주 긴 명령어의 시간을 측정할 때도 유용합니다. 섞여 있는 리스트와 이미 정렬된 리스트의 정렬 시간을 각각 측정해 보겠습니다.</p>
 <div id="cell-9" class="cell" data-execution_count="4">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> random</span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>L <span class="op">=</span> [random.random() <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">100000</span>)]</span>
-<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"정렬되지 않은 리스트 정렬:"</span>)</span>
-<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="op">%</span>time L.sort()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>L <span class="op">=</span> [random.random() <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">100000</span>)]</span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"정렬되지 않은 리스트 정렬:"</span>)</span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a><span class="op">%</span>time L.sort()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>sorting an unsorted list:
 CPU times: user 31.3 ms, sys: 686 µs, total: 32 ms
@@ -758,7 +760,7 @@ Line #      Hits         Time  Per Hit   % Time  Line Contents
 </div>
 <p>이제 새로 만든 모듈에서 함수를 불러와 메모리 프로파일러를 실행합니다.</p>
 <div id="cell-32" class="cell" data-execution_count="14">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb27"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> mprun_demo <span class="im">import</span> sum_of_lists</span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb27"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a><span class="op">%</span>mprun <span class="op">-</span>f sum_of_lists sum_of_lists(<span class="dv">1000000</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code></code></pre>

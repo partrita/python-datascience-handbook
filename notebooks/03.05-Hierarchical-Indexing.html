@@ -1377,7 +1377,8 @@ Name: (Bob, HR), dtype: float64</code></pre>
 </div>
 <p>인덱스 튜플 안에서 직접 슬라이싱을 시도하는 것은 다소 까다롭습니다. 튜플 내부에 슬라이스 기호(<code>:</code>)를 사용하면 구문 오류가 발생합니다.</p>
 <div id="cell-73" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="32">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb53"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb53-1"><a href="#cb53-1" aria-hidden="true" tabindex="-1"></a>health_data.loc[(:, <span class="dv">1</span>), (:, <span class="st">'HR'</span>)]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb53"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb53-1"><a href="#cb53-1" aria-hidden="true" tabindex="-1"></a>idx <span class="op">=</span> pd.IndexSlice</span>
+<span id="cb53-2"><a href="#cb53-2" aria-hidden="true" tabindex="-1"></a>health_data.loc[idx[:, <span class="dv">1</span>], idx[:, <span class="st">'HR'</span>]]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-error">
 <div class="ansi-escaped-output">
 <pre><span class="ansi-cyan-fg">  File </span><span class="ansi-green-fg">"/var/folders/xc/sptt9bk14s34rgxt7453p03r0000gp/T/ipykernel_86488/3311942670.py"</span><span class="ansi-cyan-fg">, line </span><span class="ansi-green-fg">1</span>

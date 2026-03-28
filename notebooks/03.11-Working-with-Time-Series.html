@@ -649,7 +649,8 @@ window.Quarto = {
 <p>날짜 및 시간 작업을 위한 파이썬(Python)의 기본 개체는 내장 <code>datetime</code> 모듈에 있습니다. 타사 <code>dateutil</code> 모듈과 함께 이를 사용하여 날짜 및 시간에 대한 다양한 유용한 기능을 빠르게 수행합니다. 예를 들어 <code>datetime</code> 유형을 사용하여 수동으로 날짜를 작성합니다.</p>
 <div id="cell-4" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="1">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> datetime <span class="im">import</span> datetime</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>datetime(year<span class="op">=</span><span class="dv">2021</span>, month<span class="op">=</span><span class="dv">7</span>, day<span class="op">=</span><span class="dv">4</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>datetime(year<span class="op">=</span><span class="dv">2021</span>, month<span class="op">=</span><span class="dv">7</span>, day<span class="op">=</span><span class="dv">4</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="1">
 <pre><code>datetime.datetime(2021, 7, 4, 0, 0)</code></pre>
 </div>
@@ -657,15 +658,16 @@ window.Quarto = {
 <p>또는 <code>dateutil</code> 모듈을 사용하여 다양한 문자열 형식의 날짜를 구문 분석합니다.</p>
 <div id="cell-6" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="2">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> dateutil <span class="im">import</span> parser</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>date <span class="op">=</span> parser.parse(<span class="st">"4th of July, 2021"</span>)</span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>date</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>date <span class="op">=</span> parser.parse(<span class="st">"4th of July, 2021"</span>)</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>date</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="2">
 <pre><code>datetime.datetime(2021, 7, 4, 0, 0)</code></pre>
 </div>
 </div>
 <p><code>datetime</code> 객체가 있으면 요일을 인쇄하는 등의 작업을 수행합니다.</p>
 <div id="cell-8" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="3">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>date.strftime(<span class="st">'%A'</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>date.strftime(<span class="st">"%A"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="3">
 <pre><code>'Sunday'</code></pre>
 </div>
@@ -678,8 +680,9 @@ window.Quarto = {
 <p>NumPy의 ‘datetime64’ dtype은 날짜를 64비트 정수로 인코딩하므로 날짜 배열을 간결하게 표현하고 효율적인 방식으로 작동합니다. <code>datetime64</code>에는 특정 입력 형식이 필요합니다.</p>
 <div id="cell-11" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="4">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>date <span class="op">=</span> np.array(<span class="st">'2021-07-04'</span>, dtype<span class="op">=</span>np.datetime64)</span>
-<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>date</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>date <span class="op">=</span> np.array(<span class="st">"2021-07-04"</span>, dtype<span class="op">=</span>np.datetime64)</span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>date</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="4">
 <pre><code>array('2021-07-04', dtype='datetime64[D]')</code></pre>
 </div>
@@ -698,21 +701,21 @@ window.Quarto = {
 <p><code>datetime64</code> 및 관련 <code>timedelta64</code> 객체의 한 가지 세부 사항은 <em>기본 시간 단위</em>를 기반으로 구축된다는 것입니다. <code>datetime64</code> 객체는 64비트 정밀도로 제한되므로 인코딩 가능한 시간 범위는 이 기본 단위의 <span class="math inline">\(2^{64}\)</span>배입니다. 즉, <code>datetime64</code>는 <em>시간 해상도</em>와 <em>최대 시간 범위</em> 사이에 절충안을 적용합니다.</p>
 <p>예를 들어 1나노초의 시간 분해능을 원하는 경우 <span class="math inline">\(2^{64}\)</span>나노초 범위 또는 600년 미만을 인코딩하는 데 충분한 정보만 있으면 됩니다. NumPy는 입력에서 원하는 단위를 추론합니다. 예를 들어 다음은 날짜 기반 <code>datetime</code>입니다.</p>
 <div id="cell-15" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="6">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>np.datetime64(<span class="st">'2021-07-04'</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>np.datetime64(<span class="st">"2021-07-04"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="6">
 <pre><code>numpy.datetime64('2021-07-04')</code></pre>
 </div>
 </div>
 <p>분 기반 날짜/시간은 다음과 같습니다.</p>
 <div id="cell-17" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="7">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>np.datetime64(<span class="st">'2021-07-04 12:00'</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>np.datetime64(<span class="st">"2021-07-04 12:00"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="7">
 <pre><code>numpy.datetime64('2021-07-04T12:00')</code></pre>
 </div>
 </div>
 <p>다양한 형식 코드 중 하나를 사용하여 원하는 기본 단위를 강제합니다. 예를 들어 여기서는 나노초 기반 시간을 강제 적용합니다.</p>
 <div id="cell-19" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="8">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>np.datetime64(<span class="st">'2021-07-04 12:59:59.50'</span>, <span class="st">'ns'</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>np.datetime64(<span class="st">"2021-07-04 12:59:59.50"</span>, <span class="st">"ns"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="8">
 <pre><code>numpy.datetime64('2021-07-04T12:59:59.500000000')</code></pre>
 </div>
@@ -817,21 +820,22 @@ window.Quarto = {
 <p>예를 들어 Pandas 도구를 사용하여 이전 데모를 반복합니다. Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.</p>
 <div id="cell-24" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="9">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
-<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>date <span class="op">=</span> pd.to_datetime(<span class="st">"4th of July, 2021"</span>)</span>
-<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>date</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>date <span class="op">=</span> pd.to_datetime(<span class="st">"4th of July, 2021"</span>)</span>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a>date</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="9">
 <pre><code>Timestamp('2021-07-04 00:00:00')</code></pre>
 </div>
 </div>
 <div id="cell-25" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="10">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>date.strftime(<span class="st">'%A'</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>date.strftime(<span class="st">"%A"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="10">
 <pre><code>'Sunday'</code></pre>
 </div>
 </div>
 <p>또한 동일한 객체에 대해 NumPy 스타일 벡터화 작업을 직접 수행합니다.</p>
 <div id="cell-27" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="11">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>date <span class="op">+</span> pd.to_timedelta(np.arange(<span class="dv">12</span>), <span class="st">'D'</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>date <span class="op">+</span> pd.to_timedelta(np.arange(<span class="dv">12</span>), <span class="st">"D"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="11">
 <pre><code>DatetimeIndex(['2021-07-04', '2021-07-05', '2021-07-06', '2021-07-07',
                '2021-07-08', '2021-07-09', '2021-07-10', '2021-07-11',
@@ -846,10 +850,9 @@ window.Quarto = {
 <h2 class="anchored" data-anchor-id="pandas-시계열-시간-기준-인덱싱">Pandas 시계열: 시간 기준 인덱싱</h2>
 <p>Pandas 시계열 도구는 타임스탬프로 데이터를 색인화하기 시작할 때 정말 유용합니다. 예를 들어 시간 인덱스 데이터가 있는 <code>Series</code> 객체를 생성합니다.</p>
 <div id="cell-30" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="12">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb23"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>index <span class="op">=</span> pd.DatetimeIndex([<span class="st">'2020-07-04'</span>, <span class="st">'2020-08-04'</span>,</span>
-<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a>                          <span class="st">'2021-07-04'</span>, <span class="st">'2021-08-04'</span>])</span>
-<span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> pd.Series([<span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>], index<span class="op">=</span>index)</span>
-<span id="cb23-4"><a href="#cb23-4" aria-hidden="true" tabindex="-1"></a>data</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb23"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>index <span class="op">=</span> pd.DatetimeIndex([<span class="st">"2020-07-04"</span>, <span class="st">"2020-08-04"</span>, <span class="st">"2021-07-04"</span>, <span class="st">"2021-08-04"</span>])</span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> pd.Series([<span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>], index<span class="op">=</span>index)</span>
+<span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a>data</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="12">
 <pre><code>2020-07-04    0
 2020-08-04    1
@@ -860,7 +863,7 @@ dtype: int64</code></pre>
 </div>
 <p>이제 이 데이터가 <code>계열</code>에 있으므로 이전 장에서 논의한 <code>계열</code> 인덱싱 패턴을 사용하여 날짜로 강제 변환할 수 있는 값을 전달합니다.</p>
 <div id="cell-32" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="13">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb25"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>data[<span class="st">'2020-07-04'</span>:<span class="st">'2021-07-04'</span>]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb25"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>data[<span class="st">"2020-07-04"</span>:<span class="st">"2021-07-04"</span>]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="13">
 <pre><code>2020-07-04    0
 2020-08-04    1
@@ -870,7 +873,7 @@ dtype: int64</code></pre>
 </div>
 <p>해당 연도의 모든 데이터 조각을 얻기 위해 연도를 전달하는 것과 같은 추가 특수 날짜 전용 인덱싱 작업이 있습니다.</p>
 <div id="cell-34" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="14">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb27"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a>data[<span class="st">'2021'</span>]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb27"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a>data[<span class="st">"2021"</span>]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="14">
 <pre><code>2021-07-04    2
 2021-08-04    3
@@ -889,9 +892,10 @@ dtype: int64</code></pre>
 </ul>
 <p>이러한 날짜/시간 개체 중 가장 기본적인 것은 <code>Timestamp</code> 및 <code>DatetimeIndex</code> 개체입니다. 이러한 클래스 객체를 직접 호출할 수도 있지만 다양한 형식을 구문 분석할 수 있는 <code>pd.to_datetime</code> 함수를 사용하는 것이 더 일반적입니다. 단일 날짜를 <code>pd.to_datetime</code>에 전달하면 <code>Timestamp</code>가 생성됩니다. 일련의 날짜를 전달하면 여기에서 볼 수 있듯이 ’DatetimeIndex’가 생성됩니다.</p>
 <div id="cell-38" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="15">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb29"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a>dates <span class="op">=</span> pd.to_datetime([datetime(<span class="dv">2021</span>, <span class="dv">7</span>, <span class="dv">3</span>), <span class="st">'4th of July, 2021'</span>,</span>
-<span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a>                       <span class="st">'2021-Jul-6'</span>, <span class="st">'07-07-2021'</span>, <span class="st">'20210708'</span>])</span>
-<span id="cb29-3"><a href="#cb29-3" aria-hidden="true" tabindex="-1"></a>dates</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb29"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a>dates <span class="op">=</span> pd.to_datetime(</span>
+<span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a>    [datetime(<span class="dv">2021</span>, <span class="dv">7</span>, <span class="dv">3</span>), <span class="st">"4th of July, 2021"</span>, <span class="st">"2021-Jul-6"</span>, <span class="st">"07-07-2021"</span>, <span class="st">"20210708"</span>]</span>
+<span id="cb29-3"><a href="#cb29-3" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb29-4"><a href="#cb29-4" aria-hidden="true" tabindex="-1"></a>dates</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="15">
 <pre><code>DatetimeIndex(['2021-07-03', '2021-07-04', '2021-07-06', '2021-07-07',
                '2021-07-08'],
@@ -900,7 +904,7 @@ dtype: int64</code></pre>
 </div>
 <p>모든 <code>DatetimeIndex</code>는 빈도 코드를 추가하여 <code>to_ period</code> 함수를 사용하여 <code>PeriodIndex</code>로 변환합니다. 여기서는 ``D’’를 사용하여 일일 빈도를 나타냅니다.</p>
 <div id="cell-40" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="16">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb31"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a>dates.to_period(<span class="st">'D'</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb31"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a>dates.to_period(<span class="st">"D"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="16">
 <pre><code>PeriodIndex(['2021-07-03', '2021-07-04', '2021-07-06', '2021-07-07',
              '2021-07-08'],
@@ -919,7 +923,7 @@ dtype: int64</code></pre>
 <h2 class="anchored" data-anchor-id="정기적인-시퀀스-생성-pd.date_range">정기적인 시퀀스 생성: pd.date_range</h2>
 <p>정규 날짜 시퀀스를 보다 편리하게 생성하기 위해 Pandas는 이러한 목적으로 몇 가지 함수를 제공합니다. 타임스탬프용 <code>pd.date_range</code>, 마침표용 <code>pd.기간_범위</code>, 시간 델타용 <code>pd.timedelta_range</code>. 우리는 파이썬(Python)의 <code>range</code>와 NumPy의 <code>np.arange</code>가 시작점, 끝점 및 선택적 단계 크기를 취하고 시퀀스를 반환한다는 것을 확인했습니다. 마찬가지로 <code>pd.date_range</code>는 시작 날짜, 종료 날짜 및 선택적 빈도 코드를 허용하여 일반적인 날짜 순서를 만듭니다.</p>
 <div id="cell-44" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="18">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb35"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a>pd.date_range(<span class="st">'2015-07-03'</span>, <span class="st">'2015-07-10'</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb35"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a>pd.date_range(<span class="st">"2015-07-03"</span>, <span class="st">"2015-07-10"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="18">
 <pre><code>DatetimeIndex(['2015-07-03', '2015-07-04', '2015-07-05', '2015-07-06',
                '2015-07-07', '2015-07-08', '2015-07-09', '2015-07-10'],
@@ -928,7 +932,7 @@ dtype: int64</code></pre>
 </div>
 <p>또는 시작 및 종료 지점이 아닌 시작 지점과 기간 수를 사용하여 날짜 범위를 지정합니다.</p>
 <div id="cell-46" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="19">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb37"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a>pd.date_range(<span class="st">'2015-07-03'</span>, periods<span class="op">=</span><span class="dv">8</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb37"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a>pd.date_range(<span class="st">"2015-07-03"</span>, periods<span class="op">=</span><span class="dv">8</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="19">
 <pre><code>DatetimeIndex(['2015-07-03', '2015-07-04', '2015-07-05', '2015-07-06',
                '2015-07-07', '2015-07-08', '2015-07-09', '2015-07-10'],
@@ -937,7 +941,7 @@ dtype: int64</code></pre>
 </div>
 <p>간격은 ‘freq’ 인수를 변경하여 수정할 수 있으며 기본값은 ’D’입니다. 예를 들어 여기에서는 다양한 시간별 타임스탬프를 구성합니다.</p>
 <div id="cell-48" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="20">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb39"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a>pd.date_range(<span class="st">'2015-07-03'</span>, periods<span class="op">=</span><span class="dv">8</span>, freq<span class="op">=</span><span class="st">'H'</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb39"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a>pd.date_range(<span class="st">"2015-07-03"</span>, periods<span class="op">=</span><span class="dv">8</span>, freq<span class="op">=</span><span class="st">"H"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="20">
 <pre><code>DatetimeIndex(['2015-07-03 00:00:00', '2015-07-03 01:00:00',
                '2015-07-03 02:00:00', '2015-07-03 03:00:00',
@@ -948,7 +952,7 @@ dtype: int64</code></pre>
 </div>
 <p>‘Period’ 또는 ‘Timedelta’ 값의 정규 시퀀스를 생성하려면 유사한 ‘pd.기간_범위’ 및 ‘pd.timedelta_range’ 함수가 유용합니다. 다음은 몇 가지 월별 기간입니다.</p>
 <div id="cell-50" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="21">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb41"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a>pd.period_range(<span class="st">'2015-07'</span>, periods<span class="op">=</span><span class="dv">8</span>, freq<span class="op">=</span><span class="st">'M'</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb41"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a>pd.period_range(<span class="st">"2015-07"</span>, periods<span class="op">=</span><span class="dv">8</span>, freq<span class="op">=</span><span class="st">"M"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="21">
 <pre><code>PeriodIndex(['2015-07', '2015-08', '2015-09', '2015-10', '2015-11', '2015-12',
              '2016-01', '2016-02'],
@@ -957,7 +961,7 @@ dtype: int64</code></pre>
 </div>
 <p>그리고 한 시간씩 증가하는 일련의 기간은 다음과 같습니다.</p>
 <div id="cell-52" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="22">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb43"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb43-1"><a href="#cb43-1" aria-hidden="true" tabindex="-1"></a>pd.timedelta_range(<span class="dv">0</span>, periods<span class="op">=</span><span class="dv">6</span>, freq<span class="op">=</span><span class="st">'H'</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb43"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb43-1"><a href="#cb43-1" aria-hidden="true" tabindex="-1"></a>pd.timedelta_range(<span class="dv">0</span>, periods<span class="op">=</span><span class="dv">6</span>, freq<span class="op">=</span><span class="st">"H"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="22">
 <pre><code>TimedeltaIndex(['0 days 00:00:00', '0 days 01:00:00', '0 days 02:00:00',
                 '0 days 03:00:00', '0 days 04:00:00', '0 days 05:00:00'],
@@ -1099,7 +1103,8 @@ dtype: int64</code></pre>
 <p>이러한 짧은 코드는 모두 ‘pd.tseries.offsets’ 모듈에서 찾을 수 있는 Pandas 시계열 오프셋의 특정 인스턴스를 참조합니다. 예를 들어 다음과 같이 영업일 오프셋을 직접 생성합니다.</p>
 <div id="cell-61" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="24">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb47"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb47-1"><a href="#cb47-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> pandas.tseries.offsets <span class="im">import</span> BDay</span>
-<span id="cb47-2"><a href="#cb47-2" aria-hidden="true" tabindex="-1"></a>pd.date_range(<span class="st">'2015-07-01'</span>, periods<span class="op">=</span><span class="dv">6</span>, freq<span class="op">=</span>BDay())</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb47-2"><a href="#cb47-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb47-3"><a href="#cb47-3" aria-hidden="true" tabindex="-1"></a>pd.date_range(<span class="st">"2015-07-01"</span>, periods<span class="op">=</span><span class="dv">6</span>, freq<span class="op">=</span>BDay())</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="24">
 <pre><code>DatetimeIndex(['2015-07-01', '2015-07-02', '2015-07-03', '2015-07-06',
                '2015-07-07', '2015-07-08'],
@@ -1115,9 +1120,8 @@ dtype: int64</code></pre>
 <div id="cell-64" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="25">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb49"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb49-1"><a href="#cb49-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> pandas_datareader <span class="im">import</span> data</span>
 <span id="cb49-2"><a href="#cb49-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb49-3"><a href="#cb49-3" aria-hidden="true" tabindex="-1"></a>sp500 <span class="op">=</span> data.DataReader(<span class="st">'^GSPC'</span>, start<span class="op">=</span><span class="st">'2018'</span>, end<span class="op">=</span><span class="st">'2022'</span>,</span>
-<span id="cb49-4"><a href="#cb49-4" aria-hidden="true" tabindex="-1"></a>                        data_source<span class="op">=</span><span class="st">'yahoo'</span>)</span>
-<span id="cb49-5"><a href="#cb49-5" aria-hidden="true" tabindex="-1"></a>sp500.head()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb49-3"><a href="#cb49-3" aria-hidden="true" tabindex="-1"></a>sp500 <span class="op">=</span> data.DataReader(<span class="st">"^GSPC"</span>, start<span class="op">=</span><span class="st">"2018"</span>, end<span class="op">=</span><span class="st">"2022"</span>, data_source<span class="op">=</span><span class="st">"yahoo"</span>)</span>
+<span id="cb49-4"><a href="#cb49-4" aria-hidden="true" tabindex="-1"></a>sp500.head()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="25">
 <div>
 
@@ -1197,14 +1201,15 @@ dtype: int64</code></pre>
 </div>
 <p>단순화를 위해 종가만 사용하겠습니다.</p>
 <div id="cell-66" class="cell" data-tags="[]" data-execution_count="26">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb50"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb50-1"><a href="#cb50-1" aria-hidden="true" tabindex="-1"></a>sp500 <span class="op">=</span> sp500[<span class="st">'Close'</span>]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb50"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb50-1"><a href="#cb50-1" aria-hidden="true" tabindex="-1"></a>sp500 <span class="op">=</span> sp500[<span class="st">"Close"</span>]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>일반적인 Matplotlib 설정 상용구(<a href="../notebooks/04.00-Introduction-To-Matplotlib.html">4부</a> 참조) 이후 <code>plot</code> 메서드를 사용하여 이를 시각화합니다. 결과는 다음 그림에 나와 있습니다.</p>
 <div id="cell-68" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="27">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb51"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb51-1"><a href="#cb51-1" aria-hidden="true" tabindex="-1"></a><span class="op">%</span>matplotlib inline</span>
 <span id="cb51-2"><a href="#cb51-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
-<span id="cb51-3"><a href="#cb51-3" aria-hidden="true" tabindex="-1"></a>plt.style.use(<span class="st">'seaborn-whitegrid'</span>)</span>
-<span id="cb51-4"><a href="#cb51-4" aria-hidden="true" tabindex="-1"></a>sp500.plot()<span class="op">;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb51-3"><a href="#cb51-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb51-4"><a href="#cb51-4" aria-hidden="true" tabindex="-1"></a>plt.style.use(<span class="st">"seaborn-whitegrid"</span>)</span>
+<span id="cb51-5"><a href="#cb51-5" aria-hidden="true" tabindex="-1"></a>sp500.plot()<span class="op">;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -1218,11 +1223,10 @@ dtype: int64</code></pre>
 <p>시계열 데이터를 처리할 때 일반적으로 필요한 것 중 하나는 더 높거나 낮은 빈도로 리샘플링하는 것입니다. 이는 <code>resample</code> 방법이나 훨씬 간단한 <code>asfreq</code> 방법을 사용하여 수행합니다. 둘 사이의 주요 차이점은 <code>resample</code>은 <em>데이터 집계</em>인 반면 <code>asfreq</code>는 <em>데이터 선택</em>이라는 것입니다.</p>
 <p>S&amp;P 500 종가 데이터를 다운샘플링할 때 두 값이 무엇을 반환하는지 비교해 보겠습니다. 여기서는 사업연도 말에 데이터를 다시 샘플링하겠습니다. 다음 그림은 결과를 보여줍니다.</p>
 <div id="cell-70" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="28">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb52"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb52-1"><a href="#cb52-1" aria-hidden="true" tabindex="-1"></a>sp500.plot(alpha<span class="op">=</span><span class="fl">0.5</span>, style<span class="op">=</span><span class="st">'-'</span>)</span>
-<span id="cb52-2"><a href="#cb52-2" aria-hidden="true" tabindex="-1"></a>sp500.resample(<span class="st">'BA'</span>).mean().plot(style<span class="op">=</span><span class="st">':'</span>)</span>
-<span id="cb52-3"><a href="#cb52-3" aria-hidden="true" tabindex="-1"></a>sp500.asfreq(<span class="st">'BA'</span>).plot(style<span class="op">=</span><span class="st">'--'</span>)<span class="op">;</span></span>
-<span id="cb52-4"><a href="#cb52-4" aria-hidden="true" tabindex="-1"></a>plt.legend([<span class="st">'input'</span>, <span class="st">'resample'</span>, <span class="st">'asfreq'</span>],</span>
-<span id="cb52-5"><a href="#cb52-5" aria-hidden="true" tabindex="-1"></a>           loc<span class="op">=</span><span class="st">'upper left'</span>)<span class="op">;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb52"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb52-1"><a href="#cb52-1" aria-hidden="true" tabindex="-1"></a>sp500.plot(alpha<span class="op">=</span><span class="fl">0.5</span>, style<span class="op">=</span><span class="st">"-"</span>)</span>
+<span id="cb52-2"><a href="#cb52-2" aria-hidden="true" tabindex="-1"></a>sp500.resample(<span class="st">"BA"</span>).mean().plot(style<span class="op">=</span><span class="st">":"</span>)</span>
+<span id="cb52-3"><a href="#cb52-3" aria-hidden="true" tabindex="-1"></a>sp500.asfreq(<span class="st">"BA"</span>).plot(style<span class="op">=</span><span class="st">"--"</span>)</span>
+<span id="cb52-4"><a href="#cb52-4" aria-hidden="true" tabindex="-1"></a>plt.legend([<span class="st">"input"</span>, <span class="st">"resample"</span>, <span class="st">"asfreq"</span>], loc<span class="op">=</span><span class="st">"upper left"</span>)<span class="op">;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -1237,10 +1241,10 @@ dtype: int64</code></pre>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb53"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb53-1"><a href="#cb53-1" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots(<span class="dv">2</span>, sharex<span class="op">=</span><span class="va">True</span>)</span>
 <span id="cb53-2"><a href="#cb53-2" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> sp500.iloc[:<span class="dv">20</span>]</span>
 <span id="cb53-3"><a href="#cb53-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb53-4"><a href="#cb53-4" aria-hidden="true" tabindex="-1"></a>data.asfreq(<span class="st">'D'</span>).plot(ax<span class="op">=</span>ax[<span class="dv">0</span>], marker<span class="op">=</span><span class="st">'o'</span>)</span>
+<span id="cb53-4"><a href="#cb53-4" aria-hidden="true" tabindex="-1"></a>data.asfreq(<span class="st">"D"</span>).plot(ax<span class="op">=</span>ax[<span class="dv">0</span>], marker<span class="op">=</span><span class="st">"o"</span>)</span>
 <span id="cb53-5"><a href="#cb53-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb53-6"><a href="#cb53-6" aria-hidden="true" tabindex="-1"></a>data.asfreq(<span class="st">'D'</span>, method<span class="op">=</span><span class="st">'bfill'</span>).plot(ax<span class="op">=</span>ax[<span class="dv">1</span>], style<span class="op">=</span><span class="st">'-o'</span>)</span>
-<span id="cb53-7"><a href="#cb53-7" aria-hidden="true" tabindex="-1"></a>data.asfreq(<span class="st">'D'</span>, method<span class="op">=</span><span class="st">'ffill'</span>).plot(ax<span class="op">=</span>ax[<span class="dv">1</span>], style<span class="op">=</span><span class="st">'--o'</span>)</span>
+<span id="cb53-6"><a href="#cb53-6" aria-hidden="true" tabindex="-1"></a>data.asfreq(<span class="st">"D"</span>, method<span class="op">=</span><span class="st">"bfill"</span>).plot(ax<span class="op">=</span>ax[<span class="dv">1</span>], style<span class="op">=</span><span class="st">"-o"</span>)</span>
+<span id="cb53-7"><a href="#cb53-7" aria-hidden="true" tabindex="-1"></a>data.asfreq(<span class="st">"D"</span>, method<span class="op">=</span><span class="st">"ffill"</span>).plot(ax<span class="op">=</span>ax[<span class="dv">1</span>], style<span class="op">=</span><span class="st">"--o"</span>)</span>
 <span id="cb53-8"><a href="#cb53-8" aria-hidden="true" tabindex="-1"></a>ax[<span class="dv">1</span>].legend([<span class="st">"back-fill"</span>, <span class="st">"forward-fill"</span>])<span class="op">;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div>
@@ -1257,11 +1261,11 @@ dtype: int64</code></pre>
 <p>또 다른 일반적인 시계열별 작업은 시간에 따른 데이터 이동입니다. 이를 위해 Pandas는 주어진 항목 수만큼 데이터를 이동하는 데 사용할 수 있는 ‘shift’ 메서드를 제공합니다. 일정한 빈도로 샘플링된 시계열 데이터를 사용하면 시간 경과에 따른 추세를 탐색할 수 있는 방법을 얻을 수 있습니다.</p>
 <p>예를 들어 여기서는 데이터를 일일 값으로 다시 샘플링하고 364만큼 이동하여 시간 경과에 따른 S&amp;P 500의 1년 투자 수익률을 계산합니다(다음 그림 참조).</p>
 <div id="cell-76" class="cell" data-execution_count="30">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb54"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb54-1"><a href="#cb54-1" aria-hidden="true" tabindex="-1"></a>sp500 <span class="op">=</span> sp500.asfreq(<span class="st">'D'</span>, method<span class="op">=</span><span class="st">'pad'</span>)</span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb54"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb54-1"><a href="#cb54-1" aria-hidden="true" tabindex="-1"></a>sp500 <span class="op">=</span> sp500.asfreq(<span class="st">"D"</span>, method<span class="op">=</span><span class="st">"pad"</span>)</span>
 <span id="cb54-2"><a href="#cb54-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb54-3"><a href="#cb54-3" aria-hidden="true" tabindex="-1"></a>ROI <span class="op">=</span> <span class="dv">100</span> <span class="op">*</span> (sp500.shift(<span class="op">-</span><span class="dv">365</span>) <span class="op">-</span> sp500) <span class="op">/</span> sp500</span>
 <span id="cb54-4"><a href="#cb54-4" aria-hidden="true" tabindex="-1"></a>ROI.plot()</span>
-<span id="cb54-5"><a href="#cb54-5" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">'% Return on Investment after 1 year'</span>)<span class="op">;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb54-5"><a href="#cb54-5" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">"% Return on Investment after 1 year"</span>)<span class="op">;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -1279,11 +1283,15 @@ dtype: int64</code></pre>
 <div id="cell-80" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="31">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb55"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb55-1"><a href="#cb55-1" aria-hidden="true" tabindex="-1"></a>rolling <span class="op">=</span> sp500.rolling(<span class="dv">365</span>, center<span class="op">=</span><span class="va">True</span>)</span>
 <span id="cb55-2"><a href="#cb55-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb55-3"><a href="#cb55-3" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> pd.DataFrame({<span class="st">'input'</span>: sp500,</span>
-<span id="cb55-4"><a href="#cb55-4" aria-hidden="true" tabindex="-1"></a>                     <span class="st">'one-year rolling_mean'</span>: rolling.mean(),</span>
-<span id="cb55-5"><a href="#cb55-5" aria-hidden="true" tabindex="-1"></a>                     <span class="st">'one-year rolling_median'</span>: rolling.median()})</span>
-<span id="cb55-6"><a href="#cb55-6" aria-hidden="true" tabindex="-1"></a>ax <span class="op">=</span> data.plot(style<span class="op">=</span>[<span class="st">'-'</span>, <span class="st">'--'</span>, <span class="st">':'</span>])</span>
-<span id="cb55-7"><a href="#cb55-7" aria-hidden="true" tabindex="-1"></a>ax.lines[<span class="dv">0</span>].set_alpha(<span class="fl">0.3</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb55-3"><a href="#cb55-3" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> pd.DataFrame(</span>
+<span id="cb55-4"><a href="#cb55-4" aria-hidden="true" tabindex="-1"></a>    {</span>
+<span id="cb55-5"><a href="#cb55-5" aria-hidden="true" tabindex="-1"></a>        <span class="st">"input"</span>: sp500,</span>
+<span id="cb55-6"><a href="#cb55-6" aria-hidden="true" tabindex="-1"></a>        <span class="st">"one-year rolling_mean"</span>: rolling.mean(),</span>
+<span id="cb55-7"><a href="#cb55-7" aria-hidden="true" tabindex="-1"></a>        <span class="st">"one-year rolling_median"</span>: rolling.median(),</span>
+<span id="cb55-8"><a href="#cb55-8" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb55-9"><a href="#cb55-9" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb55-10"><a href="#cb55-10" aria-hidden="true" tabindex="-1"></a>ax <span class="op">=</span> data.plot(style<span class="op">=</span>[<span class="st">"-"</span>, <span class="st">"--"</span>, <span class="st">":"</span>])</span>
+<span id="cb55-11"><a href="#cb55-11" aria-hidden="true" tabindex="-1"></a>ax.lines[<span class="dv">0</span>].set_alpha(<span class="fl">0.3</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -1312,7 +1320,7 @@ dtype: int64</code></pre>
 </div>
 <p>이 데이터 세트가 다운로드되면 Pandas를 사용하여 CSV 출력을 ’DataFrame’으로 읽을 수 있습니다. <code>Date</code> 열을 인덱스로 지정하고 이러한 날짜가 자동으로 구문 분석되도록 지정합니다.</p>
 <div id="cell-86" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="33">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb57"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb57-1"><a href="#cb57-1" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> pd.read_csv(<span class="st">'FremontBridge.csv'</span>, index_col<span class="op">=</span><span class="st">'Date'</span>, parse_dates<span class="op">=</span><span class="va">True</span>)</span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb57"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb57-1"><a href="#cb57-1" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> pd.read_csv(<span class="st">"FremontBridge.csv"</span>, index_col<span class="op">=</span><span class="st">"Date"</span>, parse_dates<span class="op">=</span><span class="va">True</span>)</span>
 <span id="cb57-2"><a href="#cb57-2" aria-hidden="true" tabindex="-1"></a>data.head()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="33">
 <div>
@@ -1372,7 +1380,7 @@ dtype: int64</code></pre>
 </div>
 <p>편의상 열 이름을 짧게 하겠습니다.</p>
 <div id="cell-88" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="34">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb58"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb58-1"><a href="#cb58-1" aria-hidden="true" tabindex="-1"></a>data.columns <span class="op">=</span> [<span class="st">'Total'</span>, <span class="st">'East'</span>, <span class="st">'West'</span>]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb58"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb58-1"><a href="#cb58-1" aria-hidden="true" tabindex="-1"></a>data.columns <span class="op">=</span> [<span class="st">"Total"</span>, <span class="st">"East"</span>, <span class="st">"West"</span>]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>이제 이 데이터에 대한 요약 통계를 살펴보겠습니다.</p>
 <div id="cell-90" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="35">
@@ -1450,7 +1458,7 @@ dtype: int64</code></pre>
 <p>데이터 세트를 시각화함으로써 데이터 세트에 대한 통찰력을 얻을 수 있습니다. 원시 데이터를 그리는 것부터 시작해 보겠습니다(다음 그림 참조).</p>
 <div id="cell-92" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="36">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb60"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb60-1"><a href="#cb60-1" aria-hidden="true" tabindex="-1"></a>data.plot()</span>
-<span id="cb60-2"><a href="#cb60-2" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">'Hourly Bicycle Count'</span>)<span class="op">;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb60-2"><a href="#cb60-2" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">"Hourly Bicycle Count"</span>)<span class="op">;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -1461,9 +1469,9 @@ dtype: int64</code></pre>
 </div>
 <p>~150,000개의 시간당 샘플은 우리가 이해하기에는 너무 밀도가 높습니다. 데이터를 더 거친 그리드로 리샘플링하면 더 많은 통찰력을 얻을 수 있습니다. 주별로 다시 샘플링해 보겠습니다(다음 그림 참조).</p>
 <div id="cell-94" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="37">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb61"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb61-1"><a href="#cb61-1" aria-hidden="true" tabindex="-1"></a>weekly <span class="op">=</span> data.resample(<span class="st">'W'</span>).<span class="bu">sum</span>()</span>
-<span id="cb61-2"><a href="#cb61-2" aria-hidden="true" tabindex="-1"></a>weekly.plot(style<span class="op">=</span>[<span class="st">'-'</span>, <span class="st">':'</span>, <span class="st">'--'</span>])</span>
-<span id="cb61-3"><a href="#cb61-3" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">'Weekly bicycle count'</span>)<span class="op">;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb61"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb61-1"><a href="#cb61-1" aria-hidden="true" tabindex="-1"></a>weekly <span class="op">=</span> data.resample(<span class="st">"W"</span>).<span class="bu">sum</span>()</span>
+<span id="cb61-2"><a href="#cb61-2" aria-hidden="true" tabindex="-1"></a>weekly.plot(style<span class="op">=</span>[<span class="st">"-"</span>, <span class="st">":"</span>, <span class="st">"--"</span>])</span>
+<span id="cb61-3"><a href="#cb61-3" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">"Weekly bicycle count"</span>)<span class="op">;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -1475,9 +1483,9 @@ dtype: int64</code></pre>
 <p>이는 몇 가지 추세를 보여줍니다. 예상할 수 있듯이 사람들은 겨울보다 여름에 자전거를 더 많이 타고, 심지어 특정 계절에도 자전거 사용은 매주 다릅니다(날씨에 따라 달라질 수 있습니다. 자세한 내용은 <a href="../notebooks/05.06-Linear-Regression.html">In Depth: Linear Regression</a>을 참조하세요). 또한, 2020년 초부터 코로나19 팬데믹이 통근 패턴에 미치는 영향은 매우 분명합니다.</p>
 <p>데이터를 집계하는 데 유용한 또 다른 옵션은 <code>pd.rolling_mean</code> 함수를 활용하여 롤링 평균을 사용하는 것입니다. 여기서는 데이터의 30일 이동 평균을 검사하여 창을 중앙에 배치합니다(다음 그림 참조).</p>
 <div id="cell-96" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="38">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb62"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb62-1"><a href="#cb62-1" aria-hidden="true" tabindex="-1"></a>daily <span class="op">=</span> data.resample(<span class="st">'D'</span>).<span class="bu">sum</span>()</span>
-<span id="cb62-2"><a href="#cb62-2" aria-hidden="true" tabindex="-1"></a>daily.rolling(<span class="dv">30</span>, center<span class="op">=</span><span class="va">True</span>).<span class="bu">sum</span>().plot(style<span class="op">=</span>[<span class="st">'-'</span>, <span class="st">':'</span>, <span class="st">'--'</span>])</span>
-<span id="cb62-3"><a href="#cb62-3" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">'mean hourly count'</span>)<span class="op">;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb62"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb62-1"><a href="#cb62-1" aria-hidden="true" tabindex="-1"></a>daily <span class="op">=</span> data.resample(<span class="st">"D"</span>).<span class="bu">sum</span>()</span>
+<span id="cb62-2"><a href="#cb62-2" aria-hidden="true" tabindex="-1"></a>daily.rolling(<span class="dv">30</span>, center<span class="op">=</span><span class="va">True</span>).<span class="bu">sum</span>().plot(style<span class="op">=</span>[<span class="st">"-"</span>, <span class="st">":"</span>, <span class="st">"--"</span>])</span>
+<span id="cb62-3"><a href="#cb62-3" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">"mean hourly count"</span>)<span class="op">;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -1488,8 +1496,9 @@ dtype: int64</code></pre>
 </div>
 <p>결과의 들쭉날쭉한 부분은 창의 하드 컷오프로 인해 발생합니다. 다음 그림에 표시된 것처럼 가우스 창과 같은 창 함수를 사용하여 보다 부드러운 버전의 이동 평균을 얻을 수 있습니다. 다음 코드는 창 너비(여기서는 50일)와 가우스 창 너비(여기서는 10일)를 모두 지정합니다.</p>
 <div id="cell-98" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="39">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb63"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb63-1"><a href="#cb63-1" aria-hidden="true" tabindex="-1"></a>daily.rolling(<span class="dv">50</span>, center<span class="op">=</span><span class="va">True</span>,</span>
-<span id="cb63-2"><a href="#cb63-2" aria-hidden="true" tabindex="-1"></a>              win_type<span class="op">=</span><span class="st">'gaussian'</span>).<span class="bu">sum</span>(std<span class="op">=</span><span class="dv">10</span>).plot(style<span class="op">=</span>[<span class="st">'-'</span>, <span class="st">':'</span>, <span class="st">'--'</span>])<span class="op">;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb63"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb63-1"><a href="#cb63-1" aria-hidden="true" tabindex="-1"></a>daily.rolling(<span class="dv">50</span>, center<span class="op">=</span><span class="va">True</span>, win_type<span class="op">=</span><span class="st">"gaussian"</span>).<span class="bu">sum</span>(std<span class="op">=</span><span class="dv">10</span>).plot(</span>
+<span id="cb63-2"><a href="#cb63-2" aria-hidden="true" tabindex="-1"></a>    style<span class="op">=</span>[<span class="st">"-"</span>, <span class="st">":"</span>, <span class="st">"--"</span>]</span>
+<span id="cb63-3"><a href="#cb63-3" aria-hidden="true" tabindex="-1"></a>)<span class="op">;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -1505,7 +1514,7 @@ dtype: int64</code></pre>
 <div id="cell-100" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="40">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb64"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb64-1"><a href="#cb64-1" aria-hidden="true" tabindex="-1"></a>by_time <span class="op">=</span> data.groupby(data.index.time).mean()</span>
 <span id="cb64-2"><a href="#cb64-2" aria-hidden="true" tabindex="-1"></a>hourly_ticks <span class="op">=</span> <span class="dv">4</span> <span class="op">*</span> <span class="dv">60</span> <span class="op">*</span> <span class="dv">60</span> <span class="op">*</span> np.arange(<span class="dv">6</span>)</span>
-<span id="cb64-3"><a href="#cb64-3" aria-hidden="true" tabindex="-1"></a>by_time.plot(xticks<span class="op">=</span>hourly_ticks, style<span class="op">=</span>[<span class="st">'-'</span>, <span class="st">':'</span>, <span class="st">'--'</span>])<span class="op">;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb64-3"><a href="#cb64-3" aria-hidden="true" tabindex="-1"></a>by_time.plot(xticks<span class="op">=</span>hourly_ticks, style<span class="op">=</span>[<span class="st">"-"</span>, <span class="st">":"</span>, <span class="st">"--"</span>])<span class="op">;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -1518,8 +1527,8 @@ dtype: int64</code></pre>
 <p>또한 요일에 따라 상황이 어떻게 변하는지 궁금할 수도 있습니다. 이번에도 간단한 <code>groupby</code>를 사용하여 이 작업을 수행합니다(다음 그림 참조).</p>
 <div id="cell-102" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="41">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb65"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb65-1"><a href="#cb65-1" aria-hidden="true" tabindex="-1"></a>by_weekday <span class="op">=</span> data.groupby(data.index.dayofweek).mean()</span>
-<span id="cb65-2"><a href="#cb65-2" aria-hidden="true" tabindex="-1"></a>by_weekday.index <span class="op">=</span> [<span class="st">'Mon'</span>, <span class="st">'Tues'</span>, <span class="st">'Wed'</span>, <span class="st">'Thurs'</span>, <span class="st">'Fri'</span>, <span class="st">'Sat'</span>, <span class="st">'Sun'</span>]</span>
-<span id="cb65-3"><a href="#cb65-3" aria-hidden="true" tabindex="-1"></a>by_weekday.plot(style<span class="op">=</span>[<span class="st">'-'</span>, <span class="st">':'</span>, <span class="st">'--'</span>])<span class="op">;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb65-2"><a href="#cb65-2" aria-hidden="true" tabindex="-1"></a>by_weekday.index <span class="op">=</span> [<span class="st">"Mon"</span>, <span class="st">"Tues"</span>, <span class="st">"Wed"</span>, <span class="st">"Thurs"</span>, <span class="st">"Fri"</span>, <span class="st">"Sat"</span>, <span class="st">"Sun"</span>]</span>
+<span id="cb65-3"><a href="#cb65-3" aria-hidden="true" tabindex="-1"></a>by_weekday.plot(style<span class="op">=</span>[<span class="st">"-"</span>, <span class="st">":"</span>, <span class="st">"--"</span>])<span class="op">;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -1531,17 +1540,20 @@ dtype: int64</code></pre>
 <p>이는 주중과 주말의 총합 사이에 뚜렷한 차이가 있음을 보여주며, 토요일과 일요일보다 월요일부터 금요일까지 다리를 건너는 평균 라이더가 약 2배 더 많습니다.</p>
 <p>이를 염두에 두고 복합 ’groupby’를 수행하여 주중과 주말의 시간별 추세를 살펴보겠습니다. 주말과 시간을 표시하는 플래그별로 그룹화하는 것부터 시작하겠습니다.</p>
 <div id="cell-104" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="42">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb66"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb66-1"><a href="#cb66-1" aria-hidden="true" tabindex="-1"></a>weekend <span class="op">=</span> np.where(data.index.weekday <span class="op">&lt;</span> <span class="dv">5</span>, <span class="st">'Weekday'</span>, <span class="st">'Weekend'</span>)</span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb66"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb66-1"><a href="#cb66-1" aria-hidden="true" tabindex="-1"></a>weekend <span class="op">=</span> np.where(data.index.weekday <span class="op">&lt;</span> <span class="dv">5</span>, <span class="st">"Weekday"</span>, <span class="st">"Weekend"</span>)</span>
 <span id="cb66-2"><a href="#cb66-2" aria-hidden="true" tabindex="-1"></a>by_time <span class="op">=</span> data.groupby([weekend, data.index.time]).mean()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>이제 다음 그림과 같이 <a href="../notebooks/04.08-Multiple-Subplots.html">Multiple Subplots</a>에서 설명할 Matplotlib 도구 중 일부를 사용하여 두 패널을 나란히 플롯합니다.</p>
 <div id="cell-106" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="43">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb67"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb67-1"><a href="#cb67-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
-<span id="cb67-2"><a href="#cb67-2" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots(<span class="dv">1</span>, <span class="dv">2</span>, figsize<span class="op">=</span>(<span class="dv">14</span>, <span class="dv">5</span>))</span>
-<span id="cb67-3"><a href="#cb67-3" aria-hidden="true" tabindex="-1"></a>by_time.loc[<span class="st">'Weekday'</span>].plot(ax<span class="op">=</span>ax[<span class="dv">0</span>], title<span class="op">=</span><span class="st">'Weekdays'</span>,</span>
-<span id="cb67-4"><a href="#cb67-4" aria-hidden="true" tabindex="-1"></a>                            xticks<span class="op">=</span>hourly_ticks, style<span class="op">=</span>[<span class="st">'-'</span>, <span class="st">':'</span>, <span class="st">'--'</span>])</span>
-<span id="cb67-5"><a href="#cb67-5" aria-hidden="true" tabindex="-1"></a>by_time.loc[<span class="st">'Weekend'</span>].plot(ax<span class="op">=</span>ax[<span class="dv">1</span>], title<span class="op">=</span><span class="st">'Weekends'</span>,</span>
-<span id="cb67-6"><a href="#cb67-6" aria-hidden="true" tabindex="-1"></a>                            xticks<span class="op">=</span>hourly_ticks, style<span class="op">=</span>[<span class="st">'-'</span>, <span class="st">':'</span>, <span class="st">'--'</span>])<span class="op">;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb67-2"><a href="#cb67-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb67-3"><a href="#cb67-3" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots(<span class="dv">1</span>, <span class="dv">2</span>, figsize<span class="op">=</span>(<span class="dv">14</span>, <span class="dv">5</span>))</span>
+<span id="cb67-4"><a href="#cb67-4" aria-hidden="true" tabindex="-1"></a>by_time.loc[<span class="st">"Weekday"</span>].plot(</span>
+<span id="cb67-5"><a href="#cb67-5" aria-hidden="true" tabindex="-1"></a>    ax<span class="op">=</span>ax[<span class="dv">0</span>], title<span class="op">=</span><span class="st">"Weekdays"</span>, xticks<span class="op">=</span>hourly_ticks, style<span class="op">=</span>[<span class="st">"-"</span>, <span class="st">":"</span>, <span class="st">"--"</span>]</span>
+<span id="cb67-6"><a href="#cb67-6" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb67-7"><a href="#cb67-7" aria-hidden="true" tabindex="-1"></a>by_time.loc[<span class="st">"Weekend"</span>].plot(</span>
+<span id="cb67-8"><a href="#cb67-8" aria-hidden="true" tabindex="-1"></a>    ax<span class="op">=</span>ax[<span class="dv">1</span>], title<span class="op">=</span><span class="st">"Weekends"</span>, xticks<span class="op">=</span>hourly_ticks, style<span class="op">=</span>[<span class="st">"-"</span>, <span class="st">":"</span>, <span class="st">"--"</span>]</span>
+<span id="cb67-9"><a href="#cb67-9" aria-hidden="true" tabindex="-1"></a>)<span class="op">;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">

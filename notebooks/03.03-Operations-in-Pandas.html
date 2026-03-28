@@ -612,9 +612,8 @@ dtype: int64</code></pre>
 </div>
 </div>
 <div id="cell-5" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="3">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.DataFrame(rng.integers(<span class="dv">0</span>, <span class="dv">10</span>, (<span class="dv">3</span>, <span class="dv">4</span>)),</span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>                  columns<span class="op">=</span>[<span class="st">'A'</span>, <span class="st">'B'</span>, <span class="st">'C'</span>, <span class="st">'D'</span>])</span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>df</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.DataFrame(rng.integers(<span class="dv">0</span>, <span class="dv">10</span>, (<span class="dv">3</span>, <span class="dv">4</span>)), columns<span class="op">=</span>[<span class="st">"A"</span>, <span class="st">"B"</span>, <span class="st">"C"</span>, <span class="st">"D"</span>])</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>df</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="3">
 <div>
 
@@ -722,10 +721,12 @@ dtype: float64</code></pre>
 <h3 class="anchored" data-anchor-id="series-인덱스-정렬">Series 인덱스 정렬</h3>
 <p>예를 들어 서로 다른 소스에서 데이터를 가져와서, <em>면적</em> 기준 미국 상위 3개 주와 <em>인구</em> 기준 미국 상위 3개 주를 비교한다고 가정해 보겠습니다.</p>
 <div id="cell-13" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="6">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>area <span class="op">=</span> pd.Series({<span class="st">'Alaska'</span>: <span class="dv">1723337</span>, <span class="st">'Texas'</span>: <span class="dv">695662</span>,</span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>                  <span class="st">'California'</span>: <span class="dv">423967</span>}, name<span class="op">=</span><span class="st">'area'</span>)</span>
-<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>population <span class="op">=</span> pd.Series({<span class="st">'California'</span>: <span class="dv">39538223</span>, <span class="st">'Texas'</span>: <span class="dv">29145505</span>,</span>
-<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>                        <span class="st">'Florida'</span>: <span class="dv">21538187</span>}, name<span class="op">=</span><span class="st">'population'</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>area <span class="op">=</span> pd.Series(</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>    {<span class="st">"Alaska"</span>: <span class="dv">1723337</span>, <span class="st">"Texas"</span>: <span class="dv">695662</span>, <span class="st">"California"</span>: <span class="dv">423967</span>}, name<span class="op">=</span><span class="st">"area"</span></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>population <span class="op">=</span> pd.Series(</span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>    {<span class="st">"California"</span>: <span class="dv">39538223</span>, <span class="st">"Texas"</span>: <span class="dv">29145505</span>, <span class="st">"Florida"</span>: <span class="dv">21538187</span>}, name<span class="op">=</span><span class="st">"population"</span></span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>인구 밀도를 계산하기 위해 이들을 나누면 어떤 결과가 나오는지 살펴보겠습니다.</p>
 <div id="cell-15" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="7">
@@ -774,9 +775,8 @@ dtype: float64</code></pre>
 <h3 class="anchored" data-anchor-id="dataframe-인덱스-정렬">DataFrame 인덱스 정렬</h3>
 <p><code>DataFrame</code> 객체 연산에서도 행(Index)과 열(Column) <em>모두</em>에 대해 동일한 방식의 정렬이 이루어집니다.</p>
 <div id="cell-23" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="11">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>A <span class="op">=</span> pd.DataFrame(rng.integers(<span class="dv">0</span>, <span class="dv">20</span>, (<span class="dv">2</span>, <span class="dv">2</span>)),</span>
-<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>                 columns<span class="op">=</span>[<span class="st">'a'</span>, <span class="st">'b'</span>])</span>
-<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>A</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>A <span class="op">=</span> pd.DataFrame(rng.integers(<span class="dv">0</span>, <span class="dv">20</span>, (<span class="dv">2</span>, <span class="dv">2</span>)), columns<span class="op">=</span>[<span class="st">"a"</span>, <span class="st">"b"</span>])</span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>A</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="11">
 <div>
 
@@ -807,9 +807,8 @@ dtype: float64</code></pre>
 </div>
 </div>
 <div id="cell-24" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="12">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>B <span class="op">=</span> pd.DataFrame(rng.integers(<span class="dv">0</span>, <span class="dv">10</span>, (<span class="dv">3</span>, <span class="dv">3</span>)),</span>
-<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>                 columns<span class="op">=</span>[<span class="st">'b'</span>, <span class="st">'a'</span>, <span class="st">'c'</span>])</span>
-<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>B</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>B <span class="op">=</span> pd.DataFrame(rng.integers(<span class="dv">0</span>, <span class="dv">10</span>, (<span class="dv">3</span>, <span class="dv">3</span>)), columns<span class="op">=</span>[<span class="st">"b"</span>, <span class="st">"a"</span>, <span class="st">"c"</span>])</span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>B</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="12">
 <div>
 
@@ -993,7 +992,7 @@ dtype: float64</code></pre>
 <p>NumPy의 브로드캐스팅(Broadcasting) 규칙(<a href="../notebooks/02.05-Computation-on-arrays-broadcasting.html">배열 연산: 브로드캐스팅</a> 참고)에 따라, 2차원 배열에서 한 행을 빼면 행 단위로 뺄셈이 적용됩니다.</p>
 <p>Pandas에서도 이와 유사하게 행 단위 연산이 기본으로 작동합니다.</p>
 <div id="cell-33" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="17">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb25"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.DataFrame(A, columns<span class="op">=</span>[<span class="st">'Q'</span>, <span class="st">'R'</span>, <span class="st">'S'</span>, <span class="st">'T'</span>])</span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb25"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.DataFrame(A, columns<span class="op">=</span>[<span class="st">"Q"</span>, <span class="st">"R"</span>, <span class="st">"S"</span>, <span class="st">"T"</span>])</span>
 <span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a>df <span class="op">-</span> df.iloc[<span class="dv">0</span>]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="17">
 <div>
@@ -1039,7 +1038,7 @@ dtype: float64</code></pre>
 </div>
 <p>대신 열 단위로 연산하고 싶다면, 앞서 언급한 객체 메서드를 사용하면서 <code>axis</code> 키워드를 지정하면 됩니다.</p>
 <div id="cell-35" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="18">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb26"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>df.subtract(df[<span class="st">'R'</span>], axis<span class="op">=</span><span class="dv">0</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb26"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>df.subtract(df[<span class="st">"R"</span>], axis<span class="op">=</span><span class="dv">0</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="18">
 <div>
 

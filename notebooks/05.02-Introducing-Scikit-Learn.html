@@ -636,7 +636,7 @@ window.Quarto = {
 <h2 class="anchored" data-anchor-id="scikit-learn의-데이터-표현">Scikit-Learn의 데이터 표현</h2>
 <p>머신러닝은 데이터로부터 모델을 구축하는 과정입니다. 따라서 먼저 데이터를 표현하는 방법에 대해 살펴보겠습니다. Scikit-Learn에서 데이터를 생각하는 가장 좋은 방법은 <em>테이블</em>을 사용하는 것입니다.</p>
 <p>기본 테이블은 데이터의 2차원 그리드로, 행은 데이터 세트의 개별 요소를 나타내고 열은 각 요소와 관련된 수량을 나타냅니다. 예를 들어, 1936년 로널드 피셔(Ronald Fisher)가 분석한 것으로 유명한 <a href="https://en.wikipedia.org/wiki/Iris_flower_data_set">붓꽃(Iris) 데이터 세트</a>를 생각해 봅시다. <a href="http://seaborn.pydata.org/">Seaborn</a> 라이브러리를 사용하여 Pandas <code>DataFrame</code> 형식으로 이 데이터 세트를 불러오고 처음 몇 개의 항목을 살펴볼 수 있습니다.</p>
-<div id="cell-5" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="1">
+<div id="8edb47106e1a46a883d545849b8ab81b" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="1">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>iris <span class="op">=</span> sns.load_dataset(<span class="st">'iris'</span>)</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>iris.head()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -654,17 +654,17 @@ window.Quarto = {
 <p>특성 행렬 <code>X</code> 외에도 일반적으로 레이블(label) 또는 대상(target) 배열을 함께 다루며, 보통 이를 <code>y</code>라고 부릅니다. 대상 배열은 일반적으로 길이가 <code>n_samples</code>인 1차원 구조이며, 보통 NumPy 배열이나 Pandas <code>Series</code>에 저장됩니다. 대상 배열에는 연속적인 숫자 값이 포함되거나 이산적인 클래스/레이블이 포함될 수 있습니다. 일부 Scikit-Learn 추정기는 2차원 <code>[n_samples, n_targets]</code> 형태의 다중 대상 값을 처리하기도 하지만, 여기서는 주로 1차원 대상 배열인 일반적인 경우를 다룰 것입니다.</p>
 <p>자주 혼동하는 점은 대상 배열이 다른 특성 열과 어떻게 다른가 하는 것입니다. 대상 배열의 가장 큰 특징은 우리가 <em>특성으로부터 예측하고자 하는 수량</em>이라는 점입니다. 즉, 통계학적 관점에서는 종속 변수에 해당합니다. 예를 들어, 앞선 데이터가 주어졌을 때 다른 측정값을 기반으로 꽃의 종을 예측하는 모델을 구축합니다. 이 경우 <code>species</code> 열이 대상 배열로 간주됩니다.</p>
 <p>이러한 대상 배열을 염두에 두고 Seaborn(<a href="../notebooks/04.14-Visualization-With-Seaborn.html">Seaborn을 이용한 시각화</a> 참고)을 사용하여 데이터를 편리하게 시각화합니다(다음 그림 참고).</p>
-<div id="cell-9" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="2">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="op">%</span>matplotlib inline</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
+<div id="7cdc8c89c7104fffa095e18ddfef8986" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="2">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="op">%</span>matplotlib inline</span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>sns.pairplot(iris, hue<span class="op">=</span><span class="st">'species'</span>, height<span class="op">=</span><span class="fl">1.5</span>)<span class="op">;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>Scikit-Learn에서 사용하기 위해 <code>DataFrame</code>에서 특성 행렬과 대상 배열을 추출합니다. 이는 <a href="../notebooks/03.00-Introduction-to-Pandas.html">3부</a>에서 설명한 Pandas <code>DataFrame</code> 작업의 일부를 사용하여 수행합니다.</p>
-<div id="cell-11" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="3">
+<div id="938c804e27f84196a10c8828c723f798" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="3">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>X_iris <span class="op">=</span> iris.drop(<span class="st">'species'</span>, axis<span class="op">=</span><span class="dv">1</span>)</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>X_iris.shape</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<div id="cell-12" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="4">
+<div id="504fb2a444614c0babb325280ed9130a" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="4">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>y_iris <span class="op">=</span> iris[<span class="st">'species'</span>]</span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>y_iris.shape</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
@@ -703,7 +703,7 @@ window.Quarto = {
 <section id="지도-학습-예제-단순-선형-회귀" class="level3">
 <h3 class="anchored" data-anchor-id="지도-학습-예제-단순-선형-회귀">지도 학습 예제: 단순 선형 회귀</h3>
 <p>이 과정의 예로 간단한 선형 회귀, 즉 <span class="math inline">\((x, y)\)</span> 데이터에 선을 적합시키는 일반적인 경우를 고려해 보겠습니다. 회귀 예제에서는 다음과 같은 간단한 데이터를 사용합니다(다음 그림 참고).</p>
-<div id="cell-20" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="5">
+<div id="cb1e1581032b452c9409d6c6813c49d1" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="5">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -716,7 +716,7 @@ window.Quarto = {
 <section id="모델-클래스-선택" class="level4">
 <h4 class="anchored" data-anchor-id="모델-클래스-선택">1. 모델 클래스 선택</h4>
 <p>Scikit-Learn의 모든 모델은 파이썬 클래스로 표현됩니다. 예를 들어, 단순한 선형 회귀 모델을 사용하려면 다음과 같이 <code>LinearRegression</code> 클래스를 불러올 수 있습니다.</p>
-<div id="cell-23" class="cell" data-editable="true" data-tags="[]" data-execution_count="6">
+<div id="db7b79bc585a40fcaf58bf750017e135" class="cell" data-editable="true" data-tags="[]" data-execution_count="6">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.linear_model <span class="im">import</span> LinearRegression</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>그 외에도 다양한 선형 회귀 모델이 존재합니다. 자세한 내용은 <a href="http://scikit-learn.org/stable/modules/linear_model.html"><code>sklearn.linear_model</code> 모듈 문서</a>에서 확인합니다.</p>
@@ -734,7 +734,7 @@ window.Quarto = {
 </ul>
 <p>이것들은 <em>모델 클래스가 선택된 후</em>에 이루어져야 하는 중요한 선택의 예입니다. 이러한 선택 사항을 보통 <em>하이퍼파라미터(hyperparameters)</em>, 즉 모델이 데이터에 적합되기 전에 미리 설정해야 하는 매개변수라고 합니다. Scikit-Learn에서는 모델 인스턴스화 시점에 값을 전달하여 하이퍼파라미터를 선택합니다. <a href="../notebooks/05.03-Hyperparameters-and-Model-Validation.html">하이퍼파라미터 및 모델 검증</a>에서 하이퍼파라미터를 정량적으로 선택하는 방법을 살펴보겠습니다.</p>
 <p>선형 회귀 예제에서는 <code>LinearRegression</code> 클래스를 인스턴스화하고 <code>fit_intercept</code> 하이퍼파라미터를 사용하여 절편을 적합시키도록 지정합니다.</p>
-<div id="cell-26" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="7">
+<div id="33b0902fd34d4ace834912fa1002cf8e" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="7">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>model <span class="op">=</span> LinearRegression(fit_intercept<span class="op">=</span><span class="va">True</span>)</span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>model</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
@@ -743,7 +743,7 @@ window.Quarto = {
 <section id="데이터를-특성-행렬과-목표-벡터로-구성합니다." class="level4">
 <h4 class="anchored" data-anchor-id="데이터를-특성-행렬과-목표-벡터로-구성합니다.">3. 데이터를 특성 행렬과 목표 벡터로 구성합니다.</h4>
 <p>앞서 2차원 특성 행렬과 1차원 목표 배열을 필요로 하는 Scikit-Learn 데이터 표현 방식을 살펴봤습니다. 여기서 목표 변수 <code>y</code>는 이미 올바른 형식(길이-<code>n_samples</code> 배열)이지만 데이터 <code>x</code>를 가공하여 <code>[n_samples, n_features]</code> 크기의 행렬로 만들어야 합니다. 이 경우, 이는 1차원 배열을 간단히 재구성하는 과정과 같습니다.</p>
-<div id="cell-29" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="8">
+<div id="cdf66aed5cc84ca1b48e60bad68798a8" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="8">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>X <span class="op">=</span> x[:, np.newaxis]</span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>X.shape</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
@@ -751,11 +751,11 @@ window.Quarto = {
 <section id="모델을-데이터에-적합시킵니다." class="level4">
 <h4 class="anchored" data-anchor-id="모델을-데이터에-적합시킵니다.">4. 모델을 데이터에 적합시킵니다.</h4>
 <p>이제 모델을 데이터에 적용할 차례입니다. 이 작업은 모델의 <code>fit()</code> 메서드를 사용하여 수행합니다.</p>
-<div id="cell-31" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="9">
+<div id="3f9bc0b9dd2c44919cc8dcca39b469f8" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="9">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>model.fit(X, y)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>이 <code>fit()</code> 명령을 실행하면, 모델 내부에서 여러 계산이 이루어지며, 그 결과는 사용자가 탐색할 수 있는 모델별 속성에 저장됩니다. Scikit-Learn에서는, <code>fit()</code> 과정에서 학습된 모든 모델 매개변수에 밑줄(_)을 붙이는 관례가 있습니다. 예를 들어, 이 선형 모델에는 다음과 같은 속성값이 있습니다.</p>
-<div id="cell-33" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="10">
+<div id="5b09d5ef5b5e4bb6ab9b829b10b6a29f" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="10">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>model.coef_</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>이 두 매개변수는 데이터에 대한 단순 선형 적합의 기울기와 절편을 나타냅니다. 결과를 데이터 정의와 비교하면, 데이터 생성에 사용된 값인 기울기 2와 절편 -1에 가깝다는 것을 알 수 있습니다.</p>
@@ -764,12 +764,12 @@ window.Quarto = {
 <section id="알-수-없는-데이터에-대한-레이블-예측" class="level4">
 <h4 class="anchored" data-anchor-id="알-수-없는-데이터에-대한-레이블-예측">5. 알 수 없는 데이터에 대한 레이블 예측</h4>
 <p>모델이 훈련되면 지도 머신러닝의 핵심은 훈련 세트에 포함되지 않은 새로운 데이터에 대해 모델이 어떠한 예측을 하는지를 평가하는 것입니다. Scikit-Learn에서는 <code>predict()</code> 메서드를 사용하여 이를 수행합니다. 이 예시에서, “새로운 데이터”는 <em>x</em> 값의 그리드가 되며, 모델이 예측하는 <em>y</em> 값이 무엇인지 묻습니다.</p>
-<div id="cell-36" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="11">
+<div id="1944c39560714e6e80c856f20744a8e5" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="11">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>xfit <span class="op">=</span> np.linspace(<span class="op">-</span><span class="dv">1</span>, <span class="dv">11</span>)</span>
 <span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>Xfit <span class="op">=</span> xfit[:, np.newaxis]</span>
 <span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>yfit <span class="op">=</span> model.predict(Xfit)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<div id="cell-37" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="12">
+<div id="d6ca27006b894b04b6fc8b79396e2797" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="12">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>plt.scatter(x, y)</span>
 <span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>plt.plot(xfit, yfit)<span class="op">;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
@@ -782,20 +782,20 @@ window.Quarto = {
 <p>앞서 논의한 붓꽃(Iris) 데이터 세트를 사용하여, 이 프로세스의 또 다른 예를 살펴보겠습니다. 우리의 질문은 다음과 같습니다. 붓꽃 데이터의 일부에 대해 훈련된 모델이 주어졌을 때, 나머지 레이블을 얼마나 잘 예측할 수 있을까요?</p>
 <p>이 작업에서는 <em>가우시안 나이브 베이즈(Gaussian naive Bayes)</em>라는 간단한 생성 모델을 사용합니다. 이 모델은 각 클래스가 축 정렬된 가우스 분포에서 추출된다고 가정합니다(자세한 내용은 <a href="../notebooks/05.05-Naive-Bayes.html">심층: 나이브 베이즈 분류</a> 참조). 매우 빠르고, 선택할 하이퍼파라미터가 거의 없기 때문에, 가우시안 나이브 베이즈는 보다 정교한 모델을 통해 개선 사항을 찾을 수 있는지 탐색하기 전에, 기준 분류로 사용하기에 좋은 모델인 경우가 많습니다.</p>
 <p>이전에 보지 못한 데이터로 모델을 평가하고 싶기 때문에, 데이터를 <em>훈련 세트(training set)</em>와 <em>테스트 세트(test set)</em>로 나눌 것입니다. 이 작업은 직접 수행할 수도 있지만, <code>train_test_split</code> 유틸리티 함수를 사용하는 것이 더 편리합니다.</p>
-<div id="cell-41" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="13">
+<div id="76127f4a2f6a44fba749ea7800e59d51" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="13">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.model_selection <span class="im">import</span> train_test_split</span>
 <span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>Xtrain, Xtest, ytrain, ytest <span class="op">=</span> train_test_split(X_iris, y_iris, random_state<span class="op">=</span><span class="dv">0</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<div id="cell-42" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="14">
+<div id="903197826d2e44dfa0208e8f97c69327" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="14">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.naive_bayes <span class="im">import</span> GaussianNB</span>
 <span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>model <span class="op">=</span> GaussianNB()</span>
 <span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>model.fit(Xtrain, ytrain)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>데이터가 준비되면, 절차에 따라 레이블을 예측합니다.</p>
-<div id="cell-44" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="15">
+<div id="81ff116bae5b45f6b6dae177083008cf" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="15">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>y_model <span class="op">=</span> model.predict(Xtest)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<div id="cell-45" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="16">
+<div id="9075f00cfa8d463f84130041b1e44ca7" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="16">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.metrics <span class="im">import</span> accuracy_score</span>
 <span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>accuracy_score(ytest, y_model)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
@@ -807,13 +807,13 @@ window.Quarto = {
 <p>차원 축소는 데이터의 필수적인 특징을 유지하는 적절한 저차원 표현이 있는지 확인하는 데 중점을 둡니다. 종종 차원 축소는 데이터 시각화를 돕기 위해 사용됩니다. 데이터를 4차원 이상으로 그리는 것보다, 2차원으로 그리는 것이 훨씬 쉽기 때문입니다!</p>
 <p>여기서는 고속 선형 차원 축소 기법인 *주성분 분석(PCA, <a href="05.09-Principal-Component-Analytic.ipynb">심층: 주성분 분석</a> 참조)을 사용합니다. 모델에 2개의 구성 요소, 즉 데이터의 2차원 표현을 반환하도록 요청합니다.</p>
 <p>앞서 설명한 일련의 단계를 따르면 다음과 같습니다.</p>
-<div id="cell-48" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="17">
+<div id="72c31777baf4441b988909d29205560c" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="17">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.decomposition <span class="im">import</span> PCA</span>
 <span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>model <span class="op">=</span> PCA(n_components<span class="op">=</span><span class="dv">2</span>)</span>
 <span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>model.fit(X_iris)</span>
 <span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a>X_2D <span class="op">=</span> model.transform(X_iris)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<div id="cell-49" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="18">
+<div id="5734001bcbac423990a4356310d8df13" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="18">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>iris[<span class="st">'PCA1'</span>] <span class="op">=</span> X_2D[:, <span class="dv">0</span>]</span>
 <span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>iris[<span class="st">'PCA2'</span>] <span class="op">=</span> X_2D[:, <span class="dv">1</span>]</span>
 <span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>sns.lmplot(</span>
@@ -826,13 +826,13 @@ window.Quarto = {
 <h3 class="anchored" data-anchor-id="비지도-학습-예시-붓꽃-클러스터링">비지도 학습 예시: 붓꽃 클러스터링</h3>
 <p>다음으로 붓꽃 데이터에 클러스터링을 적용하는 방법을 살펴보겠습니다. 클러스터링 알고리즘은 레이블을 참조하지 않고, 고유한 데이터 그룹을 찾으려고 시도합니다. 여기서는 <em>가우시안 혼합 모델(GMM)</em>이라는 강력한 클러스터링 방법을 사용합니다. 자세한 내용은 <a href="../notebooks/05.12-Gaussian-Mixtures.html">심층: 가우시안 혼합 모델</a>에서 설명합니다. GMM은 데이터를 가우시안 군집(Gaussian blob) 모음으로 모델링하려고 시도합니다.</p>
 <p>가우시안 혼합 모델은 다음과 같이 적합시킬 수 있습니다.</p>
-<div id="cell-52" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="19">
+<div id="94ae71b6e24e4355a139fb9fe2e09b64" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="19">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.mixture <span class="im">import</span> GaussianMixture</span>
 <span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>model <span class="op">=</span> GaussianMixture(n_components<span class="op">=</span><span class="dv">3</span>, covariance_type<span class="op">=</span><span class="st">'full'</span>)</span>
 <span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a>model.fit(X_iris)</span>
 <span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a>y_gmm <span class="op">=</span> model.predict(X_iris)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<div id="cell-53" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="20">
+<div id="9141936c6c8a4c478a75aea4ff665469" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="20">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb20"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>iris[<span class="st">'cluster'</span>] <span class="op">=</span> y_gmm</span>
 <span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>sns.lmplot(</span>
 <span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a>    <span class="st">'PCA1'</span>, <span class="st">'PCA2'</span>, data<span class="op">=</span>iris, hue<span class="op">=</span><span class="st">'species'</span>, col<span class="op">=</span><span class="st">'cluster'</span>, fit_reg<span class="op">=</span><span class="va">False</span></span>
@@ -847,41 +847,41 @@ window.Quarto = {
 <section id="숫자-데이터-로드-및-시각화" class="level3">
 <h3 class="anchored" data-anchor-id="숫자-데이터-로드-및-시각화">숫자 데이터 로드 및 시각화</h3>
 <p>Scikit-Learn의 데이터 액세스 인터페이스를 사용하여 이 데이터를 살펴볼 수 있습니다.</p>
-<div id="cell-58" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="21">
+<div id="7c10029e1707434ab3fe295caea7d13f" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="21">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.datasets <span class="im">import</span> load_digits</span>
 <span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>digits <span class="op">=</span> load_digits()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<div id="cell-59" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="22">
+<div id="f68f0888c55a4478ace3eac39384dff4" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="22">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb22"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>digits.images.shape</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<div id="cell-60" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="23">
+<div id="f94f5a17fa734d288763e7d9a3758173" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="23">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb23"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>digits.images[<span class="dv">0</span>]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<div id="cell-61" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="24">
+<div id="421b839107204e409e0496d3d944026c" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="24">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb24"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>digits.data.shape</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<div id="cell-62" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="25">
+<div id="e981b37c798e44f684168605b9db02c6" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="25">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb25"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>digits.data[<span class="dv">0</span>].reshape(<span class="dv">8</span>, <span class="dv">8</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<div id="cell-63" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="26">
+<div id="40c1800d1c114147a536b8aa907907c7" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="26">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb26"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>fig, axes <span class="op">=</span> plt.subplots(<span class="dv">10</span>, <span class="dv">10</span>, figsize<span class="op">=</span>(<span class="dv">8</span>, <span class="dv">8</span>))</span>
 <span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i, ax <span class="kw">in</span> <span class="bu">enumerate</span>(axes.flat):</span>
 <span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a>    ax.imshow(digits.images[i], cmap<span class="op">=</span><span class="st">'binary'</span>)</span>
-<span id="cb26-4"><a href="#cb26-4" aria-hidden="true" tabindex="-1"></a>    ax.<span class="bu">set</span>(xticks<span class="op">=</span>[], yticks<span class="op">=</span>[])<span class="op">;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb26-4"><a href="#cb26-4" aria-hidden="true" tabindex="-1"></a>    ax.<span class="bu">set</span>(xticks<span class="op">=</span>[], yticks<span class="op">=</span>[])</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>이미지 데이터는 3차원 배열입니다. 즉, 각각 8×8 픽셀 그리드로 구성된 1,797개의 샘플입니다. 이 중 처음 100개를 시각화해 보겠습니다(다음 그림 참조).</p>
-<div id="cell-65" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="27">
+<div id="71b4158a9f3d49279f06ec9197b84529" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="27">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb27"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a>fig, axes <span class="op">=</span> plt.subplots(<span class="dv">10</span>, <span class="dv">10</span>, figsize<span class="op">=</span>(<span class="dv">8</span>, <span class="dv">8</span>))</span>
 <span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i, ax <span class="kw">in</span> <span class="bu">enumerate</span>(axes.flat):</span>
 <span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a>    ax.imshow(digits.images[i], cmap<span class="op">=</span><span class="st">'binary'</span>)</span>
-<span id="cb27-4"><a href="#cb27-4" aria-hidden="true" tabindex="-1"></a>    ax.<span class="bu">set</span>(xticks<span class="op">=</span>[], yticks<span class="op">=</span>[])<span class="op">;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb27-4"><a href="#cb27-4" aria-hidden="true" tabindex="-1"></a>    ax.<span class="bu">set</span>(xticks<span class="op">=</span>[], yticks<span class="op">=</span>[])</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>Scikit-Learn 내에서 이 데이터를 사용하려면, 2차원 <code>[n_samples, n_features]</code> 표현이 필요합니다. 이것은 이미지의 각 픽셀을 특성으로 간주하여 수행합니다. 즉, 픽셀 배열을 평탄화하여, 각 숫자를 나타내는 픽셀 값의 길이가 64인 배열을 갖게 됩니다. 또한, 각 숫자에 대해 이전에 결정된 레이블을 제공하는 대상 배열이 필요합니다. 이 두 가지 값은, 각각 <code>data</code>와 <code>target</code> 속성 아래, 숫자 데이터 세트에 내장되어 있습니다.</p>
-<div id="cell-67" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="28">
+<div id="82ca0f16c5be4617b5535c40faa36c79" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="28">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb28"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a>X <span class="op">=</span> digits.data</span>
 <span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a>X.shape</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<div id="cell-68" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="29">
+<div id="04aa693c20bd460494e518b8cb84ef11" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="29">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb29"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> digits.target</span>
 <span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a>y.shape</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
@@ -890,16 +890,16 @@ window.Quarto = {
 <section id="비지도-학습-예시-차원-축소" class="level3">
 <h3 class="anchored" data-anchor-id="비지도-학습-예시-차원-축소">비지도 학습 예시: 차원 축소</h3>
 <p>우리는 64차원 매개변수 공간 내에서 점을 시각화하고 싶지만, 이러한 고차원 공간에서는 점을 효과적으로 시각화하는 것이 어렵습니다. 대신, 비지도 방식을 사용하여 차원 수를 줄입니다. 여기서는 Isomap이라는 다양한 학습 알고리즘(<a href="../notebooks/05.10-Manifold-Learning.html">심층: 매니폴드 학습</a> 참조)을 사용하고, 데이터를 2차원으로 변환합니다.</p>
-<div id="cell-71" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="30">
+<div id="d84866adce69467fa81441dc6c47fd8a" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="30">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb30"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.manifold <span class="im">import</span> Isomap</span>
 <span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a>iso <span class="op">=</span> Isomap(n_components<span class="op">=</span><span class="dv">2</span>)</span>
 <span id="cb30-3"><a href="#cb30-3" aria-hidden="true" tabindex="-1"></a>iso.fit(digits.data)</span>
 <span id="cb30-4"><a href="#cb30-4" aria-hidden="true" tabindex="-1"></a>digits_proj <span class="op">=</span> iso.transform(digits.data)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<div id="cell-72" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="31">
+<div id="deb6c23654f54f5b91a38c31054c5587" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="31">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb31"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a>digits_proj.shape</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<div id="cell-73" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="32">
+<div id="9768d501ade64311a8ed6e9eb433fa9b" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="32">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb32"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a>plt.scatter(digits_proj[:, <span class="dv">0</span>], digits_proj[:, <span class="dv">1</span>], c<span class="op">=</span>digits.target,</span>
 <span id="cb32-2"><a href="#cb32-2" aria-hidden="true" tabindex="-1"></a>            cmap<span class="op">=</span>plt.cm.get_cmap(<span class="st">'cubehelix'</span>, <span class="dv">10</span>))</span>
 <span id="cb32-3"><a href="#cb32-3" aria-hidden="true" tabindex="-1"></a>plt.colorbar(ticks<span class="op">=</span><span class="bu">range</span>(<span class="dv">10</span>), label<span class="op">=</span><span class="st">'digit value'</span>)<span class="op">;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -911,23 +911,23 @@ window.Quarto = {
 <section id="숫자-분류" class="level3">
 <h3 class="anchored" data-anchor-id="숫자-분류">숫자 분류</h3>
 <p>이제 숫자 데이터에 분류 알고리즘을 적용해 보겠습니다. 이전에 붓꽃 데이터에서 했던 것처럼, 데이터를 훈련 세트와 테스트 세트로 나누고, 가우시안 나이브 베이즈 모델을 적용합니다.</p>
-<div id="cell-77" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="33">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb33"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a>Xtrain, Xtest, ytrain, ytest <span class="op">=</span> train_test_split(X, y, random_state<span class="op">=</span><span class="dv">0</span>)</span>
-<span id="cb33-2"><a href="#cb33-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.naive_bayes <span class="im">import</span> GaussianNB</span>
+<div id="ab13b4b6e2874167b7f2debb11dcd1d9" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="33">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb33"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.naive_bayes <span class="im">import</span> GaussianNB</span>
+<span id="cb33-2"><a href="#cb33-2" aria-hidden="true" tabindex="-1"></a>Xtrain, Xtest, ytrain, ytest <span class="op">=</span> train_test_split(X, y, random_state<span class="op">=</span><span class="dv">0</span>)</span>
 <span id="cb33-3"><a href="#cb33-3" aria-hidden="true" tabindex="-1"></a>model <span class="op">=</span> GaussianNB()</span>
 <span id="cb33-4"><a href="#cb33-4" aria-hidden="true" tabindex="-1"></a>model.fit(Xtrain, ytrain)</span>
 <span id="cb33-5"><a href="#cb33-5" aria-hidden="true" tabindex="-1"></a>y_pred <span class="op">=</span> model.predict(Xtest)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<div id="cell-78" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="34">
+<div id="47d658866ccb404681cf21a4419000da" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="34">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb34"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a>y_pred <span class="op">=</span> model.predict(Xtest)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>이제 모델의 예측이 완료되었으므로, 테스트 세트의 실제 값과 예측 값을 비교하여 정확도를 측정합니다.</p>
-<div id="cell-80" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="35">
+<div id="1c9cbe9d9a794dbd8aaa1fa72bce99a9" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="35">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb35"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.metrics <span class="im">import</span> accuracy_score</span>
 <span id="cb35-2"><a href="#cb35-2" aria-hidden="true" tabindex="-1"></a>accuracy_score(ytest, y_pred)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>이 매우 간단한 모델로도 숫자 분류에 대해 약 83%의 정확도를 얻었습니다! 하지만 이 단일 숫자로는, 우리가 어디에서 잘못했는지 알 수 없습니다. 이를 수행하는 한 가지 좋은 방법은, Scikit-Learn으로 계산하고 Seaborn으로 시각화할 수 있는, <em>혼동 행렬</em>을 사용하는 것입니다(다음 그림 참조).</p>
-<div id="cell-82" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="36">
+<div id="594a68b434714bab9e1df903f88edcdd" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="36">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb36"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.metrics <span class="im">import</span> confusion_matrix</span>
 <span id="cb36-2"><a href="#cb36-2" aria-hidden="true" tabindex="-1"></a>mat <span class="op">=</span> confusion_matrix(ytest, y_pred)</span>
 <span id="cb36-3"><a href="#cb36-3" aria-hidden="true" tabindex="-1"></a>sns.heatmap(mat, square<span class="op">=</span><span class="va">True</span>, annot<span class="op">=</span><span class="va">True</span>, cbar<span class="op">=</span><span class="va">False</span>)</span>
@@ -936,7 +936,7 @@ window.Quarto = {
 </div>
 <p>이 혼동 행렬은 레이블이 잘못 지정된 지점이 어디인지 보여줍니다. 예를 들어, 여기 있는 2개의 숫자 중 다수가, 1 또는 8로 잘못 분류되었습니다.</p>
 <p>모델의 특성에 대한 직관을 얻는 또 다른 방법은, 예측된 레이블을 사용하여 입력 데이터를 다시 시각화하는 것입니다. 올바른 레이블에는 녹색을 사용하고, 잘못된 레이블에는 빨간색을 사용합니다. 다음 그림을 참조하세요.</p>
-<div id="cell-84" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="37">
+<div id="74a36f4709894f8e822f9c383b5c8674" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="37">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb37"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a>fig, axes <span class="op">=</span> plt.subplots(<span class="dv">10</span>, <span class="dv">10</span>, figsize<span class="op">=</span>(<span class="dv">8</span>, <span class="dv">8</span>))</span>
 <span id="cb37-2"><a href="#cb37-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i, ax <span class="kw">in</span> <span class="bu">enumerate</span>(axes.flat):</span>
 <span id="cb37-3"><a href="#cb37-3" aria-hidden="true" tabindex="-1"></a>    ax.imshow(digits.images[i], cmap<span class="op">=</span><span class="st">'binary'</span>)</span>

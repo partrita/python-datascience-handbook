@@ -599,7 +599,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>titanic <span class="op">=</span> sns.load_dataset(<span class="st">'titanic'</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>titanic <span class="op">=</span> sns.load_dataset(<span class="st">"titanic"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <div id="cell-4" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="2">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>titanic.head()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -731,7 +732,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 class="anchored" data-anchor-id="직접-피벗-테이블-구현해보기">직접 피벗 테이블 구현해보기</h2>
 <p>이 데이터에 대해 더 자세히 알아보려면 성별, 생존 상태 또는 이들의 조합에 따라 그룹화하는 것부터 시작합니다. 이전 장을 읽었다면 ‘groupby’ 연산을 적용하고 싶은 유혹을 느낄 수도 있습니다. 예를 들어 성별에 따른 생존율을 살펴보겠습니다.</p>
 <div id="cell-7" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="3">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>titanic.groupby(<span class="st">'sex'</span>)[[<span class="st">'survived'</span>]].mean()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>titanic.groupby(<span class="st">"sex"</span>)[[<span class="st">"survived"</span>]].mean()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="3">
 <div>
 
@@ -765,7 +766,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>이는 우리에게 몇 가지 초기 통찰력을 제공합니다. 전반적으로 탑승한 여성 4명 중 3명이 생존한 반면, 남성은 5명 중 1명꼴로 생존했습니다.</p>
 <p>이는 유용하지만 한 단계 더 깊이 들어가 성별, 계층별 생존율을 살펴보고 싶을 수도 있습니다. ’groupby’라는 용어를 사용하면 다음과 같은 프로세스를 진행합니다. 먼저 클래스와 성별로 <em>그룹화</em>한 다음, 생존을 <em>선택</em>하고, 평균 집계를 <em>적용</em>하고, 결과 그룹을 <em>결합</em>하고, 마지막으로 계층적 인덱스를 <em>풀어</em> 숨겨진 다차원성을 드러냅니다. 코드에서:</p>
 <div id="cell-9" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="4">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>titanic.groupby([<span class="st">'sex'</span>, <span class="st">'class'</span>])[<span class="st">'survived'</span>].aggregate(<span class="st">'mean'</span>).unstack()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>titanic.groupby([<span class="st">"sex"</span>, <span class="st">"class"</span>])[<span class="st">"survived"</span>].aggregate(<span class="st">"mean"</span>).unstack()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="4">
 <div>
 
@@ -810,7 +811,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 class="anchored" data-anchor-id="피벗-테이블pivot-tables-구문">피벗 테이블(Pivot Tables) 구문</h2>
 <p>다음은 <code>DataFrame.pivot_table</code> 메서드를 사용한 이전 작업과 동일합니다.</p>
 <div id="cell-12" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="5">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>titanic.pivot_table(<span class="st">'survived'</span>, index<span class="op">=</span><span class="st">'sex'</span>, columns<span class="op">=</span><span class="st">'class'</span>, aggfunc<span class="op">=</span><span class="st">'mean'</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>titanic.pivot_table(<span class="st">"survived"</span>, index<span class="op">=</span><span class="st">"sex"</span>, columns<span class="op">=</span><span class="st">"class"</span>, aggfunc<span class="op">=</span><span class="st">"mean"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="5">
 <div>
 
@@ -854,8 +855,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h3 class="anchored" data-anchor-id="다단계-피벗-테이블">다단계 피벗 테이블</h3>
 <p><code>groupby</code>에서와 마찬가지로 피벗 테이블에서도 여러 단계의 그룹화와 다양한 옵션을 지정합니다. 예를 들어 우리는 나이를 3차원으로 보는 데 관심이 있습니다. <code>pd.cut</code> 함수를 사용하여 나이를 비닝하겠습니다.</p>
 <div id="cell-15" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="6">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>age <span class="op">=</span> pd.cut(titanic[<span class="st">'age'</span>], [<span class="dv">0</span>, <span class="dv">18</span>, <span class="dv">80</span>])</span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>titanic.pivot_table(<span class="st">'survived'</span>, [<span class="st">'sex'</span>, age], <span class="st">'class'</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>age <span class="op">=</span> pd.cut(titanic[<span class="st">"age"</span>], [<span class="dv">0</span>, <span class="dv">18</span>, <span class="dv">80</span>])</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>titanic.pivot_table(<span class="st">"survived"</span>, [<span class="st">"sex"</span>, age], <span class="st">"class"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="6">
 <div>
 
@@ -912,8 +913,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <p>열을 작업할 때도 동일한 전략을 적용합니다. 데이터를 분위수별로 나누기 위해 <code>pd.qcut</code>을 사용해 지불한 요금에 대한 정보를 추가해 보겠습니다.</p>
 <div id="cell-17" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="7">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>fare <span class="op">=</span> pd.qcut(titanic[<span class="st">'fare'</span>], <span class="dv">2</span>)</span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>titanic.pivot_table(<span class="st">'survived'</span>, [<span class="st">'sex'</span>, age], [fare, <span class="st">'class'</span>])</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>fare <span class="op">=</span> pd.qcut(titanic[<span class="st">"fare"</span>], <span class="dv">2</span>)</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>titanic.pivot_table(<span class="st">"survived"</span>, [<span class="st">"sex"</span>, age], [fare, <span class="st">"class"</span>])</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="7">
 <div>
 
@@ -1001,8 +1002,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>우리는 이미 처음 세 가지 주장의 예를 보았습니다. 여기에서는 나머지 항목 중 일부를 간략하게 살펴보겠습니다. 두 가지 옵션인 ’fill_value’와 ’dropna’는 누락된 데이터와 관련이 있으며 매우 간단합니다. 여기서는 그 예를 보여주지 않겠습니다.</p>
 <p><code>aggfunc</code> 키워드는 적용되는 집계 유형을 제어하며 이는 평균입니다. <code>groupby</code>와 마찬가지로 집계 사양은 여러 일반적인 선택(<code>'sum'</code>, <code>'mean'</code>, <code>'count'</code>, <code>'min'</code>, <code>'max'</code> 등) 중 하나를 나타내는 문자열이거나 집계를 구현하는 함수(예: <code>np.sum()</code>, <code>min()</code>, <code>sum()</code> 등)일 수 있습니다. 또한 열을 원하는 옵션에 매핑하는 사전으로 지정합니다.</p>
 <div id="cell-20" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="8">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>titanic.pivot_table(index<span class="op">=</span><span class="st">'sex'</span>, columns<span class="op">=</span><span class="st">'class'</span>,</span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>                    aggfunc<span class="op">=</span>{<span class="st">'survived'</span>:<span class="bu">sum</span>, <span class="st">'fare'</span>:<span class="st">'mean'</span>})</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>titanic.pivot_table(</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>    index<span class="op">=</span><span class="st">"sex"</span>, columns<span class="op">=</span><span class="st">"class"</span>, aggfunc<span class="op">=</span>{<span class="st">"survived"</span>: <span class="bu">sum</span>, <span class="st">"fare"</span>: <span class="st">"mean"</span>}</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="8">
 <div>
 
@@ -1061,7 +1063,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>여기서는 <code>values</code> 키워드를 생략했다는 점도 주목하세요. <code>aggfunc</code>에 대한 매핑을 지정할 때 이는 자동으로 결정됩니다.</p>
 <p>각 그룹별로 합계를 계산하는 것이 유용한 경우가 있습니다. 이는 <code>margins</code> 키워드를 통해 수행합니다:</p>
 <div id="cell-23" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="9">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>titanic.pivot_table(<span class="st">'survived'</span>, index<span class="op">=</span><span class="st">'sex'</span>, columns<span class="op">=</span><span class="st">'class'</span>, margins<span class="op">=</span><span class="va">True</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>titanic.pivot_table(<span class="st">"survived"</span>, index<span class="op">=</span><span class="st">"sex"</span>, columns<span class="op">=</span><span class="st">"class"</span>, margins<span class="op">=</span><span class="va">True</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="9">
 <div>
 
@@ -1123,7 +1125,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="co"># https://raw.githubusercontent.com/jakevdp/data-CDCbirths/master/births.csv</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <div id="cell-27" class="cell" data-tags="[]" data-execution_count="11">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>births <span class="op">=</span> pd.read_csv(<span class="st">'data/births.csv'</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>births <span class="op">=</span> pd.read_csv(<span class="st">"data/births.csv"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>데이터를 살펴보면 비교적 간단하다는 것을 확인합니다. 여기에는 날짜와 성별별로 그룹화된 출생 수가 포함되어 있습니다.</p>
 <div id="cell-29" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="12">
@@ -1192,8 +1194,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <p>피벗 테이블을 사용하면 이 데이터를 좀 더 이해합니다. ‘decade’ 열을 추가하고 10년의 함수로 남성과 여성의 출생을 살펴보겠습니다.</p>
 <div id="cell-31" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="13">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>births[<span class="st">'decade'</span>] <span class="op">=</span> <span class="dv">10</span> <span class="op">*</span> (births[<span class="st">'year'</span>] <span class="op">//</span> <span class="dv">10</span>)</span>
-<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>births.pivot_table(<span class="st">'births'</span>, index<span class="op">=</span><span class="st">'decade'</span>, columns<span class="op">=</span><span class="st">'gender'</span>, aggfunc<span class="op">=</span><span class="st">'sum'</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>births[<span class="st">"decade"</span>] <span class="op">=</span> <span class="dv">10</span> <span class="op">*</span> (births[<span class="st">"year"</span>] <span class="op">//</span> <span class="dv">10</span>)</span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>births.pivot_table(<span class="st">"births"</span>, index<span class="op">=</span><span class="st">"decade"</span>, columns<span class="op">=</span><span class="st">"gender"</span>, aggfunc<span class="op">=</span><span class="st">"sum"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="13">
 <div>
 
@@ -1247,10 +1249,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div id="cell-33" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="14">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="op">%</span>matplotlib inline</span>
 <span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
-<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>plt.style.use(<span class="st">'seaborn-whitegrid'</span>)</span>
-<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a>births.pivot_table(</span>
-<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a>    <span class="st">'births'</span>, index<span class="op">=</span><span class="st">'year'</span>, columns<span class="op">=</span><span class="st">'gender'</span>, aggfunc<span class="op">=</span><span class="st">'sum'</span>).plot()</span>
-<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">'total births per year'</span>)<span class="op">;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a>plt.style.use(<span class="st">"seaborn-whitegrid"</span>)</span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a>births.pivot_table(<span class="st">"births"</span>, index<span class="op">=</span><span class="st">"year"</span>, columns<span class="op">=</span><span class="st">"gender"</span>, aggfunc<span class="op">=</span><span class="st">"sum"</span>).plot()</span>
+<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">"total births per year"</span>)<span class="op">;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -1262,39 +1264,38 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>간단한 피벗 테이블과 <code>plot</code> 방식을 통해 성별에 따른 연간 출생아 추세를 즉시 확인합니다. 지난 50년 동안 남성 출생이 여성 출생보다 약 5% 더 많은 것으로 나타났습니다.</p>
 <p>이것이 반드시 피벗 테이블과 관련이 있는 것은 아니지만 지금까지 다룬 Pandas 도구를 사용하여 이 데이터 세트에서 끌어낼 수 있는 몇 가지 흥미로운 기능이 더 있습니다. 먼저 데이터를 약간 정리하여 잘못 입력한 날짜(예: 6월 31일) 또는 누락된 값(예: 6월 99일)으로 인한 이상값을 제거해야 합니다. 이러한 모든 것을 한 번에 제거하는 쉬운 방법 중 하나는 이상값을 잘라내는 것입니다. 강력한 시그마 클리핑 작업을 통해 이를 수행합니다.</p>
 <div id="cell-36" class="cell" data-tags="[]" data-execution_count="15">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>quartiles <span class="op">=</span> np.percentile(births[<span class="st">'births'</span>], [<span class="dv">25</span>, <span class="dv">50</span>, <span class="dv">75</span>])</span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>quartiles <span class="op">=</span> np.percentile(births[<span class="st">"births"</span>], [<span class="dv">25</span>, <span class="dv">50</span>, <span class="dv">75</span>])</span>
 <span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>mu <span class="op">=</span> quartiles[<span class="dv">1</span>]</span>
 <span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>sig <span class="op">=</span> <span class="fl">0.74</span> <span class="op">*</span> (quartiles[<span class="dv">2</span>] <span class="op">-</span> quartiles[<span class="dv">0</span>])</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>이 마지막 선은 표본 표준 편차의 강력한 추정치입니다. 여기서 0.74는 가우스 분포의 사분위수 범위에서 나옵니다(제가 Željko Ivezić, Andrew J. Connolly 및 Alexander Gray와 공동 집필한 책에서 시그마 클리핑 작업에 대해 자세히 알아볼 수 있습니다: <a href="https://press.princeton.edu/books/hardcover/9780691198309/statistics-data-mining-and-machine-learning-in-astronomy"><em>Statistics, Data Mining, and Machine Learning in 천문학</em></a>(프린스턴 대학 출판부)).</p>
 <p>이를 통해 <code>query</code> 메서드(<a href="../notebooks/03.12-Performance-Eval-and-Query.html">High-Performance Pandas: <code>eval()</code> 및 <code>query()</code></a>에서 자세히 설명)를 사용하여 이러한 값을 벗어나는 출생이 있는 행을 필터링합니다.</p>
 <div id="cell-38" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="16">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>births <span class="op">=</span> births.query(<span class="st">'(births &gt; @mu - 5 * @sig) &amp; (births &lt; @mu + 5 * @sig)'</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>births <span class="op">=</span> births.query(<span class="st">"(births &gt; @mu - 5 * @sig) &amp; (births &lt; @mu + 5 * @sig)"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>다음으로 ‘day’ 열을 정수로 설정합니다. 이전에는 데이터 세트의 일부 열에 <code>'null'</code> 값이 포함되어 있었기 때문에 문자열 열이었습니다.</p>
 <div id="cell-40" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="17">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="co"># set 'day' column to integer; it originally was a string due to nulls</span></span>
-<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>births[<span class="st">'day'</span>] <span class="op">=</span> births[<span class="st">'day'</span>].astype(<span class="bu">int</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>births[<span class="st">"day"</span>] <span class="op">=</span> births[<span class="st">"day"</span>].astype(<span class="bu">int</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>마지막으로 일, 월, 연도를 결합하여 날짜 인덱스를 생성합니다(<a href="../notebooks/03.11-Working-with-Time-Series.html">시계열 작업</a> 참조). 이를 통해 각 행에 해당하는 요일을 빠르게 계산합니다.</p>
 <div id="cell-42" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="18">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="co"># create a datetime index from the year, month, day</span></span>
-<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>births.index <span class="op">=</span> pd.to_datetime(<span class="dv">10000</span> <span class="op">*</span> births.year <span class="op">+</span></span>
-<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>                              <span class="dv">100</span> <span class="op">*</span> births.month <span class="op">+</span></span>
-<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a>                              births.day, <span class="bu">format</span><span class="op">=</span><span class="st">'%Y%m</span><span class="sc">%d</span><span class="st">'</span>)</span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>births.index <span class="op">=</span> pd.to_datetime(</span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>    <span class="dv">10000</span> <span class="op">*</span> births.year <span class="op">+</span> <span class="dv">100</span> <span class="op">*</span> births.month <span class="op">+</span> births.day, <span class="bu">format</span><span class="op">=</span><span class="st">"%Y%m</span><span class="sc">%d</span><span class="st">"</span></span>
+<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a>)</span>
 <span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-6"><a href="#cb18-6" aria-hidden="true" tabindex="-1"></a>births[<span class="st">'dayofweek'</span>] <span class="op">=</span> births.index.dayofweek</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb18-6"><a href="#cb18-6" aria-hidden="true" tabindex="-1"></a>births[<span class="st">"dayofweek"</span>] <span class="op">=</span> births.index.dayofweek</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>이를 사용하여 수십 년 동안 평일별 출생을 계획합니다(다음 그림 참조).</p>
 <div id="cell-44" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="19">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
-<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib <span class="im">as</span> mpl</span>
-<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a>births.pivot_table(<span class="st">'births'</span>, index<span class="op">=</span><span class="st">'dayofweek'</span>,</span>
-<span id="cb19-5"><a href="#cb19-5" aria-hidden="true" tabindex="-1"></a>                    columns<span class="op">=</span><span class="st">'decade'</span>, aggfunc<span class="op">=</span><span class="st">'mean'</span>).plot()</span>
-<span id="cb19-6"><a href="#cb19-6" aria-hidden="true" tabindex="-1"></a>plt.gca().<span class="bu">set</span>(xticks<span class="op">=</span><span class="bu">range</span>(<span class="dv">7</span>),</span>
-<span id="cb19-7"><a href="#cb19-7" aria-hidden="true" tabindex="-1"></a>              xticklabels<span class="op">=</span>[<span class="st">'Mon'</span>, <span class="st">'Tues'</span>, <span class="st">'Wed'</span>, <span class="st">'Thurs'</span>, <span class="st">'Fri'</span>, <span class="st">'Sat'</span>, <span class="st">'Sun'</span>])</span>
-<span id="cb19-8"><a href="#cb19-8" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">'mean births by day'</span>)<span class="op">;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a>births.pivot_table(<span class="st">"births"</span>, index<span class="op">=</span><span class="st">"dayofweek"</span>, columns<span class="op">=</span><span class="st">"decade"</span>, aggfunc<span class="op">=</span><span class="st">"mean"</span>).plot()</span>
+<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a>plt.gca().<span class="bu">set</span>(</span>
+<span id="cb19-5"><a href="#cb19-5" aria-hidden="true" tabindex="-1"></a>    xticks<span class="op">=</span><span class="bu">range</span>(<span class="dv">7</span>), xticklabels<span class="op">=</span>[<span class="st">"Mon"</span>, <span class="st">"Tues"</span>, <span class="st">"Wed"</span>, <span class="st">"Thurs"</span>, <span class="st">"Fri"</span>, <span class="st">"Sat"</span>, <span class="st">"Sun"</span>]</span>
+<span id="cb19-6"><a href="#cb19-6" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb19-7"><a href="#cb19-7" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">"mean births by day"</span>)<span class="op">;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -1306,9 +1307,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>분명히 평일보다 주말에 출산이 약간 덜 일반적입니다! 1989년부터 CDC 데이터에 생년월일만 포함되어 있기 때문에 1990년대와 2000년대는 누락되었습니다.</p>
 <p>또 다른 흥미로운 관점은 연중 평균 출생아 수를 표시하는 것입니다. 먼저 데이터를 월별, 일별로 그룹화해 보겠습니다.</p>
 <div id="cell-46" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="20">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb20"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>births_by_date <span class="op">=</span> births.pivot_table(<span class="st">'births'</span>, </span>
-<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>                                    [births.index.month, births.index.day])</span>
-<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a>births_by_date.head()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb20"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>births_by_date <span class="op">=</span> births.pivot_table(<span class="st">"births"</span>, [births.index.month, births.index.day])</span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>births_by_date.head()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="20">
 <div>
 
@@ -1352,9 +1352,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>그 결과는 몇 달과 며칠에 걸쳐 다중 인덱스가 됩니다. 이를 시각화 가능하게 만들기 위해 이러한 월과 일을 더미 연도 변수와 연결하여 날짜로 변환하겠습니다(2월 29일이 올바르게 처리되도록 윤년을 선택해야 합니다!).</p>
 <div id="cell-48" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="21">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> datetime <span class="im">import</span> datetime</span>
-<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>births_by_date.index <span class="op">=</span> [datetime(<span class="dv">2012</span>, month, day)</span>
-<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a>                        <span class="cf">for</span> (month, day) <span class="kw">in</span> births_by_date.index]</span>
-<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a>births_by_date.head()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a>births_by_date.index <span class="op">=</span> [</span>
+<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a>    datetime(<span class="dv">2012</span>, month, day) <span class="cf">for</span> (month, day) <span class="kw">in</span> births_by_date.index</span>
+<span id="cb21-5"><a href="#cb21-5" aria-hidden="true" tabindex="-1"></a>]</span>
+<span id="cb21-6"><a href="#cb21-6" aria-hidden="true" tabindex="-1"></a>births_by_date.head()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="21">
 <div>
 

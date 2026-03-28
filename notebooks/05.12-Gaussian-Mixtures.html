@@ -591,25 +591,25 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>이전 장에서 살펴본 <em>k</em>-평균 군집화 모델은 간단하고 비교적 이해하기 쉽지만 단순함은 적용 시 실질적인 문제로 이어집니다. 특히, <em>k</em>-평균의 비확률적 특성과 클러스터 중심으로부터의 단순한 거리를 사용하여 클러스터 구성원을 할당하는 것은 많은 실제 상황에서 성능이 저하됩니다. 이번 장에서는 <em>k</em>-평균 뒤에 있는 아이디어의 확장으로 볼 수 있지만 단순한 클러스터링을 넘어선 추정을 위한 강력한 도구가 될 수도 있는 가우스 혼합 모델을 살펴보겠습니다.</p>
 <p>표준 가져오기부터 시작합니다.</p>
 <div id="cell-2" class="cell" data-editable="true" data-tags="[]" data-execution_count="1">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="op">%</span>matplotlib inline</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>plt.style.use(<span class="st">'seaborn-whitegrid'</span>)</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="op">%</span>matplotlib inline</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>plt.style.use(<span class="st">'seaborn-whitegrid'</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <section id="가우스-혼합-동기-부여-k-평균의-약점" class="level2">
 <h2 class="anchored" data-anchor-id="가우스-혼합-동기-부여-k-평균의-약점">가우스 혼합 동기 부여: k-평균의 약점</h2>
 <p><em>k</em>-평균의 몇 가지 약점을 살펴보고 클러스터 모델을 개선할 수 있는 방법에 대해 생각해 보겠습니다. 이전 장에서 본 것처럼 간단하고 잘 구분된 데이터가 주어지면 <em>k</em>-수단은 적합한 클러스터링 결과를 찾습니다.</p>
 <p>예를 들어 간단한 데이터 덩어리가 있는 경우 <em>k</em>-평균 알고리즘은 눈으로 볼 수 있는 것과 거의 일치하는 방식으로 해당 클러스터에 신속하게 레이블을 지정합니다(다음 그림 참조).</p>
 <div id="cell-4" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="3">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Generate some data</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.datasets <span class="im">import</span> make_blobs</span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.datasets <span class="im">import</span> make_blobs</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Generate some data</span></span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>X, y_true <span class="op">=</span> make_blobs(n_samples<span class="op">=</span><span class="dv">400</span>, centers<span class="op">=</span><span class="dv">4</span>,</span>
 <span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>                       cluster_std<span class="op">=</span><span class="fl">0.60</span>, random_state<span class="op">=</span><span class="dv">0</span>)</span>
 <span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>X <span class="op">=</span> X[:, ::<span class="op">-</span><span class="dv">1</span>] <span class="co"># flip axes for better plotting</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <div id="cell-5" class="cell" data-editable="true" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="4">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Plot the data with k-means labels</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.cluster <span class="im">import</span> KMeans</span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.cluster <span class="im">import</span> KMeans</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Plot the data with k-means labels</span></span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>kmeans <span class="op">=</span> KMeans(<span class="dv">4</span>, random_state<span class="op">=</span><span class="dv">0</span>)</span>
 <span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>labels <span class="op">=</span> kmeans.fit(X).predict(X)</span>
 <span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>plt.scatter(X[:, <span class="dv">0</span>], X[:, <span class="dv">1</span>], c<span class="op">=</span>labels, s<span class="op">=</span><span class="dv">40</span>, cmap<span class="op">=</span><span class="st">'viridis'</span>)<span class="op">;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>

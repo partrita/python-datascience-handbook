@@ -591,10 +591,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>많은 클러스터링 알고리즘은 Scikit-Learn 및 다른 곳에서 사용할 수 있지만 아마도 가장 이해하기 쉬운 알고리즘은 <code>sklearn.cluster.KMeans</code>에 구현된 <em>k-평균 클러스터링</em>으로 알려진 알고리즘일 것입니다.</p>
 <p>표준 가져오기부터 시작합니다.</p>
 <div id="cell-2" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="1">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="op">%</span>matplotlib inline</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>plt.style.use(<span class="st">'seaborn-whitegrid'</span>)</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="op">%</span>matplotlib inline</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>plt.style.use(<span class="st">'seaborn-whitegrid'</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <section id="k-평균-소개" class="level2">
 <h2 class="anchored" data-anchor-id="k-평균-소개">k-평균 소개</h2>
@@ -880,8 +880,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>클러스터링의 흥미로운 적용 중 하나는 이미지 제 색상 압축입니다. 이 예는 Scikit-Learn의 <a href="https://scikit-learn.org/stable/auto_examples/cluster/plot_color_Quantization.html">“K-Means를 사용한 색상 양자화”</a>에서 채택되었습니다. 예를 들어 수백만 가지 색상의 이미지가 있다고 가정해 보겠습니다. 대부분의 이미지에서는 많은 색상이 사용되지 않으며 이미지의 많은 픽셀이 유사하거나 동일한 색상을 갖습니다.</p>
 <p>예를 들어 Scikit-Learn <code>datasets</code> 모듈의 다음 그림에 표시된 이미지를 고려해 보세요(이 작업을 위해서는 <code>PIL</code> 파이썬(Python) 패키지가 설치되어 있어야 합니다). (이 이미지와 다음 이미지의 컬러 버전을 보려면 이 책의 온라인 버전을 참조하세요.)</p>
 <div id="cell-48" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="18">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb22"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Note: this requires the PIL package to be installed</span></span>
-<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.datasets <span class="im">import</span> load_sample_image</span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb22"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.datasets <span class="im">import</span> load_sample_image</span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Note: this requires the PIL package to be installed</span></span>
 <span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a>china <span class="op">=</span> load_sample_image(<span class="st">"china.jpg"</span>)</span>
 <span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a>ax <span class="op">=</span> plt.axes(xticks<span class="op">=</span>[], yticks<span class="op">=</span>[])</span>
 <span id="cb22-5"><a href="#cb22-5" aria-hidden="true" tabindex="-1"></a>ax.imshow(china)<span class="op">;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -928,7 +928,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb27-15"><a href="#cb27-15" aria-hidden="true" tabindex="-1"></a>    ax[<span class="dv">1</span>].scatter(R, B, color<span class="op">=</span>colors, marker<span class="op">=</span><span class="st">'.'</span>)</span>
 <span id="cb27-16"><a href="#cb27-16" aria-hidden="true" tabindex="-1"></a>    ax[<span class="dv">1</span>].<span class="bu">set</span>(xlabel<span class="op">=</span><span class="st">'Red'</span>, ylabel<span class="op">=</span><span class="st">'Blue'</span>, xlim<span class="op">=</span>(<span class="dv">0</span>, <span class="dv">1</span>), ylim<span class="op">=</span>(<span class="dv">0</span>, <span class="dv">1</span>))</span>
 <span id="cb27-17"><a href="#cb27-17" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-18"><a href="#cb27-18" aria-hidden="true" tabindex="-1"></a>    fig.suptitle(title, size<span class="op">=</span><span class="dv">20</span>)<span class="op">;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb27-18"><a href="#cb27-18" aria-hidden="true" tabindex="-1"></a>    fig.suptitle(title, size<span class="op">=</span><span class="dv">20</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <div id="cell-55" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-execution_count="22">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb28"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a>plot_pixels(data, title<span class="op">=</span><span class="st">'Input color space: 16 million possible colors'</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
